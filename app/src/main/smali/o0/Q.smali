@@ -1,188 +1,167 @@
-.class public final Lo0/Q;
-.super Lq0/B;
+.class public interface abstract Lo0/q;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# static fields
-.field public static final b:Lo0/Q;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    new-instance v0, Lo0/Q;
-
-    const-string v1, "Undefined intrinsics block and it is required"
-
-    invoke-direct {v0, v1}, Lq0/B;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lo0/Q;->b:Lo0/Q;
-
-    return-void
-.end method
+# interfaces
+.implements Lr5/o;
 
 
 # virtual methods
-.method public final d(Lo0/G;Ljava/util/List;J)Lo0/F;
-    .locals 7
+.method public a(Lq0/N1;Lo0/D1;I)I
+    .locals 4
 
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
+    new-instance v0, Lo0/j;
 
-    move-result v0
+    const/4 v1, 0x1
 
-    sget-object v1, Lv9/u;->g:Lv9/u;
+    const/4 v2, 0x2
 
-    if-eqz v0, :cond_0
+    const/4 v3, 0x1
 
-    invoke-static {p3, p4}, Ll6/a;->j(J)I
+    invoke-direct {v0, p2, v1, v2, v3}, Lo0/j;-><init>(Lo0/D1;III)V
 
-    move-result p2
+    const/4 p2, 0x0
 
-    invoke-static {p3, p4}, Ll6/a;->i(J)I
+    const/16 v1, 0xd
 
-    move-result p3
+    invoke-static {p3, p2, v1}, Lk4/a;->c(III)J
 
-    sget-object p4, Lo0/O;->j:Lo0/O;
+    move-result-wide p2
 
-    invoke-interface {p1, p2, p3, v1, p4}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    new-instance v1, Lo0/o;
+
+    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
+
+    move-result-object v2
+
+    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
+
+    invoke-interface {p0, v1, v0, p2, p3}, Lo0/q;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
 
     move-result-object p1
 
-    goto/16 :goto_2
+    invoke-interface {p1}, Lo0/F1;->h()I
 
-    :cond_0
-    invoke-interface {p2}, Ljava/util/List;->size()I
+    move-result p1
 
-    move-result v0
+    return p1
+.end method
+
+.method public c(Lq0/N1;Lo0/D1;I)I
+    .locals 4
+
+    new-instance v0, Lo0/j;
+
+    const/4 v1, 0x2
 
     const/4 v2, 0x1
 
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
-    if-ne v0, v2, :cond_1
+    invoke-direct {v0, p2, v1, v2, v3}, Lo0/j;-><init>(Lo0/D1;III)V
 
-    invoke-interface {p2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const/4 p2, 0x0
 
-    move-result-object p2
+    const/4 v1, 0x7
 
-    check-cast p2, Lo0/D;
+    invoke-static {p2, p3, v1}, Lk4/a;->c(III)J
 
-    invoke-interface {p2, p3, p4}, Lo0/D;->a(J)Lo0/N;
+    move-result-wide p2
 
-    move-result-object p2
+    new-instance v1, Lo0/o;
 
-    iget v0, p2, Lo0/N;->g:I
+    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
 
-    invoke-static {p3, p4, v0}, Lk4/a;->E(JI)I
+    move-result-object v2
 
-    move-result v0
+    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
 
-    iget v2, p2, Lo0/N;->h:I
-
-    invoke-static {p3, p4, v2}, Lk4/a;->D(JI)I
-
-    move-result p3
-
-    new-instance p4, Lo6/o;
-
-    const/4 v2, 0x5
-
-    invoke-direct {p4, p2, v2}, Lo6/o;-><init>(Lo0/N;I)V
-
-    invoke-interface {p1, v0, p3, v1, p4}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p0, v1, v0, p2, p3}, Lo0/q;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
 
     move-result-object p1
 
-    goto :goto_2
+    invoke-interface {p1}, Lo0/F1;->f()I
 
-    :cond_1
-    new-instance v0, Ljava/util/ArrayList;
+    move-result p1
 
-    invoke-interface {p2}, Ljava/util/List;->size()I
+    return p1
+.end method
 
-    move-result v2
+.method public d(Lq0/N1;Lo0/D1;I)I
+    .locals 3
 
-    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
+    new-instance v0, Lo0/j;
 
-    invoke-interface {p2}, Ljava/util/List;->size()I
+    const/4 v1, 0x2
 
-    move-result v2
+    const/4 v2, 0x1
 
-    move v4, v3
+    invoke-direct {v0, p2, v1, v1, v2}, Lo0/j;-><init>(Lo0/D1;III)V
 
-    :goto_0
-    if-ge v4, v2, :cond_2
+    const/4 p2, 0x0
 
-    invoke-interface {p2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const/16 v1, 0xd
 
-    move-result-object v5
+    invoke-static {p3, p2, v1}, Lk4/a;->c(III)J
 
-    check-cast v5, Lo0/D;
+    move-result-wide p2
 
-    invoke-interface {v5, p3, p4}, Lo0/D;->a(J)Lo0/N;
+    new-instance v1, Lo0/o;
 
-    move-result-object v5
+    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
 
-    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    move-result-object v2
 
-    add-int/lit8 v4, v4, 0x1
+    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
 
-    goto :goto_0
-
-    :cond_2
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result p2
-
-    move v2, v3
-
-    move v4, v2
-
-    :goto_1
-    if-ge v3, p2, :cond_3
-
-    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Lo0/N;
-
-    iget v6, v5, Lo0/N;->g:I
-
-    invoke-static {v6, v2}, Ljava/lang/Math;->max(II)I
-
-    move-result v2
-
-    iget v5, v5, Lo0/N;->h:I
-
-    invoke-static {v5, v4}, Ljava/lang/Math;->max(II)I
-
-    move-result v4
-
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    :cond_3
-    invoke-static {p3, p4, v2}, Lk4/a;->E(JI)I
-
-    move-result p2
-
-    invoke-static {p3, p4, v4}, Lk4/a;->D(JI)I
-
-    move-result p3
-
-    new-instance p4, La5/S1;
-
-    const/4 v2, 0x5
-
-    invoke-direct {p4, v2, v0}, La5/S1;-><init>(ILjava/util/ArrayList;)V
-
-    invoke-interface {p1, p2, p3, v1, p4}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p0, v1, v0, p2, p3}, Lo0/q;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
 
     move-result-object p1
 
-    :goto_2
-    return-object p1
+    invoke-interface {p1}, Lo0/F1;->h()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public f(Lq0/N1;Lo0/D1;I)I
+    .locals 3
+
+    new-instance v0, Lo0/j;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, p2, v1, v1, v2}, Lo0/j;-><init>(Lo0/D1;III)V
+
+    const/4 p2, 0x0
+
+    const/4 v1, 0x7
+
+    invoke-static {p2, p3, v1}, Lk4/a;->c(III)J
+
+    move-result-wide p2
+
+    new-instance v1, Lo0/o;
+
+    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
+
+    move-result-object v2
+
+    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
+
+    invoke-interface {p0, v1, v0, p2, p3}, Lo0/q;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lo0/F1;->f()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public abstract h(Lo0/G1;Lo0/D1;J)Lo0/F1;
 .end method

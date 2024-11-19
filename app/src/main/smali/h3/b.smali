@@ -86,11 +86,11 @@
 
     move-result-object v1
 
-    check-cast v1, Ls4/X;
+    check-cast v1, Ls4/X1;
 
     if-eqz v1, :cond_2
 
-    invoke-interface {v1}, Ls4/X;->d()Z
+    invoke-interface {v1}, Ls4/X1;->d()Z
 
     move-result v1
 

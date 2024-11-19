@@ -285,11 +285,11 @@
     goto :goto_1
 
     :cond_0
-    new-instance p0, Lw2/K;
+    new-instance p0, Lw2/K1;
 
     const/4 v1, 0x2
 
-    invoke-direct {p0, v1}, Lw2/K;-><init>(I)V
+    invoke-direct {p0, v1}, Lw2/K1;-><init>(I)V
 
     sput-object p0, Lw2/y0;->n:Lw2/z0;
 

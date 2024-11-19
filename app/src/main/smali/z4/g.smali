@@ -1,5 +1,5 @@
 .class public abstract Lz4/g;
-.super Ls4/Q;
+.super Ls4/Q1;
 .source "SourceFile"
 
 

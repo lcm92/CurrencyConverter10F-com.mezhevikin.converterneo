@@ -1,40 +1,63 @@
-.class public abstract Lq0/G;
+.class public final Lq0/g;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lw5/k;
+
 
 # static fields
-.field public static final a:Ll6/c;
+.field public static final a:Lq0/g;
+
+.field public static b:Ljava/lang/Boolean;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    invoke-static {}, Lo4/j;->d()Ll6/c;
+    new-instance v0, Lq0/g;
 
-    move-result-object v0
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lq0/G;->a:Ll6/c;
+    sput-object v0, Lq0/g;->a:Lq0/g;
 
     return-void
 .end method
 
-.method public static final a(Lq0/D;)Lq0/f0;
-    .locals 0
 
-    iget-object p0, p0, Lq0/D;->o:Lr0/u;
+# virtual methods
+.method public final a()Z
+    .locals 1
 
-    if-eqz p0, :cond_0
+    sget-object v0, Lq0/g;->b:Ljava/lang/Boolean;
 
-    return-object p0
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    return v0
 
     :cond_0
-    const-string p0, "LayoutNode should be attached to an owner"
+    const-string v0, "canFocus is read before it is written"
 
-    invoke-static {p0}, Li0/c;->O(Ljava/lang/String;)V
+    invoke-static {v0}, Li0/c;->O(Ljava/lang/String;)V
 
-    const/4 p0, 0x0
+    const/4 v0, 0x0
 
-    throw p0
+    throw v0
+.end method
+
+.method public final b(Z)V
+    .locals 0
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    sput-object p1, Lq0/g;->b:Ljava/lang/Boolean;
+
+    return-void
 .end method

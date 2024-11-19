@@ -9,16 +9,16 @@
 # instance fields
 .field public final synthetic h:I
 
-.field public final synthetic i:Ls4/G;
+.field public final synthetic i:Ls4/G1;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ls4/G;I)V
+.method public synthetic constructor <init>(Ls4/G1;I)V
     .locals 0
 
     iput p2, p0, Lh3/k;->h:I
 
-    iput-object p1, p0, Lh3/k;->i:Ls4/G;
+    iput-object p1, p0, Lh3/k;->i:Ls4/G1;
 
     const/4 p1, 0x1
 
@@ -38,9 +38,9 @@
 
     check-cast p1, Ljava/lang/Throwable;
 
-    iget-object p1, p0, Lh3/k;->i:Ls4/G;
+    iget-object p1, p0, Lh3/k;->i:Ls4/G1;
 
-    invoke-interface {p1}, Ls4/G;->a()V
+    invoke-interface {p1}, Ls4/G1;->a()V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 
@@ -49,9 +49,9 @@
     :pswitch_0
     check-cast p1, Ljava/lang/Throwable;
 
-    iget-object p1, p0, Lh3/k;->i:Ls4/G;
+    iget-object p1, p0, Lh3/k;->i:Ls4/G1;
 
-    invoke-interface {p1}, Ls4/G;->a()V
+    invoke-interface {p1}, Ls4/G1;->a()V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

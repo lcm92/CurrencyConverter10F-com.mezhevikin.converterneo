@@ -103,11 +103,11 @@
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-wide v6, Ls/B;->a:J
+    sget-wide v6, Ls/B1;->a:J
 
-    iget-object v2, p1, Ls/y;->b:Ls/A;
+    iget-object v2, p1, Ls/y;->b:Ls/A1;
 
-    iget-object v4, v2, Ls/A;->c:Lo2/b;
+    iget-object v4, v2, Ls/A1;->c:Lo2/b;
 
     if-nez v4, :cond_1
 
@@ -116,13 +116,13 @@
     :cond_1
     iget-object v9, p1, Ls/y;->a:Ljava/util/ArrayList;
 
-    new-instance v10, Ls/J;
+    new-instance v10, Ls/J1;
 
-    iget-object v8, v2, Ls/A;->b:Ls/K;
+    iget-object v8, v2, Ls/A1;->b:Ls/K1;
 
     move-object v3, v10
 
-    invoke-direct/range {v3 .. v8}, Ls/J;-><init>(Lo2/b;IJLs/K;)V
+    invoke-direct/range {v3 .. v8}, Ls/J1;-><init>(Lo2/b;IJLs/K1;)V
 
     invoke-virtual {v9, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -189,7 +189,7 @@
     return-object p1
 
     :pswitch_2
-    check-cast p1, Lo0/M;
+    check-cast p1, Lo0/M1;
 
     iget v0, p0, Lc5/K1;->i:I
 
@@ -197,11 +197,11 @@
 
     iget-object v1, p0, Lc5/K1;->j:Ljava/lang/Object;
 
-    check-cast v1, Lo0/N;
+    check-cast v1, Lo0/N1;
 
     const/4 v2, 0x0
 
-    invoke-static {p1, v1, v2, v0}, Lo0/M;->d(Lo0/M;Lo0/N;II)V
+    invoke-static {p1, v1, v2, v0}, Lo0/M1;->d(Lo0/M1;Lo0/N1;II)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

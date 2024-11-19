@@ -694,7 +694,7 @@
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     .line 39
-    sget-object v0, Li/G;->a:[J
+    sget-object v0, Li/G1;->a:[J
 
     iput-object v0, p1, Li/u;->a:[J
 
@@ -712,7 +712,7 @@
     const/16 v0, 0xa
 
     .line 43
-    invoke-static {v0}, Li/G;->f(I)I
+    invoke-static {v0}, Li/G1;->f(I)I
 
     move-result v0
 
@@ -2724,7 +2724,7 @@
 
     iget-object v6, v4, Li/u;->a:[J
 
-    sget-object v7, Li/G;->a:[J
+    sget-object v7, Li/G1;->a:[J
 
     const-wide/16 v8, 0xff
 
@@ -2765,7 +2765,7 @@
 
     iget v6, v4, Li/u;->d:I
 
-    invoke-static {v6}, Li/G;->c(I)I
+    invoke-static {v6}, Li/G1;->c(I)I
 
     move-result v6
 

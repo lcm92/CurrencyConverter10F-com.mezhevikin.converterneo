@@ -42,7 +42,7 @@
 
     new-instance v7, La5/F1;
 
-    sget-object v2, Lw/F;->g:Lw/F;
+    sget-object v2, Lw/F1;->g:Lw/F1;
 
     iget-wide v3, p0, Lb9/e;->i:J
 
@@ -52,7 +52,7 @@
 
     move-object v1, v7
 
-    invoke-direct/range {v1 .. v6}, La5/F1;-><init>(Lw/F;JIZ)V
+    invoke-direct/range {v1 .. v6}, La5/F1;-><init>(Lw/F1;JIZ)V
 
     invoke-virtual {p1, v0, v7}, Lx0/i;->e(Lx0/s;Ljava/lang/Object;)V
 

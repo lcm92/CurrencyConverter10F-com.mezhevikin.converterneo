@@ -1,51 +1,33 @@
-.class public final Lj3/K;
+.class public abstract Lj3/k;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final b:Lj3/a;
+.field public static final a:Lh9/a;
 
-.field public static final c:Lh9/a;
-
-
-# instance fields
-.field public final a:Ljava/util/ArrayList;
+.field public static final b:Ljj/a;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Lj3/a;
-
-    const/4 v1, 0x6
-
-    invoke-direct {v0, v1}, Lj3/a;-><init>(I)V
-
-    sput-object v0, Lj3/K;->b:Lj3/a;
-
     new-instance v0, Lh9/a;
 
-    const-string v1, "HttpSend"
+    const-string v1, "ValidateMark"
 
     invoke-direct {v0, v1}, Lh9/a;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lj3/K;->c:Lh9/a;
+    sput-object v0, Lj3/k;->a:Lh9/a;
 
-    return-void
-.end method
+    const-string v0, "io.ktor.client.plugins.DefaultResponseValidation"
 
-.method public constructor <init>()V
-    .locals 1
+    invoke-static {v0}, Ljj/b;->d(Ljava/lang/String;)Ljj/a;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lj3/K;->a:Ljava/util/ArrayList;
+    sput-object v0, Lj3/k;->b:Ljj/a;
 
     return-void
 .end method

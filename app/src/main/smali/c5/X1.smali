@@ -284,11 +284,11 @@
     if-ne v15, v12, :cond_d
 
     :cond_c
-    new-instance v15, Lo/F;
+    new-instance v15, Lo/F1;
 
     const/4 v12, 0x3
 
-    invoke-direct {v15, v13, v12, v11}, Lo/F;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v15, v13, v12, v11}, Lo/F1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-virtual {v14, v15}, Lf5/p;->a0(Ljava/lang/Object;)V
 
@@ -863,7 +863,7 @@
 
     const/4 v8, 0x0
 
-    invoke-static {v8, v6, v0, v4, v3}, Lo0/U;->b(Lr5/q;Lh4/e;Lf5/p;II)V
+    invoke-static {v8, v6, v0, v4, v3}, Lo0/U1;->b(Lr5/q;Lh4/e;Lf5/p;II)V
 
     :goto_15
     invoke-virtual/range {p6 .. p6}, Lf5/p;->r()Lf5/s0;

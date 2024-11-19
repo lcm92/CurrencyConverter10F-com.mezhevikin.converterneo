@@ -36,7 +36,7 @@
     return-void
 .end method
 
-.method public final C(Lw2/O;)V
+.method public final C(Lw2/O1;)V
     .locals 3
 
     iget-object v0, p0, Lcom/google/ads/mediation/c;->a:Lcom/google/ads/mediation/AbstractAdViewAdapter;
@@ -52,7 +52,7 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     :try_start_0
-    iget-object p1, p1, Lw2/O;->c:Lb2/y;
+    iget-object p1, p1, Lw2/O1;->c:Lb2/y;
 
     if-eqz p1, :cond_0
 
@@ -86,9 +86,9 @@
     :try_start_1
     iget-object p1, v2, Lo2/b;->i:Ljava/lang/Object;
 
-    check-cast p1, Lw2/U;
+    check-cast p1, Lw2/U1;
 
-    invoke-interface {p1}, Lw2/U;->C()V
+    invoke-interface {p1}, Lw2/U1;->C()V
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 

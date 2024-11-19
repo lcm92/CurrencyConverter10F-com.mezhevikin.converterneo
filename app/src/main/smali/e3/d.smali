@@ -243,7 +243,7 @@
 
     new-instance v2, Ls4/n0;
 
-    invoke-direct {v2, v0}, Ls4/a0;-><init>(Ls4/X;)V
+    invoke-direct {v2, v0}, Ls4/a0;-><init>(Ls4/X1;)V
 
     iget-object v0, p0, Le3/d;->n:Ljava/lang/Object;
 
@@ -259,23 +259,23 @@
 
     invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
 
-    check-cast v0, Ls4/X;
+    check-cast v0, Ls4/X1;
 
-    sget-object v4, Lj3/G;->a:Ljj/a;
+    sget-object v4, Lj3/G1;->a:Ljj/a;
 
-    new-instance v4, Lj3/F;
+    new-instance v4, Lj3/F1;
 
-    invoke-direct {v4, v1, v2}, Lj3/F;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v4, v1, v2}, Lj3/F1;-><init>(ILjava/lang/Object;)V
 
-    invoke-interface {v0, v4}, Ls4/X;->q(Lh4/c;)Ls4/G;
+    invoke-interface {v0, v4}, Ls4/X1;->q(Lh4/c;)Ls4/G1;
 
     move-result-object v0
 
     new-instance v4, Lh3/k;
 
-    invoke-direct {v4, v0, v6}, Lh3/k;-><init>(Ls4/G;I)V
+    invoke-direct {v4, v0, v6}, Lh3/k;-><init>(Ls4/G1;I)V
 
-    invoke-virtual {v2, v4}, Ls4/g0;->q(Lh4/c;)Ls4/G;
+    invoke-virtual {v2, v4}, Ls4/g0;->q(Lh4/c;)Ls4/G1;
 
     :try_start_1
     iget-object v0, p1, Ll9/e;->g:Ljava/lang/Object;
@@ -415,7 +415,7 @@
 
     move-result-object v7
 
-    check-cast v7, Ls4/X;
+    check-cast v7, Ls4/X1;
 
     sget-object v8, Lio/ktor/utils/io/jvm/javaio/e;->a:Lu9/n;
 
@@ -423,7 +423,7 @@
 
     new-instance v0, Lio/ktor/utils/io/jvm/javaio/i;
 
-    invoke-direct {v0, v7, v1}, Lio/ktor/utils/io/jvm/javaio/i;-><init>(Ls4/X;Lio/ktor/utils/io/I;)V
+    invoke-direct {v0, v7, v1}, Lio/ktor/utils/io/jvm/javaio/i;-><init>(Ls4/X1;Lio/ktor/utils/io/I;)V
 
     new-instance v1, Lj3/p;
 

@@ -82,9 +82,9 @@
 
     iput v3, p0, Lo/c0;->k:I
 
-    iget-object v1, p1, Lo/s0;->d:Lo/O;
+    iget-object v1, p1, Lo/s0;->d:Lo/O1;
 
-    sget-object v4, Lo/O;->h:Lo/O;
+    sget-object v4, Lo/O1;->h:Lo/O1;
 
     const/4 v5, 0x0
 

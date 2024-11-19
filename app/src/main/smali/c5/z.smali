@@ -21,7 +21,7 @@
 
 
 # direct methods
-.method public constructor <init>(Li4/o;Li4/o;Lj1/B;ZLv9/i;)V
+.method public constructor <init>(Li4/o;Li4/o;Lj1/B1;ZLv9/i;)V
     .locals 1
 
     const/4 v0, 0x1
@@ -46,7 +46,7 @@
     return-void
 .end method
 
-.method public constructor <init>(ZLl/N;Lf5/c0;Ll/s0;Ll/s0;)V
+.method public constructor <init>(ZLl/N1;Lf5/c0;Ll/s0;Ll/s0;)V
     .locals 1
 
     const/4 v0, 0x0
@@ -108,9 +108,9 @@
 
     iget-object v2, p0, Lc5/z;->l:Ljava/lang/Object;
 
-    check-cast v2, Lj1/B;
+    check-cast v2, Lj1/B1;
 
-    invoke-virtual {v2, p1, v0, v1}, Lj1/B;->n(Lj1/h;ZLv9/i;)V
+    invoke-virtual {v2, p1, v0, v1}, Lj1/B1;->n(Lj1/h;ZLv9/i;)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 
@@ -121,7 +121,7 @@
 
     iget-object v0, p0, Lc5/z;->j:Ljava/lang/Object;
 
-    check-cast v0, Ll/N;
+    check-cast v0, Ll/N1;
 
     const v1, 0x3f4ccccd    # 0.8f
 
@@ -131,7 +131,7 @@
 
     const/high16 v3, 0x3f800000    # 1.0f
 
-    iget-object v0, v0, Ll/N;->i:Lf5/j0;
+    iget-object v0, v0, Ll/N1;->i:Lf5/j0;
 
     iget-boolean v4, p0, Lc5/z;->i:Z
 

@@ -82,7 +82,7 @@
 
     iget-object v1, p0, Lp/n;->l:Lp/i;
 
-    iget-object v1, v1, Lp/i;->a:Lv4/E;
+    iget-object v1, v1, Lp/i;->a:Lv4/E1;
 
     new-instance v3, La5/M1;
 
@@ -96,7 +96,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {v1, v3, p0}, Lv4/E;->k(Lv4/E;Lv4/f;Ly9/d;)V
+    invoke-static {v1, v3, p0}, Lv4/E1;->k(Lv4/E1;Lv4/f;Ly9/d;)V
 
     return-object v0
 .end method

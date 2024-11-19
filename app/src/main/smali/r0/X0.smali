@@ -95,7 +95,7 @@
     :try_start_1
     iput v7, p0, Lr0/X0;->k:I
 
-    iget-object p1, v3, Lf5/z0;->r:Lv4/P;
+    iget-object p1, v3, Lf5/z0;->r:Lv4/P1;
 
     new-instance v1, Lf5/u0;
 
@@ -103,7 +103,7 @@
 
     invoke-direct {v1, v7, v6}, La4/i;-><init>(ILy9/d;)V
 
-    invoke-static {p1, v1, p0}, Lv4/F;->g(Lv4/e;Lh4/e;La4/c;)Ljava/lang/Object;
+    invoke-static {p1, v1, p0}, Lv4/F1;->g(Lv4/e;Lh4/e;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
     :try_end_1

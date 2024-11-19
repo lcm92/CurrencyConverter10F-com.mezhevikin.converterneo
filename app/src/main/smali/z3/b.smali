@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/io/Closeable;
-.implements Ls4/G;
+.implements Ls4/G1;
 
 
 # virtual methods

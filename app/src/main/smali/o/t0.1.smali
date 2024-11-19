@@ -20,7 +20,7 @@
 .method public final h(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lo/S;
+    check-cast p1, Lo/S1;
 
     check-cast p2, Lx5/c;
 

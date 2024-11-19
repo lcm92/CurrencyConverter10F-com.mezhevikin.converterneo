@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lw/Q;
+.field public final a:Lw/Q1;
 
 .field public final b:La5/b0;
 
@@ -20,9 +20,9 @@
 
 .field public final h:Lw/q0;
 
-.field public final i:Lw/D;
+.field public final i:Lw/D1;
 
-.field public final j:Lw/J;
+.field public final j:Lw/J1;
 
 .field public final k:Lh4/c;
 
@@ -30,14 +30,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lw/Q;La5/b0;Lf6/w;ZZLa5/k0;Lc5/q;Lw/q0;Lw/D;Lw/r;I)V
+.method public constructor <init>(Lw/Q1;La5/b0;Lf6/w;ZZLa5/k0;Lc5/q;Lw/q0;Lw/D1;Lw/r;I)V
     .locals 1
 
-    sget-object v0, Lw/N;->a:Lw/K;
+    sget-object v0, Lw/N1;->a:Lw/K1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lw/d0;->a:Lw/Q;
+    iput-object p1, p0, Lw/d0;->a:Lw/Q1;
 
     iput-object p2, p0, Lw/d0;->b:La5/b0;
 
@@ -53,9 +53,9 @@
 
     iput-object p8, p0, Lw/d0;->h:Lw/q0;
 
-    iput-object p9, p0, Lw/d0;->i:Lw/D;
+    iput-object p9, p0, Lw/d0;->i:Lw/D1;
 
-    iput-object v0, p0, Lw/d0;->j:Lw/J;
+    iput-object v0, p0, Lw/d0;->j:Lw/J1;
 
     iput-object p10, p0, Lw/d0;->k:Lh4/c;
 
@@ -69,9 +69,9 @@
 .method public final a(Ljava/util/List;)V
     .locals 3
 
-    iget-object v0, p0, Lw/d0;->a:Lw/Q;
+    iget-object v0, p0, Lw/d0;->a:Lw/Q1;
 
-    iget-object v0, v0, Lw/Q;->d:Ly/s;
+    iget-object v0, v0, Lw/Q1;->d:Ly/s;
 
     invoke-static {p1}, Lv9/k;->G0(Ljava/util/Collection;)Ljava/util/ArrayList;
 

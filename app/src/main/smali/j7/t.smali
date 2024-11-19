@@ -481,7 +481,7 @@
     return-void
 .end method
 
-.method public m()Lb2/Y;
+.method public m()Lb2/Y1;
     .locals 14
 
     iget-object v0, p0, Lj7/t;->e:Ljava/lang/Object;
@@ -497,7 +497,7 @@
     goto :goto_0
 
     :cond_0
-    new-instance v7, Lb2/Y;
+    new-instance v7, Lb2/Y1;
 
     const/4 v5, 0x0
 
@@ -519,12 +519,12 @@
 
     move-object v1, v7
 
-    invoke-direct/range {v1 .. v6}, Lb2/Y;-><init>(ILjava/lang/String;Ljava/lang/String;Lb2/Y;Landroid/os/IBinder;)V
+    invoke-direct/range {v1 .. v6}, Lb2/Y1;-><init>(ILjava/lang/String;Ljava/lang/String;Lb2/Y1;Landroid/os/IBinder;)V
 
     move-object v12, v7
 
     :goto_0
-    new-instance v0, Lb2/Y;
+    new-instance v0, Lb2/Y1;
 
     const/4 v13, 0x0
 
@@ -544,7 +544,7 @@
 
     move-object v8, v0
 
-    invoke-direct/range {v8 .. v13}, Lb2/Y;-><init>(ILjava/lang/String;Ljava/lang/String;Lb2/Y;Landroid/os/IBinder;)V
+    invoke-direct/range {v8 .. v13}, Lb2/Y1;-><init>(ILjava/lang/String;Ljava/lang/String;Lb2/Y1;Landroid/os/IBinder;)V
 
     return-object v0
 .end method

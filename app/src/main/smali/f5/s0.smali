@@ -16,7 +16,7 @@
 
 .field public f:Li/x;
 
-.field public g:Li/A;
+.field public g:Li/A1;
 
 
 # direct methods
@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static a(Lf5/F1;Li/A;)Z
+.method public static a(Lf5/F1;Li/A1;)Z
     .locals 2
 
     const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.DerivedState<kotlin.Any?>"
@@ -50,7 +50,7 @@
 
     iget-object v1, v1, Lf5/D1;->f:Ljava/lang/Object;
 
-    invoke-virtual {p1, p0}, Li/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -134,7 +134,7 @@
 
     iput-object v0, p0, Lf5/s0;->f:Li/x;
 
-    iput-object v0, p0, Lf5/s0;->g:Li/A;
+    iput-object v0, p0, Lf5/s0;->g:Li/A1;
 
     return-void
 .end method

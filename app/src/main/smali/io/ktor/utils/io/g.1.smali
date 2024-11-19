@@ -74,9 +74,9 @@
 
     move-object v1, p1
 
-    check-cast v1, Lq0/F;
+    check-cast v1, Lq0/F1;
 
-    invoke-virtual {v1}, Lq0/F;->a()V
+    invoke-virtual {v1}, Lq0/F1;->a()V
 
     iget-object p1, p0, Lio/ktor/utils/io/g;->l:Ljava/lang/Object;
 
@@ -98,14 +98,14 @@
 
     const/4 v7, 0x0
 
-    invoke-static/range {v1 .. v9}, La0/d;->N(Lq0/F;Ly5/H1;JJFLa0/c;I)V
+    invoke-static/range {v1 .. v9}, La0/d;->N(Lq0/F1;Ly5/H1;JJFLa0/c;I)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 
     return-object p1
 
     :pswitch_0
-    check-cast p1, Lo0/M;
+    check-cast p1, Lo0/M1;
 
     iget-wide v0, p0, Lio/ktor/utils/io/g;->i:J
 
@@ -141,7 +141,7 @@
 
     iget-object v2, p0, Lio/ktor/utils/io/g;->k:Ljava/lang/Object;
 
-    check-cast v2, Lo0/N;
+    check-cast v2, Lo0/N1;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -149,9 +149,9 @@
 
     move-result-wide v3
 
-    invoke-static {p1, v2}, Lo0/M;->a(Lo0/M;Lo0/N;)V
+    invoke-static {p1, v2}, Lo0/M1;->a(Lo0/M1;Lo0/N1;)V
 
-    iget-wide v5, v2, Lo0/N;->k:J
+    iget-wide v5, v2, Lo0/N1;->k:J
 
     invoke-static {v3, v4, v5, v6}, Ll6/h;->c(JJ)J
 
@@ -159,7 +159,7 @@
 
     const/4 p1, 0x0
 
-    invoke-virtual {v2, v3, v4, p1, v1}, Lo0/N;->d0(JFLh4/c;)V
+    invoke-virtual {v2, v3, v4, p1, v1}, Lo0/N1;->d0(JFLh4/c;)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

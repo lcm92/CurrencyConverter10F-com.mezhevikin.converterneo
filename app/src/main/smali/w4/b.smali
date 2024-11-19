@@ -225,13 +225,13 @@
 
     const/4 v4, 0x2
 
-    invoke-direct {v0, v2, v3, v4}, Lv4/E;-><init>(III)V
+    invoke-direct {v0, v2, v3, v4}, Lv4/E1;-><init>(III)V
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lv4/E;->q(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lv4/E1;->q(Ljava/lang/Object;)Z
 
     iput-object v0, p0, Lw4/b;->j:Lw4/y;
     :try_end_0

@@ -66,7 +66,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, v2, p1}, Lio/ktor/utils/io/jvm/javaio/i;-><init>(Ls4/X;Lio/ktor/utils/io/I;)V
+    invoke-direct {v1, v2, p1}, Lio/ktor/utils/io/jvm/javaio/i;-><init>(Ls4/X1;Lio/ktor/utils/io/I;)V
 
     iget-object p1, p0, Lg9/a;->l:Lm9/a;
 

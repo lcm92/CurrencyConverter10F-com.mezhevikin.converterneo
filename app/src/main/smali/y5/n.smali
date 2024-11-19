@@ -23,16 +23,16 @@
 
 
 # virtual methods
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
+.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
     .locals 2
 
-    invoke-interface {p2, p3, p4}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {p2, p3, p4}, Lo0/D1;->a(J)Lo0/N1;
 
     move-result-object p2
 
-    iget p3, p2, Lo0/N;->g:I
+    iget p3, p2, Lo0/N1;->g:I
 
-    iget p4, p2, Lo0/N;->h:I
+    iget p4, p2, Lo0/N1;->h:I
 
     new-instance v0, La5/y;
 
@@ -42,7 +42,7 @@
 
     sget-object p2, Lv9/u;->g:Lv9/u;
 
-    invoke-interface {p1, p3, p4, p2, v0}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p1, p3, p4, p2, v0}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
 
     move-result-object p1
 

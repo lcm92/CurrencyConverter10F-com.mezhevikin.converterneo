@@ -44,16 +44,16 @@
 .method public final b()Ll6/b;
     .locals 1
 
-    invoke-static {p0}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {p0}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object v0
 
-    iget-object v0, v0, Lq0/D;->w:Ll6/b;
+    iget-object v0, v0, Lq0/D1;->w:Ll6/b;
 
     return-object v0
 .end method
 
-.method public final e(Lq0/F;)V
+.method public final e(Lq0/F1;)V
     .locals 4
 
     iget-boolean v0, p0, Lv5/b;->u:Z
@@ -111,11 +111,11 @@
 
     const/16 v0, 0x80
 
-    invoke-static {p0, v0}, Lq0/f;->t(Lq0/m;I)Lq0/Z;
+    invoke-static {p0, v0}, Lq0/f;->t(Lq0/m;I)Lq0/Z1;
 
     move-result-object v0
 
-    iget-wide v0, v0, Lo0/N;->i:J
+    iget-wide v0, v0, Lo0/N1;->i:J
 
     invoke-static {v0, v1}, Lll/d;->S(J)J
 
@@ -127,11 +127,11 @@
 .method public final getLayoutDirection()Ll6/k;
     .locals 1
 
-    invoke-static {p0}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {p0}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object v0
 
-    iget-object v0, v0, Lq0/D;->x:Ll6/k;
+    iget-object v0, v0, Lq0/D1;->x:Ll6/k;
 
     return-object v0
 .end method

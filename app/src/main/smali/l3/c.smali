@@ -47,7 +47,7 @@
     return-void
 .end method
 
-.method public final e(Ls3/K;Ly9/d;)Ljava/lang/Object;
+.method public final e(Ls3/K1;Ly9/d;)Ljava/lang/Object;
     .locals 7
 
     instance-of v0, p2, Ll3/b;
@@ -96,7 +96,7 @@
 
     iget-object p1, v0, Ll3/b;->l:Laa/d;
 
-    iget-object v1, v0, Ll3/b;->k:Ls3/K;
+    iget-object v1, v0, Ll3/b;->k:Ls3/K1;
 
     iget-object v0, v0, Ll3/b;->j:Ll3/c;
 
@@ -120,7 +120,7 @@
 
     iput-object p0, v0, Ll3/b;->j:Ll3/c;
 
-    iput-object p1, v0, Ll3/b;->k:Ls3/K;
+    iput-object p1, v0, Ll3/b;->k:Ls3/K1;
 
     iput-object p2, v0, Ll3/b;->l:Laa/d;
 
@@ -229,7 +229,7 @@
 
     check-cast v3, Ls3/f;
 
-    invoke-static {v3, v1}, Lh8/b;->T(Ls3/f;Ls3/K;)Z
+    invoke-static {v3, v1}, Lh8/b;->T(Ls3/f;Ls3/K1;)Z
 
     move-result v3
 
@@ -257,7 +257,7 @@
     throw p2
 .end method
 
-.method public final k(Ls3/K;Ls3/f;La4/c;)Ljava/lang/Object;
+.method public final k(Ls3/K1;Ls3/f;La4/c;)Ljava/lang/Object;
     .locals 6
 
     instance-of v0, p3, Ll3/a;
@@ -306,7 +306,7 @@
 
     iget-object p2, v0, Ll3/a;->l:Ls3/f;
 
-    iget-object v1, v0, Ll3/a;->k:Ls3/K;
+    iget-object v1, v0, Ll3/a;->k:Ls3/K1;
 
     iget-object v0, v0, Ll3/a;->j:Ll3/c;
 
@@ -334,7 +334,7 @@
 
     iput-object p0, v0, Ll3/a;->j:Ll3/c;
 
-    iput-object p1, v0, Ll3/a;->k:Ls3/K;
+    iput-object p1, v0, Ll3/a;->k:Ls3/K1;
 
     iput-object p2, v0, Ll3/a;->l:Ls3/f;
 
@@ -396,7 +396,7 @@
     goto :goto_2
 
     :cond_4
-    iget-object v2, p1, Ls3/K;->i:Lu9/n;
+    iget-object v2, p1, Ls3/K1;->i:Lu9/n;
 
     invoke-virtual {v2}, Lu9/n;->getValue()Ljava/lang/Object;
 
@@ -422,7 +422,7 @@
     if-eqz v4, :cond_6
 
     :cond_5
-    iget-object p1, p1, Ls3/K;->b:Ljava/lang/String;
+    iget-object p1, p1, Ls3/K1;->b:Ljava/lang/String;
 
     const/16 v4, 0x3df
 

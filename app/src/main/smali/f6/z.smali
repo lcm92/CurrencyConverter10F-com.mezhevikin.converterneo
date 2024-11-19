@@ -70,7 +70,7 @@
 
     new-instance p1, Lf6/w;
 
-    sget-wide v1, Lz0/E;->b:J
+    sget-wide v1, Lz0/E1;->b:J
 
     const/4 v3, 0x4
 
@@ -157,7 +157,7 @@
     return-void
 .end method
 
-.method public final c(Lf6/w;Lc5/q;Lz0/C;Lj3/F;Lx5/d;Lx5/d;)V
+.method public final c(Lf6/w;Lc5/q;Lz0/C1;Lj3/F1;Lx5/d;Lx5/d;)V
     .locals 2
 
     iget-object v0, p0, Lf6/z;->l:Lf6/e;
@@ -171,7 +171,7 @@
 
     iput-object p2, v0, Lf6/e;->l:Lc5/q;
 
-    iput-object p3, v0, Lf6/e;->k:Lz0/C;
+    iput-object p3, v0, Lf6/e;->k:Lz0/C1;
 
     iput-object p4, v0, Lf6/e;->m:Li4/i;
 
@@ -313,7 +313,7 @@
 
     iget-wide v2, p2, Lf6/w;->b:J
 
-    invoke-static {v0, v1, v2, v3}, Lz0/E;->a(JJ)Z
+    invoke-static {v0, v1, v2, v3}, Lz0/E1;->a(JJ)Z
 
     move-result v0
 
@@ -323,9 +323,9 @@
 
     iget-object v0, p0, Lf6/z;->g:Lf6/w;
 
-    iget-object v0, v0, Lf6/w;->c:Lz0/E;
+    iget-object v0, v0, Lf6/w;->c:Lz0/E1;
 
-    iget-object v2, p2, Lf6/w;->c:Lz0/E;
+    iget-object v2, p2, Lf6/w;->c:Lz0/E1;
 
     invoke-static {v0, v2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -398,7 +398,7 @@
 
     iput-object v4, v2, Lf6/e;->l:Lc5/q;
 
-    iput-object v4, v2, Lf6/e;->k:Lz0/C;
+    iput-object v4, v2, Lf6/e;->k:Lz0/C1;
 
     sget-object v5, Lf6/d;->i:Lf6/d;
 
@@ -426,25 +426,25 @@
 
     iget-wide v0, p2, Lf6/w;->b:J
 
-    invoke-static {v0, v1}, Lz0/E;->e(J)I
+    invoke-static {v0, v1}, Lz0/E1;->e(J)I
 
     move-result v6
 
     iget-wide v0, p2, Lf6/w;->b:J
 
-    invoke-static {v0, v1}, Lz0/E;->d(J)I
+    invoke-static {v0, v1}, Lz0/E1;->d(J)I
 
     move-result v7
 
     iget-object p2, p0, Lf6/z;->g:Lf6/w;
 
-    iget-object p2, p2, Lf6/w;->c:Lz0/E;
+    iget-object p2, p2, Lf6/w;->c:Lz0/E1;
 
     if-eqz p2, :cond_4
 
-    iget-wide v0, p2, Lz0/E;->a:J
+    iget-wide v0, p2, Lz0/E1;->a:J
 
-    invoke-static {v0, v1}, Lz0/E;->e(J)I
+    invoke-static {v0, v1}, Lz0/E1;->e(J)I
 
     move-result p2
 
@@ -458,13 +458,13 @@
     :goto_4
     iget-object p2, p0, Lf6/z;->g:Lf6/w;
 
-    iget-object p2, p2, Lf6/w;->c:Lz0/E;
+    iget-object p2, p2, Lf6/w;->c:Lz0/E1;
 
     if-eqz p2, :cond_5
 
-    iget-wide v0, p2, Lz0/E;->a:J
+    iget-wide v0, p2, Lz0/E1;->a:J
 
-    invoke-static {v0, v1}, Lz0/E;->d(J)I
+    invoke-static {v0, v1}, Lz0/E1;->d(J)I
 
     move-result v3
 
@@ -513,15 +513,15 @@
 
     iget-wide v6, p2, Lf6/w;->b:J
 
-    invoke-static {v4, v5, v6, v7}, Lz0/E;->a(JJ)Z
+    invoke-static {v4, v5, v6, v7}, Lz0/E1;->a(JJ)Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    iget-object p1, p1, Lf6/w;->c:Lz0/E;
+    iget-object p1, p1, Lf6/w;->c:Lz0/E1;
 
-    iget-object p2, p2, Lf6/w;->c:Lz0/E;
+    iget-object p2, p2, Lf6/w;->c:Lz0/E1;
 
     invoke-static {p1, p2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -612,13 +612,13 @@
     invoke-virtual {v5, v6, p2, v4}, Landroid/view/inputmethod/InputMethodManager;->updateExtractedText(Landroid/view/View;ILandroid/view/inputmethod/ExtractedText;)V
 
     :cond_b
-    iget-object p2, v0, Lf6/w;->c:Lz0/E;
+    iget-object p2, v0, Lf6/w;->c:Lz0/E1;
 
     if-eqz p2, :cond_c
 
-    iget-wide v4, p2, Lz0/E;->a:J
+    iget-wide v4, p2, Lz0/E1;->a:J
 
-    invoke-static {v4, v5}, Lz0/E;->e(J)I
+    invoke-static {v4, v5}, Lz0/E1;->e(J)I
 
     move-result p2
 
@@ -630,13 +630,13 @@
     move v8, v3
 
     :goto_6
-    iget-object p2, v0, Lf6/w;->c:Lz0/E;
+    iget-object p2, v0, Lf6/w;->c:Lz0/E1;
 
     if-eqz p2, :cond_d
 
-    iget-wide v4, p2, Lz0/E;->a:J
+    iget-wide v4, p2, Lz0/E1;->a:J
 
-    invoke-static {v4, v5}, Lz0/E;->d(J)I
+    invoke-static {v4, v5}, Lz0/E1;->d(J)I
 
     move-result p2
 
@@ -650,11 +650,11 @@
     :goto_7
     iget-wide v4, v0, Lf6/w;->b:J
 
-    invoke-static {v4, v5}, Lz0/E;->e(J)I
+    invoke-static {v4, v5}, Lz0/E1;->e(J)I
 
     move-result v6
 
-    invoke-static {v4, v5}, Lz0/E;->d(J)I
+    invoke-static {v4, v5}, Lz0/E1;->d(J)I
 
     move-result v7
 

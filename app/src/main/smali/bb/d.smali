@@ -146,7 +146,7 @@
     :cond_4
     const-string p1, "Polymorphic value has not been read for class "
 
-    invoke-static {p1, v1}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

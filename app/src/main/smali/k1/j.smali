@@ -23,7 +23,7 @@
 .method public constructor <init>(Lk1/i;Ljava/lang/String;Ln5/a;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lj1/v;-><init>(Lj1/H;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lj1/v;-><init>(Lj1/H1;Ljava/lang/String;)V
 
     iput-object p1, p0, Lk1/j;->f:Lk1/i;
 

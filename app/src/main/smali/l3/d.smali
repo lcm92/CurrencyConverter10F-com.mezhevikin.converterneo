@@ -7,8 +7,8 @@
 
 
 # virtual methods
-.method public abstract e(Ls3/K;Ly9/d;)Ljava/lang/Object;
+.method public abstract e(Ls3/K1;Ly9/d;)Ljava/lang/Object;
 .end method
 
-.method public abstract k(Ls3/K;Ls3/f;La4/c;)Ljava/lang/Object;
+.method public abstract k(Ls3/K1;Ls3/f;La4/c;)Ljava/lang/Object;
 .end method

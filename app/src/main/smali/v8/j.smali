@@ -55,7 +55,7 @@
 
     const/4 v5, 0x3
 
-    invoke-static {v1, v2, v3, v0, v5}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v1, v2, v3, v0, v5}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     return-object v4
 

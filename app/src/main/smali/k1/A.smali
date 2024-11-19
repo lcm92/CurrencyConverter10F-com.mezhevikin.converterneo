@@ -1,141 +1,121 @@
-.class public final Lk1/A;
-.super Li4/i;
+.class public final Lk1/a;
+.super Landroidx/lifecycle/Q;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/g;
 
 
 # instance fields
-.field public final synthetic h:Lo5/i;
+.field public final b:Ljava/lang/String;
 
-.field public final synthetic i:Lf5/c0;
+.field public final c:Ljava/util/UUID;
 
-.field public final synthetic j:Lf5/W10;
+.field public d:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
-.method public constructor <init>(Lo5/i;Lf5/c0;Lf5/W10;)V
-    .locals 0
+.method public constructor <init>(Landroidx/lifecycle/H;)V
+    .locals 2
 
-    iput-object p1, p0, Lk1/A;->h:Lo5/i;
+    invoke-direct {p0}, Landroidx/lifecycle/Q;-><init>()V
 
-    iput-object p2, p0, Lk1/A;->i:Lf5/c0;
+    const-string v0, "SaveableStateHolder_BackStackEntryKey"
 
-    iput-object p3, p0, Lk1/A;->j:Lf5/W10;
+    iput-object v0, p0, Lk1/a;->b:Ljava/lang/String;
 
-    const/4 p1, 0x4
+    iget-object v1, p1, Landroidx/lifecycle/H;->a:Ljava/util/LinkedHashMap;
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    :try_start_0
+    invoke-virtual {v1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    invoke-interface {v1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, p1, Landroidx/lifecycle/H;->c:Ljava/util/LinkedHashMap;
+
+    invoke-interface {v1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-nez v1, :cond_1
+
+    iget-object v1, p1, Landroidx/lifecycle/H;->d:Ljava/util/LinkedHashMap;
+
+    invoke-interface {v1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v0, 0x0
+
+    :goto_0
+    check-cast v0, Ljava/util/UUID;
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lk1/a;->b:Ljava/lang/String;
+
+    invoke-virtual {p1, v0, v1}, Landroidx/lifecycle/H;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    :cond_0
+    iput-object v0, p0, Lk1/a;->c:Ljava/util/UUID;
 
     return-void
+
+    :cond_1
+    new-instance p1, Ljava/lang/ClassCastException;
+
+    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final g(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final c()V
+    .locals 4
 
-    check-cast p1, Lk/i;
+    iget-object v0, p0, Lk1/a;->d:Ljava/lang/ref/WeakReference;
 
-    check-cast p2, Lj1/h;
+    const/4 v1, 0x0
 
-    check-cast p3, Lf5/p;
-
-    check-cast p4, Ljava/lang/Number;
-
-    invoke-virtual {p4}, Ljava/lang/Number;->intValue()I
-
-    iget-object p4, p0, Lk1/A;->i:Lf5/c0;
-
-    invoke-interface {p4}, Lf5/W10;->getValue()Ljava/lang/Object;
-
-    move-result-object p4
-
-    check-cast p4, Ljava/lang/Boolean;
-
-    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p4
-
-    if-eqz p4, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    iget-object p4, p0, Lk1/A;->j:Lf5/W10;
-
-    invoke-interface {p4}, Lf5/W10;->getValue()Ljava/lang/Object;
-
-    move-result-object p4
-
-    check-cast p4, Ljava/util/List;
-
-    invoke-interface {p4}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    invoke-interface {p4, v0}, Ljava/util/List;->listIterator(I)Ljava/util/ListIterator;
-
-    move-result-object p4
-
-    :cond_1
-    invoke-interface {p4}, Ljava/util/ListIterator;->hasPrevious()Z
-
-    move-result v0
+    const-string v2, "saveableStateHolderRef"
 
     if-eqz v0, :cond_2
 
-    invoke-interface {p4}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    move-object v1, v0
+    check-cast v0, Lo5/c;
 
-    check-cast v1, Lj1/h;
+    if-eqz v0, :cond_0
 
-    invoke-static {p2, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v3, p0, Lk1/a;->c:Ljava/util/UUID;
 
-    move-result v1
+    invoke-interface {v0, v3}, Lo5/c;->a(Ljava/lang/Object;)V
 
-    if-eqz v1, :cond_1
+    :cond_0
+    iget-object v0, p0, Lk1/a;->d:Ljava/lang/ref/WeakReference;
 
-    goto :goto_0
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->clear()V
+
+    return-void
+
+    :cond_1
+    invoke-static {v2}, Li4/h;->j(Ljava/lang/String;)V
+
+    throw v1
 
     :cond_2
-    const/4 v0, 0x0
+    invoke-static {v2}, Li4/h;->j(Ljava/lang/String;)V
 
-    :goto_0
-    move-object p2, v0
-
-    check-cast p2, Lj1/h;
-
-    :goto_1
-    if-nez p2, :cond_3
-
-    goto :goto_2
-
-    :cond_3
-    new-instance p4, Lo6/n;
-
-    const/4 v0, 0x3
-
-    invoke-direct {p4, p2, v0, p1}, Lo6/n;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    const p1, -0x4b4ff5b3
-
-    invoke-static {p1, p4, p3}, Ln5/f;->b(ILu9/e;Lf5/p;)Ln5/a;
-
-    move-result-object p1
-
-    const/16 p4, 0x180
-
-    iget-object v0, p0, Lk1/A;->h:Lo5/i;
-
-    invoke-static {p2, v0, p1, p3, p4}, Lk4/a;->h(Lj1/h;Lo5/i;Ln5/a;Lf5/p;I)V
-
-    :goto_2
-    sget-object p1, Lu9/y;->a:Lu9/y;
-
-    return-object p1
+    throw v1
 .end method

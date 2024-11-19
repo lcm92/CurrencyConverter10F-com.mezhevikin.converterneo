@@ -1,134 +1,80 @@
-.class public final Lq/I;
+.class public final Lq/i;
 .super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/c;
+.implements Lh4/e;
 
 
-# instance fields
-.field public final synthetic h:I
-
-.field public final synthetic i:Lq/J;
-
-.field public final synthetic j:Lq/M;
+# static fields
+.field public static final h:Lq/i;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lq/J;Lq/M;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
-    iput p3, p0, Lq/I;->h:I
+    new-instance v0, Lq/i;
 
-    iput-object p1, p0, Lq/I;->i:Lq/J;
+    const/4 v1, 0x2
 
-    iput-object p2, p0, Lq/I;->j:Lq/M;
+    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
 
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    sput-object v0, Lq/i;->h:Lq/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    iget v0, p0, Lq/I;->h:I
+    check-cast p1, Ljava/lang/Number;
 
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
-    check-cast p1, Lo0/N;
+    move-result p1
 
-    if-eqz p1, :cond_0
+    check-cast p2, Ll6/k;
 
-    iget-object v0, p0, Lq/I;->j:Lq/M;
+    int-to-float p1, p1
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/high16 v0, 0x40000000    # 2.0f
 
-    invoke-virtual {p1}, Lo0/N;->Z()I
+    div-float/2addr p1, v0
 
-    move-result v0
+    sget-object v0, Ll6/k;->g:Ll6/k;
 
-    invoke-virtual {p1}, Lo0/N;->Y()I
+    const/high16 v1, -0x40800000    # -1.0f
 
-    move-result v1
+    if-ne p2, v0, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 p2, -0x1
 
-    move v1, v0
+    int-to-float p2, p2
+
+    mul-float/2addr v1, p2
 
     :goto_0
-    invoke-static {v0, v1}, Li/i;->a(II)J
+    const/4 p2, 0x1
 
-    move-result-wide v0
+    int-to-float p2, p2
 
-    new-instance v2, Li/i;
+    add-float/2addr p2, v1
 
-    invoke-direct {v2, v0, v1}, Li/i;-><init>(J)V
+    mul-float/2addr p2, p1
 
-    iget-object v0, p0, Lq/I;->i:Lq/J;
+    invoke-static {p2}, Ljava/lang/Math;->round(F)I
 
-    iput-object v2, v0, Lq/J;->h:Li/i;
+    move-result p1
 
-    iput-object p1, v0, Lq/J;->f:Lo0/N;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    sget-object p1, Lu9/y;->a:Lu9/y;
-
-    return-object p1
-
-    :pswitch_0
-    check-cast p1, Lo0/N;
-
-    if-eqz p1, :cond_1
-
-    iget-object v0, p0, Lq/I;->j:Lq/M;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    invoke-virtual {p1}, Lo0/N;->Z()I
-
-    move-result v0
-
-    invoke-virtual {p1}, Lo0/N;->Y()I
-
-    move-result v1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v0, 0x0
-
-    move v1, v0
-
-    :goto_1
-    invoke-static {v0, v1}, Li/i;->a(II)J
-
-    move-result-wide v0
-
-    new-instance v2, Li/i;
-
-    invoke-direct {v2, v0, v1}, Li/i;-><init>(J)V
-
-    iget-object v0, p0, Lq/I;->i:Lq/J;
-
-    iput-object v2, v0, Lq/J;->g:Li/i;
-
-    iput-object p1, v0, Lq/J;->d:Lo0/N;
-
-    sget-object p1, Lu9/y;->a:Lu9/y;
+    move-result-object p1
 
     return-object p1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

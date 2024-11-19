@@ -23,14 +23,14 @@
 
 
 # virtual methods
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
+.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
     .locals 6
 
     invoke-static {p3, p4}, Ll6/a;->h(J)I
 
     move-result v0
 
-    invoke-interface {p2, v0}, Lo0/D;->c(I)I
+    invoke-interface {p2, v0}, Lo0/D1;->c(I)I
 
     move-result v0
 
@@ -44,7 +44,7 @@
 
     move-result p3
 
-    invoke-interface {p2, p3}, Lo0/D;->T(I)I
+    invoke-interface {p2, p3}, Lo0/D1;->T(I)I
 
     move-result p3
 
@@ -129,7 +129,7 @@
 
     move-result-wide v2
 
-    invoke-interface {p2, v2, v3}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {p2, v2, v3}, Lo0/D1;->a(J)Lo0/N1;
 
     move-result-object p2
 
@@ -246,7 +246,7 @@
 
     invoke-direct {v5, p0, p3, v0}, Lc5/k0;-><init>(Lc5/o0;FLy9/d;)V
 
-    invoke-static {v3, v0, v1, v5, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v3, v0, v1, v5, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     :goto_7
     iget-object v3, p0, Lc5/o0;->w:Ll/c;
@@ -288,7 +288,7 @@
 
     invoke-direct {v5, p0, v2, v0}, Lc5/l0;-><init>(Lc5/o0;FLy9/d;)V
 
-    invoke-static {v3, v0, v1, v5, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v3, v0, v1, v5, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     :goto_9
     iget v0, p0, Lc5/o0;->z:F
@@ -314,11 +314,11 @@
     :cond_d
     new-instance p3, Lc5/m0;
 
-    invoke-direct {p3, p2, p0, v2}, Lc5/m0;-><init>(Lo0/N;Lc5/o0;F)V
+    invoke-direct {p3, p2, p0, v2}, Lc5/m0;-><init>(Lo0/N1;Lc5/o0;F)V
 
     sget-object p2, Lv9/u;->g:Lv9/u;
 
-    invoke-interface {p1, p4, p4, p2, p3}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p1, p4, p4, p2, p3}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
 
     move-result-object p1
 
@@ -377,7 +377,7 @@
 
     const/4 v4, 0x0
 
-    invoke-static {v0, v2, v4, v1, v3}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v0, v2, v4, v1, v3}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     return-void
 .end method

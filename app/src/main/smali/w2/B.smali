@@ -1,115 +1,153 @@
-.class public final Lw2/B;
-.super Lcom/google/android/gms/internal/play_billing/e;
+.class public abstract Lw2/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public final Z()Lb2/Z;
-    .locals 4
+# static fields
+.field public static final a:Ljava/lang/ClassLoader;
 
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/play_billing/e;->D()Landroid/os/Parcel;
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const-class v0, Lw2/b;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v0
 
-    const/16 v1, 0xb
+    sput-object v0, Lw2/b;->a:Ljava/lang/ClassLoader;
 
-    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/internal/play_billing/e;->L(Landroid/os/Parcel;I)Landroid/os/Parcel;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
-
-    move-result-object v1
-
-    sget v2, Lw2/W;->c:I
-
-    if-nez v1, :cond_0
-
-    const/4 v1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const-string v2, "com.google.android.gms.ads.internal.client.IVideoController"
-
-    invoke-interface {v1, v2}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
-
-    move-result-object v2
-
-    instance-of v3, v2, Lb2/Z;
-
-    if-eqz v3, :cond_1
-
-    move-object v1, v2
-
-    check-cast v1, Lb2/Z;
-
-    goto :goto_0
-
-    :cond_1
-    new-instance v2, Lb2/X;
-
-    invoke-direct {v2, v1}, Lb2/X;-><init>(Landroid/os/IBinder;)V
-
-    move-object v1, v2
-
-    :goto_0
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    return-object v1
+    return-void
 .end method
 
-.method public final a0()Lw2/q;
-    .locals 5
+.method public static a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    .locals 1
 
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/play_billing/e;->D()Landroid/os/Parcel;
+    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
-    move-result-object v0
+    move-result v0
 
-    const/16 v1, 0xe
+    if-nez v0, :cond_0
 
-    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/internal/play_billing/e;->L(Landroid/os/Parcel;I)Landroid/os/Parcel;
+    const/4 p0, 0x0
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
-
-    move-result-object v1
-
-    if-nez v1, :cond_0
-
-    const/4 v1, 0x0
-
-    goto :goto_0
+    return-object p0
 
     :cond_0
-    const-string v2, "com.google.android.gms.ads.internal.formats.client.IAttributionInfo"
+    invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    invoke-interface {v1, v2}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    move-result-object p0
 
-    move-result-object v3
+    check-cast p0, Landroid/os/Parcelable;
 
-    instance-of v4, v3, Lw2/q;
+    return-object p0
+.end method
 
-    if-eqz v4, :cond_1
+.method public static b(Landroid/os/Parcel;)V
+    .locals 2
 
-    move-object v1, v3
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataAvail()I
 
-    check-cast v1, Lw2/q;
+    move-result p0
 
-    goto :goto_0
+    if-gtz p0, :cond_0
 
-    :cond_1
-    new-instance v3, Lw2/q;
+    return-void
 
-    const/4 v4, 0x1
+    :cond_0
+    new-instance v0, Landroid/os/BadParcelableException;
 
-    invoke-direct {v3, v1, v2, v4}, Lcom/google/android/gms/internal/play_billing/e;-><init>(Landroid/os/IBinder;Ljava/lang/String;I)V
+    const-string v1, "Parcel data not fully consumed, unread size: "
 
-    move-object v1, v3
+    invoke-static {v1, p0}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
-    :goto_0
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+    move-result-object p0
 
-    return-object v1
+    invoke-direct {v0, p0}, Landroid/os/BadParcelableException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public static c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_0
+
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    return-void
+
+    :cond_0
+    const/4 v1, 0x1
+
+    invoke-virtual {p0, v1}, Landroid/os/Parcel;->writeInt(I)V
+
+    invoke-interface {p1, p0, v0}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static d(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    .locals 1
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    invoke-interface {p1, p0, v0}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
+
+    return-void
+.end method
+
+.method public static e(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    .locals 0
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+
+    return-void
+
+    :cond_0
+    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+
+    return-void
+.end method
+
+.method public static f(Landroid/os/Parcel;)Z
+    .locals 0
+
+    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
 .end method

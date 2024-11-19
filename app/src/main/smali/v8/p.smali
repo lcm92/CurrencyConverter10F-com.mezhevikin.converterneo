@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public static final a(Lj1/B;)V
+.method public static final a(Lj1/B1;)V
     .locals 6
 
     const-string v0, "<this>"
@@ -54,7 +54,7 @@
     sput-wide v0, Lv8/p;->b:J
 
     :try_start_0
-    invoke-virtual {p0}, Lj1/B;->l()V
+    invoke-virtual {p0}, Lj1/B1;->l()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -70,7 +70,7 @@
     return-void
 .end method
 
-.method public static final b(Lj1/B;Ljava/lang/String;)V
+.method public static final b(Lj1/B1;Ljava/lang/String;)V
     .locals 6
 
     const-string v0, "<this>"
@@ -98,7 +98,7 @@
     sput-wide v0, Lv8/p;->b:J
 
     :try_start_0
-    invoke-static {p0, p1}, Lj1/B;->k(Lj1/B;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lj1/B1;->k(Lj1/B1;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -73,7 +73,7 @@
 
     invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v0, Ls4/S;->g:Ls4/S;
+    sget-object v0, Ls4/S1;->g:Ls4/S1;
 
     new-instance v1, Lq3/a;
 

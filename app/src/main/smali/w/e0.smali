@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic h:Lw/Q;
+.field public final synthetic h:Lw/Q1;
 
 .field public final synthetic i:La5/b0;
 
@@ -27,10 +27,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lw/Q;La5/b0;Lf6/w;ZZLc5/q;Lw/q0;Lw/r;I)V
+.method public constructor <init>(Lw/Q1;La5/b0;Lf6/w;ZZLc5/q;Lw/q0;Lw/r;I)V
     .locals 0
 
-    iput-object p1, p0, Lw/e0;->h:Lw/Q;
+    iput-object p1, p0, Lw/e0;->h:Lw/Q1;
 
     iput-object p2, p0, Lw/e0;->i:La5/b0;
 
@@ -105,7 +105,7 @@
 
     if-ne v2, v3, :cond_1
 
-    new-instance v2, Lw/D;
+    new-instance v2, Lw/D1;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
@@ -114,11 +114,11 @@
     :cond_1
     move-object v13, v2
 
-    check-cast v13, Lw/D;
+    check-cast v13, Lw/D1;
 
     new-instance v2, Lw/d0;
 
-    iget-object v5, v0, Lw/e0;->h:Lw/Q;
+    iget-object v5, v0, Lw/e0;->h:Lw/Q1;
 
     iget-object v6, v0, Lw/e0;->i:La5/b0;
 
@@ -138,7 +138,7 @@
 
     move-object v4, v2
 
-    invoke-direct/range {v4 .. v15}, Lw/d0;-><init>(Lw/Q;La5/b0;Lf6/w;ZZLa5/k0;Lc5/q;Lw/q0;Lw/D;Lw/r;I)V
+    invoke-direct/range {v4 .. v15}, Lw/d0;-><init>(Lw/Q1;La5/b0;Lf6/w;ZZLa5/k0;Lc5/q;Lw/q0;Lw/D1;Lw/r;I)V
 
     invoke-virtual {v1, v2}, Lf5/p;->h(Ljava/lang/Object;)Z
 

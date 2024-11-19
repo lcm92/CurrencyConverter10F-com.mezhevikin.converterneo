@@ -6,7 +6,7 @@
 # instance fields
 .field public j:Lk0/z;
 
-.field public k:Lw/Z;
+.field public k:Lw/Z1;
 
 .field public l:Lk0/r;
 
@@ -31,7 +31,7 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p1, p1, p1, p0}, Li0/c;->q(Lk0/z;Lw/Z;Lk0/i;La4/a;)Ljava/lang/Object;
+    invoke-static {p1, p1, p1, p0}, Li0/c;->q(Lk0/z;Lw/Z1;Lk0/i;La4/a;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lq/P;
+.field public final a:Lq/P1;
 
 .field public b:Ljava/util/ArrayList;
 
@@ -12,10 +12,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lq/P;)V
+.method public constructor <init>(Lq/P1;)V
     .locals 1
 
-    iget v0, p1, Lq/P;->h:I
+    iget v0, p1, Lq/P1;->h:I
 
     invoke-direct {p0, v0}, Landroid/view/WindowInsetsAnimation$Callback;-><init>(I)V
 
@@ -25,7 +25,7 @@
 
     iput-object v0, p0, Ly6/u;->c:Ljava/util/HashMap;
 
-    iput-object p1, p0, Ly6/u;->a:Lq/P;
+    iput-object p1, p0, Ly6/u;->a:Lq/P1;
 
     return-void
 .end method
@@ -79,13 +79,13 @@
 .method public final onEnd(Landroid/view/WindowInsetsAnimation;)V
     .locals 2
 
-    iget-object v0, p0, Ly6/u;->a:Lq/P;
+    iget-object v0, p0, Ly6/u;->a:Lq/P1;
 
     invoke-virtual {p0, p1}, Ly6/u;->a(Landroid/view/WindowInsetsAnimation;)Ly6/x;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lq/P;->b(Ly6/x;)V
+    invoke-virtual {v0, v1}, Lq/P1;->b(Ly6/x;)V
 
     iget-object v0, p0, Ly6/u;->c:Ljava/util/HashMap;
 
@@ -97,15 +97,15 @@
 .method public final onPrepare(Landroid/view/WindowInsetsAnimation;)V
     .locals 1
 
-    iget-object v0, p0, Ly6/u;->a:Lq/P;
+    iget-object v0, p0, Ly6/u;->a:Lq/P1;
 
     invoke-virtual {p0, p1}, Ly6/u;->a(Landroid/view/WindowInsetsAnimation;)Ly6/x;
 
     const/4 p1, 0x1
 
-    iput-boolean p1, v0, Lq/P;->j:Z
+    iput-boolean p1, v0, Lq/P1;->j:Z
 
-    iput-boolean p1, v0, Lq/P;->k:Z
+    iput-boolean p1, v0, Lq/P1;->k:Z
 
     return-void
 .end method
@@ -173,7 +173,7 @@
     goto :goto_1
 
     :cond_1
-    iget-object p2, p0, Ly6/u;->a:Lq/P;
+    iget-object p2, p0, Ly6/u;->a:Lq/P1;
 
     const/4 v0, 0x0
 
@@ -181,7 +181,7 @@
 
     move-result-object p1
 
-    iget-object p2, p2, Lq/P;->i:Lq/i0;
+    iget-object p2, p2, Lq/P1;->i:Lq/i0;
 
     invoke-static {p2, p1}, Lq/i0;->a(Lq/i0;Ly6/L1;)V
 
@@ -202,7 +202,7 @@
 .method public final onStart(Landroid/view/WindowInsetsAnimation;Landroid/view/WindowInsetsAnimation$Bounds;)Landroid/view/WindowInsetsAnimation$Bounds;
     .locals 2
 
-    iget-object v0, p0, Ly6/u;->a:Lq/P;
+    iget-object v0, p0, Ly6/u;->a:Lq/P1;
 
     invoke-virtual {p0, p1}, Ly6/u;->a(Landroid/view/WindowInsetsAnimation;)Ly6/x;
 
@@ -224,7 +224,7 @@
 
     const/4 v1, 0x0
 
-    iput-boolean v1, v0, Lq/P;->j:Z
+    iput-boolean v1, v0, Lq/P1;->j:Z
 
     invoke-static {}, La6/k;->n()V
 

@@ -32,7 +32,7 @@
 
     check-cast p1, Lo5/b;
 
-    check-cast p2, Lj1/B;
+    check-cast p2, Lj1/B1;
 
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -44,9 +44,9 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget-object v1, p2, Lj1/B;->v:Lj1/I;
+    iget-object v1, p2, Lj1/B1;->v:Lj1/I1;
 
-    iget-object v1, v1, Lj1/I;->a:Ljava/util/LinkedHashMap;
+    iget-object v1, v1, Lj1/I1;->a:Ljava/util/LinkedHashMap;
 
     invoke-static {v1}, Lv9/y;->M0(Ljava/util/Map;)Ljava/util/Map;
 
@@ -83,7 +83,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lj1/H;
+    check-cast v2, Lj1/H1;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -116,7 +116,7 @@
     move-object v1, v2
 
     :goto_1
-    iget-object p1, p2, Lj1/B;->g:Lv9/i;
+    iget-object p1, p2, Lj1/B1;->g:Lv9/i;
 
     invoke-virtual {p1}, Lv9/i;->isEmpty()Z
 
@@ -174,7 +174,7 @@
     invoke-virtual {v1, p1, v0}, Landroid/os/Bundle;->putParcelableArray(Ljava/lang/String;[Landroid/os/Parcelable;)V
 
     :cond_4
-    iget-object p1, p2, Lj1/B;->m:Ljava/util/LinkedHashMap;
+    iget-object p1, p2, Lj1/B1;->m:Ljava/util/LinkedHashMap;
 
     invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
 
@@ -258,7 +258,7 @@
     invoke-virtual {v1, p1, v4}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
     :cond_7
-    iget-object p1, p2, Lj1/B;->n:Ljava/util/LinkedHashMap;
+    iget-object p1, p2, Lj1/B1;->n:Ljava/util/LinkedHashMap;
 
     invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
 
@@ -353,7 +353,7 @@
     :cond_a
     const-string v4, "android-support-nav:controller:backStackStates:"
 
-    invoke-static {v4, v5}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v5}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -367,7 +367,7 @@
     invoke-virtual {v1, p1, v0}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
     :cond_c
-    iget-boolean p1, p2, Lj1/B;->f:Z
+    iget-boolean p1, p2, Lj1/B1;->f:Z
 
     if-eqz p1, :cond_e
 
@@ -380,7 +380,7 @@
     :cond_d
     const-string p1, "android-support-nav:controller:deepLinkHandled"
 
-    iget-boolean p2, p2, Lj1/B;->f:Z
+    iget-boolean p2, p2, Lj1/B1;->f:Z
 
     invoke-virtual {v1, p1, p2}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
 

@@ -169,7 +169,7 @@
 
     iput v5, p0, Lio/ktor/client/engine/cio/x;->l:I
 
-    iget-object p1, v8, Lio/ktor/utils/io/M;->g:Ls4/B;
+    iget-object p1, v8, Lio/ktor/utils/io/M;->g:Ls4/B1;
 
     invoke-virtual {p1, p0}, Ls4/g0;->A(La4/c;)Ljava/lang/Object;
 
@@ -288,7 +288,7 @@
 
     iput p1, p0, Lio/ktor/client/engine/cio/x;->l:I
 
-    iget-object p1, v8, Lio/ktor/utils/io/M;->g:Ls4/B;
+    iget-object p1, v8, Lio/ktor/utils/io/M;->g:Ls4/B1;
 
     invoke-virtual {p1, p0}, Ls4/g0;->A(La4/c;)Ljava/lang/Object;
 
@@ -367,7 +367,7 @@
 
     iput v1, p0, Lio/ktor/client/engine/cio/x;->l:I
 
-    iget-object v1, v8, Lio/ktor/utils/io/M;->g:Ls4/B;
+    iget-object v1, v8, Lio/ktor/utils/io/M;->g:Ls4/B1;
 
     invoke-virtual {v1, p0}, Ls4/g0;->A(La4/c;)Ljava/lang/Object;
 

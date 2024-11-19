@@ -1,373 +1,285 @@
-.class public final Lk/U;
-.super Ljava/lang/Object;
+.class public final Lk/u;
+.super Li4/i;
 .source "SourceFile"
+
+# interfaces
+.implements Lh4/e;
 
 
 # instance fields
-.field public final a:Lk/L;
+.field public final synthetic h:I
 
-.field public final b:Lk/S;
+.field public final synthetic i:Lr5/q;
 
-.field public final c:Lk/y;
+.field public final synthetic j:Z
 
-.field public final d:Z
+.field public final synthetic k:Lu9/e;
 
-.field public final e:Ljava/util/Map;
+.field public final synthetic l:I
+
+.field public final synthetic m:Ljava/lang/Object;
+
+.field public final synthetic n:Ljava/lang/Object;
+
+.field public final synthetic o:Ljava/io/Serializable;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lk/L;Lk/S;Lk/y;La/a;ZLjava/util/LinkedHashMap;I)V
-    .locals 5
+.method public constructor <init>(Ljava/lang/String;ZLn/b;Lr5/q;Lh4/f;Lh4/a;I)V
+    .locals 1
 
-    and-int/lit8 v0, p7, 0x1
+    const/4 v0, 0x2
 
-    const/4 v1, 0x0
+    iput v0, p0, Lk/u;->h:I
 
-    if-eqz v0, :cond_0
+    .line 1
+    iput-object p1, p0, Lk/u;->o:Ljava/io/Serializable;
 
-    move-object v0, v1
+    iput-boolean p2, p0, Lk/u;->j:Z
 
-    goto :goto_0
+    iput-object p3, p0, Lk/u;->m:Ljava/lang/Object;
 
-    :cond_0
-    move-object v0, p1
+    iput-object p4, p0, Lk/u;->i:Lr5/q;
 
-    :goto_0
-    and-int/lit8 p1, p7, 0x2
+    iput-object p5, p0, Lk/u;->n:Ljava/lang/Object;
 
-    if-eqz p1, :cond_1
+    check-cast p6, Li4/i;
 
-    move-object v2, v1
+    iput-object p6, p0, Lk/u;->k:Lu9/e;
 
-    goto :goto_1
+    iput p7, p0, Lk/u;->l:I
 
-    :cond_1
-    move-object v2, p2
+    const/4 p1, 0x2
 
-    :goto_1
-    and-int/lit8 p1, p7, 0x4
-
-    if-eqz p1, :cond_2
-
-    move-object v3, v1
-
-    goto :goto_2
-
-    :cond_2
-    move-object v3, p3
-
-    :goto_2
-    and-int/lit8 p1, p7, 0x8
-
-    if-eqz p1, :cond_3
-
-    goto :goto_3
-
-    :cond_3
-    move-object v1, p4
-
-    :goto_3
-    and-int/lit8 p1, p7, 0x10
-
-    if-eqz p1, :cond_4
-
-    const/4 p5, 0x0
-
-    :cond_4
-    move v4, p5
-
-    and-int/lit8 p1, p7, 0x20
-
-    if-eqz p1, :cond_5
-
-    .line 7
-    sget-object p6, Lv9/u;->g:Lv9/u;
-
-    :cond_5
-    move-object p7, p6
-
-    move-object p1, p0
-
-    move-object p2, v0
-
-    move-object p3, v2
-
-    move-object p4, v3
-
-    move-object p5, v1
-
-    move p6, v4
-
-    .line 8
-    invoke-direct/range {p1 .. p7}, Lk/U;-><init>(Lk/L;Lk/S;Lk/y;La/a;ZLjava/util/Map;)V
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lk/L;Lk/S;Lk/y;La/a;ZLjava/util/Map;)V
-    .locals 0
+.method public constructor <init>(Ln/n;Lh4/a;La5/y;Lr5/q;ZLn5/a;I)V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
+
+    iput v0, p0, Lk/u;->h:I
 
     .line 2
-    iput-object p1, p0, Lk/U;->a:Lk/L;
+    iput-object p1, p0, Lk/u;->m:Ljava/lang/Object;
+
+    iput-object p2, p0, Lk/u;->n:Ljava/lang/Object;
+
+    iput-object p3, p0, Lk/u;->o:Ljava/io/Serializable;
+
+    iput-object p4, p0, Lk/u;->i:Lr5/q;
+
+    iput-boolean p5, p0, Lk/u;->j:Z
+
+    iput-object p6, p0, Lk/u;->k:Lu9/e;
+
+    iput p7, p0, Lk/u;->l:I
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(ZLr5/q;Lk/J1;Lk/K1;Ljava/lang/String;Ln5/a;I)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lk/u;->h:I
 
     .line 3
-    iput-object p2, p0, Lk/U;->b:Lk/S;
+    iput-boolean p1, p0, Lk/u;->j:Z
 
-    .line 4
-    iput-object p3, p0, Lk/U;->c:Lk/y;
+    iput-object p2, p0, Lk/u;->i:Lr5/q;
 
-    .line 5
-    iput-boolean p5, p0, Lk/U;->d:Z
+    iput-object p3, p0, Lk/u;->m:Ljava/lang/Object;
 
-    .line 6
-    iput-object p6, p0, Lk/U;->e:Ljava/util/Map;
+    iput-object p4, p0, Lk/u;->n:Ljava/lang/Object;
+
+    iput-object p5, p0, Lk/u;->o:Ljava/io/Serializable;
+
+    iput-object p6, p0, Lk/u;->k:Lu9/e;
+
+    iput p7, p0, Lk/u;->l:I
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
 
-    const/4 v0, 0x1
+    iget v0, p0, Lk/u;->h:I
 
-    if-ne p0, p1, :cond_0
+    packed-switch v0, :pswitch_data_0
 
-    return v0
+    move-object v7, p1
 
-    :cond_0
-    instance-of v1, p1, Lk/U;
+    check-cast v7, Lf5/p;
 
-    const/4 v2, 0x0
+    check-cast p2, Ljava/lang/Number;
 
-    if-nez v1, :cond_1
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    return v2
+    iget p1, p0, Lk/u;->l:I
 
-    :cond_1
-    check-cast p1, Lk/U;
+    or-int/lit8 p1, p1, 0x1
 
-    iget-object v1, p1, Lk/U;->a:Lk/L;
+    invoke-static {p1}, Lf5/d;->T(I)I
 
-    iget-object v3, p0, Lk/U;->a:Lk/L;
+    move-result v8
 
-    invoke-static {v3, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object p1, p0, Lk/u;->k:Lu9/e;
 
-    move-result v1
+    move-object v6, p1
 
-    if-nez v1, :cond_2
+    check-cast v6, Li4/i;
 
-    return v2
+    iget-object p1, p0, Lk/u;->m:Ljava/lang/Object;
 
-    :cond_2
-    iget-object v1, p0, Lk/U;->b:Lk/S;
+    move-object v3, p1
 
-    iget-object v3, p1, Lk/U;->b:Lk/S;
+    check-cast v3, Ln/b;
 
-    invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v4, p0, Lk/u;->i:Lr5/q;
 
-    move-result v1
+    iget-object p1, p0, Lk/u;->o:Ljava/io/Serializable;
 
-    if-nez v1, :cond_3
+    move-object v1, p1
 
-    return v2
+    check-cast v1, Ljava/lang/String;
 
-    :cond_3
-    iget-object v1, p0, Lk/U;->c:Lk/y;
+    iget-boolean v2, p0, Lk/u;->j:Z
 
-    iget-object v3, p1, Lk/U;->c:Lk/y;
+    iget-object p1, p0, Lk/u;->n:Ljava/lang/Object;
 
-    invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    move-object v5, p1
 
-    move-result v1
+    check-cast v5, Lh4/f;
 
-    if-nez v1, :cond_4
+    invoke-static/range {v1 .. v8}, Ln/q;->b(Ljava/lang/String;ZLn/b;Lr5/q;Lh4/f;Lh4/a;Lf5/p;I)V
 
-    return v2
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
-    :cond_4
-    const/4 v1, 0x0
+    return-object p1
 
-    const/4 v3, 0x0
+    :pswitch_0
+    move-object v6, p1
 
-    invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    check-cast v6, Lf5/p;
 
-    move-result v1
+    check-cast p2, Ljava/lang/Number;
 
-    if-nez v1, :cond_5
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    return v2
+    iget p1, p0, Lk/u;->l:I
 
-    :cond_5
-    iget-boolean v1, p0, Lk/U;->d:Z
+    or-int/lit8 p1, p1, 0x1
 
-    iget-boolean v3, p1, Lk/U;->d:Z
+    invoke-static {p1}, Lf5/d;->T(I)I
 
-    if-eq v1, v3, :cond_6
+    move-result v7
 
-    return v2
+    iget-object p1, p0, Lk/u;->k:Lu9/e;
 
-    :cond_6
-    iget-object v1, p0, Lk/U;->e:Ljava/util/Map;
+    move-object v5, p1
 
-    iget-object p1, p1, Lk/U;->e:Ljava/util/Map;
+    check-cast v5, Ln5/a;
 
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object p1, p0, Lk/u;->o:Ljava/io/Serializable;
 
-    move-result p1
+    move-object v2, p1
 
-    if-nez p1, :cond_7
+    check-cast v2, La5/y;
 
-    return v2
+    iget-object v3, p0, Lk/u;->i:Lr5/q;
 
-    :cond_7
-    return v0
-.end method
+    iget-object p1, p0, Lk/u;->m:Ljava/lang/Object;
 
-.method public final hashCode()I
-    .locals 4
+    move-object v0, p1
 
-    const/4 v0, 0x0
+    check-cast v0, Ln/n;
 
-    iget-object v1, p0, Lk/U;->a:Lk/L;
+    iget-object p1, p0, Lk/u;->n:Ljava/lang/Object;
 
-    if-nez v1, :cond_0
+    move-object v1, p1
 
-    move v1, v0
+    check-cast v1, Lh4/a;
 
-    goto :goto_0
+    iget-boolean v4, p0, Lk/u;->j:Z
 
-    :cond_0
-    invoke-virtual {v1}, Lk/L;->hashCode()I
+    invoke-static/range {v0 .. v7}, Lh8/b;->d(Ln/n;Lh4/a;La5/y;Lr5/q;ZLn5/a;Lf5/p;I)V
 
-    move-result v1
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
-    :goto_0
-    const/16 v2, 0x1f
+    return-object p1
 
-    mul-int/2addr v1, v2
+    :pswitch_1
+    move-object v6, p1
 
-    iget-object v3, p0, Lk/U;->b:Lk/S;
+    check-cast v6, Lf5/p;
 
-    if-nez v3, :cond_1
+    check-cast p2, Ljava/lang/Number;
 
-    move v3, v0
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    goto :goto_1
+    iget p1, p0, Lk/u;->l:I
 
-    :cond_1
-    invoke-virtual {v3}, Lk/S;->hashCode()I
+    or-int/lit8 p1, p1, 0x1
 
-    move-result v3
+    invoke-static {p1}, Lf5/d;->T(I)I
 
-    :goto_1
-    add-int/2addr v1, v3
+    move-result v7
 
-    mul-int/2addr v1, v2
+    iget-object p1, p0, Lk/u;->k:Lu9/e;
 
-    iget-object v3, p0, Lk/U;->c:Lk/y;
+    move-object v5, p1
 
-    if-nez v3, :cond_2
+    check-cast v5, Ln5/a;
 
-    move v3, v0
+    iget-object p1, p0, Lk/u;->m:Ljava/lang/Object;
 
-    goto :goto_2
+    move-object v2, p1
 
-    :cond_2
-    invoke-virtual {v3}, Lk/y;->hashCode()I
+    check-cast v2, Lk/J1;
 
-    move-result v3
+    iget-object p1, p0, Lk/u;->n:Ljava/lang/Object;
 
-    :goto_2
-    add-int/2addr v1, v3
+    move-object v3, p1
 
-    mul-int/2addr v1, v2
+    check-cast v3, Lk/K1;
 
-    add-int/2addr v1, v0
+    iget-boolean v0, p0, Lk/u;->j:Z
 
-    mul-int/2addr v1, v2
+    iget-object v1, p0, Lk/u;->i:Lr5/q;
 
-    iget-boolean v0, p0, Lk/U;->d:Z
+    iget-object p1, p0, Lk/u;->o:Ljava/io/Serializable;
 
-    invoke-static {v1, v2, v0}, Lk/P;->c(IIZ)I
+    move-object v4, p1
 
-    move-result v0
+    check-cast v4, Ljava/lang/String;
 
-    iget-object v1, p0, Lk/U;->e:Ljava/util/Map;
+    invoke-static/range {v0 .. v7}, Landroidx/compose/animation/a;->b(ZLr5/q;Lk/J1;Lk/K1;Ljava/lang/String;Ln5/a;Lf5/p;I)V
 
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
-    move-result v1
+    return-object p1
 
-    add-int/2addr v1, v0
+    nop
 
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "TransitionData(fade="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget-object v1, p0, Lk/U;->a:Lk/L;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", slide="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lk/U;->b:Lk/S;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", changeSize="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lk/U;->c:Lk/y;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", scale="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", hold="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lk/U;->d:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v1, ", effectsMap="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lk/U;->e:Ljava/util/Map;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

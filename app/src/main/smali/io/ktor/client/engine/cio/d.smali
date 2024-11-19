@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic h:Ls3/I;
+.field public final synthetic h:Ls3/I1;
 
 .field public final synthetic i:Ljava/lang/String;
 
@@ -19,10 +19,10 @@
 
 
 # direct methods
-.method public constructor <init>(Ls3/I;Ljava/lang/String;ILio/ktor/client/engine/cio/e;Ljava/lang/String;)V
+.method public constructor <init>(Ls3/I1;Ljava/lang/String;ILio/ktor/client/engine/cio/e;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lio/ktor/client/engine/cio/d;->h:Ls3/I;
+    iput-object p1, p0, Lio/ktor/client/engine/cio/d;->h:Ls3/I1;
 
     iput-object p2, p0, Lio/ktor/client/engine/cio/d;->i:Ljava/lang/String;
 
@@ -44,9 +44,9 @@
 .method public final b()Ljava/lang/Object;
     .locals 9
 
-    iget-object v0, p0, Lio/ktor/client/engine/cio/d;->h:Ls3/I;
+    iget-object v0, p0, Lio/ktor/client/engine/cio/d;->h:Ls3/I1;
 
-    invoke-static {v0}, Lp0/d;->g(Ls3/I;)Z
+    invoke-static {v0}, Lp0/d;->g(Ls3/I1;)Z
 
     move-result v4
 

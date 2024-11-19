@@ -295,7 +295,7 @@
     return-object p1
 
     :pswitch_6
-    check-cast p1, Lq/V;
+    check-cast p1, Lq/V1;
 
     check-cast p2, Lf5/p;
 
@@ -353,7 +353,7 @@
     :goto_2
     sget-object p3, Lr5/n;->a:Lr5/n;
 
-    invoke-static {p3, p1}, Landroidx/compose/foundation/layout/b;->a(Lr5/q;Lq/V;)Lr5/q;
+    invoke-static {p3, p1}, Landroidx/compose/foundation/layout/b;->a(Lr5/q;Lq/V1;)Lr5/q;
 
     move-result-object p1
 
@@ -361,7 +361,7 @@
 
     const/4 v0, 0x0
 
-    invoke-static {p3, v0}, Lq/n;->e(Lr5/d;Z)Lo0/E;
+    invoke-static {p3, v0}, Lq/n;->e(Lr5/d;Z)Lo0/E1;
 
     move-result-object p3
 

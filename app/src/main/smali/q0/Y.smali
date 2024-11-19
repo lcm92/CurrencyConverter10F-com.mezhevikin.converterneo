@@ -1,182 +1,341 @@
-.class public final Lq0/Y;
-.super Li4/i;
+.class public final Lq0/y;
+.super Lq0/Z1;
 .source "SourceFile"
 
-# interfaces
-.implements Lh4/a;
+
+# static fields
+.field public static final R:Lj7/t;
 
 
 # instance fields
-.field public final synthetic h:I
+.field public P:Lq0/w;
 
-.field public final synthetic i:Lq0/Z;
-
-.field public final synthetic j:Lr5/p;
-
-.field public final synthetic k:Lq0/d;
-
-.field public final synthetic l:J
-
-.field public final synthetic m:Lq0/r;
-
-.field public final synthetic n:Z
-
-.field public final synthetic o:Z
-
-.field public final synthetic p:F
+.field public Q:Lq0/x;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lq0/Z;Lr5/p;Lq0/d;JLq0/r;ZZFI)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
-    iput p10, p0, Lq0/Y;->h:I
+    invoke-static {}, Ly5/H1;->g()Lj7/t;
 
-    iput-object p1, p0, Lq0/Y;->i:Lq0/Z;
+    move-result-object v0
 
-    iput-object p2, p0, Lq0/Y;->j:Lr5/p;
+    sget v1, Ly5/s;->j:I
 
-    iput-object p3, p0, Lq0/Y;->k:Lq0/d;
+    sget-wide v1, Ly5/s;->f:J
 
-    iput-wide p4, p0, Lq0/Y;->l:J
+    invoke-virtual {v0, v1, v2}, Lj7/t;->e(J)V
 
-    iput-object p6, p0, Lq0/Y;->m:Lq0/r;
+    const/high16 v1, 0x3f800000    # 1.0f
 
-    iput-boolean p7, p0, Lq0/Y;->n:Z
+    invoke-virtual {v0, v1}, Lj7/t;->k(F)V
 
-    iput-boolean p8, p0, Lq0/Y;->o:Z
+    const/4 v1, 0x1
 
-    iput p9, p0, Lq0/Y;->p:F
+    invoke-virtual {v0, v1}, Lj7/t;->l(I)V
 
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    sput-object v0, Lq0/y;->R:Lj7/t;
 
     return-void
 .end method
 
+.method public constructor <init>(Lq0/D1;Lq0/w;)V
+    .locals 1
+
+    invoke-direct {p0, p1}, Lq0/Z1;-><init>(Lq0/D1;)V
+
+    iput-object p2, p0, Lq0/y;->P:Lq0/w;
+
+    iget-object p1, p1, Lq0/D1;->i:Lq0/D1;
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_0
+
+    new-instance v0, Lq0/x;
+
+    invoke-direct {v0, p0}, Lq0/x;-><init>(Lq0/y;)V
+
+    :cond_0
+    iput-object v0, p0, Lq0/y;->Q:Lq0/x;
+
+    check-cast p2, Lr5/p;
+
+    iget-object p1, p2, Lr5/p;->g:Lr5/p;
+
+    iget p1, p1, Lr5/p;->i:I
+
+    and-int/lit16 p1, p1, 0x200
+
+    if-nez p1, :cond_1
+
+    return-void
+
+    :cond_1
+    new-instance p1, Ljava/lang/ClassCastException;
+
+    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+
+    throw p1
+.end method
+
 
 # virtual methods
-.method public final b()Ljava/lang/Object;
-    .locals 17
+.method public final G0()V
+    .locals 1
 
-    move-object/from16 v0, p0
+    iget-object v0, p0, Lq0/y;->Q:Lq0/x;
 
-    iget v1, v0, Lq0/Y;->h:I
+    if-nez v0, :cond_0
 
-    packed-switch v1, :pswitch_data_0
+    new-instance v0, Lq0/x;
 
-    iget-object v1, v0, Lq0/Y;->k:Lq0/d;
+    invoke-direct {v0, p0}, Lq0/x;-><init>(Lq0/y;)V
 
-    invoke-virtual {v1}, Lq0/d;->a()I
+    iput-object v0, p0, Lq0/y;->Q:Lq0/x;
 
-    move-result v1
+    :cond_0
+    return-void
+.end method
 
-    iget-object v2, v0, Lq0/Y;->j:Lr5/p;
+.method public final J0()Lq0/O1;
+    .locals 1
 
-    invoke-static {v2, v1}, Lq0/f;->e(Lq0/m;I)Lr5/p;
+    iget-object v0, p0, Lq0/y;->Q:Lq0/x;
 
-    move-result-object v4
+    return-object v0
+.end method
 
-    iget-object v8, v0, Lq0/Y;->m:Lq0/r;
+.method public final L0()Lr5/p;
+    .locals 1
 
-    iget-boolean v9, v0, Lq0/Y;->n:Z
+    iget-object v0, p0, Lq0/y;->P:Lq0/w;
 
-    iget-object v3, v0, Lq0/Y;->i:Lq0/Z;
+    check-cast v0, Lr5/p;
 
-    iget-object v5, v0, Lq0/Y;->k:Lq0/d;
+    iget-object v0, v0, Lr5/p;->g:Lr5/p;
 
-    iget-wide v6, v0, Lq0/Y;->l:J
+    return-object v0
+.end method
 
-    iget-boolean v10, v0, Lq0/Y;->o:Z
+.method public final Q(I)I
+    .locals 2
 
-    iget v11, v0, Lq0/Y;->p:F
+    iget-object v0, p0, Lq0/y;->P:Lq0/w;
 
-    invoke-virtual/range {v3 .. v11}, Lq0/Z;->b1(Lr5/p;Lq0/d;JLq0/r;ZZF)V
+    iget-object v1, p0, Lq0/Z1;->s:Lq0/Z1;
 
-    sget-object v1, Lu9/y;->a:Lu9/y;
+    invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    return-object v1
+    invoke-interface {v0, p0, v1, p1}, Lq0/w;->f(Lq0/N1;Lo0/D1;I)I
 
-    :pswitch_0
-    iget-object v1, v0, Lq0/Y;->k:Lq0/d;
+    move-result p1
 
-    invoke-virtual {v1}, Lq0/d;->a()I
+    return p1
+.end method
 
-    move-result v1
+.method public final T(I)I
+    .locals 2
 
-    iget-object v2, v0, Lq0/Y;->j:Lr5/p;
+    iget-object v0, p0, Lq0/y;->P:Lq0/w;
 
-    invoke-static {v2, v1}, Lq0/f;->e(Lq0/m;I)Lr5/p;
+    iget-object v1, p0, Lq0/Z1;->s:Lq0/Z1;
 
-    move-result-object v1
+    invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    iget-boolean v14, v0, Lq0/Y;->o:Z
+    invoke-interface {v0, p0, v1, p1}, Lq0/w;->c(Lq0/N1;Lo0/D1;I)I
 
-    iget-object v2, v0, Lq0/Y;->i:Lq0/Z;
+    move-result p1
 
-    iget-object v6, v0, Lq0/Y;->k:Lq0/d;
+    return p1
+.end method
 
-    iget-wide v7, v0, Lq0/Y;->l:J
+.method public final U(I)I
+    .locals 2
 
-    iget-object v15, v0, Lq0/Y;->m:Lq0/r;
+    iget-object v0, p0, Lq0/y;->P:Lq0/w;
 
-    iget-boolean v10, v0, Lq0/Y;->n:Z
+    iget-object v1, p0, Lq0/Z1;->s:Lq0/Z1;
 
-    if-nez v1, :cond_0
+    invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    move-object v3, v6
+    invoke-interface {v0, p0, v1, p1}, Lq0/w;->a(Lq0/N1;Lo0/D1;I)I
 
-    move-wide v4, v7
+    move-result p1
 
-    move-object v6, v15
+    return p1
+.end method
 
-    move v7, v10
+.method public final X0(Ly5/p;Lb0/b;)V
+    .locals 1
 
-    move v8, v14
+    iget-object v0, p0, Lq0/Z1;->s:Lq0/Z1;
 
-    invoke-virtual/range {v2 .. v8}, Lq0/Z;->Q0(Lq0/d;JLq0/r;ZZ)V
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-virtual {v0, p1, p2}, Lq0/Z1;->D0(Ly5/p;Lb0/b;)V
+
+    iget-object p2, p0, Lq0/Z1;->r:Lq0/D1;
+
+    invoke-static {p2}, Lq0/G1;->a(Lq0/D1;)Lq0/f0;
+
+    move-result-object p2
+
+    check-cast p2, Lr0/u;
+
+    invoke-virtual {p2}, Lr0/u;->getShowLayoutBounds()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    sget-object p2, Lq0/y;->R:Lj7/t;
+
+    invoke-virtual {p0, p1, p2}, Lq0/Z1;->E0(Ly5/p;Lj7/t;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final a(J)Lo0/N1;
+    .locals 2
+
+    invoke-virtual {p0, p1, p2}, Lo0/N1;->m0(J)V
+
+    iget-object v0, p0, Lq0/y;->P:Lq0/w;
+
+    iget-object v1, p0, Lq0/Z1;->s:Lq0/Z1;
+
+    invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-interface {v0, p0, v1, p1, p2}, Lq0/w;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq0/Z1;->a1(Lo0/F1;)V
+
+    invoke-virtual {p0}, Lq0/Z1;->V0()V
+
+    return-object p0
+.end method
+
+.method public final c(I)I
+    .locals 2
+
+    iget-object v0, p0, Lq0/y;->P:Lq0/w;
+
+    iget-object v1, p0, Lq0/Z1;->s:Lq0/Z1;
+
+    invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-interface {v0, p0, v1, p1}, Lq0/w;->d(Lq0/N1;Lo0/D1;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final d0(JFLh4/c;)V
+    .locals 0
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lq0/Z1;->Y0(JFLh4/c;)V
+
+    iget-boolean p1, p0, Lq0/N1;->m:Z
+
+    if-eqz p1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Lq0/Z1;->W0()V
 
-    new-instance v13, Lq0/Y;
+    invoke-virtual {p0}, Lq0/Z1;->u0()Lo0/F1;
 
-    iget v12, v0, Lq0/Y;->p:F
+    move-result-object p1
 
-    const/16 v16, 0x0
+    invoke-interface {p1}, Lo0/F1;->j()V
 
-    move-object v3, v13
+    iget-object p1, p0, Lq0/Z1;->s:Lq0/Z1;
 
-    move-object v4, v2
-
-    move-object v5, v1
-
-    move-object v9, v15
-
-    move v11, v14
-
-    move v2, v12
-
-    move-object v0, v13
-
-    move/from16 v13, v16
-
-    invoke-direct/range {v3 .. v13}, Lq0/Y;-><init>(Lq0/Z;Lr5/p;Lq0/d;JLq0/r;ZZFI)V
-
-    invoke-virtual {v15, v1, v2, v14, v0}, Lq0/r;->d(Lr5/p;FZLh4/a;)V
+    invoke-static {p1}, Li4/h;->c(Ljava/lang/Object;)V
 
     :goto_0
-    sget-object v0, Lu9/y;->a:Lu9/y;
+    return-void
+.end method
 
-    return-object v0
+.method public final i1(Lq0/w;)V
+    .locals 1
 
-    nop
+    iget-object v0, p0, Lq0/y;->P:Lq0/w;
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    move-object v0, p1
+
+    check-cast v0, Lr5/p;
+
+    iget-object v0, v0, Lr5/p;->g:Lr5/p;
+
+    iget v0, v0, Lr5/p;->i:I
+
+    and-int/lit16 v0, v0, 0x200
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/lang/ClassCastException;
+
+    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+
+    throw p1
+
+    :cond_1
+    :goto_0
+    iput-object p1, p0, Lq0/y;->P:Lq0/w;
+
+    return-void
+.end method
+
+.method public final n0(Lo0/l;)I
+    .locals 1
+
+    iget-object v0, p0, Lq0/y;->Q:Lq0/x;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, v0, Lq0/O1;->w:Ljava/util/LinkedHashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_0
+    const/high16 p1, -0x80000000
+
+    goto :goto_0
+
+    :cond_1
+    invoke-static {p0, p1}, Lq0/f;->c(Lq0/N1;Lo0/l;)I
+
+    move-result p1
+
+    :goto_0
+    return p1
 .end method

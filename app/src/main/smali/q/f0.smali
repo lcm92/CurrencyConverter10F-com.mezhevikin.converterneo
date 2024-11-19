@@ -13,10 +13,10 @@
 
 
 # virtual methods
-.method public final a(Lq0/N;Lo0/D;I)I
+.method public final a(Lq0/N1;Lo0/D1;I)I
     .locals 1
 
-    invoke-interface {p2, p3}, Lo0/D;->U(I)I
+    invoke-interface {p2, p3}, Lo0/D1;->U(I)I
 
     move-result p2
 
@@ -50,10 +50,10 @@
     return p2
 .end method
 
-.method public final c(Lq0/N;Lo0/D;I)I
+.method public final c(Lq0/N1;Lo0/D1;I)I
     .locals 1
 
-    invoke-interface {p2, p3}, Lo0/D;->T(I)I
+    invoke-interface {p2, p3}, Lo0/D1;->T(I)I
 
     move-result p2
 
@@ -87,10 +87,10 @@
     return p2
 .end method
 
-.method public final d(Lq0/N;Lo0/D;I)I
+.method public final d(Lq0/N1;Lo0/D1;I)I
     .locals 1
 
-    invoke-interface {p2, p3}, Lo0/D;->c(I)I
+    invoke-interface {p2, p3}, Lo0/D1;->c(I)I
 
     move-result p2
 
@@ -124,10 +124,10 @@
     return p2
 .end method
 
-.method public final f(Lq0/N;Lo0/D;I)I
+.method public final f(Lq0/N1;Lo0/D1;I)I
     .locals 1
 
-    invoke-interface {p2, p3}, Lo0/D;->Q(I)I
+    invoke-interface {p2, p3}, Lo0/D1;->Q(I)I
 
     move-result p2
 
@@ -161,7 +161,7 @@
     return p2
 .end method
 
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
+.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
     .locals 5
 
     iget v0, p0, Lq/f0;->t:F
@@ -266,23 +266,23 @@
 
     move-result-wide p3
 
-    invoke-interface {p2, p3, p4}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {p2, p3, p4}, Lo0/D1;->a(J)Lo0/N1;
 
     move-result-object p2
 
-    iget p3, p2, Lo0/N;->g:I
+    iget p3, p2, Lo0/N1;->g:I
 
-    iget p4, p2, Lo0/N;->h:I
+    iget p4, p2, Lo0/N1;->h:I
 
     new-instance v0, Lo6/o;
 
     const/16 v1, 0x9
 
-    invoke-direct {v0, p2, v1}, Lo6/o;-><init>(Lo0/N;I)V
+    invoke-direct {v0, p2, v1}, Lo6/o;-><init>(Lo0/N1;I)V
 
     sget-object p2, Lv9/u;->g:Lv9/u;
 
-    invoke-interface {p1, p3, p4, p2, v0}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p1, p3, p4, p2, v0}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
 
     move-result-object p1
 

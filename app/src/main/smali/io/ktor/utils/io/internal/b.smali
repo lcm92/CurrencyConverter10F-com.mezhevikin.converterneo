@@ -59,7 +59,7 @@
     return-void
 .end method
 
-.method public static final a(Lio/ktor/utils/io/internal/b;Ls4/X;Ljava/lang/Throwable;)V
+.method public static final a(Lio/ktor/utils/io/internal/b;Ls4/X1;Ljava/lang/Throwable;)V
     .locals 4
 
     :goto_0
@@ -189,7 +189,7 @@
 
     move-object v0, p1
 
-    check-cast v0, Ls4/X;
+    check-cast v0, Ls4/X1;
 
     iget-object p1, p0, Lio/ktor/utils/io/internal/b;->jobCancellationHandler:Ljava/lang/Object;
 
@@ -197,7 +197,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p1, Lio/ktor/utils/io/internal/a;->g:Ls4/X;
+    iget-object p1, p1, Lio/ktor/utils/io/internal/a;->g:Ls4/X1;
 
     goto :goto_1
 
@@ -229,7 +229,7 @@
     :cond_3
     new-instance v3, Lio/ktor/utils/io/internal/a;
 
-    invoke-direct {v3, p0, v0}, Lio/ktor/utils/io/internal/a;-><init>(Lio/ktor/utils/io/internal/b;Ls4/X;)V
+    invoke-direct {v3, p0, v0}, Lio/ktor/utils/io/internal/a;-><init>(Lio/ktor/utils/io/internal/b;Ls4/X1;)V
 
     :goto_2
     iget-object v4, p0, Lio/ktor/utils/io/internal/b;->jobCancellationHandler:Ljava/lang/Object;
@@ -243,7 +243,7 @@
     goto :goto_3
 
     :cond_4
-    iget-object p1, v5, Lio/ktor/utils/io/internal/a;->g:Ls4/X;
+    iget-object p1, v5, Lio/ktor/utils/io/internal/a;->g:Ls4/X1;
 
     if-ne p1, v0, :cond_5
 

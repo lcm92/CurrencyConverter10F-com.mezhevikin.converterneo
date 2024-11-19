@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls3/E;
+.implements Ls3/E1;
 
 
 # static fields
@@ -48,11 +48,11 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
-    instance-of v0, p1, Ls3/E;
+    instance-of v0, p1, Ls3/E1;
 
     if-eqz v0, :cond_0
 
-    check-cast p1, Ls3/E;
+    check-cast p1, Ls3/E1;
 
     invoke-interface {p1}, Lh9/p;->isEmpty()Z
 

@@ -109,7 +109,7 @@
 
     check-cast v1, Ln5/a;
 
-    invoke-static {v0, v1, p1, p2}, Lw/N;->b(La5/b0;Ln5/a;Lf5/p;I)V
+    invoke-static {v0, v1, p1, p2}, Lw/N1;->b(La5/b0;Ln5/a;Lf5/p;I)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 
@@ -448,9 +448,9 @@
 
     iget-object v1, p0, Lc5/h0;->k:Ljava/lang/Object;
 
-    check-cast v1, Lz0/F;
+    check-cast v1, Lz0/F1;
 
-    invoke-static {v1, v0, p1, p2}, Lc5/j0;->a(Lz0/F;Ln5/a;Lf5/p;I)V
+    invoke-static {v1, v0, p1, p2}, Lc5/j0;->a(Lz0/F1;Ln5/a;Lf5/p;I)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

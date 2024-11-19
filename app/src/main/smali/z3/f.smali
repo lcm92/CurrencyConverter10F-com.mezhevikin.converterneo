@@ -763,7 +763,7 @@
     :cond_11
     if-eqz v13, :cond_12
 
-    iget-object v0, v13, Lio/ktor/network/util/c;->d:Ls4/B;
+    iget-object v0, v13, Lio/ktor/network/util/c;->d:Ls4/B1;
 
     if-eqz v0, :cond_12
 

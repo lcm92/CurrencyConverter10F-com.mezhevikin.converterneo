@@ -13,7 +13,7 @@
 
 .field public w:Z
 
-.field public final x:Lk0/B;
+.field public final x:Lk0/B1;
 
 
 # direct methods
@@ -32,13 +32,13 @@
 
     sget-object v1, Lk0/v;->a:Lk0/i;
 
-    new-instance v1, Lk0/B;
+    new-instance v1, Lk0/B1;
 
-    invoke-direct {v1, v0, v0, v0, p1}, Lk0/B;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lh4/e;)V
+    invoke-direct {v1, v0, v0, v0, p1}, Lk0/B1;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lh4/e;)V
 
     invoke-virtual {p0, v1}, Lq0/n;->y0(Lq0/m;)V
 
-    iput-object v1, p0, Lx/c;->x:Lk0/B;
+    iput-object v1, p0, Lx/c;->x:Lk0/B1;
 
     return-void
 .end method
@@ -48,9 +48,9 @@
 .method public final Q()V
     .locals 1
 
-    iget-object v0, p0, Lx/c;->x:Lk0/B;
+    iget-object v0, p0, Lx/c;->x:Lk0/B1;
 
-    invoke-virtual {v0}, Lk0/B;->Q()V
+    invoke-virtual {v0}, Lk0/B1;->Q()V
 
     return-void
 .end method
@@ -58,14 +58,14 @@
 .method public final X(Lk0/i;Lk0/j;J)V
     .locals 1
 
-    iget-object v0, p0, Lx/c;->x:Lk0/B;
+    iget-object v0, p0, Lx/c;->x:Lk0/B1;
 
-    invoke-virtual {v0, p1, p2, p3, p4}, Lk0/B;->X(Lk0/i;Lk0/j;J)V
+    invoke-virtual {v0, p1, p2, p3, p4}, Lk0/B1;->X(Lk0/i;Lk0/j;J)V
 
     return-void
 .end method
 
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
+.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
     .locals 4
 
     sget v0, Landroidx/compose/foundation/text/handwriting/a;->a:F
@@ -88,15 +88,15 @@
 
     move-result-wide p3
 
-    invoke-interface {p2, p3, p4}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {p2, p3, p4}, Lo0/D1;->a(J)Lo0/N1;
 
     move-result-object p2
 
-    iget p3, p2, Lo0/N;->h:I
+    iget p3, p2, Lo0/N1;->h:I
 
     sub-int/2addr p3, v3
 
-    iget p4, p2, Lo0/N;->g:I
+    iget p4, p2, Lo0/N1;->g:I
 
     sub-int/2addr p4, v2
 
@@ -108,7 +108,7 @@
 
     sget-object p2, Lv9/u;->g:Lv9/u;
 
-    invoke-interface {p1, p4, p3, p2, v2}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p1, p4, p3, p2, v2}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
 
     move-result-object p1
 

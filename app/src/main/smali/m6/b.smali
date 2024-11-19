@@ -6,7 +6,7 @@
 # static fields
 .field public static final a:[F
 
-.field public static volatile b:Li/J;
+.field public static volatile b:Li/J1;
 
 .field public static final c:[Ljava/lang/Object;
 
@@ -25,11 +25,11 @@
 
     sput-object v2, Lm6/b;->a:[F
 
-    new-instance v2, Li/J;
+    new-instance v2, Li/J1;
 
-    invoke-direct {v2}, Li/J;-><init>()V
+    invoke-direct {v2}, Li/J1;-><init>()V
 
-    sput-object v2, Lm6/b;->b:Li/J;
+    sput-object v2, Lm6/b;->b:Li/J1;
 
     const/4 v2, 0x0
 
@@ -40,7 +40,7 @@
     monitor-enter v3
 
     :try_start_0
-    sget-object v4, Lm6/b;->b:Li/J;
+    sget-object v4, Lm6/b;->b:Li/J1;
 
     new-instance v5, Lm6/c;
 
@@ -58,9 +58,9 @@
 
     float-to-int v6, v6
 
-    invoke-virtual {v4, v6, v5}, Li/J;->d(ILjava/lang/Object;)V
+    invoke-virtual {v4, v6, v5}, Li/J1;->d(ILjava/lang/Object;)V
 
-    sget-object v4, Lm6/b;->b:Li/J;
+    sget-object v4, Lm6/b;->b:Li/J1;
 
     new-instance v5, Lm6/c;
 
@@ -78,9 +78,9 @@
 
     float-to-int v6, v6
 
-    invoke-virtual {v4, v6, v5}, Li/J;->d(ILjava/lang/Object;)V
+    invoke-virtual {v4, v6, v5}, Li/J1;->d(ILjava/lang/Object;)V
 
-    sget-object v4, Lm6/b;->b:Li/J;
+    sget-object v4, Lm6/b;->b:Li/J1;
 
     new-instance v5, Lm6/c;
 
@@ -98,9 +98,9 @@
 
     float-to-int v6, v6
 
-    invoke-virtual {v4, v6, v5}, Li/J;->d(ILjava/lang/Object;)V
+    invoke-virtual {v4, v6, v5}, Li/J1;->d(ILjava/lang/Object;)V
 
-    sget-object v4, Lm6/b;->b:Li/J;
+    sget-object v4, Lm6/b;->b:Li/J1;
 
     new-instance v5, Lm6/c;
 
@@ -118,9 +118,9 @@
 
     float-to-int v6, v6
 
-    invoke-virtual {v4, v6, v5}, Li/J;->d(ILjava/lang/Object;)V
+    invoke-virtual {v4, v6, v5}, Li/J1;->d(ILjava/lang/Object;)V
 
-    sget-object v4, Lm6/b;->b:Li/J;
+    sget-object v4, Lm6/b;->b:Li/J1;
 
     new-instance v5, Lm6/c;
 
@@ -138,15 +138,15 @@
 
     float-to-int v0, v0
 
-    invoke-virtual {v4, v0, v5}, Li/J;->d(ILjava/lang/Object;)V
+    invoke-virtual {v4, v0, v5}, Li/J1;->d(ILjava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit v3
 
-    sget-object v0, Lm6/b;->b:Li/J;
+    sget-object v0, Lm6/b;->b:Li/J1;
 
-    invoke-virtual {v0, v2}, Li/J;->c(I)I
+    invoke-virtual {v0, v2}, Li/J1;->c(I)I
 
     move-result v0
 
@@ -341,7 +341,7 @@
 
     if-ltz v2, :cond_7
 
-    sget-object v2, Lm6/b;->b:Li/J;
+    sget-object v2, Lm6/b;->b:Li/J1;
 
     const/high16 v3, 0x42c80000    # 100.0f
 
@@ -349,7 +349,7 @@
 
     float-to-int v4, v4
 
-    invoke-virtual {v2, v4}, Li/J;->b(I)Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Li/J1;->b(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -360,18 +360,18 @@
     return-object v2
 
     :cond_0
-    sget-object v2, Lm6/b;->b:Li/J;
+    sget-object v2, Lm6/b;->b:Li/J1;
 
-    iget-boolean v5, v2, Li/J;->g:Z
+    iget-boolean v5, v2, Li/J1;->g:Z
 
     if-eqz v5, :cond_1
 
-    invoke-static {v2}, Li/o;->a(Li/J;)V
+    invoke-static {v2}, Li/o;->a(Li/J1;)V
 
     :cond_1
-    iget-object v5, v2, Li/J;->h:[I
+    iget-object v5, v2, Li/J1;->h:[I
 
-    iget v2, v2, Li/J;->j:I
+    iget v2, v2, Li/J1;->j:I
 
     invoke-static {v5, v2, v4}, Lj/a;->a([III)I
 
@@ -379,9 +379,9 @@
 
     if-ltz v2, :cond_2
 
-    sget-object p0, Lm6/b;->b:Li/J;
+    sget-object p0, Lm6/b;->b:Li/J1;
 
-    invoke-virtual {p0, v2}, Li/J;->f(I)Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Li/J1;->f(I)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -396,9 +396,9 @@
 
     add-int/lit8 v4, v2, -0x1
 
-    sget-object v5, Lm6/b;->b:Li/J;
+    sget-object v5, Lm6/b;->b:Li/J1;
 
-    invoke-virtual {v5}, Li/J;->e()I
+    invoke-virtual {v5}, Li/J1;->e()I
 
     move-result v5
 
@@ -436,9 +436,9 @@
     goto :goto_0
 
     :cond_4
-    sget-object v7, Lm6/b;->b:Li/J;
+    sget-object v7, Lm6/b;->b:Li/J1;
 
-    invoke-virtual {v7, v4}, Li/J;->c(I)I
+    invoke-virtual {v7, v4}, Li/J1;->c(I)I
 
     move-result v7
 
@@ -446,18 +446,18 @@
 
     div-float/2addr v7, v3
 
-    sget-object v8, Lm6/b;->b:Li/J;
+    sget-object v8, Lm6/b;->b:Li/J1;
 
-    invoke-virtual {v8, v4}, Li/J;->f(I)Ljava/lang/Object;
+    invoke-virtual {v8, v4}, Li/J1;->f(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lm6/a;
 
     :goto_0
-    sget-object v8, Lm6/b;->b:Li/J;
+    sget-object v8, Lm6/b;->b:Li/J1;
 
-    invoke-virtual {v8, v2}, Li/J;->c(I)I
+    invoke-virtual {v8, v2}, Li/J1;->c(I)I
 
     move-result v8
 
@@ -495,9 +495,9 @@
 
     add-float/2addr v3, v9
 
-    sget-object v6, Lm6/b;->b:Li/J;
+    sget-object v6, Lm6/b;->b:Li/J1;
 
-    invoke-virtual {v6, v2}, Li/J;->f(I)Ljava/lang/Object;
+    invoke-virtual {v6, v2}, Li/J1;->f(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -556,9 +556,9 @@
     monitor-enter v0
 
     :try_start_0
-    sget-object v1, Lm6/b;->b:Li/J;
+    sget-object v1, Lm6/b;->b:Li/J1;
 
-    invoke-virtual {v1}, Li/J;->a()Li/J;
+    invoke-virtual {v1}, Li/J1;->a()Li/J1;
 
     move-result-object v1
 
@@ -568,9 +568,9 @@
 
     float-to-int p0, p0
 
-    invoke-virtual {v1, p0, p1}, Li/J;->d(ILjava/lang/Object;)V
+    invoke-virtual {v1, p0, p1}, Li/J1;->d(ILjava/lang/Object;)V
 
-    sput-object v1, Lm6/b;->b:Li/J;
+    sput-object v1, Lm6/b;->b:Li/J1;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

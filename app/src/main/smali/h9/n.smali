@@ -8,7 +8,7 @@
 
 .field public static final b:Lu4/d;
 
-.field public static final c:Ls4/B;
+.field public static final c:Ls4/B1;
 
 
 # direct methods
@@ -49,9 +49,9 @@
 
     invoke-direct {v0, v1}, Ls4/w;-><init>(Ljava/lang/String;)V
 
-    sget-object v1, Ls4/S;->g:Ls4/S;
+    sget-object v1, Ls4/S1;->g:Ls4/S1;
 
-    sget-object v2, Ls4/F;->c:Lz4/c;
+    sget-object v2, Ls4/F1;->c:Lz4/c;
 
     sget-object v3, Ls4/j0;->h:Ls4/j0;
 
@@ -73,11 +73,11 @@
 
     invoke-direct {v2, v3, v4}, La4/i;-><init>(ILy9/d;)V
 
-    invoke-static {v1, v0, v3, v2}, Ls4/y;->t(Ls4/x;Ly9/i;ILh4/e;)Ls4/B;
+    invoke-static {v1, v0, v3, v2}, Ls4/y;->t(Ls4/x;Ly9/i;ILh4/e;)Ls4/B1;
 
     move-result-object v0
 
-    sput-object v0, Lh9/n;->c:Ls4/B;
+    sput-object v0, Lh9/n;->c:Ls4/B1;
 
     return-void
 .end method

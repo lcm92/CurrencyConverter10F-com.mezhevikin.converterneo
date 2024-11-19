@@ -55,7 +55,7 @@
 
     const-string v4, "Invalid class: "
 
-    invoke-static {v4, p2}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p2}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -108,7 +108,7 @@
 
     const-string v2, "Could not instantiate "
 
-    invoke-static {v2, p2}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p2}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 

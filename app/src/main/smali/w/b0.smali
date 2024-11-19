@@ -13,9 +13,9 @@
 
     sget-object v0, Lw/f;->m:Lw/f;
 
-    new-instance v1, Ll/L;
+    new-instance v1, Ll/L1;
 
-    invoke-direct {v1}, Ll/L;-><init>()V
+    invoke-direct {v1}, Ll/L1;-><init>()V
 
     invoke-virtual {v0, v1}, Lw/f;->j(Ljava/lang/Object;)Ljava/lang/Object;
 

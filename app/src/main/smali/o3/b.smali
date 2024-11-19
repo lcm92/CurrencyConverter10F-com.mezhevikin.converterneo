@@ -11,7 +11,7 @@
 .method public abstract b()Ly9/i;
 .end method
 
-.method public abstract g()Ls3/K;
+.method public abstract g()Ls3/K1;
 .end method
 
 .method public abstract y()Ls3/y;

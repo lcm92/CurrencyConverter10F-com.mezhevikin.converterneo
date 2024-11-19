@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field public final a:Ls4/X;
+.field public final a:Ls4/X1;
 
 .field public final b:Lio/ktor/utils/io/jvm/javaio/b;
 
-.field public final c:Ls4/G;
+.field public final c:Ls4/G1;
 
 .field public d:I
 
@@ -42,12 +42,12 @@
     return-void
 .end method
 
-.method public constructor <init>(Ls4/X;)V
+.method public constructor <init>(Ls4/X1;)V
     .locals 4
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->a:Ls4/X;
+    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->a:Ls4/X1;
 
     new-instance v0, Lio/ktor/utils/io/jvm/javaio/b;
 
@@ -71,7 +71,7 @@
 
     invoke-direct {v2, v3, p0}, La5/h0;-><init>(ILjava/lang/Object;)V
 
-    invoke-interface {p1, v2}, Ls4/X;->q(Lh4/c;)Ls4/G;
+    invoke-interface {p1, v2}, Ls4/X1;->q(Lh4/c;)Ls4/G1;
 
     move-result-object p1
 
@@ -81,7 +81,7 @@
     move-object p1, v1
 
     :goto_0
-    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->c:Ls4/G;
+    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->c:Ls4/G1;
 
     new-instance p1, Lio/ktor/utils/io/jvm/javaio/a;
 
@@ -238,11 +238,11 @@
 
     move-result-object p1
 
-    check-cast p1, Ls4/P;
+    check-cast p1, Ls4/P1;
 
     if-eqz p1, :cond_6
 
-    invoke-virtual {p1}, Ls4/P;->H()J
+    invoke-virtual {p1}, Ls4/P1;->H()J
 
     move-result-wide v0
 

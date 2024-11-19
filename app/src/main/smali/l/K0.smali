@@ -31,12 +31,12 @@
     new-instance v0, Lc7/j;
 
     .line 6
-    new-instance v1, Ll/E;
+    new-instance v1, Ll/E1;
 
-    invoke-direct {v1, p1, p2, p3}, Ll/E;-><init>(IILl/z;)V
+    invoke-direct {v1, p1, p2, p3}, Ll/E1;-><init>(IILl/z;)V
 
     .line 7
-    invoke-direct {v0, v1}, Lc7/j;-><init>(Ll/C;)V
+    invoke-direct {v0, v1}, Lc7/j;-><init>(Ll/C1;)V
 
     iput-object v0, p0, Ll/K0;->i:Ljava/lang/Object;
 

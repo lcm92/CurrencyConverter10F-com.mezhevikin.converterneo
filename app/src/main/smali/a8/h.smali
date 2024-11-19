@@ -279,9 +279,9 @@
     :cond_7
     invoke-static {v1, v2}, Lp2/b;->i(Landroid/os/Parcel;I)V
 
-    new-instance v1, Lw2/M;
+    new-instance v1, Lw2/M1;
 
-    invoke-direct {v1, v3, v4, v6, v5}, Lw2/M;-><init>(IILjava/lang/String;I)V
+    invoke-direct {v1, v3, v4, v6, v5}, Lw2/M1;-><init>(IILjava/lang/String;I)V
 
     return-object v1
 
@@ -336,9 +336,9 @@
     :cond_a
     invoke-static {v1, v2}, Lp2/b;->i(Landroid/os/Parcel;I)V
 
-    new-instance v1, Lw2/L;
+    new-instance v1, Lw2/L1;
 
-    invoke-direct {v1, v3, v4}, Lw2/L;-><init>(Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-direct {v1, v3, v4}, Lw2/L1;-><init>(Ljava/lang/String;Landroid/os/Bundle;)V
 
     return-object v1
 
@@ -421,9 +421,9 @@
     :cond_f
     invoke-static {v1, v2}, Lp2/b;->i(Landroid/os/Parcel;I)V
 
-    new-instance v1, Lw2/F;
+    new-instance v1, Lw2/F1;
 
-    invoke-direct {v1, v3, v5, v6, v4}, Lw2/F;-><init>(Ljava/lang/String;ZILjava/lang/String;)V
+    invoke-direct {v1, v3, v5, v6, v4}, Lw2/F1;-><init>(Ljava/lang/String;ZILjava/lang/String;)V
 
     return-object v1
 
@@ -2308,17 +2308,17 @@
     return-object p1
 
     :pswitch_0
-    new-array p1, p1, [Lw2/M;
+    new-array p1, p1, [Lw2/M1;
 
     return-object p1
 
     :pswitch_1
-    new-array p1, p1, [Lw2/L;
+    new-array p1, p1, [Lw2/L1;
 
     return-object p1
 
     :pswitch_2
-    new-array p1, p1, [Lw2/F;
+    new-array p1, p1, [Lw2/F1;
 
     return-object p1
 

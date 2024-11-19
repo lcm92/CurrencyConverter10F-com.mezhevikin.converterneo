@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    invoke-static {}, Lw/F;->values()[Lw/F;
+    invoke-static {}, Lw/F1;->values()[Lw/F1;
 
     move-result-object v0
 

@@ -1,75 +1,91 @@
-.class public abstract Lj3/P;
-.super Ljava/lang/Object;
+.class public final Lj3/p;
+.super Ljava/io/InputStream;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Ljj/a;
+# instance fields
+.field public final synthetic g:Lio/ktor/utils/io/jvm/javaio/i;
+
+.field public final synthetic h:Ll9/e;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lio/ktor/utils/io/jvm/javaio/i;Ll9/e;)V
+    .locals 0
 
-    const-string v0, "io.ktor.client.plugins.HttpTimeout"
+    iput-object p1, p0, Lj3/p;->g:Lio/ktor/utils/io/jvm/javaio/i;
 
-    invoke-static {v0}, Ljj/b;->d(Ljava/lang/String;)Ljj/a;
+    iput-object p2, p0, Lj3/p;->h:Ll9/e;
 
-    move-result-object v0
-
-    sput-object v0, Lj3/P;->a:Ljj/a;
+    invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     return-void
 .end method
 
-.method public static final a(Lo3/e;Ljava/lang/Throwable;)Li3/b;
-    .locals 3
 
-    new-instance v0, Li3/b;
+# virtual methods
+.method public final available()I
+    .locals 1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lj3/p;->g:Lio/ktor/utils/io/jvm/javaio/i;
 
-    const-string v2, "Socket timeout has expired [url="
+    invoke-virtual {v0}, Lio/ktor/utils/io/jvm/javaio/i;->available()I
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    move-result v0
 
-    iget-object v2, p0, Lo3/e;->a:Ls3/K;
+    return v0
+.end method
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+.method public final close()V
+    .locals 1
 
-    const-string v2, ", socket_timeout="
+    invoke-super {p0}, Ljava/io/InputStream;->close()V
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lj3/p;->g:Lio/ktor/utils/io/jvm/javaio/i;
 
-    sget-object v2, Lj3/O;->d:Lj3/N;
+    invoke-virtual {v0}, Lio/ktor/utils/io/jvm/javaio/i;->close()V
 
-    invoke-virtual {p0}, Lo3/e;->a()Ljava/lang/Object;
+    iget-object v0, p0, Lj3/p;->h:Ll9/e;
 
-    move-result-object p0
+    iget-object v0, v0, Ll9/e;->g:Ljava/lang/Object;
 
-    check-cast p0, Lj3/L;
+    check-cast v0, Lf3/c;
 
-    if-eqz p0, :cond_0
+    invoke-virtual {v0}, Lf3/c;->e()Lp3/b;
 
-    iget-object p0, p0, Lj3/L;->c:Ljava/lang/Long;
+    move-result-object v0
 
-    if-nez p0, :cond_1
+    invoke-static {v0}, Lp3/e;->f(Lp3/b;)V
 
-    :cond_0
-    const-string p0, "unknown"
+    return-void
+.end method
 
-    :cond_1
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+.method public final read()I
+    .locals 1
 
-    const-string p0, "] ms"
+    .line 1
+    iget-object v0, p0, Lj3/p;->g:Lio/ktor/utils/io/jvm/javaio/i;
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Lio/ktor/utils/io/jvm/javaio/i;->read()I
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result v0
 
-    move-result-object p0
+    return v0
+.end method
 
-    invoke-direct {v0, p0, p1}, Li3/b;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+.method public final read([BII)I
+    .locals 1
 
-    return-object v0
+    const-string v0, "b"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p0, Lj3/p;->g:Lio/ktor/utils/io/jvm/javaio/i;
+
+    invoke-virtual {v0, p1, p2, p3}, Lio/ktor/utils/io/jvm/javaio/i;->read([BII)I
+
+    move-result p1
+
+    return p1
 .end method

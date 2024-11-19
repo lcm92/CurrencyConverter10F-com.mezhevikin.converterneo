@@ -1,5 +1,5 @@
 .class public final Ls4/h0;
-.super Ls4/B;
+.super Ls4/B1;
 .source "SourceFile"
 
 
@@ -17,7 +17,7 @@
 
     const/4 v2, 0x1
 
-    invoke-direct {p0, p1, v0, v1, v2}, Ls4/B;-><init>(Ly9/i;ZZI)V
+    invoke-direct {p0, p1, v0, v1, v2}, Ls4/B1;-><init>(Ly9/i;ZZI)V
 
     invoke-static {p0, p0, p2}, Lll/d;->p(Ly9/d;Ly9/d;Lh4/e;)Ly9/d;
 

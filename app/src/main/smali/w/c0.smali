@@ -24,7 +24,7 @@
     return-void
 .end method
 
-.method public static final a(Lz0/F;Ll6/b;Le6/o;Ljava/lang/String;I)J
+.method public static final a(Lz0/F1;Ll6/b;Le6/o;Ljava/lang/String;I)J
     .locals 9
 
     sget-object v6, Lv9/t;->g:Lv9/t;
@@ -49,7 +49,7 @@
 
     move v7, p4
 
-    invoke-static/range {v0 .. v8}, Lp2/c;->b(Ljava/lang/String;Lz0/F;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
+    invoke-static/range {v0 .. v8}, Lp2/c;->b(Ljava/lang/String;Lz0/F1;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
 
     move-result-object p0
 
@@ -59,7 +59,7 @@
 
     move-result p1
 
-    invoke-static {p1}, Lw/N;->k(F)I
+    invoke-static {p1}, Lw/N1;->k(F)I
 
     move-result p1
 
@@ -67,7 +67,7 @@
 
     move-result p0
 
-    invoke-static {p0}, Lw/N;->k(F)I
+    invoke-static {p0}, Lw/N1;->k(F)I
 
     move-result p0
 
@@ -78,14 +78,14 @@
     return-wide p0
 .end method
 
-.method public static synthetic b(Lz0/F;Ll6/b;Le6/o;)J
+.method public static synthetic b(Lz0/F1;Ll6/b;Le6/o;)J
     .locals 2
 
     const/4 v0, 0x1
 
     sget-object v1, Lw/c0;->a:Ljava/lang/String;
 
-    invoke-static {p0, p1, p2, v1, v0}, Lw/c0;->a(Lz0/F;Ll6/b;Le6/o;Ljava/lang/String;I)J
+    invoke-static {p0, p1, p2, v1, v0}, Lw/c0;->a(Lz0/F1;Ll6/b;Le6/o;Ljava/lang/String;I)J
 
     move-result-wide p0
 

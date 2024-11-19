@@ -8,7 +8,7 @@
 
 
 # virtual methods
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
+.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
     .locals 4
 
     sget-object v0, Lc5/u;->a:Lf5/X10;
@@ -32,7 +32,7 @@
     move v0, v2
 
     :cond_0
-    invoke-interface {p2, p3, p4}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {p2, p3, p4}, Lo0/D1;->a(J)Lo0/N1;
 
     move-result-object p2
 
@@ -73,7 +73,7 @@
     :cond_2
     if-eqz p3, :cond_3
 
-    iget p4, p2, Lo0/N;->g:I
+    iget p4, p2, Lo0/N1;->g:I
 
     invoke-static {p4, v1}, Ljava/lang/Math;->max(II)I
 
@@ -82,12 +82,12 @@
     goto :goto_1
 
     :cond_3
-    iget p4, p2, Lo0/N;->g:I
+    iget p4, p2, Lo0/N1;->g:I
 
     :goto_1
     if-eqz p3, :cond_4
 
-    iget p3, p2, Lo0/N;->h:I
+    iget p3, p2, Lo0/N1;->h:I
 
     invoke-static {p3, v1}, Ljava/lang/Math;->max(II)I
 
@@ -96,16 +96,16 @@
     goto :goto_2
 
     :cond_4
-    iget p3, p2, Lo0/N;->h:I
+    iget p3, p2, Lo0/N1;->h:I
 
     :goto_2
     new-instance v0, Lc5/F1;
 
-    invoke-direct {v0, p4, p2, p3}, Lc5/F1;-><init>(ILo0/N;I)V
+    invoke-direct {v0, p4, p2, p3}, Lc5/F1;-><init>(ILo0/N1;I)V
 
     sget-object p2, Lv9/u;->g:Lv9/u;
 
-    invoke-interface {p1, p4, p3, p2, v0}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p1, p4, p3, p2, v0}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
 
     move-result-object p1
 

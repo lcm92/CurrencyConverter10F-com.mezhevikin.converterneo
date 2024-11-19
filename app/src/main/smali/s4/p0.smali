@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public static a()Ls4/P;
+.method public static a()Ls4/P1;
     .locals 3
 
     sget-object v0, Ls4/p0;->a:Ljava/lang/ThreadLocal;
@@ -29,7 +29,7 @@
 
     move-result-object v1
 
-    check-cast v1, Ls4/P;
+    check-cast v1, Ls4/P1;
 
     if-nez v1, :cond_0
 

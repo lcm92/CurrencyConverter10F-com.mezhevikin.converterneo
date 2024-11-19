@@ -1,74 +1,51 @@
-.class public final Lv4/L;
-.super La4/i;
+.class public final Lv4/l;
+.super La4/c;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/e;
 
 
 # instance fields
-.field public synthetic k:Ljava/lang/Object;
+.field public synthetic j:Ljava/lang/Object;
+
+.field public k:I
+
+.field public final synthetic l:Lv4/m;
+
+.field public m:Ljava/lang/Object;
+
+.field public n:Lv4/f;
+
+
+# direct methods
+.method public constructor <init>(Lv4/m;Ly9/d;)V
+    .locals 0
+
+    iput-object p1, p0, Lv4/l;->l:Lv4/m;
+
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final d(Ly9/d;Ljava/lang/Object;)Ly9/d;
-    .locals 2
-
-    new-instance v0, Lv4/L;
-
-    const/4 v1, 0x2
-
-    invoke-direct {v0, v1, p1}, La4/i;-><init>(ILy9/d;)V
-
-    iput-object p2, v0, Lv4/L;->k:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
 .method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+    iput-object p1, p0, Lv4/l;->j:Ljava/lang/Object;
 
-    iget-object p1, p0, Lv4/L;->k:Ljava/lang/Object;
+    iget p1, p0, Lv4/l;->k:I
 
-    check-cast p1, Lv4/H;
+    const/high16 v0, -0x80000000
 
-    sget-object v0, Lv4/H;->g:Lv4/H;
+    or-int/2addr p1, v0
 
-    if-eq p1, v0, :cond_0
+    iput p1, p0, Lv4/l;->k:I
 
-    const/4 p1, 0x1
+    iget-object p1, p0, Lv4/l;->l:Lv4/m;
 
-    goto :goto_0
+    const/4 v0, 0x0
 
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    check-cast p1, Lv4/H;
-
-    check-cast p2, Ly9/d;
-
-    invoke-virtual {p0, p2, p1}, Lv4/L;->d(Ly9/d;Ljava/lang/Object;)Ly9/d;
-
-    move-result-object p1
-
-    check-cast p1, Lv4/L;
-
-    sget-object p2, Lu9/y;->a:Lu9/y;
-
-    invoke-virtual {p1, p2}, Lv4/L;->f(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Lv4/m;->c(Lv4/f;Ly9/d;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -6,18 +6,18 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Lz0/D;
+.field public final b:Lz0/D1;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lz0/D;)V
+.method public constructor <init>(Ljava/lang/String;Lz0/D1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lz0/j;->a:Ljava/lang/String;
 
-    iput-object p2, p0, Lz0/j;->b:Lz0/D;
+    iput-object p2, p0, Lz0/j;->b:Lz0/D1;
 
     return-void
 .end method
@@ -58,9 +58,9 @@
     return v2
 
     :cond_2
-    iget-object v1, p1, Lz0/j;->b:Lz0/D;
+    iget-object v1, p1, Lz0/j;->b:Lz0/D1;
 
-    iget-object v3, p0, Lz0/j;->b:Lz0/D;
+    iget-object v3, p0, Lz0/j;->b:Lz0/D1;
 
     invoke-static {v3, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -98,11 +98,11 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lz0/j;->b:Lz0/D;
+    iget-object v1, p0, Lz0/j;->b:Lz0/D1;
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Lz0/D;->hashCode()I
+    invoke-virtual {v1}, Lz0/D1;->hashCode()I
 
     move-result v1
 

@@ -1,5 +1,5 @@
 .class public final Landroidx/compose/ui/semantics/AppendedSemanticsElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;",
+        "Lq0/S1;",
         "Lr5/o;"
     }
 .end annotation

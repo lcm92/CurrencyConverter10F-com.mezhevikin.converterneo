@@ -11,7 +11,7 @@
 
 .field public final synthetic l:Lt/i;
 
-.field public final synthetic m:Lq0/Z;
+.field public final synthetic m:Lq0/Z1;
 
 .field public final synthetic n:Li4/i;
 
@@ -19,12 +19,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lt/i;Lq0/Z;Lh4/a;Lm/p;Ly9/d;)V
+.method public constructor <init>(Lt/i;Lq0/Z1;Lh4/a;Lm/p;Ly9/d;)V
     .locals 0
 
     iput-object p1, p0, Lt/h;->l:Lt/i;
 
-    iput-object p2, p0, Lt/h;->m:Lq0/Z;
+    iput-object p2, p0, Lt/h;->m:Lq0/Z1;
 
     check-cast p3, Li4/i;
 
@@ -50,7 +50,7 @@
 
     iget-object v4, p0, Lt/h;->o:Lm/p;
 
-    iget-object v2, p0, Lt/h;->m:Lq0/Z;
+    iget-object v2, p0, Lt/h;->m:Lq0/Z1;
 
     iget-object v1, p0, Lt/h;->l:Lt/i;
 
@@ -58,7 +58,7 @@
 
     move-object v5, p1
 
-    invoke-direct/range {v0 .. v5}, Lt/h;-><init>(Lt/i;Lq0/Z;Lh4/a;Lm/p;Ly9/d;)V
+    invoke-direct/range {v0 .. v5}, Lt/h;-><init>(Lt/i;Lq0/Z1;Lh4/a;Lm/p;Ly9/d;)V
 
     iput-object p2, v6, Lt/h;->k:Ljava/lang/Object;
 
@@ -76,7 +76,7 @@
 
     new-instance v0, Lt/f;
 
-    iget-object v1, p0, Lt/h;->m:Lq0/Z;
+    iget-object v1, p0, Lt/h;->m:Lq0/Z1;
 
     iget-object v2, p0, Lt/h;->n:Li4/i;
 
@@ -84,13 +84,13 @@
 
     const/4 v4, 0x0
 
-    invoke-direct {v0, v3, v1, v2, v4}, Lt/f;-><init>(Lt/i;Lq0/Z;Lh4/a;Ly9/d;)V
+    invoke-direct {v0, v3, v1, v2, v4}, Lt/f;-><init>(Lt/i;Lq0/Z1;Lh4/a;Ly9/d;)V
 
     const/4 v1, 0x0
 
     const/4 v2, 0x3
 
-    invoke-static {p1, v4, v1, v0, v2}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p1, v4, v1, v0, v2}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     new-instance v0, Lt/g;
 
@@ -98,7 +98,7 @@
 
     invoke-direct {v0, v3, v5, v4}, Lt/g;-><init>(Lt/i;Lm/p;Ly9/d;)V
 
-    invoke-static {p1, v4, v1, v0, v2}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p1, v4, v1, v0, v2}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     move-result-object p1
 

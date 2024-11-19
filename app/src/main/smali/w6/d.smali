@@ -38,13 +38,13 @@
     monitor-enter v0
 
     :try_start_0
-    sget-object v1, Lw6/f;->d:Li/I;
+    sget-object v1, Lw6/f;->d:Li/I1;
 
     iget-object v2, p0, Lw6/d;->b:Ljava/lang/Object;
 
     check-cast v2, Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Li/I;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -66,7 +66,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    invoke-virtual {v1, v3}, Li/I;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v3}, Li/I1;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     monitor-exit v0
     :try_end_0

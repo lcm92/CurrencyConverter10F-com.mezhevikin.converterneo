@@ -9,16 +9,16 @@
 # instance fields
 .field public final synthetic h:I
 
-.field public final synthetic i:Lb/C;
+.field public final synthetic i:Lb/C1;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lb/C;I)V
+.method public synthetic constructor <init>(Lb/C1;I)V
     .locals 0
 
     iput p2, p0, Lb/w;->h:I
 
-    iput-object p1, p0, Lb/w;->i:Lb/C;
+    iput-object p1, p0, Lb/w;->i:Lb/C1;
 
     const/4 p1, 0x0
 
@@ -36,27 +36,27 @@
 
     packed-switch v0, :pswitch_data_0
 
-    iget-object v0, p0, Lb/w;->i:Lb/C;
+    iget-object v0, p0, Lb/w;->i:Lb/C1;
 
-    invoke-virtual {v0}, Lb/C;->c()V
+    invoke-virtual {v0}, Lb/C1;->c()V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 
     return-object v0
 
     :pswitch_0
-    iget-object v0, p0, Lb/w;->i:Lb/C;
+    iget-object v0, p0, Lb/w;->i:Lb/C1;
 
-    invoke-virtual {v0}, Lb/C;->b()V
+    invoke-virtual {v0}, Lb/C1;->b()V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 
     return-object v0
 
     :pswitch_1
-    iget-object v0, p0, Lb/w;->i:Lb/C;
+    iget-object v0, p0, Lb/w;->i:Lb/C1;
 
-    invoke-virtual {v0}, Lb/C;->c()V
+    invoke-virtual {v0}, Lb/C1;->c()V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 

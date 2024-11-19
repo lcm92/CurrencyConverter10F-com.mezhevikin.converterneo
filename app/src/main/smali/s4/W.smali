@@ -1,78 +1,108 @@
-.class public final Ls4/W;
-.super Ls4/Z;
+.class public final Ls4/w;
+.super Ly9/a;
 .source "SourceFile"
 
 
 # static fields
-.field public static final l:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+.field public static final i:Ls4/u;
 
 
 # instance fields
-.field private volatile _invoked:I
-
-.field public final k:Lh4/c;
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
-    const-class v0, Ls4/W;
+    new-instance v0, Ls4/u;
 
-    const-string v1, "_invoked"
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
-
-    move-result-object v0
-
-    sput-object v0, Ls4/W;->l:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+    sput-object v0, Ls4/w;->i:Ls4/u;
 
     return-void
 .end method
 
-.method public constructor <init>(Lh4/c;)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
 
-    invoke-direct {p0}, Lx4/i;-><init>()V
+    sget-object v0, Ls4/w;->i:Ls4/u;
 
-    iput-object p1, p0, Ls4/W;->k:Lh4/c;
+    invoke-direct {p0, v0}, Ly9/a;-><init>(Ly9/h;)V
+
+    iput-object p1, p0, Ls4/w;->h:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    check-cast p1, Ljava/lang/Throwable;
-
-    invoke-virtual {p0, p1}, Ls4/W;->r(Ljava/lang/Throwable;)V
-
-    sget-object p1, Lu9/y;->a:Lu9/y;
-
-    return-object p1
-.end method
-
-.method public final r(Ljava/lang/Throwable;)V
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
-    const/4 v1, 0x1
+    if-ne p0, p1, :cond_0
 
-    sget-object v2, Ls4/W;->l:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+    return v0
 
-    invoke-virtual {v2, p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
+    :cond_0
+    instance-of v1, p1, Ls4/w;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Ls4/w;
+
+    iget-object v1, p0, Ls4/w;->h:Ljava/lang/String;
+
+    iget-object p1, p1, Ls4/w;->h:Ljava/lang/String;
+
+    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    return v2
+
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget-object v0, p0, Ls4/w;->h:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    return v0
+.end method
 
-    iget-object v0, p0, Ls4/W;->k:Lh4/c;
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    :cond_0
-    return-void
+    const-string v1, "CoroutineName("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Ls4/w;->h:Ljava/lang/String;
+
+    const/16 v2, 0x29
+
+    invoke-static {v0, v1, v2}, La5/m;->l(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

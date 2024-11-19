@@ -1,25 +1,17 @@
-.class public abstract Lo0/S;
+.class public final Lo0/s;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:J
+# instance fields
+.field public a:Ljava/lang/Object;
 
-.field public static final synthetic b:I
+.field public b:Lh4/e;
 
+.field public c:Lf5/t;
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.field public d:Z
 
-    const/high16 v0, 0x7fc00000    # Float.NaN
+.field public e:Z
 
-    invoke-static {v0, v0}, Lo0/U;->a(FF)J
-
-    move-result-wide v0
-
-    sput-wide v0, Lo0/S;->a:J
-
-    return-void
-.end method
+.field public f:Lf5/j0;

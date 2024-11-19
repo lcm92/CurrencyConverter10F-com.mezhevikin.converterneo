@@ -1,134 +1,377 @@
-.class public final Lo0/T;
-.super Li4/i;
+.class public final Lo0/t;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements Lo0/Y1;
+.implements Lo0/G1;
 
 
 # instance fields
-.field public final synthetic h:I
+.field public final synthetic g:Lo0/v;
 
-.field public final synthetic i:I
-
-.field public final synthetic j:I
-
-.field public final synthetic k:Ljava/lang/Object;
-
-.field public final synthetic l:Ljava/lang/Object;
+.field public final synthetic h:Lo0/A1;
 
 
 # direct methods
-.method public constructor <init>(Lr/g;ILjava/lang/Object;I)V
-    .locals 1
+.method public constructor <init>(Lo0/A1;)V
+    .locals 0
 
-    const/4 v0, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v0, p0, Lo0/T;->h:I
+    iput-object p1, p0, Lo0/t;->h:Lo0/A1;
 
-    .line 2
-    iput-object p1, p0, Lo0/T;->k:Ljava/lang/Object;
+    iget-object p1, p1, Lo0/A1;->n:Lo0/v;
 
-    iput p2, p0, Lo0/T;->i:I
-
-    iput-object p3, p0, Lo0/T;->l:Ljava/lang/Object;
-
-    iput p4, p0, Lo0/T;->j:I
-
-    const/4 p1, 0x2
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lr5/q;Lh4/e;II)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lo0/T;->h:I
-
-    .line 1
-    iput-object p1, p0, Lo0/T;->k:Ljava/lang/Object;
-
-    iput-object p2, p0, Lo0/T;->l:Ljava/lang/Object;
-
-    iput p3, p0, Lo0/T;->i:I
-
-    iput p4, p0, Lo0/T;->j:I
-
-    const/4 p1, 0x2
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    iput-object p1, p0, Lo0/t;->g:Lo0/v;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final B()Z
+    .locals 1
 
-    iget v0, p0, Lo0/T;->h:I
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
 
-    check-cast p1, Lf5/p;
+    invoke-virtual {v0}, Lo0/v;->B()Z
 
-    check-cast p2, Ljava/lang/Number;
+    move-result v0
 
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+    return v0
+.end method
 
-    packed-switch v0, :pswitch_data_0
+.method public final D(J)J
+    .locals 1
 
-    iget p2, p0, Lo0/T;->j:I
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
 
-    or-int/lit8 p2, p2, 0x1
+    invoke-interface {v0, p1, p2}, Ll6/b;->D(J)J
 
-    invoke-static {p2}, Lf5/d;->T(I)I
+    move-result-wide p1
 
-    move-result p2
+    return-wide p1
+.end method
 
-    iget v0, p0, Lo0/T;->i:I
+.method public final G(Ljava/lang/Object;Lh4/e;)Ljava/util/List;
+    .locals 4
 
-    iget-object v1, p0, Lo0/T;->l:Ljava/lang/Object;
+    iget-object v0, p0, Lo0/t;->h:Lo0/A1;
 
-    iget-object v2, p0, Lo0/T;->k:Ljava/lang/Object;
+    iget-object v1, v0, Lo0/A1;->m:Ljava/util/HashMap;
 
-    check-cast v2, Lr/g;
+    invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v2, v0, v1, p1, p2}, Lr/g;->a(ILjava/lang/Object;Lf5/p;I)V
+    move-result-object v1
 
-    sget-object p1, Lu9/y;->a:Lu9/y;
+    check-cast v1, Lq0/D1;
 
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Lq0/D1;->m()Ljava/util/List;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    if-eqz v1, :cond_1
+
+    return-object v1
+
+    :cond_1
+    iget-object v1, v0, Lo0/A1;->s:Lh5/d;
+
+    iget v2, v1, Lh5/d;->i:I
+
+    iget v3, v0, Lo0/A1;->k:I
+
+    if-lt v2, v3, :cond_7
+
+    if-ne v2, v3, :cond_2
+
+    invoke-virtual {v1, p1}, Lh5/d;->b(Ljava/lang/Object;)V
+
+    goto :goto_1
+
+    :cond_2
+    iget-object v1, v1, Lh5/d;->g:[Ljava/lang/Object;
+
+    aget-object v2, v1, v3
+
+    aput-object p1, v1, v3
+
+    :goto_1
+    iget v1, v0, Lo0/A1;->k:I
+
+    const/4 v2, 0x1
+
+    add-int/2addr v1, v2
+
+    iput v1, v0, Lo0/A1;->k:I
+
+    iget-object v1, v0, Lo0/A1;->p:Ljava/util/HashMap;
+
+    invoke-virtual {v1, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    invoke-virtual {v0, p1, p2}, Lo0/A1;->g(Ljava/lang/Object;Lh4/e;)Lo0/V1;
+
+    move-result-object p2
+
+    iget-object v3, v0, Lo0/A1;->r:Ljava/util/LinkedHashMap;
+
+    invoke-interface {v3, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object p2, v0, Lo0/A1;->g:Lq0/D1;
+
+    iget-object v0, p2, Lq0/D1;->C:Lq0/K1;
+
+    iget v0, v0, Lq0/K1;->c:I
+
+    const/4 v3, 0x3
+
+    if-ne v0, v3, :cond_3
+
+    invoke-virtual {p2, v2}, Lq0/D1;->N(Z)V
+
+    goto :goto_2
+
+    :cond_3
+    const/4 v0, 0x6
+
+    invoke-static {p2, v2, v0}, Lq0/D1;->O(Lq0/D1;ZI)V
+
+    :cond_4
+    :goto_2
+    invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lq0/D1;
+
+    if-eqz p1, :cond_5
+
+    iget-object p1, p1, Lq0/D1;->C:Lq0/K1;
+
+    iget-object p1, p1, Lq0/K1;->r:Lq0/J1;
+
+    invoke-virtual {p1}, Lq0/J1;->n0()Ljava/util/List;
+
+    move-result-object p1
+
+    move-object p2, p1
+
+    check-cast p2, Lh5/a;
+
+    iget-object v0, p2, Lh5/a;->g:Lh5/d;
+
+    iget v0, v0, Lh5/d;->i:I
+
+    const/4 v1, 0x0
+
+    :goto_3
+    if-ge v1, v0, :cond_6
+
+    invoke-virtual {p2, v1}, Lh5/a;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lq0/J1;
+
+    iget-object v3, v3, Lq0/J1;->K:Lq0/K1;
+
+    iput-boolean v2, v3, Lq0/K1;->b:Z
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_3
+
+    :cond_5
+    sget-object p1, Lv9/t;->g:Lv9/t;
+
+    :cond_6
     return-object p1
 
-    :pswitch_0
-    iget p2, p0, Lo0/T;->i:I
+    :cond_7
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    or-int/lit8 p2, p2, 0x1
+    const-string p2, "Error: currentPostLookaheadIndex cannot be greater than the size of thepostLookaheadComposedSlotIds list."
 
-    invoke-static {p2}, Lf5/d;->T(I)I
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    move-result p2
+    throw p1
+.end method
 
-    iget-object v0, p0, Lo0/T;->l:Ljava/lang/Object;
+.method public final H(F)J
+    .locals 2
 
-    check-cast v0, Lh4/e;
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
 
-    iget v1, p0, Lo0/T;->j:I
+    invoke-interface {v0, p1}, Ll6/b;->H(F)J
 
-    iget-object v2, p0, Lo0/T;->k:Ljava/lang/Object;
+    move-result-wide v0
 
-    check-cast v2, Lr5/q;
+    return-wide v0
+.end method
 
-    invoke-static {v2, v0, p1, p2, v1}, Lo0/U;->b(Lr5/q;Lh4/e;Lf5/p;II)V
+.method public final I(J)J
+    .locals 1
 
-    sget-object p1, Lu9/y;->a:Lu9/y;
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-interface {v0, p1, p2}, Ll6/b;->I(J)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public final K(IILjava/util/Map;Lh4/c;)Lo0/F1;
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lo0/v;->q(IILjava/util/Map;Lh4/c;)Lo0/F1;
+
+    move-result-object p1
 
     return-object p1
+.end method
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+.method public final M(F)F
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-virtual {v0}, Lo0/v;->b()F
+
+    move-result v0
+
+    mul-float/2addr v0, p1
+
+    return v0
+.end method
+
+.method public final O(J)F
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-interface {v0, p1, p2}, Ll6/b;->O(J)F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final W(F)J
+    .locals 2
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-interface {v0, p1}, Ll6/b;->W(F)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public final b()F
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    iget v0, v0, Lo0/v;->h:F
+
+    return v0
+.end method
+
+.method public final e0(I)F
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-interface {v0, p1}, Ll6/b;->e0(I)F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final f0(J)F
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-interface {v0, p1, p2}, Ll6/b;->f0(J)F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final g0(F)F
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-virtual {v0}, Lo0/v;->b()F
+
+    move-result v0
+
+    div-float/2addr p1, v0
+
+    return p1
+.end method
+
+.method public final getLayoutDirection()Ll6/k;
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    iget-object v0, v0, Lo0/v;->g:Ll6/k;
+
+    return-object v0
+.end method
+
+.method public final j(F)I
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-interface {v0, p1}, Ll6/b;->j(F)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final n()F
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    iget v0, v0, Lo0/v;->i:F
+
+    return v0
+.end method
+
+.method public final q(IILjava/util/Map;Lh4/c;)Lo0/F1;
+    .locals 1
+
+    iget-object v0, p0, Lo0/t;->g:Lo0/v;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lo0/v;->q(IILjava/util/Map;Lh4/c;)Lo0/F1;
+
+    move-result-object p1
+
+    return-object p1
 .end method

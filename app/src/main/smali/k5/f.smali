@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method public constructor <init>(Le0/E;)V
+.method public constructor <init>(Le0/E1;)V
     .locals 1
 
     const/4 v0, 0x1
@@ -25,7 +25,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
-    iget-object p1, p1, Le0/E;->p:Ljava/util/List;
+    iget-object p1, p1, Le0/E1;->p:Ljava/util/List;
 
     .line 6
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    check-cast v0, Le0/G;
+    check-cast v0, Le0/G1;
 
     return-object v0
 

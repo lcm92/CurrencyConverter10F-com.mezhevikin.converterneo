@@ -8,7 +8,7 @@
 
 .field public static final b:F
 
-.field public static final c:Lq/V;
+.field public static final c:Lq/V1;
 
 
 # direct methods
@@ -29,11 +29,11 @@
 
     int-to-float v1, v1
 
-    new-instance v2, Lq/V;
+    new-instance v2, Lq/V1;
 
-    invoke-direct {v2, v0, v1, v0, v1}, Lq/V;-><init>(FFFF)V
+    invoke-direct {v2, v0, v1, v0, v1}, Lq/V1;-><init>(FFFF)V
 
-    sput-object v2, Lc5/x;->c:Lq/V;
+    sput-object v2, Lc5/x;->c:Lq/V1;
 
     return-void
 .end method

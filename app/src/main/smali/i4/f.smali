@@ -285,7 +285,7 @@
 
     const-string v2, " (Kotlin reflection is not available)"
 
-    invoke-static {v1, v0, v2}, Lk/P;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0, v2}, Lk/P1;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

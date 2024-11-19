@@ -256,25 +256,25 @@
 
     iget-wide v2, p0, Lk0/t;->b:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
     iget-wide v2, p0, Lk0/t;->c:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
     iget-wide v2, p0, Lk0/t;->d:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
     iget-boolean v2, p0, Lk0/t;->e:Z
 
-    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
 
     move-result v0
 
@@ -292,7 +292,7 @@
 
     iget-boolean v2, p0, Lk0/t;->h:Z
 
-    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
 
     move-result v0
 
@@ -308,7 +308,7 @@
 
     iget-wide v3, p0, Lk0/t;->j:J
 
-    invoke-static {v2, v1, v3, v4}, Lk/P;->b(IIJ)I
+    invoke-static {v2, v1, v3, v4}, Lk/P1;->b(IIJ)I
 
     move-result v0
 

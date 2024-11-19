@@ -787,7 +787,7 @@
 
     iget-wide v5, p0, Lz0/y;->b:J
 
-    invoke-static {v0, v2, v5, v6}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v2, v5, v6}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
@@ -885,7 +885,7 @@
 
     iget-wide v5, p0, Lz0/y;->h:J
 
-    invoke-static {v0, v2, v5, v6}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v2, v5, v6}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
@@ -949,7 +949,7 @@
 
     iget-wide v5, p0, Lz0/y;->l:J
 
-    invoke-static {v0, v2, v5, v6}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v2, v5, v6}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
@@ -1138,7 +1138,7 @@
 
     const-string v3, ", textDecoration="
 
-    invoke-static {v1, v2, v0, v3}, Lk/P;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Lk/P1;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget-object v1, p0, Lz0/y;->m:Lk6/h;
 

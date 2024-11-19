@@ -1,27 +1,11 @@
-.class public final Lq0/P;
+.class public interface abstract Lq0/p;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# instance fields
-.field public final a:Lq0/D;
-
-.field public final b:Z
-
-.field public final c:Z
+# interfaces
+.implements Lq0/m;
 
 
-# direct methods
-.method public constructor <init>(Lq0/D;ZZ)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lq0/P;->a:Lq0/D;
-
-    iput-boolean p2, p0, Lq0/P;->b:Z
-
-    iput-boolean p3, p0, Lq0/P;->c:Z
-
-    return-void
+# virtual methods
+.method public abstract S(Lq0/Z1;)V
 .end method

@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/input/pointer/PointerHoverIconModifierElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -51,7 +51,7 @@
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object v1, Lw/N;->b:Lk0/a;
+    sget-object v1, Lw/N1;->b:Lk0/a;
 
     invoke-virtual {v1, v1}, Lk0/a;->equals(Ljava/lang/Object;)Z
 
@@ -113,7 +113,7 @@
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object v0, Lw/N;->b:Lk0/a;
+    sget-object v0, Lw/N1;->b:Lk0/a;
 
     invoke-virtual {v0, v0}, Lk0/a;->equals(Ljava/lang/Object;)Z
 
@@ -195,7 +195,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget-object v1, Lw/N;->b:Lk0/a;
+    sget-object v1, Lw/N1;->b:Lk0/a;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

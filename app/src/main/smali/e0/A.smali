@@ -1,39 +1,39 @@
-.class public abstract Le0/A;
+.class public final Le0/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Z
+.field public a:Ly5/g;
 
-.field public final b:Z
+.field public b:Ly5/c;
+
+.field public c:J
+
+.field public d:I
+
+.field public final e:La0/b;
 
 
 # direct methods
-.method public constructor <init>(IZZ)V
+.method public constructor <init>()V
     .locals 2
 
-    and-int/lit8 v0, p1, 0x1
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    move p2, v1
-
-    :cond_0
-    and-int/lit8 p1, p1, 0x2
-
-    if-eqz p1, :cond_1
-
-    move p3, v1
-
-    :cond_1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-boolean p2, p0, Le0/A;->a:Z
+    const-wide/16 v0, 0x0
 
-    iput-boolean p3, p0, Le0/A;->b:Z
+    iput-wide v0, p0, Le0/a;->c:J
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Le0/a;->d:I
+
+    new-instance v0, La0/b;
+
+    invoke-direct {v0}, La0/b;-><init>()V
+
+    iput-object v0, p0, Le0/a;->e:La0/b;
 
     return-void
 .end method

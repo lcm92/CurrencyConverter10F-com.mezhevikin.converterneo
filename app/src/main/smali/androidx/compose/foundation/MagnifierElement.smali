@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/MagnifierElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -232,13 +232,13 @@
 
     iget-boolean v3, p0, Landroidx/compose/foundation/MagnifierElement;->e:Z
 
-    invoke-static {v0, v1, v3}, Lk/P;->c(IIZ)I
+    invoke-static {v0, v1, v3}, Lk/P1;->c(IIZ)I
 
     move-result v0
 
     iget-wide v3, p0, Landroidx/compose/foundation/MagnifierElement;->f:J
 
-    invoke-static {v0, v1, v3, v4}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v3, v4}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
@@ -256,7 +256,7 @@
 
     iget-boolean v3, p0, Landroidx/compose/foundation/MagnifierElement;->i:Z
 
-    invoke-static {v0, v1, v3}, Lk/P;->c(IIZ)I
+    invoke-static {v0, v1, v3}, Lk/P1;->c(IIZ)I
 
     move-result v0
 
@@ -397,11 +397,11 @@
 
     move-object/from16 v19, v0
 
-    invoke-static {v1}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {v1}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object v0
 
-    iget-object v0, v0, Lq0/D;->w:Ll6/b;
+    iget-object v0, v0, Lq0/D1;->w:Ll6/b;
 
     move-object/from16 v20, v0
 

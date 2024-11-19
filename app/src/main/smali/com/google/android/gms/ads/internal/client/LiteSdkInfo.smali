@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/ads/internal/client/LiteSdkInfo;
-.super Lb2/I;
+.super Lb2/I1;
 .source "SourceFile"
 
 
@@ -16,12 +16,12 @@
 
 
 # virtual methods
-.method public getAdapterCreator()Lw2/S;
+.method public getAdapterCreator()Lw2/S1;
     .locals 1
 
-    new-instance v0, Lw2/Q;
+    new-instance v0, Lw2/Q1;
 
-    invoke-direct {v0}, Lw2/Q;-><init>()V
+    invoke-direct {v0}, Lw2/Q1;-><init>()V
 
     return-object v0
 .end method

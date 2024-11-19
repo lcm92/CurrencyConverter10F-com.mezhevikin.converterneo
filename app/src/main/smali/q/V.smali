@@ -1,299 +1,143 @@
-.class public final Lq/V;
-.super Ljava/lang/Object;
+.class public final Lq/v;
+.super Li4/i;
 .source "SourceFile"
+
+# interfaces
+.implements Lh4/c;
 
 
 # instance fields
-.field public final a:F
+.field public final synthetic h:[Lo0/N1;
 
-.field public final b:F
+.field public final synthetic i:Lq/w;
 
-.field public final c:F
+.field public final synthetic j:I
 
-.field public final d:F
+.field public final synthetic k:Lo0/G1;
+
+.field public final synthetic l:[I
 
 
 # direct methods
-.method public constructor <init>(FFFF)V
-    .locals 1
+.method public constructor <init>([Lo0/N1;Lq/w;ILo0/G1;[I)V
+    .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lq/v;->h:[Lo0/N1;
 
-    iput p1, p0, Lq/V;->a:F
+    iput-object p2, p0, Lq/v;->i:Lq/w;
 
-    iput p2, p0, Lq/V;->b:F
+    iput p3, p0, Lq/v;->j:I
 
-    iput p3, p0, Lq/V;->c:F
+    iput-object p4, p0, Lq/v;->k:Lo0/G1;
 
-    iput p4, p0, Lq/V;->d:F
+    iput-object p5, p0, Lq/v;->l:[I
 
-    const/4 v0, 0x0
+    const/4 p1, 0x1
 
-    cmpl-float p1, p1, v0
-
-    if-ltz p1, :cond_3
-
-    cmpl-float p1, p2, v0
-
-    if-ltz p1, :cond_2
-
-    cmpl-float p1, p3, v0
-
-    if-ltz p1, :cond_1
-
-    cmpl-float p1, p4, v0
-
-    if-ltz p1, :cond_0
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
-
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string p2, "Bottom padding must be non-negative"
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string p2, "End padding must be non-negative"
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_2
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string p2, "Top padding must be non-negative"
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_3
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string p2, "Start padding must be non-negative"
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public final a()F
-    .locals 1
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
-    iget v0, p0, Lq/V;->d:F
+    check-cast p1, Lo0/M1;
 
-    return v0
-.end method
+    iget-object v0, p0, Lq/v;->h:[Lo0/N1;
 
-.method public final b(Ll6/k;)F
-    .locals 1
+    array-length v1, v0
 
-    sget-object v0, Ll6/k;->g:Ll6/k;
+    const/4 v2, 0x0
 
-    if-ne p1, v0, :cond_0
+    move v3, v2
 
-    iget p1, p0, Lq/V;->a:F
-
-    goto :goto_0
-
-    :cond_0
-    iget p1, p0, Lq/V;->c:F
+    move v4, v3
 
     :goto_0
-    return p1
-.end method
+    if-ge v3, v1, :cond_3
 
-.method public final c(Ll6/k;)F
-    .locals 1
+    aget-object v5, v0, v3
 
-    sget-object v0, Ll6/k;->g:Ll6/k;
+    add-int/lit8 v6, v4, 0x1
 
-    if-ne p1, v0, :cond_0
+    invoke-static {v5}, Li4/h;->c(Ljava/lang/Object;)V
 
-    iget p1, p0, Lq/V;->c:F
+    invoke-virtual {v5}, Lo0/N1;->r()Ljava/lang/Object;
 
-    goto :goto_0
+    move-result-object v7
 
-    :cond_0
-    iget p1, p0, Lq/V;->a:F
+    instance-of v8, v7, Lq/Y1;
 
-    :goto_0
-    return p1
-.end method
+    const/4 v9, 0x0
 
-.method public final d()F
-    .locals 1
+    if-eqz v8, :cond_0
 
-    iget v0, p0, Lq/V;->b:F
+    check-cast v7, Lq/Y1;
 
-    return v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    instance-of v0, p1, Lq/V;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
+    goto :goto_1
 
     :cond_0
-    check-cast p1, Lq/V;
+    move-object v7, v9
 
-    iget v0, p1, Lq/V;->a:F
+    :goto_1
+    iget-object v8, p0, Lq/v;->k:Lo0/G1;
 
-    iget v2, p0, Lq/V;->a:F
+    invoke-interface {v8}, Lo0/m;->getLayoutDirection()Ll6/k;
 
-    invoke-static {v2, v0}, Ll6/e;->a(FF)Z
+    move-result-object v8
 
-    move-result v0
+    iget-object v10, p0, Lq/v;->i:Lq/w;
 
-    if-eqz v0, :cond_1
+    invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    iget v0, p0, Lq/V;->b:F
+    if-eqz v7, :cond_1
 
-    iget v2, p1, Lq/V;->b:F
-
-    invoke-static {v0, v2}, Ll6/e;->a(FF)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget v0, p0, Lq/V;->c:F
-
-    iget v2, p1, Lq/V;->c:F
-
-    invoke-static {v0, v2}, Ll6/e;->a(FF)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget v0, p0, Lq/V;->d:F
-
-    iget p1, p1, Lq/V;->d:F
-
-    invoke-static {v0, p1}, Ll6/e;->a(FF)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    const/4 v1, 0x1
+    iget-object v9, v7, Lq/Y1;->c:Lq/z;
 
     :cond_1
-    return v1
-.end method
+    iget v7, p0, Lq/v;->j:I
 
-.method public final hashCode()I
-    .locals 3
+    if-eqz v9, :cond_2
 
-    iget v0, p0, Lq/V;->a:F
+    iget v10, v5, Lo0/N1;->g:I
 
-    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
+    sub-int/2addr v7, v10
 
-    move-result v0
+    invoke-virtual {v9, v7, v8}, Lq/z;->a(ILl6/k;)I
 
-    const/16 v1, 0x1f
+    move-result v7
 
-    mul-int/2addr v0, v1
+    goto :goto_2
 
-    iget v2, p0, Lq/V;->b:F
+    :cond_2
+    iget v9, v5, Lo0/N1;->g:I
 
-    invoke-static {v2, v0, v1}, La5/m;->e(FII)I
+    sub-int/2addr v7, v9
 
-    move-result v0
+    iget-object v9, v10, Lq/w;->b:Lr5/g;
 
-    iget v2, p0, Lq/V;->c:F
+    invoke-virtual {v9, v2, v7, v8}, Lr5/g;->a(IILl6/k;)I
 
-    invoke-static {v2, v0, v1}, La5/m;->e(FII)I
+    move-result v7
 
-    move-result v0
+    :goto_2
+    iget-object v8, p0, Lq/v;->l:[I
 
-    iget v1, p0, Lq/V;->d:F
+    aget v4, v8, v4
 
-    invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
+    invoke-static {p1, v5, v7, v4}, Lo0/M1;->d(Lo0/M1;Lo0/N1;II)V
 
-    move-result v1
+    add-int/lit8 v3, v3, 0x1
 
-    add-int/2addr v1, v0
+    move v4, v6
 
-    return v1
-.end method
+    goto :goto_0
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+    :cond_3
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "PaddingValues(start="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget v1, p0, Lq/V;->a:F
-
-    invoke-static {v1}, Ll6/e;->b(F)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", top="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lq/V;->b:F
-
-    invoke-static {v1}, Ll6/e;->b(F)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", end="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lq/V;->c:F
-
-    invoke-static {v1}, Ll6/e;->b(F)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", bottom="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lq/V;->d:F
-
-    invoke-static {v1}, Ll6/e;->b(F)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return-object p1
 .end method

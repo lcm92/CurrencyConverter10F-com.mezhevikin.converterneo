@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ll/C;)V
+.method public constructor <init>(Ll/C1;)V
     .locals 2
 
     .line 3
@@ -155,7 +155,7 @@
 
     check-cast v4, Ll/s;
 
-    invoke-interface {v4, v3}, Ll/s;->get(I)Ll/C;
+    invoke-interface {v4, v3}, Ll/s;->get(I)Ll/C1;
 
     move-result-object v4
 
@@ -171,7 +171,7 @@
 
     move-result v3
 
-    invoke-interface {v4, v5, v6, v3}, Ll/C;->d(FFF)J
+    invoke-interface {v4, v5, v6, v3}, Ll/C1;->d(FFF)J
 
     move-result-wide v3
 
@@ -230,7 +230,7 @@
 
     check-cast v5, Ll/s;
 
-    invoke-interface {v5, v3}, Ll/s;->get(I)Ll/C;
+    invoke-interface {v5, v3}, Ll/s;->get(I)Ll/C1;
 
     move-result-object v5
 
@@ -246,7 +246,7 @@
 
     move-result v8
 
-    invoke-interface {v5, v6, v7, v8}, Ll/C;->f(FFF)F
+    invoke-interface {v5, v6, v7, v8}, Ll/C1;->f(FFF)F
 
     move-result v5
 
@@ -328,7 +328,7 @@
 
     check-cast v6, Ll/s;
 
-    invoke-interface {v6, v4}, Ll/s;->get(I)Ll/C;
+    invoke-interface {v6, v4}, Ll/s;->get(I)Ll/C1;
 
     move-result-object v7
 
@@ -352,7 +352,7 @@
 
     move-wide/from16 v8, p1
 
-    invoke-interface/range {v7 .. v12}, Ll/C;->b(JFFF)F
+    invoke-interface/range {v7 .. v12}, Ll/C1;->b(JFFF)F
 
     move-result v7
 
@@ -484,7 +484,7 @@
 
     check-cast v6, Ll/s;
 
-    invoke-interface {v6, v4}, Ll/s;->get(I)Ll/C;
+    invoke-interface {v6, v4}, Ll/s;->get(I)Ll/C1;
 
     move-result-object v7
 
@@ -508,7 +508,7 @@
 
     move-wide/from16 v8, p1
 
-    invoke-interface/range {v7 .. v12}, Ll/C;->c(JFFF)F
+    invoke-interface/range {v7 .. v12}, Ll/C1;->c(JFFF)F
 
     move-result v7
 

@@ -83,12 +83,12 @@
 .method public static final b(Lf5/W1;)V
     .locals 9
 
-    sget-object v0, Lf5/z0;->v:Lv4/P;
+    sget-object v0, Lf5/z0;->v:Lv4/P1;
 
     :cond_0
-    sget-object v0, Lf5/z0;->v:Lv4/P;
+    sget-object v0, Lf5/z0;->v:Lv4/P1;
 
-    invoke-virtual {v0}, Lv4/P;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lv4/P1;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -238,7 +238,7 @@
     move-object v1, v3
 
     :cond_a
-    invoke-virtual {v0, v1, v2}, Lv4/P;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1, v2}, Lv4/P1;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 

@@ -42,12 +42,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    sget-object p1, Li/G;->a:[J
+    sget-object p1, Li/G1;->a:[J
 
     .line 4
-    new-instance p1, Li/A;
+    new-instance p1, Li/A1;
 
-    invoke-direct {p1}, Li/A;-><init>()V
+    invoke-direct {p1}, Li/A1;-><init>()V
 
     .line 5
     iput-object p1, p0, La5/V1;->i:Ljava/lang/Object;
@@ -180,7 +180,7 @@
 
     const/4 p4, 0x0
 
-    invoke-static {p1, v0, p4, p2, p3}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p1, v0, p4, p2, p3}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     move-result-object p1
 
@@ -216,9 +216,9 @@
 
     iget-object v0, p0, La5/V1;->i:Ljava/lang/Object;
 
-    check-cast v0, Li/A;
+    check-cast v0, Li/A1;
 
-    invoke-virtual {v0}, Li/A;->a()V
+    invoke-virtual {v0}, Li/A1;->a()V
 
     const/4 v0, 0x0
 
@@ -256,11 +256,11 @@
 
     iget-object v0, p0, La5/V1;->i:Ljava/lang/Object;
 
-    check-cast v0, Li/A;
+    check-cast v0, Li/A1;
 
-    iget-object v1, v0, Li/A;->b:[Ljava/lang/Object;
+    iget-object v1, v0, Li/A1;->b:[Ljava/lang/Object;
 
-    iget-object v2, v0, Li/A;->a:[J
+    iget-object v2, v0, Li/A1;->a:[J
 
     array-length v3, v2
 
@@ -332,9 +332,9 @@
 
     iget-object v12, v12, La5/V1;->i:Ljava/lang/Object;
 
-    check-cast v12, Li/A;
+    check-cast v12, Li/A1;
 
-    invoke-virtual {v12, v11}, Li/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v12, v11}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v12
 
@@ -374,7 +374,7 @@
     goto :goto_0
 
     :cond_4
-    invoke-virtual {v0}, Li/A;->a()V
+    invoke-virtual {v0}, Li/A1;->a()V
 
     iput-boolean v4, p0, La5/V1;->h:Z
 
@@ -468,7 +468,7 @@
 
     iget-object v1, p0, La5/V1;->j:Ljava/lang/Object;
 
-    check-cast v1, Ls4/B;
+    check-cast v1, Ls4/B1;
 
     invoke-virtual {v1, v0}, Ls4/g0;->c(Ljava/util/concurrent/CancellationException;)V
 

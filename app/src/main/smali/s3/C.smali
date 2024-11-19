@@ -1,43 +1,75 @@
-.class public final Ls3/C;
-.super Ljava/lang/IllegalStateException;
+.class public abstract Ls3/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final a:Ls3/d;
+
+
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 4
 
-    const-string v0, "data"
+    new-instance v0, Ls3/d;
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    sget-object v1, Lv9/t;->g:Lv9/t;
 
-    const-string v0, "reason"
+    const-string v2, "text"
 
-    invoke-static {p2, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v3, "*"
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {v0, v2, v3, v1}, Ls3/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
-    const-string v1, "Failed to parse date string: \""
+    new-instance v0, Ls3/d;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "plain"
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v2, v3, v1}, Ls3/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
-    const-string p1, "\". Reason: \""
+    sput-object v0, Ls3/c;->a:Ls3/d;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, Ls3/d;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, "css"
 
-    const/16 p1, 0x22
+    invoke-direct {v0, v2, v3, v1}, Ls3/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    new-instance v0, Ls3/d;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v3, "csv"
 
-    move-result-object p1
+    invoke-direct {v0, v2, v3, v1}, Ls3/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    new-instance v0, Ls3/d;
+
+    const-string v3, "html"
+
+    invoke-direct {v0, v2, v3, v1}, Ls3/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+
+    new-instance v0, Ls3/d;
+
+    const-string v3, "javascript"
+
+    invoke-direct {v0, v2, v3, v1}, Ls3/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+
+    new-instance v0, Ls3/d;
+
+    const-string v3, "vcard"
+
+    invoke-direct {v0, v2, v3, v1}, Ls3/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+
+    new-instance v0, Ls3/d;
+
+    const-string v3, "xml"
+
+    invoke-direct {v0, v2, v3, v1}, Ls3/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+
+    new-instance v0, Ls3/d;
+
+    const-string v3, "event-stream"
+
+    invoke-direct {v0, v2, v3, v1}, Ls3/d;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
     return-void
 .end method

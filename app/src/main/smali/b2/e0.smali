@@ -114,7 +114,7 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    invoke-interface {v0}, Lb2/y;->m()Lb2/Z;
+    invoke-interface {v0}, Lb2/y;->m()Lb2/Z1;
 
     move-result-object v2
     :try_end_0
@@ -231,7 +231,7 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    invoke-interface {v0}, Lb2/y;->m()Lb2/Z;
+    invoke-interface {v0}, Lb2/y;->m()Lb2/Z1;
 
     move-result-object v2
     :try_end_0

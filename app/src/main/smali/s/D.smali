@@ -1,167 +1,119 @@
-.class public final Ls/D;
-.super Li4/i;
+.class public final Ls/d;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/c;
+.implements Lr5/o;
 
 
 # instance fields
-.field public final synthetic h:I
+.field public a:Z
 
-.field public final synthetic i:Ls/F;
-
-
-# direct methods
-.method public synthetic constructor <init>(Ls/F;I)V
-    .locals 0
-
-    iput p2, p0, Ls/D;->h:I
-
-    iput-object p1, p0, Ls/D;->i:Ls/F;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
-
-    return-void
-.end method
+.field public b:Ly9/k;
 
 
 # virtual methods
-.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final j(La4/c;)Ljava/lang/Object;
+    .locals 5
 
-    iget v0, p0, Ls/D;->h:I
+    instance-of v0, p1, Ls/c;
 
-    packed-switch v0, :pswitch_data_0
+    if-eqz v0, :cond_0
 
-    check-cast p1, Ljava/lang/Number;
+    move-object v0, p1
 
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+    check-cast v0, Ls/c;
 
-    move-result p1
+    iget v1, v0, Ls/c;->m:I
 
-    iget-object v0, p0, Ls/D;->i:Ls/F;
+    const/high16 v2, -0x80000000
 
-    iget-object v1, v0, Ls/F;->t:Lo4/c;
+    and-int v3, v1, v2
 
-    invoke-interface {v1}, Lh4/a;->b()Ljava/lang/Object;
+    if-eqz v3, :cond_0
 
-    move-result-object v1
+    sub-int/2addr v1, v2
 
-    check-cast v1, Lr/g;
+    iput v1, v0, Ls/c;->m:I
 
-    if-ltz p1, :cond_0
-
-    invoke-virtual {v1}, Lr/g;->c()I
-
-    move-result v2
-
-    if-ge p1, v2, :cond_0
-
-    invoke-virtual {v0}, Lr5/p;->m0()Ls4/x;
-
-    move-result-object v1
-
-    new-instance v2, Ls/E;
-
-    const/4 v3, 0x0
-
-    invoke-direct {v2, v0, p1, v3}, Ls/E;-><init>(Ls/F;ILy9/d;)V
-
-    const/4 p1, 0x3
-
-    const/4 v0, 0x0
-
-    invoke-static {v1, v3, v0, v2, p1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
-
-    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    return-object p1
+    goto :goto_0
 
     :cond_0
-    const-string v0, "Can\'t scroll to index "
+    new-instance v0, Ls/c;
 
-    const-string v2, ", it is out of bounds [0, "
-
-    invoke-static {v0, p1, v2}, La5/m;->n(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {v1}, Lr/g;->c()I
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const/16 v0, 0x29
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :pswitch_0
-    iget-object v0, p0, Ls/D;->i:Ls/F;
-
-    iget-object v0, v0, Ls/F;->t:Lo4/c;
-
-    invoke-interface {v0}, Lh4/a;->b()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lr/g;
-
-    invoke-virtual {v0}, Lr/g;->c()I
-
-    move-result v1
-
-    const/4 v2, 0x0
+    invoke-direct {v0, p0, p1}, Ls/c;-><init>(Ls/d;La4/c;)V
 
     :goto_0
-    if-ge v2, v1, :cond_2
+    iget-object p1, v0, Ls/c;->k:Ljava/lang/Object;
 
-    invoke-virtual {v0, v2}, Lr/g;->d(I)Ljava/lang/Object;
+    sget-object v1, Lz9/a;->g:Lz9/a;
 
-    move-result-object v3
+    iget v2, v0, Ls/c;->m:I
 
-    invoke-virtual {v3, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    sget-object v3, Lu9/y;->a:Lu9/y;
 
-    move-result v3
+    const/4 v4, 0x1
 
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_2
+
+    if-ne v2, v4, :cond_1
+
+    iget-object v0, v0, Ls/c;->j:Ly9/k;
+
+    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
 
     goto :goto_1
 
     :cond_1
-    add-int/lit8 v2, v2, 0x1
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    goto :goto_0
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 
     :cond_2
-    const/4 v2, -0x1
+    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+
+    iget-boolean p1, p0, Ls/d;->a:Z
+
+    if-nez p1, :cond_4
+
+    iget-object p1, p0, Ls/d;->b:Ly9/k;
+
+    iput-object p1, v0, Ls/c;->j:Ly9/k;
+
+    iput v4, v0, Ls/c;->m:I
+
+    new-instance v2, Ly9/k;
+
+    invoke-static {v0}, Lll/d;->C(Ly9/d;)Ly9/d;
+
+    move-result-object v0
+
+    sget-object v4, Lz9/a;->h:Lz9/a;
+
+    invoke-direct {v2, v0, v4}, Ly9/k;-><init>(Ly9/d;Lz9/a;)V
+
+    iput-object v2, p0, Ls/d;->b:Ly9/k;
+
+    invoke-virtual {v2}, Ly9/k;->a()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne v0, v1, :cond_3
+
+    return-object v1
+
+    :cond_3
+    move-object v0, p1
 
     :goto_1
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-eqz v0, :cond_4
 
-    move-result-object p1
+    invoke-interface {v0, v3}, Ly9/d;->s(Ljava/lang/Object;)V
 
-    return-object p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    :cond_4
+    return-object v3
 .end method

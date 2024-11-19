@@ -1,19 +1,32 @@
-.class public final Lq/Y;
+.class public final Lq/y;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lr5/o;
+
 
 # instance fields
-.field public a:F
+.field public final a:Lh4/c;
 
-.field public b:Z
+.field public b:Lq/h0;
 
-.field public c:Lq/z;
+
+# direct methods
+.method public constructor <init>(Lh4/c;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lq/y;->a:Lh4/c;
+
+    return-void
+.end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 3
 
     const/4 v0, 0x1
 
@@ -22,7 +35,7 @@
     return v0
 
     :cond_0
-    instance-of v1, p1, Lq/Y;
+    instance-of v1, p1, Lq/y;
 
     const/4 v2, 0x0
 
@@ -31,133 +44,31 @@
     return v2
 
     :cond_1
-    check-cast p1, Lq/Y;
+    check-cast p1, Lq/y;
 
-    iget v1, p0, Lq/Y;->a:F
+    iget-object p1, p1, Lq/y;->a:Lh4/c;
 
-    iget v3, p1, Lq/Y;->a:F
+    iget-object v1, p0, Lq/y;->a:Lh4/c;
 
-    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+    if-ne p1, v1, :cond_2
 
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    return v2
+    goto :goto_0
 
     :cond_2
-    iget-boolean v1, p0, Lq/Y;->b:Z
+    move v0, v2
 
-    iget-boolean v3, p1, Lq/Y;->b:Z
-
-    if-eq v1, v3, :cond_3
-
-    return v2
-
-    :cond_3
-    iget-object v1, p0, Lq/Y;->c:Lq/z;
-
-    iget-object p1, p1, Lq/Y;->c:Lq/z;
-
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_4
-
-    return v2
-
-    :cond_4
-    const/4 p1, 0x0
-
-    invoke-static {p1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_5
-
-    return v2
-
-    :cond_5
+    :goto_0
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 3
+    .locals 1
 
-    iget v0, p0, Lq/Y;->a:F
+    iget-object v0, p0, Lq/y;->a:Lh4/c;
 
-    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
-
-    move-result v0
-
-    const/16 v1, 0x1f
-
-    mul-int/2addr v0, v1
-
-    iget-boolean v2, p0, Lq/Y;->b:Z
-
-    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
-
-    iget-object v2, p0, Lq/Y;->c:Lq/z;
-
-    if-nez v2, :cond_0
-
-    const/4 v2, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    :goto_0
-    add-int/2addr v0, v2
-
-    mul-int/2addr v0, v1
 
     return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "RowColumnParentData(weight="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget v1, p0, Lq/Y;->a:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v1, ", fill="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lq/Y;->b:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v1, ", crossAxisAlignment="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lq/Y;->c:Lq/z;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", flowLayoutData=null)"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method

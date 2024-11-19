@@ -22,12 +22,12 @@
 
 
 # virtual methods
-.method public final a(Lw/Q;La5/b0;Landroid/view/inputmethod/HandwritingGesture;Lr0/O0;Ljava/util/concurrent/Executor;Ljava/util/function/IntConsumer;Lh4/c;)V
+.method public final a(Lw/Q1;La5/b0;Landroid/view/inputmethod/HandwritingGesture;Lr0/O0;Ljava/util/concurrent/Executor;Ljava/util/function/IntConsumer;Lh4/c;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lw/Q;",
+            "Lw/Q1;",
             "La5/b0;",
             "Landroid/view/inputmethod/HandwritingGesture;",
             "Lr0/O0;",
@@ -52,7 +52,7 @@
 
     move-object v5, p7
 
-    invoke-virtual/range {v0 .. v5}, Ly/q;->i(Lw/Q;Landroid/view/inputmethod/HandwritingGesture;La5/b0;Lr0/O0;Lh4/c;)I
+    invoke-virtual/range {v0 .. v5}, Ly/q;->i(Lw/Q1;Landroid/view/inputmethod/HandwritingGesture;La5/b0;Lr0/O0;Lh4/c;)I
 
     move-result p1
 
@@ -86,14 +86,14 @@
     return-void
 .end method
 
-.method public final b(Lw/Q;La5/b0;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroid/os/CancellationSignal;)Z
+.method public final b(Lw/Q1;La5/b0;Landroid/view/inputmethod/PreviewableHandwritingGesture;Landroid/os/CancellationSignal;)Z
     .locals 1
 
     if-eqz p1, :cond_0
 
     sget-object v0, Ly/q;->a:Ly/q;
 
-    invoke-virtual {v0, p1, p3, p2, p4}, Ly/q;->A(Lw/Q;Landroid/view/inputmethod/PreviewableHandwritingGesture;La5/b0;Landroid/os/CancellationSignal;)Z
+    invoke-virtual {v0, p1, p3, p2, p4}, Ly/q;->A(Lw/Q1;Landroid/view/inputmethod/PreviewableHandwritingGesture;La5/b0;Landroid/os/CancellationSignal;)Z
 
     move-result p1
 

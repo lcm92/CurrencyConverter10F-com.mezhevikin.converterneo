@@ -430,15 +430,15 @@
 
     iget-object v0, v0, Lf5/S1;->d:Ljava/lang/Object;
 
-    check-cast v0, Lz2/P;
+    check-cast v0, Lz2/P1;
 
-    iget-object v4, v0, Lz2/P;->c:Lz2/k;
+    iget-object v4, v0, Lz2/P1;->c:Lz2/k;
 
     iget-object v4, v4, Lz2/k;->c:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v4, v2}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
-    iget-object v2, v0, Lz2/P;->a:Lz2/e;
+    iget-object v2, v0, Lz2/P1;->a:Lz2/e;
 
     iget-object v4, v2, Lz2/e;->c:Ljava/util/HashSet;
 
@@ -492,12 +492,12 @@
 
     invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    iget-object v2, v0, Lz2/P;->d:Ljava/lang/Object;
+    iget-object v2, v0, Lz2/P1;->d:Ljava/lang/Object;
 
     monitor-enter v2
 
     :try_start_0
-    iput-boolean v3, v0, Lz2/P;->f:Z
+    iput-boolean v3, v0, Lz2/P1;->f:Z
 
     monitor-exit v2
     :try_end_0

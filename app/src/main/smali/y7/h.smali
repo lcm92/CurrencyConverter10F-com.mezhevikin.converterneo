@@ -17,7 +17,7 @@
 
     iput-object p1, p0, Ly7/h;->a:Lb2/B0;
 
-    iget-object p1, p1, Lb2/B0;->i:Lb2/Y;
+    iget-object p1, p1, Lb2/B0;->i:Lb2/Y1;
 
     if-nez p1, :cond_0
 
@@ -28,7 +28,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iget-object v1, p1, Lb2/Y;->j:Lb2/Y;
+    iget-object v1, p1, Lb2/Y1;->j:Lb2/Y1;
 
     if-nez v1, :cond_1
 
@@ -37,11 +37,11 @@
     :cond_1
     new-instance v2, Lj7/t;
 
-    iget v3, v1, Lb2/Y;->g:I
+    iget v3, v1, Lb2/Y1;->g:I
 
-    iget-object v4, v1, Lb2/Y;->h:Ljava/lang/String;
+    iget-object v4, v1, Lb2/Y1;->h:Ljava/lang/String;
 
-    iget-object v1, v1, Lb2/Y;->i:Ljava/lang/String;
+    iget-object v1, v1, Lb2/Y1;->i:Ljava/lang/String;
 
     invoke-direct {v2, v3, v4, v1, v0}, Lj7/t;-><init>(ILjava/lang/String;Ljava/lang/String;Lj7/t;)V
 
@@ -50,11 +50,11 @@
     :goto_0
     new-instance v1, Lj7/t;
 
-    iget v2, p1, Lb2/Y;->g:I
+    iget v2, p1, Lb2/Y1;->g:I
 
-    iget-object v3, p1, Lb2/Y;->h:Ljava/lang/String;
+    iget-object v3, p1, Lb2/Y1;->h:Ljava/lang/String;
 
-    iget-object p1, p1, Lb2/Y;->i:Ljava/lang/String;
+    iget-object p1, p1, Lb2/Y1;->i:Ljava/lang/String;
 
     invoke-direct {v1, v2, v3, p1, v0}, Lj7/t;-><init>(ILjava/lang/String;Ljava/lang/String;Lj7/t;)V
 

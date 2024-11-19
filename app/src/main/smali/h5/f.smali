@@ -8,16 +8,16 @@
 
 
 # instance fields
-.field public final g:Li/D;
+.field public final g:Li/D1;
 
 
 # direct methods
-.method public constructor <init>(Li/D;)V
+.method public constructor <init>(Li/D1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lh5/f;->g:Li/D;
+    iput-object p1, p0, Lh5/f;->g:Li/D1;
 
     return-void
 .end method
@@ -63,9 +63,9 @@
 .method public final contains(Ljava/lang/Object;)Z
     .locals 1
 
-    iget-object v0, p0, Lh5/f;->g:Li/D;
+    iget-object v0, p0, Lh5/f;->g:Li/D1;
 
-    invoke-virtual {v0, p1}, Li/D;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Li/D1;->c(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -111,9 +111,9 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lh5/f;->g:Li/D;
+    iget-object v2, p0, Lh5/f;->g:Li/D1;
 
-    invoke-virtual {v2, v0}, Li/D;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v0}, Li/D1;->c(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -129,9 +129,9 @@
 .method public final isEmpty()Z
     .locals 1
 
-    iget-object v0, p0, Lh5/f;->g:Li/D;
+    iget-object v0, p0, Lh5/f;->g:Li/D1;
 
-    invoke-virtual {v0}, Li/D;->g()Z
+    invoke-virtual {v0}, Li/D1;->g()Z
 
     move-result v0
 
@@ -193,9 +193,9 @@
 .method public final size()I
     .locals 1
 
-    iget-object v0, p0, Lh5/f;->g:Li/D;
+    iget-object v0, p0, Lh5/f;->g:Li/D1;
 
-    iget v0, v0, Li/D;->d:I
+    iget v0, v0, Li/D1;->d:I
 
     return v0
 .end method

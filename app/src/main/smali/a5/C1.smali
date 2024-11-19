@@ -9,16 +9,16 @@
 # instance fields
 .field public final synthetic h:I
 
-.field public final synthetic i:Lw/Z;
+.field public final synthetic i:Lw/Z1;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lw/Z;I)V
+.method public synthetic constructor <init>(Lw/Z1;I)V
     .locals 0
 
     iput p2, p0, La5/C1;->h:I
 
-    iput-object p1, p0, La5/C1;->i:Lw/Z;
+    iput-object p1, p0, La5/C1;->i:Lw/Z1;
 
     const/4 p1, 0x1
 
@@ -40,9 +40,9 @@
 
     iget-wide v0, p1, Lx5/c;->a:J
 
-    iget-object p1, p0, La5/C1;->i:Lw/Z;
+    iget-object p1, p0, La5/C1;->i:Lw/Z1;
 
-    invoke-interface {p1, v0, v1}, Lw/Z;->c(J)V
+    invoke-interface {p1, v0, v1}, Lw/Z1;->c(J)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 
@@ -57,9 +57,9 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, La5/C1;->i:Lw/Z;
+    iget-object v2, p0, La5/C1;->i:Lw/Z1;
 
-    invoke-interface {v2, v0, v1}, Lw/Z;->d(J)V
+    invoke-interface {v2, v0, v1}, Lw/Z1;->d(J)V
 
     invoke-virtual {p1}, Lk0/r;->a()V
 

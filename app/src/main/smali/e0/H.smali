@@ -1,230 +1,278 @@
-.class public final Le0/H;
-.super Ld0/b;
+.class public final Le0/h;
+.super Le0/A1;
 .source "SourceFile"
 
 
 # instance fields
-.field public final e:Lf5/j0;
+.field public final c:F
 
-.field public final f:Lf5/j0;
+.field public final d:F
 
-.field public final g:Le0/D;
+.field public final e:F
 
-.field public final h:Lf5/g0;
+.field public final f:Z
 
-.field public i:F
+.field public final g:Z
 
-.field public j:Ly5/l;
+.field public final h:F
 
-.field public k:I
+.field public final i:F
 
 
 # direct methods
-.method public constructor <init>(Le0/c;)V
-    .locals 3
+.method public constructor <init>(FFFZZFF)V
+    .locals 2
 
-    invoke-direct {p0}, Ld0/b;-><init>()V
+    const/4 v0, 0x3
 
-    new-instance v0, Lx5/f;
+    const/4 v1, 0x0
 
-    const-wide/16 v1, 0x0
+    invoke-direct {p0, v0, v1, v1}, Le0/A1;-><init>(IZZ)V
 
-    invoke-direct {v0, v1, v2}, Lx5/f;-><init>(J)V
+    iput p1, p0, Le0/h;->c:F
 
-    sget-object v1, Lf5/W1;->l:Lf5/W1;
+    iput p2, p0, Le0/h;->d:F
 
-    invoke-static {v0, v1}, Lf5/d;->J(Ljava/lang/Object;Lf5/M10;)Lf5/j0;
+    iput p3, p0, Le0/h;->e:F
 
-    move-result-object v0
+    iput-boolean p4, p0, Le0/h;->f:Z
 
-    iput-object v0, p0, Le0/H;->e:Lf5/j0;
+    iput-boolean p5, p0, Le0/h;->g:Z
 
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    iput p6, p0, Le0/h;->h:F
 
-    invoke-static {v0, v1}, Lf5/d;->J(Ljava/lang/Object;Lf5/M10;)Lf5/j0;
-
-    move-result-object v0
-
-    iput-object v0, p0, Le0/H;->f:Lf5/j0;
-
-    new-instance v0, Le0/D;
-
-    invoke-direct {v0, p1}, Le0/D;-><init>(Le0/c;)V
-
-    new-instance p1, La5/K1;
-
-    const/16 v1, 0x12
-
-    invoke-direct {p1, v1, p0}, La5/K1;-><init>(ILjava/lang/Object;)V
-
-    iput-object p1, v0, Le0/D;->f:Li4/i;
-
-    iput-object v0, p0, Le0/H;->g:Le0/D;
-
-    const/4 p1, 0x0
-
-    invoke-static {p1}, Lf5/d;->I(I)Lf5/g0;
-
-    move-result-object p1
-
-    iput-object p1, p0, Le0/H;->h:Lf5/g0;
-
-    const/high16 p1, 0x3f800000    # 1.0f
-
-    iput p1, p0, Le0/H;->i:F
-
-    const/4 p1, -0x1
-
-    iput p1, p0, Le0/H;->k:I
+    iput p7, p0, Le0/h;->i:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(F)V
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-    iput p1, p0, Le0/H;->i:F
+    const/4 v0, 0x1
 
-    return-void
-.end method
+    if-ne p0, p1, :cond_0
 
-.method public final b(Ly5/l;)V
-    .locals 0
-
-    iput-object p1, p0, Le0/H;->j:Ly5/l;
-
-    return-void
-.end method
-
-.method public final d()J
-    .locals 2
-
-    iget-object v0, p0, Le0/H;->e:Lf5/j0;
-
-    invoke-virtual {v0}, Lf5/j0;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lx5/f;
-
-    iget-wide v0, v0, Lx5/f;->a:J
-
-    return-wide v0
-.end method
-
-.method public final e(Lq0/F;)V
-    .locals 10
-
-    iget-object v0, p0, Le0/H;->j:Ly5/l;
-
-    iget-object v1, p0, Le0/H;->g:Le0/D;
-
-    if-nez v0, :cond_0
-
-    iget-object v0, v1, Le0/D;->g:Lf5/j0;
-
-    invoke-virtual {v0}, Lf5/j0;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ly5/l;
+    return v0
 
     :cond_0
-    iget-object v2, p0, Le0/H;->f:Lf5/j0;
+    instance-of v1, p1, Le0/h;
 
-    invoke-virtual {v2}, Lf5/j0;->getValue()Ljava/lang/Object;
+    const/4 v2, 0x0
 
-    move-result-object v2
+    if-nez v1, :cond_1
 
-    check-cast v2, Ljava/lang/Boolean;
-
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {p1}, Lq0/F;->getLayoutDirection()Ll6/k;
-
-    move-result-object v2
-
-    sget-object v3, Ll6/k;->h:Ll6/k;
-
-    if-ne v2, v3, :cond_1
-
-    iget-object v2, p1, Lq0/F;->g:La0/b;
-
-    invoke-interface {v2}, La0/d;->t()J
-
-    move-result-wide v3
-
-    iget-object v2, v2, La0/b;->h:Le6/l;
-
-    invoke-virtual {v2}, Le6/l;->o()J
-
-    move-result-wide v5
-
-    invoke-virtual {v2}, Le6/l;->j()Ly5/p;
-
-    move-result-object v7
-
-    invoke-interface {v7}, Ly5/p;->e()V
-
-    :try_start_0
-    iget-object v7, v2, Le6/l;->h:Ljava/lang/Object;
-
-    check-cast v7, La5/Z1;
-
-    const/high16 v8, -0x40800000    # -1.0f
-
-    const/high16 v9, 0x3f800000    # 1.0f
-
-    invoke-virtual {v7, v8, v9, v3, v4}, La5/Z1;->o(FFJ)V
-
-    iget v3, p0, Le0/H;->i:F
-
-    invoke-virtual {v1, p1, v3, v0}, Le0/D;->e(La0/d;FLy5/l;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    invoke-virtual {v2}, Le6/l;->j()Ly5/p;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Ly5/p;->a()V
-
-    invoke-virtual {v2, v5, v6}, Le6/l;->I(J)V
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p1
-
-    invoke-virtual {v2}, Le6/l;->j()Ly5/p;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ly5/p;->a()V
-
-    invoke-virtual {v2, v5, v6}, Le6/l;->I(J)V
-
-    throw p1
+    return v2
 
     :cond_1
-    iget v2, p0, Le0/H;->i:F
+    check-cast p1, Le0/h;
 
-    invoke-virtual {v1, p1, v2, v0}, Le0/D;->e(La0/d;FLy5/l;)V
+    iget v1, p1, Le0/h;->c:F
 
-    :goto_0
-    iget-object p1, p0, Le0/H;->h:Lf5/g0;
+    iget v3, p0, Le0/h;->c:F
 
-    invoke-virtual {p1}, Lf5/g0;->h()I
+    invoke-static {v3, v1}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget v1, p0, Le0/h;->d:F
+
+    iget v3, p1, Le0/h;->d:F
+
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    return v2
+
+    :cond_3
+    iget v1, p0, Le0/h;->e:F
+
+    iget v3, p1, Le0/h;->e:F
+
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    return v2
+
+    :cond_4
+    iget-boolean v1, p0, Le0/h;->f:Z
+
+    iget-boolean v3, p1, Le0/h;->f:Z
+
+    if-eq v1, v3, :cond_5
+
+    return v2
+
+    :cond_5
+    iget-boolean v1, p0, Le0/h;->g:Z
+
+    iget-boolean v3, p1, Le0/h;->g:Z
+
+    if-eq v1, v3, :cond_6
+
+    return v2
+
+    :cond_6
+    iget v1, p0, Le0/h;->h:F
+
+    iget v3, p1, Le0/h;->h:F
+
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v1
+
+    if-eqz v1, :cond_7
+
+    return v2
+
+    :cond_7
+    iget v1, p0, Le0/h;->i:F
+
+    iget p1, p1, Le0/h;->i:F
+
+    invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
 
     move-result p1
 
-    iput p1, p0, Le0/H;->k:I
+    if-eqz p1, :cond_8
 
-    return-void
+    return v2
+
+    :cond_8
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    iget v0, p0, Le0/h;->c:F
+
+    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
+
+    move-result v0
+
+    const/16 v1, 0x1f
+
+    mul-int/2addr v0, v1
+
+    iget v2, p0, Le0/h;->d:F
+
+    invoke-static {v2, v0, v1}, La5/m;->e(FII)I
+
+    move-result v0
+
+    iget v2, p0, Le0/h;->e:F
+
+    invoke-static {v2, v0, v1}, La5/m;->e(FII)I
+
+    move-result v0
+
+    iget-boolean v2, p0, Le0/h;->f:Z
+
+    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
+
+    move-result v0
+
+    iget-boolean v2, p0, Le0/h;->g:Z
+
+    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
+
+    move-result v0
+
+    iget v2, p0, Le0/h;->h:F
+
+    invoke-static {v2, v0, v1}, La5/m;->e(FII)I
+
+    move-result v0
+
+    iget v1, p0, Le0/h;->i:F
+
+    invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "ArcTo(horizontalEllipseRadius="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v1, p0, Le0/h;->c:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", verticalEllipseRadius="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Le0/h;->d:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", theta="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Le0/h;->e:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", isMoreThanHalf="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Le0/h;->f:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ", isPositiveArc="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Le0/h;->g:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ", arcStartX="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Le0/h;->h:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", arcStartY="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Le0/h;->i:F
+
+    const/16 v2, 0x29
+
+    invoke-static {v0, v1, v2}, La5/m;->j(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

@@ -37,7 +37,7 @@
     :try_start_0
     iget-object v0, p0, Lw2/j0;->h:Lw2/e0;
 
-    invoke-virtual {p1}, Lj7/t;->m()Lb2/Y;
+    invoke-virtual {p1}, Lj7/t;->m()Lb2/Y1;
 
     move-result-object p1
 
@@ -69,7 +69,7 @@
     :try_start_1
     iget-object v0, p0, Lw2/j0;->h:Lw2/e0;
 
-    invoke-virtual {p1}, Lj7/t;->m()Lb2/Y;
+    invoke-virtual {p1}, Lj7/t;->m()Lb2/Y1;
 
     move-result-object p1
 

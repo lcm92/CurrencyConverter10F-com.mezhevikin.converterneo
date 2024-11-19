@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -14,7 +14,7 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Lz0/F;
+.field public final b:Lz0/F1;
 
 .field public final c:Le6/o;
 
@@ -30,14 +30,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lz0/F;Le6/o;IZIILa5/Z1;)V
+.method public constructor <init>(Ljava/lang/String;Lz0/F1;Le6/o;IZIILa5/Z1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->a:Ljava/lang/String;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F;
+    iput-object p2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F1;
 
     iput-object p3, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Le6/o;
 
@@ -103,9 +103,9 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F1;
 
-    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F;
+    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F1;
 
     invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -185,9 +185,9 @@
 
     mul-int/2addr v0, v1
 
-    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F;
+    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F1;
 
-    invoke-virtual {v2}, Lz0/F;->hashCode()I
+    invoke-virtual {v2}, Lz0/F1;->hashCode()I
 
     move-result v2
 
@@ -213,7 +213,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->e:Z
 
-    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
 
     move-result v0
 
@@ -259,9 +259,9 @@
 
     iput-object v1, v0, Lz/k;->t:Ljava/lang/String;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F1;
 
-    iput-object v1, v0, Lz/k;->u:Lz0/F;
+    iput-object v1, v0, Lz/k;->u:Lz0/F1;
 
     iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->c:Le6/o;
 
@@ -309,17 +309,17 @@
 
     const/4 v2, 0x1
 
-    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F;
+    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;->b:Lz0/F1;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lz/k;->u:Lz0/F;
+    iget-object v0, p1, Lz/k;->u:Lz0/F1;
 
     if-eq v3, v0, :cond_0
 
-    iget-object v4, v3, Lz0/F;->a:Lz0/y;
+    iget-object v4, v3, Lz0/F1;->a:Lz0/y;
 
-    iget-object v0, v0, Lz0/F;->a:Lz0/y;
+    iget-object v0, v0, Lz0/F1;->a:Lz0/y;
 
     invoke-virtual {v4, v0}, Lz0/y;->b(Lz0/y;)Z
 
@@ -365,15 +365,15 @@
     move v4, v2
 
     :goto_2
-    iget-object v5, p1, Lz/k;->u:Lz0/F;
+    iget-object v5, p1, Lz/k;->u:Lz0/F1;
 
-    invoke-virtual {v5, v3}, Lz0/F;->c(Lz0/F;)Z
+    invoke-virtual {v5, v3}, Lz0/F1;->c(Lz0/F1;)Z
 
     move-result v5
 
     xor-int/2addr v5, v2
 
-    iput-object v3, p1, Lz/k;->u:Lz0/F;
+    iput-object v3, p1, Lz/k;->u:Lz0/F1;
 
     iget v3, p1, Lz/k;->z:I
 
@@ -452,7 +452,7 @@
 
     iget-object v5, p1, Lz/k;->t:Ljava/lang/String;
 
-    iget-object v7, p1, Lz/k;->u:Lz0/F;
+    iget-object v7, p1, Lz/k;->u:Lz0/F1;
 
     iget-object v8, p1, Lz/k;->v:Le6/o;
 
@@ -466,7 +466,7 @@
 
     iput-object v5, v3, Lz/e;->a:Ljava/lang/String;
 
-    iput-object v7, v3, Lz/e;->b:Lz0/F;
+    iput-object v7, v3, Lz/e;->b:Lz0/F1;
 
     iput-object v8, v3, Lz/e;->c:Le6/o;
 

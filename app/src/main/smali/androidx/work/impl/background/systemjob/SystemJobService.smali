@@ -489,7 +489,7 @@
 
     const-string v4, "onStopJob for "
 
-    invoke-static {v4, p1}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p1}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 

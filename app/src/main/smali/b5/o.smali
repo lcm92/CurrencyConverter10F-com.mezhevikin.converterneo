@@ -62,7 +62,7 @@
 
     const/4 v3, 0x0
 
-    invoke-static {p1, v2, v3, v0, v1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p1, v2, v3, v0, v1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     move-result-object p1
 

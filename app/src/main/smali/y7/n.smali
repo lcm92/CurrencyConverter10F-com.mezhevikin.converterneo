@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lb2/W;
+.field public final a:Lb2/W1;
 
 .field public final b:Ljava/util/ArrayList;
 
@@ -12,12 +12,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lb2/W;)V
+.method public constructor <init>(Lb2/W1;)V
     .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ly7/n;->a:Lb2/W;
+    iput-object p1, p0, Ly7/n;->a:Lb2/W1;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -100,7 +100,7 @@
 
     :cond_3
     :goto_2
-    iget-object p1, p0, Ly7/n;->a:Lb2/W;
+    iget-object p1, p0, Ly7/n;->a:Lb2/W1;
 
     if-nez p1, :cond_4
 
@@ -161,7 +161,7 @@
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    iget-object v1, p0, Ly7/n;->a:Lb2/W;
+    iget-object v1, p0, Ly7/n;->a:Lb2/W1;
 
     const/4 v2, 0x0
 

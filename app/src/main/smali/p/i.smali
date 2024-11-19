@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lv4/E;
+.field public final a:Lv4/E1;
 
 
 # direct methods
@@ -21,11 +21,11 @@
 
     const/4 v3, 0x1
 
-    invoke-static {v0, v1, v2, v3}, Lv4/F;->a(IIII)Lv4/E;
+    invoke-static {v0, v1, v2, v3}, Lv4/F1;->a(IIII)Lv4/E1;
 
     move-result-object v0
 
-    iput-object v0, p0, Lp/i;->a:Lv4/E;
+    iput-object v0, p0, Lp/i;->a:Lv4/E1;
 
     return-void
 .end method
@@ -35,9 +35,9 @@
 .method public final a(Lp/h;La4/c;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lp/i;->a:Lv4/E;
+    iget-object v0, p0, Lp/i;->a:Lv4/E1;
 
-    invoke-virtual {v0, p1, p2}, Lv4/E;->a(Ljava/lang/Object;Ly9/d;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Lv4/E1;->a(Ljava/lang/Object;Ly9/d;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -56,9 +56,9 @@
 .method public final b(Lp/h;)V
     .locals 1
 
-    iget-object v0, p0, Lp/i;->a:Lv4/E;
+    iget-object v0, p0, Lp/i;->a:Lv4/E1;
 
-    invoke-virtual {v0, p1}, Lv4/E;->q(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lv4/E1;->q(Ljava/lang/Object;)Z
 
     return-void
 .end method

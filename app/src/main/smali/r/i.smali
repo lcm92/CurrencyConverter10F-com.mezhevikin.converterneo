@@ -11,7 +11,7 @@
 
 .field public final synthetic i:Lr/u;
 
-.field public final synthetic j:Lq/V;
+.field public final synthetic j:Lq/V1;
 
 .field public final synthetic k:Z
 
@@ -37,14 +37,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lr5/q;Lr/u;Lq/V;ZLo/m;ZILr5/c;Lq/h;Lr5/h;Lq/f;Lh4/c;II)V
+.method public constructor <init>(Lr5/q;Lr/u;Lq/V1;ZLo/m;ZILr5/c;Lq/h;Lr5/h;Lq/f;Lh4/c;II)V
     .locals 0
 
     iput-object p1, p0, Lr/i;->h:Lr5/q;
 
     iput-object p2, p0, Lr/i;->i:Lr/u;
 
-    iput-object p3, p0, Lr/i;->j:Lq/V;
+    iput-object p3, p0, Lr/i;->j:Lq/V1;
 
     iput-boolean p4, p0, Lr/i;->k:Z
 
@@ -114,7 +114,7 @@
 
     iget-object v2, v0, Lr/i;->i:Lr/u;
 
-    iget-object v3, v0, Lr/i;->j:Lq/V;
+    iget-object v3, v0, Lr/i;->j:Lq/V1;
 
     iget-boolean v4, v0, Lr/i;->k:Z
 
@@ -130,7 +130,7 @@
 
     iget-object v12, v0, Lr/i;->s:Lh4/c;
 
-    invoke-static/range {v1 .. v15}, Lp2/b;->b(Lr5/q;Lr/u;Lq/V;ZLo/m;ZILr5/c;Lq/h;Lr5/h;Lq/f;Lh4/c;Lf5/p;II)V
+    invoke-static/range {v1 .. v15}, Lp2/b;->b(Lr5/q;Lr/u;Lq/V1;ZLo/m;ZILr5/c;Lq/h;Lr5/h;Lq/f;Lh4/c;Lf5/p;II)V
 
     sget-object v1, Lu9/y;->a:Lu9/y;
 

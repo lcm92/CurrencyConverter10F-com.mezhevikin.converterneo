@@ -1,102 +1,42 @@
-.class public final Lr0/O;
-.super Ljava/lang/Object;
+.class public final synthetic Lr0/o;
+.super Li4/k;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/ComponentCallbacks2;
-
-
-# instance fields
-.field public final synthetic g:Lv0/d;
-
-
-# direct methods
-.method public constructor <init>(Lv0/d;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lr0/O;->g:Lv0/d;
-
-    return-void
-.end method
+.implements Lo4/c;
 
 
 # virtual methods
-.method public final onConfigurationChanged(Landroid/content/res/Configuration;)V
+.method public final a()Lo4/a;
     .locals 1
 
-    iget-object p1, p0, Lr0/O;->g:Lv0/d;
+    sget-object v0, Li4/t;->a:Li4/u;
 
-    monitor-enter p1
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    :try_start_0
-    iget-object v0, p1, Lv0/d;->a:Li/s;
-
-    invoke-virtual {v0}, Li/s;->a()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p1
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p1
-
-    throw v0
+    return-object p0
 .end method
 
-.method public final onLowMemory()V
-    .locals 2
-
-    iget-object v0, p0, Lr0/O;->g:Lv0/d;
-
-    monitor-enter v0
-
-    :try_start_0
-    iget-object v1, v0, Lv0/d;->a:Li/s;
-
-    invoke-virtual {v1}, Li/s;->a()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-
-    throw v1
-.end method
-
-.method public final onTrimMemory(I)V
+.method public final b()Ljava/lang/Object;
     .locals 1
 
-    iget-object p1, p0, Lr0/O;->g:Lv0/d;
+    invoke-virtual {p0}, Lr0/o;->get()Ljava/lang/Object;
 
-    monitor-enter p1
+    move-result-object v0
 
-    :try_start_0
-    iget-object v0, p1, Lv0/d;->a:Li/s;
+    return-object v0
+.end method
 
-    invoke-virtual {v0}, Li/s;->a()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+.method public final get()Ljava/lang/Object;
+    .locals 1
 
-    monitor-exit p1
+    iget-object v0, p0, Li4/b;->h:Ljava/lang/Object;
 
-    return-void
+    check-cast v0, Lr0/u;
 
-    :catchall_0
-    move-exception v0
+    invoke-virtual {v0}, Lr0/u;->getLayoutDirection()Ll6/k;
 
-    monitor-exit p1
+    move-result-object v0
 
-    throw v0
+    return-object v0
 .end method

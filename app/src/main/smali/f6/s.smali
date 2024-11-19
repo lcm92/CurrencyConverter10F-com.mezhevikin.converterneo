@@ -388,7 +388,7 @@
 
     iget-wide v2, v0, Lf6/w;->b:J
 
-    invoke-static {v2, v3}, Lz0/E;->e(J)I
+    invoke-static {v2, v3}, Lz0/E1;->e(J)I
 
     move-result v0
 
@@ -452,7 +452,7 @@
 
     iget-wide v0, p1, Lf6/w;->b:J
 
-    invoke-static {v0, v1}, Lz0/E;->b(J)Z
+    invoke-static {v0, v1}, Lz0/E1;->b(J)Z
 
     move-result p1
 

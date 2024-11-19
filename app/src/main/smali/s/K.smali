@@ -1,73 +1,52 @@
-.class public final Ls/K;
+.class public final Ls/k;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lo0/d;
+
 
 # instance fields
-.field public final a:Li/z;
+.field public final synthetic a:Ls/l;
 
-.field public final b:Li/z;
+.field public final synthetic b:Li4/s;
 
-.field public c:J
-
-.field public d:J
+.field public final synthetic c:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Ls/l;Li4/s;I)V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sget v0, Li/F;->a:I
+    iput-object p1, p0, Ls/k;->a:Ls/l;
 
-    new-instance v0, Li/z;
+    iput-object p2, p0, Ls/k;->b:Li4/s;
 
-    const/4 v1, 0x6
-
-    invoke-direct {v0, v1}, Li/z;-><init>(I)V
-
-    iput-object v0, p0, Ls/K;->a:Li/z;
-
-    new-instance v0, Li/z;
-
-    invoke-direct {v0, v1}, Li/z;-><init>(I)V
-
-    iput-object v0, p0, Ls/K;->b:Li/z;
+    iput p3, p0, Ls/k;->c:I
 
     return-void
 .end method
 
-.method public static final a(Ls/K;JJ)J
-    .locals 4
 
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+# virtual methods
+.method public final a()Z
+    .locals 3
 
-    const-wide/16 v0, 0x0
+    iget-object v0, p0, Ls/k;->b:Li4/s;
 
-    cmp-long p0, p3, v0
+    iget-object v0, v0, Li4/s;->g:Ljava/lang/Object;
 
-    if-nez p0, :cond_0
+    check-cast v0, Ls/i;
 
-    goto :goto_0
+    iget-object v1, p0, Ls/k;->a:Ls/l;
 
-    :cond_0
-    const/4 p0, 0x4
+    iget v2, p0, Ls/k;->c:I
 
-    int-to-long v0, p0
+    invoke-virtual {v1, v0, v2}, Ls/l;->j(Ls/i;I)Z
 
-    div-long/2addr p3, v0
+    move-result v0
 
-    const/4 p0, 0x3
-
-    int-to-long v2, p0
-
-    mul-long/2addr p3, v2
-
-    div-long/2addr p1, v0
-
-    add-long/2addr p1, p3
-
-    :goto_0
-    return-wide p1
+    return v0
 .end method

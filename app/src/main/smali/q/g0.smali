@@ -13,7 +13,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lq/Q;Ljava/lang/String;)V
+.method public constructor <init>(Lq/Q1;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,11 +36,11 @@
 .method public final a(Ll6/b;)I
     .locals 0
 
-    invoke-virtual {p0}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p0}, Lq/g0;->e()Lq/Q1;
 
     move-result-object p1
 
-    iget p1, p1, Lq/Q;->d:I
+    iget p1, p1, Lq/Q1;->d:I
 
     return p1
 .end method
@@ -48,11 +48,11 @@
 .method public final b(Ll6/b;Ll6/k;)I
     .locals 0
 
-    invoke-virtual {p0}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p0}, Lq/g0;->e()Lq/Q1;
 
     move-result-object p1
 
-    iget p1, p1, Lq/Q;->a:I
+    iget p1, p1, Lq/Q1;->a:I
 
     return p1
 .end method
@@ -60,11 +60,11 @@
 .method public final c(Ll6/b;)I
     .locals 0
 
-    invoke-virtual {p0}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p0}, Lq/g0;->e()Lq/Q1;
 
     move-result-object p1
 
-    iget p1, p1, Lq/Q;->b:I
+    iget p1, p1, Lq/Q1;->b:I
 
     return p1
 .end method
@@ -72,16 +72,16 @@
 .method public final d(Ll6/b;Ll6/k;)I
     .locals 0
 
-    invoke-virtual {p0}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p0}, Lq/g0;->e()Lq/Q1;
 
     move-result-object p1
 
-    iget p1, p1, Lq/Q;->c:I
+    iget p1, p1, Lq/Q1;->c:I
 
     return p1
 .end method
 
-.method public final e()Lq/Q;
+.method public final e()Lq/Q1;
     .locals 1
 
     iget-object v0, p0, Lq/g0;->b:Lf5/j0;
@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lq/Q;
+    check-cast v0, Lq/Q1;
 
     return-object v0
 .end method
@@ -114,13 +114,13 @@
     return p1
 
     :cond_1
-    invoke-virtual {p0}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p0}, Lq/g0;->e()Lq/Q1;
 
     move-result-object v0
 
     check-cast p1, Lq/g0;
 
-    invoke-virtual {p1}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p1}, Lq/g0;->e()Lq/Q1;
 
     move-result-object p1
 
@@ -131,7 +131,7 @@
     return p1
 .end method
 
-.method public final f(Lq/Q;)V
+.method public final f(Lq/Q1;)V
     .locals 1
 
     iget-object v0, p0, Lq/g0;->b:Lf5/j0;
@@ -168,11 +168,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p0}, Lq/g0;->e()Lq/Q1;
 
     move-result-object v1
 
-    iget v1, v1, Lq/Q;->a:I
+    iget v1, v1, Lq/Q1;->a:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -180,11 +180,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p0}, Lq/g0;->e()Lq/Q1;
 
     move-result-object v1
 
-    iget v1, v1, Lq/Q;->b:I
+    iget v1, v1, Lq/Q1;->b:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -192,11 +192,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p0}, Lq/g0;->e()Lq/Q1;
 
     move-result-object v1
 
-    iget v1, v1, Lq/Q;->c:I
+    iget v1, v1, Lq/Q1;->c:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -204,11 +204,11 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lq/g0;->e()Lq/Q;
+    invoke-virtual {p0}, Lq/g0;->e()Lq/Q1;
 
     move-result-object v1
 
-    iget v1, v1, Lq/Q;->d:I
+    iget v1, v1, Lq/Q1;->d:I
 
     const/16 v2, 0x29
 

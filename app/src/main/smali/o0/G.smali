@@ -1,21 +1,63 @@
-.class public interface abstract Lo0/G;
-.super Ljava/lang/Object;
+.class public final Lo0/g;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lo0/m;
+.implements Lh4/e;
+
+
+# static fields
+.field public static final h:Lo0/g;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lo0/g;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
+
+    sput-object v0, Lo0/g;->h:Lo0/g;
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public K(IILjava/util/Map;Lh4/c;)Lo0/F;
-    .locals 0
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    invoke-interface {p0, p1, p2, p3, p4}, Lo0/G;->q(IILjava/util/Map;Lh4/c;)Lo0/F;
+    check-cast p1, Lf5/p;
 
-    move-result-object p1
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    move-result p2
+
+    and-int/lit8 p2, p2, 0x3
+
+    const/4 v0, 0x2
+
+    if-ne p2, v0, :cond_1
+
+    invoke-virtual {p1}, Lf5/p;->x()Z
+
+    move-result p2
+
+    if-nez p2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p1}, Lf5/p;->L()V
+
+    :cond_1
+    :goto_0
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
     return-object p1
-.end method
-
-.method public abstract q(IILjava/util/Map;Lh4/c;)Lo0/F;
 .end method

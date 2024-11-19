@@ -794,7 +794,7 @@
 
     array-length v7, v5
 
-    invoke-direct {v6, v7}, Li/I;-><init>(I)V
+    invoke-direct {v6, v7}, Li/I1;-><init>(I)V
 
     move v7, v3
 
@@ -815,7 +815,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v6, v9, v8}, Li/I;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v9, v8}, Li/I1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v7, v7, 0x1
 
@@ -833,7 +833,7 @@
 
     iget-object v9, v8, Ll2/c;->g:Ljava/lang/String;
 
-    invoke-virtual {v6, v9}, Li/I;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v9}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v9
 

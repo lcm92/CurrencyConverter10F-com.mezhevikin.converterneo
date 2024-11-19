@@ -167,11 +167,11 @@
 
     invoke-static {p1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    check-cast p1, Ls4/X;
+    check-cast p1, Ls4/X1;
 
     iget-object v5, p0, Lm/i0;->q:Lm/g0;
 
-    invoke-direct {v1, v5, p1}, Lm/h0;-><init>(Lm/g0;Ls4/X;)V
+    invoke-direct {v1, v5, p1}, Lm/h0;-><init>(Lm/g0;Ls4/X1;)V
 
     :goto_0
     iget-object p1, p0, Lm/i0;->r:Lm/j0;
@@ -225,9 +225,9 @@
 
     invoke-direct {v5, v7, v8}, Lf5/V1;-><init>(Ljava/lang/String;I)V
 
-    iget-object v6, v6, Lm/h0;->b:Ls4/X;
+    iget-object v6, v6, Lm/h0;->b:Ls4/X1;
 
-    invoke-interface {v6, v5}, Ls4/X;->c(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {v6, v5}, Ls4/X1;->c(Ljava/util/concurrent/CancellationException;)V
 
     :cond_5
     iput-object v1, p0, Lm/i0;->p:Ljava/lang/Object;

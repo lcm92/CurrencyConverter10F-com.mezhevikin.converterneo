@@ -134,7 +134,7 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-interface {p2}, Lo3/b;->g()Ls3/K;
+    invoke-interface {p2}, Lo3/b;->g()Ls3/K1;
 
     move-result-object p1
 
@@ -261,7 +261,7 @@
 
     move-result-object v4
 
-    invoke-interface {v4}, Lo3/b;->g()Ls3/K;
+    invoke-interface {v4}, Lo3/b;->g()Ls3/K1;
 
     move-result-object v4
 

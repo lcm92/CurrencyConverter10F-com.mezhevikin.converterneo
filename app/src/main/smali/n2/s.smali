@@ -30,7 +30,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Li/I;-><init>(I)V
+    invoke-direct {v0, v1}, Li/I1;-><init>(I)V
 
     invoke-static {v0}, Ljava/util/Collections;->synchronizedMap(Ljava/util/Map;)Ljava/util/Map;
 

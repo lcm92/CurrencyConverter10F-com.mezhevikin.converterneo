@@ -9,16 +9,16 @@
 # instance fields
 .field public final synthetic h:I
 
-.field public final synthetic i:Ls4/B;
+.field public final synthetic i:Ls4/B1;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ls4/B;I)V
+.method public synthetic constructor <init>(Ls4/B1;I)V
     .locals 0
 
     iput p2, p0, Lio/ktor/client/engine/cio/r;->h:I
 
-    iput-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B;
+    iput-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B1;
 
     const/4 p1, 0x1
 
@@ -38,7 +38,7 @@
 
     check-cast p1, Ljava/lang/Throwable;
 
-    iget-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B;
+    iget-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B1;
 
     const/4 v0, 0x0
 
@@ -51,7 +51,7 @@
     :pswitch_0
     check-cast p1, Ljava/lang/Throwable;
 
-    iget-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B;
+    iget-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B1;
 
     const/4 v0, 0x0
 

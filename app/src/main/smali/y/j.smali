@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final a(Landroid/view/inputmethod/CursorAnchorInfo$Builder;Lz0/C;Lx5/d;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+.method public static final a(Landroid/view/inputmethod/CursorAnchorInfo$Builder;Lz0/C1;Lx5/d;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
     .locals 6
 
     invoke-virtual {p2}, Lx5/d;->e()Z
@@ -13,7 +13,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p1, Lz0/C;->b:Lz0/l;
+    iget-object v0, p1, Lz0/C1;->b:Lz0/l;
 
     iget v1, p2, Lx5/d;->b:F
 
@@ -21,7 +21,7 @@
 
     move-result v0
 
-    iget-object v1, p1, Lz0/C;->b:Lz0/l;
+    iget-object v1, p1, Lz0/C1;->b:Lz0/l;
 
     iget p2, p2, Lx5/d;->d:F
 
@@ -32,7 +32,7 @@
     if-gt v0, p2, :cond_0
 
     :goto_0
-    invoke-virtual {p1, v0}, Lz0/C;->f(I)F
+    invoke-virtual {p1, v0}, Lz0/C1;->f(I)F
 
     move-result v2
 
@@ -40,7 +40,7 @@
 
     move-result v3
 
-    invoke-virtual {p1, v0}, Lz0/C;->g(I)F
+    invoke-virtual {p1, v0}, Lz0/C1;->g(I)F
 
     move-result v4
 

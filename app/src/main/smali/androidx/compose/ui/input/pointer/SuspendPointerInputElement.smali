@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Lw/Z;Lh4/e;I)V
+.method public constructor <init>(Ljava/lang/Object;Lw/Z1;Lh4/e;I)V
     .locals 1
 
     and-int/lit8 p4, p4, 0x2
@@ -204,7 +204,7 @@
 .method public final j()Lr5/p;
     .locals 5
 
-    new-instance v0, Lk0/B;
+    new-instance v0, Lk0/B1;
 
     iget-object v1, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->c:[Ljava/lang/Object;
 
@@ -214,7 +214,7 @@
 
     iget-object v4, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->b:Ljava/lang/Object;
 
-    invoke-direct {v0, v3, v4, v1, v2}, Lk0/B;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lh4/e;)V
+    invoke-direct {v0, v3, v4, v1, v2}, Lk0/B1;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lh4/e;)V
 
     return-object v0
 .end method
@@ -222,9 +222,9 @@
 .method public final k(Lr5/p;)V
     .locals 4
 
-    check-cast p1, Lk0/B;
+    check-cast p1, Lk0/B1;
 
-    iget-object v0, p1, Lk0/B;->t:Ljava/lang/Object;
+    iget-object v0, p1, Lk0/B1;->t:Ljava/lang/Object;
 
     iget-object v1, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->a:Ljava/lang/Object;
 
@@ -236,9 +236,9 @@
 
     xor-int/2addr v0, v2
 
-    iput-object v1, p1, Lk0/B;->t:Ljava/lang/Object;
+    iput-object v1, p1, Lk0/B1;->t:Ljava/lang/Object;
 
-    iget-object v1, p1, Lk0/B;->u:Ljava/lang/Object;
+    iget-object v1, p1, Lk0/B1;->u:Ljava/lang/Object;
 
     iget-object v3, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->b:Ljava/lang/Object;
 
@@ -251,9 +251,9 @@
     move v0, v2
 
     :cond_0
-    iput-object v3, p1, Lk0/B;->u:Ljava/lang/Object;
+    iput-object v3, p1, Lk0/B1;->u:Ljava/lang/Object;
 
-    iget-object v1, p1, Lk0/B;->v:[Ljava/lang/Object;
+    iget-object v1, p1, Lk0/B1;->v:[Ljava/lang/Object;
 
     iget-object v3, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->c:[Ljava/lang/Object;
 
@@ -287,16 +287,16 @@
     move v2, v0
 
     :goto_0
-    iput-object v3, p1, Lk0/B;->v:[Ljava/lang/Object;
+    iput-object v3, p1, Lk0/B1;->v:[Ljava/lang/Object;
 
     if-eqz v2, :cond_4
 
-    invoke-virtual {p1}, Lk0/B;->A0()V
+    invoke-virtual {p1}, Lk0/B1;->A0()V
 
     :cond_4
     iget-object v0, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Lh4/e;
 
-    iput-object v0, p1, Lk0/B;->w:Lh4/e;
+    iput-object v0, p1, Lk0/B1;->w:Lh4/e;
 
     return-void
 .end method

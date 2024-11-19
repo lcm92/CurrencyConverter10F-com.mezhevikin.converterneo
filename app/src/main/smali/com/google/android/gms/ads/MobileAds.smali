@@ -16,7 +16,7 @@
     monitor-enter v1
 
     :try_start_0
-    iget-object v0, v0, Lb2/i0;->f:Lb2/L;
+    iget-object v0, v0, Lb2/i0;->f:Lb2/L1;
 
     if-eqz v0, :cond_0
 
@@ -35,7 +35,7 @@
     if-eqz v2, :cond_1
 
     :try_start_1
-    invoke-interface {v0, p0}, Lb2/L;->i(Ljava/lang/String;)V
+    invoke-interface {v0, p0}, Lb2/L1;->i(Ljava/lang/String;)V
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

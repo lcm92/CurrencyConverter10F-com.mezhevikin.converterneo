@@ -51,11 +51,11 @@
     goto/16 :goto_3
 
     :cond_0
-    invoke-static {p1}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {p1}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object p1
 
-    invoke-static {p2}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {p2}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object p2
 
@@ -70,7 +70,7 @@
     :cond_1
     const/16 v0, 0x10
 
-    new-array v3, v0, [Lq0/D;
+    new-array v3, v0, [Lq0/D1;
 
     move v4, v1
 
@@ -113,14 +113,14 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    invoke-virtual {p1}, Lq0/D;->s()Lq0/D;
+    invoke-virtual {p1}, Lq0/D1;->s()Lq0/D1;
 
     move-result-object p1
 
     goto :goto_0
 
     :cond_4
-    new-array p1, v0, [Lq0/D;
+    new-array p1, v0, [Lq0/D1;
 
     move v0, v1
 
@@ -161,7 +161,7 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    invoke-virtual {p2}, Lq0/D;->s()Lq0/D;
+    invoke-virtual {p2}, Lq0/D1;->s()Lq0/D1;
 
     move-result-object p2
 
@@ -191,17 +191,17 @@
 
     aget-object p2, v3, v1
 
-    check-cast p2, Lq0/D;
+    check-cast p2, Lq0/D1;
 
-    invoke-virtual {p2}, Lq0/D;->t()I
+    invoke-virtual {p2}, Lq0/D1;->t()I
 
     move-result p2
 
     aget-object p1, p1, v1
 
-    check-cast p1, Lq0/D;
+    check-cast p1, Lq0/D1;
 
-    invoke-virtual {p1}, Lq0/D;->t()I
+    invoke-virtual {p1}, Lq0/D1;->t()I
 
     move-result p1
 

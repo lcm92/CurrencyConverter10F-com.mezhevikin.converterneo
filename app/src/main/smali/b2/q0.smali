@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lb2/T;
+.implements Lb2/T1;
 
 
 # direct methods

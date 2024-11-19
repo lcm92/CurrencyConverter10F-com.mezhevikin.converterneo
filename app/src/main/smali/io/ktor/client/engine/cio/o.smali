@@ -228,11 +228,11 @@
     :goto_2
     check-cast v2, Lo3/g;
 
-    iget-object v3, v2, Lo3/g;->a:Ls3/A;
+    iget-object v3, v2, Lo3/g;->a:Ls3/A1;
 
-    sget-object v4, Ls3/A;->r:Ls3/A;
+    sget-object v4, Ls3/A1;->r:Ls3/A1;
 
-    invoke-virtual {v3, v4}, Ls3/A;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Ls3/A1;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -266,11 +266,11 @@
 
     invoke-virtual {v2, v3}, Lo3/d;->c(Lm9/a;)V
 
-    iget-object v3, v10, Lo3/e;->a:Ls3/K;
+    iget-object v3, v10, Lo3/e;->a:Ls3/K1;
 
-    iget-object v5, v2, Lo3/d;->a:Ls3/G;
+    iget-object v5, v2, Lo3/d;->a:Ls3/G1;
 
-    invoke-static {v5, v3}, Lp1/h;->o(Ls3/G;Ls3/K;)V
+    invoke-static {v5, v3}, Lp1/h;->o(Ls3/G1;Ls3/K1;)V
 
     iget-object v3, v10, Lo3/e;->c:Ls3/s;
 
@@ -333,9 +333,9 @@
     return-object v1
 
     :cond_4
-    sget-object v4, Ls3/A;->i:Ls3/A;
+    sget-object v4, Ls3/A1;->i:Ls3/A1;
 
-    invoke-virtual {v3, v4}, Ls3/A;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Ls3/A1;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 

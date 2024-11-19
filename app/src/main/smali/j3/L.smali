@@ -1,200 +1,72 @@
-.class public final Lj3/L;
-.super Ljava/lang/Object;
+.class public final Lj3/l;
+.super Lv3/b;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:Ljava/lang/Long;
+.field public final a:Ls3/d;
 
-.field public b:Ljava/lang/Long;
+.field public final b:J
 
-.field public c:Ljava/lang/Long;
+.field public final synthetic c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Ls3/d;Ljava/lang/Object;)V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-wide/16 v0, 0x0
+    iput-object p2, p0, Lj3/l;->c:Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    if-nez p1, :cond_0
 
-    move-result-object v0
+    sget-object p1, Ls3/b;->a:Ls3/d;
 
-    iput-object v0, p0, Lj3/L;->a:Ljava/lang/Long;
-
-    iput-object v0, p0, Lj3/L;->b:Ljava/lang/Long;
-
-    iput-object v0, p0, Lj3/L;->c:Ljava/lang/Long;
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lj3/L;->a:Ljava/lang/Long;
-
-    iput-object v0, p0, Lj3/L;->b:Ljava/lang/Long;
-
-    iput-object v0, p0, Lj3/L;->c:Ljava/lang/Long;
-
-    return-void
-.end method
-
-.method public static a(Ljava/lang/Long;)V
-    .locals 4
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v0
-
-    const-wide/16 v2, 0x0
-
-    cmp-long p0, v0, v2
-
-    if-lez p0, :cond_0
-
-    goto :goto_0
+    sget-object p1, Ls3/b;->b:Ls3/d;
 
     :cond_0
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+    iput-object p1, p0, Lj3/l;->a:Ls3/d;
 
-    const-string v0, "Only positive timeout values are allowed, for infinite timeout use HttpTimeout.INFINITE_TIMEOUT_MS"
+    check-cast p2, [B
 
-    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    array-length p1, p2
 
-    throw p0
+    int-to-long p1, p1
 
-    :cond_1
-    :goto_0
+    iput-wide p1, p0, Lj3/l;->b:J
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final a()Ljava/lang/Long;
+    .locals 2
 
-    const/4 v0, 0x1
+    iget-wide v0, p0, Lj3/l;->b:J
 
-    if-ne p0, p1, :cond_0
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    return v0
+    move-result-object v0
 
-    :cond_0
-    const/4 v1, 0x0
-
-    if-eqz p1, :cond_5
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v2
-
-    const-class v3, Lj3/L;
-
-    if-eq v3, v2, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    check-cast p1, Lj3/L;
-
-    iget-object v2, p0, Lj3/L;->a:Ljava/lang/Long;
-
-    iget-object v3, p1, Lj3/L;->a:Ljava/lang/Long;
-
-    invoke-static {v2, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    return v1
-
-    :cond_2
-    iget-object v2, p0, Lj3/L;->b:Ljava/lang/Long;
-
-    iget-object v3, p1, Lj3/L;->b:Ljava/lang/Long;
-
-    invoke-static {v2, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_3
-
-    return v1
-
-    :cond_3
-    iget-object v2, p0, Lj3/L;->c:Ljava/lang/Long;
-
-    iget-object p1, p1, Lj3/L;->c:Ljava/lang/Long;
-
-    invoke-static {v2, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_4
-
-    return v1
-
-    :cond_4
-    return v0
-
-    :cond_5
-    :goto_0
-    return v1
+    return-object v0
 .end method
 
-.method public final hashCode()I
-    .locals 3
+.method public final b()Ls3/d;
+    .locals 1
 
-    iget-object v0, p0, Lj3/L;->a:Ljava/lang/Long;
+    iget-object v0, p0, Lj3/l;->a:Ls3/d;
 
-    const/4 v1, 0x0
+    return-object v0
+.end method
 
-    if-eqz v0, :cond_0
+.method public final d()[B
+    .locals 1
 
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    iget-object v0, p0, Lj3/l;->c:Ljava/lang/Object;
 
-    move-result v0
+    check-cast v0, [B
 
-    goto :goto_0
-
-    :cond_0
-    move v0, v1
-
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lj3/L;->b:Ljava/lang/Long;
-
-    if-eqz v2, :cond_1
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_1
-
-    :cond_1
-    move v2, v1
-
-    :goto_1
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lj3/L;->c:Ljava/lang/Long;
-
-    if-eqz v2, :cond_2
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v1
-
-    :cond_2
-    add-int/2addr v0, v1
-
-    return v0
+    return-object v0
 .end method

@@ -27,7 +27,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lb2/Q;)V
+.method public constructor <init>(Lb2/Q1;)V
     .locals 2
 
     const/4 v0, 0x6
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     :try_start_0
-    check-cast p1, Lb2/O;
+    check-cast p1, Lb2/O1;
 
     .line 4
     invoke-virtual {p1}, Lcom/google/android/gms/internal/play_billing/e;->D()Landroid/os/Parcel;

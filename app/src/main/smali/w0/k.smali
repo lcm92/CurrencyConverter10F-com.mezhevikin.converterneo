@@ -121,9 +121,9 @@
 
     invoke-direct {v1, v2, v3, p3, p0}, Lw0/f;-><init>(Lx0/m;Ll6/i;Lx4/d;Lw0/k;)V
 
-    iget-object p2, p2, Lw0/l;->d:Lq0/Z;
+    iget-object p2, p2, Lw0/l;->d:Lq0/Z1;
 
-    invoke-static {p2}, Lo0/U;->g(Lo0/p;)Lo0/p;
+    invoke-static {p2}, Lo0/U1;->g(Lo0/p;)Lo0/p;
 
     move-result-object p3
 

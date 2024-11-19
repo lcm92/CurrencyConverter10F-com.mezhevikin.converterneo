@@ -9,14 +9,14 @@
 # instance fields
 .field public k:I
 
-.field public final synthetic l:Lo/S;
+.field public final synthetic l:Lo/S1;
 
 
 # direct methods
-.method public constructor <init>(Lo/S;Ly9/d;)V
+.method public constructor <init>(Lo/S1;Ly9/d;)V
     .locals 0
 
-    iput-object p1, p0, Lo/E0;->l:Lo/S;
+    iput-object p1, p0, Lo/E0;->l:Lo/S1;
 
     const/4 p1, 0x2
 
@@ -32,9 +32,9 @@
 
     new-instance p2, Lo/E0;
 
-    iget-object v0, p0, Lo/E0;->l:Lo/S;
+    iget-object v0, p0, Lo/E0;->l:Lo/S1;
 
-    invoke-direct {p2, v0, p1}, Lo/E0;-><init>(Lo/S;Ly9/d;)V
+    invoke-direct {p2, v0, p1}, Lo/E0;-><init>(Lo/S1;Ly9/d;)V
 
     return-object p2
 .end method
@@ -70,9 +70,9 @@
 
     iput v2, p0, Lo/E0;->k:I
 
-    iget-object p1, p0, Lo/E0;->l:Lo/S;
+    iget-object p1, p0, Lo/E0;->l:Lo/S1;
 
-    invoke-virtual {p1, p0}, Lo/S;->a(La4/c;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Lo/S1;->a(La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 

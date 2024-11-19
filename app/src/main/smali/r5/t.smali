@@ -127,7 +127,7 @@
 
     move-result-object v6
 
-    invoke-static {v6}, Ls4/y;->m(Ly9/i;)Ls4/X;
+    invoke-static {v6}, Ls4/y;->m(Ly9/i;)Ls4/X1;
 
     move-result-object v6
 
@@ -137,7 +137,7 @@
 
     move-result-object p1
 
-    invoke-direct {v1, v6, p1}, Lr5/s;-><init>(Ls4/X;Ljava/lang/Object;)V
+    invoke-direct {v1, v6, p1}, Lr5/s;-><init>(Ls4/X1;Ljava/lang/Object;)V
 
     invoke-virtual {v2, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -147,13 +147,13 @@
 
     if-eqz p1, :cond_3
 
-    iget-object p1, p1, Lr5/s;->a:Ls4/X;
+    iget-object p1, p1, Lr5/s;->a:Ls4/X1;
 
     iput-object v1, p0, Lr5/t;->l:Ljava/lang/Object;
 
     iput v5, p0, Lr5/t;->k:I
 
-    invoke-static {p1, p0}, Ls4/y;->f(Ls4/X;La4/i;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Ls4/y;->f(Ls4/X1;La4/i;)Ljava/lang/Object;
 
     move-result-object p1
 

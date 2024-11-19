@@ -1,181 +1,76 @@
-.class public final Lq/S;
-.super Lr5/p;
+.class public final Lq/s;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lq0/w;
+.implements Lh4/e;
 
 
 # instance fields
-.field public t:I
+.field public final synthetic h:Lr5/q;
 
-.field public u:Z
+.field public final synthetic i:Lr5/d;
+
+.field public final synthetic j:Z
+
+.field public final synthetic k:Ln5/a;
+
+.field public final synthetic l:I
+
+
+# direct methods
+.method public constructor <init>(Lr5/q;Lr5/d;ZLn5/a;I)V
+    .locals 0
+
+    iput-object p1, p0, Lq/s;->h:Lr5/q;
+
+    iput-object p2, p0, Lq/s;->i:Lr5/d;
+
+    iput-boolean p3, p0, Lq/s;->j:Z
+
+    iput-object p4, p0, Lq/s;->k:Ln5/a;
+
+    iput p5, p0, Lq/s;->l:I
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final a(Lq0/N;Lo0/D;I)I
-    .locals 0
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
-    invoke-interface {p2, p3}, Lo0/D;->U(I)I
+    move-object v4, p1
 
-    move-result p1
+    check-cast v4, Lf5/p;
 
-    return p1
-.end method
+    check-cast p2, Ljava/lang/Number;
 
-.method public final c(Lq0/N;Lo0/D;I)I
-    .locals 1
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    iget p1, p0, Lq/S;->t:I
+    iget p1, p0, Lq/s;->l:I
 
-    const/4 v0, 0x1
+    or-int/lit8 p1, p1, 0x1
 
-    if-ne p1, v0, :cond_0
+    invoke-static {p1}, Lf5/d;->T(I)I
 
-    invoke-interface {p2, p3}, Lo0/D;->Q(I)I
+    move-result v5
 
-    move-result p1
+    iget-object v3, p0, Lq/s;->k:Ln5/a;
 
-    goto :goto_0
+    iget-object v0, p0, Lq/s;->h:Lr5/q;
 
-    :cond_0
-    invoke-interface {p2, p3}, Lo0/D;->T(I)I
+    iget-object v1, p0, Lq/s;->i:Lr5/d;
 
-    move-result p1
+    iget-boolean v2, p0, Lq/s;->j:Z
 
-    :goto_0
-    return p1
-.end method
+    invoke-static/range {v0 .. v5}, Lq/c;->a(Lr5/q;Lr5/d;ZLn5/a;Lf5/p;I)V
 
-.method public final d(Lq0/N;Lo0/D;I)I
-    .locals 0
-
-    invoke-interface {p2, p3}, Lo0/D;->c(I)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final f(Lq0/N;Lo0/D;I)I
-    .locals 1
-
-    iget p1, p0, Lq/S;->t:I
-
-    const/4 v0, 0x1
-
-    if-ne p1, v0, :cond_0
-
-    invoke-interface {p2, p3}, Lo0/D;->Q(I)I
-
-    move-result p1
-
-    goto :goto_0
-
-    :cond_0
-    invoke-interface {p2, p3}, Lo0/D;->T(I)I
-
-    move-result p1
-
-    :goto_0
-    return p1
-.end method
-
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
-    .locals 3
-
-    iget v0, p0, Lq/S;->t:I
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    invoke-static {p3, p4}, Ll6/a;->g(J)I
-
-    move-result v0
-
-    invoke-interface {p2, v0}, Lo0/D;->Q(I)I
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-static {p3, p4}, Ll6/a;->g(J)I
-
-    move-result v0
-
-    invoke-interface {p2, v0}, Lo0/D;->T(I)I
-
-    move-result v0
-
-    :goto_0
-    const/4 v1, 0x0
-
-    if-gez v0, :cond_1
-
-    move v0, v1
-
-    :cond_1
-    if-ltz v0, :cond_3
-
-    const v2, 0x7fffffff
-
-    invoke-static {v0, v0, v1, v2}, Lk4/a;->F(IIII)J
-
-    move-result-wide v0
-
-    iget-boolean v2, p0, Lq/S;->u:Z
-
-    if-eqz v2, :cond_2
-
-    invoke-static {p3, p4, v0, v1}, Lk4/a;->C(JJ)J
-
-    move-result-wide v0
-
-    :cond_2
-    invoke-interface {p2, v0, v1}, Lo0/D;->a(J)Lo0/N;
-
-    move-result-object p2
-
-    iget p3, p2, Lo0/N;->g:I
-
-    iget p4, p2, Lo0/N;->h:I
-
-    new-instance v0, Lo6/o;
-
-    const/4 v1, 0x7
-
-    invoke-direct {v0, p2, v1}, Lo6/o;-><init>(Lo0/N;I)V
-
-    sget-object p2, Lv9/u;->g:Lv9/u;
-
-    invoke-interface {p1, p3, p4, p2, v0}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
-
-    move-result-object p1
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
     return-object p1
-
-    :cond_3
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    const-string p2, "width("
-
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p2, ") must be >= 0"
-
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lv2/h;->Y(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    throw p1
 .end method

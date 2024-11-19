@@ -4,12 +4,12 @@
 
 
 # direct methods
-.method public static final a(Lr5/q;Lq/V;)Lr5/q;
+.method public static final a(Lr5/q;Lq/V1;)Lr5/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/foundation/layout/PaddingValuesElement;
 
-    invoke-direct {v0, p1}, Landroidx/compose/foundation/layout/PaddingValuesElement;-><init>(Lq/V;)V
+    invoke-direct {v0, p1}, Landroidx/compose/foundation/layout/PaddingValuesElement;-><init>(Lq/V1;)V
 
     invoke-interface {p0, v0}, Lr5/q;->i(Lr5/q;)Lr5/q;
 

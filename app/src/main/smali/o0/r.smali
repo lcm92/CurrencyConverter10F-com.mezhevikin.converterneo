@@ -11,7 +11,7 @@
 
 
 # virtual methods
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
+.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
     .locals 2
 
     iget-object v0, p0, Lo0/r;->t:Lh4/f;
@@ -24,7 +24,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lo0/F;
+    check-cast p1, Lo0/F1;
 
     return-object p1
 .end method

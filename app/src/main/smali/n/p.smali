@@ -46,7 +46,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lo4/c;Lr5/q;Ls/A;Lh4/e;I)V
+.method public constructor <init>(Lo4/c;Lr5/q;Ls/A1;Lh4/e;I)V
     .locals 1
 
     const/4 v0, 0x1
@@ -108,7 +108,7 @@
 
     move-object v3, p1
 
-    check-cast v3, Ls/A;
+    check-cast v3, Ls/A1;
 
     iget-object p1, p0, Ln/p;->m:Lu9/e;
 
@@ -116,7 +116,7 @@
 
     check-cast v4, Lh4/e;
 
-    invoke-static/range {v1 .. v6}, Lp1/h;->b(Lo4/c;Lr5/q;Ls/A;Lh4/e;Lf5/p;I)V
+    invoke-static/range {v1 .. v6}, Lp1/h;->b(Lo4/c;Lr5/q;Ls/A1;Lh4/e;Lf5/p;I)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

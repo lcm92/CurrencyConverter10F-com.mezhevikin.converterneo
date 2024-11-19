@@ -21,15 +21,15 @@
 
     iget-object v0, v0, Lb2/l;->b:Lb2/j;
 
-    new-instance v1, Lw2/Q;
+    new-instance v1, Lw2/Q1;
 
-    invoke-direct {v1}, Lw2/Q;-><init>()V
+    invoke-direct {v1}, Lw2/Q1;-><init>()V
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     new-instance v2, Lb2/g;
 
-    invoke-direct {v2, v0, p1, p2, v1}, Lb2/g;-><init>(Lb2/j;Landroid/content/Context;Ljava/lang/String;Lw2/Q;)V
+    invoke-direct {v2, v0, p1, p2, v1}, Lb2/g;-><init>(Lb2/j;Landroid/content/Context;Ljava/lang/String;Lw2/Q1;)V
 
     const/4 p2, 0x0
 

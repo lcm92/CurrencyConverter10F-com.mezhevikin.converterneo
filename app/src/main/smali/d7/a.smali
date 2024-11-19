@@ -285,7 +285,7 @@
     :goto_3
     const-string v8, "Failed to run Action["
 
-    invoke-static {v8, v3, v7}, Lk/P;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8, v3, v7}, Lk/P1;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 

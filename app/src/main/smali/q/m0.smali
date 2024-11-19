@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
+.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
     .locals 8
 
     iget v0, p0, Lq/m0;->t:I
@@ -90,11 +90,11 @@
 
     move-result-wide v0
 
-    invoke-interface {p2, v0, v1}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {p2, v0, v1}, Lo0/D1;->a(J)Lo0/N1;
 
     move-result-object v5
 
-    iget p2, v5, Lo0/N;->g:I
+    iget p2, v5, Lo0/N1;->g:I
 
     invoke-static {p3, p4}, Ll6/a;->j(J)I
 
@@ -108,7 +108,7 @@
 
     move-result p2
 
-    iget v0, v5, Lo0/N;->h:I
+    iget v0, v5, Lo0/N1;->h:I
 
     invoke-static {p3, p4}, Ll6/a;->i(J)I
 
@@ -134,11 +134,11 @@
 
     move-object v7, p1
 
-    invoke-direct/range {v2 .. v7}, Lq/l0;-><init>(Lq/m0;ILo0/N;ILo0/G;)V
+    invoke-direct/range {v2 .. v7}, Lq/l0;-><init>(Lq/m0;ILo0/N1;ILo0/G1;)V
 
     sget-object v0, Lv9/u;->g:Lv9/u;
 
-    invoke-interface {p1, p2, p3, v0, p4}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p1, p2, p3, v0, p4}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
 
     move-result-object p1
 

@@ -15,7 +15,7 @@
 
 .field public final j:Lf5/j0;
 
-.field public k:Ll/S;
+.field public k:Ll/S1;
 
 .field public l:Ll/n0;
 
@@ -80,7 +80,7 @@
 
     move-object v5, v3
 
-    check-cast v5, Ll/B;
+    check-cast v5, Ll/B1;
 
     invoke-virtual {v0}, Lf5/j0;->getValue()Ljava/lang/Object;
 
@@ -383,7 +383,7 @@
 
     move-result-object v5
 
-    check-cast v5, Ll/B;
+    check-cast v5, Ll/B1;
 
     instance-of v5, v5, Ll/g0;
 
@@ -393,7 +393,7 @@
 
     move-result-object v1
 
-    check-cast v1, Ll/B;
+    check-cast v1, Ll/B1;
 
     goto :goto_1
 
@@ -407,7 +407,7 @@
 
     move-result-object v1
 
-    check-cast v1, Ll/B;
+    check-cast v1, Ll/B1;
 
     :goto_1
     iget-object v5, v0, Ll/s0;->u:Ll/v0;
@@ -433,7 +433,7 @@
 
     new-instance v10, Ll/h0;
 
-    invoke-direct {v10, v1, v6, v7}, Ll/h0;-><init>(Ll/B;J)V
+    invoke-direct {v10, v1, v6, v7}, Ll/h0;-><init>(Ll/B1;J)V
 
     move-object v12, v10
 
@@ -532,7 +532,7 @@
     return-void
 .end method
 
-.method public final g(Ljava/lang/Object;Ljava/lang/Object;Ll/B;)V
+.method public final g(Ljava/lang/Object;Ljava/lang/Object;Ll/B1;)V
     .locals 1
 
     iget-object v0, p0, Ll/s0;->h:Lf5/j0;
@@ -589,7 +589,7 @@
     return-object v0
 .end method
 
-.method public final h(Ljava/lang/Object;Ll/B;)V
+.method public final h(Ljava/lang/Object;Ll/B1;)V
     .locals 6
 
     iget-boolean v0, p0, Ll/s0;->o:Z
@@ -811,7 +811,7 @@
 
     move-result-object v1
 
-    check-cast v1, Ll/B;
+    check-cast v1, Ll/B1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/CombinedClickableElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -237,7 +237,7 @@
 
     iget-boolean v3, p0, Landroidx/compose/foundation/CombinedClickableElement;->c:Z
 
-    invoke-static {v1, v2, v3}, Lk/P;->c(IIZ)I
+    invoke-static {v1, v2, v3}, Lk/P1;->c(IIZ)I
 
     move-result v1
 
@@ -342,7 +342,7 @@
 .method public final j()Lr5/p;
     .locals 8
 
-    new-instance v7, Lm/D;
+    new-instance v7, Lm/D1;
 
     iget-object v6, p0, Landroidx/compose/foundation/CombinedClickableElement;->f:Ly8/n;
 
@@ -362,15 +362,15 @@
 
     iget-object v0, p0, Landroidx/compose/foundation/CombinedClickableElement;->g:Ljava/lang/String;
 
-    iput-object v0, v7, Lm/D;->N:Ljava/lang/String;
+    iput-object v0, v7, Lm/D1;->N:Ljava/lang/String;
 
     iget-object v0, p0, Landroidx/compose/foundation/CombinedClickableElement;->h:Lh4/a;
 
-    iput-object v0, v7, Lm/D;->O:Lh4/a;
+    iput-object v0, v7, Lm/D1;->O:Lh4/a;
 
     iget-object v0, p0, Landroidx/compose/foundation/CombinedClickableElement;->i:Lh4/a;
 
-    iput-object v0, v7, Lm/D;->P:Lh4/a;
+    iput-object v0, v7, Lm/D1;->P:Lh4/a;
 
     return-object v7
 .end method
@@ -378,9 +378,9 @@
 .method public final k(Lr5/p;)V
     .locals 8
 
-    check-cast p1, Lm/D;
+    check-cast p1, Lm/D1;
 
-    iget-object v0, p1, Lm/D;->N:Ljava/lang/String;
+    iget-object v0, p1, Lm/D1;->N:Ljava/lang/String;
 
     iget-object v1, p0, Landroidx/compose/foundation/CombinedClickableElement;->g:Ljava/lang/String;
 
@@ -390,12 +390,12 @@
 
     if-nez v0, :cond_0
 
-    iput-object v1, p1, Lm/D;->N:Ljava/lang/String;
+    iput-object v1, p1, Lm/D1;->N:Ljava/lang/String;
 
     invoke-static {p1}, Lq0/f;->p(Lq0/m0;)V
 
     :cond_0
-    iget-object v0, p1, Lm/D;->O:Lh4/a;
+    iget-object v0, p1, Lm/D1;->O:Lh4/a;
 
     const/4 v1, 0x1
 
@@ -437,9 +437,9 @@
     move v0, v2
 
     :goto_2
-    iput-object v3, p1, Lm/D;->O:Lh4/a;
+    iput-object v3, p1, Lm/D1;->O:Lh4/a;
 
-    iget-object v3, p1, Lm/D;->P:Lh4/a;
+    iget-object v3, p1, Lm/D1;->P:Lh4/a;
 
     if-nez v3, :cond_4
 
@@ -463,7 +463,7 @@
     move v0, v1
 
     :cond_6
-    iput-object v4, p1, Lm/D;->P:Lh4/a;
+    iput-object v4, p1, Lm/D1;->P:Lh4/a;
 
     iget-boolean v2, p1, Lm/j;->z:Z
 
@@ -495,11 +495,11 @@
 
     if-eqz v7, :cond_8
 
-    iget-object p1, p1, Lm/j;->D:Lk0/B;
+    iget-object p1, p1, Lm/j;->D:Lk0/B1;
 
     if-eqz p1, :cond_8
 
-    invoke-virtual {p1}, Lk0/B;->A0()V
+    invoke-virtual {p1}, Lk0/B1;->A0()V
 
     :cond_8
     return-void

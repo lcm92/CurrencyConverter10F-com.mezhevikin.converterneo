@@ -36,7 +36,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    new-instance v0, Lb/C;
+    new-instance v0, Lb/C1;
 
     new-instance v1, Lb/d;
 
@@ -46,7 +46,7 @@
 
     invoke-direct {v1, v2, v3}, Lb/d;-><init>(Lb/n;I)V
 
-    invoke-direct {v0, v1}, Lb/C;-><init>(Ljava/lang/Runnable;)V
+    invoke-direct {v0, v1}, Lb/C1;-><init>(Ljava/lang/Runnable;)V
 
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -91,7 +91,7 @@
 
     new-instance v1, Lb/g;
 
-    invoke-direct {v1, v0, v2}, Lb/g;-><init>(Lb/C;Lb/n;)V
+    invoke-direct {v1, v0, v2}, Lb/g;-><init>(Lb/C1;Lb/n;)V
 
     iget-object v2, v2, Lb/n;->g:Landroidx/lifecycle/v;
 

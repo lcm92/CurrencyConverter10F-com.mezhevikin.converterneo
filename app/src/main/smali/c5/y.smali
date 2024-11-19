@@ -165,25 +165,25 @@
 
     iget-wide v2, p0, Lc5/y;->b:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
     iget-wide v2, p0, Lc5/y;->c:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
     iget-wide v2, p0, Lc5/y;->d:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
     iget-wide v2, p0, Lc5/y;->e:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 

@@ -9,7 +9,7 @@
 # instance fields
 .field public k:I
 
-.field public synthetic l:Lo/S;
+.field public synthetic l:Lo/S1;
 
 .field public synthetic m:J
 
@@ -76,7 +76,7 @@
     :cond_1
     invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
 
-    iget-object p1, p0, Lw/h0;->l:Lo/S;
+    iget-object p1, p0, Lw/h0;->l:Lo/S1;
 
     iget-wide v9, p0, Lw/h0;->m:J
 
@@ -92,11 +92,11 @@
 
     invoke-direct/range {v7 .. v12}, Lw/f0;-><init>(Lf5/c0;JLp/i;Ly9/d;)V
 
-    invoke-static {v3, v5, v2, v1, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v3, v5, v2, v1, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     iput v6, p0, Lw/h0;->k:I
 
-    invoke-virtual {p1, p0}, Lo/S;->c(La4/c;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, Lo/S1;->c(La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -120,7 +120,7 @@
 
     invoke-direct {v0, v6, p1, v1, v5}, Lw/g0;-><init>(Lf5/c0;ZLp/i;Ly9/d;)V
 
-    invoke-static {v3, v5, v2, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v3, v5, v2, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 
@@ -130,7 +130,7 @@
 .method public final h(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 5
 
-    check-cast p1, Lo/S;
+    check-cast p1, Lo/S1;
 
     check-cast p2, Lx5/c;
 
@@ -148,7 +148,7 @@
 
     invoke-direct {p2, v2, v3, v4, p3}, Lw/h0;-><init>(Lx4/d;Lf5/c0;Lp/i;Ly9/d;)V
 
-    iput-object p1, p2, Lw/h0;->l:Lo/S;
+    iput-object p1, p2, Lw/h0;->l:Lo/S1;
 
     iput-wide v0, p2, Lw/h0;->m:J
 

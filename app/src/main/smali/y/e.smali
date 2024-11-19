@@ -88,7 +88,7 @@
 
     move-object v4, p1
 
-    check-cast v4, Lr0/S;
+    check-cast v4, Lr0/S1;
 
     new-instance p1, Ly/d;
 
@@ -102,7 +102,7 @@
 
     move-object v3, p1
 
-    invoke-direct/range {v3 .. v8}, Ly/d;-><init>(Lr0/S;Lo6/g;Ly/f;Ly/u;Ly9/d;)V
+    invoke-direct/range {v3 .. v8}, Ly/d;-><init>(Lr0/S1;Lo6/g;Ly/f;Ly/u;Ly9/d;)V
 
     iput v2, p0, Ly/e;->k:I
 
@@ -126,7 +126,7 @@
 .method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lr0/S;
+    check-cast p1, Lr0/S1;
 
     check-cast p2, Ly9/d;
 

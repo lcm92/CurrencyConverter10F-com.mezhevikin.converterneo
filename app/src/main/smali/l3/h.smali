@@ -6,7 +6,7 @@
 # instance fields
 .field public j:Ll3/l;
 
-.field public k:Ls3/K;
+.field public k:Ls3/K1;
 
 .field public synthetic l:Ljava/lang/Object;
 
@@ -45,7 +45,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Ll3/l;->c(Ls3/K;La4/c;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Ll3/l;->c(Ls3/K1;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 

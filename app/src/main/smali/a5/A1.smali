@@ -13,16 +13,16 @@
 
 .field public final synthetic m:La5/Z1;
 
-.field public final synthetic n:Lw/Z;
+.field public final synthetic n:Lw/Z1;
 
 
 # direct methods
-.method public constructor <init>(La5/Z1;Lw/Z;Ly9/d;)V
+.method public constructor <init>(La5/Z1;Lw/Z1;Ly9/d;)V
     .locals 0
 
     iput-object p1, p0, La5/A1;->m:La5/Z1;
 
-    iput-object p2, p0, La5/A1;->n:Lw/Z;
+    iput-object p2, p0, La5/A1;->n:Lw/Z1;
 
     const/4 p1, 0x2
 
@@ -40,9 +40,9 @@
 
     iget-object v1, p0, La5/A1;->m:La5/Z1;
 
-    iget-object v2, p0, La5/A1;->n:Lw/Z;
+    iget-object v2, p0, La5/A1;->n:Lw/Z1;
 
-    invoke-direct {v0, v1, v2, p1}, La5/A1;-><init>(La5/Z1;Lw/Z;Ly9/d;)V
+    invoke-direct {v0, v1, v2, p1}, La5/A1;-><init>(La5/Z1;Lw/Z1;Ly9/d;)V
 
     iput-object p2, v0, La5/A1;->l:Ljava/lang/Object;
 
@@ -80,17 +80,17 @@
 
     iget-object p1, p0, La5/A1;->l:Ljava/lang/Object;
 
-    check-cast p1, Lk0/B;
+    check-cast p1, Lk0/B1;
 
     new-instance v1, La5/l;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p1}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {p1}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object v3
 
-    iget-object v3, v3, Lq0/D;->y:Lr0/O0;
+    iget-object v3, v3, Lq0/D1;->y:Lr0/O0;
 
     invoke-direct {v1, v3}, La5/l;-><init>(Lr0/O0;)V
 
@@ -100,13 +100,13 @@
 
     iget-object v5, p0, La5/A1;->m:La5/Z1;
 
-    iget-object v6, p0, La5/A1;->n:Lw/Z;
+    iget-object v6, p0, La5/A1;->n:Lw/Z1;
 
-    invoke-direct {v3, v5, v1, v6, v4}, La5/z;-><init>(La5/Z1;La5/l;Lw/Z;Ly9/d;)V
+    invoke-direct {v3, v5, v1, v6, v4}, La5/z;-><init>(La5/Z1;La5/l;Lw/Z1;Ly9/d;)V
 
     iput v2, p0, La5/A1;->k:I
 
-    invoke-static {p1, v3, p0}, Lo4/j;->i(Lk0/B;Lh4/e;Ly9/d;)Ljava/lang/Object;
+    invoke-static {p1, v3, p0}, Lo4/j;->i(Lk0/B1;Lh4/e;Ly9/d;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -124,7 +124,7 @@
 .method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lk0/B;
+    check-cast p1, Lk0/B1;
 
     check-cast p2, Ly9/d;
 

@@ -58,11 +58,11 @@
 
     move-result-object v0
 
-    check-cast v0, Ls4/X;
+    check-cast v0, Ls4/X1;
 
     new-instance v6, Ls4/a0;
 
-    invoke-direct {v6, v0}, Ls4/a0;-><init>(Ls4/X;)V
+    invoke-direct {v6, v0}, Ls4/a0;-><init>(Ls4/X1;)V
 
     const/4 v0, 0x6
 
@@ -116,7 +116,7 @@
 
     const/4 p3, 0x3
 
-    invoke-static {p0, p2, v7, p1, p3}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p0, p2, v7, p1, p3}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     invoke-virtual {v6}, Ls4/a0;->n0()Z
 

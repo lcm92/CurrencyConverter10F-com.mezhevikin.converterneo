@@ -38,9 +38,9 @@
     :try_start_0
     iget-object v0, v0, Lo2/b;->i:Ljava/lang/Object;
 
-    check-cast v0, Lw2/U;
+    check-cast v0, Lw2/U1;
 
-    invoke-interface {v0}, Lw2/U;->a()V
+    invoke-interface {v0}, Lw2/U1;->a()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -73,9 +73,9 @@
     :try_start_0
     iget-object v0, v0, Lo2/b;->i:Ljava/lang/Object;
 
-    check-cast v0, Lw2/U;
+    check-cast v0, Lw2/U1;
 
-    invoke-interface {v0}, Lw2/U;->b()V
+    invoke-interface {v0}, Lw2/U1;->b()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -120,9 +120,9 @@
     :try_start_0
     iget-object v0, v0, Lo2/b;->i:Ljava/lang/Object;
 
-    check-cast v0, Lw2/U;
+    check-cast v0, Lw2/U1;
 
-    invoke-interface {v0}, Lw2/U;->C()V
+    invoke-interface {v0}, Lw2/U1;->C()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -155,9 +155,9 @@
     :try_start_0
     iget-object v0, v0, Lo2/b;->i:Ljava/lang/Object;
 
-    check-cast v0, Lw2/U;
+    check-cast v0, Lw2/U1;
 
-    invoke-interface {v0}, Lw2/U;->q()V
+    invoke-interface {v0}, Lw2/U1;->q()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 

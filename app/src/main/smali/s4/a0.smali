@@ -11,14 +11,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ls4/X;)V
+.method public constructor <init>(Ls4/X1;)V
     .locals 5
 
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Ls4/g0;-><init>(Z)V
 
-    invoke-virtual {p0, p1}, Ls4/g0;->Z(Ls4/X;)V
+    invoke-virtual {p0, p1}, Ls4/g0;->Z(Ls4/X1;)V
 
     sget-object p1, Ls4/g0;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 

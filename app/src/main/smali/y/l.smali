@@ -60,19 +60,19 @@
 
     move-result-object v1
 
-    check-cast v1, Ls4/X;
+    check-cast v1, Ls4/X1;
 
     iget-object v3, v0, Ly/m;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
     new-instance v4, Ly/k;
 
-    invoke-direct {v4, v1, v0, v2}, Ly/k;-><init>(Ls4/X;Ly/m;Ly9/d;)V
+    invoke-direct {v4, v1, v0, v2}, Ly/k;-><init>(Ls4/X1;Ly/m;Ly9/d;)V
 
     const/4 v0, 0x3
 
     const/4 v1, 0x0
 
-    invoke-static {p1, v2, v1, v4, v0}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p1, v2, v1, v4, v0}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     move-result-object p1
 

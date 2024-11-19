@@ -38,7 +38,7 @@
 .method public abstract b(Ly5/l;)V
 .end method
 
-.method public final c(Lq0/F;JFLy5/l;)V
+.method public final c(Lq0/F1;JFLy5/l;)V
     .locals 4
 
     iget v0, p0, Ld0/b;->c:F
@@ -68,7 +68,7 @@
     iput-object p5, p0, Ld0/b;->b:Ly5/l;
 
     :cond_1
-    invoke-virtual {p1}, Lq0/F;->getLayoutDirection()Ll6/k;
+    invoke-virtual {p1}, Lq0/F1;->getLayoutDirection()Ll6/k;
 
     move-result-object p5
 
@@ -79,7 +79,7 @@
     iput-object p5, p0, Ld0/b;->d:Ll6/k;
 
     :cond_2
-    iget-object p5, p1, Lq0/F;->g:La0/b;
+    iget-object p5, p1, Lq0/F1;->g:La0/b;
 
     invoke-interface {p5}, La0/d;->g()J
 
@@ -142,7 +142,7 @@
 
     if-lez p2, :cond_3
 
-    invoke-virtual {p0, p1}, Ld0/b;->e(Lq0/F;)V
+    invoke-virtual {p0, p1}, Ld0/b;->e(Lq0/F1;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -185,5 +185,5 @@
 .method public abstract d()J
 .end method
 
-.method public abstract e(Lq0/F;)V
+.method public abstract e(Lq0/F1;)V
 .end method

@@ -1,99 +1,49 @@
-.class public final Lz2/H;
-.super Lz2/D;
+.class public final Lz2/h;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lo8/e;
+.implements Lo8/d;
 
 
 # instance fields
-.field public final transient i:Ljava/lang/Object;
+.field public final g:Lo8/e;
+
+.field public final h:Lo8/d;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Lo8/e;Lo8/d;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lz2/H;->i:Ljava/lang/Object;
+    iput-object p1, p0, Lz2/h;->g:Lo8/e;
+
+    iput-object p2, p0, Lz2/h;->h:Lo8/d;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b([Ljava/lang/Object;)I
-    .locals 2
-
-    const/4 v0, 0x0
-
-    iget-object v1, p0, Lz2/H;->i:Ljava/lang/Object;
-
-    aput-object v1, p1, v0
-
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public final contains(Ljava/lang/Object;)Z
+.method public final b(Li8/i;)V
     .locals 1
 
-    iget-object v0, p0, Lz2/H;->i:Ljava/lang/Object;
+    iget-object v0, p0, Lz2/h;->h:Lo8/d;
 
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v0, p1}, Lo8/d;->b(Li8/i;)V
 
-    move-result p1
-
-    return p1
+    return-void
 .end method
 
-.method public final hashCode()I
+.method public final c(Lz2/i;)V
     .locals 1
 
-    iget-object v0, p0, Lz2/H;->i:Ljava/lang/Object;
+    iget-object v0, p0, Lz2/h;->g:Lo8/e;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {v0, p1}, Lo8/e;->c(Lz2/i;)V
 
-    move-result v0
-
-    return v0
-.end method
-
-.method public final synthetic iterator()Ljava/util/Iterator;
-    .locals 2
-
-    new-instance v0, Lz2/E;
-
-    iget-object v1, p0, Lz2/H;->i:Ljava/lang/Object;
-
-    invoke-direct {v0, v1}, Lz2/E;-><init>(Ljava/lang/Object;)V
-
-    return-object v0
-.end method
-
-.method public final size()I
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    iget-object v0, p0, Lz2/H;->i:Ljava/lang/Object;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "["
-
-    const-string v2, "]"
-
-    invoke-static {v1, v0, v2}, Lk/P;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

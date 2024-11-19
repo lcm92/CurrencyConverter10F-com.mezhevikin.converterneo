@@ -11,7 +11,7 @@
 
 .field public synthetic l:Ljava/lang/Object;
 
-.field public final synthetic m:Lk0/B;
+.field public final synthetic m:Lk0/B1;
 
 .field public final synthetic n:Lh4/f;
 
@@ -23,10 +23,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lk0/B;Lh4/f;Lh4/c;Lh4/c;Lh4/c;Ly9/d;)V
+.method public constructor <init>(Lk0/B1;Lh4/f;Lh4/c;Lh4/c;Lh4/c;Ly9/d;)V
     .locals 0
 
-    iput-object p1, p0, Lo/Q0;->m:Lk0/B;
+    iput-object p1, p0, Lo/Q0;->m:Lk0/B1;
 
     iput-object p2, p0, Lo/Q0;->n:Lh4/f;
 
@@ -54,7 +54,7 @@
 
     iget-object v5, p0, Lo/Q0;->q:Lh4/c;
 
-    iget-object v1, p0, Lo/Q0;->m:Lk0/B;
+    iget-object v1, p0, Lo/Q0;->m:Lk0/B1;
 
     iget-object v2, p0, Lo/Q0;->n:Lh4/f;
 
@@ -64,7 +64,7 @@
 
     move-object v6, p1
 
-    invoke-direct/range {v0 .. v6}, Lo/Q0;-><init>(Lk0/B;Lh4/f;Lh4/c;Lh4/c;Lh4/c;Ly9/d;)V
+    invoke-direct/range {v0 .. v6}, Lo/Q0;-><init>(Lk0/B1;Lh4/f;Lh4/c;Lh4/c;Lh4/c;Ly9/d;)V
 
     iput-object p2, v7, Lo/Q0;->l:Ljava/lang/Object;
 
@@ -106,11 +106,11 @@
 
     check-cast v4, Ls4/x;
 
-    new-instance v9, Lo/S;
+    new-instance v9, Lo/S1;
 
-    iget-object p1, p0, Lo/Q0;->m:Lk0/B;
+    iget-object p1, p0, Lo/Q0;->m:Lk0/B1;
 
-    invoke-direct {v9, p1}, Lo/S;-><init>(Ll6/b;)V
+    invoke-direct {v9, p1}, Lo/S1;-><init>(Ll6/b;)V
 
     new-instance v1, Lo/P0;
 
@@ -126,11 +126,11 @@
 
     move-object v3, v1
 
-    invoke-direct/range {v3 .. v10}, Lo/P0;-><init>(Ls4/x;Lh4/f;Lh4/c;Lh4/c;Lh4/c;Lo/S;Ly9/d;)V
+    invoke-direct/range {v3 .. v10}, Lo/P0;-><init>(Ls4/x;Lh4/f;Lh4/c;Lh4/c;Lh4/c;Lo/S1;Ly9/d;)V
 
     iput v2, p0, Lo/Q0;->k:I
 
-    invoke-static {p1, v1, p0}, Lo4/j;->i(Lk0/B;Lh4/e;Ly9/d;)Ljava/lang/Object;
+    invoke-static {p1, v1, p0}, Lo4/j;->i(Lk0/B1;Lh4/e;Ly9/d;)Ljava/lang/Object;
 
     move-result-object p1
 

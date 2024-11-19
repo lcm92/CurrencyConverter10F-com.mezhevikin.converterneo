@@ -29,7 +29,7 @@
 
 .field volatile synthetic _writeOp:Ljava/lang/Object;
 
-.field private volatile attachedJob:Ls4/X;
+.field private volatile attachedJob:Ls4/X1;
 
 .field public final b:Z
 
@@ -415,12 +415,12 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X;
+    iput-object v0, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X1;
 
     return-void
 .end method
 
-.method public static g0(Lio/ktor/utils/io/D;ILo/F;La4/c;)Ljava/lang/Object;
+.method public static g0(Lio/ktor/utils/io/D;ILo/F1;La4/c;)Ljava/lang/Object;
     .locals 12
 
     instance-of v0, p3, Lio/ktor/utils/io/t;
@@ -5664,11 +5664,11 @@
 
     if-eqz p1, :cond_b
 
-    iget-object v0, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X;
+    iget-object v0, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X1;
 
     if-eqz v0, :cond_a
 
-    invoke-static {v0}, Ls4/y;->e(Ls4/X;)V
+    invoke-static {v0}, Ls4/y;->e(Ls4/X1;)V
 
     :cond_a
     iget-object v0, p0, Lio/ktor/utils/io/D;->h:Lio/ktor/utils/io/internal/b;
@@ -6809,7 +6809,7 @@
     :cond_1
     iput v0, p0, Lio/ktor/utils/io/D;->writeSuspensionSize:I
 
-    iget-object v0, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X;
+    iget-object v0, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X1;
 
     sget-object v1, Lz9/a;->g:Lz9/a;
 
@@ -6844,23 +6844,23 @@
     return-object v2
 .end method
 
-.method public final h(Ls4/X;)V
+.method public final h(Ls4/X1;)V
     .locals 3
 
     const-string v0, "job"
 
     invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X;
+    iget-object v0, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X1;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    invoke-interface {v0, v1}, Ls4/X;->c(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {v0, v1}, Ls4/X1;->c(Ljava/util/concurrent/CancellationException;)V
 
     :cond_0
-    iput-object p1, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X;
+    iput-object p1, p0, Lio/ktor/utils/io/D;->attachedJob:Ls4/X1;
 
     new-instance v0, Lio/ktor/utils/io/C;
 
@@ -6872,7 +6872,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {p1, v2, v0, v1}, Ls4/y;->p(Ls4/X;ZLh4/c;I)Ls4/G;
+    invoke-static {p1, v2, v0, v1}, Ls4/y;->p(Ls4/X1;ZLh4/c;I)Ls4/G1;
 
     return-void
 .end method

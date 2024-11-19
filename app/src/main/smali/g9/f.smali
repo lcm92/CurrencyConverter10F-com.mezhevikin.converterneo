@@ -130,7 +130,7 @@
 
     iput v3, v0, Lg9/e;->l:I
 
-    sget-object v2, Ls4/F;->c:Lz4/c;
+    sget-object v2, Ls4/F1;->c:Lz4/c;
 
     new-instance v3, Lg9/a;
 

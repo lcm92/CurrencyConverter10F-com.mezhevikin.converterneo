@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/draw/PainterElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -18,7 +18,7 @@
 
 .field public final c:Lr5/d;
 
-.field public final d:Lo0/I;
+.field public final d:Lo0/I1;
 
 .field public final e:F
 
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ld0/b;ZLr5/d;Lo0/I;FLy5/l;)V
+.method public constructor <init>(Ld0/b;ZLr5/d;Lo0/I1;FLy5/l;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,7 +37,7 @@
 
     iput-object p3, p0, Landroidx/compose/ui/draw/PainterElement;->c:Lr5/d;
 
-    iput-object p4, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I;
+    iput-object p4, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I1;
 
     iput p5, p0, Landroidx/compose/ui/draw/PainterElement;->e:F
 
@@ -104,9 +104,9 @@
     return v2
 
     :cond_4
-    iget-object v1, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I;
+    iget-object v1, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I1;
 
-    iget-object v3, p1, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I;
+    iget-object v3, p1, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I1;
 
     invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -161,7 +161,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/ui/draw/PainterElement;->b:Z
 
-    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
 
     move-result v0
 
@@ -175,7 +175,7 @@
 
     mul-int/2addr v2, v1
 
-    iget-object v0, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I;
+    iget-object v0, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I1;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -229,9 +229,9 @@
 
     iput-object v1, v0, Lv5/h;->v:Lr5/d;
 
-    iget-object v1, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I;
+    iget-object v1, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I1;
 
-    iput-object v1, v0, Lv5/h;->w:Lo0/I;
+    iput-object v1, v0, Lv5/h;->w:Lo0/I1;
 
     iget v1, p0, Landroidx/compose/ui/draw/PainterElement;->e:F
 
@@ -295,9 +295,9 @@
 
     iput-object v1, p1, Lv5/h;->v:Lr5/d;
 
-    iget-object v1, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I;
+    iget-object v1, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I1;
 
-    iput-object v1, p1, Lv5/h;->w:Lo0/I;
+    iput-object v1, p1, Lv5/h;->w:Lo0/I1;
 
     iget v1, p0, Landroidx/compose/ui/draw/PainterElement;->e:F
 
@@ -350,7 +350,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I;
+    iget-object v1, p0, Landroidx/compose/ui/draw/PainterElement;->d:Lo0/I1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -10,7 +10,7 @@
 
 .field public c:Lo/m;
 
-.field public d:Lo/O;
+.field public d:Lo/O1;
 
 .field public e:Z
 
@@ -18,15 +18,15 @@
 
 .field public g:I
 
-.field public h:Lo/T;
+.field public h:Lo/T1;
 
 .field public final i:Lo/p0;
 
-.field public final j:Lj3/F;
+.field public final j:Lj3/F1;
 
 
 # direct methods
-.method public constructor <init>(Lo/k0;Lm/n0;Lo/m;Lo/O;ZLe6/l;)V
+.method public constructor <init>(Lo/k0;Lm/n0;Lo/m;Lo/O1;ZLe6/l;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,7 +37,7 @@
 
     iput-object p3, p0, Lo/s0;->c:Lo/m;
 
-    iput-object p4, p0, Lo/s0;->d:Lo/O;
+    iput-object p4, p0, Lo/s0;->d:Lo/O1;
 
     iput-boolean p5, p0, Lo/s0;->e:Z
 
@@ -47,9 +47,9 @@
 
     iput p1, p0, Lo/s0;->g:I
 
-    sget-object p1, Landroidx/compose/foundation/gestures/a;->a:Lo/W;
+    sget-object p1, Landroidx/compose/foundation/gestures/a;->a:Lo/W1;
 
-    iput-object p1, p0, Lo/s0;->h:Lo/T;
+    iput-object p1, p0, Lo/s0;->h:Lo/T1;
 
     new-instance p1, Lo/p0;
 
@@ -57,18 +57,18 @@
 
     iput-object p1, p0, Lo/s0;->i:Lo/p0;
 
-    new-instance p1, Lj3/F;
+    new-instance p1, Lj3/F1;
 
     const/16 p2, 0xb
 
-    invoke-direct {p1, p2, p0}, Lj3/F;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lj3/F1;-><init>(ILjava/lang/Object;)V
 
-    iput-object p1, p0, Lo/s0;->j:Lj3/F;
+    iput-object p1, p0, Lo/s0;->j:Lj3/F1;
 
     return-void
 .end method
 
-.method public static final a(Lo/s0;Lo/T;JI)J
+.method public static final a(Lo/s0;Lo/T1;JI)J
     .locals 15
 
     move-object v0, p0
@@ -123,9 +123,9 @@
 
     move-result-wide v1
 
-    iget-object v3, v0, Lo/s0;->d:Lo/O;
+    iget-object v3, v0, Lo/s0;->d:Lo/O1;
 
-    sget-object v7, Lo/O;->h:Lo/O;
+    sget-object v7, Lo/O1;->h:Lo/O1;
 
     const/4 v8, 0x0
 
@@ -156,7 +156,7 @@
 
     move-object/from16 v7, p1
 
-    invoke-interface {v7, v3}, Lo/T;->a(F)F
+    invoke-interface {v7, v3}, Lo/T1;->a(F)F
 
     move-result v3
 
@@ -400,9 +400,9 @@
 .method public final f(J)F
     .locals 2
 
-    iget-object v0, p0, Lo/s0;->d:Lo/O;
+    iget-object v0, p0, Lo/s0;->d:Lo/O1;
 
-    sget-object v1, Lo/O;->h:Lo/O;
+    sget-object v1, Lo/O1;->h:Lo/O1;
 
     if-ne v0, v1, :cond_0
 
@@ -435,9 +435,9 @@
     goto :goto_0
 
     :cond_0
-    iget-object v1, p0, Lo/s0;->d:Lo/O;
+    iget-object v1, p0, Lo/s0;->d:Lo/O1;
 
-    sget-object v2, Lo/O;->h:Lo/O;
+    sget-object v2, Lo/O1;->h:Lo/O1;
 
     if-ne v1, v2, :cond_1
 

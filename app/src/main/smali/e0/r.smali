@@ -1,5 +1,5 @@
 .class public final Le0/r;
-.super Le0/A;
+.super Le0/A1;
 .source "SourceFile"
 
 
@@ -27,7 +27,7 @@
 
     const/4 v2, 0x2
 
-    invoke-direct {p0, v2, v0, v1}, Le0/A;-><init>(IZZ)V
+    invoke-direct {p0, v2, v0, v1}, Le0/A1;-><init>(IZZ)V
 
     iput p1, p0, Le0/r;->c:F
 

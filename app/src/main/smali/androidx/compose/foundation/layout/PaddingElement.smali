@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/PaddingElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -213,29 +213,29 @@
 .method public final j()Lr5/p;
     .locals 2
 
-    new-instance v0, Lq/U;
+    new-instance v0, Lq/U1;
 
     invoke-direct {v0}, Lr5/p;-><init>()V
 
     iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
-    iput v1, v0, Lq/U;->t:F
+    iput v1, v0, Lq/U1;->t:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
-    iput v1, v0, Lq/U;->u:F
+    iput v1, v0, Lq/U1;->u:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
-    iput v1, v0, Lq/U;->v:F
+    iput v1, v0, Lq/U1;->v:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
-    iput v1, v0, Lq/U;->w:F
+    iput v1, v0, Lq/U1;->w:F
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lq/U;->x:Z
+    iput-boolean v1, v0, Lq/U1;->x:Z
 
     return-object v0
 .end method
@@ -243,27 +243,27 @@
 .method public final k(Lr5/p;)V
     .locals 1
 
-    check-cast p1, Lq/U;
+    check-cast p1, Lq/U1;
 
     iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
-    iput v0, p1, Lq/U;->t:F
+    iput v0, p1, Lq/U1;->t:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
-    iput v0, p1, Lq/U;->u:F
+    iput v0, p1, Lq/U1;->u:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
-    iput v0, p1, Lq/U;->v:F
+    iput v0, p1, Lq/U1;->v:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
-    iput v0, p1, Lq/U;->w:F
+    iput v0, p1, Lq/U1;->w:F
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lq/U;->x:Z
+    iput-boolean v0, p1, Lq/U1;->x:Z
 
     return-void
 .end method

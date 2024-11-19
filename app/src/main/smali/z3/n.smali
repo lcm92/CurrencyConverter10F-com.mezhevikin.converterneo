@@ -56,7 +56,7 @@
 
     invoke-static {v6, v1}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v1, Ls4/F;->b:Ls4/t0;
+    sget-object v1, Ls4/F1;->b:Ls4/t0;
 
     new-instance v2, Ls4/w;
 
@@ -115,7 +115,7 @@
 
     invoke-static {v6, v1}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v1, Ls4/F;->b:Ls4/t0;
+    sget-object v1, Ls4/F1;->b:Ls4/t0;
 
     new-instance v2, Ls4/w;
 

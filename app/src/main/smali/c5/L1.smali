@@ -30,9 +30,9 @@
 .method public final h(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
-    check-cast p1, Lo0/G;
+    check-cast p1, Lo0/G1;
 
-    check-cast p2, Lo0/D;
+    check-cast p2, Lo0/D1;
 
     check-cast p3, Ll6/a;
 
@@ -52,15 +52,15 @@
 
     move-result-wide v0
 
-    invoke-interface {p2, v0, v1}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {p2, v0, v1}, Lo0/D1;->a(J)Lo0/N1;
 
     move-result-object p2
 
-    iget v0, p2, Lo0/N;->h:I
+    iget v0, p2, Lo0/N1;->h:I
 
     sub-int/2addr v0, v2
 
-    iget v1, p2, Lo0/N;->g:I
+    iget v1, p2, Lo0/N1;->g:I
 
     new-instance v2, Lc5/K1;
 
@@ -70,7 +70,7 @@
 
     sget-object p2, Lv9/u;->g:Lv9/u;
 
-    invoke-interface {p1, v1, v0, p2, v2}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p1, v1, v0, p2, v2}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
 
     move-result-object p1
 

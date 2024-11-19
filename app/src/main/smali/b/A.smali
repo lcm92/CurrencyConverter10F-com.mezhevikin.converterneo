@@ -1,148 +1,89 @@
-.class public final Lb/A;
+.class public final Lb/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/lifecycle/r;
-.implements Lb/c;
 
-
-# instance fields
-.field public final g:Landroidx/lifecycle/v;
-
-.field public final h:Lb/u;
-
-.field public i:Lb/B;
-
-.field public final synthetic j:Lb/C;
+# static fields
+.field public static final a:Lb/a;
 
 
 # direct methods
-.method public constructor <init>(Lb/C;Landroidx/lifecycle/v;Lb/u;)V
+.method static constructor <clinit>()V
     .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lb/a;
 
-    const-string v0, "onBackPressedCallback"
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {p3, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iput-object p1, p0, Lb/A;->j:Lb/C;
-
-    iput-object p2, p0, Lb/A;->g:Landroidx/lifecycle/v;
-
-    iput-object p3, p0, Lb/A;->h:Lb/u;
-
-    invoke-virtual {p2, p0}, Landroidx/lifecycle/v;->a(Landroidx/lifecycle/s;)V
+    sput-object v0, Lb/a;->a:Lb/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Landroidx/lifecycle/t;Landroidx/lifecycle/n;)V
-    .locals 9
-
-    sget-object p1, Landroidx/lifecycle/n;->ON_START:Landroidx/lifecycle/n;
-
-    if-ne p2, p1, :cond_0
-
-    iget-object v2, p0, Lb/A;->j:Lb/C;
-
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const-string p1, "onBackPressedCallback"
-
-    iget-object p2, p0, Lb/A;->h:Lb/u;
-
-    invoke-static {p2, p1}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-object p1, v2, Lb/C;->b:Lv9/i;
-
-    invoke-virtual {p1, p2}, Lv9/i;->addLast(Ljava/lang/Object;)V
-
-    new-instance p1, Lb/B;
-
-    invoke-direct {p1, v2, p2}, Lb/B;-><init>(Lb/C;Lb/u;)V
-
-    iget-object v0, p2, Lb/u;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
-
-    invoke-virtual {v2}, Lb/C;->e()V
-
-    new-instance v8, Lw5/e;
-
-    const-string v5, "updateEnabledCallbacks()V"
-
-    const/4 v6, 0x0
-
-    const/4 v1, 0x0
-
-    const-class v3, Lb/C;
-
-    const-string v4, "updateEnabledCallbacks"
-
-    const/4 v7, 0x3
-
-    move-object v0, v8
-
-    invoke-direct/range {v0 .. v7}, Lw5/e;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
-    iput-object v8, p2, Lb/u;->c:Li4/f;
-
-    iput-object p1, p0, Lb/A;->i:Lb/B;
-
-    goto :goto_0
-
-    :cond_0
-    sget-object p1, Landroidx/lifecycle/n;->ON_STOP:Landroidx/lifecycle/n;
-
-    if-ne p2, p1, :cond_1
-
-    iget-object p1, p0, Lb/A;->i:Lb/B;
-
-    if-eqz p1, :cond_2
-
-    invoke-virtual {p1}, Lb/B;->cancel()V
-
-    goto :goto_0
-
-    :cond_1
-    sget-object p1, Landroidx/lifecycle/n;->ON_DESTROY:Landroidx/lifecycle/n;
-
-    if-ne p2, p1, :cond_2
-
-    invoke-virtual {p0}, Lb/A;->cancel()V
-
-    :cond_2
-    :goto_0
-    return-void
-.end method
-
-.method public final cancel()V
+.method public final a(FFFI)Landroid/window/BackEvent;
     .locals 1
 
-    iget-object v0, p0, Lb/A;->g:Landroidx/lifecycle/v;
+    new-instance v0, Landroid/window/BackEvent;
 
-    invoke-virtual {v0, p0}, Landroidx/lifecycle/v;->f(Landroidx/lifecycle/s;)V
+    invoke-direct {v0, p1, p2, p3, p4}, Landroid/window/BackEvent;-><init>(FFFI)V
 
-    iget-object v0, p0, Lb/A;->h:Lb/u;
+    return-object v0
+.end method
 
-    iget-object v0, v0, Lb/u;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
+.method public final b(Landroid/window/BackEvent;)F
+    .locals 1
 
-    invoke-virtual {v0, p0}, Ljava/util/concurrent/CopyOnWriteArrayList;->remove(Ljava/lang/Object;)Z
+    const-string v0, "backEvent"
 
-    iget-object v0, p0, Lb/A;->i:Lb/B;
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v0, :cond_0
+    invoke-virtual {p1}, Landroid/window/BackEvent;->getProgress()F
 
-    invoke-virtual {v0}, Lb/B;->cancel()V
+    move-result p1
 
-    :cond_0
-    const/4 v0, 0x0
+    return p1
+.end method
 
-    iput-object v0, p0, Lb/A;->i:Lb/B;
+.method public final c(Landroid/window/BackEvent;)I
+    .locals 1
 
-    return-void
+    const-string v0, "backEvent"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Landroid/window/BackEvent;->getSwipeEdge()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final d(Landroid/window/BackEvent;)F
+    .locals 1
+
+    const-string v0, "backEvent"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Landroid/window/BackEvent;->getTouchX()F
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final e(Landroid/window/BackEvent;)F
+    .locals 1
+
+    const-string v0, "backEvent"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Landroid/window/BackEvent;->getTouchY()F
+
+    move-result p1
+
+    return p1
 .end method

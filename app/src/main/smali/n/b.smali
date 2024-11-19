@@ -148,19 +148,19 @@
 
     iget-wide v2, p0, Ln/b;->b:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
     iget-wide v2, p0, Ln/b;->c:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
     iget-wide v2, p0, Ln/b;->d:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
@@ -188,25 +188,25 @@
 
     const-string v3, ", textColor="
 
-    invoke-static {v1, v2, v0, v3}, Lk/P;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Lk/P1;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget-wide v1, p0, Ln/b;->b:J
 
     const-string v3, ", iconColor="
 
-    invoke-static {v1, v2, v0, v3}, Lk/P;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Lk/P1;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget-wide v1, p0, Ln/b;->c:J
 
     const-string v3, ", disabledTextColor="
 
-    invoke-static {v1, v2, v0, v3}, Lk/P;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Lk/P1;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget-wide v1, p0, Ln/b;->d:J
 
     const-string v3, ", disabledIconColor="
 
-    invoke-static {v1, v2, v0, v3}, Lk/P;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Lk/P1;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget-wide v1, p0, Ln/b;->e:J
 

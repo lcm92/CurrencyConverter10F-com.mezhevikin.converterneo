@@ -78,7 +78,7 @@
 
     invoke-direct {v1, v3}, Ljava/lang/Float;-><init>(F)V
 
-    sget-object v3, Ll/A;->a:Ll/v;
+    sget-object v3, Ll/A1;->a:Ll/v;
 
     const/16 v4, 0xe1
 

@@ -10,7 +10,7 @@
 
 .field public static final c:Ljava/lang/Object;
 
-.field public static final d:Li/I;
+.field public static final d:Li/I1;
 
 
 # direct methods
@@ -61,13 +61,13 @@
 
     sput-object v0, Lw6/f;->c:Ljava/lang/Object;
 
-    new-instance v0, Li/I;
+    new-instance v0, Li/I1;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Li/I;-><init>(I)V
+    invoke-direct {v0, v1}, Li/I1;-><init>(I)V
 
-    sput-object v0, Lw6/f;->d:Li/I;
+    sput-object v0, Lw6/f;->d:Li/I1;
 
     return-void
 .end method

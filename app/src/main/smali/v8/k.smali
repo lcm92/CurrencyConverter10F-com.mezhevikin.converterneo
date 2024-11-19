@@ -316,7 +316,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v3, v1}, Lk/o;->i(Lk/o;ILl/B0;)Lk/K;
+    invoke-static {v0, v3, v1}, Lk/o;->i(Lk/o;ILl/B0;)Lk/K1;
 
     move-result-object v0
 
@@ -335,7 +335,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v3, v1}, Lk/o;->h(Lk/o;ILl/B0;)Lk/J;
+    invoke-static {v0, v3, v1}, Lk/o;->h(Lk/o;ILl/B0;)Lk/J1;
 
     move-result-object v0
 
@@ -354,7 +354,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v2, v1}, Lk/o;->i(Lk/o;ILl/B0;)Lk/K;
+    invoke-static {v0, v2, v1}, Lk/o;->i(Lk/o;ILl/B0;)Lk/K1;
 
     move-result-object v0
 
@@ -373,7 +373,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v2, v1}, Lk/o;->h(Lk/o;ILl/B0;)Lk/J;
+    invoke-static {v0, v2, v1}, Lk/o;->h(Lk/o;ILl/B0;)Lk/J1;
 
     move-result-object v0
 
@@ -642,7 +642,7 @@
     :pswitch_e
     move-object/from16 v0, p1
 
-    check-cast v0, Lj3/L;
+    check-cast v0, Lj3/L1;
 
     invoke-static {v0, v5}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -652,13 +652,13 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lj3/L;->a(Ljava/lang/Long;)V
+    invoke-static {v1}, Lj3/L1;->a(Ljava/lang/Long;)V
 
-    iput-object v1, v0, Lj3/L;->a:Ljava/lang/Long;
+    iput-object v1, v0, Lj3/L1;->a:Ljava/lang/Long;
 
-    invoke-static {v1}, Lj3/L;->a(Ljava/lang/Long;)V
+    invoke-static {v1}, Lj3/L1;->a(Ljava/lang/Long;)V
 
-    iput-object v1, v0, Lj3/L;->b:Ljava/lang/Long;
+    iput-object v1, v0, Lj3/L1;->b:Ljava/lang/Long;
 
     return-object v12
 
@@ -734,7 +734,7 @@
 
     invoke-virtual {v0, v1, v2}, Le3/h;->a(Lj3/w;Lh4/c;)V
 
-    sget-object v1, Lj3/O;->d:Lj3/N;
+    sget-object v1, Lj3/O1;->d:Lj3/N1;
 
     new-instance v2, Lv8/k;
 

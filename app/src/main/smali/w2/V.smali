@@ -1,3 +1,6 @@
-.class public abstract Lw2/V;
-.super Lcom/google/android/gms/internal/play_billing/e;
+.class public interface abstract Lw2/v;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/os/IInterface;

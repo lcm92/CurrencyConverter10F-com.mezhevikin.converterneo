@@ -45,7 +45,7 @@
 
     new-instance p1, Lh5/d;
 
-    new-array v1, v0, [Lq0/D;
+    new-array v1, v0, [Lq0/D1;
 
     invoke-direct {p1, v1}, Lh5/d;-><init>([Ljava/lang/Object;)V
 
@@ -285,11 +285,11 @@
 
     iput-boolean v0, p0, Lp0/c;->f:Z
 
-    new-instance v0, Lm/M;
+    new-instance v0, Lm/M1;
 
     const/4 v1, 0x2
 
-    invoke-direct {v0, v1, p0}, Lm/M;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lm/M1;-><init>(ILjava/lang/Object;)V
 
     iget-object v1, p0, Lp0/c;->a:Lr0/u;
 

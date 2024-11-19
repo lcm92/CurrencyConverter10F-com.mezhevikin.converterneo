@@ -97,7 +97,7 @@
     :goto_0
     const/4 v1, 0x0
 
-    new-array v4, v1, [Lj1/H;
+    new-array v4, v1, [Lj1/H1;
 
     sget-object v5, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b:Lf5/X10;
 
@@ -113,11 +113,11 @@
 
     sget-object v1, Lk1/r;->h:Lk1/r;
 
-    new-instance v6, Lj3/F;
+    new-instance v6, Lj3/F1;
 
     const/4 v7, 0x4
 
-    invoke-direct {v6, v7, v5}, Lj3/F;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v6, v7, v5}, Lj3/F1;-><init>(ILjava/lang/Object;)V
 
     sget-object v7, Lo5/o;->a:Ly/s;
 
@@ -165,7 +165,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lj1/B;
+    check-cast v1, Lj1/B1;
 
     sget-object v4, Lv8/p;->a:Lf5/y;
 

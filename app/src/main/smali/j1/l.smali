@@ -9,16 +9,16 @@
 # instance fields
 .field public final synthetic h:I
 
-.field public final synthetic i:Lj1/B;
+.field public final synthetic i:Lj1/B1;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILj1/B;)V
+.method public synthetic constructor <init>(ILj1/B1;)V
     .locals 0
 
     iput p1, p0, Lj1/l;->h:I
 
-    iput-object p2, p0, Lj1/l;->i:Lj1/B;
+    iput-object p2, p0, Lj1/l;->i:Lj1/B1;
 
     const/4 p1, 0x1
 
@@ -42,9 +42,9 @@
 
     invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lj1/l;->i:Lj1/B;
+    iget-object v0, p0, Lj1/l;->i:Lj1/B1;
 
-    iget-object v0, v0, Lj1/B;->m:Ljava/util/LinkedHashMap;
+    iget-object v0, v0, Lj1/B1;->m:Ljava/util/LinkedHashMap;
 
     iget p1, p1, Lj1/u;->l:I
 
@@ -71,9 +71,9 @@
 
     invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lj1/l;->i:Lj1/B;
+    iget-object v0, p0, Lj1/l;->i:Lj1/B1;
 
-    iget-object v0, v0, Lj1/B;->m:Ljava/util/LinkedHashMap;
+    iget-object v0, v0, Lj1/B1;->m:Ljava/util/LinkedHashMap;
 
     iget p1, p1, Lj1/u;->l:I
 

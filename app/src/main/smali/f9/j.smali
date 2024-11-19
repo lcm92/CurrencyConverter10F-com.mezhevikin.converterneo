@@ -202,7 +202,7 @@
 
     iput v12, v8, Lf9/c;->p:I
 
-    invoke-static {v13, v2, v8}, Lv4/F;->h(Lv4/e;Lh4/e;La4/c;)Ljava/lang/Object;
+    invoke-static {v13, v2, v8}, Lv4/F1;->h(Lv4/e;Lh4/e;La4/c;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -426,7 +426,7 @@
 
     iput v3, v0, Lf9/h;->q:I
 
-    invoke-static {p5, v2, v0}, Lv4/F;->h(Lv4/e;Lh4/e;La4/c;)Ljava/lang/Object;
+    invoke-static {p5, v2, v0}, Lv4/F1;->h(Lv4/e;Lh4/e;La4/c;)Ljava/lang/Object;
 
     move-result-object p5
 

@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lw/Q;Lw5/p;Z)V
+.method public constructor <init>(Lw/Q1;Lw5/p;Z)V
     .locals 1
 
     const/4 v0, 0x1
@@ -70,9 +70,9 @@
 
     iget-object v0, p0, Lr0/k0;->j:Ljava/lang/Object;
 
-    check-cast v0, Lw/Q;
+    check-cast v0, Lw/Q1;
 
-    invoke-virtual {v0}, Lw/Q;->b()Z
+    invoke-virtual {v0}, Lw/Q1;->b()Z
 
     move-result v1
 
@@ -93,7 +93,7 @@
 
     if-nez v1, :cond_1
 
-    iget-object v0, v0, Lw/Q;->c:Lr0/K0;
+    iget-object v0, v0, Lw/Q1;->c:Lr0/K0;
 
     if-eqz v0, :cond_1
 

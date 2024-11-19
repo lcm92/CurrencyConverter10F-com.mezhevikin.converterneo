@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic h:Lm/W;
+.field public final synthetic h:Lm/W1;
 
 .field public final synthetic i:Z
 
@@ -19,10 +19,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lm/W;ZLjava/lang/String;Lx0/f;Lh4/a;)V
+.method public constructor <init>(Lm/W1;ZLjava/lang/String;Lx0/f;Lh4/a;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/b;->h:Lm/W;
+    iput-object p1, p0, Landroidx/compose/foundation/b;->h:Lm/W1;
 
     iput-boolean p2, p0, Landroidx/compose/foundation/b;->i:Z
 
@@ -77,9 +77,9 @@
 
     sget-object p1, Lr5/n;->a:Lr5/n;
 
-    iget-object p3, p0, Landroidx/compose/foundation/b;->h:Lm/W;
+    iget-object p3, p0, Landroidx/compose/foundation/b;->h:Lm/W1;
 
-    invoke-static {p1, v1, p3}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W;)Lr5/q;
+    invoke-static {p1, v1, p3}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W1;)Lr5/q;
 
     move-result-object p1
 

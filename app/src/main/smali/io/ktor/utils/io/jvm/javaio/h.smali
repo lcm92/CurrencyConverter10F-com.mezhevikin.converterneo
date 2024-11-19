@@ -8,12 +8,12 @@
 
 
 # direct methods
-.method public constructor <init>(Ls4/X;Lio/ktor/utils/io/jvm/javaio/i;)V
+.method public constructor <init>(Ls4/X1;Lio/ktor/utils/io/jvm/javaio/i;)V
     .locals 0
 
     iput-object p2, p0, Lio/ktor/utils/io/jvm/javaio/h;->g:Lio/ktor/utils/io/jvm/javaio/i;
 
-    invoke-direct {p0, p1}, Lio/ktor/utils/io/jvm/javaio/c;-><init>(Ls4/X;)V
+    invoke-direct {p0, p1}, Lio/ktor/utils/io/jvm/javaio/c;-><init>(Ls4/X1;)V
 
     return-void
 .end method

@@ -33,7 +33,7 @@
 
     move-result-object v1
 
-    const-class v2, Ls3/A;
+    const-class v2, Ls3/A1;
 
     invoke-static {v2}, Li4/t;->a(Ljava/lang/Class;)Li4/d;
 

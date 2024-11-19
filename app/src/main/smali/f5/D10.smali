@@ -68,7 +68,7 @@
 .method public final x(Lh4/c;Ly9/d;)Ljava/lang/Object;
     .locals 3
 
-    sget-object v0, Ls4/F;->a:Lz4/d;
+    sget-object v0, Ls4/F1;->a:Lz4/d;
 
     sget-object v0, Lx4/m;->a:Lt4/d;
 

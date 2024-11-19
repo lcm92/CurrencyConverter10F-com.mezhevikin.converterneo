@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;Lj1/B;)V
+.method public synthetic constructor <init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;Lj1/B1;)V
     .locals 1
 
     .line 1
@@ -89,7 +89,7 @@
 
     iget-object v1, p0, Ly8/f;->h:Ljava/lang/Object;
 
-    check-cast v1, Lj1/B;
+    check-cast v1, Lj1/B1;
 
     const-string v2, "$navigation"
 
@@ -118,7 +118,7 @@
 
     iget-object v1, p0, Ly8/f;->h:Ljava/lang/Object;
 
-    check-cast v1, Lj1/B;
+    check-cast v1, Lj1/B1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B1;Ljava/lang/String;)V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 

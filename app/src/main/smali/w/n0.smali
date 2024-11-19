@@ -48,7 +48,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lo/O;F)V
+.method public constructor <init>(Lo/O1;F)V
     .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -71,7 +71,7 @@
 
     iput-object p2, p0, Lw/n0;->c:Lx5/d;
 
-    sget-wide v0, Lz0/E;->b:J
+    sget-wide v0, Lz0/E1;->b:J
 
     iput-wide v0, p0, Lw/n0;->d:J
 
@@ -88,7 +88,7 @@
 
 
 # virtual methods
-.method public final a(Lo/O;Lx5/d;II)V
+.method public final a(Lo/O1;Lx5/d;II)V
     .locals 7
 
     sub-int/2addr p4, p3
@@ -124,7 +124,7 @@
     goto :goto_4
 
     :cond_0
-    sget-object v0, Lo/O;->g:Lo/O;
+    sget-object v0, Lo/O1;->g:Lo/O1;
 
     if-ne p1, v0, :cond_1
 

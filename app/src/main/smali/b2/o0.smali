@@ -91,7 +91,7 @@
     return-object v0
 .end method
 
-.method public final c()Lb2/W;
+.method public final c()Lb2/W1;
     .locals 1
 
     const/4 v0, 0x0
@@ -156,11 +156,11 @@
 
     move-result-object p1
 
-    instance-of v0, p1, Lb2/G;
+    instance-of v0, p1, Lb2/G1;
 
     if-eqz v0, :cond_1
 
-    check-cast p1, Lb2/G;
+    check-cast p1, Lb2/G1;
 
     :cond_1
     :goto_0
@@ -237,11 +237,11 @@
 
     move-result-object p1
 
-    instance-of v0, p1, Lb2/T;
+    instance-of v0, p1, Lb2/T1;
 
     if-eqz v0, :cond_5
 
-    check-cast p1, Lb2/T;
+    check-cast p1, Lb2/T1;
 
     :cond_5
     :goto_2
@@ -341,7 +341,7 @@
 
     move-result-object p1
 
-    instance-of p1, p1, Lb2/B;
+    instance-of p1, p1, Lb2/B1;
 
     :goto_4
     invoke-static {p2}, Lw2/b;->b(Landroid/os/Parcel;)V
@@ -503,7 +503,7 @@
 
     move-result-object p1
 
-    instance-of p1, p1, Lb2/F;
+    instance-of p1, p1, Lb2/F1;
 
     :goto_6
     invoke-static {p2}, Lw2/b;->b(Landroid/os/Parcel;)V
@@ -696,11 +696,11 @@
 
     move-result-object p1
 
-    instance-of v0, p1, Lb2/D;
+    instance-of v0, p1, Lb2/D1;
 
     if-eqz v0, :cond_15
 
-    check-cast p1, Lb2/D;
+    check-cast p1, Lb2/D1;
 
     :cond_15
     :goto_b
@@ -864,7 +864,7 @@
     return-void
 .end method
 
-.method public final m()Lb2/Z;
+.method public final m()Lb2/Z1;
     .locals 1
 
     const/4 v0, 0x0

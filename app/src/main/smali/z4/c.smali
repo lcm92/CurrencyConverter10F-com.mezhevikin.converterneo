@@ -1,5 +1,5 @@
 .class public final Lz4/c;
-.super Ls4/Q;
+.super Ls4/Q1;
 .source "SourceFile"
 
 # interfaces

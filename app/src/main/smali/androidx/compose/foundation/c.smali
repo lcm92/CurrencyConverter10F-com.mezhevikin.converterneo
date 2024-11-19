@@ -80,7 +80,7 @@
 
     move-object v4, v2
 
-    check-cast v4, Lm/W;
+    check-cast v4, Lm/W1;
 
     instance-of v2, v4, Lm/b0;
 
@@ -202,7 +202,7 @@
     :cond_3
     if-eqz v14, :cond_4
 
-    invoke-static {v13, v14, v4}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W;)Lr5/q;
+    invoke-static {v13, v14, v4}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W1;)Lr5/q;
 
     move-result-object v2
 
@@ -239,7 +239,7 @@
 
     move-object v3, v2
 
-    invoke-direct/range {v3 .. v11}, Landroidx/compose/foundation/d;-><init>(Lm/W;ZLjava/lang/String;Lx0/f;Ly8/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
+    invoke-direct/range {v3 .. v11}, Landroidx/compose/foundation/d;-><init>(Lm/W1;ZLjava/lang/String;Lx0/f;Ly8/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
 
     invoke-static {v13, v2}, Lr5/a;->b(Lr5/q;Lh4/f;)Lr5/q;
 

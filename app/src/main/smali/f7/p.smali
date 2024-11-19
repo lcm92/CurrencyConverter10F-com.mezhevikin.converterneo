@@ -87,13 +87,13 @@
     check-cast v3, Lo4/j;
 
     :try_start_0
-    new-instance v4, Lw2/O;
+    new-instance v4, Lw2/O1;
 
-    invoke-direct {v4, v0, v1}, Lw2/O;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v4, v0, v1}, Lw2/O1;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object v1, v2, Ly7/e;->a:Lb2/d0;
 
-    invoke-virtual {v4, v1, v3}, Lw2/O;->c(Lb2/d0;Lo4/j;)V
+    invoke-virtual {v4, v1, v3}, Lw2/O1;->c(Lb2/d0;Lo4/j;)V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -21,7 +21,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lc5/q;ZLf6/w;La5/b0;Lw/Q;)V
+.method public constructor <init>(Lc5/q;ZLf6/w;La5/b0;Lw/Q1;)V
     .locals 1
 
     const/4 v0, 0x1
@@ -137,7 +137,7 @@
     :cond_2
     check-cast v2, Lf6/w;
 
-    sget v4, Lz0/E;->c:I
+    sget v4, Lz0/E1;->c:I
 
     const/16 v4, 0x20
 
@@ -166,7 +166,7 @@
 
     check-cast v1, La5/b0;
 
-    sget-object v5, Lw/G;->g:Lw/G;
+    sget-object v5, Lw/G1;->g:Lw/G1;
 
     if-ltz v4, :cond_6
 
@@ -201,10 +201,10 @@
     :goto_2
     invoke-virtual {v1, v3}, La5/b0;->p(Z)V
 
-    invoke-virtual {v1, v5}, La5/b0;->n(Lw/G;)V
+    invoke-virtual {v1, v5}, La5/b0;->n(Lw/G1;)V
 
     :goto_3
-    check-cast v0, Lw/Q;
+    check-cast v0, Lw/Q1;
 
     new-instance p3, Lf6/w;
 
@@ -214,9 +214,9 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p3, v2, p1, p2, v1}, Lf6/w;-><init>(Lz0/f;JLz0/E;)V
+    invoke-direct {p3, v2, p1, p2, v1}, Lf6/w;-><init>(Lz0/f;JLz0/E1;)V
 
-    iget-object p1, v0, Lw/Q;->t:Lw/r;
+    iget-object p1, v0, Lw/Q1;->t:Lw/r;
 
     invoke-virtual {p1, p3}, Lw/r;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -227,7 +227,7 @@
     :cond_6
     invoke-virtual {v1, v3}, La5/b0;->p(Z)V
 
-    invoke-virtual {v1, v5}, La5/b0;->n(Lw/G;)V
+    invoke-virtual {v1, v5}, La5/b0;->n(Lw/G1;)V
 
     :goto_4
     invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;

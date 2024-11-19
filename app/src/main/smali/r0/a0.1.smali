@@ -57,7 +57,7 @@
             "()",
             "Ljava/util/HashMap<",
             "Ljava/lang/Object;",
-            "Lq0/D;",
+            "Lq0/D1;",
             ">;"
         }
     .end annotation
@@ -73,7 +73,7 @@
         value = {
             "()",
             "Ljava/util/HashMap<",
-            "Lq0/D;",
+            "Lq0/D1;",
             "Ljava/lang/Object;",
             ">;"
         }
@@ -248,7 +248,7 @@
 
     move-result-object v4
 
-    check-cast v4, Lq0/D;
+    check-cast v4, Lq0/D1;
 
     invoke-virtual {v3}, Landroid/view/View;->isLayoutRequested()Z
 
@@ -260,7 +260,7 @@
 
     const/4 v3, 0x7
 
-    invoke-static {v4, v1, v3}, Lq0/D;->R(Lq0/D;ZI)V
+    invoke-static {v4, v1, v3}, Lq0/D1;->R(Lq0/D1;ZI)V
 
     :cond_0
     add-int/lit8 v2, v2, 0x1

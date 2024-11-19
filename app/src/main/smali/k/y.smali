@@ -8,13 +8,13 @@
 
 .field public final b:Lh4/c;
 
-.field public final c:Ll/B;
+.field public final c:Ll/B1;
 
 .field public final d:Z
 
 
 # direct methods
-.method public constructor <init>(Lr5/d;Lh4/c;Ll/B;Z)V
+.method public constructor <init>(Lr5/d;Lh4/c;Ll/B1;Z)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -23,7 +23,7 @@
 
     iput-object p2, p0, Lk/y;->b:Lh4/c;
 
-    iput-object p3, p0, Lk/y;->c:Ll/B;
+    iput-object p3, p0, Lk/y;->c:Ll/B1;
 
     iput-boolean p4, p0, Lk/y;->d:Z
 
@@ -79,9 +79,9 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Lk/y;->c:Ll/B;
+    iget-object v1, p0, Lk/y;->c:Ll/B1;
 
-    iget-object v3, p1, Lk/y;->c:Ll/B;
+    iget-object v3, p1, Lk/y;->c:Ll/B1;
 
     invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -125,7 +125,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lk/y;->c:Ll/B;
+    iget-object v0, p0, Lk/y;->c:Ll/B1;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -171,7 +171,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lk/y;->c:Ll/B;
+    iget-object v1, p0, Lk/y;->c:Ll/B1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

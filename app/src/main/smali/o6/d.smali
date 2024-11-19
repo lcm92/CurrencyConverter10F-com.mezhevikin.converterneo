@@ -126,7 +126,7 @@
     return-object v0
 
     :pswitch_0
-    check-cast p1, Lo0/M;
+    check-cast p1, Lo0/M1;
 
     return-object v0
 
@@ -142,7 +142,7 @@
     return-object v0
 
     :pswitch_2
-    check-cast p1, Lo0/M;
+    check-cast p1, Lo0/M1;
 
     return-object v0
 

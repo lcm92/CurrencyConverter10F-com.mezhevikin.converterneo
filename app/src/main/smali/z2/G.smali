@@ -1,238 +1,211 @@
-.class public final Lz2/G;
-.super Lz2/D;
+.class public final Lz2/g;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# static fields
-.field public static final n:[Ljava/lang/Object;
-
-.field public static final o:Lz2/G;
+# interfaces
+.implements Landroid/app/Application$ActivityLifecycleCallbacks;
 
 
 # instance fields
-.field public final transient i:[Ljava/lang/Object;
+.field public final g:Landroid/app/Activity;
 
-.field public final transient j:I
-
-.field public final transient k:[Ljava/lang/Object;
-
-.field public final transient l:I
-
-.field public final transient m:I
+.field public final synthetic h:Lz2/i;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
-
-    const/4 v0, 0x0
-
-    new-array v6, v0, [Ljava/lang/Object;
-
-    sput-object v6, Lz2/G;->n:[Ljava/lang/Object;
-
-    new-instance v0, Lz2/G;
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v2, 0x0
-
-    move-object v1, v0
-
-    move-object v5, v6
-
-    invoke-direct/range {v1 .. v6}, Lz2/G;-><init>(III[Ljava/lang/Object;[Ljava/lang/Object;)V
-
-    sput-object v0, Lz2/G;->o:Lz2/G;
-
-    return-void
-.end method
-
-.method public constructor <init>(III[Ljava/lang/Object;[Ljava/lang/Object;)V
+.method public constructor <init>(Lz2/i;Landroid/app/Activity;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p4, p0, Lz2/G;->i:[Ljava/lang/Object;
+    iput-object p1, p0, Lz2/g;->h:Lz2/i;
 
-    iput p1, p0, Lz2/G;->j:I
-
-    iput-object p5, p0, Lz2/G;->k:[Ljava/lang/Object;
-
-    iput p2, p0, Lz2/G;->l:I
-
-    iput p3, p0, Lz2/G;->m:I
+    iput-object p2, p0, Lz2/g;->g:Landroid/app/Activity;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b([Ljava/lang/Object;)I
+.method public final onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 3
 
-    iget-object v0, p0, Lz2/G;->i:[Ljava/lang/Object;
+    iget-object p2, p0, Lz2/g;->h:Lz2/i;
+
+    iget-object v0, p2, Lz2/i;->f:Landroid/app/Dialog;
+
+    if-eqz v0, :cond_2
+
+    iget-boolean v1, p2, Lz2/i;->l:Z
+
+    if-eqz v1, :cond_2
+
+    invoke-virtual {v0, p1}, Landroid/app/Dialog;->setOwnerActivity(Landroid/app/Activity;)V
+
+    iget-object v0, p2, Lz2/i;->b:Lz2/p;
+
+    if-eqz v0, :cond_0
+
+    iput-object p1, v0, Lz2/p;->a:Landroid/app/Activity;
+
+    :cond_0
+    iget-object v0, p2, Lz2/i;->k:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v1, 0x0
 
-    iget v2, p0, Lz2/G;->m:I
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-static {v0, v1, p1, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    move-result-object v1
 
-    return v2
-.end method
+    check-cast v1, Lz2/g;
 
-.method public final contains(Ljava/lang/Object;)Z
-    .locals 6
+    if-eqz v1, :cond_1
 
-    const/4 v0, 0x0
+    iget-object v2, v1, Lz2/g;->h:Lz2/i;
 
-    if-eqz p1, :cond_3
+    iget-object v2, v2, Lz2/i;->a:Landroid/app/Application;
 
-    iget-object v1, p0, Lz2/G;->k:[Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
-    array-length v2, v1
+    new-instance v1, Lz2/g;
 
-    if-nez v2, :cond_0
+    invoke-direct {v1, p2, p1}, Lz2/g;-><init>(Lz2/i;Landroid/app/Activity;)V
 
-    goto :goto_1
+    iget-object p1, p2, Lz2/i;->a:Landroid/app/Application;
 
-    :cond_0
-    invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {p1, v1}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
-    move-result v2
-
-    int-to-long v2, v2
-
-    const-wide/32 v4, -0x3361d2af
-
-    mul-long/2addr v2, v4
-
-    long-to-int v2, v2
-
-    const/16 v3, 0xf
-
-    invoke-static {v2, v3}, Ljava/lang/Integer;->rotateLeft(II)I
-
-    move-result v2
-
-    int-to-long v2, v2
-
-    const-wide/32 v4, 0x1b873593
-
-    mul-long/2addr v2, v4
-
-    long-to-int v2, v2
-
-    :goto_0
-    iget v3, p0, Lz2/G;->l:I
-
-    and-int/2addr v2, v3
-
-    aget-object v3, v1, v2
-
-    if-nez v3, :cond_1
-
-    return v0
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
     :cond_1
-    invoke-virtual {v3, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    iget-object p1, p2, Lz2/i;->f:Landroid/app/Dialog;
 
-    move-result v3
+    if-eqz p1, :cond_2
 
-    if-eqz v3, :cond_2
-
-    const/4 p1, 0x1
-
-    return p1
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
     :cond_2
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_3
-    :goto_1
-    return v0
+    return-void
 .end method
 
-.method public final d()I
-    .locals 1
+.method public final onActivityDestroyed(Landroid/app/Activity;)V
+    .locals 4
 
-    iget v0, p0, Lz2/G;->m:I
+    iget-object v0, p0, Lz2/g;->g:Landroid/app/Activity;
 
-    return v0
-.end method
+    if-eq p1, v0, :cond_0
 
-.method public final e()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final f()[Ljava/lang/Object;
-    .locals 1
-
-    iget-object v0, p0, Lz2/G;->i:[Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    iget v0, p0, Lz2/G;->j:I
-
-    return v0
-.end method
-
-.method public final iterator()Ljava/util/Iterator;
-    .locals 3
-
-    iget-object v0, p0, Lz2/D;->h:Lz2/C;
-
-    if-nez v0, :cond_1
-
-    sget-object v0, Lz2/C;->h:Lz2/A;
-
-    iget v0, p0, Lz2/G;->m:I
-
-    if-nez v0, :cond_0
-
-    sget-object v0, Lz2/F;->k:Lz2/F;
-
-    goto :goto_0
+    return-void
 
     :cond_0
-    new-instance v1, Lz2/F;
+    invoke-virtual {p1}, Landroid/app/Activity;->isChangingConfigurations()Z
 
-    iget-object v2, p0, Lz2/G;->i:[Ljava/lang/Object;
+    move-result p1
 
-    invoke-direct {v1, v0, v2}, Lz2/F;-><init>(I[Ljava/lang/Object;)V
+    iget-object v0, p0, Lz2/g;->h:Lz2/i;
 
-    move-object v0, v1
+    if-eqz p1, :cond_1
 
-    :goto_0
-    iput-object v0, p0, Lz2/D;->h:Lz2/C;
+    iget-boolean p1, v0, Lz2/i;->l:Z
+
+    if-eqz p1, :cond_1
+
+    iget-object p1, v0, Lz2/i;->f:Landroid/app/Dialog;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
+
+    return-void
 
     :cond_1
-    const/4 v1, 0x0
+    new-instance p1, Lz2/N1;
 
-    invoke-virtual {v0, v1}, Lz2/C;->h(I)Lz2/A;
+    const/4 v1, 0x3
+
+    const-string v2, "Activity is destroyed."
+
+    invoke-direct {p1, v2, v1}, Lz2/N1;-><init>(Ljava/lang/String;I)V
+
+    iget-object v1, v0, Lz2/i;->f:Landroid/app/Dialog;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_2
+
+    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+
+    iput-object v2, v0, Lz2/i;->f:Landroid/app/Dialog;
+
+    :cond_2
+    iget-object v1, v0, Lz2/i;->b:Lz2/p;
+
+    iput-object v2, v1, Lz2/p;->a:Landroid/app/Activity;
+
+    iget-object v1, v0, Lz2/i;->k:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lz2/g;
+
+    if-eqz v1, :cond_3
+
+    iget-object v3, v1, Lz2/g;->h:Lz2/i;
+
+    iget-object v3, v3, Lz2/i;->a:Landroid/app/Application;
+
+    invoke-virtual {v3, v1}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
+
+    :cond_3
+    iget-object v0, v0, Lz2/i;->j:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    return-object v0
+    check-cast v0, Lo8/a;
+
+    if-nez v0, :cond_4
+
+    goto :goto_0
+
+    :cond_4
+    invoke-virtual {p1}, Lz2/N1;->a()Li8/i;
+
+    invoke-interface {v0}, Lo8/a;->a()V
+
+    :goto_0
+    return-void
 .end method
 
-.method public final size()I
-    .locals 1
+.method public final onActivityPaused(Landroid/app/Activity;)V
+    .locals 0
 
-    iget v0, p0, Lz2/G;->m:I
+    return-void
+.end method
 
-    return v0
+.method public final onActivityResumed(Landroid/app/Activity;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onActivityStarted(Landroid/app/Activity;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onActivityStopped(Landroid/app/Activity;)V
+    .locals 0
+
+    return-void
 .end method

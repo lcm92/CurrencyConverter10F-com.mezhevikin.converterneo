@@ -9,16 +9,16 @@
 # instance fields
 .field public k:I
 
-.field public final synthetic l:Lv4/N;
+.field public final synthetic l:Lv4/N1;
 
 .field public final synthetic m:Lf5/o0;
 
 
 # direct methods
-.method public constructor <init>(Lv4/N;Lf5/o0;Ly9/d;)V
+.method public constructor <init>(Lv4/N1;Lf5/o0;Ly9/d;)V
     .locals 0
 
-    iput-object p1, p0, Lf5/R10;->l:Lv4/N;
+    iput-object p1, p0, Lf5/R10;->l:Lv4/N1;
 
     iput-object p2, p0, Lf5/R10;->m:Lf5/o0;
 
@@ -36,11 +36,11 @@
 
     new-instance p2, Lf5/R10;
 
-    iget-object v0, p0, Lf5/R10;->l:Lv4/N;
+    iget-object v0, p0, Lf5/R10;->l:Lv4/N1;
 
     iget-object v1, p0, Lf5/R10;->m:Lf5/o0;
 
-    invoke-direct {p2, v0, v1, p1}, Lf5/R10;-><init>(Lv4/N;Lf5/o0;Ly9/d;)V
+    invoke-direct {p2, v0, v1, p1}, Lf5/R10;-><init>(Lv4/N1;Lf5/o0;Ly9/d;)V
 
     return-object p2
 .end method
@@ -84,7 +84,7 @@
 
     iput v2, p0, Lf5/R10;->k:I
 
-    iget-object v1, p0, Lf5/R10;->l:Lv4/N;
+    iget-object v1, p0, Lf5/R10;->l:Lv4/N1;
 
     invoke-interface {v1, p1, p0}, Lv4/e;->c(Lv4/f;Ly9/d;)Ljava/lang/Object;
 

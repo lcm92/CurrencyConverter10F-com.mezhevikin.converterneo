@@ -1,84 +1,169 @@
-.class public final Lq0/X;
-.super Li4/i;
+.class public final Lq0/x;
+.super Lq0/O1;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/a;
 
 
 # instance fields
-.field public final synthetic h:Lq0/Z;
-
-.field public final synthetic i:Lr5/p;
-
-.field public final synthetic j:Lq0/d;
-
-.field public final synthetic k:J
-
-.field public final synthetic l:Lq0/r;
-
-.field public final synthetic m:Z
-
-.field public final synthetic n:Z
+.field public final synthetic x:Lq0/y;
 
 
 # direct methods
-.method public constructor <init>(Lq0/Z;Lr5/p;Lq0/d;JLq0/r;ZZ)V
+.method public constructor <init>(Lq0/y;)V
     .locals 0
 
-    iput-object p1, p0, Lq0/X;->h:Lq0/Z;
+    iput-object p1, p0, Lq0/x;->x:Lq0/y;
 
-    iput-object p2, p0, Lq0/X;->i:Lr5/p;
-
-    iput-object p3, p0, Lq0/X;->j:Lq0/d;
-
-    iput-wide p4, p0, Lq0/X;->k:J
-
-    iput-object p6, p0, Lq0/X;->l:Lq0/r;
-
-    iput-boolean p7, p0, Lq0/X;->m:Z
-
-    iput-boolean p8, p0, Lq0/X;->n:Z
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    invoke-direct {p0, p1}, Lq0/O1;-><init>(Lq0/Z1;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/lang/Object;
-    .locals 10
+.method public final Q(I)I
+    .locals 2
 
-    iget-object v0, p0, Lq0/X;->j:Lq0/d;
+    iget-object v0, p0, Lq0/x;->x:Lq0/y;
 
-    invoke-virtual {v0}, Lq0/d;->a()I
+    iget-object v1, v0, Lq0/y;->P:Lq0/w;
+
+    iget-object v0, v0, Lq0/Z1;->s:Lq0/Z1;
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Lq0/Z1;->J0()Lq0/O1;
+
+    move-result-object v0
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-interface {v1, p0, v0, p1}, Lq0/w;->f(Lq0/N1;Lo0/D1;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final T(I)I
+    .locals 2
+
+    iget-object v0, p0, Lq0/x;->x:Lq0/y;
+
+    iget-object v1, v0, Lq0/y;->P:Lq0/w;
+
+    iget-object v0, v0, Lq0/Z1;->s:Lq0/Z1;
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Lq0/Z1;->J0()Lq0/O1;
+
+    move-result-object v0
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-interface {v1, p0, v0, p1}, Lq0/w;->c(Lq0/N1;Lo0/D1;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final U(I)I
+    .locals 2
+
+    iget-object v0, p0, Lq0/x;->x:Lq0/y;
+
+    iget-object v1, v0, Lq0/y;->P:Lq0/w;
+
+    iget-object v0, v0, Lq0/Z1;->s:Lq0/Z1;
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Lq0/Z1;->J0()Lq0/O1;
+
+    move-result-object v0
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-interface {v1, p0, v0, p1}, Lq0/w;->a(Lq0/N1;Lo0/D1;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final a(J)Lo0/N1;
+    .locals 2
+
+    invoke-virtual {p0, p1, p2}, Lo0/N1;->m0(J)V
+
+    new-instance v0, Ll6/a;
+
+    invoke-direct {v0, p1, p2}, Ll6/a;-><init>(J)V
+
+    iget-object v0, p0, Lq0/x;->x:Lq0/y;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    iget-object v1, v0, Lq0/y;->P:Lq0/w;
+
+    iget-object v0, v0, Lq0/Z1;->s:Lq0/Z1;
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Lq0/Z1;->J0()Lq0/O1;
+
+    move-result-object v0
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-interface {v1, p0, v0, p1, p2}, Lq0/w;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Lq0/O1;->z0(Lq0/O1;Lo0/F1;)V
+
+    return-object p0
+.end method
+
+.method public final c(I)I
+    .locals 2
+
+    iget-object v0, p0, Lq0/x;->x:Lq0/y;
+
+    iget-object v1, v0, Lq0/y;->P:Lq0/w;
+
+    iget-object v0, v0, Lq0/Z1;->s:Lq0/Z1;
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Lq0/Z1;->J0()Lq0/O1;
+
+    move-result-object v0
+
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-interface {v1, p0, v0, p1}, Lq0/w;->d(Lq0/N1;Lo0/D1;I)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final n0(Lo0/l;)I
+    .locals 3
+
+    invoke-static {p0, p1}, Lq0/f;->c(Lq0/N1;Lo0/l;)I
 
     move-result v0
 
-    iget-object v1, p0, Lq0/X;->i:Lr5/p;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v1, v0}, Lq0/f;->e(Lq0/m;I)Lr5/p;
+    move-result-object v1
 
-    move-result-object v3
+    iget-object v2, p0, Lq0/O1;->w:Ljava/util/LinkedHashMap;
 
-    iget-wide v5, p0, Lq0/X;->k:J
+    invoke-interface {v2, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v7, p0, Lq0/X;->l:Lq0/r;
-
-    iget-object v2, p0, Lq0/X;->h:Lq0/Z;
-
-    iget-object v4, p0, Lq0/X;->j:Lq0/d;
-
-    iget-boolean v8, p0, Lq0/X;->m:Z
-
-    iget-boolean v9, p0, Lq0/X;->n:Z
-
-    invoke-virtual/range {v2 .. v9}, Lq0/Z;->O0(Lr5/p;Lq0/d;JLq0/r;ZZ)V
-
-    sget-object v0, Lu9/y;->a:Lu9/y;
-
-    return-object v0
+    return v0
 .end method

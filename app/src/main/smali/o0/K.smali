@@ -1,47 +1,83 @@
-.class public final Lo0/K;
-.super Lr5/p;
+.class public final Lo0/k;
+.super Lo0/N1;
 .source "SourceFile"
-
-# interfaces
-.implements Lq0/v;
 
 
 # instance fields
-.field public t:Lh4/c;
+.field public final synthetic l:I
 
-.field public u:J
+
+# direct methods
+.method public constructor <init>(III)V
+    .locals 0
+
+    iput p3, p0, Lo0/k;->l:I
+
+    packed-switch p3, :pswitch_data_0
+
+    invoke-direct {p0}, Lo0/N1;-><init>()V
+
+    invoke-static {p1, p2}, Lll/d;->b(II)J
+
+    move-result-wide p1
+
+    invoke-virtual {p0, p1, p2}, Lo0/N1;->h0(J)V
+
+    return-void
+
+    :pswitch_0
+    invoke-direct {p0}, Lo0/N1;-><init>()V
+
+    invoke-static {p1, p2}, Lll/d;->b(II)J
+
+    move-result-wide p1
+
+    invoke-virtual {p0, p1, p2}, Lo0/N1;->h0(J)V
+
+    return-void
+
+    :pswitch_1
+    invoke-direct {p0}, Lo0/N1;-><init>()V
+
+    invoke-static {p1, p2}, Lll/d;->b(II)J
+
+    move-result-wide p1
+
+    invoke-virtual {p0, p1, p2}, Lo0/N1;->h0(J)V
+
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private final n0(JFLh4/c;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method private final o0(JFLh4/c;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method private final p0(JFLh4/c;)V
+    .locals 0
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final n0()Z
-    .locals 1
+.method public final d0(JFLh4/c;)V
+    .locals 0
 
-    const/4 v0, 0x1
+    iget p1, p0, Lo0/k;->l:I
 
-    return v0
-.end method
-
-.method public final y(J)V
-    .locals 2
-
-    iget-wide v0, p0, Lo0/K;->u:J
-
-    invoke-static {v0, v1, p1, p2}, Ll6/j;->a(JJ)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lo0/K;->t:Lh4/c;
-
-    new-instance v1, Ll6/j;
-
-    invoke-direct {v1, p1, p2}, Ll6/j;-><init>(J)V
-
-    invoke-interface {v0, v1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
-
-    iput-wide p1, p0, Lo0/K;->u:J
-
-    :cond_0
     return-void
 .end method

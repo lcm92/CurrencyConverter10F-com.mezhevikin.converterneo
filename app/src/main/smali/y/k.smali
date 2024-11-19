@@ -9,16 +9,16 @@
 # instance fields
 .field public k:I
 
-.field public final synthetic l:Ls4/X;
+.field public final synthetic l:Ls4/X1;
 
 .field public final synthetic m:Ly/m;
 
 
 # direct methods
-.method public constructor <init>(Ls4/X;Ly/m;Ly9/d;)V
+.method public constructor <init>(Ls4/X1;Ly/m;Ly9/d;)V
     .locals 0
 
-    iput-object p1, p0, Ly/k;->l:Ls4/X;
+    iput-object p1, p0, Ly/k;->l:Ls4/X1;
 
     iput-object p2, p0, Ly/k;->m:Ly/m;
 
@@ -36,11 +36,11 @@
 
     new-instance p2, Ly/k;
 
-    iget-object v0, p0, Ly/k;->l:Ls4/X;
+    iget-object v0, p0, Ly/k;->l:Ls4/X1;
 
     iget-object v1, p0, Ly/k;->m:Ly/m;
 
-    invoke-direct {p2, v0, v1, p1}, Ly/k;-><init>(Ls4/X;Ly/m;Ly9/d;)V
+    invoke-direct {p2, v0, v1, p1}, Ly/k;-><init>(Ls4/X1;Ly/m;Ly9/d;)V
 
     return-object p2
 .end method
@@ -109,13 +109,13 @@
     :cond_3
     invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
 
-    iget-object p1, p0, Ly/k;->l:Ls4/X;
+    iget-object p1, p0, Ly/k;->l:Ls4/X1;
 
     if-eqz p1, :cond_4
 
     iput v7, p0, Ly/k;->k:I
 
-    invoke-static {p1, p0}, Ls4/y;->f(Ls4/X;La4/i;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Ls4/y;->f(Ls4/X1;La4/i;)Ljava/lang/Object;
 
     move-result-object p1
 

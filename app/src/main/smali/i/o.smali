@@ -36,14 +36,14 @@
     return-void
 .end method
 
-.method public static final a(Li/J;)V
+.method public static final a(Li/J1;)V
     .locals 8
 
-    iget v0, p0, Li/J;->j:I
+    iget v0, p0, Li/J1;->j:I
 
-    iget-object v1, p0, Li/J;->h:[I
+    iget-object v1, p0, Li/J1;->h:[I
 
-    iget-object v2, p0, Li/J;->i:[Ljava/lang/Object;
+    iget-object v2, p0, Li/J1;->i:[Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -81,9 +81,9 @@
     goto :goto_0
 
     :cond_2
-    iput-boolean v3, p0, Li/J;->g:Z
+    iput-boolean v3, p0, Li/J1;->g:Z
 
-    iput v5, p0, Li/J;->j:I
+    iput v5, p0, Li/J1;->j:I
 
     return-void
 .end method

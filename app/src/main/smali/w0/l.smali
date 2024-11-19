@@ -10,11 +10,11 @@
 
 .field public final c:Ll6/i;
 
-.field public final d:Lq0/Z;
+.field public final d:Lq0/Z1;
 
 
 # direct methods
-.method public constructor <init>(Lx0/m;ILl6/i;Lq0/Z;)V
+.method public constructor <init>(Lx0/m;ILl6/i;Lq0/Z1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -25,7 +25,7 @@
 
     iput-object p3, p0, Lw0/l;->c:Ll6/i;
 
-    iput-object p4, p0, Lw0/l;->d:Lq0/Z;
+    iput-object p4, p0, Lw0/l;->d:Lq0/Z1;
 
     return-void
 .end method
@@ -65,7 +65,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lw0/l;->d:Lq0/Z;
+    iget-object v1, p0, Lw0/l;->d:Lq0/Z1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

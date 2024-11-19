@@ -266,7 +266,7 @@
 
     const/4 v1, 0x6
 
-    invoke-static {v0, p4, p3, v1}, Lq/Z;->b(Lq/f;Lr5/h;Lf5/p;I)Lq/a0;
+    invoke-static {v0, p4, p3, v1}, Lq/Z1;->b(Lq/f;Lr5/h;Lf5/p;I)Lq/a0;
 
     move-result-object p4
 

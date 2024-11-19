@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lo/T;
+.implements Lo/T1;
 
 
 # instance fields
@@ -71,18 +71,18 @@
     :cond_0
     iget v3, p1, Lo/s0;->g:I
 
-    iget-object p1, p1, Lo/s0;->j:Lj3/F;
+    iget-object p1, p1, Lo/s0;->j:Lj3/F1;
 
-    invoke-interface {v4, v1, v2, v3, p1}, Lm/n0;->c(JILj3/F;)J
+    invoke-interface {v4, v1, v2, v3, p1}, Lm/n0;->c(JILj3/F1;)J
 
     move-result-wide v1
 
     goto :goto_0
 
     :cond_1
-    iget-object v4, p1, Lo/s0;->h:Lo/T;
+    iget-object v4, p1, Lo/s0;->h:Lo/T1;
 
-    invoke-static {p1, v4, v1, v2, v3}, Lo/s0;->a(Lo/s0;Lo/T;JI)J
+    invoke-static {p1, v4, v1, v2, v3}, Lo/s0;->a(Lo/s0;Lo/T1;JI)J
 
     move-result-wide v1
 

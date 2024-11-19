@@ -1072,7 +1072,7 @@
     :pswitch_5
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    invoke-static {p1}, Lk/P;->d(Ljava/lang/Object;)Ljava/lang/ClassCastException;
+    invoke-static {p1}, Lk/P1;->d(Ljava/lang/Object;)Ljava/lang/ClassCastException;
 
     move-result-object p1
 
@@ -1679,7 +1679,7 @@
     :pswitch_f
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    invoke-static {p1}, Lk/P;->d(Ljava/lang/Object;)Ljava/lang/ClassCastException;
+    invoke-static {p1}, Lk/P1;->d(Ljava/lang/Object;)Ljava/lang/ClassCastException;
 
     move-result-object p1
 

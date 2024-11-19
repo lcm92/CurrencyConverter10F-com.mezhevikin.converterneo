@@ -19,11 +19,11 @@
 
 .field public final synthetic l:I
 
-.field public final synthetic m:Lz0/F;
+.field public final synthetic m:Lz0/F1;
 
 
 # direct methods
-.method public constructor <init>(JLjava/lang/String;JLe6/A1;Le6/p;ILz0/F;)V
+.method public constructor <init>(JLjava/lang/String;JLe6/A1;Le6/p;ILz0/F1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
 
     iput p8, p0, Ld3/c;->l:I
 
-    iput-object p9, p0, Ld3/c;->m:Lz0/F;
+    iput-object p9, p0, Ld3/c;->m:Lz0/F1;
 
     return-void
 .end method
@@ -140,7 +140,7 @@
 
     iget-object v2, v0, Ld3/c;->h:Ljava/lang/String;
 
-    iget-object v3, v0, Ld3/c;->m:Lz0/F;
+    iget-object v3, v0, Ld3/c;->m:Lz0/F1;
 
     iget-wide v4, v0, Ld3/c;->i:J
 
@@ -168,7 +168,7 @@
 
     move-object v11, v12
 
-    invoke-direct/range {v1 .. v11}, Ld3/b;-><init>(Ljava/lang/String;Lz0/F;JLi4/r;Le6/A1;Le6/p;Ll6/b;ILq/t;)V
+    invoke-direct/range {v1 .. v11}, Ld3/b;-><init>(Ljava/lang/String;Lz0/F1;JLi4/r;Le6/A1;Le6/p;Ll6/b;ILq/t;)V
 
     const/4 v1, 0x0
 
@@ -215,7 +215,7 @@
 
     const/high16 v8, 0x7f800000    # Float.POSITIVE_INFINITY
 
-    iget-object v9, v12, Lq/t;->a:Lo0/Y;
+    iget-object v9, v12, Lq/t;->a:Lo0/Y1;
 
     if-eqz v7, :cond_4
 
@@ -431,7 +431,7 @@
 
     const/16 v32, 0x0
 
-    iget-object v1, v0, Ld3/c;->m:Lz0/F;
+    iget-object v1, v0, Ld3/c;->m:Lz0/F1;
 
     move-object/from16 v33, v1
 
@@ -441,7 +441,7 @@
 
     move-object/from16 v34, v5
 
-    invoke-static/range {v13 .. v37}, Lc5/j0;->b(Ljava/lang/String;Lr5/q;JJLe6/w;Le6/A1;Le6/p;JLk6/h;Lk6/g;JIZIILh4/c;Lz0/F;Lf5/p;III)V
+    invoke-static/range {v13 .. v37}, Lc5/j0;->b(Ljava/lang/String;Lr5/q;JJLe6/w;Le6/A1;Le6/p;JLk6/h;Lk6/g;JIZIILh4/c;Lz0/F1;Lf5/p;III)V
 
     :goto_8
     sget-object v1, Lu9/y;->a:Lu9/y;

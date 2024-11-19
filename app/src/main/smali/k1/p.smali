@@ -22,7 +22,7 @@
 
     invoke-direct {v1}, Lo6/x;-><init>()V
 
-    invoke-direct {p0, p1}, Lj1/u;-><init>(Lj1/H;)V
+    invoke-direct {p0, p1}, Lj1/u;-><init>(Lj1/H1;)V
 
     iput-object v1, p0, Lk1/p;->p:Lo6/x;
 

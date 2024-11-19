@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic h:Lj1/B;
+.field public final synthetic h:Lj1/B1;
 
 .field public final synthetic i:Lr5/q;
 
@@ -33,10 +33,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lj1/B;Lr5/q;Lr5/d;Ljava/lang/String;Lh4/c;Lh4/c;Lh4/c;Lh4/c;Lh4/c;Lv8/k;II)V
+.method public constructor <init>(Lj1/B1;Lr5/q;Lr5/d;Ljava/lang/String;Lh4/c;Lh4/c;Lh4/c;Lh4/c;Lh4/c;Lv8/k;II)V
     .locals 0
 
-    iput-object p1, p0, Lk1/s;->h:Lj1/B;
+    iput-object p1, p0, Lk1/s;->h:Lj1/B1;
 
     iput-object p2, p0, Lk1/s;->i:Lr5/q;
 
@@ -100,7 +100,7 @@
 
     iget-object v7, p0, Lk1/s;->o:Lh4/c;
 
-    iget-object v0, p0, Lk1/s;->h:Lj1/B;
+    iget-object v0, p0, Lk1/s;->h:Lj1/B1;
 
     iget-object v1, p0, Lk1/s;->i:Lr5/q;
 
@@ -114,7 +114,7 @@
 
     iget-object v8, p0, Lk1/s;->p:Lh4/c;
 
-    invoke-static/range {v0 .. v12}, Lt2/a;->h(Lj1/B;Lr5/q;Lr5/d;Ljava/lang/String;Lh4/c;Lh4/c;Lh4/c;Lh4/c;Lh4/c;Lv8/k;Lf5/p;II)V
+    invoke-static/range {v0 .. v12}, Lt2/a;->h(Lj1/B1;Lr5/q;Lr5/d;Ljava/lang/String;Lh4/c;Lh4/c;Lh4/c;Lh4/c;Lh4/c;Lv8/k;Lf5/p;II)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

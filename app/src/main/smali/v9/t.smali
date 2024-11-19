@@ -367,7 +367,7 @@
 
     const-string v2, ", toIndex: "
 
-    invoke-static {p1, p2, v1, v2}, Lk/P;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2, v1, v2}, Lk/P1;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

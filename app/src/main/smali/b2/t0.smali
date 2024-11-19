@@ -43,19 +43,19 @@
     return p1
 
     :pswitch_0
-    sget-object p1, Lb2/Y;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object p1, Lb2/Y1;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-static {p2, p1}, Lw2/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
-    check-cast p1, Lb2/Y;
+    check-cast p1, Lb2/Y1;
 
     invoke-static {p2}, Lw2/b;->b(Landroid/os/Parcel;)V
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lb2/Y;->a()Ly7/j;
+    invoke-virtual {p1}, Lb2/Y1;->a()Ly7/j;
 
     move-result-object p1
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Ls3/K;
+.field public final a:Ls3/K1;
 
 .field public final b:Ls3/y;
 
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ls3/K;Ls3/y;Ls3/s;Lv3/d;Ls4/n0;Lh9/g;)V
+.method public constructor <init>(Ls3/K1;Ls3/y;Ls3/s;Lv3/d;Ls4/n0;Lh9/g;)V
     .locals 1
 
     const-string v0, "method"
@@ -37,7 +37,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lo3/e;->a:Ls3/K;
+    iput-object p1, p0, Lo3/e;->a:Ls3/K1;
 
     iput-object p2, p0, Lo3/e;->b:Ls3/y;
 
@@ -79,7 +79,7 @@
 .method public final a()Ljava/lang/Object;
     .locals 3
 
-    sget-object v0, Lj3/O;->d:Lj3/N;
+    sget-object v0, Lj3/O1;->d:Lj3/N1;
 
     sget-object v1, Lh3/g;->a:Lh9/a;
 
@@ -115,7 +115,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lo3/e;->a:Ls3/K;
+    iget-object v1, p0, Lo3/e;->a:Ls3/K1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

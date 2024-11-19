@@ -74,7 +74,7 @@
 
     iget-object p1, p0, La5/E1;->l:Ljava/lang/Object;
 
-    check-cast p1, Lk0/B;
+    check-cast p1, Lk0/B1;
 
     new-instance v1, La5/D1;
 
@@ -86,7 +86,7 @@
 
     iput v2, p0, La5/E1;->k:I
 
-    invoke-virtual {p1, v1, p0}, Lk0/B;->y0(Lh4/e;Ly9/d;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, p0}, Lk0/B1;->y0(Lh4/e;Ly9/d;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -104,7 +104,7 @@
 .method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lk0/B;
+    check-cast p1, Lk0/B1;
 
     check-cast p2, Ly9/d;
 

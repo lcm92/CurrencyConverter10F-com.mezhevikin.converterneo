@@ -196,7 +196,7 @@
 .method public static final c(Lp5/e;Lp5/e;Lp5/n;)Ljava/util/HashMap;
     .locals 21
 
-    invoke-virtual/range {p1 .. p1}, Lp5/e;->w()Li/D;
+    invoke-virtual/range {p1 .. p1}, Lp5/e;->w()Li/D1;
 
     move-result-object v0
 
@@ -232,9 +232,9 @@
 
     move-result-object v3
 
-    iget-object v5, v0, Li/D;->b:[Ljava/lang/Object;
+    iget-object v5, v0, Li/D1;->b:[Ljava/lang/Object;
 
-    iget-object v0, v0, Li/D;->a:[J
+    iget-object v0, v0, Li/D1;->a:[J
 
     array-length v6, v0
 
@@ -644,7 +644,7 @@
 
     check-cast v2, Lp5/d;
 
-    iget-object v2, v2, Lp5/e;->h:Li/D;
+    iget-object v2, v2, Lp5/e;->h:Li/D1;
 
     if-eqz v2, :cond_0
 
@@ -701,7 +701,7 @@
 
     new-instance v8, Lh5/f;
 
-    invoke-direct {v8, v2}, Lh5/f;-><init>(Li/D;)V
+    invoke-direct {v8, v2}, Lh5/f;-><init>(Li/D1;)V
 
     invoke-interface {v7, v8, v1}, Lh4/e;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
@@ -741,9 +741,9 @@
 
     if-eqz v2, :cond_6
 
-    iget-object v3, v2, Li/D;->b:[Ljava/lang/Object;
+    iget-object v3, v2, Li/D1;->b:[Ljava/lang/Object;
 
-    iget-object v2, v2, Li/D;->a:[J
+    iget-object v2, v2, Li/D1;->a:[J
 
     array-length v4, v2
 

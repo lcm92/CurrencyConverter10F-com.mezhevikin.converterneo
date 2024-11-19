@@ -11,16 +11,16 @@
 
 .field public l:I
 
-.field public final synthetic m:Ls4/X;
+.field public final synthetic m:Ls4/X1;
 
 .field public final synthetic n:Ly3/f;
 
 
 # direct methods
-.method public constructor <init>(Ls4/X;Ly3/f;Ly9/d;)V
+.method public constructor <init>(Ls4/X1;Ly3/f;Ly9/d;)V
     .locals 0
 
-    iput-object p1, p0, Lio/ktor/client/engine/cio/b;->m:Ls4/X;
+    iput-object p1, p0, Lio/ktor/client/engine/cio/b;->m:Ls4/X1;
 
     iput-object p2, p0, Lio/ktor/client/engine/cio/b;->n:Ly3/f;
 
@@ -38,11 +38,11 @@
 
     new-instance p2, Lio/ktor/client/engine/cio/b;
 
-    iget-object v0, p0, Lio/ktor/client/engine/cio/b;->m:Ls4/X;
+    iget-object v0, p0, Lio/ktor/client/engine/cio/b;->m:Ls4/X1;
 
     iget-object v1, p0, Lio/ktor/client/engine/cio/b;->n:Ly3/f;
 
-    invoke-direct {p2, v0, v1, p1}, Lio/ktor/client/engine/cio/b;-><init>(Ls4/X;Ly3/f;Ly9/d;)V
+    invoke-direct {p2, v0, v1, p1}, Lio/ktor/client/engine/cio/b;-><init>(Ls4/X1;Ly3/f;Ly9/d;)V
 
     return-object p2
 .end method
@@ -111,11 +111,11 @@
     invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
 
     :try_start_1
-    iget-object p1, p0, Lio/ktor/client/engine/cio/b;->m:Ls4/X;
+    iget-object p1, p0, Lio/ktor/client/engine/cio/b;->m:Ls4/X1;
 
     iput v6, p0, Lio/ktor/client/engine/cio/b;->l:I
 
-    invoke-interface {p1, p0}, Ls4/X;->A(La4/c;)Ljava/lang/Object;
+    invoke-interface {p1, p0}, Ls4/X1;->A(La4/c;)Ljava/lang/Object;
 
     move-result-object p1
     :try_end_1
@@ -135,11 +135,11 @@
 
     invoke-static {p1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    check-cast p1, Ls4/X;
+    check-cast p1, Ls4/X1;
 
     iput v5, p0, Lio/ktor/client/engine/cio/b;->l:I
 
-    invoke-interface {p1, p0}, Ls4/X;->A(La4/c;)Ljava/lang/Object;
+    invoke-interface {p1, p0}, Ls4/X1;->A(La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -162,13 +162,13 @@
 
     invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    check-cast v1, Ls4/X;
+    check-cast v1, Ls4/X1;
 
     iput-object p1, p0, Lio/ktor/client/engine/cio/b;->k:Ljava/lang/Throwable;
 
     iput v4, p0, Lio/ktor/client/engine/cio/b;->l:I
 
-    invoke-interface {v1, p0}, Ls4/X;->A(La4/c;)Ljava/lang/Object;
+    invoke-interface {v1, p0}, Ls4/X1;->A(La4/c;)Ljava/lang/Object;
 
     move-result-object v1
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/C;
+.implements Ls4/C1;
 
 
 # instance fields
@@ -112,14 +112,14 @@
 
     move-result-object v1
 
-    check-cast v1, Ls4/X;
+    check-cast v1, Ls4/X1;
 
     if-eqz v1, :cond_0
 
-    invoke-interface {v1, v0}, Ls4/X;->c(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {v1, v0}, Ls4/X1;->c(Ljava/util/concurrent/CancellationException;)V
 
     :cond_0
-    sget-object v0, Ls4/F;->c:Lz4/c;
+    sget-object v0, Ls4/F1;->c:Lz4/c;
 
     invoke-virtual {v0, p1, p2}, Lz4/c;->u(Ly9/i;Ljava/lang/Runnable;)V
 
@@ -151,11 +151,11 @@
 
     if-eqz p1, :cond_0
 
-    new-instance p1, Lo/F;
+    new-instance p1, Lo/F1;
 
     const/16 p2, 0xc
 
-    invoke-direct {p1, p0, p2, v0}, Lo/F;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p1, p0, p2, v0}, Lo/F1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-virtual {p3, p1}, Ls4/f;->t(Lh4/c;)V
 
@@ -196,7 +196,7 @@
     return p1
 .end method
 
-.method public final g(JLs4/r0;Ly9/i;)Ls4/G;
+.method public final g(JLs4/r0;Ly9/i;)Ls4/G1;
     .locals 2
 
     const-wide v0, 0x3fffffffffffffffL    # 1.9999999999999998
@@ -242,7 +242,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 2
 
-    sget-object v0, Ls4/F;->a:Lz4/d;
+    sget-object v0, Ls4/F1;->a:Lz4/d;
 
     sget-object v0, Lx4/m;->a:Lt4/d;
 

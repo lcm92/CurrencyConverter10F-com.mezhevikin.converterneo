@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Lv3/d;
 
-.field public final b:Ls4/X;
+.field public final b:Ls4/X1;
 
 .field public final c:Lh4/f;
 
@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lv3/d;Ls4/X;Lh4/f;)V
+.method public constructor <init>(Lv3/d;Ls4/X1;Lh4/f;)V
     .locals 1
 
     const-string v0, "delegate"
@@ -29,7 +29,7 @@
 
     iput-object p1, p0, Lg3/a;->a:Lv3/d;
 
-    iput-object p2, p0, Lg3/a;->b:Ls4/X;
+    iput-object p2, p0, Lg3/a;->b:Ls4/X1;
 
     iput-object p3, p0, Lg3/a;->c:Lh4/f;
 
@@ -143,7 +143,7 @@
 
     iget-object v2, p0, Lg3/a;->d:Lio/ktor/utils/io/I;
 
-    iget-object v3, p0, Lg3/a;->b:Ls4/X;
+    iget-object v3, p0, Lg3/a;->b:Ls4/X1;
 
     invoke-static {v2, v3, v0, v1}, Lq3/b;->a(Lio/ktor/utils/io/I;Ly9/i;Ljava/lang/Long;Lh4/f;)Lio/ktor/utils/io/E;
 

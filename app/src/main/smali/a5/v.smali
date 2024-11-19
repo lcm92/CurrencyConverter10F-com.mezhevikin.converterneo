@@ -36,11 +36,11 @@
 
     iget-object v0, v0, La5/p;->e:Ljava/lang/Object;
 
-    check-cast v0, Lz0/C;
+    check-cast v0, Lz0/C1;
 
     iget v1, p0, La5/v;->i:I
 
-    invoke-virtual {v0, v1}, Lz0/C;->e(I)I
+    invoke-virtual {v0, v1}, Lz0/C1;->e(I)I
 
     move-result v0
 

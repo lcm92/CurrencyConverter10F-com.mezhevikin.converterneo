@@ -1,13 +1,20 @@
-.class public final Lq0/V;
-.super Lr5/p;
+.class public interface abstract Lq0/v;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lq0/m;
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 1
+.method public v(Lo0/p;)V
+    .locals 0
 
-    const-string v0, "<Head>"
+    return-void
+.end method
 
-    return-object v0
+.method public y(J)V
+    .locals 0
+
+    return-void
 .end method

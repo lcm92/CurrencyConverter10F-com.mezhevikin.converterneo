@@ -21,7 +21,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    sget-object v0, Lr0/M;->i:Lr0/M;
+    sget-object v0, Lr0/M1;->i:Lr0/M1;
 
     sget-object v1, Lf5/W1;->l:Lf5/W1;
 
@@ -31,7 +31,7 @@
 
     sput-object v2, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->a:Lf5/y;
 
-    sget-object v0, Lr0/M;->j:Lr0/M;
+    sget-object v0, Lr0/M1;->j:Lr0/M1;
 
     new-instance v1, Lf5/X10;
 
@@ -39,7 +39,7 @@
 
     sput-object v1, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->b:Lf5/X10;
 
-    sget-object v0, Lr0/M;->k:Lr0/M;
+    sget-object v0, Lr0/M1;->k:Lr0/M1;
 
     new-instance v1, Lf5/X10;
 
@@ -47,7 +47,7 @@
 
     sput-object v1, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->c:Lf5/X10;
 
-    sget-object v0, Lr0/M;->l:Lr0/M;
+    sget-object v0, Lr0/M1;->l:Lr0/M1;
 
     new-instance v1, Lf5/X10;
 
@@ -55,7 +55,7 @@
 
     sput-object v1, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->d:Lf5/X10;
 
-    sget-object v0, Lr0/M;->m:Lr0/M;
+    sget-object v0, Lr0/M1;->m:Lr0/M1;
 
     new-instance v1, Lf5/X10;
 
@@ -63,7 +63,7 @@
 
     sput-object v1, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->e:Lf5/X10;
 
-    sget-object v0, Lr0/M;->n:Lr0/M;
+    sget-object v0, Lr0/M1;->n:Lr0/M1;
 
     new-instance v1, Lf5/X10;
 
@@ -217,14 +217,14 @@
 
     if-ne v11, v10, :cond_8
 
-    new-instance v11, Lr0/X;
+    new-instance v11, Lr0/X1;
 
     invoke-direct {v11}, Ljava/lang/Object;-><init>()V
 
     invoke-virtual {v2, v11}, Lf5/p;->a0(Ljava/lang/Object;)V
 
     :cond_8
-    check-cast v11, Lr0/X;
+    check-cast v11, Lr0/X1;
 
     invoke-virtual/range {p0 .. p0}, Lr0/u;->getViewTreeOwners()Lr0/l;
 
@@ -419,11 +419,11 @@
     if-ne v6, v10, :cond_f
 
     :cond_e
-    new-instance v6, Lj3/F;
+    new-instance v6, Lj3/F1;
 
     const/16 v5, 0xf
 
-    invoke-direct {v6, v5, v13}, Lj3/F;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v6, v5, v13}, Lj3/F1;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {v2, v6}, Lf5/p;->a0(Ljava/lang/Object;)V
 
@@ -479,14 +479,14 @@
 
     if-ne v4, v10, :cond_13
 
-    new-instance v4, Lr0/N;
+    new-instance v4, Lr0/N1;
 
-    invoke-direct {v4, v6, v5}, Lr0/N;-><init>(Landroid/content/res/Configuration;Lv0/c;)V
+    invoke-direct {v4, v6, v5}, Lr0/N1;-><init>(Landroid/content/res/Configuration;Lv0/c;)V
 
     invoke-virtual {v2, v4}, Lf5/p;->a0(Ljava/lang/Object;)V
 
     :cond_13
-    check-cast v4, Lr0/N;
+    check-cast v4, Lr0/N1;
 
     invoke-virtual {v2, v8}, Lf5/p;->h(Ljava/lang/Object;)Z
 
@@ -501,11 +501,11 @@
     if-ne v7, v10, :cond_15
 
     :cond_14
-    new-instance v7, Lo/F;
+    new-instance v7, Lo/F1;
 
     const/4 v6, 0x4
 
-    invoke-direct {v7, v8, v6, v4}, Lo/F;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v7, v8, v6, v4}, Lo/F1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-virtual {v2, v7}, Lf5/p;->a0(Ljava/lang/Object;)V
 
@@ -535,14 +535,14 @@
 
     if-ne v6, v10, :cond_17
 
-    new-instance v6, Lr0/O;
+    new-instance v6, Lr0/O1;
 
-    invoke-direct {v6, v4}, Lr0/O;-><init>(Lv0/d;)V
+    invoke-direct {v6, v4}, Lr0/O1;-><init>(Lv0/d;)V
 
     invoke-virtual {v2, v6}, Lf5/p;->a0(Ljava/lang/Object;)V
 
     :cond_17
-    check-cast v6, Lr0/O;
+    check-cast v6, Lr0/O1;
 
     invoke-virtual {v2, v8}, Lf5/p;->h(Ljava/lang/Object;)Z
 
@@ -557,11 +557,11 @@
     if-ne v15, v10, :cond_19
 
     :cond_18
-    new-instance v15, Lo/F;
+    new-instance v15, Lo/F1;
 
     const/4 v7, 0x5
 
-    invoke-direct {v15, v8, v7, v6}, Lo/F;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v15, v8, v7, v6}, Lo/F1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-virtual {v2, v15}, Lf5/p;->a0(Ljava/lang/Object;)V
 

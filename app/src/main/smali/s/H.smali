@@ -1,85 +1,65 @@
-.class public final Ls/H;
-.super Li4/i;
+.class public final Ls/h;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lh4/e;
 
+# instance fields
+.field public final a:I
 
-# static fields
-.field public static final h:Ls/H;
+.field public final b:I
+
+.field public final c:Lo2/b;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(IILo2/b;)V
+    .locals 0
 
-    new-instance v0, Ls/H;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v1, 0x2
+    iput p1, p0, Ls/h;->a:I
 
-    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
+    iput p2, p0, Ls/h;->b:I
 
-    sput-object v0, Ls/H;->h:Ls/H;
+    iput-object p3, p0, Ls/h;->c:Lo2/b;
+
+    if-ltz p1, :cond_1
+
+    if-lez p2, :cond_0
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-
-    check-cast p1, Lo5/b;
-
-    check-cast p2, Ls/I;
-
-    iget-object p1, p2, Ls/I;->b:Lf5/j0;
-
-    invoke-virtual {p1}, Lf5/j0;->getValue()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lo5/c;
-
-    if-eqz p1, :cond_0
-
-    iget-object v0, p2, Ls/I;->c:Ljava/util/LinkedHashSet;
-
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-interface {p1, v1}, Lo5/c;->a(Ljava/lang/Object;)V
-
-    goto :goto_0
 
     :cond_0
-    iget-object p1, p2, Ls/I;->a:Lo5/l;
+    const-string p1, "size should be >0, but was "
 
-    invoke-virtual {p1}, Lo5/l;->a()Ljava/util/Map;
+    invoke-static {p1, p2}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
+    new-instance p2, Ljava/lang/IllegalArgumentException;
 
-    move-result p2
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    if-eqz p2, :cond_1
+    move-result-object p1
 
-    const/4 p1, 0x0
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
 
     :cond_1
-    return-object p1
+    const-string p2, "startIndex should be >= 0, but was "
+
+    invoke-static {p2, p1}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
 .end method

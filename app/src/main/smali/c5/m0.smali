@@ -59,7 +59,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lo0/N;Lc5/o0;F)V
+.method public constructor <init>(Lo0/N1;Lc5/o0;F)V
     .locals 1
 
     const/4 v0, 0x0
@@ -89,9 +89,9 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast p1, Lq0/F;
+    check-cast p1, Lq0/F1;
 
-    invoke-virtual {p1}, Lq0/F;->a()V
+    invoke-virtual {p1}, Lq0/F1;->a()V
 
     iget v0, p0, Lc5/m0;->i:F
 
@@ -103,7 +103,7 @@
 
     check-cast v2, Ly5/l;
 
-    iget-object v3, p1, Lq0/F;->g:La0/b;
+    iget-object v3, p1, Lq0/F1;->g:La0/b;
 
     iget-object v3, v3, La0/b;->h:Le6/l;
 
@@ -162,7 +162,7 @@
 
     invoke-interface {v0, v8, v6}, Ly5/p;->q(FF)V
 
-    invoke-static {p1, v1, v2}, La0/d;->l0(Lq0/F;Ly5/g;Ly5/l;)V
+    invoke-static {p1, v1, v2}, La0/d;->l0(Lq0/F1;Ly5/g;Ly5/l;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -323,7 +323,7 @@
     return-object p1
 
     :pswitch_1
-    check-cast p1, Lo0/M;
+    check-cast p1, Lo0/M1;
 
     iget-object v0, p0, Lc5/m0;->k:Ljava/lang/Object;
 
@@ -358,9 +358,9 @@
 
     iget-object v2, p0, Lc5/m0;->j:Ljava/lang/Object;
 
-    check-cast v2, Lo0/N;
+    check-cast v2, Lo0/N1;
 
-    invoke-static {p1, v2, v0, v1}, Lo0/M;->f(Lo0/M;Lo0/N;II)V
+    invoke-static {p1, v2, v0, v1}, Lo0/M1;->f(Lo0/M1;Lo0/N1;II)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

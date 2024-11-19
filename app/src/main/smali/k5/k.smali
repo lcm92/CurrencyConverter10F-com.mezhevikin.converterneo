@@ -213,11 +213,11 @@
 
     invoke-direct {v1, v2, v0}, Lv9/r;-><init>(ILjava/lang/Object;)V
 
-    new-instance v0, Lj3/F;
+    new-instance v0, Lj3/F1;
 
     const/16 v2, 0xd
 
-    invoke-direct {v0, v2, p0}, Lj3/F;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v2, p0}, Lj3/F1;-><init>(ILjava/lang/Object;)V
 
     new-instance v2, Lp4/k;
 

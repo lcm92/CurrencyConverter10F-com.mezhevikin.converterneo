@@ -1,16 +1,16 @@
 .class public final Lk1/q;
-.super Lj1/H;
+.super Lj1/H1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lj1/H;"
+        "Lj1/H1;"
     }
 .end annotation
 
-.annotation runtime Lj1/G;
+.annotation runtime Lj1/G1;
     value = "dialog"
 .end annotation
 
@@ -38,7 +38,7 @@
     return-object v0
 .end method
 
-.method public final d(Ljava/util/List;Lj1/E;)V
+.method public final d(Ljava/util/List;Lj1/E1;)V
     .locals 1
 
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -58,7 +58,7 @@
 
     check-cast p2, Lj1/h;
 
-    invoke-virtual {p0}, Lj1/H;->b()Lj1/k;
+    invoke-virtual {p0}, Lj1/H1;->b()Lj1/k;
 
     move-result-object v0
 
@@ -73,23 +73,23 @@
 .method public final e(Lj1/h;Z)V
     .locals 3
 
-    invoke-virtual {p0}, Lj1/H;->b()Lj1/k;
+    invoke-virtual {p0}, Lj1/H1;->b()Lj1/k;
 
     move-result-object v0
 
     invoke-virtual {v0, p1, p2}, Lj1/k;->e(Lj1/h;Z)V
 
-    invoke-virtual {p0}, Lj1/H;->b()Lj1/k;
+    invoke-virtual {p0}, Lj1/H1;->b()Lj1/k;
 
     move-result-object p2
 
-    iget-object p2, p2, Lj1/k;->f:Lv4/A;
+    iget-object p2, p2, Lj1/k;->f:Lv4/A1;
 
-    iget-object p2, p2, Lv4/A;->g:Lv4/z;
+    iget-object p2, p2, Lv4/A1;->g:Lv4/z;
 
-    check-cast p2, Lv4/P;
+    check-cast p2, Lv4/P1;
 
-    invoke-virtual {p2}, Lv4/P;->getValue()Ljava/lang/Object;
+    invoke-virtual {p2}, Lv4/P1;->getValue()Ljava/lang/Object;
 
     move-result-object p2
 
@@ -99,17 +99,17 @@
 
     move-result p1
 
-    invoke-virtual {p0}, Lj1/H;->b()Lj1/k;
+    invoke-virtual {p0}, Lj1/H1;->b()Lj1/k;
 
     move-result-object p2
 
-    iget-object p2, p2, Lj1/k;->f:Lv4/A;
+    iget-object p2, p2, Lj1/k;->f:Lv4/A1;
 
-    iget-object p2, p2, Lv4/A;->g:Lv4/z;
+    iget-object p2, p2, Lv4/A1;->g:Lv4/z;
 
-    check-cast p2, Lv4/P;
+    check-cast p2, Lv4/P1;
 
-    invoke-virtual {p2}, Lv4/P;->getValue()Ljava/lang/Object;
+    invoke-virtual {p2}, Lv4/P1;->getValue()Ljava/lang/Object;
 
     move-result-object p2
 
@@ -140,7 +140,7 @@
 
     if-le v0, p1, :cond_0
 
-    invoke-virtual {p0}, Lj1/H;->b()Lj1/k;
+    invoke-virtual {p0}, Lj1/H1;->b()Lj1/k;
 
     move-result-object v0
 

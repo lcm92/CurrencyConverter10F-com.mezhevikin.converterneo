@@ -88,7 +88,7 @@
 
     iget-boolean v1, p0, Lc/h;->i:Z
 
-    invoke-static {v0, v1, p1, p2}, Lw/N;->f(La5/b0;ZLf5/p;I)V
+    invoke-static {v0, v1, p1, p2}, Lw/N1;->f(La5/b0;ZLf5/p;I)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

@@ -1,60 +1,102 @@
-.class public final Lm/G;
-.super Ljava/lang/Object;
+.class public final Lm/g;
+.super La4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lm/b0;
+.implements Lh4/e;
 
 
-# static fields
-.field public static final a:Lm/G;
+# instance fields
+.field public final synthetic k:Lm/j;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lm/j;Ly9/d;)V
+    .locals 0
 
-    new-instance v0, Lm/G;
+    iput-object p1, p0, Lm/g;->k:Lm/j;
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 p1, 0x2
 
-    sput-object v0, Lm/G;->a:Lm/G;
+    invoke-direct {p0, p1, p2}, La4/i;-><init>(ILy9/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lp/i;)Lq0/m;
+.method public final d(Ly9/d;Ljava/lang/Object;)Ly9/d;
     .locals 1
 
-    new-instance v0, Lm/F;
+    new-instance p2, Lm/g;
 
-    invoke-direct {v0, p1}, Lm/F;-><init>(Lp/i;)V
+    iget-object v0, p0, Lm/g;->k:Lm/j;
 
-    return-object v0
+    invoke-direct {p2, v0, p1}, Lm/g;-><init>(Lm/j;Ly9/d;)V
+
+    return-object p2
 .end method
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 0
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
-    if-ne p1, p0, :cond_0
+    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
 
-    const/4 p1, 0x1
+    iget-object p1, p0, Lm/g;->k:Lm/j;
 
-    goto :goto_0
+    iget-object v0, p1, Lm/j;->G:Lp/f;
+
+    if-nez v0, :cond_1
+
+    new-instance v0, Lp/f;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iget-object v1, p1, Lm/j;->v:Lp/i;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {p1}, Lr5/p;->m0()Ls4/x;
+
+    move-result-object v2
+
+    new-instance v3, Lm/a;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v3, v1, v0, v4}, Lm/a;-><init>(Lp/i;Lp/f;Ly9/d;)V
+
+    const/4 v1, 0x3
+
+    const/4 v5, 0x0
+
+    invoke-static {v2, v4, v5, v3, v1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     :cond_0
-    const/4 p1, 0x0
+    iput-object v0, p1, Lm/j;->G:Lp/f;
 
-    :goto_0
-    return p1
+    :cond_1
+    sget-object p1, Lu9/y;->a:Lu9/y;
+
+    return-object p1
 .end method
 
-.method public final hashCode()I
-    .locals 1
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    const/4 v0, -0x1
+    check-cast p1, Ls4/x;
 
-    return v0
+    check-cast p2, Ly9/d;
+
+    invoke-virtual {p0, p2, p1}, Lm/g;->d(Ly9/d;Ljava/lang/Object;)Ly9/d;
+
+    move-result-object p1
+
+    check-cast p1, Lm/g;
+
+    sget-object p2, Lu9/y;->a:Lu9/y;
+
+    invoke-virtual {p1, p2}, Lm/g;->f(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p2
 .end method

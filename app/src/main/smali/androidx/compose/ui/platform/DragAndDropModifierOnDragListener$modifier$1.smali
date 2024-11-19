@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 

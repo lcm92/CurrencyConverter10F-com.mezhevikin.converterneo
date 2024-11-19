@@ -126,9 +126,9 @@
 
     invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    check-cast v1, Ls4/X;
+    check-cast v1, Ls4/X1;
 
-    invoke-virtual {v2, v1}, Lio/ktor/utils/io/D;->h(Ls4/X;)V
+    invoke-virtual {v2, v1}, Lio/ktor/utils/io/D;->h(Ls4/X1;)V
 
     :cond_2
     new-instance v1, Lio/ktor/utils/io/N;
@@ -151,7 +151,7 @@
     return-object v0
 
     :goto_0
-    sget-object v0, Ls4/F;->b:Ls4/t0;
+    sget-object v0, Ls4/F1;->b:Ls4/t0;
 
     iget-object v1, p0, Lio/ktor/utils/io/O;->p:Ls4/t;
 

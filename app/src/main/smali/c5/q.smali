@@ -35,7 +35,7 @@
 
     iget v0, p0, Lc5/q;->b:I
 
-    invoke-static {p1, v0, p1}, Lw/N;->t(III)V
+    invoke-static {p1, v0, p1}, Lw/N1;->t(III)V
 
     :cond_0
     return p1
@@ -52,7 +52,7 @@
 
     iget v0, p0, Lc5/q;->a:I
 
-    invoke-static {p1, v0, p1}, Lw/N;->u(III)V
+    invoke-static {p1, v0, p1}, Lw/N1;->u(III)V
 
     :cond_0
     return p1

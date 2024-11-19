@@ -13,7 +13,7 @@
 
     new-instance v0, Ll/B0;
 
-    sget-object v1, Ll/A;->c:La5/s;
+    sget-object v1, Ll/A1;->c:La5/s;
 
     const/4 v2, 0x2
 

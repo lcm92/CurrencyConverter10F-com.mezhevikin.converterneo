@@ -321,26 +321,26 @@
 
     if-ne v1, v3, :cond_d
 
-    new-instance v1, Ll/N;
+    new-instance v1, Ll/N1;
 
     sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    invoke-direct {v1, v5}, Ll/N;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v1, v5}, Ll/N1;-><init>(Ljava/lang/Object;)V
 
     invoke-virtual {v0, v1}, Lf5/p;->a0(Ljava/lang/Object;)V
 
     :cond_d
-    check-cast v1, Ll/N;
+    check-cast v1, Ll/N1;
 
     invoke-static/range {p0 .. p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v5
 
-    iget-object v14, v1, Ll/N;->i:Lf5/j0;
+    iget-object v14, v1, Ll/N1;->i:Lf5/j0;
 
     invoke-virtual {v14, v5}, Lf5/j0;->setValue(Ljava/lang/Object;)V
 
-    iget-object v5, v1, Ll/N;->h:Lf5/j0;
+    iget-object v5, v1, Ll/N1;->h:Lf5/j0;
 
     invoke-virtual {v5}, Lf5/j0;->getValue()Ljava/lang/Object;
 
@@ -354,7 +354,7 @@
 
     if-nez v5, :cond_f
 
-    iget-object v5, v1, Ll/N;->i:Lf5/j0;
+    iget-object v5, v1, Ll/N1;->i:Lf5/j0;
 
     invoke-virtual {v5}, Lf5/j0;->getValue()Ljava/lang/Object;
 
@@ -480,7 +480,7 @@
 
     move-object/from16 v27, p13
 
-    invoke-direct/range {v16 .. v27}, Lc5/a;-><init>(Lr5/q;Ll/N;Lf5/c0;Lm/z0;Ly5/M1;JFFLm/w;Ln5/a;)V
+    invoke-direct/range {v16 .. v27}, Lc5/a;-><init>(Lr5/q;Ll/N1;Lf5/c0;Lm/z0;Ly5/M1;JFFLm/w;Ln5/a;)V
 
     const v1, 0x7ec6f865
 
@@ -570,7 +570,7 @@
     return-void
 .end method
 
-.method public static final b(Ln5/a;Lh4/a;Lr5/q;Lh4/e;Lh4/e;ZLc5/y;Lq/V;Lp/i;Lf5/p;I)V
+.method public static final b(Ln5/a;Lh4/a;Lr5/q;Lh4/e;Lh4/e;ZLc5/y;Lq/V1;Lp/i;Lf5/p;I)V
     .locals 27
 
     move-object/from16 v11, p9
@@ -808,7 +808,7 @@
     :cond_9
     and-int/2addr v1, v3
 
-    sget-object v3, Lc5/x;->c:Lq/V;
+    sget-object v3, Lc5/x;->c:Lq/V1;
 
     const/4 v4, 0x0
 
@@ -855,7 +855,7 @@
 
     move-object/from16 v9, p9
 
-    invoke-static/range {v0 .. v10}, Lc5/E1;->b(Ln5/a;Lh4/a;Lr5/q;Lh4/e;Lh4/e;ZLc5/y;Lq/V;Lp/i;Lf5/p;I)V
+    invoke-static/range {v0 .. v10}, Lc5/E1;->b(Ln5/a;Lh4/a;Lr5/q;Lh4/e;Lh4/e;ZLc5/y;Lq/V1;Lp/i;Lf5/p;I)V
 
     move-object v3, v14
 
@@ -890,7 +890,7 @@
 
     move/from16 v10, p10
 
-    invoke-direct/range {v0 .. v11}, Lc5/d;-><init>(Ln5/a;Lh4/a;Lr5/q;Lh4/e;Lh4/e;ZLc5/y;Lq/V;Lp/i;II)V
+    invoke-direct/range {v0 .. v11}, Lc5/d;-><init>(Ln5/a;Lh4/a;Lr5/q;Lh4/e;Lh4/e;ZLc5/y;Lq/V1;Lp/i;II)V
 
     iput-object v15, v14, Lf5/s0;->d:Lh4/e;
 

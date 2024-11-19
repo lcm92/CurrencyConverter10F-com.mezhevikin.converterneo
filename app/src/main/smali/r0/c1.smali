@@ -1,126 +1,106 @@
-.class public final Lr0/c1;
-.super La4/i;
+.class public final Lr0/C1;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements Lh4/c;
 
 
 # instance fields
-.field public k:I
+.field public final synthetic h:I
 
-.field public final synthetic l:Lv4/N;
-
-.field public final synthetic m:Lr0/u0;
+.field public final synthetic i:Lr0/E1;
 
 
 # direct methods
-.method public constructor <init>(Lv4/N;Lr0/u0;Ly9/d;)V
+.method public synthetic constructor <init>(Lr0/E1;I)V
     .locals 0
 
-    iput-object p1, p0, Lr0/c1;->l:Lv4/N;
+    iput p2, p0, Lr0/C1;->h:I
 
-    iput-object p2, p0, Lr0/c1;->m:Lr0/u0;
+    iput-object p1, p0, Lr0/C1;->i:Lr0/E1;
 
-    const/4 p1, 0x2
+    const/4 p1, 0x1
 
-    invoke-direct {p0, p1, p3}, La4/i;-><init>(ILy9/d;)V
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Ly9/d;Ljava/lang/Object;)Ly9/d;
-    .locals 2
-
-    new-instance p2, Lr0/c1;
-
-    iget-object v0, p0, Lr0/c1;->l:Lv4/N;
-
-    iget-object v1, p0, Lr0/c1;->m:Lr0/u0;
-
-    invoke-direct {p2, v0, v1, p1}, Lr0/c1;-><init>(Lv4/N;Lr0/u0;Ly9/d;)V
-
-    return-object p2
-.end method
-
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
-    sget-object v0, Lz9/a;->g:Lz9/a;
+    iget v0, p0, Lr0/C1;->h:I
 
-    iget v1, p0, Lr0/c1;->k:I
+    packed-switch v0, :pswitch_data_0
 
-    const/4 v2, 0x1
+    check-cast p1, Lr0/H0;
 
-    if-eqz v1, :cond_1
+    iget-object v0, p0, Lr0/C1;->i:Lr0/E1;
 
-    if-eq v1, v2, :cond_0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance p1, Ljava/lang/IllegalStateException;
+    iget-object v1, p1, Lr0/H0;->h:Ljava/util/ArrayList;
 
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    move-result v1
 
-    throw p1
-
-    :cond_0
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+    if-nez v1, :cond_0
 
     goto :goto_0
 
-    :cond_1
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+    :cond_0
+    iget-object v1, v0, Lr0/E1;->d:Lr0/u;
 
-    new-instance p1, Lr0/b1;
+    invoke-virtual {v1}, Lr0/u;->getSnapshotObserver()Lq0/h0;
 
-    iget-object v1, p0, Lr0/c1;->m:Lr0/u0;
+    move-result-object v1
 
-    const/4 v3, 0x0
+    new-instance v2, La5/g0;
 
-    invoke-direct {p1, v3, v1}, Lr0/b1;-><init>(ILjava/lang/Object;)V
+    const/16 v3, 0xe
 
-    iput v2, p0, Lr0/c1;->k:I
+    invoke-direct {v2, p1, v3, v0}, La5/g0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    iget-object v1, p0, Lr0/c1;->l:Lv4/N;
+    iget-object v0, v0, Lr0/E1;->M:Lr0/C1;
 
-    invoke-interface {v1, p1, p0}, Lv4/e;->c(Lv4/f;Ly9/d;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, v0, v2}, Lq0/h0;->a(Lq0/g0;Lh4/c;Lh4/a;)V
 
-    move-result-object p1
-
-    if-ne p1, v0, :cond_2
-
-    return-object v0
-
-    :cond_2
     :goto_0
-    new-instance p1, Lg8/c;
-
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    check-cast p1, Ls4/x;
-
-    check-cast p2, Ly9/d;
-
-    invoke-virtual {p0, p2, p1}, Lr0/c1;->d(Ly9/d;Ljava/lang/Object;)Ly9/d;
-
-    move-result-object p1
-
-    check-cast p1, Lr0/c1;
-
-    sget-object p2, Lu9/y;->a:Lu9/y;
-
-    invoke-virtual {p1, p2}, Lr0/c1;->f(Ljava/lang/Object;)Ljava/lang/Object;
-
-    sget-object p1, Lz9/a;->g:Lz9/a;
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
     return-object p1
+
+    :pswitch_0
+    check-cast p1, Landroid/view/accessibility/AccessibilityEvent;
+
+    iget-object v0, p0, Lr0/C1;->i:Lr0/E1;
+
+    iget-object v1, v0, Lr0/E1;->d:Lr0/u;
+
+    invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v1
+
+    iget-object v0, v0, Lr0/E1;->d:Lr0/u;
+
+    invoke-interface {v1, v0, p1}, Landroid/view/ViewParent;->requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

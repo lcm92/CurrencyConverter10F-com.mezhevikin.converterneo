@@ -6,7 +6,7 @@
 # instance fields
 .field public j:Ll3/l;
 
-.field public k:Ls3/K;
+.field public k:Ls3/K1;
 
 .field public l:Ljava/util/Iterator;
 

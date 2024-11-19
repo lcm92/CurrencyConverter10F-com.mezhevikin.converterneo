@@ -198,7 +198,7 @@
     :cond_2
     const-string p3, " should be greater than or equals to core pool size "
 
-    invoke-static {p2, p1, p5, p3}, Lk/P;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1, p5, p3}, Lk/P1;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

@@ -1,91 +1,53 @@
-.class public final Lr0/b1;
-.super Ljava/lang/Object;
+.class public final Lr0/B1;
+.super La4/c;
 .source "SourceFile"
-
-# interfaces
-.implements Lv4/f;
 
 
 # instance fields
-.field public final synthetic g:I
+.field public j:Lr0/E1;
 
-.field public final synthetic h:Ljava/lang/Object;
+.field public k:Li/t;
+
+.field public l:Lu4/c;
+
+.field public synthetic m:Ljava/lang/Object;
+
+.field public final synthetic n:Lr0/E1;
+
+.field public o:I
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
+.method public constructor <init>(Lr0/E1;La4/c;)V
     .locals 0
 
-    iput p1, p0, Lr0/b1;->g:I
+    iput-object p1, p0, Lr0/B1;->n:Lr0/E1;
 
-    iput-object p2, p0, Lr0/b1;->h:Ljava/lang/Object;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ly9/d;)Ljava/lang/Object;
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget p2, p0, Lr0/b1;->g:I
+    iput-object p1, p0, Lr0/B1;->m:Ljava/lang/Object;
 
-    packed-switch p2, :pswitch_data_0
+    iget p1, p0, Lr0/B1;->o:I
 
-    check-cast p1, Lu9/y;
+    const/high16 v0, -0x80000000
 
-    iget-object p1, p0, Lr0/b1;->h:Ljava/lang/Object;
+    or-int/2addr p1, v0
 
-    check-cast p1, Ly/s;
+    iput p1, p0, Lr0/B1;->o:I
 
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+    iget-object p1, p0, Lr0/B1;->n:Lr0/E1;
 
-    const/16 v0, 0x22
+    invoke-virtual {p1, p0}, Lr0/E1;->d(La4/c;)Ljava/lang/Object;
 
-    if-lt p2, v0, :cond_0
-
-    sget-object p2, Ly/h;->a:Ly/h;
-
-    invoke-virtual {p1}, Ly/s;->p()Landroid/view/inputmethod/InputMethodManager;
-
-    move-result-object v0
-
-    iget-object p1, p1, Ly/s;->h:Ljava/lang/Object;
-
-    check-cast p1, Landroid/view/View;
-
-    invoke-virtual {p2, v0, p1}, Ly/h;->a(Landroid/view/inputmethod/InputMethodManager;Landroid/view/View;)V
-
-    :cond_0
-    sget-object p1, Lu9/y;->a:Lu9/y;
+    move-result-object p1
 
     return-object p1
-
-    :pswitch_0
-    check-cast p1, Ljava/lang/Number;
-
-    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
-
-    move-result p1
-
-    iget-object p2, p0, Lr0/b1;->h:Ljava/lang/Object;
-
-    check-cast p2, Lr0/u0;
-
-    iget-object p2, p2, Lr0/u0;->g:Lf5/f0;
-
-    invoke-virtual {p2, p1}, Lf5/f0;->i(F)V
-
-    sget-object p1, Lu9/y;->a:Lu9/y;
-
-    return-object p1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

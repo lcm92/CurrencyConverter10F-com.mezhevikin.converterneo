@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lw/F;
+.field public final a:Lw/F1;
 
 .field public final b:J
 
@@ -14,12 +14,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lw/F;JIZ)V
+.method public constructor <init>(Lw/F1;JIZ)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, La5/F1;->a:Lw/F;
+    iput-object p1, p0, La5/F1;->a:Lw/F1;
 
     iput-wide p2, p0, La5/F1;->b:J
 
@@ -53,9 +53,9 @@
     :cond_1
     check-cast p1, La5/F1;
 
-    iget-object v1, p1, La5/F1;->a:Lw/F;
+    iget-object v1, p1, La5/F1;->a:Lw/F1;
 
-    iget-object v3, p0, La5/F1;->a:Lw/F;
+    iget-object v3, p0, La5/F1;->a:Lw/F1;
 
     if-eq v3, v1, :cond_2
 
@@ -99,7 +99,7 @@
 .method public final hashCode()I
     .locals 4
 
-    iget-object v0, p0, La5/F1;->a:Lw/F;
+    iget-object v0, p0, La5/F1;->a:Lw/F1;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -111,7 +111,7 @@
 
     iget-wide v2, p0, La5/F1;->b:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
@@ -145,7 +145,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, La5/F1;->a:Lw/F;
+    iget-object v1, p0, La5/F1;->a:Lw/F1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

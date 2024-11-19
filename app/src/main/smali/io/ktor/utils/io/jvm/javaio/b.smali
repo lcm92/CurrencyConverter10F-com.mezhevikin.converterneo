@@ -20,7 +20,7 @@
 
     iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/b;->h:Lio/ktor/utils/io/jvm/javaio/c;
 
-    iget-object p1, p1, Lio/ktor/utils/io/jvm/javaio/c;->a:Ls4/X;
+    iget-object p1, p1, Lio/ktor/utils/io/jvm/javaio/c;->a:Ls4/X1;
 
     if-eqz p1, :cond_0
 
@@ -166,20 +166,20 @@
 
     iget-object p1, p0, Lio/ktor/utils/io/jvm/javaio/b;->h:Lio/ktor/utils/io/jvm/javaio/c;
 
-    iget-object p1, p1, Lio/ktor/utils/io/jvm/javaio/c;->a:Ls4/X;
+    iget-object p1, p1, Lio/ktor/utils/io/jvm/javaio/c;->a:Ls4/X1;
 
     if-eqz p1, :cond_8
 
-    invoke-static {p1}, Ls4/y;->e(Ls4/X;)V
+    invoke-static {p1}, Ls4/y;->e(Ls4/X1;)V
 
     :cond_8
     iget-object p1, p0, Lio/ktor/utils/io/jvm/javaio/b;->h:Lio/ktor/utils/io/jvm/javaio/c;
 
-    iget-object p1, p1, Lio/ktor/utils/io/jvm/javaio/c;->c:Ls4/G;
+    iget-object p1, p1, Lio/ktor/utils/io/jvm/javaio/c;->c:Ls4/G1;
 
     if-eqz p1, :cond_9
 
-    invoke-interface {p1}, Ls4/G;->a()V
+    invoke-interface {p1}, Ls4/G1;->a()V
 
     :cond_9
     return-void

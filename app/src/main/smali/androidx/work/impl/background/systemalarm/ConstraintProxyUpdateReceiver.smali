@@ -61,7 +61,7 @@
 
     const-string p2, "Ignoring unknown action "
 
-    invoke-static {p2, v0}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v0}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 

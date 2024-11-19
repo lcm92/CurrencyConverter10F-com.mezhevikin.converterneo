@@ -100,7 +100,7 @@
 
 
 # virtual methods
-.method public final A(Li/D;)V
+.method public final A(Li/D1;)V
     .locals 0
 
     invoke-static {}, Lp5/t;->h()V
@@ -412,14 +412,14 @@
     return-object v0
 .end method
 
-.method public final w()Li/D;
+.method public final w()Li/D1;
     .locals 1
 
     invoke-virtual {p0}, Lp5/C1;->C()Lp5/e;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lp5/e;->w()Li/D;
+    invoke-virtual {v0}, Lp5/e;->w()Li/D1;
 
     move-result-object v0
 

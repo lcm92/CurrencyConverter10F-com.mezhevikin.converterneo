@@ -108,13 +108,13 @@
 
     move-result-object v7
 
-    check-cast v7, Lo0/N;
+    check-cast v7, Lo0/N1;
 
-    iget v8, v7, Lo0/N;->h:I
+    iget v8, v7, Lo0/N1;->h:I
 
     add-int/2addr v5, v8
 
-    iget v7, v7, Lo0/N;->g:I
+    iget v7, v7, Lo0/N1;->g:I
 
     invoke-static {v6, v7}, Ljava/lang/Math;->max(II)I
 
@@ -180,7 +180,7 @@
     return-wide v0
 .end method
 
-.method public final b(Lo0/M;)V
+.method public final b(Lo0/M1;)V
     .locals 9
 
     iget v0, p0, Lr/n;->o:I
@@ -204,9 +204,9 @@
 
     move-result-object v3
 
-    check-cast v3, Lo0/N;
+    check-cast v3, Lo0/N1;
 
-    iget v4, v3, Lo0/N;->h:I
+    iget v4, v3, Lo0/N1;->h:I
 
     invoke-virtual {p0, v2}, Lr/n;->a(I)J
 
@@ -216,13 +216,13 @@
 
     iget-object v7, p0, Lr/n;->j:Landroidx/compose/foundation/lazy/layout/a;
 
-    iget-object v7, v7, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A;
+    iget-object v7, v7, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A1;
 
-    invoke-virtual {v7, v6}, Li/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v7, v6}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
 
-    invoke-static {v6}, Lk/P;->i(Ljava/lang/Object;)V
+    invoke-static {v6}, Lk/P1;->i(Ljava/lang/Object;)V
 
     iget-boolean v6, p0, Lr/n;->e:Z
 
@@ -244,7 +244,7 @@
 
     sub-int/2addr v5, v4
 
-    iget v4, v3, Lo0/N;->h:I
+    iget v4, v3, Lo0/N1;->h:I
 
     sub-int/2addr v5, v4
 
@@ -259,15 +259,15 @@
 
     move-result-wide v4
 
-    sget-object v6, Lo0/O;->i:Lo0/O;
+    sget-object v6, Lo0/O1;->i:Lo0/O1;
 
-    sget v7, Lo0/P;->b:I
+    sget v7, Lo0/P1;->b:I
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p1, v3}, Lo0/M;->a(Lo0/M;Lo0/N;)V
+    invoke-static {p1, v3}, Lo0/M1;->a(Lo0/M1;Lo0/N1;)V
 
-    iget-wide v7, v3, Lo0/N;->k:J
+    iget-wide v7, v3, Lo0/N1;->k:J
 
     invoke-static {v4, v5, v7, v8}, Ll6/h;->c(JJ)J
 
@@ -275,7 +275,7 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual {v3, v4, v5, v7, v6}, Lo0/N;->d0(JFLh4/c;)V
+    invoke-virtual {v3, v4, v5, v7, v6}, Lo0/N1;->d0(JFLh4/c;)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -316,7 +316,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lo0/N;
+    check-cast v2, Lo0/N1;
 
     mul-int/lit8 v3, v1, 0x2
 
@@ -324,7 +324,7 @@
 
     if-eqz v4, :cond_0
 
-    iget v5, v2, Lo0/N;->g:I
+    iget v5, v2, Lo0/N1;->g:I
 
     iget-object v6, p0, Lr/n;->d:Ll6/k;
 
@@ -340,7 +340,7 @@
 
     aput p1, v5, v3
 
-    iget v2, v2, Lo0/N;->h:I
+    iget v2, v2, Lo0/N1;->h:I
 
     add-int/2addr p1, v2
 

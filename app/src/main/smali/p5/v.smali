@@ -311,21 +311,21 @@
 
     iget-object v5, v5, La5/Z1;->h:Ljava/lang/Object;
 
-    check-cast v5, Li/A;
+    check-cast v5, Li/A1;
 
-    invoke-virtual {v5}, Li/A;->a()V
+    invoke-virtual {v5}, Li/A1;->a()V
 
-    iget-object v5, v4, Lp5/u;->f:Li/A;
+    iget-object v5, v4, Lp5/u;->f:Li/A1;
 
-    invoke-virtual {v5}, Li/A;->a()V
+    invoke-virtual {v5}, Li/A1;->a()V
 
     iget-object v5, v4, Lp5/u;->k:La5/Z1;
 
     iget-object v5, v5, La5/Z1;->h:Ljava/lang/Object;
 
-    check-cast v5, Li/A;
+    check-cast v5, Li/A1;
 
-    invoke-virtual {v5}, Li/A;->a()V
+    invoke-virtual {v5}, Li/A1;->a()V
 
     iget-object v4, v4, Lp5/u;->l:Ljava/util/HashMap;
 

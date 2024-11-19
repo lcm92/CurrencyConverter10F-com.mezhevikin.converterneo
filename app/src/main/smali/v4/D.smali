@@ -1,57 +1,59 @@
-.class public final Lv4/D;
-.super La4/c;
+.class public final Lv4/d;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lv4/e;
 
 
 # instance fields
-.field public j:Lv4/E;
-
-.field public k:Lv4/f;
-
-.field public l:Lv4/G;
-
-.field public m:Ls4/X;
-
-.field public synthetic n:Ljava/lang/Object;
-
-.field public final synthetic o:Lv4/E;
-
-.field public p:I
+.field public final g:Lv4/e;
 
 
 # direct methods
-.method public constructor <init>(Lv4/E;Ly9/d;)V
+.method public constructor <init>(Lv4/e;)V
     .locals 0
 
-    iput-object p1, p0, Lv4/D;->o:Lv4/E;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+    iput-object p1, p0, Lv4/d;->g:Lv4/e;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final c(Lv4/f;Ly9/d;)Ljava/lang/Object;
+    .locals 3
 
-    iput-object p1, p0, Lv4/D;->n:Ljava/lang/Object;
+    new-instance v0, Li4/s;
 
-    iget p1, p0, Lv4/D;->p:I
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    const/high16 v0, -0x80000000
+    sget-object v1, Lw4/c;->b:Li8/i;
 
-    or-int/2addr p1, v0
+    iput-object v1, v0, Li4/s;->g:Ljava/lang/Object;
 
-    iput p1, p0, Lv4/D;->p:I
+    new-instance v1, Lk/s;
 
-    iget-object p1, p0, Lv4/D;->o:Lv4/E;
+    const/4 v2, 0x1
 
-    const/4 v0, 0x0
+    invoke-direct {v1, p0, v0, p1, v2}, Lk/s;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
-    invoke-static {p1, v0, p0}, Lv4/E;->k(Lv4/E;Lv4/f;Ly9/d;)V
+    iget-object p1, p0, Lv4/d;->g:Lv4/e;
 
-    sget-object p1, Lz9/a;->g:Lz9/a;
+    invoke-interface {p1, v1, p2}, Lv4/e;->c(Lv4/f;Ly9/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    sget-object p2, Lz9/a;->g:Lz9/a;
+
+    if-ne p1, p2, :cond_0
+
+    return-object p1
+
+    :cond_0
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
     return-object p1
 .end method

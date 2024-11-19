@@ -78,11 +78,11 @@
 
     sget-object v1, Lk0/p;->a:Lk0/a;
 
-    sget-object v2, Lr0/J;->a:Lr0/J;
+    sget-object v2, Lr0/J1;->a:Lr0/J1;
 
     iget-object v0, v0, Lr0/r;->a:Lr0/u;
 
-    invoke-virtual {v2, v0, v1}, Lr0/J;->a(Landroid/view/View;Lk0/n;)V
+    invoke-virtual {v2, v0, v1}, Lr0/J1;->a(Landroid/view/View;Lk0/n;)V
 
     :cond_1
     return-void
@@ -158,7 +158,7 @@
 .method public final y0()V
     .locals 4
 
-    sget-object v0, Lw/N;->b:Lk0/a;
+    sget-object v0, Lw/N1;->b:Lk0/a;
 
     new-instance v1, Li4/s;
 
@@ -188,11 +188,11 @@
 
     check-cast v1, Lr0/r;
 
-    sget-object v2, Lr0/J;->a:Lr0/J;
+    sget-object v2, Lr0/J1;->a:Lr0/J1;
 
     iget-object v1, v1, Lr0/r;->a:Lr0/u;
 
-    invoke-virtual {v2, v1, v0}, Lr0/J;->a(Landroid/view/View;Lk0/n;)V
+    invoke-virtual {v2, v1, v0}, Lr0/J1;->a(Landroid/view/View;Lk0/n;)V
 
     :cond_0
     return-void

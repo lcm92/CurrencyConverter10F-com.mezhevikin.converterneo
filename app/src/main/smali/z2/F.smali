@@ -1,107 +1,68 @@
-.class public final Lz2/F;
-.super Lz2/C;
+.class public final Lz2/f;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# static fields
-.field public static final k:Lz2/F;
+# interfaces
+.implements Lz2/K1;
 
 
 # instance fields
-.field public final transient i:[Ljava/lang/Object;
+.field public final synthetic g:I
 
-.field public final transient j:I
+.field public final h:Lj5/e;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
-
-    new-instance v0, Lz2/F;
-
-    const/4 v1, 0x0
-
-    new-array v2, v1, [Ljava/lang/Object;
-
-    invoke-direct {v0, v1, v2}, Lz2/F;-><init>(I[Ljava/lang/Object;)V
-
-    sput-object v0, Lz2/F;->k:Lz2/F;
-
-    return-void
-.end method
-
-.method public constructor <init>(I[Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Lj5/e;I)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
+    iput p2, p0, Lz2/f;->g:I
 
-    iput-object p2, p0, Lz2/F;->i:[Ljava/lang/Object;
+    iput-object p1, p0, Lz2/f;->h:Lj5/e;
 
-    iput p1, p0, Lz2/F;->j:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b([Ljava/lang/Object;)I
-    .locals 3
+.method public final a()Ljava/lang/Object;
+    .locals 2
 
-    iget-object v0, p0, Lz2/F;->i:[Ljava/lang/Object;
+    iget v0, p0, Lz2/f;->g:I
 
-    const/4 v1, 0x0
+    packed-switch v0, :pswitch_data_0
 
-    iget v2, p0, Lz2/F;->j:I
+    iget-object v0, p0, Lz2/f;->h:Lj5/e;
 
-    invoke-static {v0, v1, p1, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    iget-object v0, v0, Lj5/e;->g:Ljava/lang/Object;
 
-    return v2
-.end method
+    check-cast v0, Landroid/app/Application;
 
-.method public final d()I
-    .locals 1
+    new-instance v1, Lz2/p;
 
-    iget v0, p0, Lz2/F;->j:I
+    invoke-direct {v1, v0}, Landroid/content/ContextWrapper;-><init>(Landroid/content/Context;)V
 
-    return v0
-.end method
+    return-object v1
 
-.method public final e()I
-    .locals 1
+    :pswitch_0
+    iget-object v0, p0, Lz2/f;->h:Lj5/e;
 
-    const/4 v0, 0x0
+    iget-object v0, v0, Lj5/e;->g:Ljava/lang/Object;
 
-    return v0
-.end method
+    check-cast v0, Landroid/app/Application;
 
-.method public final f()[Ljava/lang/Object;
-    .locals 1
+    new-instance v1, Lz2/e;
 
-    iget-object v0, p0, Lz2/F;->i:[Ljava/lang/Object;
+    invoke-direct {v1, v0}, Lz2/e;-><init>(Landroid/app/Application;)V
 
-    return-object v0
-.end method
+    return-object v1
 
-.method public final get(I)Ljava/lang/Object;
-    .locals 1
+    nop
 
-    iget v0, p0, Lz2/F;->j:I
-
-    invoke-static {p1, v0}, Lz2/x;->b(II)V
-
-    iget-object v0, p0, Lz2/F;->i:[Ljava/lang/Object;
-
-    aget-object p1, v0, p1
-
-    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-object p1
-.end method
-
-.method public final size()I
-    .locals 1
-
-    iget v0, p0, Lz2/F;->j:I
-
-    return v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

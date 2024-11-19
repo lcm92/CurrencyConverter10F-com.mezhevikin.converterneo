@@ -116,11 +116,11 @@
 
     iget-object v6, v0, Lh5/e;->r:Lh5/f;
 
-    iget-object v6, v6, Lh5/f;->g:Li/D;
+    iget-object v6, v6, Lh5/f;->g:Li/D1;
 
-    iget-object v7, v6, Li/D;->b:[Ljava/lang/Object;
+    iget-object v7, v6, Li/D1;->b:[Ljava/lang/Object;
 
-    iget-object v6, v6, Li/D;->a:[J
+    iget-object v6, v6, Li/D1;->a:[J
 
     array-length v8, v6
 

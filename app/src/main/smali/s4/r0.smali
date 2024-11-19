@@ -64,7 +64,7 @@
 
     iget-object v0, p0, Ls4/a;->i:Ly9/i;
 
-    invoke-static {v0}, Ls4/y;->k(Ly9/i;)Ls4/C;
+    invoke-static {v0}, Ls4/y;->k(Ly9/i;)Ls4/C1;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

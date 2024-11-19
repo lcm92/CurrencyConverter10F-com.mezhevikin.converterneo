@@ -65,9 +65,9 @@
 
     if-eqz p2, :cond_0
 
-    check-cast v2, Lq/P;
+    check-cast v2, Lq/P1;
 
-    invoke-virtual {v2, p1, v0}, Lq/P;->a(Landroid/view/View;Ly6/L1;)Ly6/L1;
+    invoke-virtual {v2, p1, v0}, Lq/P1;->a(Landroid/view/View;Ly6/L1;)Ly6/L1;
 
     move-result-object p1
 
@@ -80,9 +80,9 @@
     :cond_0
     iput-object v0, p0, Ly6/i;->a:Ly6/L1;
 
-    check-cast v2, Lq/P;
+    check-cast v2, Lq/P1;
 
-    invoke-virtual {v2, p1, v0}, Lq/P;->a(Landroid/view/View;Ly6/L1;)Ly6/L1;
+    invoke-virtual {v2, p1, v0}, Lq/P1;->a(Landroid/view/View;Ly6/L1;)Ly6/L1;
 
     move-result-object p2
 

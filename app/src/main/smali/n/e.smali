@@ -11,14 +11,14 @@
 
 .field public synthetic j:Ljava/lang/Object;
 
-.field public final synthetic k:Lj3/F;
+.field public final synthetic k:Lj3/F1;
 
 
 # direct methods
-.method public constructor <init>(Lj3/F;Ly9/d;)V
+.method public constructor <init>(Lj3/F1;Ly9/d;)V
     .locals 0
 
-    iput-object p1, p0, Ln/e;->k:Lj3/F;
+    iput-object p1, p0, Ln/e;->k:Lj3/F1;
 
     const/4 p1, 0x2
 
@@ -34,9 +34,9 @@
 
     new-instance v0, Ln/e;
 
-    iget-object v1, p0, Ln/e;->k:Lj3/F;
+    iget-object v1, p0, Ln/e;->k:Lj3/F1;
 
-    invoke-direct {v0, v1, p1}, Ln/e;-><init>(Lj3/F;Ly9/d;)V
+    invoke-direct {v0, v1, p1}, Ln/e;-><init>(Lj3/F1;Ly9/d;)V
 
     iput-object p2, v0, Ln/e;->j:Ljava/lang/Object;
 
@@ -109,7 +109,7 @@
 
     invoke-virtual {p1}, Lk0/r;->a()V
 
-    iget-object v3, p0, Ln/e;->k:Lj3/F;
+    iget-object v3, p0, Ln/e;->k:Lj3/F1;
 
     new-instance v4, Ln/l;
 
@@ -117,7 +117,7 @@
 
     invoke-direct {v4, v5, v6}, Ln/l;-><init>(J)V
 
-    iget-object p1, v3, Lj3/F;->i:Ljava/lang/Object;
+    iget-object p1, v3, Lj3/F1;->i:Ljava/lang/Object;
 
     check-cast p1, Ln/n;
 

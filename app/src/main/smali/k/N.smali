@@ -1,129 +1,592 @@
-.class public final Lk/N;
-.super Ljava/lang/Object;
+.class public final Lk/n;
+.super Li4/i;
 .source "SourceFile"
+
+# interfaces
+.implements Lh4/c;
 
 
 # instance fields
-.field public final a:F
+.field public final synthetic h:I
 
-.field public final b:F
+.field public final synthetic i:Lh4/c;
+
+.field public final synthetic j:Lk/o;
 
 
 # direct methods
-.method public constructor <init>(FLl6/b;)V
+.method public synthetic constructor <init>(Lh4/c;Lk/o;I)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iput p3, p0, Lk/n;->h:I
 
-    iput p1, p0, Lk/N;->a:F
+    iput-object p1, p0, Lk/n;->i:Lh4/c;
 
-    invoke-interface {p2}, Ll6/b;->b()F
+    iput-object p2, p0, Lk/n;->j:Lk/o;
 
-    move-result p1
+    const/4 p1, 0x1
 
-    sget p2, Lk/O;->a:F
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
-    const p2, 0x43c10b3d
+    return-void
+.end method
 
-    mul-float/2addr p1, p2
+.method public synthetic constructor <init>(Lk/o;Lh4/c;I)V
+    .locals 0
 
-    const/high16 p2, 0x43200000    # 160.0f
+    .line 2
+    iput p3, p0, Lk/n;->h:I
 
-    mul-float/2addr p1, p2
+    iput-object p1, p0, Lk/n;->j:Lk/o;
 
-    const p2, 0x3f570a3d    # 0.84f
+    iput-object p2, p0, Lk/n;->i:Lh4/c;
 
-    mul-float/2addr p1, p2
+    const/4 p1, 0x1
 
-    iput p1, p0, Lk/N;->b:F
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(F)Lk/M;
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 9
 
-    invoke-virtual {p0, p1}, Lk/N;->b(F)D
+    iget v0, p0, Lk/n;->h:I
 
-    move-result-wide v0
+    packed-switch v0, :pswitch_data_0
 
-    sget v2, Lk/O;->a:F
+    check-cast p1, Ljava/lang/Number;
 
-    float-to-double v2, v2
-
-    const-wide/high16 v4, 0x3ff0000000000000L    # 1.0
-
-    sub-double v4, v2, v4
-
-    new-instance v6, Lk/M;
-
-    iget v7, p0, Lk/N;->a:F
-
-    iget v8, p0, Lk/N;->b:F
-
-    mul-float/2addr v7, v8
-
-    float-to-double v7, v7
-
-    div-double/2addr v2, v4
-
-    mul-double/2addr v2, v0
-
-    invoke-static {v2, v3}, Ljava/lang/Math;->exp(D)D
-
-    move-result-wide v2
-
-    mul-double/2addr v2, v7
-
-    double-to-float v2, v2
-
-    div-double/2addr v0, v4
-
-    invoke-static {v0, v1}, Ljava/lang/Math;->exp(D)D
-
-    move-result-wide v0
-
-    const-wide v3, 0x408f400000000000L    # 1000.0
-
-    mul-double/2addr v0, v3
-
-    double-to-long v0, v0
-
-    invoke-direct {v6, p1, v2, v0, v1}, Lk/M;-><init>(FFJ)V
-
-    return-object v6
-.end method
-
-.method public final b(F)D
-    .locals 5
-
-    sget-object v0, Lk/b;->a:[F
-
-    iget v0, p0, Lk/N;->a:F
-
-    iget v1, p0, Lk/N;->b:F
-
-    mul-float/2addr v0, v1
-
-    const v1, 0x3eb33333    # 0.35f
-
-    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
     move-result p1
 
-    mul-float/2addr p1, v1
+    iget-object v0, p0, Lk/n;->j:Lk/o;
 
-    float-to-double v1, p1
+    iget-object v1, v0, Lk/o;->e:Li/A1;
 
-    float-to-double v3, v0
+    iget-object v2, v0, Lk/o;->a:Ll/v0;
 
-    div-double/2addr v1, v3
+    iget-object v2, v2, Ll/v0;->d:Lf5/j0;
 
-    invoke-static {v1, v2}, Ljava/lang/Math;->log(D)D
+    invoke-virtual {v2}, Lf5/j0;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lf5/W10;
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v1}, Lf5/W10;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ll6/j;
+
+    iget-wide v1, v1, Ll6/j;->a:J
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/16 v1, 0x0
+
+    :goto_0
+    invoke-static {p1, p1}, Lll/d;->b(II)J
+
+    move-result-wide v4
+
+    iget-object v3, v0, Lk/o;->b:Lr5/d;
+
+    sget-object v8, Ll6/k;->g:Ll6/k;
+
+    move-wide v6, v1
+
+    invoke-interface/range {v3 .. v8}, Lr5/d;->a(JJLl6/k;)J
+
+    move-result-wide v3
+
+    const-wide v5, 0xffffffffL
+
+    and-long/2addr v3, v5
+
+    long-to-int p1, v3
+
+    neg-int p1, p1
+
+    and-long v0, v1, v5
+
+    long-to-int v0, v0
+
+    add-int/2addr p1, v0
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lk/n;->i:Lh4/c;
+
+    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    return-object p1
+
+    :pswitch_0
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    iget-object v0, p0, Lk/n;->j:Lk/o;
+
+    iget-object v1, v0, Lk/o;->e:Li/A1;
+
+    iget-object v2, v0, Lk/o;->a:Ll/v0;
+
+    iget-object v2, v2, Ll/v0;->d:Lf5/j0;
+
+    invoke-virtual {v2}, Lf5/j0;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lf5/W10;
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v1}, Lf5/W10;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ll6/j;
+
+    iget-wide v1, v1, Ll6/j;->a:J
+
+    :goto_1
+    move-wide v6, v1
+
+    goto :goto_2
+
+    :cond_1
+    const-wide/16 v1, 0x0
+
+    goto :goto_1
+
+    :goto_2
+    invoke-static {p1, p1}, Lll/d;->b(II)J
+
+    move-result-wide v4
+
+    iget-object v3, v0, Lk/o;->b:Lr5/d;
+
+    sget-object v8, Ll6/k;->g:Ll6/k;
+
+    invoke-interface/range {v3 .. v8}, Lr5/d;->a(JJLl6/k;)J
 
     move-result-wide v0
 
-    return-wide v0
+    const-wide v2, 0xffffffffL
+
+    and-long/2addr v0, v2
+
+    long-to-int v0, v0
+
+    neg-int v0, v0
+
+    sub-int/2addr v0, p1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lk/n;->i:Lh4/c;
+
+    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    return-object p1
+
+    :pswitch_1
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    iget-object v0, p0, Lk/n;->j:Lk/o;
+
+    iget-object v1, v0, Lk/o;->e:Li/A1;
+
+    iget-object v2, v0, Lk/o;->a:Ll/v0;
+
+    iget-object v2, v2, Ll/v0;->d:Lf5/j0;
+
+    invoke-virtual {v2}, Lf5/j0;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lf5/W10;
+
+    if-eqz v1, :cond_2
+
+    invoke-interface {v1}, Lf5/W10;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ll6/j;
+
+    iget-wide v1, v1, Ll6/j;->a:J
+
+    goto :goto_3
+
+    :cond_2
+    const-wide/16 v1, 0x0
+
+    :goto_3
+    invoke-static {p1, p1}, Lll/d;->b(II)J
+
+    move-result-wide v4
+
+    iget-object v3, v0, Lk/o;->b:Lr5/d;
+
+    sget-object v8, Ll6/k;->g:Ll6/k;
+
+    move-wide v6, v1
+
+    invoke-interface/range {v3 .. v8}, Lr5/d;->a(JJLl6/k;)J
+
+    move-result-wide v3
+
+    const/16 p1, 0x20
+
+    shr-long/2addr v3, p1
+
+    long-to-int v0, v3
+
+    neg-int v0, v0
+
+    shr-long/2addr v1, p1
+
+    long-to-int p1, v1
+
+    add-int/2addr v0, p1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lk/n;->i:Lh4/c;
+
+    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    return-object p1
+
+    :pswitch_2
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    iget-object v0, p0, Lk/n;->j:Lk/o;
+
+    iget-object v1, v0, Lk/o;->e:Li/A1;
+
+    iget-object v2, v0, Lk/o;->a:Ll/v0;
+
+    iget-object v2, v2, Ll/v0;->d:Lf5/j0;
+
+    invoke-virtual {v2}, Lf5/j0;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lf5/W10;
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v1}, Lf5/W10;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ll6/j;
+
+    iget-wide v1, v1, Ll6/j;->a:J
+
+    :goto_4
+    move-wide v6, v1
+
+    goto :goto_5
+
+    :cond_3
+    const-wide/16 v1, 0x0
+
+    goto :goto_4
+
+    :goto_5
+    invoke-static {p1, p1}, Lll/d;->b(II)J
+
+    move-result-wide v4
+
+    iget-object v3, v0, Lk/o;->b:Lr5/d;
+
+    sget-object v8, Ll6/k;->g:Ll6/k;
+
+    invoke-interface/range {v3 .. v8}, Lr5/d;->a(JJLl6/k;)J
+
+    move-result-wide v0
+
+    const/16 v2, 0x20
+
+    shr-long/2addr v0, v2
+
+    long-to-int v0, v0
+
+    neg-int v0, v0
+
+    sub-int/2addr v0, p1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lk/n;->i:Lh4/c;
+
+    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    return-object p1
+
+    :pswitch_3
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    invoke-static {p1, p1}, Lll/d;->b(II)J
+
+    move-result-wide v0
+
+    iget-object v2, p0, Lk/n;->j:Lk/o;
+
+    invoke-static {v2}, Lk/o;->e(Lk/o;)J
+
+    move-result-wide v3
+
+    invoke-static {v2, v0, v1, v3, v4}, Lk/o;->d(Lk/o;JJ)J
+
+    move-result-wide v0
+
+    const-wide v2, 0xffffffffL
+
+    and-long/2addr v0, v2
+
+    long-to-int v0, v0
+
+    neg-int v0, v0
+
+    sub-int/2addr v0, p1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lk/n;->i:Lh4/c;
+
+    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    return-object p1
+
+    :pswitch_4
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    iget-object v0, p0, Lk/n;->j:Lk/o;
+
+    invoke-static {v0}, Lk/o;->e(Lk/o;)J
+
+    move-result-wide v1
+
+    const-wide v3, 0xffffffffL
+
+    and-long/2addr v1, v3
+
+    long-to-int v1, v1
+
+    invoke-static {p1, p1}, Lll/d;->b(II)J
+
+    move-result-wide v5
+
+    invoke-static {v0}, Lk/o;->e(Lk/o;)J
+
+    move-result-wide v7
+
+    invoke-static {v0, v5, v6, v7, v8}, Lk/o;->d(Lk/o;JJ)J
+
+    move-result-wide v5
+
+    and-long v2, v5, v3
+
+    long-to-int p1, v2
+
+    sub-int/2addr v1, p1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lk/n;->i:Lh4/c;
+
+    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    return-object p1
+
+    :pswitch_5
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    invoke-static {p1, p1}, Lll/d;->b(II)J
+
+    move-result-wide v0
+
+    iget-object v2, p0, Lk/n;->j:Lk/o;
+
+    invoke-static {v2}, Lk/o;->e(Lk/o;)J
+
+    move-result-wide v3
+
+    invoke-static {v2, v0, v1, v3, v4}, Lk/o;->d(Lk/o;JJ)J
+
+    move-result-wide v0
+
+    const/16 v2, 0x20
+
+    shr-long/2addr v0, v2
+
+    long-to-int v0, v0
+
+    neg-int v0, v0
+
+    sub-int/2addr v0, p1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lk/n;->i:Lh4/c;
+
+    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    return-object p1
+
+    :pswitch_6
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    iget-object v0, p0, Lk/n;->j:Lk/o;
+
+    invoke-static {v0}, Lk/o;->e(Lk/o;)J
+
+    move-result-wide v1
+
+    const/16 v3, 0x20
+
+    shr-long/2addr v1, v3
+
+    long-to-int v1, v1
+
+    invoke-static {p1, p1}, Lll/d;->b(II)J
+
+    move-result-wide v4
+
+    invoke-static {v0}, Lk/o;->e(Lk/o;)J
+
+    move-result-wide v6
+
+    invoke-static {v0, v4, v5, v6, v7}, Lk/o;->d(Lk/o;JJ)J
+
+    move-result-wide v4
+
+    shr-long v2, v4, v3
+
+    long-to-int p1, v2
+
+    sub-int/2addr v1, p1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lk/n;->i:Lh4/c;
+
+    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

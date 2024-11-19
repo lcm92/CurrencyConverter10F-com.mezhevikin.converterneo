@@ -109,7 +109,7 @@
     :goto_0
     if-eqz v1, :cond_4
 
-    invoke-static {p1}, Lq0/f;->u(Lq0/m;)Lq0/Z;
+    invoke-static {p1}, Lq0/f;->u(Lq0/m;)Lq0/Z1;
 
     move-result-object p1
 
@@ -117,7 +117,7 @@
 
     iget-object v2, p0, Lt/g;->m:Lm/p;
 
-    invoke-interface {v1, p1, v2, p0}, Lt/a;->L(Lq0/Z;Lh4/a;La4/c;)Ljava/lang/Object;
+    invoke-interface {v1, p1, v2, p0}, Lt/a;->L(Lq0/Z1;Lh4/a;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 

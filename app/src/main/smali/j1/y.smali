@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:Lj1/I;
+.field public final f:Lj1/I1;
 
 .field public final g:Ljava/lang/String;
 
@@ -12,24 +12,24 @@
 
 
 # direct methods
-.method public constructor <init>(Lj1/I;Ljava/lang/String;)V
+.method public constructor <init>(Lj1/I1;Ljava/lang/String;)V
     .locals 1
 
     const-string v0, "provider"
 
     invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-class v0, Lj1/A;
+    const-class v0, Lj1/A1;
 
     invoke-static {v0}, Lv2/h;->G(Ljava/lang/Class;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Lj1/I;->b(Ljava/lang/String;)Lj1/H;
+    invoke-virtual {p1, v0}, Lj1/I1;->b(Ljava/lang/String;)Lj1/H1;
 
     move-result-object v0
 
-    invoke-direct {p0, v0, p2}, Lj1/v;-><init>(Lj1/H;Ljava/lang/String;)V
+    invoke-direct {p0, v0, p2}, Lj1/v;-><init>(Lj1/H1;Ljava/lang/String;)V
 
     new-instance p2, Ljava/util/ArrayList;
 
@@ -37,7 +37,7 @@
 
     iput-object p2, p0, Lj1/y;->h:Ljava/util/ArrayList;
 
-    iput-object p1, p0, Lj1/y;->f:Lj1/I;
+    iput-object p1, p0, Lj1/y;->f:Lj1/I1;
 
     const-string p1, "converter"
 
@@ -153,9 +153,9 @@
 
     if-eq v3, v4, :cond_8
 
-    iget-object v4, v0, Lj1/x;->p:Li/J;
+    iget-object v4, v0, Lj1/x;->p:Li/J1;
 
-    invoke-virtual {v4, v3}, Li/J;->b(I)Ljava/lang/Object;
+    invoke-virtual {v4, v3}, Li/J1;->b(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -181,7 +181,7 @@
 
     iget v3, v2, Lj1/u;->l:I
 
-    invoke-virtual {v4, v3, v2}, Li/J;->d(ILjava/lang/Object;)V
+    invoke-virtual {v4, v3, v2}, Li/J1;->d(ILjava/lang/Object;)V
 
     goto :goto_0
 

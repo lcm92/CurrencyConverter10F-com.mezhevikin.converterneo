@@ -1,716 +1,497 @@
-.class public final Ls3/A;
+.class public abstract Ls3/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Comparable;
-
 
 # static fields
-.field public static final i:Ls3/A;
+.field public static final a:Ljava/util/Set;
 
-.field public static final j:Ls3/A;
+.field public static final b:Ljava/util/Set;
 
-.field public static final k:Ls3/A;
+.field public static final c:Ljava/util/ArrayList;
 
-.field public static final l:Ls3/A;
-
-.field public static final m:Ls3/A;
-
-.field public static final n:Ls3/A;
-
-.field public static final o:Ls3/A;
-
-.field public static final p:Ls3/A;
-
-.field public static final q:Ls3/A;
-
-.field public static final r:Ls3/A;
-
-
-# instance fields
-.field public final g:I
-
-.field public final h:Ljava/lang/String;
+.field public static final d:Ljava/util/ArrayList;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 55
+    .locals 41
 
-    new-instance v0, Ls3/A;
+    new-instance v0, Ln4/c;
 
-    const/16 v1, 0x64
+    const/16 v1, 0x61
 
-    const-string v2, "Continue"
+    const/16 v2, 0x7a
 
-    invoke-direct {v0, v2, v1}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Ln4/a;-><init>(CC)V
 
-    sput-object v0, Ls3/A;->i:Ls3/A;
+    new-instance v3, Ln4/c;
 
-    new-instance v1, Ls3/A;
+    const/16 v4, 0x41
 
-    const/16 v2, 0x65
+    const/16 v5, 0x5a
 
-    const-string v3, "Switching Protocols"
+    invoke-direct {v3, v4, v5}, Ln4/a;-><init>(CC)V
 
-    invoke-direct {v1, v3, v2}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static {v0, v3}, Lv9/k;->x0(Ln4/c;Ln4/c;)Ljava/util/ArrayList;
 
-    sput-object v1, Ls3/A;->j:Ls3/A;
+    move-result-object v0
 
-    new-instance v2, Ls3/A;
+    new-instance v3, Ln4/c;
 
-    const/16 v3, 0x66
+    const/16 v6, 0x30
 
-    const-string v4, "Processing"
+    const/16 v7, 0x39
 
-    invoke-direct {v2, v4, v3}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v6, v7}, Ln4/a;-><init>(CC)V
 
-    new-instance v3, Ls3/A;
+    invoke-static {v0, v3}, Lv9/k;->v0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
-    const/16 v4, 0xc8
+    move-result-object v0
 
-    const-string v5, "OK"
+    new-instance v3, Ljava/util/ArrayList;
 
-    invoke-direct {v3, v5, v4}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    const/16 v8, 0xa
 
-    new-instance v4, Ls3/A;
+    invoke-static {v0, v8}, Lv9/m;->d0(Ljava/lang/Iterable;I)I
 
-    const/16 v5, 0xc9
+    move-result v9
 
-    const-string v6, "Created"
+    invoke-direct {v3, v9}, Ljava/util/ArrayList;-><init>(I)V
 
-    invoke-direct {v4, v6, v5}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    new-instance v5, Ls3/A;
+    move-result-object v0
 
-    const/16 v6, 0xca
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    const-string v7, "Accepted"
+    move-result v9
 
-    invoke-direct {v5, v7, v6}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    if-eqz v9, :cond_0
 
-    new-instance v6, Ls3/A;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    const/16 v7, 0xcb
+    move-result-object v9
 
-    const-string v8, "Non-Authoritative Information"
+    check-cast v9, Ljava/lang/Character;
 
-    invoke-direct {v6, v8, v7}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v9}, Ljava/lang/Character;->charValue()C
 
-    new-instance v7, Ls3/A;
+    move-result v9
 
-    const/16 v8, 0xcc
+    int-to-byte v9, v9
 
-    const-string v9, "No Content"
+    invoke-static {v9}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
-    invoke-direct {v7, v9, v8}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v9
 
-    sput-object v7, Ls3/A;->k:Ls3/A;
+    invoke-virtual {v3, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    new-instance v8, Ls3/A;
+    goto :goto_0
 
-    const/16 v9, 0xcd
+    :cond_0
+    invoke-static {v3}, Lv9/k;->J0(Ljava/util/ArrayList;)Ljava/util/Set;
 
-    const-string v10, "Reset Content"
+    move-result-object v0
 
-    invoke-direct {v8, v10, v9}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    sput-object v0, Ls3/a;->a:Ljava/util/Set;
 
-    new-instance v9, Ls3/A;
+    new-instance v0, Ln4/c;
 
-    const/16 v10, 0xce
+    invoke-direct {v0, v1, v2}, Ln4/a;-><init>(CC)V
 
-    const-string v11, "Partial Content"
+    new-instance v2, Ln4/c;
 
-    invoke-direct {v9, v11, v10}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v4, v5}, Ln4/a;-><init>(CC)V
 
-    new-instance v10, Ls3/A;
+    invoke-static {v0, v2}, Lv9/k;->x0(Ln4/c;Ln4/c;)Ljava/util/ArrayList;
 
-    const/16 v11, 0xcf
+    move-result-object v0
 
-    const-string v12, "Multi-Status"
+    new-instance v2, Ln4/c;
 
-    invoke-direct {v10, v12, v11}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v6, v7}, Ln4/a;-><init>(CC)V
 
-    new-instance v11, Ls3/A;
+    invoke-static {v0, v2}, Lv9/k;->v0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
-    const/16 v12, 0x12c
+    move-result-object v0
 
-    const-string v13, "Multiple Choices"
+    invoke-static {v0}, Lv9/k;->J0(Ljava/util/ArrayList;)Ljava/util/Set;
 
-    invoke-direct {v11, v13, v12}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v0
 
-    new-instance v12, Ls3/A;
+    sput-object v0, Ls3/a;->b:Ljava/util/Set;
 
-    const/16 v13, 0x12d
+    new-instance v0, Ln4/c;
 
-    const-string v14, "Moved Permanently"
+    const/16 v2, 0x66
 
-    invoke-direct {v12, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Ln4/a;-><init>(CC)V
 
-    sput-object v12, Ls3/A;->l:Ls3/A;
+    new-instance v1, Ln4/c;
 
-    new-instance v13, Ls3/A;
+    const/16 v2, 0x46
 
-    const/16 v14, 0x12e
+    invoke-direct {v1, v4, v2}, Ln4/a;-><init>(CC)V
 
-    const-string v15, "Found"
+    invoke-static {v0, v1}, Lv9/k;->x0(Ln4/c;Ln4/c;)Ljava/util/ArrayList;
 
-    invoke-direct {v13, v15, v14}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v0
 
-    sput-object v13, Ls3/A;->m:Ls3/A;
+    new-instance v1, Ln4/c;
 
-    new-instance v14, Ls3/A;
+    invoke-direct {v1, v6, v7}, Ln4/a;-><init>(CC)V
 
-    const/16 v15, 0x12f
+    invoke-static {v0, v1}, Lv9/k;->v0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
-    move-object/from16 v16, v13
+    move-result-object v0
 
-    const-string v13, "See Other"
+    invoke-static {v0}, Lv9/k;->J0(Ljava/util/ArrayList;)Ljava/util/Set;
 
-    invoke-direct {v14, v13, v15}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    const/16 v0, 0x3a
 
-    sput-object v14, Ls3/A;->n:Ls3/A;
+    invoke-static {v0}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    new-instance v15, Ls3/A;
+    move-result-object v9
 
-    const/16 v13, 0x130
+    const/16 v1, 0x2f
 
-    move-object/from16 v17, v14
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v14, "Not Modified"
+    move-result-object v10
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    const/16 v1, 0x3f
 
-    sput-object v15, Ls3/A;->o:Ls3/A;
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    new-instance v14, Ls3/A;
+    move-result-object v11
 
-    const/16 v13, 0x131
+    const/16 v1, 0x23
 
-    move-object/from16 v18, v15
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v15, "Use Proxy"
+    move-result-object v12
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    const/16 v2, 0x5b
 
-    new-instance v15, Ls3/A;
+    invoke-static {v2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x132
+    move-result-object v13
 
-    move-object/from16 v19, v14
+    const/16 v2, 0x5d
 
-    const-string v14, "Switch Proxy"
+    invoke-static {v2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v14
 
-    new-instance v14, Ls3/A;
+    const/16 v2, 0x40
 
-    const/16 v13, 0x133
+    invoke-static {v2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v20, v15
+    move-result-object v15
 
-    const-string v15, "Temporary Redirect"
+    const/16 v3, 0x21
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static {v3}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    sput-object v14, Ls3/A;->p:Ls3/A;
+    move-result-object v16
 
-    new-instance v15, Ls3/A;
+    const/16 v4, 0x24
 
-    const/16 v13, 0x134
+    invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v21, v14
+    move-result-object v17
 
-    const-string v14, "Permanent Redirect"
+    const/16 v5, 0x26
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static {v5}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    sput-object v15, Ls3/A;->q:Ls3/A;
+    move-result-object v18
 
-    new-instance v14, Ls3/A;
+    const/16 v6, 0x27
 
-    const/16 v13, 0x190
+    invoke-static {v6}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v22, v15
+    move-result-object v19
 
-    const-string v15, "Bad Request"
+    const/16 v7, 0x28
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static {v7}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    new-instance v15, Ls3/A;
+    move-result-object v20
 
-    const/16 v13, 0x191
+    const/16 v31, 0x29
 
-    move-object/from16 v23, v14
+    invoke-static/range {v31 .. v31}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v14, "Unauthorized"
+    move-result-object v21
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    const/16 v32, 0x2a
 
-    new-instance v14, Ls3/A;
+    invoke-static/range {v32 .. v32}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x192
+    move-result-object v22
 
-    move-object/from16 v24, v15
+    const/16 v33, 0x2c
 
-    const-string v15, "Payment Required"
+    invoke-static/range {v33 .. v33}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v23
 
-    new-instance v15, Ls3/A;
+    const/16 v34, 0x3b
 
-    const/16 v13, 0x193
+    invoke-static/range {v34 .. v34}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v25, v14
+    move-result-object v24
 
-    const-string v14, "Forbidden"
+    const/16 v35, 0x3d
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static/range {v35 .. v35}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    new-instance v14, Ls3/A;
+    move-result-object v25
 
-    const/16 v13, 0x194
+    const/16 v36, 0x2d
 
-    move-object/from16 v26, v15
+    invoke-static/range {v36 .. v36}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v15, "Not Found"
+    move-result-object v26
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    const/16 v37, 0x2e
 
-    new-instance v15, Ls3/A;
+    invoke-static/range {v37 .. v37}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x195
+    move-result-object v27
 
-    move-object/from16 v27, v14
+    const/16 v38, 0x5f
 
-    const-string v14, "Method Not Allowed"
+    invoke-static/range {v38 .. v38}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v28
 
-    new-instance v14, Ls3/A;
+    const/16 v39, 0x7e
 
-    const/16 v13, 0x196
+    invoke-static/range {v39 .. v39}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v28, v15
+    move-result-object v29
 
-    const-string v15, "Not Acceptable"
+    const/16 v40, 0x2b
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static/range {v40 .. v40}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    new-instance v15, Ls3/A;
+    move-result-object v30
 
-    const/16 v13, 0x197
+    filled-new-array/range {v9 .. v30}, [Ljava/lang/Character;
 
-    move-object/from16 v29, v14
+    move-result-object v9
 
-    const-string v14, "Proxy Authentication Required"
+    invoke-static {v9}, Lv9/A1;->T([Ljava/lang/Object;)Ljava/util/Set;
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v9
 
-    new-instance v14, Ls3/A;
+    check-cast v9, Ljava/lang/Iterable;
 
-    const/16 v13, 0x198
+    new-instance v10, Ljava/util/ArrayList;
 
-    move-object/from16 v30, v15
+    invoke-static {v9, v8}, Lv9/m;->d0(Ljava/lang/Iterable;I)I
 
-    const-string v15, "Request Timeout"
+    move-result v11
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v10, v11}, Ljava/util/ArrayList;-><init>(I)V
 
-    new-instance v15, Ls3/A;
+    invoke-interface {v9}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    const/16 v13, 0x199
+    move-result-object v9
 
-    move-object/from16 v31, v14
+    :goto_1
+    invoke-interface {v9}, Ljava/util/Iterator;->hasNext()Z
 
-    const-string v14, "Conflict"
+    move-result v11
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    if-eqz v11, :cond_1
 
-    new-instance v14, Ls3/A;
+    invoke-interface {v9}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    const/16 v13, 0x19a
+    move-result-object v11
 
-    move-object/from16 v32, v15
+    check-cast v11, Ljava/lang/Character;
 
-    const-string v15, "Gone"
+    invoke-virtual {v11}, Ljava/lang/Character;->charValue()C
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result v11
 
-    new-instance v15, Ls3/A;
+    int-to-byte v11, v11
 
-    const/16 v13, 0x19b
+    invoke-static {v11}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
-    move-object/from16 v33, v14
+    move-result-object v11
 
-    const-string v14, "Length Required"
+    invoke-virtual {v10, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    goto :goto_1
 
-    new-instance v14, Ls3/A;
+    :cond_1
+    sput-object v10, Ls3/a;->c:Ljava/util/ArrayList;
 
-    const/16 v13, 0x19c
+    invoke-static {v0}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v34, v15
+    move-result-object v12
 
-    const-string v15, "Precondition Failed"
+    invoke-static {v2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v13
 
-    new-instance v15, Ls3/A;
+    invoke-static {v3}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x19d
+    move-result-object v14
 
-    move-object/from16 v35, v14
+    invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v14, "Payload Too Large"
+    move-result-object v15
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static {v5}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    new-instance v14, Ls3/A;
+    move-result-object v16
 
-    const/16 v13, 0x19e
+    invoke-static {v6}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v36, v15
+    move-result-object v17
 
-    const-string v15, "Request-URI Too Long"
+    invoke-static {v7}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v18
 
-    new-instance v15, Ls3/A;
+    invoke-static/range {v31 .. v31}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x19f
+    move-result-object v19
 
-    move-object/from16 v37, v14
+    invoke-static/range {v32 .. v32}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v14, "Unsupported Media Type"
+    move-result-object v20
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static/range {v40 .. v40}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    new-instance v14, Ls3/A;
+    move-result-object v21
 
-    const/16 v13, 0x1a0
+    invoke-static/range {v33 .. v33}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v38, v15
+    move-result-object v22
 
-    const-string v15, "Requested Range Not Satisfiable"
+    invoke-static/range {v34 .. v34}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v23
 
-    new-instance v15, Ls3/A;
+    invoke-static/range {v35 .. v35}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x1a1
+    move-result-object v24
 
-    move-object/from16 v39, v14
+    invoke-static/range {v36 .. v36}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v14, "Expectation Failed"
+    move-result-object v25
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static/range {v37 .. v37}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    sput-object v15, Ls3/A;->r:Ls3/A;
+    move-result-object v26
 
-    new-instance v14, Ls3/A;
+    invoke-static/range {v38 .. v38}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x1a6
+    move-result-object v27
 
-    move-object/from16 v40, v15
+    invoke-static/range {v39 .. v39}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v15, "Unprocessable Entity"
+    move-result-object v28
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    filled-new-array/range {v12 .. v28}, [Ljava/lang/Character;
 
-    new-instance v15, Ls3/A;
+    move-result-object v0
 
-    const/16 v13, 0x1a7
+    invoke-static {v0}, Lv9/A1;->T([Ljava/lang/Object;)Ljava/util/Set;
 
-    move-object/from16 v41, v14
+    sget-object v0, Ls3/a;->b:Ljava/util/Set;
 
-    const-string v14, "Locked"
+    invoke-static {v3}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v9
 
-    new-instance v14, Ls3/A;
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x1a8
+    move-result-object v10
 
-    move-object/from16 v42, v15
+    invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v15, "Failed Dependency"
+    move-result-object v11
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    invoke-static {v5}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    new-instance v15, Ls3/A;
+    move-result-object v12
 
-    const/16 v13, 0x1a9
+    invoke-static/range {v40 .. v40}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v43, v14
+    move-result-object v13
 
-    const-string v14, "Too Early"
+    invoke-static/range {v36 .. v36}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v14
 
-    new-instance v14, Ls3/A;
+    invoke-static/range {v37 .. v37}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x1aa
+    move-result-object v15
 
-    move-object/from16 v44, v15
+    const/16 v1, 0x5e
 
-    const-string v15, "Upgrade Required"
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v16
 
-    new-instance v15, Ls3/A;
+    invoke-static/range {v38 .. v38}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x1ad
+    move-result-object v17
 
-    move-object/from16 v45, v14
+    const/16 v1, 0x60
 
-    const-string v14, "Too Many Requests"
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v18
 
-    new-instance v14, Ls3/A;
+    const/16 v1, 0x7c
 
-    const/16 v13, 0x1af
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v46, v15
+    move-result-object v19
 
-    const-string v15, "Request Header Fields Too Large"
+    invoke-static/range {v39 .. v39}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v20
 
-    new-instance v15, Ls3/A;
+    filled-new-array/range {v9 .. v20}, [Ljava/lang/Character;
 
-    const/16 v13, 0x1f4
+    move-result-object v1
 
-    move-object/from16 v47, v14
+    invoke-static {v1}, Lv9/A1;->T([Ljava/lang/Object;)Ljava/util/Set;
 
-    const-string v14, "Internal Server Error"
+    move-result-object v1
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    check-cast v1, Ljava/lang/Iterable;
 
-    new-instance v14, Ls3/A;
+    invoke-static {v0, v1}, Lv9/A1;->S(Ljava/util/Set;Ljava/lang/Iterable;)Ljava/util/LinkedHashSet;
 
-    const/16 v13, 0x1f5
+    invoke-static/range {v36 .. v36}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-object/from16 v48, v15
+    move-result-object v0
 
-    const-string v15, "Not Implemented"
+    invoke-static/range {v37 .. v37}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
+    move-result-object v1
 
-    new-instance v15, Ls3/A;
+    invoke-static/range {v38 .. v38}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const/16 v13, 0x1f6
+    move-result-object v2
 
-    move-object/from16 v49, v14
+    invoke-static/range {v39 .. v39}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    const-string v14, "Bad Gateway"
+    move-result-object v3
 
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
-
-    new-instance v14, Ls3/A;
-
-    const/16 v13, 0x1f7
-
-    move-object/from16 v50, v15
-
-    const-string v15, "Service Unavailable"
-
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
-
-    new-instance v15, Ls3/A;
-
-    const/16 v13, 0x1f8
-
-    move-object/from16 v51, v14
-
-    const-string v14, "Gateway Timeout"
-
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
-
-    new-instance v14, Ls3/A;
-
-    const/16 v13, 0x1f9
-
-    move-object/from16 v52, v15
-
-    const-string v15, "HTTP Version Not Supported"
-
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
-
-    new-instance v15, Ls3/A;
-
-    const/16 v13, 0x1fa
-
-    move-object/from16 v53, v14
-
-    const-string v14, "Variant Also Negotiates"
-
-    invoke-direct {v15, v14, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
-
-    new-instance v14, Ls3/A;
-
-    const/16 v13, 0x1fb
-
-    move-object/from16 v54, v15
-
-    const-string v15, "Insufficient Storage"
-
-    invoke-direct {v14, v15, v13}, Ls3/A;-><init>(Ljava/lang/String;I)V
-
-    move-object/from16 v13, v16
-
-    move-object/from16 v16, v19
-
-    move-object/from16 v19, v21
-
-    move-object/from16 v21, v23
-
-    move-object/from16 v23, v25
-
-    move-object/from16 v25, v27
-
-    move-object/from16 v27, v29
-
-    move-object/from16 v29, v31
-
-    move-object/from16 v31, v33
-
-    move-object/from16 v33, v35
-
-    move-object/from16 v35, v37
-
-    move-object/from16 v37, v39
-
-    move-object/from16 v39, v41
-
-    move-object/from16 v41, v43
-
-    move-object/from16 v43, v45
-
-    move-object/from16 v45, v47
-
-    move-object/from16 v47, v49
-
-    move-object/from16 v49, v51
-
-    move-object/from16 v51, v53
-
-    move-object/from16 v53, v14
-
-    move-object/from16 v14, v17
-
-    move-object/from16 v17, v20
-
-    move-object/from16 v20, v22
-
-    move-object/from16 v22, v24
-
-    move-object/from16 v24, v26
-
-    move-object/from16 v26, v28
-
-    move-object/from16 v28, v30
-
-    move-object/from16 v30, v32
-
-    move-object/from16 v32, v34
-
-    move-object/from16 v34, v36
-
-    move-object/from16 v36, v38
-
-    move-object/from16 v38, v40
-
-    move-object/from16 v40, v42
-
-    move-object/from16 v42, v44
-
-    move-object/from16 v44, v46
-
-    move-object/from16 v46, v48
-
-    move-object/from16 v48, v50
-
-    move-object/from16 v50, v52
-
-    move-object/from16 v52, v54
-
-    move-object/from16 v15, v18
-
-    move-object/from16 v18, v19
-
-    move-object/from16 v19, v20
-
-    move-object/from16 v20, v21
-
-    move-object/from16 v21, v22
-
-    move-object/from16 v22, v23
-
-    move-object/from16 v23, v24
-
-    move-object/from16 v24, v25
-
-    move-object/from16 v25, v26
-
-    move-object/from16 v26, v27
-
-    move-object/from16 v27, v28
-
-    move-object/from16 v28, v29
-
-    move-object/from16 v29, v30
-
-    move-object/from16 v30, v31
-
-    move-object/from16 v31, v32
-
-    move-object/from16 v32, v33
-
-    move-object/from16 v33, v34
-
-    move-object/from16 v34, v35
-
-    move-object/from16 v35, v36
-
-    move-object/from16 v36, v37
-
-    move-object/from16 v37, v38
-
-    move-object/from16 v38, v39
-
-    move-object/from16 v39, v40
-
-    move-object/from16 v40, v41
-
-    move-object/from16 v41, v42
-
-    move-object/from16 v42, v43
-
-    move-object/from16 v43, v44
-
-    move-object/from16 v44, v45
-
-    move-object/from16 v45, v46
-
-    move-object/from16 v46, v47
-
-    move-object/from16 v47, v48
-
-    move-object/from16 v48, v49
-
-    move-object/from16 v49, v50
-
-    move-object/from16 v50, v51
-
-    move-object/from16 v51, v52
-
-    move-object/from16 v52, v53
-
-    filled-new-array/range {v0 .. v52}, [Ls3/A;
+    filled-new-array {v0, v1, v2, v3}, [Ljava/lang/Character;
 
     move-result-object v0
 
@@ -718,156 +499,649 @@
 
     move-result-object v0
 
-    const/16 v1, 0xa
+    new-instance v1, Ljava/util/ArrayList;
 
-    invoke-static {v0, v1}, Lv9/m;->d0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v8}, Lv9/m;->d0(Ljava/lang/Iterable;I)I
 
-    move-result v1
+    move-result v2
 
-    invoke-static {v1}, Lv9/y;->H0(I)I
-
-    move-result v1
-
-    const/16 v2, 0x10
-
-    if-ge v1, v2, :cond_0
-
-    move v1, v2
-
-    :cond_0
-    new-instance v2, Ljava/util/LinkedHashMap;
-
-    invoke-direct {v2, v1}, Ljava/util/LinkedHashMap;-><init>(I)V
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    :goto_0
+    :goto_2
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_1
+    if-eqz v2, :cond_2
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    move-object v3, v1
+    check-cast v2, Ljava/lang/Character;
 
-    check-cast v3, Ls3/A;
+    invoke-virtual {v2}, Ljava/lang/Character;->charValue()C
 
-    iget v3, v3, Ls3/A;->g:I
+    move-result v2
 
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    int-to-byte v2, v2
 
-    move-result-object v3
+    invoke-static {v2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
-    invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    :cond_2
+    sput-object v1, Ls3/a;->d:Ljava/util/ArrayList;
+
+    return-void
+.end method
+
+.method public static final a(B)Ljava/lang/String;
+    .locals 4
+
+    and-int/lit16 v0, p0, 0xff
+
+    shr-int/lit8 v0, v0, 0x4
+
+    const/16 v1, 0xa
+
+    if-ltz v0, :cond_0
+
+    if-ge v0, v1, :cond_0
+
+    add-int/lit8 v0, v0, 0x30
+
+    :goto_0
+    int-to-char v0, v0
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v0, v0, 0x41
+
+    int-to-char v0, v0
+
+    sub-int/2addr v0, v1
 
     goto :goto_0
 
+    :goto_1
+    and-int/lit8 p0, p0, 0xf
+
+    if-ltz p0, :cond_1
+
+    if-ge p0, v1, :cond_1
+
+    add-int/lit8 p0, p0, 0x30
+
+    :goto_2
+    int-to-char p0, p0
+
+    goto :goto_3
+
     :cond_1
-    return-void
+    add-int/lit8 p0, p0, 0x41
+
+    int-to-char p0, p0
+
+    sub-int/2addr p0, v1
+
+    goto :goto_2
+
+    :goto_3
+    const/4 v1, 0x3
+
+    new-array v1, v1, [C
+
+    const/16 v2, 0x25
+
+    const/4 v3, 0x0
+
+    aput-char v2, v1, v3
+
+    const/4 v2, 0x1
+
+    aput-char v0, v1, v2
+
+    const/4 v0, 0x2
+
+    aput-char p0, v1, v0
+
+    new-instance p0, Ljava/lang/String;
+
+    invoke-direct {p0, v1}, Ljava/lang/String;-><init>([C)V
+
+    return-object p0
 .end method
 
-.method public constructor <init>(Ljava/lang/String;I)V
-    .locals 1
+.method public static final b(C)I
+    .locals 2
 
-    const-string v0, "description"
+    const/16 v0, 0x30
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    if-gt v0, p0, :cond_0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/16 v1, 0x3a
 
-    iput p2, p0, Ls3/A;->g:I
+    if-ge p0, v1, :cond_0
 
-    iput-object p1, p0, Ls3/A;->h:Ljava/lang/String;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final compareTo(Ljava/lang/Object;)I
-    .locals 1
-
-    check-cast p1, Ls3/A;
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget v0, p0, Ls3/A;->g:I
-
-    iget p1, p1, Ls3/A;->g:I
-
-    sub-int/2addr v0, p1
-
-    return v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    instance-of v0, p1, Ls3/A;
-
-    if-eqz v0, :cond_0
-
-    check-cast p1, Ls3/A;
-
-    iget p1, p1, Ls3/A;->g:I
-
-    iget v0, p0, Ls3/A;->g:I
-
-    if-ne p1, v0, :cond_0
-
-    const/4 p1, 0x1
+    sub-int/2addr p0, v0
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    const/16 v0, 0x41
+
+    if-gt v0, p0, :cond_1
+
+    const/16 v0, 0x47
+
+    if-ge p0, v0, :cond_1
+
+    add-int/lit8 p0, p0, -0x37
+
+    goto :goto_0
+
+    :cond_1
+    const/16 v0, 0x61
+
+    if-gt v0, p0, :cond_2
+
+    const/16 v0, 0x67
+
+    if-ge p0, v0, :cond_2
+
+    add-int/lit8 p0, p0, -0x57
+
+    goto :goto_0
+
+    :cond_2
+    const/4 p0, -0x1
 
     :goto_0
-    return p1
+    return p0
 .end method
 
-.method public final hashCode()I
-    .locals 1
+.method public static final c(Ljava/lang/String;IIZLjava/nio/charset/Charset;)Ljava/lang/String;
+    .locals 15
 
-    iget v0, p0, Ls3/A;->g:I
+    move-object v0, p0
 
-    invoke-static {v0}, Ljava/lang/Integer;->hashCode(I)I
+    move/from16 v1, p1
+
+    move/from16 v2, p2
+
+    move v3, v1
+
+    :goto_0
+    if-ge v3, v2, :cond_b
+
+    invoke-virtual {p0, v3}, Ljava/lang/String;->charAt(I)C
+
+    move-result v4
+
+    const/16 v5, 0x2b
+
+    const/16 v6, 0x25
+
+    if-eq v4, v6, :cond_1
+
+    if-eqz p3, :cond_0
+
+    if-ne v4, v5, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    :goto_1
+    sub-int v4, v2, v1
+
+    const/16 v7, 0xff
+
+    if-le v4, v7, :cond_2
+
+    div-int/lit8 v4, v4, 0x3
+
+    :cond_2
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7, v4}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    if-le v3, v1, :cond_3
+
+    invoke-virtual {v7, p0, v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
+
+    :cond_3
+    const/4 v1, 0x0
+
+    :goto_2
+    if-ge v3, v2, :cond_a
+
+    invoke-virtual {p0, v3}, Ljava/lang/String;->charAt(I)C
+
+    move-result v4
+
+    if-eqz p3, :cond_4
+
+    if-ne v4, v5, :cond_4
+
+    const/16 v4, 0x20
+
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    :goto_3
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_2
+
+    :cond_4
+    if-ne v4, v6, :cond_9
+
+    if-nez v1, :cond_5
+
+    sub-int v1, v2, v3
+
+    div-int/lit8 v1, v1, 0x3
+
+    new-array v1, v1, [B
+
+    :cond_5
+    const/4 v4, 0x0
+
+    move v8, v4
+
+    :goto_4
+    if-ge v3, v2, :cond_8
+
+    invoke-virtual {p0, v3}, Ljava/lang/String;->charAt(I)C
+
+    move-result v9
+
+    if-ne v9, v6, :cond_8
+
+    add-int/lit8 v9, v3, 0x2
+
+    const-string v10, ", in "
+
+    if-ge v9, v2, :cond_7
+
+    add-int/lit8 v11, v3, 0x1
+
+    invoke-virtual {p0, v11}, Ljava/lang/String;->charAt(I)C
+
+    move-result v12
+
+    invoke-static {v12}, Ls3/a;->b(C)I
+
+    move-result v12
+
+    invoke-virtual {p0, v9}, Ljava/lang/String;->charAt(I)C
+
+    move-result v13
+
+    invoke-static {v13}, Ls3/a;->b(C)I
+
+    move-result v13
+
+    const/4 v14, -0x1
+
+    if-eq v12, v14, :cond_6
+
+    if-eq v13, v14, :cond_6
+
+    add-int/lit8 v9, v8, 0x1
+
+    mul-int/lit8 v12, v12, 0x10
+
+    add-int/2addr v12, v13
+
+    int-to-byte v10, v12
+
+    aput-byte v10, v1, v8
+
+    add-int/lit8 v3, v3, 0x3
+
+    move v8, v9
+
+    goto :goto_4
+
+    :cond_6
+    new-instance v1, Le9/a;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v4, "Wrong HEX escape: %"
+
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, v11}, Ljava/lang/String;->charAt(I)C
+
+    move-result v4
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, v9}, Ljava/lang/String;->charAt(I)C
+
+    move-result v4
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", at "
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v2, 0x8
+
+    invoke-direct {v1, v0, v2}, Le9/a;-><init>(Ljava/lang/String;I)V
+
+    throw v1
+
+    :cond_7
+    new-instance v1, Le9/a;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v4, "Incomplete trailing HEX escape: "
+
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    invoke-virtual {p0, v3, v4}, Ljava/lang/String;->subSequence(II)Ljava/lang/CharSequence;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v0, " at "
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v2, 0x8
+
+    invoke-direct {v1, v0, v2}, Le9/a;-><init>(Ljava/lang/String;I)V
+
+    throw v1
+
+    :cond_8
+    new-instance v9, Ljava/lang/String;
+
+    move-object/from16 v10, p4
+
+    invoke-direct {v9, v1, v4, v8, v10}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto/16 :goto_2
+
+    :cond_9
+    move-object/from16 v10, p4
+
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    goto/16 :goto_3
+
+    :cond_a
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "sb.toString()"
+
+    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object v0
+
+    :cond_b
+    if-nez v1, :cond_c
+
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-ne v2, v3, :cond_c
+
+    invoke-virtual {p0}, Ljava/lang/String;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_5
+
+    :cond_c
+    invoke-virtual/range {p0 .. p2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "this as java.lang.String\u2026ing(startIndex, endIndex)"
+
+    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    :goto_5
+    return-object v0
+.end method
+
+.method public static d(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    return v0
+    sget-object v1, Lq4/b;->a:Ljava/nio/charset/Charset;
+
+    const-string v2, "<this>"
+
+    invoke-static {p0, v2}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v2, "charset"
+
+    invoke-static {v1, v2}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v2, 0x0
+
+    invoke-static {p0, v2, v0, v2, v1}, Ls3/a;->c(Ljava/lang/String;IIZLjava/nio/charset/Charset;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public static e(Ljava/lang/String;IIZI)Ljava/lang/String;
     .locals 2
+
+    and-int/lit8 v0, p4, 0x1
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    move p1, v1
+
+    :cond_0
+    and-int/lit8 v0, p4, 0x2
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result p2
+
+    :cond_1
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_2
+
+    move p3, v1
+
+    :cond_2
+    sget-object p4, Lq4/b;->a:Ljava/nio/charset/Charset;
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "charset"
+
+    invoke-static {p4, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p0, p1, p2, p3, p4}, Ls3/a;->c(Ljava/lang/String;IIZLjava/nio/charset/Charset;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final f(Ljava/lang/String;Z)Ljava/lang/String;
+    .locals 4
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget v1, p0, Ls3/A;->g:I
+    sget-object v1, Lq4/b;->a:Ljava/nio/charset/Charset;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/nio/charset/Charset;->newEncoder()Ljava/nio/charset/CharsetEncoder;
 
-    const/16 v1, 0x20
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    const-string v2, "UTF_8.newEncoder()"
 
-    iget-object v1, p0, Ls3/A;->h:Ljava/lang/String;
+    invoke-static {v1, v2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    invoke-static {v1, p0, v3, v2}, Lo4/j;->r(Ljava/nio/charset/CharsetEncoder;Ljava/lang/String;II)Lp9/d;
+
+    move-result-object p0
+
+    new-instance v1, Lk/E1;
+
+    invoke-direct {v1, v0, p1}, Lk/E1;-><init>(Ljava/lang/StringBuilder;Z)V
+
+    invoke-static {p0, v1}, Ls3/a;->g(Lp9/d;Lh4/c;)V
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p0
 
-    return-object v0
+    const-string p1, "StringBuilder().apply(builderAction).toString()"
+
+    invoke-static {p0, p1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public static final g(Lp9/d;Lh4/c;)V
+    .locals 4
+
+    const/4 v0, 0x1
+
+    invoke-static {p0, v0}, Lq9/c;->d(Lp9/h;I)Lq9/b;
+
+    move-result-object v1
+
+    if-nez v1, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    :try_start_0
+    iget v2, v1, Lp9/a;->c:I
+
+    iget v3, v1, Lp9/a;->b:I
+
+    if-le v2, v3, :cond_1
+
+    invoke-virtual {v1}, Lp9/a;->d()B
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    move-result-object v2
+
+    invoke-interface {p1, v2}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_2
+
+    :cond_1
+    :try_start_1
+    invoke-static {p0, v1}, Lq9/c;->e(Lp9/h;Lq9/b;)Lq9/b;
+
+    move-result-object v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    if-nez v1, :cond_0
+
+    :goto_1
+    return-void
+
+    :catchall_1
+    move-exception p1
+
+    const/4 v0, 0x0
+
+    :goto_2
+    if-eqz v0, :cond_2
+
+    invoke-static {p0, v1}, Lq9/c;->a(Lp9/h;Lq9/b;)V
+
+    :cond_2
+    throw p1
 .end method

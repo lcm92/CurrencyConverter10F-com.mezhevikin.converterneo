@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final a:Ll/B;
+.field public final a:Ll/B1;
 
 .field public final b:J
 
 
 # direct methods
-.method public constructor <init>(Ll/B;J)V
+.method public constructor <init>(Ll/B1;J)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ll/h0;->a:Ll/B;
+    iput-object p1, p0, Ll/h0;->a:Ll/B1;
 
     iput-wide p2, p0, Ll/h0;->b:J
 
@@ -30,7 +30,7 @@
 .method public final a(Ll/C0;)Ll/E0;
     .locals 3
 
-    iget-object v0, p0, Ll/h0;->a:Ll/B;
+    iget-object v0, p0, Ll/h0;->a:Ll/B1;
 
     invoke-interface {v0, p1}, Ll/l;->a(Ll/C0;)Ll/E0;
 
@@ -67,9 +67,9 @@
 
     if-nez v0, :cond_1
 
-    iget-object p1, p1, Ll/h0;->a:Ll/B;
+    iget-object p1, p1, Ll/h0;->a:Ll/B1;
 
-    iget-object v0, p0, Ll/h0;->a:Ll/B;
+    iget-object v0, p0, Ll/h0;->a:Ll/B1;
 
     invoke-static {p1, v0}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -86,7 +86,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Ll/h0;->a:Ll/B;
+    iget-object v0, p0, Ll/h0;->a:Ll/B1;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 

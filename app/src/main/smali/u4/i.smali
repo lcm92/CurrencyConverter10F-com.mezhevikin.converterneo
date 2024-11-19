@@ -65,7 +65,7 @@
     :cond_0
     if-nez p1, :cond_1
 
-    new-instance p1, Ls4/Y;
+    new-instance p1, Ls4/Y1;
 
     invoke-virtual {p0}, Ls4/a;->M()Ljava/lang/String;
 
@@ -73,7 +73,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p1, v0, v1, p0}, Ls4/Y;-><init>(Ljava/lang/String;Ljava/lang/Throwable;Ls4/g0;)V
+    invoke-direct {p1, v0, v1, p0}, Ls4/Y1;-><init>(Ljava/lang/String;Ljava/lang/Throwable;Ls4/g0;)V
 
     :cond_1
     invoke-virtual {p0, p1}, Lu4/i;->I(Ljava/util/concurrent/CancellationException;)V

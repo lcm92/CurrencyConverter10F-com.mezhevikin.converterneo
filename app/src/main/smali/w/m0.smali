@@ -50,9 +50,9 @@
 
     move-result-object p2
 
-    check-cast p2, Lo/O;
+    check-cast p2, Lo/O1;
 
-    sget-object v0, Lo/O;->g:Lo/O;
+    sget-object v0, Lo/O1;->g:Lo/O1;
 
     if-ne p2, v0, :cond_0
 

@@ -23,7 +23,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sget-object v0, Li/G;->a:[J
+    sget-object v0, Li/G1;->a:[J
 
     iput-object v0, p0, Li/z;->a:[J
 
@@ -47,7 +47,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    invoke-static {p1}, Li/G;->f(I)I
+    invoke-static {p1}, Li/G1;->f(I)I
 
     move-result p1
 
@@ -342,7 +342,7 @@
 
     if-lez p1, :cond_0
 
-    invoke-static {p1}, Li/G;->e(I)I
+    invoke-static {p1}, Li/G1;->e(I)I
 
     move-result p1
 
@@ -362,7 +362,7 @@
 
     if-nez p1, :cond_1
 
-    sget-object v0, Li/G;->a:[J
+    sget-object v0, Li/G1;->a:[J
 
     goto :goto_1
 
@@ -402,7 +402,7 @@
 
     iget v0, p0, Li/z;->d:I
 
-    invoke-static {v0}, Li/G;->c(I)I
+    invoke-static {v0}, Li/G1;->c(I)I
 
     move-result v0
 
@@ -642,7 +642,7 @@
 
     iget-object v9, v0, Li/z;->c:[J
 
-    invoke-static {v2, v5}, Li/G;->a([JI)V
+    invoke-static {v2, v5}, Li/G1;->a([JI)V
 
     const/4 v13, -0x1
 
@@ -890,7 +890,7 @@
 
     add-int/lit8 v1, v6, 0x1
 
-    invoke-static {v2, v1, v5}, Li/G;->b([JII)I
+    invoke-static {v2, v1, v5}, Li/G1;->b([JII)I
 
     move-result v13
 
@@ -966,7 +966,7 @@
 
     iget v0, v1, Li/z;->d:I
 
-    invoke-static {v0}, Li/G;->c(I)I
+    invoke-static {v0}, Li/G1;->c(I)I
 
     move-result v0
 
@@ -996,7 +996,7 @@
     :goto_8
     iget v0, v1, Li/z;->d:I
 
-    invoke-static {v0}, Li/G;->d(I)I
+    invoke-static {v0}, Li/G1;->d(I)I
 
     move-result v0
 

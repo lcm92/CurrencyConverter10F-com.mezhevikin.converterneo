@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/selection/ToggleableElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -174,7 +174,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->c:Z
 
-    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
 
     move-result v0
 
@@ -251,7 +251,7 @@
 
     iget-boolean v3, p0, Landroidx/compose/foundation/selection/ToggleableElement;->c:Z
 
-    iget-object v6, v0, Lu/a;->P:Lm/M;
+    iget-object v6, v0, Lu/a;->P:Lm/M1;
 
     invoke-virtual/range {v0 .. v6}, Lm/j;->F0(Lp/i;Lm/b0;ZLjava/lang/String;Lx0/f;Lh4/a;)V
 

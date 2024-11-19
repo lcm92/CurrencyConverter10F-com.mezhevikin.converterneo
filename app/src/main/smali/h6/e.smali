@@ -42,13 +42,13 @@
 
     iget-object v0, p0, Lh6/e;->j:Ljava/lang/Object;
 
-    check-cast v0, Lq0/K;
+    check-cast v0, Lq0/K1;
 
-    invoke-virtual {v0}, Lq0/K;->a()Lq0/Z;
+    invoke-virtual {v0}, Lq0/K1;->a()Lq0/Z1;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lq0/Z;->J0()Lq0/O;
+    invoke-virtual {v0}, Lq0/Z1;->J0()Lq0/O1;
 
     move-result-object v0
 
@@ -56,7 +56,7 @@
 
     iget-wide v1, p0, Lh6/e;->i:J
 
-    invoke-interface {v0, v1, v2}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {v0, v1, v2}, Lo0/D1;->a(J)Lo0/N1;
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 

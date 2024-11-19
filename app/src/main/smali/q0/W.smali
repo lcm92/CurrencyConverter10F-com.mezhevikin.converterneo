@@ -1,25 +1,167 @@
-.class public abstract Lq0/W;
+.class public interface abstract Lq0/w;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lq0/m;
 
-# static fields
-.field public static final a:Lq0/V;
 
+# virtual methods
+.method public a(Lq0/N1;Lo0/D1;I)I
+    .locals 4
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+    new-instance v0, Lo0/j;
 
-    new-instance v0, Lq0/V;
+    const/4 v1, 0x1
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    const/4 v2, 0x2
 
-    const/4 v1, -0x1
+    const/4 v3, 0x2
 
-    iput v1, v0, Lr5/p;->j:I
+    invoke-direct {v0, p2, v1, v2, v3}, Lo0/j;-><init>(Lo0/D1;III)V
 
-    sput-object v0, Lq0/W;->a:Lq0/V;
+    const/4 p2, 0x0
 
-    return-void
+    const/16 v1, 0xd
+
+    invoke-static {p3, p2, v1}, Lk4/a;->c(III)J
+
+    move-result-wide p2
+
+    new-instance v1, Lo0/o;
+
+    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
+
+    move-result-object v2
+
+    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
+
+    invoke-interface {p0, v1, v0, p2, p3}, Lq0/w;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lo0/F1;->h()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public c(Lq0/N1;Lo0/D1;I)I
+    .locals 4
+
+    new-instance v0, Lo0/j;
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x2
+
+    invoke-direct {v0, p2, v1, v2, v3}, Lo0/j;-><init>(Lo0/D1;III)V
+
+    const/4 p2, 0x0
+
+    const/4 v1, 0x7
+
+    invoke-static {p2, p3, v1}, Lk4/a;->c(III)J
+
+    move-result-wide p2
+
+    new-instance v1, Lo0/o;
+
+    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
+
+    move-result-object v2
+
+    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
+
+    invoke-interface {p0, v1, v0, p2, p3}, Lq0/w;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lo0/F1;->f()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public d(Lq0/N1;Lo0/D1;I)I
+    .locals 3
+
+    new-instance v0, Lo0/j;
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, p2, v1, v1, v2}, Lo0/j;-><init>(Lo0/D1;III)V
+
+    const/4 p2, 0x0
+
+    const/16 v1, 0xd
+
+    invoke-static {p3, p2, v1}, Lk4/a;->c(III)J
+
+    move-result-wide p2
+
+    new-instance v1, Lo0/o;
+
+    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
+
+    move-result-object v2
+
+    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
+
+    invoke-interface {p0, v1, v0, p2, p3}, Lq0/w;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lo0/F1;->h()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public f(Lq0/N1;Lo0/D1;I)I
+    .locals 3
+
+    new-instance v0, Lo0/j;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, p2, v1, v1, v2}, Lo0/j;-><init>(Lo0/D1;III)V
+
+    const/4 p2, 0x0
+
+    const/4 v1, 0x7
+
+    invoke-static {p2, p3, v1}, Lk4/a;->c(III)J
+
+    move-result-wide p2
+
+    new-instance v1, Lo0/o;
+
+    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
+
+    move-result-object v2
+
+    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
+
+    invoke-interface {p0, v1, v0, p2, p3}, Lq0/w;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lo0/F1;->f()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public abstract h(Lo0/G1;Lo0/D1;J)Lo0/F1;
 .end method

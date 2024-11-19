@@ -43,9 +43,9 @@
 
     iget-object v2, p0, Lj1/w;->i:Lj1/x;
 
-    iget-object v2, v2, Lj1/x;->p:Li/J;
+    iget-object v2, v2, Lj1/x;->p:Li/J1;
 
-    invoke-virtual {v2}, Li/J;->e()I
+    invoke-virtual {v2}, Li/J1;->e()I
 
     move-result v2
 
@@ -75,7 +75,7 @@
 
     iget-object v1, p0, Lj1/w;->i:Lj1/x;
 
-    iget-object v1, v1, Lj1/x;->p:Li/J;
+    iget-object v1, v1, Lj1/x;->p:Li/J1;
 
     iget v2, p0, Lj1/w;->g:I
 
@@ -83,7 +83,7 @@
 
     iput v2, p0, Lj1/w;->g:I
 
-    invoke-virtual {v1, v2}, Li/J;->f(I)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Li/J1;->f(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -108,11 +108,11 @@
 
     iget-object v0, p0, Lj1/w;->i:Lj1/x;
 
-    iget-object v0, v0, Lj1/x;->p:Li/J;
+    iget-object v0, v0, Lj1/x;->p:Li/J1;
 
     iget v1, p0, Lj1/w;->g:I
 
-    invoke-virtual {v0, v1}, Li/J;->f(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Li/J1;->f(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -124,7 +124,7 @@
 
     iget v1, p0, Lj1/w;->g:I
 
-    iget-object v2, v0, Li/J;->i:[Ljava/lang/Object;
+    iget-object v2, v0, Li/J1;->i:[Ljava/lang/Object;
 
     aget-object v3, v2, v1
 
@@ -136,7 +136,7 @@
 
     const/4 v2, 0x1
 
-    iput-boolean v2, v0, Li/J;->g:Z
+    iput-boolean v2, v0, Li/J1;->g:Z
 
     :cond_0
     add-int/lit8 v1, v1, -0x1

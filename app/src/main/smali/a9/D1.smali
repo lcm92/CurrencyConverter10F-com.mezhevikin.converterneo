@@ -212,9 +212,9 @@
 
     move-result-object p2
 
-    check-cast p2, Ls4/X;
+    check-cast p2, Ls4/X1;
 
-    invoke-virtual {v1, p2}, Ls4/g0;->Z(Ls4/X;)V
+    invoke-virtual {v1, p2}, Ls4/g0;->Z(Ls4/X1;)V
 
     invoke-virtual {v1, v3, v1, p4}, Ls4/a;->p0(ILs4/a;Lh4/e;)V
 
@@ -1417,9 +1417,9 @@
 
     if-eqz v1, :cond_3e
 
-    sget-object v2, Ls3/D;->a:Lk3/b;
+    sget-object v2, Ls3/D1;->a:Lk3/b;
 
-    sget-object v2, Ls3/D;->a:Lk3/b;
+    sget-object v2, Ls3/D1;->a:Lk3/b;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

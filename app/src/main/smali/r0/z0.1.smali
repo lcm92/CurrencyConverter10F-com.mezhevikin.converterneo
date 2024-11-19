@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    sget-object v0, Lr0/M;->K:Lr0/M;
+    sget-object v0, Lr0/M1;->K:Lr0/M1;
 
     new-instance v1, Lf5/X10;
 
@@ -97,11 +97,11 @@
 
     move-result-object p2
 
-    invoke-static {p0}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {p0}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object p0
 
-    iget-object p0, p0, Lq0/D;->z:Lf5/v;
+    iget-object p0, p0, Lq0/D1;->z:Lf5/v;
 
     check-cast p0, Ln5/d;
 

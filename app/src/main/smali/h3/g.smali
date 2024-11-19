@@ -19,7 +19,7 @@
 
     sput-object v0, Lh3/g;->a:Lh9/a;
 
-    sget-object v0, Lj3/O;->d:Lj3/N;
+    sget-object v0, Lj3/O1;->d:Lj3/N1;
 
     invoke-static {v0}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
 

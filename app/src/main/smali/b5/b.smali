@@ -174,10 +174,10 @@
     return-void
 .end method
 
-.method public final z0(Lq0/F;)V
+.method public final z0(Lq0/F1;)V
     .locals 7
 
-    iget-object p1, p1, Lq0/F;->g:La0/b;
+    iget-object p1, p1, Lq0/F1;->g:La0/b;
 
     iget-object p1, p1, La0/b;->h:Le6/l;
 

@@ -47,15 +47,15 @@
 .method public static d(Ly6/x;Landroid/view/View;)V
     .locals 2
 
-    invoke-static {p1}, Ly6/t;->i(Landroid/view/View;)Lq/P;
+    invoke-static {p1}, Ly6/t;->i(Landroid/view/View;)Lq/P1;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0, p0}, Lq/P;->b(Ly6/x;)V
+    invoke-virtual {v0, p0}, Lq/P1;->b(Ly6/x;)V
 
-    iget v0, v0, Lq/P;->h:I
+    iget v0, v0, Lq/P1;->h:I
 
     if-nez v0, :cond_0
 
@@ -94,7 +94,7 @@
 .method public static e(Landroid/view/View;Landroid/view/WindowInsets;Z)V
     .locals 2
 
-    invoke-static {p0}, Ly6/t;->i(Landroid/view/View;)Lq/P;
+    invoke-static {p0}, Ly6/t;->i(Landroid/view/View;)Lq/P1;
 
     move-result-object v0
 
@@ -102,17 +102,17 @@
 
     if-eqz v0, :cond_1
 
-    iput-object p1, v0, Lq/P;->g:Landroid/view/WindowInsets;
+    iput-object p1, v0, Lq/P1;->g:Landroid/view/WindowInsets;
 
     if-nez p2, :cond_1
 
     const/4 p2, 0x1
 
-    iput-boolean p2, v0, Lq/P;->j:Z
+    iput-boolean p2, v0, Lq/P1;->j:Z
 
-    iput-boolean p2, v0, Lq/P;->k:Z
+    iput-boolean p2, v0, Lq/P1;->k:Z
 
-    iget v0, v0, Lq/P;->h:I
+    iget v0, v0, Lq/P1;->h:I
 
     if-nez v0, :cond_0
 
@@ -153,13 +153,13 @@
 .method public static f(Landroid/view/View;Ly6/L1;)V
     .locals 2
 
-    invoke-static {p0}, Ly6/t;->i(Landroid/view/View;)Lq/P;
+    invoke-static {p0}, Ly6/t;->i(Landroid/view/View;)Lq/P1;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    iget-object v1, v0, Lq/P;->i:Lq/i0;
+    iget-object v1, v0, Lq/P1;->i:Lq/i0;
 
     invoke-static {v1, p1}, Lq/i0;->a(Lq/i0;Ly6/L1;)V
 
@@ -170,7 +170,7 @@
     sget-object p1, Ly6/L1;->b:Ly6/L1;
 
     :cond_0
-    iget v0, v0, Lq/P;->h:I
+    iget v0, v0, Lq/P1;->h:I
 
     if-nez v0, :cond_1
 
@@ -209,7 +209,7 @@
 .method public static g(Landroid/view/View;)V
     .locals 2
 
-    invoke-static {p0}, Ly6/t;->i(Landroid/view/View;)Lq/P;
+    invoke-static {p0}, Ly6/t;->i(Landroid/view/View;)Lq/P1;
 
     move-result-object v0
 
@@ -217,9 +217,9 @@
 
     if-eqz v0, :cond_0
 
-    iput-boolean v1, v0, Lq/P;->j:Z
+    iput-boolean v1, v0, Lq/P1;->j:Z
 
-    iget v0, v0, Lq/P;->h:I
+    iget v0, v0, Lq/P1;->h:I
 
     if-nez v0, :cond_0
 
@@ -274,7 +274,7 @@
     return-object p0
 .end method
 
-.method public static i(Landroid/view/View;)Lq/P;
+.method public static i(Landroid/view/View;)Lq/P1;
     .locals 1
 
     const v0, 0x7f070058
@@ -289,7 +289,7 @@
 
     check-cast p0, Ly6/s;
 
-    iget-object p0, p0, Ly6/s;->a:Lq/P;
+    iget-object p0, p0, Ly6/s;->a:Lq/P1;
 
     goto :goto_0
 

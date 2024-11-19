@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Ls3/A;
+.field public final a:Ls3/A1;
 
 .field public final b:Lk9/b;
 
@@ -20,7 +20,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ls3/A;Lk9/b;Ls3/s;Ls3/z;Ljava/lang/Object;Ly9/i;)V
+.method public constructor <init>(Ls3/A1;Lk9/b;Ls3/s;Ls3/z;Ljava/lang/Object;Ly9/i;)V
     .locals 1
 
     const-string v0, "requestTime"
@@ -41,7 +41,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lo3/g;->a:Ls3/A;
+    iput-object p1, p0, Lo3/g;->a:Ls3/A1;
 
     iput-object p2, p0, Lo3/g;->b:Lk9/b;
 
@@ -85,7 +85,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lo3/g;->a:Ls3/A;
+    iget-object v1, p0, Lo3/g;->a:Ls3/A1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

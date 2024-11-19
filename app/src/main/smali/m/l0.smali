@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:J
 
-.field public final b:Lq/V;
+.field public final b:Lq/V1;
 
 
 # direct methods
@@ -23,15 +23,15 @@
 
     int-to-float v2, v2
 
-    new-instance v3, Lq/V;
+    new-instance v3, Lq/V1;
 
-    invoke-direct {v3, v2, v2, v2, v2}, Lq/V;-><init>(FFFF)V
+    invoke-direct {v3, v2, v2, v2, v2}, Lq/V1;-><init>(FFFF)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide v0, p0, Lm/l0;->a:J
 
-    iput-object v3, p0, Lm/l0;->b:Lq/V;
+    iput-object v3, p0, Lm/l0;->b:Lq/V1;
 
     return-void
 .end method
@@ -92,9 +92,9 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Lm/l0;->b:Lq/V;
+    iget-object v1, p0, Lm/l0;->b:Lq/V1;
 
-    iget-object p1, p1, Lm/l0;->b:Lq/V;
+    iget-object p1, p1, Lm/l0;->b:Lq/V1;
 
     invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -121,7 +121,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lm/l0;->b:Lq/V;
+    iget-object v1, p0, Lm/l0;->b:Lq/V1;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -145,9 +145,9 @@
 
     const-string v3, ", drawPadding="
 
-    invoke-static {v1, v2, v0, v3}, Lk/P;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Lk/P1;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lm/l0;->b:Lq/V;
+    iget-object v1, p0, Lm/l0;->b:Lq/V1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

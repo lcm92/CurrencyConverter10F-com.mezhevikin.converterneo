@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    sget-object v0, Lm/Y;->i:Lm/Y;
+    sget-object v0, Lm/Y1;->i:Lm/Y1;
 
     new-instance v1, Lf5/X10;
 
@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method public static final a(Lr5/q;Lp/i;Lm/W;)Lr5/q;
+.method public static final a(Lr5/q;Lp/i;Lm/W1;)Lr5/q;
     .locals 2
 
     if-nez p2, :cond_0

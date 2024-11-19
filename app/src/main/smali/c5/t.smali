@@ -380,7 +380,7 @@
 
     move-result-object v7
 
-    sget-object v10, Lo0/i;->a:Lo0/I;
+    sget-object v10, Lo0/i;->a:Lo0/I1;
 
     const/4 v9, 0x0
 
@@ -394,7 +394,7 @@
 
     move v13, v15
 
-    invoke-static/range {v7 .. v13}, Landroidx/compose/ui/draw/a;->d(Lr5/q;Ld0/b;Lr5/d;Lo0/I;FLy5/l;I)Lr5/q;
+    invoke-static/range {v7 .. v13}, Landroidx/compose/ui/draw/a;->d(Lr5/q;Ld0/b;Lr5/d;Lo0/I1;FLy5/l;I)Lr5/q;
 
     move-result-object v7
 

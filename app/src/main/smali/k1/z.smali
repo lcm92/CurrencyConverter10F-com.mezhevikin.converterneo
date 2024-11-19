@@ -90,7 +90,7 @@
 
     const/4 v0, 0x2
 
-    invoke-static {p1, v0}, Lk/F;->b(Ll/B0;I)Lk/K;
+    invoke-static {p1, v0}, Lk/F1;->b(Ll/B0;I)Lk/K1;
 
     move-result-object p1
 
@@ -113,7 +113,7 @@
 
     const/4 v0, 0x2
 
-    invoke-static {p1, v0}, Lk/F;->a(Ll/B0;I)Lk/J;
+    invoke-static {p1, v0}, Lk/F1;->a(Ll/B0;I)Lk/J1;
 
     move-result-object p1
 

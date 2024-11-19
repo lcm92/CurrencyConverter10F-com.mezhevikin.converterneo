@@ -307,11 +307,11 @@
     goto :goto_6
 
     :cond_8
-    new-instance v8, Lo/F;
+    new-instance v8, Lo/F1;
 
     const/4 v11, 0x2
 
-    invoke-direct {v8, v2, v11, v0}, Lo/F;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v8, v2, v11, v0}, Lo/F1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     iput-object v2, v12, Lo/U0;->j:Lo/V0;
 

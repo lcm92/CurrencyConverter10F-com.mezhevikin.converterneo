@@ -11,7 +11,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    sget-object v0, Lr0/D;->j:Lr0/D;
+    sget-object v0, Lr0/D1;->j:Lr0/D1;
 
     new-instance v1, Ln5/a;
 

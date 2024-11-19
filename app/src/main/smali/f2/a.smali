@@ -70,13 +70,13 @@
     return-void
 
     :cond_0
-    new-instance v0, Lw2/O;
+    new-instance v0, Lw2/O1;
 
-    invoke-direct {v0, p0, p1}, Lw2/O;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p0, p1}, Lw2/O1;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object p0, p2, Ly7/e;->a:Lb2/d0;
 
-    invoke-virtual {v0, p0, p3}, Lw2/O;->c(Lb2/d0;Lo4/j;)V
+    invoke-virtual {v0, p0, p3}, Lw2/O1;->c(Lb2/d0;Lo4/j;)V
 
     return-void
 .end method

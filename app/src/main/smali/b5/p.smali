@@ -67,7 +67,7 @@
 
     const/4 p2, 0x0
 
-    invoke-virtual {p1, p2}, Ls4/g0;->Z(Ls4/X;)V
+    invoke-virtual {p1, p2}, Ls4/g0;->Z(Ls4/X1;)V
 
     iput-object p1, p0, Lb5/p;->i:Ls4/k;
 

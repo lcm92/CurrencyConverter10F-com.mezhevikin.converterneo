@@ -22,7 +22,7 @@
 
     sput-object v0, Lf5/C1;->g:Lf5/C1;
 
-    sget-object v0, Ls4/F;->a:Lz4/d;
+    sget-object v0, Ls4/F1;->a:Lz4/d;
 
     sget-object v0, Lx4/m;->a:Lt4/d;
 

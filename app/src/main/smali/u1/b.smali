@@ -39,19 +39,19 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {v5, v0}, Li/I;-><init>(I)V
+    invoke-direct {v5, v0}, Li/I1;-><init>(I)V
 
     .line 3
     new-instance v6, Li/f;
 
     .line 4
-    invoke-direct {v6, v0}, Li/I;-><init>(I)V
+    invoke-direct {v6, v0}, Li/I1;-><init>(I)V
 
     .line 5
     new-instance v7, Li/f;
 
     .line 6
-    invoke-direct {v7, v0}, Li/I;-><init>(I)V
+    invoke-direct {v7, v0}, Li/I1;-><init>(I)V
 
     .line 7
     const-string v4, ""

@@ -112,7 +112,7 @@
     return-object p1
 
     :pswitch_2
-    invoke-static {p1}, Lk/P;->i(Ljava/lang/Object;)V
+    invoke-static {p1}, Lk/P1;->i(Ljava/lang/Object;)V
 
     const/4 p1, 0x0
 

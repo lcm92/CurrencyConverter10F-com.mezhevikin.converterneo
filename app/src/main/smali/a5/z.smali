@@ -15,18 +15,18 @@
 
 .field public final synthetic l:La5/l;
 
-.field public final synthetic m:Lw/Z;
+.field public final synthetic m:Lw/Z1;
 
 
 # direct methods
-.method public constructor <init>(La5/Z1;La5/l;Lw/Z;Ly9/d;)V
+.method public constructor <init>(La5/Z1;La5/l;Lw/Z1;Ly9/d;)V
     .locals 0
 
     iput-object p1, p0, La5/z;->k:La5/Z1;
 
     iput-object p2, p0, La5/z;->l:La5/l;
 
-    iput-object p3, p0, La5/z;->m:Lw/Z;
+    iput-object p3, p0, La5/z;->m:Lw/Z1;
 
     const/4 p1, 0x2
 
@@ -44,11 +44,11 @@
 
     iget-object v1, p0, La5/z;->l:La5/l;
 
-    iget-object v2, p0, La5/z;->m:Lw/Z;
+    iget-object v2, p0, La5/z;->m:Lw/Z1;
 
     iget-object v3, p0, La5/z;->k:La5/Z1;
 
-    invoke-direct {v0, v3, v1, v2, p1}, La5/z;-><init>(La5/Z1;La5/l;Lw/Z;Ly9/d;)V
+    invoke-direct {v0, v3, v1, v2, p1}, La5/z;-><init>(La5/Z1;La5/l;Lw/Z1;Ly9/d;)V
 
     iput-object p2, v0, La5/z;->j:Ljava/lang/Object;
 
@@ -200,9 +200,9 @@
 
     iput v3, p0, La5/z;->i:I
 
-    iget-object v2, p0, La5/z;->m:Lw/Z;
+    iget-object v2, p0, La5/z;->m:Lw/Z1;
 
-    invoke-static {v1, v2, p1, p0}, Li0/c;->q(Lk0/z;Lw/Z;Lk0/i;La4/a;)Ljava/lang/Object;
+    invoke-static {v1, v2, p1, p0}, Li0/c;->q(Lk0/z;Lw/Z1;Lk0/i;La4/a;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -33,7 +33,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, p1, v2, p2, v1}, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;-><init>(Ljava/lang/Object;Lw/Z;Lh4/e;I)V
+    invoke-direct {v0, p1, v2, p2, v1}, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;-><init>(Ljava/lang/Object;Lw/Z1;Lh4/e;I)V
 
     invoke-interface {p0, v0}, Lr5/q;->i(Lr5/q;)Lr5/q;
 

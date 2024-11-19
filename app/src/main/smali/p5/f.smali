@@ -65,7 +65,7 @@
     goto/16 :goto_7
 
     :cond_0
-    iget-object v1, p0, Lp5/e;->h:Li/D;
+    iget-object v1, p0, Lp5/e;->h:Li/D1;
 
     iget v2, p0, Lp5/i;->b:I
 
@@ -96,7 +96,7 @@
 
     if-eqz v1, :cond_5
 
-    iget v5, v1, Li/D;->d:I
+    iget v5, v1, Li/D1;->d:I
 
     if-nez v5, :cond_2
 
@@ -137,22 +137,22 @@
     :try_start_1
     iget-object v0, p0, Lp5/f;->o:Lp5/e;
 
-    invoke-virtual {v0}, Lp5/e;->w()Li/D;
+    invoke-virtual {v0}, Lp5/e;->w()Li/D1;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    invoke-virtual {v0, v1}, Li/D;->i(Li/D;)V
+    invoke-virtual {v0, v1}, Li/D1;->i(Li/D1;)V
 
     goto :goto_2
 
     :cond_4
     iget-object v0, p0, Lp5/f;->o:Lp5/e;
 
-    invoke-virtual {v0, v1}, Lp5/e;->A(Li/D;)V
+    invoke-virtual {v0, v1}, Lp5/e;->A(Li/D1;)V
 
-    iput-object v3, p0, Lp5/e;->h:Li/D;
+    iput-object v3, p0, Lp5/e;->h:Li/D1;
 
     goto :goto_2
 

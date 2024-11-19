@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lo0/E;
+.implements Lo0/E1;
 
 
 # instance fields
@@ -27,7 +27,7 @@
 
 
 # virtual methods
-.method public final d(Lo0/G;Ljava/util/List;J)Lo0/F;
+.method public final d(Lo0/G1;Ljava/util/List;J)Lo0/F1;
     .locals 0
 
     iget-object p2, p0, Lo6/l;->a:Lo6/C1;
@@ -42,7 +42,7 @@
 
     const/4 p4, 0x0
 
-    invoke-interface {p1, p4, p4, p3, p2}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p1, p4, p4, p3, p2}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
 
     move-result-object p1
 

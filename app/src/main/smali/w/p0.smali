@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lz0/C;
+.field public final a:Lz0/C1;
 
 .field public b:Lo0/p;
 
@@ -12,12 +12,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lz0/C;Lo0/p;)V
+.method public constructor <init>(Lz0/C1;Lo0/p;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lw/p0;->a:Lz0/C;
+    iput-object p1, p0, Lw/p0;->a:Lz0/C1;
 
     const/4 p1, 0x0
 
@@ -158,9 +158,9 @@
 
     move-result-wide p1
 
-    iget-object p3, p0, Lw/p0;->a:Lz0/C;
+    iget-object p3, p0, Lw/p0;->a:Lz0/C1;
 
-    iget-object p3, p3, Lz0/C;->b:Lz0/l;
+    iget-object p3, p3, Lz0/C1;->b:Lz0/l;
 
     invoke-virtual {p3, p1, p2}, Lz0/l;->e(J)I
 
@@ -184,9 +184,9 @@
 
     move-result v0
 
-    iget-object v1, p0, Lw/p0;->a:Lz0/C;
+    iget-object v1, p0, Lw/p0;->a:Lz0/C1;
 
-    iget-object v2, v1, Lz0/C;->b:Lz0/l;
+    iget-object v2, v1, Lz0/C1;->b:Lz0/l;
 
     invoke-virtual {v2, v0}, Lz0/l;->c(F)I
 
@@ -196,7 +196,7 @@
 
     move-result v2
 
-    invoke-virtual {v1, v0}, Lz0/C;->f(I)F
+    invoke-virtual {v1, v0}, Lz0/C1;->f(I)F
 
     move-result v3
 
@@ -208,7 +208,7 @@
 
     move-result p1
 
-    invoke-virtual {v1, v0}, Lz0/C;->g(I)F
+    invoke-virtual {v1, v0}, Lz0/C1;->g(I)F
 
     move-result p2
 

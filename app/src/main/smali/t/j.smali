@@ -23,7 +23,7 @@
 
 
 # virtual methods
-.method public final L(Lq0/Z;Lh4/a;La4/c;)Ljava/lang/Object;
+.method public final L(Lq0/Z1;Lh4/a;La4/c;)Ljava/lang/Object;
     .locals 3
 
     iget-object p3, p0, Lt/j;->g:Lq0/m;
@@ -34,7 +34,7 @@
 
     const-wide/16 v0, 0x0
 
-    invoke-virtual {p1, v0, v1}, Lq0/Z;->L(J)J
+    invoke-virtual {p1, v0, v1}, Lq0/Z1;->L(J)J
 
     move-result-wide v0
 

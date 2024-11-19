@@ -100,7 +100,7 @@
     :goto_0
     iget-object p1, p0, Lio/ktor/client/engine/cio/s;->m:Ly9/i;
 
-    invoke-static {p1}, Ls4/y;->m(Ly9/i;)Ls4/X;
+    invoke-static {p1}, Ls4/y;->m(Ly9/i;)Ls4/X1;
 
     move-result-object p1
 
@@ -108,21 +108,21 @@
 
     iget-object v1, p0, Lio/ktor/client/engine/cio/s;->n:Lo3/e;
 
-    iget-object v2, v1, Lo3/e;->a:Ls3/K;
+    iget-object v2, v1, Lo3/e;->a:Ls3/K1;
 
-    iget-object v2, v2, Ls3/K;->h:Ljava/lang/String;
+    iget-object v2, v2, Ls3/K1;->h:Ljava/lang/String;
 
-    sget-object v3, Lj3/O;->d:Lj3/N;
+    sget-object v3, Lj3/O1;->d:Lj3/N1;
 
     invoke-virtual {v1}, Lo3/e;->a()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lj3/L;
+    check-cast v1, Lj3/L1;
 
     if-eqz v1, :cond_3
 
-    iget-object v1, v1, Lj3/L;->a:Ljava/lang/Long;
+    iget-object v1, v1, Lj3/L1;->a:Ljava/lang/Long;
 
     goto :goto_1
 
@@ -138,7 +138,7 @@
 
     move-result-object v0
 
-    invoke-interface {p1, v0}, Ls4/X;->c(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {p1, v0}, Ls4/X1;->c(Ljava/util/concurrent/CancellationException;)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

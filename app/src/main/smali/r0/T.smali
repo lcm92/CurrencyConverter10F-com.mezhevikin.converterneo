@@ -1,44 +1,49 @@
-.class public final Lr0/T;
-.super Ljava/lang/Object;
+.class public final Lr0/t;
+.super La4/c;
 .source "SourceFile"
-
-# interfaces
-.implements Lr0/L0;
 
 
 # instance fields
-.field public final a:Lr0/u;
+.field public synthetic j:Ljava/lang/Object;
 
-.field public b:Landroid/view/ActionMode;
+.field public final synthetic k:Lr0/u;
 
-.field public final c:Lk9/c;
-
-.field public d:I
+.field public l:I
 
 
 # direct methods
-.method public constructor <init>(Lr0/u;)V
-    .locals 2
+.method public constructor <init>(Lr0/u;La4/c;)V
+    .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lr0/t;->k:Lr0/u;
 
-    iput-object p1, p0, Lr0/T;->a:Lr0/u;
-
-    new-instance p1, Lk9/c;
-
-    new-instance v0, Lm/M;
-
-    const/16 v1, 0xa
-
-    invoke-direct {v0, v1, p0}, Lm/M;-><init>(ILjava/lang/Object;)V
-
-    invoke-direct {p1, v0}, Lk9/c;-><init>(Lm/M;)V
-
-    iput-object p1, p0, Lr0/T;->c:Lk9/c;
-
-    const/4 p1, 0x2
-
-    iput p1, p0, Lr0/T;->d:I
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    iput-object p1, p0, Lr0/t;->j:Ljava/lang/Object;
+
+    iget p1, p0, Lr0/t;->l:I
+
+    const/high16 v0, -0x80000000
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, Lr0/t;->l:I
+
+    iget-object p1, p0, Lr0/t;->k:Lr0/u;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0, p0}, Lr0/u;->H(Ly/e;La4/c;)V
+
+    sget-object p1, Lz9/a;->g:Lz9/a;
+
+    return-object p1
 .end method

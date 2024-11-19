@@ -115,7 +115,7 @@
     .end packed-switch
 .end method
 
-.method public final g()Ls3/K;
+.method public final g()Ls3/K1;
     .locals 1
 
     iget v0, p0, Lf3/g;->g:I
@@ -124,7 +124,7 @@
 
     iget-object v0, p0, Lf3/g;->h:Lo3/b;
 
-    invoke-interface {v0}, Lo3/b;->g()Ls3/K;
+    invoke-interface {v0}, Lo3/b;->g()Ls3/K1;
 
     move-result-object v0
 
@@ -133,7 +133,7 @@
     :pswitch_0
     iget-object v0, p0, Lf3/g;->h:Lo3/b;
 
-    invoke-interface {v0}, Lo3/b;->g()Ls3/K;
+    invoke-interface {v0}, Lo3/b;->g()Ls3/K1;
 
     move-result-object v0
 

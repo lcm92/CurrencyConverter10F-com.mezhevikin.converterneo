@@ -1,25 +1,23 @@
-.class public interface abstract Lo0/F;
+.class public abstract Lo0/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract f()I
-.end method
+# static fields
+.field public static final a:Lp0/f;
 
-.method public abstract h()I
-.end method
 
-.method public abstract i()Ljava/util/Map;
-.end method
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
 
-.method public abstract j()V
-.end method
+    sget-object v0, Lo0/e;->i:Lo0/e;
 
-.method public k()Lh4/c;
-    .locals 1
+    new-instance v1, Lp0/f;
 
-    const/4 v0, 0x0
+    invoke-direct {v1, v0}, Lp0/f;-><init>(Lh4/a;)V
 
-    return-object v0
+    sput-object v1, Lo0/f;->a:Lp0/f;
+
+    return-void
 .end method

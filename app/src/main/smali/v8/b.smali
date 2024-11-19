@@ -36,7 +36,7 @@
     return-void
 .end method
 
-.method public final C(Lw2/O;)V
+.method public final C(Lw2/O1;)V
     .locals 7
 
     const-string v0, "interstitialAd"

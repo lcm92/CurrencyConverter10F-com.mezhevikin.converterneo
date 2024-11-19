@@ -49,11 +49,11 @@
 
     if-eqz p3, :cond_0
 
-    sget p3, Lz0/E;->c:I
+    sget p3, Lz0/E1;->c:I
 
-    sget-wide v0, Lz0/E;->b:J
+    sget-wide v0, Lz0/E1;->b:J
 
-    invoke-static {p1, p2, v0, v1}, Lz0/E;->a(JJ)Z
+    invoke-static {p1, p2, v0, v1}, Lz0/E1;->a(JJ)Z
 
     move-result p3
 
@@ -62,7 +62,7 @@
     return-wide v0
 
     :cond_0
-    sget p3, Lz0/E;->c:I
+    sget p3, Lz0/E1;->c:I
 
     const/16 p3, 0x20
 

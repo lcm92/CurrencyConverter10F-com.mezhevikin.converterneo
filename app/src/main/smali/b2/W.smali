@@ -1,4 +1,4 @@
-.class public final Lb2/W;
+.class public final Lb2/w;
 .super Lcom/google/android/gms/internal/play_billing/e;
 .source "SourceFile"
 
@@ -7,7 +7,7 @@
 .method public constructor <init>(Landroid/os/IBinder;)V
     .locals 2
 
-    const-string v0, "com.google.android.gms.ads.internal.client.IResponseInfo"
+    const-string v0, "com.google.android.gms.ads.internal.client.IAdLoaderBuilderCreator"
 
     const/4 v1, 0x1
 

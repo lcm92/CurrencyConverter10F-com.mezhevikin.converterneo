@@ -124,7 +124,7 @@
     return-void
 .end method
 
-.method public final e(Ls3/K;Ly9/d;)Ljava/lang/Object;
+.method public final e(Ls3/K1;Ly9/d;)Ljava/lang/Object;
     .locals 0
 
     iget-object p1, p0, Lv8/r;->h:Ljava/util/ArrayList;
@@ -132,7 +132,7 @@
     return-object p1
 .end method
 
-.method public final k(Ls3/K;Ls3/f;La4/c;)Ljava/lang/Object;
+.method public final k(Ls3/K1;Ls3/f;La4/c;)Ljava/lang/Object;
     .locals 1
 
     iget-object p1, p0, Lv8/r;->h:Ljava/util/ArrayList;

@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lp7/b;
-.implements Lz2/K;
+.implements Lz2/K1;
 
 
 # instance fields
@@ -73,9 +73,9 @@
 
     iget-object v0, p0, Lm7/k;->h:Ljava/lang/Object;
 
-    check-cast v0, Lz2/J;
+    check-cast v0, Lz2/J1;
 
-    invoke-virtual {v0}, Lz2/J;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Lz2/J1;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -91,9 +91,9 @@
 
     iget-object v0, p0, Lm7/k;->i:Ljava/lang/Object;
 
-    check-cast v0, Lz2/J;
+    check-cast v0, Lz2/J1;
 
-    invoke-virtual {v0}, Lz2/J;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Lz2/J1;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -103,9 +103,9 @@
 
     iget-object v0, p0, Lm7/k;->j:Ljava/lang/Object;
 
-    check-cast v0, Lz2/J;
+    check-cast v0, Lz2/J1;
 
-    invoke-virtual {v0}, Lz2/J;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Lz2/J1;->a()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -131,15 +131,15 @@
 
     iget-object v0, p0, Lm7/k;->m:Ljava/lang/Object;
 
-    check-cast v0, Lz2/J;
+    check-cast v0, Lz2/J1;
 
-    invoke-virtual {v0}, Lz2/J;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Lz2/J1;->a()Ljava/lang/Object;
 
     move-result-object v0
 
     move-object v9, v0
 
-    check-cast v9, Lz2/M;
+    check-cast v9, Lz2/M1;
 
     new-instance v0, Lz2/b;
 

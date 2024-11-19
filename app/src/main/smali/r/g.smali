@@ -171,9 +171,9 @@
 
     if-eqz p3, :cond_8
 
-    new-instance v0, Lo0/T;
+    new-instance v0, Lo0/T1;
 
-    invoke-direct {v0, p0, p1, p2, p4}, Lo0/T;-><init>(Lr/g;ILjava/lang/Object;I)V
+    invoke-direct {v0, p0, p1, p2, p4}, Lo0/T1;-><init>(Lr/g;ILjava/lang/Object;I)V
 
     iput-object v0, p3, Lf5/s0;->d:Lh4/e;
 

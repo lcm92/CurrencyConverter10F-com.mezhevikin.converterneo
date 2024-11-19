@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lo0/F;
+.implements Lo0/F1;
 
 
 # virtual methods

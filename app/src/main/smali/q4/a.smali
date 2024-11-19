@@ -69,11 +69,11 @@
 
     invoke-direct {p2}, Ljava/lang/Object;-><init>()V
 
-    new-instance v2, Lo/F;
+    new-instance v2, Lo/F1;
 
     const/16 v4, 0x10
 
-    invoke-direct {v2, p2, v4, p1}, Lo/F;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v2, p2, v4, p1}, Lo/F1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     iput-object p2, v0, Lz3/g;->j:Li4/q;
 
@@ -83,7 +83,7 @@
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, v3, v2, v0}, Lio/ktor/utils/io/D;->g0(Lio/ktor/utils/io/D;ILo/F;La4/c;)Ljava/lang/Object;
+    invoke-static {p0, v3, v2, v0}, Lio/ktor/utils/io/D;->g0(Lio/ktor/utils/io/D;ILo/F1;La4/c;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -911,7 +911,7 @@
     throw v0
 .end method
 
-.method public static j(Ljava/lang/String;)Ls3/E;
+.method public static j(Ljava/lang/String;)Ls3/E1;
     .locals 13
 
     const-string v0, "query"
@@ -924,7 +924,7 @@
 
     if-gez v0, :cond_0
 
-    sget-object p0, Ls3/E;->b:Ls3/p;
+    sget-object p0, Ls3/E1;->b:Ls3/p;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -933,7 +933,7 @@
     goto :goto_4
 
     :cond_0
-    sget-object v0, Ls3/E;->b:Ls3/p;
+    sget-object v0, Ls3/E1;->b:Ls3/p;
 
     invoke-static {}, Lp4/h;->a()Ls3/r;
 
@@ -1037,7 +1037,7 @@
     invoke-static/range {v1 .. v6}, Lq4/a;->b(Ls3/r;Ljava/lang/String;IIIZ)V
 
     :goto_3
-    invoke-virtual {v0}, Ls3/r;->p()Ls3/E;
+    invoke-virtual {v0}, Ls3/r;->p()Ls3/E1;
 
     move-result-object p0
 

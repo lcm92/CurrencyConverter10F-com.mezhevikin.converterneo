@@ -14,7 +14,7 @@
 
 .field public final i:Ljava/util/ArrayList;
 
-.field public final j:Li/J;
+.field public final j:Li/J1;
 
 .field public final k:Ljava/util/LinkedHashMap;
 
@@ -36,14 +36,14 @@
     return-void
 .end method
 
-.method public constructor <init>(Lj1/H;)V
+.method public constructor <init>(Lj1/H1;)V
     .locals 1
 
     const-string v0, "navigator"
 
     invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v0, Lj1/I;->b:Ljava/util/LinkedHashMap;
+    sget-object v0, Lj1/I1;->b:Ljava/util/LinkedHashMap;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -63,11 +63,11 @@
 
     iput-object p1, p0, Lj1/u;->i:Ljava/util/ArrayList;
 
-    new-instance p1, Li/J;
+    new-instance p1, Li/J1;
 
-    invoke-direct {p1}, Li/J;-><init>()V
+    invoke-direct {p1}, Li/J1;-><init>()V
 
-    iput-object p1, p0, Lj1/u;->j:Li/J;
+    iput-object p1, p0, Lj1/u;->j:Li/J1;
 
     new-instance p1, Ljava/util/LinkedHashMap;
 
@@ -499,23 +499,23 @@
 
     move-result v2
 
-    iget-object v3, p0, Lj1/u;->j:Li/J;
+    iget-object v3, p0, Lj1/u;->j:Li/J1;
 
-    invoke-virtual {v3}, Li/J;->e()I
+    invoke-virtual {v3}, Li/J1;->e()I
 
     move-result v4
 
-    iget-object v5, p1, Lj1/u;->j:Li/J;
+    iget-object v5, p1, Lj1/u;->j:Li/J1;
 
-    invoke-virtual {v5}, Li/J;->e()I
+    invoke-virtual {v5}, Li/J1;->e()I
 
     move-result v6
 
     if-ne v4, v6, :cond_4
 
-    new-instance v4, Li/K;
+    new-instance v4, Li/K1;
 
-    invoke-direct {v4, v3}, Li/K;-><init>(Li/J;)V
+    invoke-direct {v4, v3}, Li/K1;-><init>(Li/J1;)V
 
     invoke-static {v4}, Lp4/g;->i(Ljava/util/Iterator;)Lp4/e;
 
@@ -544,11 +544,11 @@
 
     move-result v6
 
-    invoke-virtual {v3, v6}, Li/J;->b(I)Ljava/lang/Object;
+    invoke-virtual {v3, v6}, Li/J1;->b(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    invoke-virtual {v5, v6}, Li/J;->b(I)Ljava/lang/Object;
+    invoke-virtual {v5, v6}, Li/J1;->b(I)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -746,11 +746,11 @@
     :cond_1
     const-string v1, "<this>"
 
-    iget-object v3, p0, Lj1/u;->j:Li/J;
+    iget-object v3, p0, Lj1/u;->j:Li/J1;
 
     invoke-static {v3, v1}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v3}, Li/J;->e()I
+    invoke-virtual {v3}, Li/J1;->e()I
 
     move-result v1
 
@@ -825,7 +825,7 @@
     return v0
 
     :cond_5
-    invoke-virtual {v3, v2}, Li/J;->f(I)Ljava/lang/Object;
+    invoke-virtual {v3, v2}, Li/J1;->f(I)Ljava/lang/Object;
 
     move-result-object v0
 

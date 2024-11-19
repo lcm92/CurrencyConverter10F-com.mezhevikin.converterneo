@@ -1,10 +1,10 @@
 .class public final Lk1/g;
-.super Lj1/A;
+.super Lj1/A1;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime Lj1/G;
+.annotation runtime Lj1/G1;
     value = "navigation"
 .end annotation
 
@@ -15,7 +15,7 @@
 
     new-instance v0, Lk1/f;
 
-    invoke-direct {v0, p0}, Lj1/x;-><init>(Lj1/A;)V
+    invoke-direct {v0, p0}, Lj1/x;-><init>(Lj1/A1;)V
 
     return-object v0
 .end method
@@ -25,7 +25,7 @@
 
     new-instance v0, Lk1/f;
 
-    invoke-direct {v0, p0}, Lj1/x;-><init>(Lj1/A;)V
+    invoke-direct {v0, p0}, Lj1/x;-><init>(Lj1/A1;)V
 
     return-object v0
 .end method

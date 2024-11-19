@@ -153,7 +153,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {v2, v1, p3, v2, v0}, Lc5/Q1;->b(ZFLf5/p;II)Lm/W;
+    invoke-static {v2, v1, p3, v2, v0}, Lc5/Q1;->b(ZFLf5/p;II)Lm/W1;
 
     move-result-object v0
 

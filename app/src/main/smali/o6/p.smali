@@ -625,7 +625,7 @@
     invoke-virtual {v9, v4}, Lf5/p;->a0(Ljava/lang/Object;)V
 
     :cond_1d
-    check-cast v4, Lo0/E;
+    check-cast v4, Lo0/E1;
 
     iget v0, v9, Lf5/p;->P:I
 

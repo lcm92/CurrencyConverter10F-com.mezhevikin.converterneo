@@ -330,7 +330,7 @@
 
     move-result-object v4
 
-    invoke-interface {v4}, Lo3/b;->g()Ls3/K;
+    invoke-interface {v4}, Lo3/b;->g()Ls3/K1;
 
     move-result-object v4
 
@@ -352,7 +352,7 @@
 
     move-object/from16 v7, p0
 
-    invoke-virtual/range {v1 .. v7}, Lk3/h;->b(Ls3/K;Lm9/a;Ljava/lang/Object;Ls3/d;Ljava/nio/charset/Charset;La4/c;)Ljava/lang/Object;
+    invoke-virtual/range {v1 .. v7}, Lk3/h;->b(Ls3/K1;Lm9/a;Ljava/lang/Object;Ls3/d;Ljava/nio/charset/Charset;La4/c;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -433,7 +433,7 @@
 
     iget-object v2, v8, Le3/b;->m:Ljava/lang/Object;
 
-    check-cast v2, Lj3/Q;
+    check-cast v2, Lj3/Q1;
 
     iget-object v4, v8, Le3/b;->n:Ljava/lang/Object;
 
@@ -443,7 +443,7 @@
 
     iput v3, v8, Le3/b;->l:I
 
-    invoke-interface {v2, v4, v8}, Lj3/Q;->a(Lo3/d;La4/c;)Ljava/lang/Object;
+    invoke-interface {v2, v4, v8}, Lj3/Q1;->a(Lo3/d;La4/c;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -931,7 +931,7 @@
     return-object p1
 
     :pswitch_1
-    check-cast p1, Lj3/Q;
+    check-cast p1, Lj3/Q1;
 
     check-cast p2, Lo3/d;
 

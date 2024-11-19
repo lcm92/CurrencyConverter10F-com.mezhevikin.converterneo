@@ -1,43 +1,23 @@
-.class public final Lj1/F;
-.super Ljava/lang/Object;
+.class public final Lj1/f;
+.super Landroidx/lifecycle/Q;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lj1/D;
-
-.field public b:Z
-
-.field public c:Z
-
-.field public d:I
-
-.field public e:Z
+.field public final b:Landroidx/lifecycle/H;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Landroidx/lifecycle/H;)V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "handle"
 
-    new-instance v0, Lj1/D;
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroidx/lifecycle/Q;-><init>()V
 
-    const/4 v1, -0x1
-
-    iput v1, v0, Lj1/D;->c:I
-
-    iput v1, v0, Lj1/D;->f:I
-
-    iput v1, v0, Lj1/D;->g:I
-
-    iput-object v0, p0, Lj1/F;->a:Lj1/D;
-
-    const/4 v0, -0x1
-
-    iput v0, p0, Lj1/F;->d:I
+    iput-object p1, p0, Lj1/f;->b:Landroidx/lifecycle/H;
 
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lm/W;
+.implements Lm/W1;
 
 
 # virtual methods

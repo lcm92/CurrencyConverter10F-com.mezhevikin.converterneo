@@ -1,103 +1,64 @@
-.class public final Lo0/B;
-.super Lo0/M;
+.class public final synthetic Lo0/b;
+.super Li4/f;
 .source "SourceFile"
 
+# interfaces
+.implements Lh4/e;
 
-# instance fields
-.field public final synthetic b:I
 
-.field public final c:Ljava/lang/Object;
+# static fields
+.field public static final o:Lo0/b;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 7
 
-    iput p1, p0, Lo0/B;->b:I
+    new-instance v6, Lo0/b;
 
-    iput-object p2, p0, Lo0/B;->c:Ljava/lang/Object;
+    const-string v4, "max(II)I"
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v5, 0x1
+
+    const/4 v1, 0x2
+
+    const-class v2, Lk4/a;
+
+    const-string v3, "max"
+
+    move-object v0, v6
+
+    invoke-direct/range {v0 .. v5}, Li4/f;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    sput-object v6, Lo0/b;->o:Lo0/b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Ll6/k;
-    .locals 1
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    iget v0, p0, Lo0/B;->b:I
+    check-cast p1, Ljava/lang/Number;
 
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
-    iget-object v0, p0, Lo0/B;->c:Ljava/lang/Object;
+    move-result p1
 
-    check-cast v0, Lr0/u;
+    check-cast p2, Ljava/lang/Number;
 
-    invoke-virtual {v0}, Lr0/u;->getLayoutDirection()Ll6/k;
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    move-result-object v0
+    move-result p2
 
-    return-object v0
+    invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
 
-    :pswitch_0
-    iget-object v0, p0, Lo0/B;->c:Ljava/lang/Object;
+    move-result p1
 
-    check-cast v0, Lq0/N;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-interface {v0}, Lo0/m;->getLayoutDirection()Ll6/k;
+    move-result-object p1
 
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final c()I
-    .locals 1
-
-    iget v0, p0, Lo0/B;->b:I
-
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, Lo0/B;->c:Ljava/lang/Object;
-
-    check-cast v0, Lr0/u;
-
-    invoke-virtual {v0}, Lr0/u;->getRoot()Lq0/D;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lq0/D;->C:Lq0/K;
-
-    iget-object v0, v0, Lq0/K;->r:Lq0/J;
-
-    iget v0, v0, Lo0/N;->g:I
-
-    return v0
-
-    :pswitch_0
-    iget-object v0, p0, Lo0/B;->c:Ljava/lang/Object;
-
-    check-cast v0, Lq0/N;
-
-    invoke-virtual {v0}, Lo0/N;->Z()I
-
-    move-result v0
-
-    return v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

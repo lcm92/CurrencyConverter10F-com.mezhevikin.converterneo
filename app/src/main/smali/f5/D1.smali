@@ -37,7 +37,7 @@
 
     invoke-direct {p0}, Lp5/z;-><init>()V
 
-    sget-object v0, Li/E;->a:Li/x;
+    sget-object v0, Li/E1;->a:Li/x;
 
     const-string v1, "null cannot be cast to non-null type androidx.collection.ObjectIntMap<K of androidx.collection.ObjectIntMapKt.emptyObjectIntMap>"
 

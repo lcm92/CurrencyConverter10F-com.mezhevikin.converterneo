@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Ly/y;
 
-.field public final b:Lm/M;
+.field public final b:Lm/M1;
 
 .field public final c:Ljava/lang/Object;
 
@@ -16,14 +16,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ly/y;Lm/M;)V
+.method public constructor <init>(Ly/y;Lm/M1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lr0/r0;->a:Ly/y;
 
-    iput-object p2, p0, Lr0/r0;->b:Lm/M;
+    iput-object p2, p0, Lr0/r0;->b:Lm/M1;
 
     new-instance p1, Ljava/lang/Object;
 

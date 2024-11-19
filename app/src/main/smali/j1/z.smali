@@ -42,9 +42,9 @@
 
     invoke-static {p1, v0}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast p1, Ls/N;
+    check-cast p1, Ls/N1;
 
-    iget-object p1, p1, Ls/N;->t:Ls/A;
+    iget-object p1, p1, Ls/N1;->t:Ls/A1;
 
     iget-object v0, p0, Lj1/z;->i:Li4/s;
 
@@ -59,7 +59,7 @@
     goto :goto_0
 
     :cond_0
-    filled-new-array {p1}, [Ls/A;
+    filled-new-array {p1}, [Ls/A1;
 
     move-result-object p1
 

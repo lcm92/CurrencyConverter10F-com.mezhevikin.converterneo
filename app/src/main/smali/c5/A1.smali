@@ -107,9 +107,9 @@
 
     iget-object v2, p0, Lc5/A1;->k:Ljava/lang/Object;
 
-    check-cast v2, Lr0/X;
+    check-cast v2, Lr0/X1;
 
-    invoke-static {p2, v2, v0, p1, v1}, Lr0/g0;->a(Lq0/f0;Lr0/X;Ln5/a;Lf5/p;I)V
+    invoke-static {p2, v2, v0, p1, v1}, Lr0/g0;->a(Lq0/f0;Lr0/X1;Ln5/a;Lf5/p;I)V
 
     :goto_1
     sget-object p1, Lu9/y;->a:Lu9/y;
@@ -153,11 +153,11 @@
 
     iget-object p1, p1, Lo/p0;->a:Lo/s0;
 
-    iget-object v3, p1, Lo/s0;->h:Lo/T;
+    iget-object v3, p1, Lo/s0;->h:Lo/T1;
 
     const/4 v4, 0x1
 
-    invoke-static {p1, v3, v1, v2, v4}, Lo/s0;->a(Lo/s0;Lo/T;JI)J
+    invoke-static {p1, v3, v1, v2, v4}, Lo/s0;->a(Lo/s0;Lo/T1;JI)J
 
     move-result-wide v1
 
@@ -275,7 +275,7 @@
 
     check-cast v1, Ls4/x;
 
-    invoke-static {v1, v2, v0, p2, p1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v1, v2, v0, p2, p1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 
@@ -359,7 +359,7 @@
 
     sget-object v1, Lr5/b;->g:Lr5/i;
 
-    invoke-static {v1, v2}, Lq/n;->e(Lr5/d;Z)Lo0/E;
+    invoke-static {v1, v2}, Lq/n;->e(Lr5/d;Z)Lo0/E1;
 
     move-result-object v1
 

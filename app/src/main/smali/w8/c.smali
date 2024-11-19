@@ -41,7 +41,7 @@
 
     sput-object v0, Lw8/c;->a:Lw8/c;
 
-    sget-object v0, Ls4/F;->c:Lz4/c;
+    sget-object v0, Ls4/F1;->c:Lz4/c;
 
     invoke-static {v0}, Ls4/y;->b(Ly9/i;)Lx4/d;
 

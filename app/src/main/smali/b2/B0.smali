@@ -20,7 +20,7 @@
 
 .field public final h:J
 
-.field public final i:Lb2/Y;
+.field public final i:Lb2/Y1;
 
 .field public final j:Landroid/os/Bundle;
 
@@ -37,18 +37,18 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Lb2/M;
+    new-instance v0, Lb2/M1;
 
     const/16 v1, 0xa
 
-    invoke-direct {v0, v1}, Lb2/M;-><init>(I)V
+    invoke-direct {v0, v1}, Lb2/M1;-><init>(I)V
 
     sput-object v0, Lb2/B0;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;JLb2/Y;Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;JLb2/Y1;Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -57,7 +57,7 @@
 
     iput-wide p2, p0, Lb2/B0;->h:J
 
-    iput-object p4, p0, Lb2/B0;->i:Lb2/Y;
+    iput-object p4, p0, Lb2/B0;->i:Lb2/Y1;
 
     iput-object p5, p0, Lb2/B0;->j:Landroid/os/Bundle;
 
@@ -101,7 +101,7 @@
 
     const/4 v1, 0x3
 
-    iget-object v3, p0, Lb2/B0;->i:Lb2/Y;
+    iget-object v3, p0, Lb2/B0;->i:Lb2/Y1;
 
     invoke-static {p1, v1, v3, p2}, Lp2/c;->s(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 

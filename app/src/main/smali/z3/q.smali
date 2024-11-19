@@ -115,7 +115,7 @@
 
     const-string v2, "writing"
 
-    invoke-virtual {p0, v2, p1, v0, v1}, Lz3/q;->j(Ljava/lang/String;Lio/ktor/utils/io/D;Ljava/util/concurrent/atomic/AtomicReference;Lh4/a;)Ls4/X;
+    invoke-virtual {p0, v2, p1, v0, v1}, Lz3/q;->j(Ljava/lang/String;Lio/ktor/utils/io/D;Ljava/util/concurrent/atomic/AtomicReference;Lh4/a;)Ls4/X1;
 
     move-result-object p1
 
@@ -167,7 +167,7 @@
 
     if-eqz v0, :cond_2
 
-    invoke-static {v0}, Ls4/y;->e(Ls4/X;)V
+    invoke-static {v0}, Ls4/y;->e(Ls4/X1;)V
 
     :cond_2
     invoke-virtual {p0}, Lz3/q;->m()V
@@ -188,7 +188,7 @@
 
     const-string v2, "reading"
 
-    invoke-virtual {p0, v2, p1, v0, v1}, Lz3/q;->j(Ljava/lang/String;Lio/ktor/utils/io/D;Ljava/util/concurrent/atomic/AtomicReference;Lh4/a;)Ls4/X;
+    invoke-virtual {p0, v2, p1, v0, v1}, Lz3/q;->j(Ljava/lang/String;Lio/ktor/utils/io/D;Ljava/util/concurrent/atomic/AtomicReference;Lh4/a;)Ls4/X1;
 
     move-result-object p1
 
@@ -197,7 +197,7 @@
     return-object p1
 .end method
 
-.method public final j(Ljava/lang/String;Lio/ktor/utils/io/D;Ljava/util/concurrent/atomic/AtomicReference;Lh4/a;)Ls4/X;
+.method public final j(Ljava/lang/String;Lio/ktor/utils/io/D;Ljava/util/concurrent/atomic/AtomicReference;Lh4/a;)Ls4/X1;
     .locals 3
 
     iget-object v0, p0, Lz3/q;->m:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -212,7 +212,7 @@
 
     move-result-object p4
 
-    check-cast p4, Ls4/X;
+    check-cast p4, Ls4/X1;
 
     :goto_0
     const/4 v1, 0x0
@@ -229,15 +229,15 @@
 
     if-nez p1, :cond_0
 
-    invoke-virtual {p2, p4}, Lio/ktor/utils/io/D;->h(Ls4/X;)V
+    invoke-virtual {p2, p4}, Lio/ktor/utils/io/D;->h(Ls4/X1;)V
 
-    new-instance p1, Lj3/F;
+    new-instance p1, Lj3/F1;
 
     const/16 p2, 0x1d
 
-    invoke-direct {p1, p2, p0}, Lj3/F;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lj3/F1;-><init>(ILjava/lang/Object;)V
 
-    invoke-interface {p4, p1}, Ls4/X;->q(Lh4/c;)Ls4/G;
+    invoke-interface {p4, p1}, Ls4/X1;->q(Lh4/c;)Ls4/G1;
 
     return-object p4
 
@@ -246,7 +246,7 @@
 
     invoke-direct {p1}, Ljava/nio/channels/ClosedChannelException;-><init>()V
 
-    invoke-interface {p4, v1}, Ls4/X;->c(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {p4, v1}, Ls4/X1;->c(Ljava/util/concurrent/CancellationException;)V
 
     invoke-virtual {p2, p1}, Lio/ktor/utils/io/D;->a(Ljava/lang/Throwable;)Z
 
@@ -272,7 +272,7 @@
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {p4, v1}, Ls4/X;->c(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {p4, v1}, Ls4/X1;->c(Ljava/util/concurrent/CancellationException;)V
 
     throw p2
 
@@ -303,11 +303,11 @@
 
     move-result-object v1
 
-    check-cast v1, Ls4/X;
+    check-cast v1, Ls4/X1;
 
     if-eqz v1, :cond_0
 
-    invoke-interface {v1}, Ls4/X;->m()Z
+    invoke-interface {v1}, Ls4/X1;->m()Z
 
     move-result v1
 
@@ -320,11 +320,11 @@
 
     move-result-object v2
 
-    check-cast v2, Ls4/X;
+    check-cast v2, Ls4/X1;
 
     if-eqz v2, :cond_1
 
-    invoke-interface {v2}, Ls4/X;->m()Z
+    invoke-interface {v2}, Ls4/X1;->m()Z
 
     move-result v2
 
@@ -335,13 +335,13 @@
 
     move-result-object v0
 
-    check-cast v0, Ls4/X;
+    check-cast v0, Ls4/X1;
 
     const/4 v2, 0x0
 
     if-eqz v0, :cond_3
 
-    invoke-interface {v0}, Ls4/X;->isCancelled()Z
+    invoke-interface {v0}, Ls4/X1;->isCancelled()Z
 
     move-result v3
 
@@ -355,7 +355,7 @@
     :goto_0
     if-eqz v0, :cond_3
 
-    invoke-interface {v0}, Ls4/X;->i()Ljava/util/concurrent/CancellationException;
+    invoke-interface {v0}, Ls4/X1;->i()Ljava/util/concurrent/CancellationException;
 
     move-result-object v0
 
@@ -375,11 +375,11 @@
 
     move-result-object v1
 
-    check-cast v1, Ls4/X;
+    check-cast v1, Ls4/X1;
 
     if-eqz v1, :cond_5
 
-    invoke-interface {v1}, Ls4/X;->isCancelled()Z
+    invoke-interface {v1}, Ls4/X1;->isCancelled()Z
 
     move-result v3
 
@@ -393,7 +393,7 @@
     :goto_2
     if-eqz v1, :cond_5
 
-    invoke-interface {v1}, Ls4/X;->i()Ljava/util/concurrent/CancellationException;
+    invoke-interface {v1}, Ls4/X1;->i()Ljava/util/concurrent/CancellationException;
 
     move-result-object v1
 

@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/Choreographer;Lr0/W;)V
+.method public constructor <init>(Landroid/view/Choreographer;Lr0/W1;)V
     .locals 1
 
     const/4 v0, 0x1
@@ -208,7 +208,7 @@
 
     iget-object v0, p0, Lf5/l0;->i:Ljava/lang/Object;
 
-    check-cast v0, Lr0/W;
+    check-cast v0, Lr0/W1;
 
     if-nez v0, :cond_1
 
@@ -222,11 +222,11 @@
 
     move-result-object v0
 
-    instance-of v1, v0, Lr0/W;
+    instance-of v1, v0, Lr0/W1;
 
     if-eqz v1, :cond_0
 
-    check-cast v0, Lr0/W;
+    check-cast v0, Lr0/W1;
 
     goto :goto_0
 
@@ -253,7 +253,7 @@
 
     if-eqz v0, :cond_3
 
-    iget-object p1, v0, Lr0/W;->i:Landroid/view/Choreographer;
+    iget-object p1, v0, Lr0/W1;->i:Landroid/view/Choreographer;
 
     iget-object v3, p0, Lf5/l0;->h:Ljava/lang/Object;
 
@@ -265,24 +265,24 @@
 
     if-eqz p1, :cond_3
 
-    iget-object p1, v0, Lr0/W;->k:Ljava/lang/Object;
+    iget-object p1, v0, Lr0/W1;->k:Ljava/lang/Object;
 
     monitor-enter p1
 
     :try_start_0
-    iget-object v3, v0, Lr0/W;->m:Ljava/util/ArrayList;
+    iget-object v3, v0, Lr0/W1;->m:Ljava/util/ArrayList;
 
     invoke-virtual {v3, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-boolean v3, v0, Lr0/W;->p:Z
+    iget-boolean v3, v0, Lr0/W1;->p:Z
 
     if-nez v3, :cond_2
 
-    iput-boolean v2, v0, Lr0/W;->p:Z
+    iput-boolean v2, v0, Lr0/W1;->p:Z
 
-    iget-object v2, v0, Lr0/W;->i:Landroid/view/Choreographer;
+    iget-object v2, v0, Lr0/W1;->i:Landroid/view/Choreographer;
 
-    iget-object v3, v0, Lr0/W;->q:Lr0/V;
+    iget-object v3, v0, Lr0/W1;->q:Lr0/V1;
 
     invoke-virtual {v2, v3}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
     :try_end_0
@@ -299,11 +299,11 @@
     :goto_1
     monitor-exit p1
 
-    new-instance p1, Lo/F;
+    new-instance p1, Lo/F1;
 
     const/16 v2, 0x8
 
-    invoke-direct {p1, v0, v2, p2}, Lo/F;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p1, v0, v2, p2}, Lo/F1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-virtual {v1, p1}, Ls4/f;->t(Lh4/c;)V
 
@@ -321,11 +321,11 @@
 
     invoke-virtual {p1, p2}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
 
-    new-instance p1, Lo/F;
+    new-instance p1, Lo/F1;
 
     const/16 v0, 0x9
 
-    invoke-direct {p1, p0, v0, p2}, Lo/F;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p1, p0, v0, p2}, Lo/F1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-virtual {v1, p1}, Ls4/f;->t(Lh4/c;)V
 

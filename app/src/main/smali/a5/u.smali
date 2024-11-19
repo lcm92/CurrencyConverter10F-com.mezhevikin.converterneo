@@ -80,15 +80,15 @@
 
     iget-object v6, v5, La5/p;->e:Ljava/lang/Object;
 
-    check-cast v6, Lz0/C;
+    check-cast v6, Lz0/C1;
 
     iget v7, p0, La5/u;->i:I
 
-    invoke-virtual {v6, v7}, Lz0/C;->k(I)J
+    invoke-virtual {v6, v7}, Lz0/C1;->k(I)J
 
     move-result-wide v8
 
-    sget v10, Lz0/E;->c:I
+    sget v10, Lz0/E1;->c:I
 
     const/16 v10, 0x20
 
@@ -96,11 +96,11 @@
 
     long-to-int v10, v10
 
-    invoke-virtual {v6, v10}, Lz0/C;->e(I)I
+    invoke-virtual {v6, v10}, Lz0/C1;->e(I)I
 
     move-result v11
 
-    iget-object v12, v6, Lz0/C;->b:Lz0/l;
+    iget-object v12, v6, Lz0/C1;->b:Lz0/l;
 
     iget v12, v12, Lz0/l;->f:I
 
@@ -113,14 +113,14 @@
 
     add-int/lit8 v10, v12, -0x1
 
-    invoke-virtual {v6, v10}, Lz0/C;->h(I)I
+    invoke-virtual {v6, v10}, Lz0/C1;->h(I)I
 
     move-result v10
 
     goto :goto_1
 
     :cond_2
-    invoke-virtual {v6, v1}, Lz0/C;->h(I)I
+    invoke-virtual {v6, v1}, Lz0/C1;->h(I)I
 
     move-result v10
 
@@ -131,7 +131,7 @@
 
     long-to-int v8, v8
 
-    invoke-virtual {v6, v8}, Lz0/C;->e(I)I
+    invoke-virtual {v6, v8}, Lz0/C1;->e(I)I
 
     move-result v9
 
@@ -144,14 +144,14 @@
 
     sub-int/2addr v12, v0
 
-    invoke-virtual {v6, v12, v4}, Lz0/C;->d(IZ)I
+    invoke-virtual {v6, v12, v4}, Lz0/C1;->d(IZ)I
 
     move-result v8
 
     goto :goto_2
 
     :cond_4
-    invoke-virtual {v6, v1, v4}, Lz0/C;->d(IZ)I
+    invoke-virtual {v6, v1, v4}, Lz0/C1;->d(IZ)I
 
     move-result v8
 

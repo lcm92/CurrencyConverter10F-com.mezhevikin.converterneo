@@ -9,7 +9,7 @@
 # instance fields
 .field public final synthetic h:Lr5/q;
 
-.field public final synthetic i:Ll/N;
+.field public final synthetic i:Ll/N1;
 
 .field public final synthetic j:Lf5/c0;
 
@@ -29,12 +29,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lr5/q;Ll/N;Lf5/c0;Lm/z0;Ly5/M1;JFFLm/w;Ln5/a;)V
+.method public constructor <init>(Lr5/q;Ll/N1;Lf5/c0;Lm/z0;Ly5/M1;JFFLm/w;Ln5/a;)V
     .locals 0
 
     iput-object p1, p0, Lc5/a;->h:Lr5/q;
 
-    iput-object p2, p0, Lc5/a;->i:Ll/N;
+    iput-object p2, p0, Lc5/a;->i:Ll/N1;
 
     iput-object p3, p0, Lc5/a;->j:Lf5/c0;
 
@@ -95,7 +95,7 @@
 
     :cond_1
     :goto_0
-    iget-object v1, p0, Lc5/a;->i:Ll/N;
+    iget-object v1, p0, Lc5/a;->i:Ll/N1;
 
     iget-object v10, p0, Lc5/a;->q:Ln5/a;
 
@@ -117,7 +117,7 @@
 
     iget-object v9, p0, Lc5/a;->p:Lm/w;
 
-    invoke-static/range {v0 .. v12}, Lc5/E1;->a(Lr5/q;Ll/N;Lf5/c0;Lm/z0;Ly5/M1;JFFLm/w;Ln5/a;Lf5/p;I)V
+    invoke-static/range {v0 .. v12}, Lc5/E1;->a(Lr5/q;Ll/N1;Lf5/c0;Lm/z0;Ly5/M1;JFFLm/w;Ln5/a;Lf5/p;I)V
 
     :goto_1
     sget-object p1, Lu9/y;->a:Lu9/y;

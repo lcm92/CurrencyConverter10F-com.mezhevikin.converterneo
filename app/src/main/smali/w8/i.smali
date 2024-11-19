@@ -102,13 +102,13 @@
     :cond_1
     check-cast p1, Lx0/m;
 
-    iget-object p1, p1, Lx0/m;->c:Lq0/D;
+    iget-object p1, p1, Lx0/m;->c:Lq0/D1;
 
     check-cast p2, Lx0/m;
 
-    iget-object p2, p2, Lx0/m;->c:Lq0/D;
+    iget-object p2, p2, Lx0/m;->c:Lq0/D1;
 
-    sget-object v0, Lq0/D;->O:La6/u;
+    sget-object v0, Lq0/D1;->O:La6/u;
 
     invoke-virtual {v0, p1, p2}, La6/u;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 

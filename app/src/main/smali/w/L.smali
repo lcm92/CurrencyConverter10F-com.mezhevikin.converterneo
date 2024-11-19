@@ -1,47 +1,68 @@
-.class public final synthetic Lw/L;
-.super Li4/m;
+.class public final Lw/l;
+.super Li4/i;
 .source "SourceFile"
 
+# interfaces
+.implements Lh4/c;
 
-# static fields
-.field public static final synthetic n:I
+
+# instance fields
+.field public final synthetic h:I
+
+.field public final synthetic i:La5/b0;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public synthetic constructor <init>(La5/b0;I)V
+    .locals 0
 
-    new-instance v0, Lw/L;
+    iput p2, p0, Lw/l;->h:I
 
-    const-string v1, "isCtrlPressed-ZmokQxo(Landroid/view/KeyEvent;)Z"
+    iput-object p1, p0, Lw/l;->i:La5/b0;
 
-    const/4 v2, 0x1
+    const/4 p1, 0x1
 
-    const-class v3, Li0/c;
-
-    const-string v4, "isCtrlPressed"
-
-    invoke-direct {v0, v3, v4, v1, v2}, Li4/m;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    check-cast p1, Li0/b;
+    iget v0, p0, Lw/l;->h:I
 
-    iget-object p1, p1, Li0/b;->a:Landroid/view/KeyEvent;
+    packed-switch v0, :pswitch_data_0
 
-    invoke-virtual {p1}, Landroid/view/KeyEvent;->isCtrlPressed()Z
+    check-cast p1, Lx5/c;
 
-    move-result p1
+    iget-wide v0, p1, Lx5/c;->a:J
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    iget-object p1, p0, Lw/l;->i:La5/b0;
 
-    move-result-object p1
+    invoke-virtual {p1}, La5/b0;->o()V
+
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
     return-object p1
+
+    :pswitch_0
+    check-cast p1, Lf5/I1;
+
+    new-instance p1, Lo6/a;
+
+    iget-object v0, p0, Lw/l;->i:La5/b0;
+
+    const/4 v1, 0x7
+
+    invoke-direct {p1, v1, v0}, Lo6/a;-><init>(ILjava/lang/Object;)V
+
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

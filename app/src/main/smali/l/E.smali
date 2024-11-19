@@ -1,209 +1,175 @@
-.class public final Ll/E;
-.super Ljava/lang/Object;
+.class public final Ll/e;
+.super La4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Ll/C;
+.implements Lh4/e;
 
 
 # instance fields
-.field public final a:I
+.field public k:I
 
-.field public final b:I
+.field public final synthetic l:Ljava/lang/Object;
 
-.field public final c:Ll/z;
+.field public final synthetic m:Ll/c;
 
-.field public final d:J
+.field public final synthetic n:Lf5/c0;
 
-.field public final e:J
+.field public final synthetic o:Lf5/c0;
 
 
 # direct methods
-.method public constructor <init>(IILl/z;)V
-    .locals 4
+.method public constructor <init>(Ljava/lang/Object;Ll/c;Lf5/c0;Lf5/c0;Ly9/d;)V
+    .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Ll/e;->l:Ljava/lang/Object;
 
-    iput p1, p0, Ll/E;->a:I
+    iput-object p2, p0, Ll/e;->m:Ll/c;
 
-    iput p2, p0, Ll/E;->b:I
+    iput-object p3, p0, Ll/e;->n:Lf5/c0;
 
-    iput-object p3, p0, Ll/E;->c:Ll/z;
+    iput-object p4, p0, Ll/e;->o:Lf5/c0;
 
-    int-to-long v0, p1
+    const/4 p1, 0x2
 
-    const-wide/32 v2, 0xf4240
-
-    mul-long/2addr v0, v2
-
-    iput-wide v0, p0, Ll/E;->d:J
-
-    int-to-long p1, p2
-
-    mul-long/2addr p1, v2
-
-    iput-wide p1, p0, Ll/E;->e:J
+    invoke-direct {p0, p1, p5}, La4/i;-><init>(ILy9/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(JFFF)F
-    .locals 8
+.method public final d(Ly9/d;Ljava/lang/Object;)Ly9/d;
+    .locals 6
 
-    iget-wide v0, p0, Ll/E;->e:J
+    new-instance p2, Ll/e;
 
-    sub-long v2, p1, v0
+    iget-object v3, p0, Ll/e;->n:Lf5/c0;
 
-    const-wide/16 v4, 0x0
+    iget-object v4, p0, Ll/e;->o:Lf5/c0;
 
-    iget-wide v6, p0, Ll/E;->d:J
+    iget-object v1, p0, Ll/e;->l:Ljava/lang/Object;
 
-    invoke-static/range {v2 .. v7}, Lk4/a;->A(JJJ)J
+    iget-object v2, p0, Ll/e;->m:Ll/c;
 
-    move-result-wide p1
+    move-object v0, p2
 
-    iget p5, p0, Ll/E;->a:I
+    move-object v5, p1
 
-    const/high16 v0, 0x3f800000    # 1.0f
+    invoke-direct/range {v0 .. v5}, Ll/e;-><init>(Ljava/lang/Object;Ll/c;Lf5/c0;Lf5/c0;Ly9/d;)V
 
-    if-nez p5, :cond_0
+    return-object p2
+.end method
 
-    move p1, v0
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
+
+    sget-object v0, Lz9/a;->g:Lz9/a;
+
+    iget v1, p0, Ll/e;->k:I
+
+    iget-object v2, p0, Ll/e;->m:Ll/c;
+
+    const/4 v3, 0x1
+
+    if-eqz v1, :cond_1
+
+    if-ne v1, v3, :cond_0
+
+    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
 
     goto :goto_0
 
     :cond_0
-    long-to-float p1, p1
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    iget-wide v1, p0, Ll/E;->d:J
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    long-to-float p2, v1
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    div-float/2addr p1, p2
-
-    :goto_0
-    const/4 p2, 0x0
-
-    cmpg-float p5, p1, p2
-
-    if-gez p5, :cond_1
-
-    move p1, p2
+    throw p1
 
     :cond_1
-    cmpl-float p2, p1, v0
+    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
 
-    if-lez p2, :cond_2
+    iget-object p1, v2, Ll/c;->e:Lf5/j0;
 
-    goto :goto_1
+    invoke-virtual {p1}, Lf5/j0;->getValue()Ljava/lang/Object;
 
-    :cond_2
-    move v0, p1
+    move-result-object p1
 
-    :goto_1
-    iget-object p1, p0, Ll/E;->c:Ll/z;
+    iget-object v1, p0, Ll/e;->l:Ljava/lang/Object;
 
-    invoke-interface {p1, v0}, Ll/z;->a(F)F
+    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
-    sget-object p2, Ll/D0;->a:Ll/C0;
+    if-nez p1, :cond_3
 
-    const/4 p2, 0x1
+    sget-object p1, Ll/g;->a:Ll/g0;
 
-    int-to-float p2, p2
+    iget-object p1, p0, Ll/e;->n:Lf5/c0;
 
-    sub-float/2addr p2, p1
+    invoke-interface {p1}, Lf5/W10;->getValue()Ljava/lang/Object;
 
-    mul-float/2addr p2, p3
+    move-result-object p1
 
-    mul-float/2addr p4, p1
+    check-cast p1, Ll/l;
 
-    add-float/2addr p4, p2
+    iput v3, p0, Ll/e;->k:I
 
-    return p4
+    invoke-static {v2, v1, p1, p0}, Ll/c;->c(Ll/c;Ljava/lang/Object;Ll/l;La4/i;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v0, :cond_2
+
+    return-object v0
+
+    :cond_2
+    :goto_0
+    sget-object p1, Ll/g;->a:Ll/g0;
+
+    iget-object p1, p0, Ll/e;->o:Lf5/c0;
+
+    invoke-interface {p1}, Lf5/W10;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lh4/c;
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {v2}, Ll/c;->d()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-interface {p1, v0}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_3
+    sget-object p1, Lu9/y;->a:Lu9/y;
+
+    return-object p1
 .end method
 
-.method public final c(JFFF)F
-    .locals 13
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    move-object v6, p0
+    check-cast p1, Ls4/x;
 
-    iget-wide v0, v6, Ll/E;->e:J
+    check-cast p2, Ly9/d;
 
-    sub-long v7, p1, v0
+    invoke-virtual {p0, p2, p1}, Ll/e;->d(Ly9/d;Ljava/lang/Object;)Ly9/d;
 
-    const-wide/16 v9, 0x0
+    move-result-object p1
 
-    iget-wide v11, v6, Ll/E;->d:J
+    check-cast p1, Ll/e;
 
-    invoke-static/range {v7 .. v12}, Lk4/a;->A(JJJ)J
+    sget-object p2, Lu9/y;->a:Lu9/y;
 
-    move-result-wide v7
+    invoke-virtual {p1, p2}, Ll/e;->f(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-wide/16 v0, 0x0
+    move-result-object p1
 
-    cmp-long v0, v7, v0
-
-    if-gez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    :cond_0
-    if-nez v0, :cond_1
-
-    return p5
-
-    :cond_1
-    const-wide/32 v0, 0xf4240
-
-    sub-long v1, v7, v0
-
-    move-object v0, p0
-
-    move/from16 v3, p3
-
-    move/from16 v4, p4
-
-    move/from16 v5, p5
-
-    invoke-virtual/range {v0 .. v5}, Ll/E;->b(JFFF)F
-
-    move-result v9
-
-    move-wide v1, v7
-
-    invoke-virtual/range {v0 .. v5}, Ll/E;->b(JFFF)F
-
-    move-result v0
-
-    sub-float/2addr v0, v9
-
-    const/high16 v1, 0x447a0000    # 1000.0f
-
-    mul-float/2addr v0, v1
-
-    return v0
-.end method
-
-.method public final d(FFF)J
-    .locals 2
-
-    iget p1, p0, Ll/E;->b:I
-
-    iget p2, p0, Ll/E;->a:I
-
-    add-int/2addr p1, p2
-
-    int-to-long p1, p1
-
-    const-wide/32 v0, 0xf4240
-
-    mul-long/2addr p1, v0
-
-    return-wide p1
+    return-object p1
 .end method

@@ -1,146 +1,112 @@
-.class public final Lz2/J;
+.class public final synthetic Lz2/j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lz2/L;
-
-
-# static fields
-.field public static final i:Ljava/lang/Object;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public volatile g:Lz2/K;
+.field public final synthetic g:I
 
-.field public volatile h:Ljava/lang/Object;
+.field public final synthetic h:Lv8/h;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(Lv8/h;I)V
+    .locals 0
 
-    new-instance v0, Ljava/lang/Object;
+    iput p2, p0, Lz2/j;->g:I
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lz2/j;->h:Lv8/h;
 
-    sput-object v0, Lz2/J;->i:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static b(Lz2/K;)Lz2/J;
-    .locals 2
-
-    instance-of v0, p0, Lz2/J;
-
-    if-eqz v0, :cond_0
-
-    check-cast p0, Lz2/J;
-
-    return-object p0
-
-    :cond_0
-    new-instance v0, Lz2/J;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sget-object v1, Lz2/J;->i:Ljava/lang/Object;
-
-    iput-object v1, v0, Lz2/J;->h:Ljava/lang/Object;
-
-    iput-object p0, v0, Lz2/J;->g:Lz2/K;
-
-    return-object v0
-.end method
-
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 5
+.method public final run()V
+    .locals 3
 
-    const-string v0, "Scoped provider was invoked recursively returning different results: "
+    iget v0, p0, Lz2/j;->g:I
 
-    iget-object v1, p0, Lz2/J;->h:Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
-    sget-object v2, Lz2/J;->i:Ljava/lang/Object;
+    new-instance v0, Lz2/N1;
 
-    if-ne v1, v2, :cond_3
+    const/4 v1, 0x3
 
-    monitor-enter p0
+    const-string v2, "Privacy options form is being loading. Please try again later."
 
-    :try_start_0
-    iget-object v1, p0, Lz2/J;->h:Ljava/lang/Object;
+    invoke-direct {v0, v2, v1}, Lz2/N1;-><init>(Ljava/lang/String;I)V
 
-    if-ne v1, v2, :cond_2
+    invoke-virtual {v0}, Lz2/N1;->a()Li8/i;
 
-    iget-object v1, p0, Lz2/J;->g:Lz2/K;
+    iget-object v0, p0, Lz2/j;->h:Lv8/h;
 
-    invoke-interface {v1}, Lz2/L;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Lv8/h;->a()V
 
-    move-result-object v1
+    return-void
 
-    iget-object v3, p0, Lz2/J;->h:Ljava/lang/Object;
+    :pswitch_0
+    new-instance v0, Lz2/N1;
 
-    if-eq v3, v2, :cond_1
+    const/4 v1, 0x3
 
-    if-ne v3, v1, :cond_0
+    const-string v2, "Privacy options form is not required."
 
-    goto :goto_0
+    invoke-direct {v0, v2, v1}, Lz2/N1;-><init>(Ljava/lang/String;I)V
 
-    :cond_0
-    new-instance v2, Ljava/lang/IllegalStateException;
+    invoke-virtual {v0}, Lz2/N1;->a()Li8/i;
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lz2/j;->h:Lv8/h;
 
-    invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0}, Lv8/h;->a()V
 
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    return-void
 
-    const-string v0, " & "
+    :pswitch_1
+    new-instance v0, Lz2/N1;
 
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v1, 0x3
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "No valid response received yet."
 
-    const-string v0, ". This is likely due to a circular dependency."
+    invoke-direct {v0, v2, v1}, Lz2/N1;-><init>(Ljava/lang/String;I)V
 
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Lz2/N1;->a()Li8/i;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v0, p0, Lz2/j;->h:Lv8/h;
 
-    move-result-object v0
+    invoke-virtual {v0}, Lv8/h;->a()V
 
-    invoke-direct {v2, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    return-void
 
-    throw v2
+    :pswitch_2
+    new-instance v0, Lz2/N1;
 
-    :catchall_0
-    move-exception v0
+    const/4 v1, 0x1
 
-    goto :goto_1
+    const-string v2, "No consentInformation."
 
-    :cond_1
-    :goto_0
-    iput-object v1, p0, Lz2/J;->h:Ljava/lang/Object;
+    invoke-direct {v0, v2, v1}, Lz2/N1;-><init>(Ljava/lang/String;I)V
 
-    const/4 v0, 0x0
+    invoke-virtual {v0}, Lz2/N1;->a()Li8/i;
 
-    iput-object v0, p0, Lz2/J;->g:Lz2/K;
+    iget-object v0, p0, Lz2/j;->h:Lv8/h;
 
-    :cond_2
-    monitor-exit p0
+    invoke-virtual {v0}, Lv8/h;->a()V
 
-    goto :goto_2
+    return-void
 
-    :goto_1
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    nop
 
-    throw v0
-
-    :cond_3
-    :goto_2
-    return-object v1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

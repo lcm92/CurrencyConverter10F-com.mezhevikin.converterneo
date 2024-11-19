@@ -9,7 +9,7 @@
 # instance fields
 .field public final g:Ls3/y;
 
-.field public final h:Ls3/K;
+.field public final h:Ls3/K1;
 
 .field public final i:Lh9/g;
 
@@ -26,13 +26,13 @@
 
     iput-object v0, p0, Lj3/u;->g:Ls3/y;
 
-    iget-object v0, p1, Lo3/d;->a:Ls3/G;
+    iget-object v0, p1, Lo3/d;->a:Ls3/G1;
 
-    invoke-virtual {v0}, Ls3/G;->b()Ls3/K;
+    invoke-virtual {v0}, Ls3/G1;->b()Ls3/K1;
 
     move-result-object v0
 
-    iput-object v0, p0, Lj3/u;->h:Ls3/K;
+    iput-object v0, p0, Lj3/u;->h:Ls3/K1;
 
     iget-object v0, p1, Lo3/d;->f:Lh9/g;
 
@@ -75,10 +75,10 @@
     throw v0
 .end method
 
-.method public final g()Ls3/K;
+.method public final g()Ls3/K1;
     .locals 1
 
-    iget-object v0, p0, Lj3/u;->h:Ls3/K;
+    iget-object v0, p0, Lj3/u;->h:Ls3/K1;
 
     return-object v0
 .end method

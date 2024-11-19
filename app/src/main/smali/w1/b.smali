@@ -180,7 +180,7 @@
 
     const-string v3, "WorkerWrapper interrupted for "
 
-    invoke-static {v3, p0}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, p0}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -199,7 +199,7 @@
 
     const-string v2, "WorkerWrapper could not be found for "
 
-    invoke-static {v2, p0}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p0}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

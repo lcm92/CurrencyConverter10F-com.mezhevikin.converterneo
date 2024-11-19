@@ -1,74 +1,62 @@
-.class public final Ls/G;
-.super Li4/i;
+.class public final Ls/g;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/c;
+.implements Ls/z;
+.implements Ls/t;
+.implements Ls/L1;
 
 
-# instance fields
-.field public final synthetic h:I
+# static fields
+.field public static final g:Ls/g;
 
-.field public final synthetic i:Lo5/k;
+.field public static final synthetic h:Ls/g;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lo5/k;I)V
-    .locals 0
+.method static synthetic constructor <clinit>()V
+    .locals 1
 
-    iput p2, p0, Ls/G;->h:I
+    new-instance v0, Ls/g;
 
-    iput-object p1, p0, Ls/G;->i:Lo5/k;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, 0x1
+    sput-object v0, Ls/g;->g:Ls/g;
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    new-instance v0, Ls/g;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Ls/g;->h:Ls/g;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public a()V
+    .locals 0
 
-    iget v0, p0, Ls/G;->h:I
+    return-void
+.end method
 
-    packed-switch v0, :pswitch_data_0
+.method public b(Ljava/lang/Object;)I
+    .locals 0
 
-    check-cast p1, Ljava/util/Map;
+    const/4 p1, -0x1
 
-    new-instance v0, Ls/I;
+    return p1
+.end method
 
-    iget-object v1, p0, Ls/G;->i:Lo5/k;
+.method public cancel()V
+    .locals 0
 
-    invoke-direct {v0, v1, p1}, Ls/I;-><init>(Lo5/k;Ljava/util/Map;)V
+    return-void
+.end method
 
-    return-object v0
+.method public d(Ls/J1;)V
+    .locals 0
 
-    :pswitch_0
-    iget-object v0, p0, Ls/G;->i:Lo5/k;
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0, p1}, Lo5/k;->b(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x1
-
-    :goto_0
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    return-object p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

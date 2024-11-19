@@ -9,16 +9,16 @@
 # instance fields
 .field public final synthetic h:I
 
-.field public final synthetic i:Lb/C;
+.field public final synthetic i:Lb/C1;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lb/C;I)V
+.method public synthetic constructor <init>(Lb/C1;I)V
     .locals 0
 
     iput p2, p0, Lb/v;->h:I
 
-    iput-object p1, p0, Lb/v;->i:Lb/C;
+    iput-object p1, p0, Lb/v;->i:Lb/C1;
 
     const/4 p1, 0x1
 
@@ -42,13 +42,13 @@
 
     invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lb/v;->i:Lb/C;
+    iget-object v0, p0, Lb/v;->i:Lb/C1;
 
-    iget-object v1, v0, Lb/C;->c:Lb/u;
+    iget-object v1, v0, Lb/C1;->c:Lb/u;
 
     if-nez v1, :cond_2
 
-    iget-object v0, v0, Lb/C;->b:Lv9/i;
+    iget-object v0, v0, Lb/C1;->b:Lv9/i;
 
     invoke-virtual {v0}, Lv9/i;->b()I
 
@@ -102,9 +102,9 @@
 
     invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lb/v;->i:Lb/C;
+    iget-object v0, p0, Lb/v;->i:Lb/C1;
 
-    iget-object v1, v0, Lb/C;->b:Lv9/i;
+    iget-object v1, v0, Lb/C1;->b:Lv9/i;
 
     invoke-virtual {v1}, Lv9/i;->b()I
 
@@ -141,14 +141,14 @@
     :goto_1
     check-cast v2, Lb/u;
 
-    iget-object v1, v0, Lb/C;->c:Lb/u;
+    iget-object v1, v0, Lb/C1;->c:Lb/u;
 
     if-eqz v1, :cond_6
 
-    invoke-virtual {v0}, Lb/C;->b()V
+    invoke-virtual {v0}, Lb/C1;->b()V
 
     :cond_6
-    iput-object v2, v0, Lb/C;->c:Lb/u;
+    iput-object v2, v0, Lb/C1;->c:Lb/u;
 
     if-eqz v2, :cond_7
 

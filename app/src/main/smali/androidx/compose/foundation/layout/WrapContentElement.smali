@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/WrapContentElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -121,7 +121,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/layout/WrapContentElement;->b:Z
 
-    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
 
     move-result v0
 

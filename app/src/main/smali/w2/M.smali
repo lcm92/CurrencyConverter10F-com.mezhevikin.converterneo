@@ -1,105 +1,97 @@
-.class public final Lw2/M;
-.super Lp2/a;
+.class public abstract Lw2/m;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lw2/M;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final a:La5/l;
 
+.field public static final b:La5/l;
 
-# instance fields
-.field public final g:I
+.field public static final c:La5/l;
 
-.field public final h:I
+.field public static final d:La5/l;
 
-.field public final i:Ljava/lang/String;
+.field public static final e:La5/l;
 
-.field public final j:I
+.field public static final f:La5/l;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 4
 
-    new-instance v0, La8/h;
+    new-instance v0, La5/l;
 
-    const/16 v1, 0x17
+    const-wide/16 v1, 0x2710
 
-    invoke-direct {v0, v1}, La8/h;-><init>(I)V
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    sput-object v0, Lw2/M;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method public constructor <init>(IILjava/lang/String;I)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput p1, p0, Lw2/M;->g:I
-
-    iput p2, p0, Lw2/M;->h:I
-
-    iput-object p3, p0, Lw2/M;->i:Ljava/lang/String;
-
-    iput p4, p0, Lw2/M;->j:I
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 3
-
-    const/16 p2, 0x4f45
-
-    invoke-static {p1, p2}, Lp2/c;->w(Landroid/os/Parcel;I)I
-
-    move-result p2
-
-    const/4 v0, 0x1
-
-    const/4 v1, 0x4
-
-    invoke-static {p1, v0, v1}, Lp2/c;->y(Landroid/os/Parcel;II)V
-
-    iget v0, p0, Lw2/M;->h:I
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
-
-    iget-object v0, p0, Lw2/M;->i:Ljava/lang/String;
+    move-result-object v1
 
     const/4 v2, 0x2
 
-    invoke-static {p1, v2, v0}, Lp2/c;->t(Landroid/os/Parcel;ILjava/lang/String;)V
+    const-string v3, "gads:dynamite_load:fail:sample_rate"
 
-    const/4 v0, 0x3
+    invoke-direct {v0, v3, v1, v2}, La5/l;-><init>(Ljava/lang/String;Ljava/lang/Object;I)V
 
-    invoke-static {p1, v0, v1}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    sput-object v0, Lw2/m;->a:La5/l;
 
-    iget v0, p0, Lw2/M;->j:I
+    new-instance v0, La5/l;
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    const-string v1, "gads:public_beta:traffic_multiplier"
 
-    const/16 v0, 0x3e8
+    const-string v2, "1.0"
 
-    invoke-static {p1, v0, v1}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    const/4 v3, 0x4
 
-    iget v0, p0, Lw2/M;->g:I
+    invoke-direct {v0, v1, v2, v3}, La5/l;-><init>(Ljava/lang/String;Ljava/lang/Object;I)V
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    sput-object v0, Lw2/m;->b:La5/l;
 
-    invoke-static {p1, p2}, Lp2/c;->x(Landroid/os/Parcel;I)V
+    new-instance v0, La5/l;
+
+    const-string v1, "gads:sdk_crash_report_class_prefix"
+
+    const-string v2, "com.google."
+
+    invoke-direct {v0, v1, v2, v3}, La5/l;-><init>(Ljava/lang/String;Ljava/lang/Object;I)V
+
+    sput-object v0, Lw2/m;->c:La5/l;
+
+    const-string v0, "gads:sdk_crash_report_enabled"
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+
+    move-result-object v0
+
+    sput-object v0, Lw2/m;->d:La5/l;
+
+    const-string v0, "gads:sdk_crash_report_full_stacktrace"
+
+    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+
+    move-result-object v0
+
+    sput-object v0, Lw2/m;->e:La5/l;
+
+    new-instance v0, La5/l;
+
+    const-wide v1, 0x3f847ae147ae147bL    # 0.01
+
+    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object v1
+
+    const/4 v2, 0x3
+
+    const-string v3, "gads:trapped_exception_sample_rate"
+
+    invoke-direct {v0, v3, v1, v2}, La5/l;-><init>(Ljava/lang/String;Ljava/lang/Object;I)V
+
+    sput-object v0, Lw2/m;->f:La5/l;
 
     return-void
 .end method

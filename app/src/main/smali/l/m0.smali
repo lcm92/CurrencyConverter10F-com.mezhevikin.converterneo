@@ -679,17 +679,17 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p1, Ll/d0;->t:Ll/S;
+    iget-object v0, p1, Ll/d0;->t:Ll/S1;
 
     if-eqz v0, :cond_2
 
-    iput-wide v2, v0, Ll/S;->g:J
+    iput-wide v2, v0, Ll/S1;->g:J
 
-    iget-object v1, v0, Ll/S;->b:Ll/G0;
+    iget-object v1, v0, Ll/S1;->b:Ll/G0;
 
     if-nez v1, :cond_3
 
-    iget-object v1, v0, Ll/S;->e:Ll/n;
+    iget-object v1, v0, Ll/S1;->e:Ll/n;
 
     const/4 v2, 0x0
 
@@ -713,7 +713,7 @@
 
     move-result-wide v1
 
-    iput-wide v1, v0, Ll/S;->h:J
+    iput-wide v1, v0, Ll/S1;->h:J
 
     goto :goto_1
 

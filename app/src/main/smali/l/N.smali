@@ -1,85 +1,137 @@
-.class public final Ll/N;
-.super Lh9/r;
+.class public final Ll/n;
+.super Ll/r;
 .source "SourceFile"
 
 
 # instance fields
-.field public final h:Lf5/j0;
-
-.field public final i:Lf5/j0;
+.field public a:F
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
-    .locals 2
+.method public constructor <init>(F)V
+    .locals 0
 
-    const/4 v0, 0x2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v1, 0x0
-
-    invoke-direct {p0, v0, v1}, Lh9/r;-><init>(IZ)V
-
-    sget-object v0, Lf5/W1;->l:Lf5/W1;
-
-    invoke-static {p1, v0}, Lf5/d;->J(Ljava/lang/Object;Lf5/M10;)Lf5/j0;
-
-    move-result-object v1
-
-    iput-object v1, p0, Ll/N;->h:Lf5/j0;
-
-    invoke-static {p1, v0}, Lf5/d;->J(Ljava/lang/Object;Lf5/M10;)Lf5/j0;
-
-    move-result-object p1
-
-    iput-object p1, p0, Ll/N;->i:Lf5/j0;
+    iput p1, p0, Ll/n;->a:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final h()Ljava/lang/Object;
+.method public final a(I)F
+    .locals 0
+
+    if-nez p1, :cond_0
+
+    iget p1, p0, Ll/n;->a:F
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final b()I
     .locals 1
 
-    iget-object v0, p0, Ll/N;->h:Lf5/j0;
+    const/4 v0, 0x1
 
-    invoke-virtual {v0}, Lf5/j0;->getValue()Ljava/lang/Object;
+    return v0
+.end method
 
-    move-result-object v0
+.method public final c()Ll/r;
+    .locals 2
+
+    new-instance v0, Ll/n;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Ll/n;-><init>(F)V
 
     return-object v0
 .end method
 
-.method public final i()Ljava/lang/Object;
+.method public final d()V
     .locals 1
 
-    iget-object v0, p0, Ll/N;->i:Lf5/j0;
+    const/4 v0, 0x0
 
-    invoke-virtual {v0}, Lf5/j0;->getValue()Ljava/lang/Object;
+    iput v0, p0, Ll/n;->a:F
+
+    return-void
+.end method
+
+.method public final e(FI)V
+    .locals 0
+
+    if-nez p2, :cond_0
+
+    iput p1, p0, Ll/n;->a:F
+
+    :cond_0
+    return-void
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    instance-of v0, p1, Ll/n;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Ll/n;
+
+    iget p1, p1, Ll/n;->a:F
+
+    iget v0, p0, Ll/n;->a:F
+
+    cmpg-float p1, p1, v0
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget v0, p0, Ll/n;->a:F
+
+    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "AnimationVector1D: value = "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v1, p0, Ll/n;->a:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public final k(Ljava/lang/Object;)V
-    .locals 1
-
-    iget-object v0, p0, Ll/N;->h:Lf5/j0;
-
-    invoke-virtual {v0, p1}, Lf5/j0;->setValue(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final l(Ll/v0;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final m()V
-    .locals 0
-
-    return-void
 .end method

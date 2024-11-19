@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/C;
+.implements Ls4/C1;
 
 
 # static fields
@@ -15,7 +15,7 @@
 
 .field public final j:I
 
-.field public final synthetic k:Ls4/C;
+.field public final synthetic k:Ls4/C1;
 
 .field public final l:Lx4/j;
 
@@ -50,11 +50,11 @@
 
     iput p2, p0, Lx4/h;->j:I
 
-    instance-of p2, p1, Ls4/C;
+    instance-of p2, p1, Ls4/C1;
 
     if-eqz p2, :cond_0
 
-    check-cast p1, Ls4/C;
+    check-cast p1, Ls4/C1;
 
     goto :goto_0
 
@@ -64,10 +64,10 @@
     :goto_0
     if-nez p1, :cond_1
 
-    sget-object p1, Ls4/A;->a:Ls4/C;
+    sget-object p1, Ls4/A1;->a:Ls4/C1;
 
     :cond_1
-    iput-object p1, p0, Lx4/h;->k:Ls4/C;
+    iput-object p1, p0, Lx4/h;->k:Ls4/C1;
 
     new-instance p1, Lx4/j;
 
@@ -195,19 +195,19 @@
 .method public final b(JLs4/f;)V
     .locals 1
 
-    iget-object v0, p0, Lx4/h;->k:Ls4/C;
+    iget-object v0, p0, Lx4/h;->k:Ls4/C1;
 
-    invoke-interface {v0, p1, p2, p3}, Ls4/C;->b(JLs4/f;)V
+    invoke-interface {v0, p1, p2, p3}, Ls4/C1;->b(JLs4/f;)V
 
     return-void
 .end method
 
-.method public final g(JLs4/r0;Ly9/i;)Ls4/G;
+.method public final g(JLs4/r0;Ly9/i;)Ls4/G1;
     .locals 1
 
-    iget-object v0, p0, Lx4/h;->k:Ls4/C;
+    iget-object v0, p0, Lx4/h;->k:Ls4/C1;
 
-    invoke-interface {v0, p1, p2, p3, p4}, Ls4/C;->g(JLs4/r0;Ly9/i;)Ls4/G;
+    invoke-interface {v0, p1, p2, p3, p4}, Ls4/C1;->g(JLs4/r0;Ly9/i;)Ls4/G1;
 
     move-result-object p1
 

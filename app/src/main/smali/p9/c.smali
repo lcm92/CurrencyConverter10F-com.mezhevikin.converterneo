@@ -1037,7 +1037,7 @@
 
     const-string v1, ", app = "
 
-    invoke-static {v3, v4, v0, v1}, Lk/P;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v4, v0, v1}, Lk/P1;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

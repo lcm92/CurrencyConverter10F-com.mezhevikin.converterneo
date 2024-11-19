@@ -11,13 +11,13 @@
 
 .field public final synthetic i:La0/g;
 
-.field public final synthetic j:Ll/G;
+.field public final synthetic j:Ll/G1;
 
-.field public final synthetic k:Ll/G;
+.field public final synthetic k:Ll/G1;
 
-.field public final synthetic l:Ll/G;
+.field public final synthetic l:Ll/G1;
 
-.field public final synthetic m:Ll/G;
+.field public final synthetic m:Ll/G1;
 
 .field public final synthetic n:F
 
@@ -25,20 +25,20 @@
 
 
 # direct methods
-.method public constructor <init>(JLa0/g;Ll/G;Ll/G;Ll/G;Ll/G;FJ)V
+.method public constructor <init>(JLa0/g;Ll/G1;Ll/G1;Ll/G1;Ll/G1;FJ)V
     .locals 0
 
     iput-wide p1, p0, Lc5/I1;->h:J
 
     iput-object p3, p0, Lc5/I1;->i:La0/g;
 
-    iput-object p4, p0, Lc5/I1;->j:Ll/G;
+    iput-object p4, p0, Lc5/I1;->j:Ll/G1;
 
-    iput-object p5, p0, Lc5/I1;->k:Ll/G;
+    iput-object p5, p0, Lc5/I1;->k:Ll/G1;
 
-    iput-object p6, p0, Lc5/I1;->l:Ll/G;
+    iput-object p6, p0, Lc5/I1;->l:Ll/G1;
 
-    iput-object p7, p0, Lc5/I1;->m:Ll/G;
+    iput-object p7, p0, Lc5/I1;->m:Ll/G1;
 
     iput p8, p0, Lc5/I1;->n:F
 
@@ -72,9 +72,9 @@
 
     invoke-static/range {v0 .. v5}, Lc5/N1;->b(La0/d;FFJLa0/g;)V
 
-    iget-object v0, p0, Lc5/I1;->j:Ll/G;
+    iget-object v0, p0, Lc5/I1;->j:Ll/G1;
 
-    iget-object v0, v0, Ll/G;->j:Lf5/j0;
+    iget-object v0, v0, Ll/G1;->j:Lf5/j0;
 
     invoke-virtual {v0}, Lf5/j0;->getValue()Ljava/lang/Object;
 
@@ -94,9 +94,9 @@
 
     rem-float/2addr v0, v1
 
-    iget-object v1, p0, Lc5/I1;->k:Ll/G;
+    iget-object v1, p0, Lc5/I1;->k:Ll/G1;
 
-    iget-object v1, v1, Ll/G;->j:Lf5/j0;
+    iget-object v1, v1, Ll/G1;->j:Lf5/j0;
 
     invoke-virtual {v1}, Lf5/j0;->getValue()Ljava/lang/Object;
 
@@ -108,9 +108,9 @@
 
     move-result v1
 
-    iget-object v2, p0, Lc5/I1;->l:Ll/G;
+    iget-object v2, p0, Lc5/I1;->l:Ll/G1;
 
-    iget-object v3, v2, Ll/G;->j:Lf5/j0;
+    iget-object v3, v2, Ll/G1;->j:Lf5/j0;
 
     invoke-virtual {v3}, Lf5/j0;->getValue()Ljava/lang/Object;
 
@@ -132,9 +132,9 @@
 
     add-float/2addr v0, v3
 
-    iget-object v3, p0, Lc5/I1;->m:Ll/G;
+    iget-object v3, p0, Lc5/I1;->m:Ll/G1;
 
-    iget-object v3, v3, Ll/G;->j:Lf5/j0;
+    iget-object v3, v3, Ll/G1;->j:Lf5/j0;
 
     invoke-virtual {v3}, Lf5/j0;->getValue()Ljava/lang/Object;
 
@@ -148,7 +148,7 @@
 
     add-float/2addr v3, v0
 
-    iget-object v0, v2, Ll/G;->j:Lf5/j0;
+    iget-object v0, v2, Ll/G1;->j:Lf5/j0;
 
     invoke-virtual {v0}, Lf5/j0;->getValue()Ljava/lang/Object;
 

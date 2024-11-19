@@ -1,25 +1,21 @@
-.class public abstract Lo0/L;
+.class public final Lo0/l;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lf5/y;
+# instance fields
+.field public final a:Li4/f;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lh4/e;)V
+    .locals 0
 
-    sget-object v0, Lo0/e;->j:Lo0/e;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sget-object v1, Lf5/W1;->l:Lf5/W1;
+    check-cast p1, Li4/f;
 
-    new-instance v2, Lf5/y;
-
-    invoke-direct {v2, v1, v0}, Lf5/y;-><init>(Lf5/M10;Lh4/a;)V
-
-    sput-object v2, Lo0/L;->a:Lf5/y;
+    iput-object p1, p0, Lo0/l;->a:Li4/f;
 
     return-void
 .end method

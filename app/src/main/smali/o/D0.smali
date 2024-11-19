@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic k:Lo/S;
+.field public final synthetic k:Lo/S1;
 
 
 # direct methods
-.method public constructor <init>(Lo/S;Ly9/d;)V
+.method public constructor <init>(Lo/S1;Ly9/d;)V
     .locals 0
 
-    iput-object p1, p0, Lo/D0;->k:Lo/S;
+    iput-object p1, p0, Lo/D0;->k:Lo/S1;
 
     const/4 p1, 0x2
 
@@ -30,9 +30,9 @@
 
     new-instance p2, Lo/D0;
 
-    iget-object v0, p0, Lo/D0;->k:Lo/S;
+    iget-object v0, p0, Lo/D0;->k:Lo/S1;
 
-    invoke-direct {p2, v0, p1}, Lo/D0;-><init>(Lo/S;Ly9/d;)V
+    invoke-direct {p2, v0, p1}, Lo/D0;-><init>(Lo/S1;Ly9/d;)V
 
     return-object p2
 .end method
@@ -42,15 +42,15 @@
 
     invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
 
-    iget-object p1, p0, Lo/D0;->k:Lo/S;
+    iget-object p1, p0, Lo/D0;->k:Lo/S1;
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lo/S;->h:Z
+    iput-boolean v0, p1, Lo/S1;->h:Z
 
     const/4 v0, 0x0
 
-    iget-object p1, p1, Lo/S;->j:Laa/d;
+    iget-object p1, p1, Lo/S1;->j:Laa/d;
 
     invoke-virtual {p1, v0}, Laa/d;->e(Ljava/lang/Object;)V
 

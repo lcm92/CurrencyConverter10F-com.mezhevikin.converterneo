@@ -1,113 +1,97 @@
-.class public final Lw2/K;
+.class public abstract Lw2/k;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lg2/b;
-.implements Lw2/z0;
-.implements Lz2/K;
-.implements Lo8/d;
 
+# static fields
+.field public static final a:La5/l;
 
-# instance fields
-.field public final synthetic g:I
+.field public static final b:La5/l;
+
+.field public static final c:La5/l;
+
+.field public static final d:La5/l;
+
+.field public static final e:La5/l;
+
+.field public static final f:La5/l;
+
+.field public static final g:La5/l;
+
+.field public static final h:La5/l;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
-    .line 1
-    iput p1, p0, Lw2/K;->g:I
+    const-string v0, "gads:init:init_on_bg_thread"
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x1
 
-    return-void
-.end method
-
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
-    .locals 0
-
-    .line 2
-    iput p1, p0, Lw2/K;->g:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a()Ljava/lang/Object;
-    .locals 2
-
-    iget v0, p0, Lw2/K;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    sget-object v0, Lz2/w;->b:Lz2/v;
-
-    invoke-static {v0}, Lz2/x;->c(Ljava/lang/Object;)V
-
-    new-instance v1, Lz2/M;
-
-    invoke-direct {v1, v0}, Lz2/M;-><init>(Lz2/v;)V
-
-    return-object v1
-
-    :pswitch_0
-    new-instance v0, Lz2/a;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    return-object v0
-
-    :pswitch_data_0
-    .packed-switch 0x5
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public b(Li8/i;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public c(Ljava/lang/Exception;Ljava/lang/String;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public d(Ljava/lang/Throwable;Ljava/lang/String;F)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 1
-
-    iget v0, p0, Lw2/K;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
 
     move-result-object v0
 
-    return-object v0
+    sput-object v0, Lw2/k;->a:La5/l;
 
-    :pswitch_0
-    const-string v0, "REMOVE_FROZEN"
+    const-string v0, "gads:init:init_on_single_bg_thread"
 
-    return-object v0
+    const/4 v2, 0x0
 
-    nop
+    invoke-static {v0, v2}, La5/l;->e(Ljava/lang/String;Z)La5/l;
 
-    :pswitch_data_0
-    .packed-switch 0x4
-        :pswitch_0
-    .end packed-switch
+    move-result-object v0
+
+    sput-object v0, Lw2/k;->b:La5/l;
+
+    const-string v0, "gads:adloader_load_bg_thread"
+
+    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+
+    move-result-object v0
+
+    sput-object v0, Lw2/k;->c:La5/l;
+
+    const-string v0, "gads:banner_destroy_bg_thread"
+
+    invoke-static {v0, v2}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+
+    move-result-object v0
+
+    sput-object v0, Lw2/k;->d:La5/l;
+
+    const-string v0, "gads:banner_load_bg_thread"
+
+    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+
+    move-result-object v0
+
+    sput-object v0, Lw2/k;->e:La5/l;
+
+    const-string v0, "gads:banner_pause_bg_thread"
+
+    invoke-static {v0, v2}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+
+    move-result-object v0
+
+    sput-object v0, Lw2/k;->f:La5/l;
+
+    const-string v0, "gads:banner_resume_bg_thread"
+
+    invoke-static {v0, v2}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+
+    move-result-object v0
+
+    sput-object v0, Lw2/k;->g:La5/l;
+
+    const-string v0, "gads:interstitial_load_on_bg_thread"
+
+    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+
+    move-result-object v0
+
+    sput-object v0, Lw2/k;->h:La5/l;
+
+    return-void
 .end method

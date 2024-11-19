@@ -109,9 +109,9 @@
 
     :cond_2
     :goto_0
-    iget-object p1, v4, Lb5/d;->D:Li/A;
+    iget-object p1, v4, Lb5/d;->D:Li/A1;
 
-    invoke-virtual {p1, v2}, Li/A;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Li/A1;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-static {v4}, Lq0/f;->n(Lq0/o;)V
 
@@ -120,9 +120,9 @@
     return-object p1
 
     :goto_1
-    iget-object v0, v4, Lb5/d;->D:Li/A;
+    iget-object v0, v4, Lb5/d;->D:Li/A1;
 
-    invoke-virtual {v0, v2}, Li/A;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Li/A1;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-static {v4}, Lq0/f;->n(Lq0/o;)V
 

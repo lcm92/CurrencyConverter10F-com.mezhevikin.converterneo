@@ -27,7 +27,7 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    sget-object v0, Ls4/F;->c:Lz4/c;
+    sget-object v0, Ls4/F1;->c:Lz4/c;
 
     invoke-static {v0}, Ls4/y;->b(Ly9/i;)Lx4/d;
 
@@ -192,7 +192,7 @@
 
     sget-object v0, Lv8/o;->d:Lx4/d;
 
-    invoke-static {v0, v1, p1, p2, p0}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v0, v1, p1, p2, p0}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     return-void
 .end method
@@ -587,9 +587,9 @@
 
     invoke-direct {v3}, Lo3/d;-><init>()V
 
-    iget-object v4, v3, Lo3/d;->a:Ls3/G;
+    iget-object v4, v3, Lo3/d;->a:Ls3/G1;
 
-    invoke-static {v4, v0}, Ls3/H;->b(Ls3/G;Ljava/lang/String;)V
+    invoke-static {v4, v0}, Ls3/H1;->b(Ls3/G1;Ljava/lang/String;)V
 
     sget-object v0, Ls3/y;->b:Ls3/y;
 

@@ -2931,7 +2931,7 @@
 
     aget-object v0, v0, v13
 
-    invoke-static {v0}, Lk/P;->i(Ljava/lang/Object;)V
+    invoke-static {v0}, Lk/P1;->i(Ljava/lang/Object;)V
 
     const/4 v0, 0x0
 
@@ -4590,7 +4590,7 @@
 
     check-cast v0, Lcom/google/android/gms/internal/play_billing/w1;
 
-    invoke-static {v1}, Lk/P;->i(Ljava/lang/Object;)V
+    invoke-static {v1}, Lk/P1;->i(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Ljava/util/AbstractMap;->isEmpty()Z
 
@@ -6999,7 +6999,7 @@
 
     aget-object v0, v0, v11
 
-    invoke-static {v0}, Lk/P;->i(Ljava/lang/Object;)V
+    invoke-static {v0}, Lk/P1;->i(Ljava/lang/Object;)V
 
     const/4 v0, 0x0
 
@@ -12283,7 +12283,7 @@
     invoke-virtual {v1, v7, v5, v6, v4}, Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V
 
     :cond_6c
-    invoke-static {v2}, Lk/P;->i(Ljava/lang/Object;)V
+    invoke-static {v2}, Lk/P1;->i(Ljava/lang/Object;)V
 
     throw v21
 
@@ -13369,7 +13369,7 @@
 
     aget-object v1, v23, v2
 
-    invoke-static {v1}, Lk/P;->i(Ljava/lang/Object;)V
+    invoke-static {v1}, Lk/P1;->i(Ljava/lang/Object;)V
 
     throw v21
 

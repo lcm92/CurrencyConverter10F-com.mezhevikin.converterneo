@@ -30,9 +30,9 @@
 
     packed-switch v0, :pswitch_data_0
 
-    sget-object v0, Lr0/D;->i:Lr0/D;
+    sget-object v0, Lr0/D1;->i:Lr0/D1;
 
-    invoke-virtual {v0, p1, p2}, Lr0/D;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Lr0/D1;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -45,31 +45,31 @@
     return p1
 
     :pswitch_0
-    check-cast p1, Lq0/D;
+    check-cast p1, Lq0/D1;
 
-    check-cast p2, Lq0/D;
+    check-cast p2, Lq0/D1;
 
-    iget-object v0, p1, Lq0/D;->C:Lq0/K;
+    iget-object v0, p1, Lq0/D1;->C:Lq0/K1;
 
-    iget-object v0, v0, Lq0/K;->r:Lq0/J;
+    iget-object v0, v0, Lq0/K1;->r:Lq0/J1;
 
-    iget v0, v0, Lq0/J;->D:F
+    iget v0, v0, Lq0/J1;->D:F
 
-    iget-object v1, p2, Lq0/D;->C:Lq0/K;
+    iget-object v1, p2, Lq0/D1;->C:Lq0/K1;
 
-    iget-object v1, v1, Lq0/K;->r:Lq0/J;
+    iget-object v1, v1, Lq0/K1;->r:Lq0/J1;
 
-    iget v1, v1, Lq0/J;->D:F
+    iget v1, v1, Lq0/J1;->D:F
 
     cmpg-float v2, v0, v1
 
     if-nez v2, :cond_0
 
-    invoke-virtual {p1}, Lq0/D;->t()I
+    invoke-virtual {p1}, Lq0/D1;->t()I
 
     move-result p1
 
-    invoke-virtual {p2}, Lq0/D;->t()I
+    invoke-virtual {p2}, Lq0/D1;->t()I
 
     move-result p2
 

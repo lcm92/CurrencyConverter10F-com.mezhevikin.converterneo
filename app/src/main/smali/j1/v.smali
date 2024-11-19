@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lj1/H;
+.field public final a:Lj1/H1;
 
 .field public final b:Ljava/lang/String;
 
@@ -16,12 +16,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lj1/H;Ljava/lang/String;)V
+.method public constructor <init>(Lj1/H1;Ljava/lang/String;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj1/v;->a:Lj1/H;
+    iput-object p1, p0, Lj1/v;->a:Lj1/H1;
 
     iput-object p2, p0, Lj1/v;->b:Ljava/lang/String;
 
@@ -362,9 +362,9 @@
 .method public b()Lj1/u;
     .locals 1
 
-    iget-object v0, p0, Lj1/v;->a:Lj1/H;
+    iget-object v0, p0, Lj1/v;->a:Lj1/H1;
 
-    invoke-virtual {v0}, Lj1/H;->a()Lj1/u;
+    invoke-virtual {v0}, Lj1/H1;->a()Lj1/u;
 
     move-result-object v0
 

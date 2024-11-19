@@ -1,157 +1,50 @@
-.class public final Lr0/V;
+.class public final synthetic Lr0/v;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/Choreographer$FrameCallback;
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;
 
 
 # instance fields
-.field public final synthetic g:Lr0/W;
+.field public final synthetic a:Lr0/E1;
 
 
 # direct methods
-.method public constructor <init>(Lr0/W;)V
+.method public synthetic constructor <init>(Lr0/E1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lr0/V;->g:Lr0/W;
+    iput-object p1, p0, Lr0/v;->a:Lr0/E1;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final doFrame(J)V
-    .locals 5
+.method public final onAccessibilityStateChanged(Z)V
+    .locals 2
 
-    iget-object v0, p0, Lr0/V;->g:Lr0/W;
+    iget-object v0, p0, Lr0/v;->a:Lr0/E1;
 
-    iget-object v0, v0, Lr0/W;->j:Landroid/os/Handler;
+    if-eqz p1, :cond_0
 
-    invoke-virtual {v0, p0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+    iget-object p1, v0, Lr0/E1;->g:Landroid/view/accessibility/AccessibilityManager;
 
-    iget-object v0, p0, Lr0/V;->g:Lr0/W;
+    const/4 v1, -0x1
 
-    invoke-static {v0}, Lr0/W;->C(Lr0/W;)V
+    invoke-virtual {p1, v1}, Landroid/view/accessibility/AccessibilityManager;->getEnabledAccessibilityServiceList(I)Ljava/util/List;
 
-    iget-object v0, p0, Lr0/V;->g:Lr0/W;
-
-    iget-object v1, v0, Lr0/W;->k:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    :try_start_0
-    iget-boolean v2, v0, Lr0/W;->p:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    if-nez v2, :cond_0
-
-    monitor-exit v1
-
-    goto :goto_1
-
-    :cond_0
-    const/4 v2, 0x0
-
-    :try_start_1
-    iput-boolean v2, v0, Lr0/W;->p:Z
-
-    iget-object v3, v0, Lr0/W;->m:Ljava/util/ArrayList;
-
-    iget-object v4, v0, Lr0/W;->n:Ljava/util/ArrayList;
-
-    iput-object v4, v0, Lr0/W;->m:Ljava/util/ArrayList;
-
-    iput-object v3, v0, Lr0/W;->n:Ljava/util/ArrayList;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    monitor-exit v1
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
-
-    move-result v0
-
-    :goto_0
-    if-ge v2, v0, :cond_1
-
-    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/view/Choreographer$FrameCallback;
-
-    invoke-interface {v1, p1, p2}, Landroid/view/Choreographer$FrameCallback;->doFrame(J)V
-
-    add-int/lit8 v2, v2, 0x1
+    move-result-object p1
 
     goto :goto_0
 
-    :cond_1
-    invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
-
-    :goto_1
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v1
-
-    throw p1
-.end method
-
-.method public final run()V
-    .locals 3
-
-    iget-object v0, p0, Lr0/V;->g:Lr0/W;
-
-    invoke-static {v0}, Lr0/W;->C(Lr0/W;)V
-
-    iget-object v0, p0, Lr0/V;->g:Lr0/W;
-
-    iget-object v1, v0, Lr0/W;->k:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    :try_start_0
-    iget-object v2, v0, Lr0/W;->m:Ljava/util/ArrayList;
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    iget-object v2, v0, Lr0/W;->i:Landroid/view/Choreographer;
-
-    invoke-virtual {v2, p0}, Landroid/view/Choreographer;->removeFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
-
-    const/4 v2, 0x0
-
-    iput-boolean v2, v0, Lr0/W;->p:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v0
-
-    goto :goto_1
-
     :cond_0
+    sget-object p1, Lv9/t;->g:Lv9/t;
+
     :goto_0
-    monitor-exit v1
+    iput-object p1, v0, Lr0/E1;->k:Ljava/util/List;
 
     return-void
-
-    :goto_1
-    monitor-exit v1
-
-    throw v0
 .end method

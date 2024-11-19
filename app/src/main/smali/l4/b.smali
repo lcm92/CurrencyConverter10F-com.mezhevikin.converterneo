@@ -36,7 +36,7 @@
     return-object v0
 
     :pswitch_0
-    new-instance v0, Lr0/W;
+    new-instance v0, Lr0/W1;
 
     invoke-static {}, Landroid/view/Choreographer;->getInstance()Landroid/view/Choreographer;
 
@@ -52,9 +52,9 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lr0/W;-><init>(Landroid/view/Choreographer;Landroid/os/Handler;)V
+    invoke-direct {v0, v1, v2}, Lr0/W1;-><init>(Landroid/view/Choreographer;Landroid/os/Handler;)V
 
-    iget-object v1, v0, Lr0/W;->r:Lf5/l0;
+    iget-object v1, v0, Lr0/W1;->r:Lf5/l0;
 
     invoke-static {v0, v1}, Lk4/a;->W(Ly9/g;Ly9/i;)Ly9/i;
 

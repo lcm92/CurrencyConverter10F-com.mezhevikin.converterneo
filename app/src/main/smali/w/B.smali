@@ -1,5 +1,5 @@
-.class public final Lw/B;
-.super La4/i;
+.class public final Lw/b;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
@@ -7,106 +7,64 @@
 
 
 # instance fields
-.field public synthetic k:Ljava/lang/Object;
+.field public final synthetic h:La5/o;
 
-.field public final synthetic l:Lk0/B;
+.field public final synthetic i:Lr5/q;
 
-.field public final synthetic m:Lw/Z;
+.field public final synthetic j:J
 
-.field public final synthetic n:La5/b0;
+.field public final synthetic k:I
 
 
 # direct methods
-.method public constructor <init>(Lk0/B;Lw/Z;La5/b0;Ly9/d;)V
+.method public constructor <init>(La5/o;Lr5/q;JI)V
     .locals 0
 
-    iput-object p1, p0, Lw/B;->l:Lk0/B;
+    iput-object p1, p0, Lw/b;->h:La5/o;
 
-    iput-object p2, p0, Lw/B;->m:Lw/Z;
+    iput-object p2, p0, Lw/b;->i:Lr5/q;
 
-    iput-object p3, p0, Lw/B;->n:La5/b0;
+    iput-wide p3, p0, Lw/b;->j:J
+
+    iput p5, p0, Lw/b;->k:I
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p4}, La4/i;-><init>(ILy9/d;)V
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Ly9/d;Ljava/lang/Object;)Ly9/d;
-    .locals 4
-
-    new-instance v0, Lw/B;
-
-    iget-object v1, p0, Lw/B;->m:Lw/Z;
-
-    iget-object v2, p0, Lw/B;->n:La5/b0;
-
-    iget-object v3, p0, Lw/B;->l:Lk0/B;
-
-    invoke-direct {v0, v3, v1, v2, p1}, Lw/B;-><init>(Lk0/B;Lw/Z;La5/b0;Ly9/d;)V
-
-    iput-object p2, v0, Lw/B;->k:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
 
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+    move-object v4, p1
 
-    iget-object p1, p0, Lw/B;->k:Ljava/lang/Object;
+    check-cast v4, Lf5/p;
 
-    check-cast p1, Ls4/x;
+    check-cast p2, Ljava/lang/Number;
 
-    new-instance v0, Lw/z;
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    iget-object v1, p0, Lw/B;->l:Lk0/B;
+    iget p1, p0, Lw/b;->k:I
 
-    iget-object v2, p0, Lw/B;->m:Lw/Z;
+    or-int/lit8 p1, p1, 0x1
 
-    const/4 v3, 0x0
+    invoke-static {p1}, Lf5/d;->T(I)I
 
-    invoke-direct {v0, v1, v2, v3}, Lw/z;-><init>(Lk0/B;Lw/Z;Ly9/d;)V
+    move-result v5
 
-    const/4 v2, 0x4
+    iget-wide v2, p0, Lw/b;->j:J
 
-    const/4 v4, 0x1
+    iget-object v0, p0, Lw/b;->h:La5/o;
 
-    invoke-static {p1, v3, v2, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    iget-object v1, p0, Lw/b;->i:Lr5/q;
 
-    new-instance v0, Lw/A;
-
-    iget-object v5, p0, Lw/B;->n:La5/b0;
-
-    invoke-direct {v0, v1, v5, v3}, Lw/A;-><init>(Lk0/B;La5/b0;Ly9/d;)V
-
-    invoke-static {p1, v3, v2, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static/range {v0 .. v5}, Lw/e;->a(La5/o;Lr5/q;JLf5/p;I)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 
     return-object p1
-.end method
-
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    check-cast p1, Ls4/x;
-
-    check-cast p2, Ly9/d;
-
-    invoke-virtual {p0, p2, p1}, Lw/B;->d(Ly9/d;Ljava/lang/Object;)Ly9/d;
-
-    move-result-object p1
-
-    check-cast p1, Lw/B;
-
-    sget-object p2, Lu9/y;->a:Lu9/y;
-
-    invoke-virtual {p1, p2}, Lw/B;->f(Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-object p2
 .end method

@@ -96,12 +96,12 @@
     return-object v0
 .end method
 
-.method public final h()Ls3/A;
+.method public final h()Ls3/A1;
     .locals 1
 
     iget-object v0, p0, Lm3/b;->i:Lp3/b;
 
-    invoke-virtual {v0}, Lp3/b;->h()Ls3/A;
+    invoke-virtual {v0}, Lp3/b;->h()Ls3/A1;
 
     move-result-object v0
 

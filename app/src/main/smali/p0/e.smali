@@ -26,14 +26,14 @@
 
     iget-object v0, v0, Lr5/p;->k:Lr5/p;
 
-    invoke-static {p0}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {p0}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object v1
 
     :goto_0
     if-eqz v1, :cond_a
 
-    iget-object v3, v1, Lq0/D;->B:Lz2/b;
+    iget-object v3, v1, Lq0/D1;->B:Lz2/b;
 
     iget-object v3, v3, Lz2/b;->l:Ljava/lang/Object;
 
@@ -170,13 +170,13 @@
     goto :goto_1
 
     :cond_8
-    invoke-virtual {v1}, Lq0/D;->s()Lq0/D;
+    invoke-virtual {v1}, Lq0/D1;->s()Lq0/D1;
 
     move-result-object v1
 
     if-eqz v1, :cond_9
 
-    iget-object v0, v1, Lq0/D;->B:Lz2/b;
+    iget-object v0, v1, Lq0/D1;->B:Lz2/b;
 
     if-eqz v0, :cond_9
 

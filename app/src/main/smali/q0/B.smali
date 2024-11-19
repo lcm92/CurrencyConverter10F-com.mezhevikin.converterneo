@@ -1,88 +1,89 @@
-.class public abstract Lq0/B;
-.super Ljava/lang/Object;
+.class public final Lq0/b;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lo0/E;
+.implements Lh4/a;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic h:I
+
+.field public final synthetic i:Lq0/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lq0/c;I)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lq0/b;->h:I
 
-    iput-object p1, p0, Lq0/B;->a:Ljava/lang/String;
+    iput-object p1, p0, Lq0/b;->i:Lq0/c;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lo0/m;Ljava/util/List;I)I
-    .locals 0
+.method public final b()Ljava/lang/Object;
+    .locals 3
 
-    new-instance p1, Ljava/lang/IllegalStateException;
+    iget v0, p0, Lq0/b;->h:I
 
-    iget-object p2, p0, Lq0/B;->a:Ljava/lang/String;
+    packed-switch v0, :pswitch_data_0
 
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    iget-object v0, p0, Lq0/b;->i:Lq0/c;
 
-    move-result-object p2
+    iget-object v1, v0, Lq0/c;->t:Lr5/o;
 
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    const-string v2, "null cannot be cast to non-null type androidx.compose.ui.modifier.ModifierLocalConsumer"
 
-    throw p1
-.end method
+    invoke-static {v1, v2}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-.method public final f(Lo0/m;Ljava/util/List;I)I
-    .locals 0
+    check-cast v1, Lq/y;
 
-    new-instance p1, Ljava/lang/IllegalStateException;
+    sget-object v2, Lq/k0;->a:Lp0/f;
 
-    iget-object p2, p0, Lq0/B;->a:Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lq0/c;->d0(Lp0/f;)Ljava/lang/Object;
 
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p2
+    check-cast v0, Lq/h0;
 
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    iget-object v2, v1, Lq/y;->b:Lq/h0;
 
-    throw p1
-.end method
+    invoke-static {v0, v2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-.method public final g(Lo0/m;Ljava/util/List;I)I
-    .locals 0
+    move-result v2
 
-    new-instance p1, Ljava/lang/IllegalStateException;
+    if-nez v2, :cond_0
 
-    iget-object p2, p0, Lq0/B;->a:Ljava/lang/String;
+    iput-object v0, v1, Lq/y;->b:Lq/h0;
 
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    iget-object v1, v1, Lq/y;->a:Lh4/c;
 
-    move-result-object p2
+    invoke-interface {v1, v0}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    :cond_0
+    sget-object v0, Lu9/y;->a:Lu9/y;
 
-    throw p1
-.end method
+    return-object v0
 
-.method public final h(Lo0/m;Ljava/util/List;I)I
-    .locals 0
+    :pswitch_0
+    iget-object v0, p0, Lq0/b;->i:Lq0/c;
 
-    new-instance p1, Ljava/lang/IllegalStateException;
+    invoke-virtual {v0}, Lq0/c;->A0()V
 
-    iget-object p2, p0, Lq0/B;->a:Ljava/lang/String;
+    sget-object v0, Lu9/y;->a:Lu9/y;
 
-    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    return-object v0
 
-    move-result-object p2
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -30,7 +30,7 @@
 .method public final b()Ljava/lang/Object;
     .locals 1
 
-    new-instance v0, Lq/C;
+    new-instance v0, Lq/C1;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 

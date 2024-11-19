@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/FocusableKt$FocusableInNonTouchModeElement$1;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -51,7 +51,7 @@
 .method public final j()Lr5/p;
     .locals 1
 
-    new-instance v0, Lm/J;
+    new-instance v0, Lm/J1;
 
     invoke-direct {v0}, Lr5/p;-><init>()V
 
@@ -61,7 +61,7 @@
 .method public final bridge synthetic k(Lr5/p;)V
     .locals 0
 
-    check-cast p1, Lm/J;
+    check-cast p1, Lm/J1;
 
     return-void
 .end method

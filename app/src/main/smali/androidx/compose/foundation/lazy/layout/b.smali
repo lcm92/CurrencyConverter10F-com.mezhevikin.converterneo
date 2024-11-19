@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic h:Ls/A;
+.field public final synthetic h:Ls/A1;
 
 .field public final synthetic i:Lr5/q;
 
@@ -17,10 +17,10 @@
 
 
 # direct methods
-.method public constructor <init>(Ls/A;Lr5/q;Lh4/e;Lf5/c0;)V
+.method public constructor <init>(Ls/A1;Lr5/q;Lh4/e;Lf5/c0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/b;->h:Ls/A;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/b;->h:Ls/A1;
 
     iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/b;->i:Lr5/q;
 
@@ -79,22 +79,22 @@
 
     if-ne p1, v0, :cond_1
 
-    new-instance p1, Lo0/X;
+    new-instance p1, Lo0/X1;
 
     new-instance v1, Lm1/l;
 
     invoke-direct {v1, p3}, Lm1/l;-><init>(Ls/r;)V
 
-    invoke-direct {p1, v1}, Lo0/X;-><init>(Lo0/a0;)V
+    invoke-direct {p1, v1}, Lo0/X1;-><init>(Lo0/a0;)V
 
     invoke-virtual {p2, p1}, Lf5/p;->a0(Ljava/lang/Object;)V
 
     :cond_1
-    check-cast p1, Lo0/X;
+    check-cast p1, Lo0/X1;
 
     const/4 v7, 0x0
 
-    iget-object v8, p0, Landroidx/compose/foundation/lazy/layout/b;->h:Ls/A;
+    iget-object v8, p0, Landroidx/compose/foundation/lazy/layout/b;->h:Ls/A1;
 
     if-eqz v8, :cond_a
 
@@ -106,7 +106,7 @@
 
     invoke-virtual {p2, v1}, Lf5/p;->Q(I)V
 
-    sget-object v1, Ls/M;->a:Ls/g;
+    sget-object v1, Ls/M1;->a:Ls/g;
 
     if-eqz v1, :cond_2
 
@@ -274,7 +274,7 @@
     invoke-virtual {p2, v7}, Lf5/p;->p(Z)V
 
     :goto_2
-    sget v1, Ls/B;->b:I
+    sget v1, Ls/B1;->b:I
 
     iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/b;->i:Lr5/q;
 
@@ -282,7 +282,7 @@
 
     new-instance v2, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;
 
-    invoke-direct {v2, v8}, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;-><init>(Ls/A;)V
+    invoke-direct {v2, v8}, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;-><init>(Ls/A1;)V
 
     invoke-interface {v1, v2}, Lr5/q;->i(Lr5/q;)Lr5/q;
 
@@ -331,7 +331,7 @@
 
     const/16 p3, 0x8
 
-    invoke-static {p1, v1, v4, p2, p3}, Lo0/U;->c(Lo0/X;Lr5/q;Lh4/e;Lf5/p;I)V
+    invoke-static {p1, v1, v4, p2, p3}, Lo0/U1;->c(Lo0/X1;Lr5/q;Lh4/e;Lf5/p;I)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

@@ -9,11 +9,11 @@
 # instance fields
 .field public final a:Lo4/j;
 
-.field public final b:Lw2/O;
+.field public final b:Lw2/O1;
 
 
 # direct methods
-.method public constructor <init>(Lo4/j;Lw2/O;)V
+.method public constructor <init>(Lo4/j;Lw2/O1;)V
     .locals 1
 
     const-string v0, "com.google.android.gms.ads.internal.client.IAdLoadCallback"
@@ -22,7 +22,7 @@
 
     iput-object p1, p0, Lb2/v0;->a:Lo4/j;
 
-    iput-object p2, p0, Lb2/v0;->b:Lw2/O;
+    iput-object p2, p0, Lb2/v0;->b:Lw2/O1;
 
     return-void
 .end method
@@ -47,19 +47,19 @@
     return p1
 
     :cond_0
-    sget-object p1, Lb2/Y;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object p1, Lb2/Y1;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-static {p2, p1}, Lw2/b;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 
-    check-cast p1, Lb2/Y;
+    check-cast p1, Lb2/Y1;
 
     invoke-static {p2}, Lw2/b;->b(Landroid/os/Parcel;)V
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {p1}, Lb2/Y;->a()Ly7/j;
+    invoke-virtual {p1}, Lb2/Y1;->a()Ly7/j;
 
     move-result-object p1
 
@@ -70,11 +70,11 @@
     :cond_1
     if-eqz v0, :cond_2
 
-    iget-object p1, p0, Lb2/v0;->b:Lw2/O;
+    iget-object p1, p0, Lb2/v0;->b:Lw2/O1;
 
     if-eqz p1, :cond_2
 
-    invoke-virtual {v0, p1}, Lo4/j;->C(Lw2/O;)V
+    invoke-virtual {v0, p1}, Lo4/j;->C(Lw2/O1;)V
 
     :cond_2
     :goto_0

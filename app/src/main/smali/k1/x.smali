@@ -126,7 +126,7 @@
     goto :goto_1
 
     :cond_4
-    new-instance p1, Ll/V;
+    new-instance p1, Ll/V1;
 
     const/4 v8, 0x0
 
@@ -136,11 +136,11 @@
 
     move-object v9, v1
 
-    invoke-direct/range {v5 .. v10}, Ll/V;-><init>(Ly9/d;Ljava/lang/Object;Ll/B;Ll/d0;Ll/v0;)V
+    invoke-direct/range {v5 .. v10}, Ll/V1;-><init>(Ly9/d;Ljava/lang/Object;Ll/B1;Ll/d0;Ll/v0;)V
 
-    iget-object v1, v1, Ll/d0;->q:Ll/Q;
+    iget-object v1, v1, Ll/d0;->q:Ll/Q1;
 
-    invoke-static {v1, p1, p0}, Ll/Q;->a(Ll/Q;Lh4/c;Ly9/d;)Ljava/lang/Object;
+    invoke-static {v1, p1, p0}, Ll/Q1;->a(Ll/Q1;Lh4/c;Ly9/d;)Ljava/lang/Object;
 
     move-result-object p1
 

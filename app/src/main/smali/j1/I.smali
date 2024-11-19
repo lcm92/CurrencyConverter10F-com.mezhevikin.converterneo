@@ -1,221 +1,238 @@
-.class public final Lj1/I;
+.class public final Lj1/i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/os/Parcelable;
+
 
 # static fields
-.field public static final b:Ljava/util/LinkedHashMap;
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lj1/i;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # instance fields
-.field public final a:Ljava/util/LinkedHashMap;
+.field public final g:Ljava/lang/String;
+
+.field public final h:I
+
+.field public final i:Landroid/os/Bundle;
+
+.field public final j:Landroid/os/Bundle;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
-    new-instance v0, Ljava/util/LinkedHashMap;
+    new-instance v0, La8/h;
 
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
+    const/16 v1, 0x8
 
-    sput-object v0, Lj1/I;->b:Ljava/util/LinkedHashMap;
+    invoke-direct {v0, v1}, La8/h;-><init>(I)V
+
+    sput-object v0, Lj1/i;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .locals 2
 
+    const-string v0, "inParcel"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Ljava/util/LinkedHashMap;
+    .line 10
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
+    move-result-object v0
 
-    iput-object v0, p0, Lj1/I;->a:Ljava/util/LinkedHashMap;
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lj1/i;->g:Ljava/lang/String;
+
+    .line 11
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    iput v0, p0, Lj1/i;->h:I
+
+    .line 12
+    const-class v0, Lj1/i;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Landroid/os/Parcel;->readBundle(Ljava/lang/ClassLoader;)Landroid/os/Bundle;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lj1/i;->i:Landroid/os/Bundle;
+
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readBundle(Ljava/lang/ClassLoader;)Landroid/os/Bundle;
+
+    move-result-object p1
+
+    invoke-static {p1}, Li4/h;->c(Ljava/lang/Object;)V
+
+    iput-object p1, p0, Lj1/i;->j:Landroid/os/Bundle;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lj1/h;)V
+    .locals 1
+
+    const-string v0, "entry"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iget-object v0, p1, Lj1/h;->l:Ljava/lang/String;
+
+    iput-object v0, p0, Lj1/i;->g:Ljava/lang/String;
+
+    .line 3
+    iget-object v0, p1, Lj1/h;->h:Lj1/u;
+
+    .line 4
+    iget v0, v0, Lj1/u;->l:I
+
+    .line 5
+    iput v0, p0, Lj1/i;->h:I
+
+    .line 6
+    invoke-virtual {p1}, Lj1/h;->g()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lj1/i;->i:Landroid/os/Bundle;
+
+    .line 7
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    iput-object v0, p0, Lj1/i;->j:Landroid/os/Bundle;
+
+    .line 8
+    iget-object p1, p1, Lj1/h;->o:La5/V1;
+
+    invoke-virtual {p1, v0}, La5/V1;->i(Landroid/os/Bundle;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lj1/H;)V
-    .locals 6
+.method public final a(Landroid/content/Context;Lj1/u;Landroidx/lifecycle/o;Lj1/n;)Lj1/h;
+    .locals 9
 
-    const-string v0, "navigator"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lv2/h;->G(Ljava/lang/Class;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    if-lez v1, :cond_4
-
-    iget-object v1, p0, Lj1/I;->a:Ljava/util/LinkedHashMap;
-
-    invoke-virtual {v1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lj1/H;
-
-    invoke-static {v2, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v3, 0x0
-
-    if-eqz v2, :cond_1
-
-    iget-boolean v4, v2, Lj1/H;->b:Z
-
-    const/4 v5, 0x1
-
-    if-ne v4, v5, :cond_1
-
-    move v3, v5
-
-    :cond_1
-    const-string v4, "Navigator "
-
-    if-nez v3, :cond_3
-
-    iget-boolean v2, p1, Lj1/H;->b:Z
-
-    if-nez v2, :cond_2
-
-    invoke-interface {v1, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lj1/H;
-
-    :goto_0
-    return-void
-
-    :cond_2
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string p1, " is already attached to another NavController"
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_3
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string p1, " is replacing an already attached "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_4
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "navigator name cannot be an empty string"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public final b(Ljava/lang/String;)Lj1/H;
-    .locals 3
-
-    const-string v0, "name"
+    const-string v0, "context"
 
     invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
+    const-string v0, "hostLifecycleState"
 
-    move-result v0
+    invoke-static {p3, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-lez v0, :cond_1
-
-    iget-object v0, p0, Lj1/I;->a:Ljava/util/LinkedHashMap;
-
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lj1/H;
+    iget-object v0, p0, Lj1/i;->i:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 
-    return-object v0
+    invoke-virtual {p1}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->setClassLoader(Ljava/lang/ClassLoader;)V
+
+    :goto_0
+    move-object v4, v0
+
+    goto :goto_1
 
     :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const/4 v0, 0x0
 
-    const-string v1, "Could not find Navigator with name \""
+    goto :goto_0
 
-    const-string v2, "\". You must call NavController.addNavigator() for each navigation type."
+    :goto_1
+    iget-object v7, p0, Lj1/i;->g:Ljava/lang/String;
 
-    invoke-static {v1, p1, v2}, Lk/P;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v0, "id"
 
-    move-result-object p1
+    invoke-static {v7, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    new-instance v0, Lj1/h;
 
-    throw v0
+    iget-object v8, p0, Lj1/i;->j:Landroid/os/Bundle;
 
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    move-object v1, v0
 
-    const-string v0, "navigator name cannot be an empty string"
+    move-object v2, p1
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    move-object v3, p2
 
-    throw p1
+    move-object v5, p3
+
+    move-object v6, p4
+
+    invoke-direct/range {v1 .. v8}, Lj1/h;-><init>(Landroid/content/Context;Lj1/u;Landroid/os/Bundle;Landroidx/lifecycle/o;Lj1/n;Ljava/lang/String;Landroid/os/Bundle;)V
+
+    return-object v0
+.end method
+
+.method public final describeContents()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
+
+    const-string p2, "parcel"
+
+    invoke-static {p1, p2}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p2, p0, Lj1/i;->g:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    iget p2, p0, Lj1/i;->h:I
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    iget-object p2, p0, Lj1/i;->i:Landroid/os/Bundle;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
+
+    iget-object p2, p0, Lj1/i;->j:Landroid/os/Bundle;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
+
+    return-void
 .end method

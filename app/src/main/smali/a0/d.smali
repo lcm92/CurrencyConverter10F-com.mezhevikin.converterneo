@@ -64,7 +64,7 @@
     return-void
 .end method
 
-.method public static N(Lq0/F;Ly5/H1;JJFLa0/c;I)V
+.method public static N(Lq0/F1;Ly5/H1;JJFLa0/c;I)V
     .locals 12
 
     and-int/lit8 v0, p8, 0x2
@@ -87,7 +87,7 @@
 
     move-object v0, p0
 
-    iget-object v1, v0, Lq0/F;->g:La0/b;
+    iget-object v1, v0, Lq0/F1;->g:La0/b;
 
     invoke-interface {v1}, La0/d;->g()J
 
@@ -143,12 +143,12 @@
 
     move-object v3, p1
 
-    invoke-virtual/range {v2 .. v11}, Lq0/F;->e(Ly5/H1;JJFLa0/c;Ly5/l;I)V
+    invoke-virtual/range {v2 .. v11}, Lq0/F1;->e(Ly5/H1;JJFLa0/c;Ly5/l;I)V
 
     return-void
 .end method
 
-.method public static c0(Lq0/F;Ly5/O1;JJJLa0/c;I)V
+.method public static c0(Lq0/F1;Ly5/O1;JJJLa0/c;I)V
     .locals 14
 
     and-int/lit8 v0, p9, 0x2
@@ -171,7 +171,7 @@
 
     move-object v0, p0
 
-    iget-object v1, v0, Lq0/F;->g:La0/b;
+    iget-object v1, v0, Lq0/F1;->g:La0/b;
 
     invoke-interface {v1}, La0/d;->g()J
 
@@ -217,7 +217,7 @@
 
     move-wide/from16 v8, p6
 
-    invoke-virtual/range {v2 .. v13}, Lq0/F;->f(Ly5/H1;JJJFLa0/c;Ly5/l;I)V
+    invoke-virtual/range {v2 .. v13}, Lq0/F1;->f(Ly5/H1;JJJFLa0/c;Ly5/l;I)V
 
     return-void
 .end method
@@ -290,14 +290,14 @@
     return-wide p0
 .end method
 
-.method public static l0(Lq0/F;Ly5/g;Ly5/l;)V
+.method public static l0(Lq0/F1;Ly5/g;Ly5/l;)V
     .locals 9
 
     sget-object v2, La0/f;->b:La0/f;
 
     const/4 v5, 0x3
 
-    iget-object v0, p0, Lq0/F;->g:La0/b;
+    iget-object v0, p0, Lq0/F1;->g:La0/b;
 
     const-wide/16 v7, 0x0
 

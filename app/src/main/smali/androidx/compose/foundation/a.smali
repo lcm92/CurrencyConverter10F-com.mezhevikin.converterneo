@@ -56,7 +56,7 @@
     return-object p0
 .end method
 
-.method public static final c(Lr5/q;Lp/i;Lm/W;ZLjava/lang/String;Lx0/f;Lh4/a;)Lr5/q;
+.method public static final c(Lr5/q;Lp/i;Lm/W1;ZLjava/lang/String;Lx0/f;Lh4/a;)Lr5/q;
     .locals 9
 
     instance-of v0, p2, Lm/b0;
@@ -113,7 +113,7 @@
 
     if-eqz p1, :cond_2
 
-    invoke-static {v6, p1, p2}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W;)Lr5/q;
+    invoke-static {v6, p1, p2}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W1;)Lr5/q;
 
     move-result-object v7
 
@@ -156,7 +156,7 @@
 
     move-object v5, p6
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/b;-><init>(Lm/W;ZLjava/lang/String;Lx0/f;Lh4/a;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/b;-><init>(Lm/W1;ZLjava/lang/String;Lx0/f;Lh4/a;)V
 
     invoke-static {v6, v7}, Lr5/a;->b(Lr5/q;Lh4/f;)Lr5/q;
 
@@ -170,7 +170,7 @@
     return-object v0
 .end method
 
-.method public static synthetic d(Lr5/q;Lp/i;Lm/W;ZLh4/a;I)Lr5/q;
+.method public static synthetic d(Lr5/q;Lp/i;Lm/W1;ZLh4/a;I)Lr5/q;
     .locals 7
 
     and-int/lit8 p5, p5, 0x4
@@ -194,7 +194,7 @@
 
     move-object v6, p4
 
-    invoke-static/range {v0 .. v6}, Landroidx/compose/foundation/a;->c(Lr5/q;Lp/i;Lm/W;ZLjava/lang/String;Lx0/f;Lh4/a;)Lr5/q;
+    invoke-static/range {v0 .. v6}, Landroidx/compose/foundation/a;->c(Lr5/q;Lp/i;Lm/W1;ZLjava/lang/String;Lx0/f;Lh4/a;)Lr5/q;
 
     move-result-object p0
 

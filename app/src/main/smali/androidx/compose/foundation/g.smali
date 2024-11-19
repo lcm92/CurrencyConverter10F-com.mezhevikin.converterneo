@@ -64,7 +64,7 @@
 
     invoke-direct {v0, p1, v4, v5, v3}, Landroidx/compose/foundation/ScrollSemanticsElement;-><init>(Lm/z0;ZLo/m;Z)V
 
-    sget-object v2, Lo/O;->g:Lo/O;
+    sget-object v2, Lo/O1;->g:Lo/O1;
 
     iget-object v6, p1, Lm/z0;->c:Lp/i;
 
@@ -72,7 +72,7 @@
 
     move-object v7, p2
 
-    invoke-static/range {v0 .. v7}, Lt2/a;->N(Lr5/q;Lo/k0;Lo/O;ZZLo/m;Lp/i;Lf5/p;)Lr5/q;
+    invoke-static/range {v0 .. v7}, Lt2/a;->N(Lr5/q;Lo/k0;Lo/O1;ZZLo/m;Lp/i;Lf5/p;)Lr5/q;
 
     move-result-object p3
 

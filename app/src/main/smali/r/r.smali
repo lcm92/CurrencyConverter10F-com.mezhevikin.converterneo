@@ -94,11 +94,11 @@
 
     iput-object v1, v0, Lb5/F1;->d:Ljava/lang/Object;
 
-    iget-object p1, p1, Lr/u;->j:Lq0/D;
+    iget-object p1, p1, Lr/u;->j:Lq0/D1;
 
     if-eqz p1, :cond_2
 
-    invoke-virtual {p1}, Lq0/D;->k()V
+    invoke-virtual {p1}, Lq0/D1;->k()V
 
     :cond_2
     sget-object p1, Lu9/y;->a:Lu9/y;
@@ -109,7 +109,7 @@
 .method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lo/T;
+    check-cast p1, Lo/T1;
 
     check-cast p2, Ly9/d;
 

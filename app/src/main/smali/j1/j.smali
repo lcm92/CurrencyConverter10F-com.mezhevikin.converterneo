@@ -68,7 +68,7 @@
     :pswitch_0
     iget-object p1, p0, Lj1/j;->h:Ljava/lang/Object;
 
-    check-cast p1, Lj1/B;
+    check-cast p1, Lj1/B1;
 
     const-string v0, "this$0"
 
@@ -78,13 +78,13 @@
 
     move-result-object v0
 
-    iput-object v0, p1, Lj1/B;->r:Landroidx/lifecycle/o;
+    iput-object v0, p1, Lj1/B1;->r:Landroidx/lifecycle/o;
 
-    iget-object v0, p1, Lj1/B;->c:Lj1/x;
+    iget-object v0, p1, Lj1/B1;->c:Lj1/x;
 
     if-eqz v0, :cond_2
 
-    iget-object p1, p1, Lj1/B;->g:Lv9/i;
+    iget-object p1, p1, Lj1/B1;->g:Lv9/i;
 
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 

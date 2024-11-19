@@ -192,7 +192,7 @@
 
     move-object v11, v13
 
-    invoke-static/range {v2 .. v12}, Lc5/e;->b(Ln5/a;Lh4/a;Lr5/q;Lh4/e;Lh4/e;ZLc5/y;Lq/V;Lp/i;Lf5/p;I)V
+    invoke-static/range {v2 .. v12}, Lc5/e;->b(Ln5/a;Lh4/a;Lr5/q;Lh4/e;Lh4/e;ZLc5/y;Lq/V1;Lp/i;Lf5/p;I)V
 
     goto :goto_1
 
@@ -262,7 +262,7 @@
 
     iget-object v4, v0, Lc3/e;->i:Ljava/lang/Object;
 
-    check-cast v4, Lj1/B;
+    check-cast v4, Lj1/B1;
 
     const/4 v5, 0x0
 
@@ -359,7 +359,7 @@
 
     move-object v9, v14
 
-    invoke-static/range {v2 .. v11}, Lk4/a;->g(Ld0/b;Ljava/lang/String;Lr5/q;Lr5/d;Lo0/I;FLy5/l;Lf5/p;II)V
+    invoke-static/range {v2 .. v11}, Lk4/a;->g(Ld0/b;Ljava/lang/String;Lr5/q;Lr5/d;Lo0/I1;FLy5/l;Lf5/p;II)V
 
     const v1, 0x7f0c00b6
 
@@ -425,7 +425,7 @@
 
     move-object/from16 v23, p1
 
-    invoke-static/range {v2 .. v26}, Lc5/j0;->b(Ljava/lang/String;Lr5/q;JJLe6/w;Le6/A1;Le6/p;JLk6/h;Lk6/g;JIZIILh4/c;Lz0/F;Lf5/p;III)V
+    invoke-static/range {v2 .. v26}, Lc5/j0;->b(Ljava/lang/String;Lr5/q;JJLe6/w;Le6/A1;Le6/p;JLk6/h;Lk6/g;JIZIILh4/c;Lz0/F1;Lf5/p;III)V
 
     const v2, 0x7f0c00b7
 
@@ -485,7 +485,7 @@
 
     move-object/from16 v23, p1
 
-    invoke-static/range {v2 .. v26}, Lc5/j0;->b(Ljava/lang/String;Lr5/q;JJLe6/w;Le6/A1;Le6/p;JLk6/h;Lk6/g;JIZIILh4/c;Lz0/F;Lf5/p;III)V
+    invoke-static/range {v2 .. v26}, Lc5/j0;->b(Ljava/lang/String;Lr5/q;JJLe6/w;Le6/A1;Le6/p;JLk6/h;Lk6/g;JIZIILh4/c;Lz0/F1;Lf5/p;III)V
 
     const v1, 0x7f0c00be
 
@@ -505,9 +505,9 @@
 
     move-object v11, v3
 
-    check-cast v11, Lj1/B;
+    check-cast v11, Lj1/B1;
 
-    invoke-direct {v6, v1, v11}, Ly8/f;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;Lj1/B;)V
+    invoke-direct {v6, v1, v11}, Ly8/f;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;Lj1/B1;)V
 
     const/4 v8, 0x0
 
@@ -529,7 +529,7 @@
 
     const/4 v1, 0x3
 
-    invoke-direct {v8, v1, v11}, Ly8/j;-><init>(ILj1/B;)V
+    invoke-direct {v8, v1, v11}, Ly8/j;-><init>(ILj1/B1;)V
 
     const/4 v1, 0x0
 

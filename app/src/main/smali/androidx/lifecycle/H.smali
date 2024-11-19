@@ -390,9 +390,9 @@
     goto :goto_4
 
     :cond_3
-    check-cast p2, Lv4/P;
+    check-cast p2, Lv4/P1;
 
-    invoke-virtual {p2, p1}, Lv4/P;->i(Ljava/lang/Object;)V
+    invoke-virtual {p2, p1}, Lv4/P1;->i(Ljava/lang/Object;)V
 
     :goto_4
     return-void

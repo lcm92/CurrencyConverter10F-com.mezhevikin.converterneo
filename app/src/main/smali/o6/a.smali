@@ -70,11 +70,11 @@
     :pswitch_1
     iget-object v0, p0, Lo6/a;->b:Ljava/lang/Object;
 
-    check-cast v0, Ls/A;
+    check-cast v0, Ls/A1;
 
     const/4 v1, 0x0
 
-    iput-object v1, v0, Ls/A;->c:Lo2/b;
+    iput-object v1, v0, Ls/A1;->c:Lo2/b;
 
     return-void
 

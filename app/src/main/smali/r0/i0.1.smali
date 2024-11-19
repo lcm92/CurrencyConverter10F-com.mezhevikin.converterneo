@@ -34,7 +34,7 @@
 .method public abstract J()F
 .end method
 
-.method public abstract K(Ly5/q;Ly5/G1;Lj3/F;)V
+.method public abstract K(Ly5/q;Ly5/G1;Lj3/F1;)V
 .end method
 
 .method public abstract L(I)V

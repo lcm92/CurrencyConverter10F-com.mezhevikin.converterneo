@@ -60,13 +60,13 @@
 
     iget-object v1, p0, Lv8/e;->h:Ljava/lang/Object;
 
-    check-cast v1, Lj1/B;
+    check-cast v1, Lj1/B1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
-    invoke-static {v1}, Lv8/p;->a(Lj1/B;)V
+    invoke-static {v1}, Lv8/p;->a(Lj1/B1;)V
 
     :cond_0
     sget-object p1, Lu9/y;->a:Lu9/y;

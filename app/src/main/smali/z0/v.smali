@@ -324,7 +324,7 @@
 
     packed-switch v11, :pswitch_data_0
 
-    new-instance v1, Lz0/H;
+    new-instance v1, Lz0/H1;
 
     if-eqz v0, :cond_0
 
@@ -335,12 +335,12 @@
     :cond_0
     invoke-static {v9}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-direct {v1, v9}, Lz0/H;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v9}, Lz0/H1;-><init>(Ljava/lang/String;)V
 
     return-object v1
 
     :pswitch_0
-    new-instance v1, Lz0/G;
+    new-instance v1, Lz0/G1;
 
     if-eqz v0, :cond_1
 
@@ -351,7 +351,7 @@
     :cond_1
     invoke-static {v9}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-direct {v1, v9}, Lz0/G;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v9}, Lz0/G1;-><init>(Ljava/lang/String;)V
 
     return-object v1
 
@@ -469,9 +469,9 @@
 
     move-result-wide v0
 
-    new-instance v2, Lz0/E;
+    new-instance v2, Lz0/E1;
 
-    invoke-direct {v2, v0, v1}, Lz0/E;-><init>(J)V
+    invoke-direct {v2, v0, v1}, Lz0/E1;-><init>(J)V
 
     return-object v2
 
@@ -600,9 +600,9 @@
 
     :cond_e
     :goto_6
-    new-instance v0, Lz0/D;
+    new-instance v0, Lz0/D1;
 
-    invoke-direct {v0, v1, v6, v4, v9}, Lz0/D;-><init>(Lz0/y;Lz0/y;Lz0/y;Lz0/y;)V
+    invoke-direct {v0, v1, v6, v4, v9}, Lz0/D1;-><init>(Lz0/y;Lz0/y;Lz0/y;Lz0/y;)V
 
     return-object v0
 
@@ -1655,13 +1655,13 @@
 
     move-object v9, v0
 
-    check-cast v9, Lz0/D;
+    check-cast v9, Lz0/D1;
 
     :cond_3e
     :goto_23
     new-instance v0, Lz0/j;
 
-    invoke-direct {v0, v1, v9}, Lz0/j;-><init>(Ljava/lang/String;Lz0/D;)V
+    invoke-direct {v0, v1, v9}, Lz0/j;-><init>(Ljava/lang/String;Lz0/D1;)V
 
     return-object v0
 
@@ -1767,13 +1767,13 @@
 
     move-object v9, v0
 
-    check-cast v9, Lz0/D;
+    check-cast v9, Lz0/D1;
 
     :cond_42
     :goto_26
     new-instance v0, Lz0/i;
 
-    invoke-direct {v0, v1, v9}, Lz0/i;-><init>(Ljava/lang/String;Lz0/D;)V
+    invoke-direct {v0, v1, v9}, Lz0/i;-><init>(Ljava/lang/String;Lz0/D1;)V
 
     return-object v0
 
@@ -2017,7 +2017,7 @@
 
     move-object v9, v0
 
-    check-cast v9, Lz0/G;
+    check-cast v9, Lz0/G1;
 
     :cond_4d
     :goto_2d
@@ -2059,7 +2059,7 @@
 
     move-object v9, v0
 
-    check-cast v9, Lz0/H;
+    check-cast v9, Lz0/H1;
 
     :cond_4f
     :goto_2e

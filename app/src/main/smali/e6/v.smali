@@ -57,7 +57,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Ls4/a0;-><init>(Ls4/X;)V
+    invoke-direct {v0, v1}, Ls4/a0;-><init>(Ls4/X1;)V
 
     invoke-interface {p1, v0}, Ly9/i;->f(Ly9/i;)Ly9/i;
 

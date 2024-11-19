@@ -210,7 +210,7 @@
     iget-object v8, v1, Lj3/z;->a:Ljava/nio/charset/Charset;
 
     :cond_7
-    sget-object v1, Lj3/A;->a:Ljj/a;
+    sget-object v1, Lj3/A1;->a:Ljj/a;
 
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -222,7 +222,7 @@
 
     move-result-object v6
 
-    invoke-interface {v6}, Lo3/b;->g()Ls3/K;
+    invoke-interface {v6}, Lo3/b;->g()Ls3/K1;
 
     move-result-object v6
 
@@ -316,7 +316,7 @@
     goto :goto_5
 
     :cond_b
-    sget-object v9, Lj3/A;->a:Ljj/a;
+    sget-object v9, Lj3/A1;->a:Ljj/a;
 
     new-instance v10, Ljava/lang/StringBuilder;
 
@@ -332,7 +332,7 @@
 
     invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v6, v6, Lo3/d;->a:Ls3/G;
+    iget-object v6, v6, Lo3/d;->a:Ls3/G1;
 
     invoke-virtual {v10, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -417,7 +417,7 @@
     iget-object v7, v1, Lj3/z;->b:Ljava/nio/charset/Charset;
 
     :cond_10
-    sget-object v1, Lj3/A;->a:Ljj/a;
+    sget-object v1, Lj3/A1;->a:Ljj/a;
 
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -425,7 +425,7 @@
 
     invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v6, v6, Lo3/d;->a:Ls3/G;
+    iget-object v6, v6, Lo3/d;->a:Ls3/G1;
 
     invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

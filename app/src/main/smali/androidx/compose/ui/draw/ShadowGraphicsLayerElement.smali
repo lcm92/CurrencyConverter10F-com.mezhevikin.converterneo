@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
-.super Lq0/S;
+.super Lq0/S1;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/S1;"
     }
 .end annotation
 
@@ -154,7 +154,7 @@
 
     iget-boolean v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:Z
 
-    invoke-static {v2, v1, v0}, Lk/P;->c(IIZ)I
+    invoke-static {v2, v1, v0}, Lk/P1;->c(IIZ)I
 
     move-result v0
 
@@ -162,7 +162,7 @@
 
     iget-wide v2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
@@ -208,11 +208,11 @@
 
     const/4 v0, 0x2
 
-    invoke-static {p1, v0}, Lq0/f;->t(Lq0/m;I)Lq0/Z;
+    invoke-static {p1, v0}, Lq0/f;->t(Lq0/m;I)Lq0/Z1;
 
     move-result-object v0
 
-    iget-object v0, v0, Lq0/Z;->s:Lq0/Z;
+    iget-object v0, v0, Lq0/Z1;->s:Lq0/Z1;
 
     if-eqz v0, :cond_0
 
@@ -220,7 +220,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p1, v1}, Lq0/Z;->g1(Lh4/c;Z)V
+    invoke-virtual {v0, p1, v1}, Lq0/Z1;->g1(Lh4/c;Z)V
 
     :cond_0
     return-void
@@ -267,7 +267,7 @@
 
     const-string v3, ", spotColor="
 
-    invoke-static {v1, v2, v0, v3}, Lk/P;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Lk/P1;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget-wide v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:J
 

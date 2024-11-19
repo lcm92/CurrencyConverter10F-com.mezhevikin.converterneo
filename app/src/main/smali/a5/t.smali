@@ -100,9 +100,9 @@
 
     iget-object p1, p1, La5/p;->e:Ljava/lang/Object;
 
-    check-cast p1, Lz0/C;
+    check-cast p1, Lz0/C1;
 
-    invoke-virtual {p1, p2}, Lz0/C;->k(I)J
+    invoke-virtual {p1, p2}, Lz0/C1;->k(I)J
 
     move-result-wide p1
 
@@ -111,19 +111,19 @@
     :pswitch_0
     iget-object p1, p1, La5/p;->e:Ljava/lang/Object;
 
-    check-cast p1, Lz0/C;
+    check-cast p1, Lz0/C1;
 
-    iget-object p1, p1, Lz0/C;->a:Lz0/B;
+    iget-object p1, p1, Lz0/C1;->a:Lz0/B1;
 
-    iget-object p1, p1, Lz0/B;->a:Lz0/f;
+    iget-object p1, p1, Lz0/B1;->a:Lz0/f;
 
     iget-object p1, p1, Lz0/f;->g:Ljava/lang/String;
 
-    invoke-static {p1, p2}, Lw/N;->o(Ljava/lang/CharSequence;I)I
+    invoke-static {p1, p2}, Lw/N1;->o(Ljava/lang/CharSequence;I)I
 
     move-result v0
 
-    invoke-static {p1, p2}, Lw/N;->n(Ljava/lang/CharSequence;I)I
+    invoke-static {p1, p2}, Lw/N1;->n(Ljava/lang/CharSequence;I)I
 
     move-result p1
 

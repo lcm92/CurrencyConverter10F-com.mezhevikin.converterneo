@@ -40,7 +40,7 @@
 
     iget-object v1, p0, Lu1/a;->c:Li/f;
 
-    invoke-virtual {v1, v0}, Li/I;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -94,7 +94,7 @@
 
     move-result-object p1
 
-    invoke-virtual {v1, p1, v0}, Li/I;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, v0}, Li/I1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-object v0
@@ -105,7 +105,7 @@
 
     iget-object v0, p0, Lu1/a;->a:Li/f;
 
-    invoke-virtual {v0, p1}, Li/I;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -137,7 +137,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, p1, v1}, Li/I;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, v1}, Li/I1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-object v1
@@ -152,7 +152,7 @@
 
     iget-object v1, p0, Lu1/a;->b:Li/f;
 
-    invoke-virtual {v1, v0}, Li/I;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -182,7 +182,7 @@
 
     move-result-object p1
 
-    invoke-virtual {v1, p1, v0}, Li/I;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, v0}, Li/I1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     return-object v0

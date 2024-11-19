@@ -707,7 +707,7 @@
 
     const/4 v9, 0x0
 
-    invoke-static {v8, v9}, Lq/n;->e(Lr5/d;Z)Lo0/E;
+    invoke-static {v8, v9}, Lq/n;->e(Lr5/d;Z)Lo0/E1;
 
     move-result-object v8
 
@@ -809,11 +809,11 @@
 
     const/4 v3, 0x0
 
-    invoke-static {v3, v9, v0, v10, v2}, Lc5/Q1;->b(ZFLf5/p;II)Lm/W;
+    invoke-static {v3, v9, v0, v10, v2}, Lc5/Q1;->b(ZFLf5/p;II)Lm/W1;
 
     move-result-object v2
 
-    invoke-static {v4, v6, v2}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W;)Lr5/q;
+    invoke-static {v4, v6, v2}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W1;)Lr5/q;
 
     move-result-object v2
 
@@ -823,7 +823,7 @@
 
     sget-object v4, Lr5/b;->k:Lr5/i;
 
-    invoke-static {v4, v3}, Lq/n;->e(Lr5/d;Z)Lo0/E;
+    invoke-static {v4, v3}, Lq/n;->e(Lr5/d;Z)Lo0/E1;
 
     move-result-object v4
 

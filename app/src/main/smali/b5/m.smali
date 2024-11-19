@@ -62,19 +62,19 @@
 
     const/4 v4, 0x3
 
-    invoke-static {p1, v2, v3, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p1, v2, v3, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     new-instance v0, Lb5/k;
 
     invoke-direct {v0, v1, v2}, Lb5/k;-><init>(Lb5/p;Ly9/d;)V
 
-    invoke-static {p1, v2, v3, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p1, v2, v3, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     new-instance v0, Lb5/l;
 
     invoke-direct {v0, v1, v2}, Lb5/l;-><init>(Lb5/p;Ly9/d;)V
 
-    invoke-static {p1, v2, v3, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p1, v2, v3, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     move-result-object p1
 

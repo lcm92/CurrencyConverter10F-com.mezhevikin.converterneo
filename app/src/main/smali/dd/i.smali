@@ -122,9 +122,9 @@
 
     iget-object v1, p0, Ldd/i;->i:Ljava/lang/Object;
 
-    check-cast v1, Li/J;
+    check-cast v1, Li/J1;
 
-    invoke-virtual {v1}, Li/J;->e()I
+    invoke-virtual {v1}, Li/J1;->e()I
 
     move-result v1
 
@@ -340,9 +340,9 @@
 
     iget-object v1, p0, Ldd/i;->i:Ljava/lang/Object;
 
-    check-cast v1, Li/J;
+    check-cast v1, Li/J1;
 
-    invoke-virtual {v1, v0}, Li/J;->f(I)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Li/J1;->f(I)Ljava/lang/Object;
 
     move-result-object v0
 

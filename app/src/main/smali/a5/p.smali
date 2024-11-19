@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method public constructor <init>(IIILz0/C;)V
+.method public constructor <init>(IIILz0/C1;)V
     .locals 1
 
     const/4 v0, 0x0
@@ -78,9 +78,9 @@
 
     iget-object v1, p0, La5/p;->e:Ljava/lang/Object;
 
-    check-cast v1, Lz0/C;
+    check-cast v1, Lz0/C1;
 
-    invoke-static {v1, p1}, Lk4/a;->P(Lz0/C;I)Lk6/f;
+    invoke-static {v1, p1}, Lk4/a;->P(Lz0/C1;I)Lk6/f;
 
     move-result-object v1
 
@@ -174,9 +174,9 @@
 
     iget-object v3, p0, La5/p;->e:Ljava/lang/Object;
 
-    check-cast v3, Lz0/C;
+    check-cast v3, Lz0/C1;
 
-    invoke-static {v3, v1}, Lk4/a;->P(Lz0/C;I)Lk6/f;
+    invoke-static {v3, v1}, Lk4/a;->P(Lz0/C1;I)Lk6/f;
 
     move-result-object v1
 
@@ -192,7 +192,7 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-static {v3, v1}, Lk4/a;->P(Lz0/C;I)Lk6/f;
+    invoke-static {v3, v1}, Lk4/a;->P(Lz0/C1;I)Lk6/f;
 
     move-result-object v1
 

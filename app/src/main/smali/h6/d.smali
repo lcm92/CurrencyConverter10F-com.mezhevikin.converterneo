@@ -9,7 +9,7 @@
 # instance fields
 .field public final g:Ljava/lang/String;
 
-.field public final h:Lz0/F;
+.field public final h:Lz0/F1;
 
 .field public final i:Ljava/util/List;
 
@@ -33,7 +33,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lz0/F;Ljava/util/List;Ljava/util/List;Le6/o;Ll6/b;)V
+.method public constructor <init>(Ljava/lang/String;Lz0/F1;Ljava/util/List;Ljava/util/List;Le6/o;Ll6/b;)V
     .locals 38
 
     move-object/from16 v0, p0
@@ -58,7 +58,7 @@
 
     iput-object v12, v0, Lh6/d;->g:Ljava/lang/String;
 
-    iput-object v1, v0, Lh6/d;->h:Lz0/F;
+    iput-object v1, v0, Lh6/d;->h:Lz0/F1;
 
     move-object/from16 v12, p3
 
@@ -96,7 +96,7 @@
 
     iput-object v13, v0, Lh6/d;->m:Lh6/f;
 
-    iget-object v15, v1, Lz0/F;->c:Lz0/t;
+    iget-object v15, v1, Lz0/F1;->c:Lz0/t;
 
     sget-object v15, Lh6/j;->a:La5/Z1;
 
@@ -141,11 +141,11 @@
 
     iput-boolean v4, v0, Lh6/d;->q:Z
 
-    iget-object v4, v1, Lz0/F;->b:Lz0/q;
+    iget-object v4, v1, Lz0/F1;->b:Lz0/q;
 
     iget v4, v4, Lz0/q;->b:I
 
-    iget-object v15, v1, Lz0/F;->a:Lz0/y;
+    iget-object v15, v1, Lz0/F1;->a:Lz0/y;
 
     iget-object v15, v15, Lz0/y;->k:Lg6/b;
 
@@ -257,7 +257,7 @@
 
     invoke-direct {v4, v10, v0}, Lh6/c;-><init>(ILjava/lang/Object;)V
 
-    iget-object v5, v1, Lz0/F;->b:Lz0/q;
+    iget-object v5, v1, Lz0/F1;->b:Lz0/q;
 
     iget-object v5, v5, Lz0/q;->i:Lk6/n;
 
@@ -356,7 +356,7 @@
     invoke-virtual {v13}, Landroid/graphics/Paint;->getFlags()I
 
     :goto_8
-    iget-object v1, v1, Lz0/F;->a:Lz0/y;
+    iget-object v1, v1, Lz0/F1;->a:Lz0/y;
 
     invoke-interface/range {p3 .. p3}, Ljava/util/Collection;->isEmpty()Z
 
@@ -912,7 +912,7 @@
 
     move-result v2
 
-    iget-object v5, v0, Lh6/d;->h:Lz0/F;
+    iget-object v5, v0, Lh6/d;->h:Lz0/F1;
 
     iget-object v7, v0, Lh6/d;->j:Ljava/util/List;
 
@@ -932,7 +932,7 @@
 
     if-eqz v10, :cond_42
 
-    iget-object v10, v5, Lz0/F;->c:Lz0/t;
+    iget-object v10, v5, Lz0/F1;->c:Lz0/t;
 
     if-eqz v10, :cond_2f
 
@@ -1287,7 +1287,7 @@
 
     if-eqz v8, :cond_44
 
-    iget-object v8, v5, Lz0/F;->b:Lz0/q;
+    iget-object v8, v5, Lz0/F1;->b:Lz0/q;
 
     iget-object v8, v8, Lz0/q;->d:Lk6/m;
 
@@ -1299,7 +1299,7 @@
 
     if-eqz v8, :cond_44
 
-    iget-object v8, v5, Lz0/F;->b:Lz0/q;
+    iget-object v8, v5, Lz0/F1;->b:Lz0/q;
 
     iget-wide v10, v8, Lz0/q;->c:J
 
@@ -1331,7 +1331,7 @@
     move-object v0, v8
 
     :goto_26
-    iget-object v8, v5, Lz0/F;->a:Lz0/y;
+    iget-object v8, v5, Lz0/F1;->a:Lz0/y;
 
     iget-object v8, v8, Lz0/y;->m:Lk6/h;
 
@@ -1356,7 +1356,7 @@
     invoke-interface {v0, v8, v10, v1, v11}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
     :cond_46
-    iget-object v1, v5, Lz0/F;->b:Lz0/q;
+    iget-object v1, v5, Lz0/F1;->b:Lz0/q;
 
     iget-object v8, v1, Lz0/q;->f:Lk6/e;
 
@@ -1543,7 +1543,7 @@
     const/4 v8, 0x0
 
     :goto_2e
-    iget-object v7, v5, Lz0/F;->b:Lz0/q;
+    iget-object v7, v5, Lz0/F1;->b:Lz0/q;
 
     iget-object v7, v7, Lz0/q;->d:Lk6/m;
 
@@ -1797,7 +1797,7 @@
     goto :goto_33
 
     :cond_5b
-    iget-object v5, v5, Lz0/F;->a:Lz0/y;
+    iget-object v5, v5, Lz0/F1;->a:Lz0/y;
 
     iget-object v7, v5, Lz0/y;->f:Le6/p;
 
@@ -3032,9 +3032,9 @@
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lh6/d;->h:Lz0/F;
+    iget-object v0, p0, Lh6/d;->h:Lz0/F1;
 
-    iget-object v0, v0, Lz0/F;->c:Lz0/t;
+    iget-object v0, v0, Lz0/F1;->c:Lz0/t;
 
     sget-object v0, Lh6/j;->a:La5/Z1;
 

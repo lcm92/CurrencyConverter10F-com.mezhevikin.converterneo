@@ -89,7 +89,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p0, v0, v2, p1, v1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p0, v0, v2, p1, v1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     return-void
 .end method

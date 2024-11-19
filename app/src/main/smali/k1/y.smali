@@ -205,7 +205,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lk/J;
+    check-cast v2, Lk/J1;
 
     iget-object v3, p0, Lk1/y;->k:Lh4/c;
 
@@ -213,7 +213,7 @@
 
     move-result-object v3
 
-    check-cast v3, Lk/K;
+    check-cast v3, Lk/K1;
 
     iget-object v4, p0, Lk1/y;->l:Lh4/c;
 
@@ -221,28 +221,28 @@
 
     move-result-object p1
 
-    check-cast p1, Lk/Q;
+    check-cast p1, Lk/Q1;
 
-    invoke-direct {v0, v2, v3, v1, p1}, Lk/z;-><init>(Lk/J;Lk/K;FLk/Q;)V
+    invoke-direct {v0, v2, v3, v1, p1}, Lk/z;-><init>(Lk/J1;Lk/K1;FLk/Q1;)V
 
     goto :goto_3
 
     :cond_4
-    sget-object p1, Lk/J;->b:Lk/J;
+    sget-object p1, Lk/J1;->b:Lk/J1;
 
-    sget-object v0, Lk/K;->b:Lk/K;
+    sget-object v0, Lk/K1;->b:Lk/K1;
 
     new-instance v2, Lk/z;
 
     sget-object v3, Lk/f;->i:Lk/f;
 
-    new-instance v4, Lk/Q;
+    new-instance v4, Lk/Q1;
 
     const/4 v5, 0x1
 
-    invoke-direct {v4, v5, v3}, Lk/Q;-><init>(ZLh4/e;)V
+    invoke-direct {v4, v5, v3}, Lk/Q1;-><init>(ZLh4/e;)V
 
-    invoke-direct {v2, p1, v0, v1, v4}, Lk/z;-><init>(Lk/J;Lk/K;FLk/Q;)V
+    invoke-direct {v2, p1, v0, v1, v4}, Lk/z;-><init>(Lk/J1;Lk/K1;FLk/Q1;)V
 
     move-object v0, v2
 

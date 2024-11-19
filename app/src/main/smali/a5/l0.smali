@@ -111,7 +111,7 @@
 
     const-string v3, ", selectionBackgroundColor="
 
-    invoke-static {v1, v2, v0, v3}, Lk/P;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Lk/P1;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget-wide v1, p0, La5/l0;->b:J
 

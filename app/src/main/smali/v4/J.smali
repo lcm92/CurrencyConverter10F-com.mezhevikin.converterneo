@@ -1,45 +1,42 @@
-.class public final Lv4/J;
-.super Ljava/lang/Object;
+.class public final Lv4/j;
+.super Li4/i;
 .source "SourceFile"
 
+# interfaces
+.implements Lh4/e;
 
-# instance fields
-.field public final synthetic a:I
+
+# static fields
+.field public static final h:Lv4/j;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
-    iput p1, p0, Lv4/J;->a:I
+    new-instance v0, Lv4/j;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x2
+
+    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
+
+    sput-object v0, Lv4/j;->h:Lv4/j;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 1
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    iget v0, p0, Lv4/J;->a:I
+    invoke-static {p1, p2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    packed-switch v0, :pswitch_data_0
+    move-result p1
 
-    const-string v0, "SharingStarted.Lazily"
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    return-object v0
+    move-result-object p1
 
-    :pswitch_0
-    const-string v0, "SharingStarted.Eagerly"
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

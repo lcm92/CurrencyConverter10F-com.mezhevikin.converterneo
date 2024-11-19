@@ -18,7 +18,7 @@
 
 .field public final e:Ljava/lang/Object;
 
-.field public f:Lb2/L;
+.field public f:Lb2/L1;
 
 .field public final g:Ly7/m;
 
@@ -186,17 +186,17 @@
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     :goto_0
-    iget-object p1, p0, Lb2/i0;->f:Lb2/L;
+    iget-object p1, p0, Lb2/i0;->f:Lb2/L1;
 
-    invoke-interface {p1}, Lb2/L;->c()V
+    invoke-interface {p1}, Lb2/L1;->c()V
 
-    iget-object p1, p0, Lb2/i0;->f:Lb2/L;
+    iget-object p1, p0, Lb2/i0;->f:Lb2/L1;
 
     new-instance v0, Lu2/b;
 
     invoke-direct {v0, v1}, Lu2/b;-><init>(Ljava/lang/Object;)V
 
-    invoke-interface {p1, v0}, Lb2/L;->H(Lu2/b;)V
+    invoke-interface {p1, v0}, Lb2/L1;->H(Lu2/b;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -215,7 +215,7 @@
 .method public final b(Lb/n;)V
     .locals 2
 
-    iget-object v0, p0, Lb2/i0;->f:Lb2/L;
+    iget-object v0, p0, Lb2/i0;->f:Lb2/L1;
 
     if-nez v0, :cond_0
 
@@ -233,9 +233,9 @@
 
     move-result-object p1
 
-    check-cast p1, Lb2/L;
+    check-cast p1, Lb2/L1;
 
-    iput-object p1, p0, Lb2/i0;->f:Lb2/L;
+    iput-object p1, p0, Lb2/i0;->f:Lb2/L1;
 
     :cond_0
     return-void

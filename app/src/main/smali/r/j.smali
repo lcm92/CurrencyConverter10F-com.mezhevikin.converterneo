@@ -138,9 +138,9 @@
 
     move-result-object v4
 
-    iget-object v1, v1, Ls/u;->h:Lo0/Y;
+    iget-object v1, v1, Ls/u;->h:Lo0/Y1;
 
-    invoke-interface {v1, v6, v4}, Lo0/Y;->G(Ljava/lang/Object;Lh4/e;)Ljava/util/List;
+    invoke-interface {v1, v6, v4}, Lo0/Y1;->G(Ljava/lang/Object;Lh4/e;)Ljava/util/List;
 
     move-result-object v1
 
@@ -161,11 +161,11 @@
 
     move-result-object v8
 
-    check-cast v8, Lo0/D;
+    check-cast v8, Lo0/D1;
 
     move-wide/from16 v10, p1
 
-    invoke-interface {v8, v10, v11}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {v8, v10, v11}, Lo0/D1;->a(J)Lo0/N1;
 
     move-result-object v8
 
@@ -207,7 +207,7 @@
 
     iget-object v1, v0, Lr/j;->d:Ls/u;
 
-    iget-object v1, v1, Ls/u;->h:Lo0/Y;
+    iget-object v1, v1, Ls/u;->h:Lo0/Y1;
 
     invoke-interface {v1}, Lo0/m;->getLayoutDirection()Ll6/k;
 

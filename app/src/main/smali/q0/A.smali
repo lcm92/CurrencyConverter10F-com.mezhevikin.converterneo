@@ -1,17 +1,32 @@
-.class public final Lq0/A;
-.super Lq0/B;
+.class public interface abstract Lq0/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lo0/D1;
 
 
 # virtual methods
-.method public final d(Lo0/G;Ljava/util/List;J)Lo0/F;
-    .locals 0
+.method public abstract R()Lq0/t;
+.end method
 
-    new-instance p1, Ljava/lang/IllegalStateException;
+.method public abstract S()V
+.end method
 
-    const-string p2, "Undefined measure and it is required"
+.method public abstract f()Lq0/a;
+.end method
 
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+.method public abstract h()V
+.end method
 
-    throw p1
+.method public abstract i()Lq0/E1;
+.end method
+
+.method public abstract k()Z
+.end method
+
+.method public abstract requestLayout()V
+.end method
+
+.method public abstract y(Lj3/F1;)V
 .end method

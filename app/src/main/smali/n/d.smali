@@ -76,15 +76,15 @@
 
     iget-object p1, p0, Ln/d;->l:Ljava/lang/Object;
 
-    check-cast p1, Lk0/B;
+    check-cast p1, Lk0/B1;
 
-    new-instance v1, Lj3/F;
+    new-instance v1, Lj3/F1;
 
     iget-object v4, p0, Ln/d;->m:Ln/n;
 
     const/16 v5, 0x8
 
-    invoke-direct {v1, v5, v4}, Lj3/F;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v5, v4}, Lj3/F1;-><init>(ILjava/lang/Object;)V
 
     iput v3, p0, Ln/d;->k:I
 
@@ -92,9 +92,9 @@
 
     const/4 v4, 0x0
 
-    invoke-direct {v3, v1, v4}, Ln/e;-><init>(Lj3/F;Ly9/d;)V
+    invoke-direct {v3, v1, v4}, Ln/e;-><init>(Lj3/F1;Ly9/d;)V
 
-    invoke-static {p1, v3, p0}, Lo4/j;->i(Lk0/B;Lh4/e;Ly9/d;)Ljava/lang/Object;
+    invoke-static {p1, v3, p0}, Lo4/j;->i(Lk0/B1;Lh4/e;Ly9/d;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -118,7 +118,7 @@
 .method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lk0/B;
+    check-cast p1, Lk0/B1;
 
     check-cast p2, Ly9/d;
 

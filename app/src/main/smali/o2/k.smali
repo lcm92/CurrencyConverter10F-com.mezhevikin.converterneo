@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Li/I;
+.field public static final a:Li/I1;
 
 .field public static b:Ljava/util/Locale;
 
@@ -13,13 +13,13 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Li/I;
+    new-instance v0, Li/I1;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Li/I;-><init>(I)V
+    invoke-direct {v0, v1}, Li/I1;-><init>(I)V
 
-    sput-object v0, Lo2/k;->a:Li/I;
+    sput-object v0, Lo2/k;->a:Li/I1;
 
     return-void
 .end method
@@ -490,7 +490,7 @@
 
     const-string v1, "Missing resource: "
 
-    sget-object v2, Lo2/k;->a:Li/I;
+    sget-object v2, Lo2/k;->a:Li/I1;
 
     monitor-enter v2
 
@@ -523,7 +523,7 @@
 
     if-nez v4, :cond_0
 
-    invoke-virtual {v2}, Li/I;->clear()V
+    invoke-virtual {v2}, Li/I1;->clear()V
 
     sput-object v3, Lo2/k;->b:Ljava/util/Locale;
 
@@ -536,7 +536,7 @@
 
     :cond_0
     :goto_0
-    invoke-virtual {v2, p1}, Li/I;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p1}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -629,9 +629,9 @@
     return-object v3
 
     :cond_4
-    sget-object v0, Lo2/k;->a:Li/I;
+    sget-object v0, Lo2/k;->a:Li/I1;
 
-    invoke-virtual {v0, p1, p0}, Li/I;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p0}, Li/I1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     monitor-exit v2
 

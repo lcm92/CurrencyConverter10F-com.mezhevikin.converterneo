@@ -107,7 +107,7 @@
     return v0
 .end method
 
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
+.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
     .locals 8
 
     const/4 v4, 0x0
@@ -126,11 +126,11 @@
 
     move-result-wide v0
 
-    invoke-interface {p2, v0, v1}, Lo0/D;->a(J)Lo0/N;
+    invoke-interface {p2, v0, v1}, Lo0/D1;->a(J)Lo0/N1;
 
     move-result-object v5
 
-    iget p2, v5, Lo0/N;->h:I
+    iget p2, v5, Lo0/N1;->h:I
 
     invoke-static {p3, p4}, Ll6/a;->g(J)I
 
@@ -140,7 +140,7 @@
 
     move-result p2
 
-    iget p3, v5, Lo0/N;->g:I
+    iget p3, v5, Lo0/N1;->g:I
 
     new-instance p4, Lf5/E1;
 
@@ -158,7 +158,7 @@
 
     sget-object v0, Lv9/u;->g:Lv9/u;
 
-    invoke-interface {p1, p3, p2, v0, p4}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-interface {p1, p3, p2, v0, p4}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
 
     move-result-object p1
 

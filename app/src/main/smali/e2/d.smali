@@ -59,7 +59,7 @@
 
     sput-object v0, Le2/d;->d:Ljava/lang/String;
 
-    const-class v0, Lw2/O;
+    const-class v0, Lw2/O1;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

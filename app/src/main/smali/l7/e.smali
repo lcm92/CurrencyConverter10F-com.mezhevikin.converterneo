@@ -154,7 +154,7 @@
 
     const-string v2, "Invalid url: "
 
-    invoke-static {v2, p0}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p0}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

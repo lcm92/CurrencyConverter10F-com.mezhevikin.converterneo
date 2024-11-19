@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/X;
+.implements Ls4/X1;
 
 
 # static fields
@@ -61,7 +61,7 @@
     return v0
 .end method
 
-.method public final getParent()Ls4/X;
+.method public final getParent()Ls4/X1;
     .locals 1
 
     const/4 v0, 0x0
@@ -105,7 +105,7 @@
     return v0
 .end method
 
-.method public final q(Lh4/c;)Ls4/G;
+.method public final q(Lh4/c;)Ls4/G1;
     .locals 0
 
     sget-object p1, Ls4/k0;->g:Ls4/k0;
@@ -121,7 +121,7 @@
     return-object v0
 .end method
 
-.method public final v(ZZLh4/c;)Ls4/G;
+.method public final v(ZZLh4/c;)Ls4/G1;
     .locals 0
 
     sget-object p1, Ls4/k0;->g:Ls4/k0;

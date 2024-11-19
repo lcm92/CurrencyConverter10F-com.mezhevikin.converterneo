@@ -95,7 +95,7 @@
     return-object v0
 
     :pswitch_0
-    check-cast p1, Lo0/M;
+    check-cast p1, Lo0/M1;
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

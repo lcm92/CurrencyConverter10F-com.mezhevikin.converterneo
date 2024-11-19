@@ -8,7 +8,7 @@
 
 .field public static final synthetic e:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
-.field public static final f:Lw2/K;
+.field public static final f:Lw2/K1;
 
 
 # instance fields
@@ -27,13 +27,13 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    new-instance v0, Lw2/K;
+    new-instance v0, Lw2/K1;
 
     const/4 v1, 0x4
 
-    invoke-direct {v0, v1}, Lw2/K;-><init>(I)V
+    invoke-direct {v0, v1}, Lw2/K1;-><init>(I)V
 
-    sput-object v0, Ly3/n;->f:Lw2/K;
+    sput-object v0, Ly3/n;->f:Lw2/K1;
 
     const-class v0, Ly3/n;
 
@@ -497,7 +497,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Ly3/n;->f:Lw2/K;
+    sget-object v0, Ly3/n;->f:Lw2/K1;
 
     return-object v0
 

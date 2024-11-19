@@ -6,20 +6,20 @@
 # static fields
 .field public static a:Ljava/lang/String;
 
-.field public static final b:Lw2/K;
+.field public static final b:Lw2/K1;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Lw2/K;
+    new-instance v0, Lw2/K1;
 
     const/4 v1, 0x5
 
-    invoke-direct {v0, v1}, Lw2/K;-><init>(I)V
+    invoke-direct {v0, v1}, Lw2/K1;-><init>(I)V
 
-    sput-object v0, Lz2/u;->b:Lw2/K;
+    sput-object v0, Lz2/u;->b:Lw2/K1;
 
     return-void
 .end method

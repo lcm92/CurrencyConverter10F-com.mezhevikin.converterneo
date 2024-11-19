@@ -46,7 +46,7 @@
     return-object p0
 .end method
 
-.method public static d(Lr5/q;Ld0/b;Lr5/d;Lo0/I;FLy5/l;I)Lr5/q;
+.method public static d(Lr5/q;Ld0/b;Lr5/d;Lo0/I1;FLy5/l;I)Lr5/q;
     .locals 7
 
     and-int/lit8 v0, p6, 0x4
@@ -79,7 +79,7 @@
 
     move-object v6, p5
 
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/draw/PainterElement;-><init>(Ld0/b;ZLr5/d;Lo0/I;FLy5/l;)V
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/draw/PainterElement;-><init>(Ld0/b;ZLr5/d;Lo0/I1;FLy5/l;)V
 
     invoke-interface {p0, p2}, Lr5/q;->i(Lr5/q;)Lr5/q;
 

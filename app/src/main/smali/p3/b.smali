@@ -20,7 +20,7 @@
 .method public abstract f()Lk9/b;
 .end method
 
-.method public abstract h()Ls3/A;
+.method public abstract h()Ls3/A1;
 .end method
 
 .method public abstract i()Ls3/z;
@@ -43,7 +43,7 @@
 
     move-result-object v1
 
-    invoke-interface {v1}, Lo3/b;->g()Ls3/K;
+    invoke-interface {v1}, Lo3/b;->g()Ls3/K1;
 
     move-result-object v1
 
@@ -53,7 +53,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lp3/b;->h()Ls3/A;
+    invoke-virtual {p0}, Lp3/b;->h()Ls3/A1;
 
     move-result-object v1
 

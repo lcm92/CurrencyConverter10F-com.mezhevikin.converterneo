@@ -9,7 +9,7 @@
 # instance fields
 .field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic h:Lz0/F;
+.field public final synthetic h:Lz0/F1;
 
 .field public final synthetic i:J
 
@@ -27,14 +27,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lz0/F;JLi4/r;Le6/A1;Le6/p;Ll6/b;ILq/t;)V
+.method public constructor <init>(Ljava/lang/String;Lz0/F1;JLi4/r;Le6/A1;Le6/p;Ll6/b;ILq/t;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ld3/b;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Ld3/b;->h:Lz0/F;
+    iput-object p2, p0, Ld3/b;->h:Lz0/F1;
 
     iput-wide p3, p0, Ld3/b;->i:J
 
@@ -68,7 +68,7 @@
 
     invoke-virtual {p1, p2}, Lf5/p;->Q(I)V
 
-    new-instance p2, Lz0/F;
+    new-instance p2, Lz0/F1;
 
     iget-object v0, p0, Ld3/b;->j:Li4/r;
 
@@ -90,11 +90,11 @@
 
     move-object v0, p2
 
-    invoke-direct/range {v0 .. v12}, Lz0/F;-><init>(JJLe6/A1;Le6/p;JIJI)V
+    invoke-direct/range {v0 .. v12}, Lz0/F1;-><init>(JJLe6/A1;Le6/p;JIJI)V
 
-    iget-object v0, p0, Ld3/b;->h:Lz0/F;
+    iget-object v0, p0, Ld3/b;->h:Lz0/F1;
 
-    invoke-virtual {v0, p2}, Lz0/F;->d(Lz0/F;)Lz0/F;
+    invoke-virtual {v0, p2}, Lz0/F1;->d(Lz0/F1;)Lz0/F1;
 
     move-result-object v2
 
@@ -112,7 +112,7 @@
 
     move-result v0
 
-    iget-object p2, p2, Lq/t;->a:Lo0/Y;
+    iget-object p2, p2, Lq/t;->a:Lo0/Y1;
 
     invoke-interface {p2, v0}, Ll6/b;->e0(I)F
 
@@ -160,7 +160,7 @@
 
     iget v8, p0, Ld3/b;->n:I
 
-    invoke-static/range {v1 .. v9}, Lp2/c;->b(Ljava/lang/String;Lz0/F;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
+    invoke-static/range {v1 .. v9}, Lp2/c;->b(Ljava/lang/String;Lz0/F1;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
 
     move-result-object p2
 

@@ -11,7 +11,7 @@
 
 .field public final h:Ls3/y;
 
-.field public final i:Ls3/K;
+.field public final i:Ls3/K1;
 
 .field public final j:Ls3/s;
 
@@ -30,9 +30,9 @@
 
     iput-object p1, p0, Lo3/a;->h:Ls3/y;
 
-    iget-object p1, p2, Lo3/e;->a:Ls3/K;
+    iget-object p1, p2, Lo3/e;->a:Ls3/K1;
 
-    iput-object p1, p0, Lo3/a;->i:Ls3/K;
+    iput-object p1, p0, Lo3/a;->i:Ls3/K1;
 
     iget-object p1, p2, Lo3/e;->c:Ls3/s;
 
@@ -67,10 +67,10 @@
     return-object v0
 .end method
 
-.method public final g()Ls3/K;
+.method public final g()Ls3/K1;
     .locals 1
 
-    iget-object v0, p0, Lo3/a;->i:Ls3/K;
+    iget-object v0, p0, Lo3/a;->i:Ls3/K1;
 
     return-object v0
 .end method

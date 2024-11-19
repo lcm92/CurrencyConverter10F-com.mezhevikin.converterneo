@@ -8,7 +8,7 @@
 
 .field public O:Lh4/c;
 
-.field public final P:Lm/M;
+.field public final P:Lm/M1;
 
 
 # direct methods
@@ -37,13 +37,13 @@
 
     iput-object p5, p0, Lu/a;->O:Lh4/c;
 
-    new-instance p1, Lm/M;
+    new-instance p1, Lm/M1;
 
     const/16 p2, 0xc
 
-    invoke-direct {p1, p2, p0}, Lm/M;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lm/M1;-><init>(ILjava/lang/Object;)V
 
-    iput-object p1, p0, Lu/a;->P:Lm/M;
+    iput-object p1, p0, Lu/a;->P:Lm/M1;
 
     return-void
 .end method

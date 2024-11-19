@@ -191,9 +191,9 @@
 
     move-result v14
 
-    iget-object v6, v2, Lk0/z;->k:Lk0/B;
+    iget-object v6, v2, Lk0/z;->k:Lk0/B1;
 
-    iget-wide v8, v6, Lk0/B;->C:J
+    iget-wide v8, v6, Lk0/B1;->C:J
 
     const/16 v6, 0x20
 
@@ -219,9 +219,9 @@
 
     move-result v6
 
-    iget-object v8, v2, Lk0/z;->k:Lk0/B;
+    iget-object v8, v2, Lk0/z;->k:Lk0/B1;
 
-    iget-wide v8, v8, Lk0/B;->C:J
+    iget-wide v8, v8, Lk0/B1;->C:J
 
     const-wide v12, 0xffffffffL
 

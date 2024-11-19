@@ -10,26 +10,26 @@
 # instance fields
 .field public final g:Ls4/f;
 
-.field public final synthetic h:Lk0/B;
+.field public final synthetic h:Lk0/B1;
 
 .field public i:Ls4/f;
 
 .field public j:Lk0/j;
 
-.field public final synthetic k:Lk0/B;
+.field public final synthetic k:Lk0/B1;
 
 
 # direct methods
-.method public constructor <init>(Lk0/B;Ls4/f;)V
+.method public constructor <init>(Lk0/B1;Ls4/f;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk0/z;->k:Lk0/B;
+    iput-object p1, p0, Lk0/z;->k:Lk0/B1;
 
     iput-object p2, p0, Lk0/z;->g:Ls4/f;
 
-    iput-object p1, p0, Lk0/z;->h:Lk0/B;
+    iput-object p1, p0, Lk0/z;->h:Lk0/B1;
 
     sget-object p1, Lk0/j;->h:Lk0/j;
 
@@ -43,7 +43,7 @@
 .method public final D(J)J
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
     invoke-interface {v0, p1, p2}, Ll6/b;->D(J)J
 
@@ -55,7 +55,7 @@
 .method public final H(F)J
     .locals 2
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
     invoke-interface {v0, p1}, Ll6/b;->H(F)J
 
@@ -67,7 +67,7 @@
 .method public final I(J)J
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
     invoke-interface {v0, p1, p2}, Ll6/b;->I(J)J
 
@@ -79,9 +79,9 @@
 .method public final M(F)F
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
-    invoke-virtual {v0}, Lk0/B;->b()F
+    invoke-virtual {v0}, Lk0/B1;->b()F
 
     move-result v0
 
@@ -93,7 +93,7 @@
 .method public final O(J)F
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
     invoke-interface {v0, p1, p2}, Ll6/b;->O(J)F
 
@@ -105,7 +105,7 @@
 .method public final W(F)J
     .locals 2
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
     invoke-interface {v0, p1}, Ll6/b;->W(F)J
 
@@ -143,9 +143,9 @@
 .method public final b()F
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
-    invoke-virtual {v0}, Lk0/B;->b()F
+    invoke-virtual {v0}, Lk0/B1;->b()F
 
     move-result v0
 
@@ -155,15 +155,15 @@
 .method public final c()J
     .locals 9
 
-    iget-object v0, p0, Lk0/z;->k:Lk0/B;
+    iget-object v0, p0, Lk0/z;->k:Lk0/B1;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {v0}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {v0}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object v1
 
-    iget-object v1, v1, Lq0/D;->y:Lr0/O0;
+    iget-object v1, v1, Lq0/D1;->y:Lr0/O0;
 
     invoke-interface {v1}, Lr0/O0;->g()J
 
@@ -173,7 +173,7 @@
 
     move-result-wide v1
 
-    iget-wide v3, v0, Lk0/B;->C:J
+    iget-wide v3, v0, Lk0/B1;->C:J
 
     invoke-static {v1, v2}, Lx5/f;->d(J)F
 
@@ -229,15 +229,15 @@
 .method public final d()Lr0/O0;
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->k:Lk0/B;
+    iget-object v0, p0, Lk0/z;->k:Lk0/B1;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {v0}, Lq0/f;->v(Lq0/m;)Lq0/D;
+    invoke-static {v0}, Lq0/f;->v(Lq0/m;)Lq0/D1;
 
     move-result-object v0
 
-    iget-object v0, v0, Lq0/D;->y:Lr0/O0;
+    iget-object v0, v0, Lq0/D1;->y:Lr0/O0;
 
     return-object v0
 .end method
@@ -285,7 +285,7 @@
 
     if-ne v2, v3, :cond_1
 
-    iget-object p1, v0, Lk0/w;->j:Ls4/B;
+    iget-object p1, v0, Lk0/w;->j:Ls4/B1;
 
     :try_start_0
     invoke-static {p4}, Lu9/a;->e(Ljava/lang/Object;)V
@@ -332,7 +332,7 @@
     invoke-virtual {p4, v2}, Ls4/f;->s(Ljava/lang/Object;)V
 
     :cond_3
-    iget-object p4, p0, Lk0/z;->k:Lk0/B;
+    iget-object p4, p0, Lk0/z;->k:Lk0/B1;
 
     invoke-virtual {p4}, Lr5/p;->m0()Ls4/x;
 
@@ -348,12 +348,12 @@
 
     const/4 p2, 0x0
 
-    invoke-static {p4, v4, p2, v2, p1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p4, v4, p2, v2, p1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     move-result-object p1
 
     :try_start_1
-    iput-object p1, v0, Lk0/w;->j:Ls4/B;
+    iput-object p1, v0, Lk0/w;->j:Ls4/B1;
 
     iput v3, v0, Lk0/w;->m:I
 
@@ -371,14 +371,14 @@
     :goto_1
     sget-object p2, Lk0/b;->g:Lk0/b;
 
-    invoke-interface {p1, p2}, Ls4/X;->c(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {p1, p2}, Ls4/X1;->c(Ljava/util/concurrent/CancellationException;)V
 
     return-object p4
 
     :goto_2
     sget-object p3, Lk0/b;->g:Lk0/b;
 
-    invoke-interface {p1, p3}, Ls4/X;->c(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {p1, p3}, Ls4/X1;->c(Ljava/util/concurrent/CancellationException;)V
 
     throw p2
 .end method
@@ -386,7 +386,7 @@
 .method public final e0(I)F
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
     invoke-interface {v0, p1}, Ll6/b;->e0(I)F
 
@@ -481,7 +481,7 @@
 .method public final f0(J)F
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
     invoke-interface {v0, p1, p2}, Ll6/b;->f0(J)F
 
@@ -493,9 +493,9 @@
 .method public final g0(F)F
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
-    invoke-virtual {v0}, Lk0/B;->b()F
+    invoke-virtual {v0}, Lk0/B1;->b()F
 
     move-result v0
 
@@ -507,7 +507,7 @@
 .method public final j(F)I
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
     invoke-interface {v0, p1}, Ll6/b;->j(F)I
 
@@ -519,9 +519,9 @@
 .method public final n()F
     .locals 1
 
-    iget-object v0, p0, Lk0/z;->h:Lk0/B;
+    iget-object v0, p0, Lk0/z;->h:Lk0/B1;
 
-    invoke-virtual {v0}, Lk0/B;->n()F
+    invoke-virtual {v0}, Lk0/B1;->n()F
 
     move-result v0
 
@@ -539,14 +539,14 @@
 .method public final s(Ljava/lang/Object;)V
     .locals 2
 
-    iget-object v0, p0, Lk0/z;->k:Lk0/B;
+    iget-object v0, p0, Lk0/z;->k:Lk0/B1;
 
-    iget-object v1, v0, Lk0/B;->z:Lh5/d;
+    iget-object v1, v0, Lk0/B1;->z:Lh5/d;
 
     monitor-enter v1
 
     :try_start_0
-    iget-object v0, v0, Lk0/B;->z:Lh5/d;
+    iget-object v0, v0, Lk0/B1;->z:Lh5/d;
 
     invoke-virtual {v0, p0}, Lh5/d;->n(Ljava/lang/Object;)Z
     :try_end_0

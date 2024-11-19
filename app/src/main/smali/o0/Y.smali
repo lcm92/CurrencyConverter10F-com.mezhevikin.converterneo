@@ -1,11 +1,14 @@
-.class public interface abstract Lo0/Y;
+.class public final Lo0/y;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lo0/G;
+.implements Lo0/V1;
 
 
 # virtual methods
-.method public abstract G(Ljava/lang/Object;Lh4/e;)Ljava/util/List;
+.method public final a()V
+    .locals 0
+
+    return-void
 .end method

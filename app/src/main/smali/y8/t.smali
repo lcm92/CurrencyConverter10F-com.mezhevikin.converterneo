@@ -117,7 +117,7 @@
 
     sget-object v3, Ly8/t;->a:Lq/g;
 
-    invoke-static {v3, v1, p2, v2}, Lq/Z;->b(Lq/f;Lr5/h;Lf5/p;I)Lq/a0;
+    invoke-static {v3, v1, p2, v2}, Lq/Z1;->b(Lq/f;Lr5/h;Lf5/p;I)Lq/a0;
 
     move-result-object v1
 

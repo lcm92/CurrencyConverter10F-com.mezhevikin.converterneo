@@ -1,33 +1,31 @@
-.class public final Lr0/g1;
-.super Landroid/database/ContentObserver;
+.class public final Lr0/G1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic a:Lu4/d;
+# static fields
+.field public static final a:Lr0/G1;
 
 
 # direct methods
-.method public constructor <init>(Lu4/d;Landroid/os/Handler;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lr0/g1;->a:Lu4/d;
+    new-instance v0, Lr0/G1;
 
-    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lr0/G1;->a:Lr0/G1;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onChange(ZLandroid/net/Uri;)V
+.method public final a(Landroid/view/View;)V
     .locals 0
 
-    sget-object p1, Lu9/y;->a:Lu9/y;
-
-    iget-object p2, p0, Lr0/g1;->a:Lu4/d;
-
-    invoke-interface {p2, p1}, Lu4/t;->p(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lb0/f;->m(Landroid/view/View;)V
 
     return-void
 .end method

@@ -456,7 +456,7 @@
 
     check-cast v1, Ls4/x;
 
-    invoke-static {v1, v4, v0, p2, p1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v1, v4, v0, p2, p1}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     goto :goto_8
 
@@ -470,9 +470,9 @@
 
     invoke-direct {v0, p1, v2, v4}, Ll/b;-><init>(Ll/c;Ljava/lang/Object;Ly9/d;)V
 
-    iget-object p1, p1, Ll/c;->f:Ll/Q;
+    iget-object p1, p1, Ll/c;->f:Ll/Q1;
 
-    invoke-static {p1, v0, p2}, Ll/Q;->a(Ll/Q;Lh4/c;Ly9/d;)Ljava/lang/Object;
+    invoke-static {p1, v0, p2}, Ll/Q1;->a(Ll/Q1;Lh4/c;Ly9/d;)Ljava/lang/Object;
 
     move-result-object p1
 

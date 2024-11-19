@@ -95,7 +95,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lk/Q;
+    check-cast v1, Lk/Q1;
 
     goto :goto_1
 
@@ -137,7 +137,7 @@
 
     move-object v2, p1
 
-    check-cast v2, Lk/Q;
+    check-cast v2, Lk/Q1;
 
     goto :goto_3
 

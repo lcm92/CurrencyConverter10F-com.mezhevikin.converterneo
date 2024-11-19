@@ -25,7 +25,7 @@
 
     sget-object v13, Lv9/t;->g:Lv9/t;
 
-    sget-object v17, Lo/O;->g:Lo/O;
+    sget-object v17, Lo/O1;->g:Lo/O1;
 
     sget-object v0, Ly9/j;->g:Ly9/j;
 
@@ -71,7 +71,7 @@
 
     const/16 v19, 0x0
 
-    invoke-direct/range {v1 .. v19}, Lr/m;-><init>(Lr/n;IZFLo0/F;FZLx4/d;Ll6/b;JLjava/util/List;IIILo/O;II)V
+    invoke-direct/range {v1 .. v19}, Lr/m;-><init>(Lr/n;IZFLo0/F1;FZLx4/d;Ll6/b;JLjava/util/List;IIILo/O1;II)V
 
     sput-object v0, Lr/x;->b:Lr/m;
 

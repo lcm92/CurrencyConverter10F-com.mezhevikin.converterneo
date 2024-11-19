@@ -9,18 +9,18 @@
 # instance fields
 .field public final synthetic o:Lt/i;
 
-.field public final synthetic p:Lq0/Z;
+.field public final synthetic p:Lq0/Z1;
 
 .field public final synthetic q:Li4/i;
 
 
 # direct methods
-.method public constructor <init>(Lt/i;Lq0/Z;Lh4/a;)V
+.method public constructor <init>(Lt/i;Lq0/Z1;Lh4/a;)V
     .locals 6
 
     iput-object p1, p0, Lt/e;->o:Lt/i;
 
-    iput-object p2, p0, Lt/e;->p:Lq0/Z;
+    iput-object p2, p0, Lt/e;->p:Lq0/Z1;
 
     check-cast p3, Li4/i;
 
@@ -50,11 +50,11 @@
 
     iget-object v0, p0, Lt/e;->q:Li4/i;
 
-    iget-object v1, p0, Lt/e;->p:Lq0/Z;
+    iget-object v1, p0, Lt/e;->p:Lq0/Z1;
 
     iget-object v2, p0, Lt/e;->o:Lt/i;
 
-    invoke-static {v2, v1, v0}, Lt/i;->y0(Lt/i;Lq0/Z;Lh4/a;)Lx5/d;
+    invoke-static {v2, v1, v0}, Lt/i;->y0(Lt/i;Lq0/Z1;Lh4/a;)Lx5/d;
 
     move-result-object v0
 

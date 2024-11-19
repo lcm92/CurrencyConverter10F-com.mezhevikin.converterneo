@@ -146,11 +146,11 @@
 
     check-cast v5, Lp5/d;
 
-    iget-object v5, v5, Lp5/e;->h:Li/D;
+    iget-object v5, v5, Lp5/e;->h:Li/D1;
 
     if-eqz v5, :cond_4
 
-    invoke-virtual {v5}, Li/D;->h()Z
+    invoke-virtual {v5}, Li/D1;->h()Z
 
     move-result v5
     :try_end_2

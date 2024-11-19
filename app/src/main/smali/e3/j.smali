@@ -102,7 +102,7 @@
 
     invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
 
-    check-cast v0, Ls4/X;
+    check-cast v0, Ls4/X1;
 
     new-instance v2, La5/h0;
 
@@ -110,7 +110,7 @@
 
     invoke-direct {v2, v3, v1}, La5/h0;-><init>(ILjava/lang/Object;)V
 
-    invoke-interface {v0, v2}, Ls4/X;->q(Lh4/c;)Ls4/G;
+    invoke-interface {v0, v2}, Ls4/X1;->q(Lh4/c;)Ls4/G1;
 
     return-object p0
 .end method

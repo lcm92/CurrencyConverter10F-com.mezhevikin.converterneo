@@ -189,7 +189,7 @@
 
     invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v13, v1, Lo3/d;->a:Ls3/G;
+    iget-object v13, v1, Lo3/d;->a:Ls3/G1;
 
     invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -310,7 +310,7 @@
 
     move-result-object v6
 
-    iget-object v10, v1, Lo3/d;->a:Ls3/G;
+    iget-object v10, v1, Lo3/d;->a:Ls3/G1;
 
     if-nez v6, :cond_a
 
@@ -623,7 +623,7 @@
 
     invoke-virtual {v12, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, v11, Lo3/d;->a:Ls3/G;
+    iget-object v1, v11, Lo3/d;->a:Ls3/G1;
 
     invoke-virtual {v12, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -734,7 +734,7 @@
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, v1, Lo3/d;->a:Ls3/G;
+    iget-object v1, v1, Lo3/d;->a:Ls3/G1;
 
     invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -749,7 +749,7 @@
     return-object v8
 .end method
 
-.method public final b(Ls3/K;Lm9/a;Ljava/lang/Object;Ls3/d;Ljava/nio/charset/Charset;La4/c;)Ljava/lang/Object;
+.method public final b(Ls3/K1;Lm9/a;Ljava/lang/Object;Ls3/d;Ljava/nio/charset/Charset;La4/c;)Ljava/lang/Object;
     .locals 8
 
     instance-of v0, p6, Lk3/g;
@@ -794,7 +794,7 @@
 
     if-ne v2, v3, :cond_1
 
-    iget-object p1, v0, Lk3/g;->j:Ls3/K;
+    iget-object p1, v0, Lk3/g;->j:Ls3/K1;
 
     invoke-static {p6}, Lu9/a;->e(Ljava/lang/Object;)V
 
@@ -994,7 +994,7 @@
     :cond_9
     check-cast p3, Lio/ktor/utils/io/I;
 
-    iput-object p1, v0, Lk3/g;->j:Ls3/K;
+    iput-object p1, v0, Lk3/g;->j:Ls3/K1;
 
     iput v3, v0, Lk3/g;->m:I
 

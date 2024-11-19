@@ -6,7 +6,7 @@
 .implements Landroidx/lifecycle/X;
 .implements Landroidx/lifecycle/j;
 .implements Lp1/f;
-.implements Lb/E;
+.implements Lb/E1;
 .implements Landroidx/lifecycle/t;
 
 
@@ -357,7 +357,7 @@
     return-void
 .end method
 
-.method public final b()Lb/C;
+.method public final b()Lb/C1;
     .locals 1
 
     iget-object v0, p0, Lb/n;->y:Lu9/n;
@@ -366,7 +366,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lb/C;
+    check-cast v0, Lb/C1;
 
     return-object v0
 .end method
@@ -1213,11 +1213,11 @@
 .method public final onBackPressed()V
     .locals 1
 
-    invoke-virtual {p0}, Lb/n;->b()Lb/C;
+    invoke-virtual {p0}, Lb/n;->b()Lb/C1;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lb/C;->c()V
+    invoke-virtual {v0}, Lb/C1;->c()V
 
     return-void
 .end method

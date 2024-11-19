@@ -82,11 +82,11 @@
 
     iput-object p1, p0, Lm/z0;->d:Lf5/g0;
 
-    new-instance p1, Lj3/F;
+    new-instance p1, Lj3/F1;
 
     const/4 v0, 0x7
 
-    invoke-direct {p1, v0, p0}, Lj3/F;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, Lj3/F1;-><init>(ILjava/lang/Object;)V
 
     new-instance v0, Lo/q;
 

@@ -4,16 +4,16 @@
 
 
 # instance fields
-.field public final a:Li/A;
+.field public final a:Li/A1;
 
 
 # direct methods
-.method public synthetic constructor <init>(Li/A;)V
+.method public synthetic constructor <init>(Li/A1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lf5/b0;->a:Li/A;
+    iput-object p1, p0, Lf5/b0;->a:Li/A1;
 
     return-void
 .end method
@@ -34,9 +34,9 @@
     :cond_0
     check-cast p1, Lf5/b0;
 
-    iget-object p1, p1, Lf5/b0;->a:Li/A;
+    iget-object p1, p1, Lf5/b0;->a:Li/A1;
 
-    iget-object v0, p0, Lf5/b0;->a:Li/A;
+    iget-object v0, p0, Lf5/b0;->a:Li/A1;
 
     invoke-static {v0, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -56,9 +56,9 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lf5/b0;->a:Li/A;
+    iget-object v0, p0, Lf5/b0;->a:Li/A1;
 
-    invoke-virtual {v0}, Li/A;->hashCode()I
+    invoke-virtual {v0}, Li/A1;->hashCode()I
 
     move-result v0
 
@@ -74,7 +74,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lf5/b0;->a:Li/A;
+    iget-object v1, p0, Lf5/b0;->a:Li/A1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

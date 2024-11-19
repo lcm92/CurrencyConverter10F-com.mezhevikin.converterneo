@@ -65,11 +65,11 @@
     :cond_0
     new-instance v0, Lp4/k;
 
-    new-instance v1, Lm/M;
+    new-instance v1, Lm/M1;
 
     const/4 v2, 0x3
 
-    invoke-direct {v1, v2, p0}, Lm/M;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lm/M1;-><init>(ILjava/lang/Object;)V
 
     invoke-direct {v0, v1, p1}, Lp4/k;-><init>(Lh4/a;Lh4/c;)V
 

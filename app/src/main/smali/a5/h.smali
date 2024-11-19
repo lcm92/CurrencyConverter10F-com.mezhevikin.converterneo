@@ -40,9 +40,9 @@
 .method public final j(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 10
 
-    check-cast p1, Lq0/F;
+    check-cast p1, Lq0/F1;
 
-    invoke-virtual {p1}, Lq0/F;->a()V
+    invoke-virtual {p1}, Lq0/F1;->a()V
 
     iget-object v0, p0, La5/h;->h:Lh4/a;
 
@@ -69,7 +69,7 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lq0/F;->g:La0/b;
+    iget-object v0, p1, Lq0/F1;->g:La0/b;
 
     invoke-interface {v0}, La0/d;->t()J
 
@@ -98,7 +98,7 @@
 
     invoke-virtual {v7, v8, v9, v3, v4}, La5/Z1;->o(FFJ)V
 
-    invoke-static {p1, v2, v1}, La0/d;->l0(Lq0/F;Ly5/g;Ly5/l;)V
+    invoke-static {p1, v2, v1}, La0/d;->l0(Lq0/F1;Ly5/g;Ly5/l;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -126,7 +126,7 @@
     throw p1
 
     :cond_1
-    invoke-static {p1, v2, v1}, La0/d;->l0(Lq0/F;Ly5/g;Ly5/l;)V
+    invoke-static {p1, v2, v1}, La0/d;->l0(Lq0/F1;Ly5/g;Ly5/l;)V
 
     :goto_0
     sget-object p1, Lu9/y;->a:Lu9/y;

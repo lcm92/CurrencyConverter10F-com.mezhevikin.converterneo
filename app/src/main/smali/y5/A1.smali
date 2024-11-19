@@ -382,13 +382,13 @@
 
     const/16 v3, 0x1f
 
-    invoke-static {v0, v3, v1, v2}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v3, v1, v2}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
     iget-wide v1, p0, Ly5/A1;->i:J
 
-    invoke-static {v0, v3, v1, v2}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v3, v1, v2}, Lk/P1;->b(IIJ)I
 
     move-result v0
 

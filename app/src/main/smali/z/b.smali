@@ -10,13 +10,13 @@
 # instance fields
 .field public final a:Ll6/k;
 
-.field public final b:Lz0/F;
+.field public final b:Lz0/F1;
 
 .field public final c:Ll6/c;
 
 .field public final d:Le6/o;
 
-.field public final e:Lz0/F;
+.field public final e:Lz0/F1;
 
 .field public f:F
 
@@ -24,24 +24,24 @@
 
 
 # direct methods
-.method public constructor <init>(Ll6/k;Lz0/F;Ll6/c;Le6/o;)V
+.method public constructor <init>(Ll6/k;Lz0/F1;Ll6/c;Le6/o;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lz/b;->a:Ll6/k;
 
-    iput-object p2, p0, Lz/b;->b:Lz0/F;
+    iput-object p2, p0, Lz/b;->b:Lz0/F1;
 
     iput-object p3, p0, Lz/b;->c:Ll6/c;
 
     iput-object p4, p0, Lz/b;->d:Le6/o;
 
-    invoke-static {p2, p1}, Lp4/h;->g(Lz0/F;Ll6/k;)Lz0/F;
+    invoke-static {p2, p1}, Lp4/h;->g(Lz0/F1;Ll6/k;)Lz0/F1;
 
     move-result-object p1
 
-    iput-object p1, p0, Lz/b;->e:Lz0/F;
+    iput-object p1, p0, Lz/b;->e:Lz0/F1;
 
     const/high16 p1, 0x7fc00000    # Float.NaN
 
@@ -94,7 +94,7 @@
 
     const/4 v13, 0x1
 
-    iget-object v7, v0, Lz/b;->e:Lz0/F;
+    iget-object v7, v0, Lz/b;->e:Lz0/F1;
 
     iget-object v11, v0, Lz/b;->d:Le6/o;
 
@@ -102,7 +102,7 @@
 
     move-object v10, v3
 
-    invoke-static/range {v6 .. v14}, Lp2/c;->b(Ljava/lang/String;Lz0/F;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
+    invoke-static/range {v6 .. v14}, Lp2/c;->b(Ljava/lang/String;Lz0/F1;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
 
     move-result-object v4
 
@@ -120,7 +120,7 @@
 
     const/16 v17, 0x2
 
-    iget-object v11, v0, Lz/b;->e:Lz0/F;
+    iget-object v11, v0, Lz/b;->e:Lz0/F1;
 
     iget-object v15, v0, Lz/b;->d:Le6/o;
 
@@ -128,7 +128,7 @@
 
     move-object v14, v3
 
-    invoke-static/range {v10 .. v18}, Lp2/c;->b(Ljava/lang/String;Lz0/F;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
+    invoke-static/range {v10 .. v18}, Lp2/c;->b(Ljava/lang/String;Lz0/F1;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
 
     move-result-object v2
 

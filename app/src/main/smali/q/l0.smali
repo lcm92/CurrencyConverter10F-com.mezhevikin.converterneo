@@ -11,26 +11,26 @@
 
 .field public final synthetic i:I
 
-.field public final synthetic j:Lo0/N;
+.field public final synthetic j:Lo0/N1;
 
 .field public final synthetic k:I
 
-.field public final synthetic l:Lo0/G;
+.field public final synthetic l:Lo0/G1;
 
 
 # direct methods
-.method public constructor <init>(Lq/m0;ILo0/N;ILo0/G;)V
+.method public constructor <init>(Lq/m0;ILo0/N1;ILo0/G1;)V
     .locals 0
 
     iput-object p1, p0, Lq/l0;->h:Lq/m0;
 
     iput p2, p0, Lq/l0;->i:I
 
-    iput-object p3, p0, Lq/l0;->j:Lo0/N;
+    iput-object p3, p0, Lq/l0;->j:Lo0/N1;
 
     iput p4, p0, Lq/l0;->k:I
 
-    iput-object p5, p0, Lq/l0;->l:Lo0/G;
+    iput-object p5, p0, Lq/l0;->l:Lo0/G1;
 
     const/4 p1, 0x1
 
@@ -44,21 +44,21 @@
 .method public final j(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 5
 
-    check-cast p1, Lo0/M;
+    check-cast p1, Lo0/M1;
 
     iget-object v0, p0, Lq/l0;->h:Lq/m0;
 
     iget-object v0, v0, Lq/m0;->v:Li4/i;
 
-    iget-object v1, p0, Lq/l0;->j:Lo0/N;
+    iget-object v1, p0, Lq/l0;->j:Lo0/N1;
 
-    iget v2, v1, Lo0/N;->g:I
+    iget v2, v1, Lo0/N1;->g:I
 
     iget v3, p0, Lq/l0;->i:I
 
     sub-int/2addr v3, v2
 
-    iget v2, v1, Lo0/N;->h:I
+    iget v2, v1, Lo0/N1;->h:I
 
     iget v4, p0, Lq/l0;->k:I
 
@@ -72,7 +72,7 @@
 
     invoke-direct {v4, v2, v3}, Ll6/j;-><init>(J)V
 
-    iget-object v2, p0, Lq/l0;->l:Lo0/G;
+    iget-object v2, p0, Lq/l0;->l:Lo0/G1;
 
     invoke-interface {v2}, Lo0/m;->getLayoutDirection()Ll6/k;
 
@@ -86,7 +86,7 @@
 
     iget-wide v2, v0, Ll6/h;->a:J
 
-    invoke-static {p1, v1, v2, v3}, Lo0/M;->e(Lo0/M;Lo0/N;J)V
+    invoke-static {p1, v1, v2, v3}, Lo0/M1;->e(Lo0/M1;Lo0/N1;J)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

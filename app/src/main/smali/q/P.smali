@@ -1,240 +1,114 @@
-.class public final Lq/P;
-.super Ljava/lang/Object;
+.class public final Lq/p;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
-.implements Ly6/d;
-.implements Landroid/view/View$OnAttachStateChangeListener;
+.implements Lh4/c;
 
 
 # instance fields
-.field public g:Landroid/view/WindowInsets;
+.field public final synthetic h:[Lo0/N1;
 
-.field public final h:I
+.field public final synthetic i:Ljava/util/List;
 
-.field public final i:Lq/i0;
+.field public final synthetic j:Lo0/G1;
 
-.field public j:Z
+.field public final synthetic k:Li4/q;
 
-.field public k:Z
+.field public final synthetic l:Li4/q;
 
-.field public l:Ly6/L1;
+.field public final synthetic m:Lq/q;
 
 
 # direct methods
-.method public constructor <init>(Lq/i0;)V
-    .locals 1
+.method public constructor <init>([Lo0/N1;Ljava/util/List;Lo0/G1;Li4/q;Li4/q;Lq/q;)V
+    .locals 0
 
-    iget-boolean v0, p1, Lq/i0;->r:Z
+    iput-object p1, p0, Lq/p;->h:[Lo0/N1;
 
-    xor-int/lit8 v0, v0, 0x1
+    iput-object p2, p0, Lq/p;->i:Ljava/util/List;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p3, p0, Lq/p;->j:Lo0/G1;
 
-    iput v0, p0, Lq/P;->h:I
+    iput-object p4, p0, Lq/p;->k:Li4/q;
 
-    iput-object p1, p0, Lq/P;->i:Lq/i0;
+    iput-object p5, p0, Lq/p;->l:Li4/q;
+
+    iput-object p6, p0, Lq/p;->m:Lq/q;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/view/View;Ly6/L1;)Ly6/L1;
-    .locals 5
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
-    iput-object p2, p0, Lq/P;->l:Ly6/L1;
+    check-cast p1, Lo0/M1;
 
-    iget-object v0, p0, Lq/P;->i:Lq/i0;
+    iget-object v7, p0, Lq/p;->h:[Lo0/N1;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    array-length v8, v7
 
-    iget-object v1, p2, Ly6/L1;->a:Ly6/I1;
+    const/4 v0, 0x0
 
-    const/16 v2, 0x8
+    move v9, v0
 
-    invoke-virtual {v1, v2}, Ly6/I1;->f(I)Lt6/b;
+    :goto_0
+    if-ge v9, v8, :cond_0
+
+    aget-object v1, v7, v9
+
+    add-int/lit8 v10, v0, 0x1
+
+    const-string v2, "null cannot be cast to non-null type androidx.compose.ui.layout.Placeable"
+
+    invoke-static {v1, v2}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v2, p0, Lq/p;->i:Ljava/util/List;
+
+    invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lo0/D1;
+
+    iget-object v0, p0, Lq/p;->j:Lo0/G1;
+
+    invoke-interface {v0}, Lo0/m;->getLayoutDirection()Ll6/k;
 
     move-result-object v3
 
-    invoke-static {v3}, Lq/c;->l(Lt6/b;)Lq/Q;
+    iget-object v0, p0, Lq/p;->k:Li4/q;
 
-    move-result-object v3
+    iget v4, v0, Li4/q;->g:I
 
-    iget-object v4, v0, Lq/i0;->p:Lq/g0;
+    iget-object v0, p0, Lq/p;->l:Li4/q;
 
-    invoke-virtual {v4, v3}, Lq/g0;->f(Lq/Q;)V
+    iget v5, v0, Li4/q;->g:I
 
-    iget-boolean v3, p0, Lq/P;->j:Z
+    iget-object v0, p0, Lq/p;->m:Lq/q;
 
-    if-eqz v3, :cond_0
+    iget-object v6, v0, Lq/q;->a:Lr5/d;
 
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    move-object v0, p1
 
-    const/16 v2, 0x1e
+    invoke-static/range {v0 .. v6}, Lq/n;->b(Lo0/M1;Lo0/N1;Lo0/D1;Ll6/k;IILr5/d;)V
 
-    if-ne v1, v2, :cond_1
+    add-int/lit8 v9, v9, 0x1
 
-    invoke-virtual {p1, p0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+    move v0, v10
 
     goto :goto_0
 
     :cond_0
-    iget-boolean p1, p0, Lq/P;->k:Z
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
-    if-nez p1, :cond_1
-
-    invoke-virtual {v1, v2}, Ly6/I1;->f(I)Lt6/b;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lq/c;->l(Lt6/b;)Lq/Q;
-
-    move-result-object p1
-
-    iget-object v1, v0, Lq/i0;->q:Lq/g0;
-
-    invoke-virtual {v1, p1}, Lq/g0;->f(Lq/Q;)V
-
-    invoke-static {v0, p2}, Lq/i0;->a(Lq/i0;Ly6/L1;)V
-
-    :cond_1
-    :goto_0
-    iget-boolean p1, v0, Lq/i0;->r:Z
-
-    if-eqz p1, :cond_2
-
-    sget-object p2, Ly6/L1;->b:Ly6/L1;
-
-    :cond_2
-    return-object p2
-.end method
-
-.method public final b(Ly6/x;)V
-    .locals 5
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lq/P;->j:Z
-
-    iput-boolean v0, p0, Lq/P;->k:Z
-
-    iget-object v0, p0, Lq/P;->l:Ly6/L1;
-
-    iget-object p1, p1, Ly6/x;->a:Ly6/w;
-
-    invoke-virtual {p1}, Ly6/w;->a()J
-
-    move-result-wide v1
-
-    const-wide/16 v3, 0x0
-
-    cmp-long p1, v1, v3
-
-    if-eqz p1, :cond_0
-
-    if-eqz v0, :cond_0
-
-    iget-object p1, p0, Lq/P;->i:Lq/i0;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    iget-object v1, v0, Ly6/L1;->a:Ly6/I1;
-
-    const/16 v2, 0x8
-
-    invoke-virtual {v1, v2}, Ly6/I1;->f(I)Lt6/b;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lq/c;->l(Lt6/b;)Lq/Q;
-
-    move-result-object v3
-
-    iget-object v4, p1, Lq/i0;->q:Lq/g0;
-
-    invoke-virtual {v4, v3}, Lq/g0;->f(Lq/Q;)V
-
-    invoke-virtual {v1, v2}, Ly6/I1;->f(I)Lt6/b;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lq/c;->l(Lt6/b;)Lq/Q;
-
-    move-result-object v1
-
-    iget-object v2, p1, Lq/i0;->p:Lq/g0;
-
-    invoke-virtual {v2, v1}, Lq/g0;->f(Lq/Q;)V
-
-    invoke-static {p1, v0}, Lq/i0;->a(Lq/i0;Ly6/L1;)V
-
-    :cond_0
-    const/4 p1, 0x0
-
-    iput-object p1, p0, Lq/P;->l:Ly6/L1;
-
-    return-void
-.end method
-
-.method public final onViewAttachedToWindow(Landroid/view/View;)V
-    .locals 0
-
-    invoke-virtual {p1}, Landroid/view/View;->requestApplyInsets()V
-
-    return-void
-.end method
-
-.method public final onViewDetachedFromWindow(Landroid/view/View;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final run()V
-    .locals 4
-
-    iget-boolean v0, p0, Lq/P;->j:Z
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lq/P;->j:Z
-
-    iput-boolean v0, p0, Lq/P;->k:Z
-
-    iget-object v0, p0, Lq/P;->l:Ly6/L1;
-
-    if-eqz v0, :cond_0
-
-    iget-object v1, p0, Lq/P;->i:Lq/i0;
-
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    iget-object v2, v0, Ly6/L1;->a:Ly6/I1;
-
-    const/16 v3, 0x8
-
-    invoke-virtual {v2, v3}, Ly6/I1;->f(I)Lt6/b;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q;
-
-    move-result-object v2
-
-    iget-object v3, v1, Lq/i0;->q:Lq/g0;
-
-    invoke-virtual {v3, v2}, Lq/g0;->f(Lq/Q;)V
-
-    invoke-static {v1, v0}, Lq/i0;->a(Lq/i0;Ly6/L1;)V
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lq/P;->l:Ly6/L1;
-
-    :cond_0
-    return-void
+    return-object p1
 .end method

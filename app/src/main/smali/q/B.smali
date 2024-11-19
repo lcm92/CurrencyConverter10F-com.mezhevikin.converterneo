@@ -1,152 +1,140 @@
-.class public final Lq/B;
-.super Lr5/p;
+.class public final Lq/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lq0/w;
+.implements Lq/f;
 
 
 # instance fields
-.field public t:I
+.field public final synthetic a:I
 
-.field public u:F
+
+# direct methods
+.method public synthetic constructor <init>(I)V
+    .locals 0
+
+    iput p1, p0, Lq/b;->a:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static final c(Ljava/lang/String;I)Lq/a;
+    .locals 1
+
+    sget-object v0, Lq/i0;->u:Ljava/util/WeakHashMap;
+
+    new-instance v0, Lq/a;
+
+    invoke-direct {v0, p0, p1}, Lq/a;-><init>(Ljava/lang/String;I)V
+
+    return-object v0
+.end method
+
+.method public static final d(Ljava/lang/String;I)Lq/g0;
+    .locals 1
+
+    sget-object p1, Lq/i0;->u:Ljava/util/WeakHashMap;
+
+    sget-object p1, Lt6/b;->e:Lt6/b;
+
+    new-instance v0, Lq/g0;
+
+    invoke-static {p1}, Lq/c;->l(Lt6/b;)Lq/Q1;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1, p0}, Lq/g0;-><init>(Lq/Q1;Ljava/lang/String;)V
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
-    .locals 4
+.method public b(Lo0/G1;I[ILl6/k;[I)V
+    .locals 0
 
-    invoke-static {p3, p4}, Ll6/a;->d(J)Z
+    iget p1, p0, Lq/b;->a:I
 
-    move-result v0
+    packed-switch p1, :pswitch_data_0
 
-    if-eqz v0, :cond_0
+    sget-object p1, Ll6/k;->g:Ll6/k;
 
-    iget v0, p0, Lq/B;->t:I
+    if-ne p4, p1, :cond_0
 
-    const/4 v1, 0x1
+    const/4 p1, 0x0
 
-    if-eq v0, v1, :cond_0
-
-    invoke-static {p3, p4}, Ll6/a;->h(J)I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    iget v1, p0, Lq/B;->u:F
-
-    mul-float/2addr v0, v1
-
-    invoke-static {v0}, Ljava/lang/Math;->round(F)I
-
-    move-result v0
-
-    invoke-static {p3, p4}, Ll6/a;->j(J)I
-
-    move-result v1
-
-    invoke-static {p3, p4}, Ll6/a;->h(J)I
-
-    move-result v2
-
-    invoke-static {v0, v1, v2}, Lk4/a;->z(III)I
-
-    move-result v0
-
-    move v1, v0
+    invoke-static {p3, p5, p1}, Lq/j;->b([I[IZ)V
 
     goto :goto_0
 
     :cond_0
-    invoke-static {p3, p4}, Ll6/a;->j(J)I
+    const/4 p1, 0x1
 
-    move-result v0
-
-    invoke-static {p3, p4}, Ll6/a;->h(J)I
-
-    move-result v1
+    invoke-static {p2, p3, p5, p1}, Lq/j;->c(I[I[IZ)V
 
     :goto_0
-    invoke-static {p3, p4}, Ll6/a;->c(J)Z
+    return-void
 
-    move-result v2
+    :pswitch_0
+    const/4 p1, 0x0
 
-    if-eqz v2, :cond_1
+    invoke-static {p2, p3, p5, p1}, Lq/j;->c(I[I[IZ)V
 
-    iget v2, p0, Lq/B;->t:I
+    return-void
 
-    const/4 v3, 0x2
+    :pswitch_1
+    const/4 p1, 0x0
 
-    if-eq v2, v3, :cond_1
+    invoke-static {p3, p5, p1}, Lq/j;->b([I[IZ)V
 
-    invoke-static {p3, p4}, Ll6/a;->g(J)I
+    return-void
 
-    move-result v2
+    nop
 
-    int-to-float v2, v2
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    iget v3, p0, Lq/B;->u:F
+.method public toString()Ljava/lang/String;
+    .locals 1
 
-    mul-float/2addr v2, v3
+    iget v0, p0, Lq/b;->a:I
 
-    invoke-static {v2}, Ljava/lang/Math;->round(F)I
+    packed-switch v0, :pswitch_data_0
 
-    move-result v2
+    invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    invoke-static {p3, p4}, Ll6/a;->i(J)I
+    move-result-object v0
 
-    move-result v3
+    return-object v0
 
-    invoke-static {p3, p4}, Ll6/a;->g(J)I
+    :pswitch_0
+    const-string v0, "Arrangement#Start"
 
-    move-result p3
+    return-object v0
 
-    invoke-static {v2, v3, p3}, Lk4/a;->z(III)I
+    :pswitch_1
+    const-string v0, "AbsoluteArrangement#Right"
 
-    move-result p3
+    return-object v0
 
-    move p4, p3
+    :pswitch_2
+    const-string v0, "AbsoluteArrangement#Left"
 
-    goto :goto_1
+    return-object v0
 
-    :cond_1
-    invoke-static {p3, p4}, Ll6/a;->i(J)I
+    nop
 
-    move-result v2
-
-    invoke-static {p3, p4}, Ll6/a;->g(J)I
-
-    move-result p3
-
-    move p4, p3
-
-    move p3, v2
-
-    :goto_1
-    invoke-static {v0, v1, p3, p4}, Lk4/a;->b(IIII)J
-
-    move-result-wide p3
-
-    invoke-interface {p2, p3, p4}, Lo0/D;->a(J)Lo0/N;
-
-    move-result-object p2
-
-    iget p3, p2, Lo0/N;->g:I
-
-    iget p4, p2, Lo0/N;->h:I
-
-    new-instance v0, Lo6/o;
-
-    const/4 v1, 0x6
-
-    invoke-direct {v0, p2, v1}, Lo6/o;-><init>(Lo0/N;I)V
-
-    sget-object p2, Lv9/u;->g:Lv9/u;
-
-    invoke-interface {p1, p3, p4, p2, v0}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
-
-    move-result-object p1
-
-    return-object p1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

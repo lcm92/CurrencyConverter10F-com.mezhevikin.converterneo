@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/U;
+.implements Ls4/U1;
 
 
 # virtual methods

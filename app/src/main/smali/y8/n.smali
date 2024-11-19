@@ -89,7 +89,7 @@
 
     check-cast v2, Lw8/g;
 
-    check-cast v1, Lj1/B;
+    check-cast v1, Lj1/B1;
 
     const-string v4, "$navigation"
 
@@ -116,7 +116,7 @@
     :cond_0
     const-string v2, "consent"
 
-    invoke-static {v1, v2}, Lv8/p;->b(Lj1/B;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lv8/p;->b(Lj1/B1;Ljava/lang/String;)V
 
     :goto_0
     return-object v0

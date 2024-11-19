@@ -1,33 +1,43 @@
-.class public final Lv4/I;
-.super Ljava/lang/Object;
+.class public final Lv4/i;
+.super La4/c;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lv4/J;
+# instance fields
+.field public j:Lv4/f;
 
-.field public static final b:Lv4/J;
+.field public k:Lu4/s;
+
+.field public l:Lu4/c;
+
+.field public m:Z
+
+.field public synthetic n:Ljava/lang/Object;
+
+.field public o:I
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+# virtual methods
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    new-instance v0, Lv4/J;
+    iput-object p1, p0, Lv4/i;->n:Ljava/lang/Object;
 
-    const/4 v1, 0x0
+    iget p1, p0, Lv4/i;->o:I
 
-    invoke-direct {v0, v1}, Lv4/J;-><init>(I)V
+    const/high16 v0, -0x80000000
 
-    sput-object v0, Lv4/I;->a:Lv4/J;
+    or-int/2addr p1, v0
 
-    new-instance v0, Lv4/J;
+    iput p1, p0, Lv4/i;->o:I
 
-    const/4 v1, 0x1
+    const/4 p1, 0x0
 
-    invoke-direct {v0, v1}, Lv4/J;-><init>(I)V
+    const/4 v0, 0x0
 
-    sput-object v0, Lv4/I;->b:Lv4/J;
+    invoke-static {p1, p1, v0, p0}, Lv4/F1;->f(Lv4/f;Lu4/s;ZLy9/d;)Ljava/lang/Object;
 
-    return-void
+    move-result-object p1
+
+    return-object p1
 .end method

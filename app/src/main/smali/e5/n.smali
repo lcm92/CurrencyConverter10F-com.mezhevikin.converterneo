@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lz0/F;
+.field public static final a:Lz0/F1;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     invoke-direct {v10, v0, v1}, Lk6/e;-><init>(FI)V
 
-    sget-object v0, Lz0/F;->d:Lz0/F;
+    sget-object v0, Lz0/F1;->d:Lz0/F1;
 
     sget-object v9, Ld5/c;->a:Lz0/t;
 
@@ -35,11 +35,11 @@
 
     const v11, 0xe7ffff
 
-    invoke-static/range {v0 .. v11}, Lz0/F;->a(Lz0/F;JLe6/A1;Le6/p;JJLz0/t;Lk6/e;I)Lz0/F;
+    invoke-static/range {v0 .. v11}, Lz0/F1;->a(Lz0/F1;JLe6/A1;Le6/p;JJLz0/t;Lk6/e;I)Lz0/F1;
 
     move-result-object v0
 
-    sput-object v0, Le5/n;->a:Lz0/F;
+    sput-object v0, Le5/n;->a:Lz0/F1;
 
     return-void
 .end method

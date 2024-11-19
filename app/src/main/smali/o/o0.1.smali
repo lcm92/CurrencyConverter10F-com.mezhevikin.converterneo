@@ -72,7 +72,7 @@
 
     iget v1, p0, Lo/o0;->n:I
 
-    sget-object v2, Lo/O;->h:Lo/O;
+    sget-object v2, Lo/O1;->h:Lo/O1;
 
     const/4 v3, 0x1
 
@@ -122,7 +122,7 @@
 
     iget-wide v6, v4, Li4/r;->g:J
 
-    iget-object v8, v5, Lo/s0;->d:Lo/O;
+    iget-object v8, v5, Lo/s0;->d:Lo/O1;
 
     iget-wide v9, p0, Lo/o0;->r:J
 
@@ -188,7 +188,7 @@
 
     move-result p1
 
-    iget-object v5, v5, Lo/s0;->d:Lo/O;
+    iget-object v5, v5, Lo/s0;->d:Lo/O1;
 
     const/4 v6, 0x0
 

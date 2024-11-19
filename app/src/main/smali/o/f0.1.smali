@@ -52,13 +52,13 @@
 
     iget-object p1, p1, Lo/p0;->a:Lo/s0;
 
-    iget-object v0, p1, Lo/s0;->h:Lo/T;
+    iget-object v0, p1, Lo/s0;->h:Lo/T1;
 
     const/4 v1, 0x1
 
     iget-wide v2, p0, Lo/f0;->l:J
 
-    invoke-static {p1, v0, v2, v3, v1}, Lo/s0;->a(Lo/s0;Lo/T;JI)J
+    invoke-static {p1, v0, v2, v3, v1}, Lo/s0;->a(Lo/s0;Lo/T1;JI)J
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

@@ -9,16 +9,16 @@
 # instance fields
 .field public final synthetic g:I
 
-.field public final synthetic h:Lj1/B;
+.field public final synthetic h:Lj1/B1;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILj1/B;)V
+.method public synthetic constructor <init>(ILj1/B1;)V
     .locals 0
 
     iput p1, p0, Ly8/j;->g:I
 
-    iput-object p2, p0, Ly8/j;->h:Lj1/B;
+    iput-object p2, p0, Ly8/j;->h:Lj1/B1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,11 +36,11 @@
 
     const-string v0, "$navigation"
 
-    iget-object v1, p0, Ly8/j;->h:Lj1/B;
+    iget-object v1, p0, Ly8/j;->h:Lj1/B1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1}, Lv8/p;->a(Lj1/B;)V
+    invoke-static {v1}, Lv8/p;->a(Lj1/B1;)V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 
@@ -49,13 +49,13 @@
     :pswitch_0
     const-string v0, "$navigation"
 
-    iget-object v1, p0, Ly8/j;->h:Lj1/B;
+    iget-object v1, p0, Ly8/j;->h:Lj1/B1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "share"
 
-    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B1;Ljava/lang/String;)V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 
@@ -64,13 +64,13 @@
     :pswitch_1
     const-string v0, "$navigation"
 
-    iget-object v1, p0, Ly8/j;->h:Lj1/B;
+    iget-object v1, p0, Ly8/j;->h:Lj1/B1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "premium"
 
-    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B1;Ljava/lang/String;)V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 
@@ -79,13 +79,13 @@
     :pswitch_2
     const-string v0, "$navigation"
 
-    iget-object v1, p0, Ly8/j;->h:Lj1/B;
+    iget-object v1, p0, Ly8/j;->h:Lj1/B1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "premium"
 
-    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B1;Ljava/lang/String;)V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 
@@ -94,13 +94,13 @@
     :pswitch_3
     const-string v0, "$navigation"
 
-    iget-object v1, p0, Ly8/j;->h:Lj1/B;
+    iget-object v1, p0, Ly8/j;->h:Lj1/B1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "settings"
 
-    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B1;Ljava/lang/String;)V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 
@@ -109,13 +109,13 @@
     :pswitch_4
     const-string v0, "$navigation"
 
-    iget-object v1, p0, Ly8/j;->h:Lj1/B;
+    iget-object v1, p0, Ly8/j;->h:Lj1/B1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "rates"
 
-    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B1;Ljava/lang/String;)V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 
@@ -124,13 +124,13 @@
     :pswitch_5
     const-string v0, "$navigation"
 
-    iget-object v1, p0, Ly8/j;->h:Lj1/B;
+    iget-object v1, p0, Ly8/j;->h:Lj1/B1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "consent"
 
-    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lv8/p;->b(Lj1/B1;Ljava/lang/String;)V
 
     sget-object v0, Lu9/y;->a:Lu9/y;
 

@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public final p:Li/J;
+.field public final p:Li/J1;
 
 .field public q:I
 
@@ -22,16 +22,16 @@
 
 
 # direct methods
-.method public constructor <init>(Lj1/A;)V
+.method public constructor <init>(Lj1/A1;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lj1/u;-><init>(Lj1/H;)V
+    invoke-direct {p0, p1}, Lj1/u;-><init>(Lj1/H1;)V
 
-    new-instance p1, Li/J;
+    new-instance p1, Li/J1;
 
-    invoke-direct {p1}, Li/J;-><init>()V
+    invoke-direct {p1}, Li/J1;-><init>()V
 
-    iput-object p1, p0, Lj1/x;->p:Li/J;
+    iput-object p1, p0, Lj1/x;->p:Li/J1;
 
     return-void
 .end method
@@ -77,17 +77,17 @@
 
     if-eqz v2, :cond_3
 
-    iget-object v2, p0, Lj1/x;->p:Li/J;
+    iget-object v2, p0, Lj1/x;->p:Li/J1;
 
-    invoke-virtual {v2}, Li/J;->e()I
+    invoke-virtual {v2}, Li/J1;->e()I
 
     move-result v3
 
     check-cast p1, Lj1/x;
 
-    iget-object v4, p1, Lj1/x;->p:Li/J;
+    iget-object v4, p1, Lj1/x;->p:Li/J1;
 
-    invoke-virtual {v4}, Li/J;->e()I
+    invoke-virtual {v4}, Li/J1;->e()I
 
     move-result v5
 
@@ -130,7 +130,7 @@
 
     iget v3, v2, Lj1/u;->l:I
 
-    invoke-virtual {v4, v3}, Li/J;->b(I)Ljava/lang/Object;
+    invoke-virtual {v4, v3}, Li/J1;->b(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -160,7 +160,7 @@
 
     const-string v0, "<this>"
 
-    iget-object v1, p0, Lj1/x;->p:Li/J;
+    iget-object v1, p0, Lj1/x;->p:Li/J1;
 
     invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -258,9 +258,9 @@
 .method public final g(ILj1/x;Z)Lj1/u;
     .locals 4
 
-    iget-object v0, p0, Lj1/x;->p:Li/J;
+    iget-object v0, p0, Lj1/x;->p:Li/J1;
 
-    invoke-virtual {v0, p1}, Li/J;->b(I)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Li/J1;->b(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -482,9 +482,9 @@
 
     iget v0, p0, Lj1/x;->q:I
 
-    iget-object v1, p0, Lj1/x;->p:Li/J;
+    iget-object v1, p0, Lj1/x;->p:Li/J1;
 
-    invoke-virtual {v1}, Li/J;->e()I
+    invoke-virtual {v1}, Li/J1;->e()I
 
     move-result v2
 
@@ -493,11 +493,11 @@
     :goto_0
     if-ge v3, v2, :cond_0
 
-    invoke-virtual {v1, v3}, Li/J;->c(I)I
+    invoke-virtual {v1, v3}, Li/J1;->c(I)I
 
     move-result v4
 
-    invoke-virtual {v1, v3}, Li/J;->f(I)Ljava/lang/Object;
+    invoke-virtual {v1, v3}, Li/J1;->f(I)Ljava/lang/Object;
 
     move-result-object v5
 

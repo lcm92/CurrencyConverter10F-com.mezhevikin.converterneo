@@ -64,7 +64,7 @@
 
 .field public final x:Z
 
-.field public final y:Lb2/A;
+.field public final y:Lb2/A1;
 
 .field public final z:I
 
@@ -73,18 +73,18 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Lb2/M;
+    new-instance v0, Lb2/M1;
 
     const/4 v1, 0x7
 
-    invoke-direct {v0, v1}, Lb2/M;-><init>(I)V
+    invoke-direct {v0, v1}, Lb2/M1;-><init>(I)V
 
     sput-object v0, Lb2/w0;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
 
-.method public constructor <init>(IJLandroid/os/Bundle;ILjava/util/List;ZIZLjava/lang/String;Lb2/s0;Landroid/location/Location;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ZLb2/A;ILjava/lang/String;Ljava/util/ArrayList;ILjava/lang/String;IJ)V
+.method public constructor <init>(IJLandroid/os/Bundle;ILjava/util/List;ZIZLjava/lang/String;Lb2/s0;Landroid/location/Location;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ZLb2/A1;ILjava/lang/String;Ljava/util/ArrayList;ILjava/lang/String;IJ)V
     .locals 3
 
     move-object v0, p0
@@ -185,7 +185,7 @@
 
     move-object/from16 v1, p20
 
-    iput-object v1, v0, Lb2/w0;->y:Lb2/A;
+    iput-object v1, v0, Lb2/w0;->y:Lb2/A1;
 
     move/from16 v1, p21
 
@@ -729,7 +729,7 @@
 
     const/16 v1, 0x13
 
-    iget-object v4, p0, Lb2/w0;->y:Lb2/A;
+    iget-object v4, p0, Lb2/w0;->y:Lb2/A1;
 
     invoke-static {p1, v1, v4, p2}, Lp2/c;->s(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 

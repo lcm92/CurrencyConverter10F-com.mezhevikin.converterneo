@@ -46,7 +46,7 @@
 
 .field public s:I
 
-.field public final t:Lq/P;
+.field public final t:Lq/P1;
 
 
 # direct methods
@@ -163,13 +163,13 @@
 
     new-instance v14, Lq/g0;
 
-    invoke-static {v13}, Lq/c;->l(Lt6/b;)Lq/Q;
+    invoke-static {v13}, Lq/c;->l(Lt6/b;)Lq/Q1;
 
     move-result-object v13
 
     const-string v15, "waterfall"
 
-    invoke-direct {v14, v13, v15}, Lq/g0;-><init>(Lq/Q;Ljava/lang/String;)V
+    invoke-direct {v14, v13, v15}, Lq/g0;-><init>(Lq/Q1;Ljava/lang/String;)V
 
     iput-object v14, v0, Lq/i0;->j:Lq/g0;
 
@@ -299,11 +299,11 @@
     :cond_3
     iput-boolean v8, v0, Lq/i0;->r:Z
 
-    new-instance v1, Lq/P;
+    new-instance v1, Lq/P1;
 
-    invoke-direct {v1, v0}, Lq/P;-><init>(Lq/i0;)V
+    invoke-direct {v1, v0}, Lq/P1;-><init>(Lq/i0;)V
 
-    iput-object v1, v0, Lq/i0;->t:Lq/P;
+    iput-object v1, v0, Lq/i0;->t:Lq/P1;
 
     return-void
 .end method
@@ -359,11 +359,11 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q;
+    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q1;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q;)V
+    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q1;)V
 
     iget-object v0, p0, Lq/i0;->l:Lq/g0;
 
@@ -375,11 +375,11 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q;
+    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q1;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q;)V
+    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q1;)V
 
     iget-object v0, p0, Lq/i0;->m:Lq/g0;
 
@@ -391,11 +391,11 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q;
+    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q1;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q;)V
+    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q1;)V
 
     iget-object v0, p0, Lq/i0;->n:Lq/g0;
 
@@ -407,11 +407,11 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q;
+    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q1;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q;)V
+    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q1;)V
 
     iget-object v0, p0, Lq/i0;->o:Lq/g0;
 
@@ -423,11 +423,11 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q;
+    invoke-static {v2}, Lq/c;->l(Lt6/b;)Lq/Q1;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q;)V
+    invoke-virtual {v0, v2}, Lq/g0;->f(Lq/Q1;)V
 
     iget-object p1, p1, Ly6/L1;->a:Ly6/I1;
 
@@ -461,11 +461,11 @@
     :goto_0
     iget-object p0, p0, Lq/i0;->j:Lq/g0;
 
-    invoke-static {p1}, Lq/c;->l(Lt6/b;)Lq/Q;
+    invoke-static {p1}, Lq/c;->l(Lt6/b;)Lq/Q1;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Lq/g0;->f(Lq/Q;)V
+    invoke-virtual {p0, p1}, Lq/g0;->f(Lq/Q1;)V
 
     :cond_1
     sget-object p0, Lp5/p;->b:Ljava/lang/Object;
@@ -481,11 +481,11 @@
 
     check-cast p1, Lp5/d;
 
-    iget-object p1, p1, Lp5/e;->h:Li/D;
+    iget-object p1, p1, Lp5/e;->h:Li/D1;
 
     if-eqz p1, :cond_2
 
-    invoke-virtual {p1}, Li/D;->h()Z
+    invoke-virtual {p1}, Li/D1;->h()Z
 
     move-result p1
     :try_end_0

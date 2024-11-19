@@ -11,18 +11,18 @@
 
 .field public final synthetic l:Lh4/f;
 
-.field public final synthetic m:Lo/S;
+.field public final synthetic m:Lo/S1;
 
 .field public final synthetic n:Lk0/r;
 
 
 # direct methods
-.method public constructor <init>(Lh4/f;Lo/S;Lk0/r;Ly9/d;)V
+.method public constructor <init>(Lh4/f;Lo/S1;Lk0/r;Ly9/d;)V
     .locals 0
 
     iput-object p1, p0, Lo/F0;->l:Lh4/f;
 
-    iput-object p2, p0, Lo/F0;->m:Lo/S;
+    iput-object p2, p0, Lo/F0;->m:Lo/S1;
 
     iput-object p3, p0, Lo/F0;->n:Lk0/r;
 
@@ -40,13 +40,13 @@
 
     new-instance p2, Lo/F0;
 
-    iget-object v0, p0, Lo/F0;->m:Lo/S;
+    iget-object v0, p0, Lo/F0;->m:Lo/S1;
 
     iget-object v1, p0, Lo/F0;->n:Lk0/r;
 
     iget-object v2, p0, Lo/F0;->l:Lh4/f;
 
-    invoke-direct {p2, v2, v0, v1, p1}, Lo/F0;-><init>(Lh4/f;Lo/S;Lk0/r;Ly9/d;)V
+    invoke-direct {p2, v2, v0, v1, p1}, Lo/F0;-><init>(Lh4/f;Lo/S1;Lk0/r;Ly9/d;)V
 
     return-object p2
 .end method
@@ -90,7 +90,7 @@
 
     iput v2, p0, Lo/F0;->k:I
 
-    iget-object p1, p0, Lo/F0;->m:Lo/S;
+    iget-object p1, p0, Lo/F0;->m:Lo/S1;
 
     iget-object v2, p0, Lo/F0;->l:Lh4/f;
 

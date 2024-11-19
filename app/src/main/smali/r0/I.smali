@@ -1,45 +1,34 @@
-.class public final Lr0/I;
+.class public final synthetic Lr0/i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
-# static fields
-.field public static final a:Lr0/I;
+
+# instance fields
+.field public final synthetic a:Lr0/u;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(Lr0/u;)V
+    .locals 0
 
-    new-instance v0, Lr0/I;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Lr0/I;->a:Lr0/I;
+    iput-object p1, p0, Lr0/i;->a:Lr0/u;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p1}, La6/m;->w(Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method public final b(Landroid/view/View;)V
+.method public final onGlobalLayout()V
     .locals 1
 
-    sget-object v0, Lr0/H;->a:Lr0/H;
+    iget-object v0, p0, Lr0/i;->a:Lr0/u;
 
-    sget-object v0, Lr0/H;->a:Lr0/H;
-
-    sget-object v0, Lr0/H;->a:Lr0/H;
-
-    invoke-static {p1, v0}, La6/m;->u(Landroid/view/View;Landroid/view/translation/ViewTranslationCallback;)V
+    invoke-virtual {v0}, Lr0/u;->I()V
 
     return-void
 .end method

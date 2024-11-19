@@ -51,9 +51,9 @@
 
     iget-object p2, p2, Lo2/b;->j:Ljava/lang/Object;
 
-    check-cast p2, Lq0/D;
+    check-cast p2, Lq0/D1;
 
-    invoke-virtual {p2, p3, p4, p1}, Lq0/D;->H(III)V
+    invoke-virtual {p2, p3, p4, p1}, Lq0/D1;->H(III)V
 
     return-void
 .end method

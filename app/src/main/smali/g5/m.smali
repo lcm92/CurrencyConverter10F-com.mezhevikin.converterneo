@@ -329,13 +329,13 @@
 
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    check-cast p3, Lq0/D;
+    check-cast p3, Lq0/D1;
 
     iget-object p2, p2, Lo2/b;->j:Ljava/lang/Object;
 
-    check-cast p2, Lq0/D;
+    check-cast p2, Lq0/D1;
 
-    invoke-virtual {p2, p1, p3}, Lq0/D;->x(ILq0/D;)V
+    invoke-virtual {p2, p1, p3}, Lq0/D1;->x(ILq0/D1;)V
 
     return-void
 
@@ -378,7 +378,7 @@
 
     move-object p1, v0
 
-    check-cast p1, Lq0/D;
+    check-cast p1, Lq0/D1;
 
     invoke-virtual {p2, v0}, Lo2/b;->e(Ljava/lang/Object;)V
 

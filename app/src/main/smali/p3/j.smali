@@ -598,7 +598,7 @@
 
     iget-object v1, p0, Lp3/j;->a:Lo3/d;
 
-    iget-object v1, v1, Lo3/d;->a:Ls3/G;
+    iget-object v1, v1, Lo3/d;->a:Ls3/G1;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

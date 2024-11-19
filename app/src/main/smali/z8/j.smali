@@ -109,7 +109,7 @@
     return-object p1
 
     :pswitch_0
-    check-cast p1, Lq/O;
+    check-cast p1, Lq/O1;
 
     check-cast p2, Lf5/p;
 

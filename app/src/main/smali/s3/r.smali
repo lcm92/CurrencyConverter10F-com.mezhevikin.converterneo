@@ -96,7 +96,7 @@
     goto :goto_0
 
     :cond_0
-    new-instance v0, Ls3/B;
+    new-instance v0, Ls3/B1;
 
     const-string v2, "Header name \'"
 
@@ -193,7 +193,7 @@
     goto :goto_1
 
     :cond_0
-    new-instance v0, Ls3/B;
+    new-instance v0, Ls3/B1;
 
     const-string v2, "Header value \'"
 
@@ -246,10 +246,10 @@
     .end packed-switch
 .end method
 
-.method public p()Ls3/E;
+.method public p()Ls3/E1;
     .locals 3
 
-    new-instance v0, Ls3/F;
+    new-instance v0, Ls3/F1;
 
     iget-object v1, p0, Lh9/r;->g:Ljava/lang/Object;
 

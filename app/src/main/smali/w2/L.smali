@@ -1,77 +1,45 @@
-.class public final Lw2/L;
-.super Lp2/a;
+.class public abstract Lw2/l;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lw2/L;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final a:La5/l;
 
+.field public static final b:La5/l;
 
-# instance fields
-.field public final g:Ljava/lang/String;
-
-.field public final h:Landroid/os/Bundle;
+.field public static final c:La5/l;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, La8/h;
+    const-string v0, "gads:disable_flag_shared_pref_listener:enabled"
 
-    const/16 v1, 0x16
+    const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, La8/h;-><init>(I)V
+    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
 
-    sput-object v0, Lw2/L;->CREATOR:Landroid/os/Parcelable$Creator;
+    move-result-object v0
 
-    return-void
-.end method
+    sput-object v0, Lw2/l;->a:La5/l;
 
-.method public constructor <init>(Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 0
+    const-string v0, "gads:read_local_flags:enabled"
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
 
-    iput-object p1, p0, Lw2/L;->g:Ljava/lang/String;
+    move-result-object v0
 
-    iput-object p2, p0, Lw2/L;->h:Landroid/os/Bundle;
+    sput-object v0, Lw2/l;->b:La5/l;
 
-    return-void
-.end method
+    const-string v0, "gads:read_local_flags_cld:enabled"
 
+    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
 
-# virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 2
+    move-result-object v0
 
-    const/16 p2, 0x4f45
-
-    invoke-static {p1, p2}, Lp2/c;->w(Landroid/os/Parcel;I)I
-
-    move-result p2
-
-    const/4 v0, 0x1
-
-    iget-object v1, p0, Lw2/L;->g:Ljava/lang/String;
-
-    invoke-static {p1, v0, v1}, Lp2/c;->t(Landroid/os/Parcel;ILjava/lang/String;)V
-
-    const/4 v0, 0x2
-
-    iget-object v1, p0, Lw2/L;->h:Landroid/os/Bundle;
-
-    invoke-static {p1, v0, v1}, Lp2/c;->q(Landroid/os/Parcel;ILandroid/os/Bundle;)V
-
-    invoke-static {p1, p2}, Lp2/c;->x(Landroid/os/Parcel;I)V
+    sput-object v0, Lw2/l;->c:La5/l;
 
     return-void
 .end method

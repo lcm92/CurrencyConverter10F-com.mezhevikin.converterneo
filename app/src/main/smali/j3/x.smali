@@ -25,7 +25,7 @@
 .method public static final a(Le3/f;)Ljava/lang/Object;
     .locals 3
 
-    sget-object v0, Lj3/K;->b:Lj3/a;
+    sget-object v0, Lj3/K1;->b:Lj3/a;
 
     const-string v1, "<this>"
 
@@ -54,7 +54,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v0, Lj3/K;->c:Lh9/a;
+    sget-object v0, Lj3/K1;->c:Lh9/a;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

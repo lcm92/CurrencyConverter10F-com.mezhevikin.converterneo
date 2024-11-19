@@ -10,7 +10,7 @@
 # instance fields
 .field private volatile _size:I
 
-.field public a:[Ls4/M;
+.field public a:[Ls4/M1;
 
 
 # direct methods
@@ -32,16 +32,16 @@
 
 
 # virtual methods
-.method public final a(Ls4/M;)V
+.method public final a(Ls4/M1;)V
     .locals 4
 
     move-object v0, p0
 
-    check-cast v0, Ls4/N;
+    check-cast v0, Ls4/N1;
 
-    invoke-virtual {p1, v0}, Ls4/M;->c(Ls4/N;)V
+    invoke-virtual {p1, v0}, Ls4/M1;->c(Ls4/N1;)V
 
-    iget-object v0, p0, Lx4/v;->a:[Ls4/M;
+    iget-object v0, p0, Lx4/v;->a:[Ls4/M1;
 
     sget-object v1, Lx4/v;->b:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
@@ -49,9 +49,9 @@
 
     const/4 v0, 0x4
 
-    new-array v0, v0, [Ls4/M;
+    new-array v0, v0, [Ls4/M1;
 
-    iput-object v0, p0, Lx4/v;->a:[Ls4/M;
+    iput-object v0, p0, Lx4/v;->a:[Ls4/M1;
 
     goto :goto_0
 
@@ -78,9 +78,9 @@
 
     invoke-static {v0, v2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v0, [Ls4/M;
+    check-cast v0, [Ls4/M1;
 
-    iput-object v0, p0, Lx4/v;->a:[Ls4/M;
+    iput-object v0, p0, Lx4/v;->a:[Ls4/M1;
 
     :cond_1
     :goto_0
@@ -94,17 +94,17 @@
 
     aput-object p1, v0, v2
 
-    iput v2, p1, Ls4/M;->h:I
+    iput v2, p1, Ls4/M1;->h:I
 
     invoke-virtual {p0, v2}, Lx4/v;->c(I)V
 
     return-void
 .end method
 
-.method public final b(I)Ls4/M;
+.method public final b(I)Ls4/M1;
     .locals 8
 
-    iget-object v0, p0, Lx4/v;->a:[Ls4/M;
+    iget-object v0, p0, Lx4/v;->a:[Ls4/M1;
 
     invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
 
@@ -146,7 +146,7 @@
 
     invoke-static {v5}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-virtual {v4, v5}, Ls4/M;->compareTo(Ljava/lang/Object;)I
+    invoke-virtual {v4, v5}, Ls4/M1;->compareTo(Ljava/lang/Object;)I
 
     move-result v4
 
@@ -173,7 +173,7 @@
     goto :goto_2
 
     :cond_1
-    iget-object v5, p0, Lx4/v;->a:[Ls4/M;
+    iget-object v5, p0, Lx4/v;->a:[Ls4/M1;
 
     invoke-static {v5}, Li4/h;->c(Ljava/lang/Object;)V
 
@@ -193,7 +193,7 @@
 
     invoke-static {v7}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-virtual {v6, v7}, Ls4/M;->compareTo(Ljava/lang/Object;)I
+    invoke-virtual {v6, v7}, Ls4/M1;->compareTo(Ljava/lang/Object;)I
 
     move-result v6
 
@@ -213,7 +213,7 @@
 
     invoke-static {v5}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-virtual {v4, v5}, Ls4/M;->compareTo(Ljava/lang/Object;)I
+    invoke-virtual {v4, v5}, Ls4/M1;->compareTo(Ljava/lang/Object;)I
 
     move-result v4
 
@@ -240,9 +240,9 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p1, v2}, Ls4/M;->c(Ls4/N;)V
+    invoke-virtual {p1, v2}, Ls4/M1;->c(Ls4/N1;)V
 
-    iput v3, p1, Ls4/M;->h:I
+    iput v3, p1, Ls4/M1;->h:I
 
     invoke-virtual {v1, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
 
@@ -262,7 +262,7 @@
     return-void
 
     :cond_0
-    iget-object v0, p0, Lx4/v;->a:[Ls4/M;
+    iget-object v0, p0, Lx4/v;->a:[Ls4/M1;
 
     invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
 
@@ -297,7 +297,7 @@
 .method public final d(II)V
     .locals 3
 
-    iget-object v0, p0, Lx4/v;->a:[Ls4/M;
+    iget-object v0, p0, Lx4/v;->a:[Ls4/M1;
 
     invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
 
@@ -313,9 +313,9 @@
 
     aput-object v2, v0, p2
 
-    iput p1, v1, Ls4/M;->h:I
+    iput p1, v1, Ls4/M1;->h:I
 
-    iput p2, v2, Ls4/M;->h:I
+    iput p2, v2, Ls4/M1;->h:I
 
     return-void
 .end method

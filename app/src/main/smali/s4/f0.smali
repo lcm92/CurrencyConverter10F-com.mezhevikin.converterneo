@@ -10,16 +10,16 @@
 
 .field public final synthetic d:Ls4/g0;
 
-.field public final synthetic e:Ls4/U;
+.field public final synthetic e:Ls4/U1;
 
 
 # direct methods
-.method public constructor <init>(Ls4/b0;Ls4/g0;Ls4/U;)V
+.method public constructor <init>(Ls4/b0;Ls4/g0;Ls4/U1;)V
     .locals 0
 
     iput-object p2, p0, Ls4/f0;->d:Ls4/g0;
 
-    iput-object p3, p0, Ls4/f0;->e:Ls4/U;
+    iput-object p3, p0, Ls4/f0;->e:Ls4/U1;
 
     invoke-direct {p0}, Lx4/b;-><init>()V
 
@@ -101,7 +101,7 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Ls4/f0;->e:Ls4/U;
+    iget-object v0, p0, Ls4/f0;->e:Ls4/U1;
 
     if-ne p1, v0, :cond_0
 

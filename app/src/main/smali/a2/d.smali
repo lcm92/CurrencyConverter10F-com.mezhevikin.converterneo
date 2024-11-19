@@ -18,7 +18,7 @@
 # instance fields
 .field public final g:Z
 
-.field public final h:Lb2/D;
+.field public final h:Lb2/D1;
 
 .field public final i:Landroid/os/IBinder;
 
@@ -55,16 +55,16 @@
 
     move-result-object v0
 
-    instance-of v1, v0, Lb2/D;
+    instance-of v1, v0, Lb2/D1;
 
     if-eqz v1, :cond_0
 
-    check-cast v0, Lb2/D;
+    check-cast v0, Lb2/D1;
 
     goto :goto_0
 
     :cond_0
-    new-instance v0, Lb2/C;
+    new-instance v0, Lb2/C1;
 
     const/4 v1, 0x1
 
@@ -76,7 +76,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-object v0, p0, La2/d;->h:Lb2/D;
+    iput-object v0, p0, La2/d;->h:Lb2/D1;
 
     iput-object p3, p0, La2/d;->i:Landroid/os/IBinder;
 
@@ -104,7 +104,7 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    iget-object v0, p0, La2/d;->h:Lb2/D;
+    iget-object v0, p0, La2/d;->h:Lb2/D1;
 
     if-nez v0, :cond_0
 

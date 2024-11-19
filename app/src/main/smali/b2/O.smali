@@ -1,6 +1,6 @@
-.class public final Lb2/O;
-.super Lcom/google/android/gms/internal/play_billing/e;
+.class public interface abstract Lb2/o;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lb2/Q;
+.implements Landroid/os/IInterface;

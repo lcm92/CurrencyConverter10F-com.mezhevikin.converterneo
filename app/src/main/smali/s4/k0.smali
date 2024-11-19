@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/G;
+.implements Ls4/G1;
 .implements Ls4/i;
 
 
@@ -40,7 +40,7 @@
     return p1
 .end method
 
-.method public final getParent()Ls4/X;
+.method public final getParent()Ls4/X1;
     .locals 1
 
     const/4 v0, 0x0

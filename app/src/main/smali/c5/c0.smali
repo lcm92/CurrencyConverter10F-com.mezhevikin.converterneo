@@ -32,7 +32,7 @@
 .method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lk0/B;
+    check-cast p1, Lk0/B1;
 
     check-cast p2, Ly9/d;
 

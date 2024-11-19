@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public final Z(Lu2/b;Lw2/Q;)Lw2/m0;
+.method public final Z(Lu2/b;Lw2/Q1;)Lw2/m0;
     .locals 2
 
     invoke-virtual {p0}, Lcom/google/android/gms/internal/play_billing/e;->D()Landroid/os/Parcel;

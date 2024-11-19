@@ -7,5 +7,5 @@
 .method public abstract b(Ljava/lang/Object;Ljava/lang/Object;)Z
 .end method
 
-.method public abstract e(Lo0/Z;)V
+.method public abstract e(Lo0/Z1;)V
 .end method

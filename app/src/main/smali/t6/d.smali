@@ -367,9 +367,9 @@
     monitor-enter v5
 
     :try_start_0
-    sget-object p5, Lw6/f;->d:Li/I;
+    sget-object p5, Lw6/f;->d:Li/I1;
 
-    invoke-virtual {p5, v3}, Li/I;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p5, v3}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -395,7 +395,7 @@
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {p5, v3, v2}, Li/I;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p5, v3, v2}, Li/I1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     monitor-exit v5
     :try_end_0

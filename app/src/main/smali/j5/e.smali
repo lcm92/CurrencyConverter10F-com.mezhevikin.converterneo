@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lp7/b;
-.implements Lz2/K;
+.implements Lz2/K1;
 
 
 # instance fields

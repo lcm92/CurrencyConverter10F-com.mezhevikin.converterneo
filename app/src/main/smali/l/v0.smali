@@ -508,7 +508,7 @@
 
     iput-object v5, v4, Ll/s0;->l:Ll/n0;
 
-    iput-object v5, v4, Ll/s0;->k:Ll/S;
+    iput-object v5, v4, Ll/s0;->k:Ll/S1;
 
     iput-boolean v2, v4, Ll/s0;->o:Z
 
@@ -564,7 +564,7 @@
 
     check-cast v4, Ll/s0;
 
-    iget-object v4, v4, Ll/s0;->k:Ll/S;
+    iget-object v4, v4, Ll/s0;->k:Ll/S1;
 
     if-eqz v4, :cond_0
 
@@ -933,7 +933,7 @@
 
     iget-object v0, p0, Ll/v0;->a:Lh9/r;
 
-    instance-of v1, v0, Ll/N;
+    instance-of v1, v0, Ll/N1;
 
     if-eqz v1, :cond_0
 
@@ -1039,7 +1039,7 @@
 
     const/4 v6, 0x0
 
-    iput-object v6, v4, Ll/s0;->k:Ll/S;
+    iput-object v6, v4, Ll/s0;->k:Ll/S1;
 
     iput-object v6, v4, Ll/s0;->l:Ll/n0;
 
@@ -1242,7 +1242,7 @@
 
     if-nez v0, :cond_1
 
-    instance-of v0, v1, Ll/N;
+    instance-of v0, v1, Ll/N1;
 
     if-eqz v0, :cond_1
 
@@ -1444,7 +1444,7 @@
     return-void
 .end method
 
-.method public final n(Ll/S;)V
+.method public final n(Ll/S1;)V
     .locals 12
 
     iget-object v0, p0, Ll/v0;->i:Lp5/s;
@@ -1490,7 +1490,7 @@
 
     iput-object v5, v4, Ll/s0;->l:Ll/n0;
 
-    iput-object p1, v4, Ll/s0;->k:Ll/S;
+    iput-object p1, v4, Ll/s0;->k:Ll/S1;
 
     :cond_0
     new-instance v5, Ll/n0;
@@ -1559,7 +1559,7 @@
 
     check-cast v3, Ll/v0;
 
-    invoke-virtual {v3, p1}, Ll/v0;->n(Ll/S;)V
+    invoke-virtual {v3, p1}, Ll/v0;->n(Ll/S1;)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -1606,7 +1606,7 @@
 
     check-cast v4, Ll/s0;
 
-    iget-object v5, v4, Ll/s0;->k:Ll/S;
+    iget-object v5, v4, Ll/s0;->k:Ll/S1;
 
     if-nez v5, :cond_0
 
@@ -1620,11 +1620,11 @@
     goto :goto_3
 
     :cond_1
-    iget-wide v7, v5, Ll/S;->g:J
+    iget-wide v7, v5, Ll/S1;->g:J
 
     long-to-double v7, v7
 
-    iget v9, v5, Ll/S;->d:F
+    iget v9, v5, Ll/S1;->d:F
 
     float-to-double v9, v9
 
@@ -1701,7 +1701,7 @@
     invoke-virtual {v4, v9, v10}, Ll/s0;->d(J)V
 
     :goto_2
-    iget-wide v9, v5, Ll/S;->g:J
+    iget-wide v9, v5, Ll/S1;->g:J
 
     cmp-long v6, v7, v9
 
@@ -1709,14 +1709,14 @@
 
     const/4 v5, 0x0
 
-    iput-object v5, v4, Ll/s0;->k:Ll/S;
+    iput-object v5, v4, Ll/s0;->k:Ll/S1;
 
     iput-object v5, v4, Ll/s0;->l:Ll/n0;
 
     goto :goto_3
 
     :cond_5
-    iput-boolean v2, v5, Ll/S;->c:Z
+    iput-boolean v2, v5, Ll/S1;->c:Z
 
     :goto_3
     add-int/lit8 v3, v3, 0x1

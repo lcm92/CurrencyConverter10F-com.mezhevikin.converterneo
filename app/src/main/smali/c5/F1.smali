@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method public constructor <init>(ILo0/N;I)V
+.method public constructor <init>(ILo0/N1;I)V
     .locals 1
 
     const/4 v0, 0x0
@@ -209,7 +209,7 @@
     throw v0
 
     :pswitch_0
-    check-cast p1, Lo0/M;
+    check-cast p1, Lo0/M1;
 
     iget v0, p0, Lc5/F1;->j:I
 
@@ -221,22 +221,22 @@
 
     iget-object v2, p0, Lc5/F1;->i:Ljava/lang/Object;
 
-    check-cast v2, Lo0/N;
+    check-cast v2, Lo0/N1;
 
-    invoke-static {p1, v2, v0, v1}, Lo0/M;->d(Lo0/M;Lo0/N;II)V
+    invoke-static {p1, v2, v0, v1}, Lo0/M1;->d(Lo0/M1;Lo0/N1;II)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 
     return-object p1
 
     :pswitch_1
-    check-cast p1, Lo0/M;
+    check-cast p1, Lo0/M1;
 
     iget-object v0, p0, Lc5/F1;->i:Ljava/lang/Object;
 
-    check-cast v0, Lo0/N;
+    check-cast v0, Lo0/N1;
 
-    iget v1, v0, Lo0/N;->g:I
+    iget v1, v0, Lo0/N1;->g:I
 
     iget v2, p0, Lc5/F1;->j:I
 
@@ -252,7 +252,7 @@
 
     move-result v1
 
-    iget v3, v0, Lo0/N;->h:I
+    iget v3, v0, Lo0/N1;->h:I
 
     iget v4, p0, Lc5/F1;->k:I
 
@@ -266,7 +266,7 @@
 
     move-result v2
 
-    invoke-static {p1, v0, v1, v2}, Lo0/M;->d(Lo0/M;Lo0/N;II)V
+    invoke-static {p1, v0, v1, v2}, Lo0/M1;->d(Lo0/M1;Lo0/N1;II)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

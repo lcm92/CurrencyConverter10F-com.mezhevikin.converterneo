@@ -1,122 +1,72 @@
-.class public final Lr0/j1;
-.super La4/i;
+.class public final Lr0/J1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lh4/e;
 
-
-# instance fields
-.field public k:I
-
-.field public final synthetic l:Lr0/l1;
+# static fields
+.field public static final a:Lr0/J1;
 
 
 # direct methods
-.method public constructor <init>(Lr0/l1;Ly9/d;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lr0/j1;->l:Lr0/l1;
+    new-instance v0, Lr0/J1;
 
-    const/4 p1, 0x2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, p1, p2}, La4/i;-><init>(ILy9/d;)V
+    sput-object v0, Lr0/J1;->a:Lr0/J1;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Ly9/d;Ljava/lang/Object;)Ly9/d;
+.method public final a(Landroid/view/View;Lk0/n;)V
     .locals 1
 
-    new-instance p2, Lr0/j1;
+    instance-of v0, p2, Lk0/a;
 
-    iget-object v0, p0, Lr0/j1;->l:Lr0/l1;
+    if-eqz v0, :cond_0
 
-    invoke-direct {p2, v0, p1}, Lr0/j1;-><init>(Lr0/l1;Ly9/d;)V
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    return-object p2
-.end method
+    move-result-object v0
 
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    check-cast p2, Lk0/a;
 
-    sget-object v0, Lz9/a;->g:Lz9/a;
+    iget p2, p2, Lk0/a;->b:I
 
-    iget v1, p0, Lr0/j1;->k:I
+    invoke-static {v0, p2}, Landroid/view/PointerIcon;->getSystemIcon(Landroid/content/Context;I)Landroid/view/PointerIcon;
 
-    sget-object v2, Lu9/y;->a:Lu9/y;
-
-    const/4 v3, 0x1
-
-    if-eqz v1, :cond_1
-
-    if-ne v1, v3, :cond_0
-
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
-
-    goto :goto_1
-
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_1
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
-
-    iget-object p1, p0, Lr0/j1;->l:Lr0/l1;
-
-    iget-object p1, p1, Lr0/l1;->g:Lr0/u;
-
-    iput v3, p0, Lr0/j1;->k:I
-
-    iget-object p1, p1, Lr0/u;->t:Lt5/c;
-
-    invoke-virtual {p1, p0}, Lt5/c;->a(La4/c;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    if-ne p1, v0, :cond_2
+    move-result-object p2
 
     goto :goto_0
 
-    :cond_2
-    move-object p1, v2
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    const/16 v0, 0x3e8
+
+    invoke-static {p2, v0}, Landroid/view/PointerIcon;->getSystemIcon(Landroid/content/Context;I)Landroid/view/PointerIcon;
+
+    move-result-object p2
 
     :goto_0
-    if-ne p1, v0, :cond_3
+    invoke-virtual {p1}, Landroid/view/View;->getPointerIcon()Landroid/view/PointerIcon;
 
-    return-object v0
+    move-result-object v0
 
-    :cond_3
-    :goto_1
-    return-object v2
-.end method
+    invoke-static {v0, p2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    move-result v0
 
-    check-cast p1, Ls4/x;
+    if-nez v0, :cond_1
 
-    check-cast p2, Ly9/d;
+    invoke-virtual {p1, p2}, Landroid/view/View;->setPointerIcon(Landroid/view/PointerIcon;)V
 
-    invoke-virtual {p0, p2, p1}, Lr0/j1;->d(Ly9/d;Ljava/lang/Object;)Ly9/d;
-
-    move-result-object p1
-
-    check-cast p1, Lr0/j1;
-
-    sget-object p2, Lu9/y;->a:Lu9/y;
-
-    invoke-virtual {p1, p2}, Lr0/j1;->f(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
+    :cond_1
+    return-void
 .end method

@@ -134,7 +134,7 @@
 
     iget-wide v2, p0, Ly5/L1;->b:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/P;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Lk/P1;->b(IIJ)I
 
     move-result v0
 
@@ -162,7 +162,7 @@
 
     const-string v3, ", offset="
 
-    invoke-static {v1, v2, v0, v3}, Lk/P;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Lk/P1;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget-wide v1, p0, Ly5/L1;->b:J
 

@@ -10,7 +10,7 @@
 .method public abstract b(JLo/q0;Ly9/d;)Ljava/lang/Object;
 .end method
 
-.method public abstract c(JILj3/F;)J
+.method public abstract c(JILj3/F1;)J
 .end method
 
 .method public abstract f()Z

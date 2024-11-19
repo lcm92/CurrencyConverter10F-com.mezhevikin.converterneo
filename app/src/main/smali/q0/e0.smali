@@ -40,5 +40,5 @@
 .method public abstract k(Ly5/J1;)V
 .end method
 
-.method public abstract l(Lc5/v;Lm/M;)V
+.method public abstract l(Lc5/v;Lm/M1;)V
 .end method

@@ -11,18 +11,18 @@
 
 .field public final synthetic l:Lt/i;
 
-.field public final synthetic m:Lq0/Z;
+.field public final synthetic m:Lq0/Z1;
 
 .field public final synthetic n:Li4/i;
 
 
 # direct methods
-.method public constructor <init>(Lt/i;Lq0/Z;Lh4/a;Ly9/d;)V
+.method public constructor <init>(Lt/i;Lq0/Z1;Lh4/a;Ly9/d;)V
     .locals 0
 
     iput-object p1, p0, Lt/f;->l:Lt/i;
 
-    iput-object p2, p0, Lt/f;->m:Lq0/Z;
+    iput-object p2, p0, Lt/f;->m:Lq0/Z1;
 
     check-cast p3, Li4/i;
 
@@ -42,13 +42,13 @@
 
     new-instance p2, Lt/f;
 
-    iget-object v0, p0, Lt/f;->m:Lq0/Z;
+    iget-object v0, p0, Lt/f;->m:Lq0/Z1;
 
     iget-object v1, p0, Lt/f;->n:Li4/i;
 
     iget-object v2, p0, Lt/f;->l:Lt/i;
 
-    invoke-direct {p2, v2, v0, v1, p1}, Lt/f;-><init>(Lt/i;Lq0/Z;Lh4/a;Ly9/d;)V
+    invoke-direct {p2, v2, v0, v1, p1}, Lt/f;-><init>(Lt/i;Lq0/Z1;Lh4/a;Ly9/d;)V
 
     return-object p2
 .end method
@@ -90,11 +90,11 @@
 
     new-instance v4, Lt/e;
 
-    iget-object v5, p0, Lt/f;->m:Lq0/Z;
+    iget-object v5, p0, Lt/f;->m:Lq0/Z1;
 
     iget-object v6, p0, Lt/f;->n:Li4/i;
 
-    invoke-direct {v4, p1, v5, v6}, Lt/e;-><init>(Lt/i;Lq0/Z;Lh4/a;)V
+    invoke-direct {v4, p1, v5, v6}, Lt/e;-><init>(Lt/i;Lq0/Z1;Lh4/a;)V
 
     iput v3, p0, Lt/f;->k:I
 

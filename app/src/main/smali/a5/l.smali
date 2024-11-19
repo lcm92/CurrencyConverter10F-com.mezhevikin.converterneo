@@ -146,7 +146,7 @@
     if-ge p1, v0, :cond_0
 
     .line 14
-    sget-object p1, Li/E;->a:Li/x;
+    sget-object p1, Li/E1;->a:Li/x;
 
     const-string p2, "null cannot be cast to non-null type androidx.collection.ObjectIntMap<K of androidx.collection.ObjectIntMapKt.emptyObjectIntMap>"
 

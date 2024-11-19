@@ -82,11 +82,11 @@
 
     iget-object p1, p0, Lo/r0;->l:Ljava/lang/Object;
 
-    check-cast p1, Lo/T;
+    check-cast p1, Lo/T1;
 
     iget-object v1, p0, Lo/r0;->m:Lo/s0;
 
-    iput-object p1, v1, Lo/s0;->h:Lo/T;
+    iput-object p1, v1, Lo/s0;->h:Lo/T1;
 
     iput v2, p0, Lo/r0;->k:I
 
@@ -112,7 +112,7 @@
 .method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lo/T;
+    check-cast p1, Lo/T1;
 
     check-cast p2, Ly9/d;
 

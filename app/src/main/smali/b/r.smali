@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public b(Lb/G;Lb/G;Landroid/view/Window;Landroid/view/View;ZZ)V
+.method public b(Lb/G1;Lb/G1;Landroid/view/Window;Landroid/view/View;ZZ)V
     .locals 1
 
     const-string v0, "statusBarStyle"

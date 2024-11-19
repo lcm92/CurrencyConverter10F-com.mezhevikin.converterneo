@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public j:Ls3/K;
+.field public j:Ls3/K1;
 
 .field public synthetic k:Ljava/lang/Object;
 
@@ -53,7 +53,7 @@
 
     move-object v6, p0
 
-    invoke-virtual/range {v0 .. v6}, Lk3/h;->b(Ls3/K;Lm9/a;Ljava/lang/Object;Ls3/d;Ljava/nio/charset/Charset;La4/c;)Ljava/lang/Object;
+    invoke-virtual/range {v0 .. v6}, Lk3/h;->b(Ls3/K1;Lm9/a;Ljava/lang/Object;Ls3/d;Ljava/nio/charset/Charset;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 

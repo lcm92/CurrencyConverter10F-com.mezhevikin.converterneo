@@ -9,18 +9,18 @@
 # instance fields
 .field public final synthetic g:I
 
-.field public final synthetic h:Lj1/B;
+.field public final synthetic h:Lj1/B1;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILj1/B;)V
+.method public synthetic constructor <init>(ILj1/B1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lz8/a;->g:I
 
-    iput-object p2, p0, Lz8/a;->h:Lj1/B;
+    iput-object p2, p0, Lz8/a;->h:Lj1/B1;
 
     return-void
 .end method
@@ -32,7 +32,7 @@
 
     check-cast p1, Lw8/m;
 
-    iget-object v0, p0, Lz8/a;->h:Lj1/B;
+    iget-object v0, p0, Lz8/a;->h:Lj1/B1;
 
     const-string v1, "$navigation"
 
@@ -120,7 +120,7 @@
     invoke-virtual {v1}, Lw8/e;->a()V
 
     :goto_0
-    invoke-static {v0}, Lv8/p;->a(Lj1/B;)V
+    invoke-static {v0}, Lv8/p;->a(Lj1/B1;)V
 
     sget-object p1, Lu9/y;->a:Lu9/y;
 

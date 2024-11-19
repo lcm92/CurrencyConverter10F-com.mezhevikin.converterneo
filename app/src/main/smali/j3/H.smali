@@ -1,51 +1,47 @@
-.class public final Lj3/H;
-.super La4/c;
+.class public final Lj3/h;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final b:Lj3/a;
+
+.field public static final c:Lh9/a;
+
+
 # instance fields
-.field public j:Lj3/I;
-
-.field public synthetic k:Ljava/lang/Object;
-
-.field public final synthetic l:Lj3/I;
-
-.field public m:I
+.field public final a:Lh4/c;
 
 
 # direct methods
-.method public constructor <init>(Lj3/I;La4/c;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
-    iput-object p1, p0, Lj3/H;->l:Lj3/I;
+    new-instance v0, Lj3/a;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Lj3/a;-><init>(I)V
+
+    sput-object v0, Lj3/h;->b:Lj3/a;
+
+    new-instance v0, Lh9/a;
+
+    const-string v1, "DefaultRequest"
+
+    invoke-direct {v0, v1}, Lh9/a;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lj3/h;->c:Lh9/a;
 
     return-void
 .end method
 
+.method public constructor <init>(Lh4/c;)V
+    .locals 0
 
-# virtual methods
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj3/H;->k:Ljava/lang/Object;
+    iput-object p1, p0, Lj3/h;->a:Lh4/c;
 
-    iget p1, p0, Lj3/H;->m:I
-
-    const/high16 v0, -0x80000000
-
-    or-int/2addr p1, v0
-
-    iput p1, p0, Lj3/H;->m:I
-
-    iget-object p1, p0, Lj3/H;->l:Lj3/I;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0, p0}, Lj3/I;->a(Lo3/d;La4/c;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

@@ -44,7 +44,7 @@
 
     iput v0, p0, Lh3/e;->closed:I
 
-    sget-object v0, Ls4/F;->c:Lz4/c;
+    sget-object v0, Ls4/F1;->c:Lz4/c;
 
     iput-object v0, p0, Lh3/e;->g:Lz4/c;
 

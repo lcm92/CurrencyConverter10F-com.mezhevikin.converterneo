@@ -151,7 +151,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0}, Lb2/y;->c()Lb2/W;
+    invoke-interface {v0}, Lb2/y;->c()Lb2/W1;
 
     move-result-object v0
     :try_end_0
@@ -180,7 +180,7 @@
 
     new-instance v1, Ly7/n;
 
-    invoke-direct {v1, v0}, Ly7/n;-><init>(Lb2/W;)V
+    invoke-direct {v1, v0}, Ly7/n;-><init>(Lb2/W1;)V
 
     :cond_1
     return-object v1

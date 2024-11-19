@@ -1,239 +1,118 @@
-.class public final Lm/I;
-.super Ljava/lang/Object;
+.class public final Lm/i;
+.super La4/i;
 .source "SourceFile"
+
+# interfaces
+.implements Lh4/e;
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public k:I
 
-.field public final b:I
+.field public synthetic l:Ljava/lang/Object;
 
-.field public c:J
-
-.field public d:Landroid/widget/EdgeEffect;
-
-.field public e:Landroid/widget/EdgeEffect;
-
-.field public f:Landroid/widget/EdgeEffect;
-
-.field public g:Landroid/widget/EdgeEffect;
-
-.field public h:Landroid/widget/EdgeEffect;
-
-.field public i:Landroid/widget/EdgeEffect;
-
-.field public j:Landroid/widget/EdgeEffect;
-
-.field public k:Landroid/widget/EdgeEffect;
+.field public final synthetic m:Lm/j;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;I)V
+.method public constructor <init>(Lm/j;Ly9/d;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lm/i;->m:Lm/j;
 
-    iput-object p1, p0, Lm/I;->a:Landroid/content/Context;
+    const/4 p1, 0x2
 
-    iput p2, p0, Lm/I;->b:I
-
-    const-wide/16 p1, 0x0
-
-    iput-wide p1, p0, Lm/I;->c:J
+    invoke-direct {p0, p1, p2}, La4/i;-><init>(ILy9/d;)V
 
     return-void
 .end method
 
-.method public static f(Landroid/widget/EdgeEffect;)Z
-    .locals 0
-
-    if-nez p0, :cond_0
-
-    const/4 p0, 0x0
-
-    return p0
-
-    :cond_0
-    invoke-virtual {p0}, Landroid/widget/EdgeEffect;->isFinished()Z
-
-    move-result p0
-
-    xor-int/lit8 p0, p0, 0x1
-
-    return p0
-.end method
-
-.method public static g(Landroid/widget/EdgeEffect;)Z
-    .locals 4
-
-    const/4 v0, 0x0
-
-    if-nez p0, :cond_0
-
-    return v0
-
-    :cond_0
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x1f
-
-    const/4 v3, 0x0
-
-    if-lt v1, v2, :cond_1
-
-    sget-object v1, Lm/o;->a:Lm/o;
-
-    invoke-virtual {v1, p0}, Lm/o;->b(Landroid/widget/EdgeEffect;)F
-
-    move-result p0
-
-    goto :goto_0
-
-    :cond_1
-    move p0, v3
-
-    :goto_0
-    cmpg-float p0, p0, v3
-
-    const/4 v1, 0x1
-
-    if-nez p0, :cond_2
-
-    move v0, v1
-
-    :cond_2
-    xor-int/lit8 p0, v0, 0x1
-
-    return p0
-.end method
-
 
 # virtual methods
-.method public final a()Landroid/widget/EdgeEffect;
-    .locals 6
+.method public final d(Ly9/d;Ljava/lang/Object;)Ly9/d;
+    .locals 2
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    new-instance v0, Lm/i;
 
-    const/16 v1, 0x1f
+    iget-object v1, p0, Lm/i;->m:Lm/j;
 
-    iget-object v2, p0, Lm/I;->a:Landroid/content/Context;
+    invoke-direct {v0, v1, p1}, Lm/i;-><init>(Lm/j;Ly9/d;)V
 
-    if-lt v0, v1, :cond_0
+    iput-object p2, v0, Lm/i;->l:Ljava/lang/Object;
 
-    sget-object v0, Lm/o;->a:Lm/o;
+    return-object v0
+.end method
 
-    const/4 v1, 0x0
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
-    invoke-virtual {v0, v2, v1}, Lm/o;->a(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
+    sget-object v0, Lz9/a;->g:Lz9/a;
 
-    move-result-object v0
+    iget v1, p0, Lm/i;->k:I
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_1
+
+    if-ne v1, v2, :cond_0
+
+    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
 
     goto :goto_0
 
     :cond_0
-    new-instance v0, Lm/T;
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    invoke-direct {v0, v2}, Lm/T;-><init>(Landroid/content/Context;)V
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    :goto_0
-    iget v1, p0, Lm/I;->b:I
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/EdgeEffect;->setColor(I)V
-
-    iget-wide v1, p0, Lm/I;->c:J
-
-    const-wide/16 v3, 0x0
-
-    invoke-static {v1, v2, v3, v4}, Ll6/j;->a(JJ)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    iget-wide v1, p0, Lm/I;->c:J
-
-    const/16 v3, 0x20
-
-    shr-long v3, v1, v3
-
-    long-to-int v3, v3
-
-    const-wide v4, 0xffffffffL
-
-    and-long/2addr v1, v4
-
-    long-to-int v1, v1
-
-    invoke-virtual {v0, v3, v1}, Landroid/widget/EdgeEffect;->setSize(II)V
+    throw p1
 
     :cond_1
+    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+
+    iget-object p1, p0, Lm/i;->l:Ljava/lang/Object;
+
+    check-cast p1, Lk0/B1;
+
+    iput v2, p0, Lm/i;->k:I
+
+    iget-object v1, p0, Lm/i;->m:Lm/j;
+
+    invoke-virtual {v1, p1, p0}, Lm/j;->C0(Lk0/B1;Lm/i;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v0, :cond_2
+
     return-object v0
+
+    :cond_2
+    :goto_0
+    sget-object p1, Lu9/y;->a:Lu9/y;
+
+    return-object p1
 .end method
 
-.method public final b()Landroid/widget/EdgeEffect;
-    .locals 1
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    iget-object v0, p0, Lm/I;->e:Landroid/widget/EdgeEffect;
+    check-cast p1, Lk0/B1;
 
-    if-nez v0, :cond_0
+    check-cast p2, Ly9/d;
 
-    invoke-virtual {p0}, Lm/I;->a()Landroid/widget/EdgeEffect;
+    invoke-virtual {p0, p2, p1}, Lm/i;->d(Ly9/d;Ljava/lang/Object;)Ly9/d;
 
-    move-result-object v0
+    move-result-object p1
 
-    iput-object v0, p0, Lm/I;->e:Landroid/widget/EdgeEffect;
+    check-cast p1, Lm/i;
 
-    :cond_0
-    return-object v0
-.end method
+    sget-object p2, Lu9/y;->a:Lu9/y;
 
-.method public final c()Landroid/widget/EdgeEffect;
-    .locals 1
+    invoke-virtual {p1, p2}, Lm/i;->f(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, Lm/I;->f:Landroid/widget/EdgeEffect;
+    move-result-object p1
 
-    if-nez v0, :cond_0
-
-    invoke-virtual {p0}, Lm/I;->a()Landroid/widget/EdgeEffect;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lm/I;->f:Landroid/widget/EdgeEffect;
-
-    :cond_0
-    return-object v0
-.end method
-
-.method public final d()Landroid/widget/EdgeEffect;
-    .locals 1
-
-    iget-object v0, p0, Lm/I;->g:Landroid/widget/EdgeEffect;
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p0}, Lm/I;->a()Landroid/widget/EdgeEffect;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lm/I;->g:Landroid/widget/EdgeEffect;
-
-    :cond_0
-    return-object v0
-.end method
-
-.method public final e()Landroid/widget/EdgeEffect;
-    .locals 1
-
-    iget-object v0, p0, Lm/I;->d:Landroid/widget/EdgeEffect;
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p0}, Lm/I;->a()Landroid/widget/EdgeEffect;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lm/I;->d:Landroid/widget/EdgeEffect;
-
-    :cond_0
-    return-object v0
+    return-object p1
 .end method

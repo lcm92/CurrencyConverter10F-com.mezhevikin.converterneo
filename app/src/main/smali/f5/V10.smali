@@ -72,13 +72,13 @@
     move-result v2
 
     .line 34
-    new-instance v3, Ll/D;
+    new-instance v3, Ll/D1;
 
     invoke-virtual {p3, v2}, Ll/r;->a(I)F
 
     move-result v2
 
-    invoke-direct {v3, p1, p2, v2}, Ll/D;-><init>(FFF)V
+    invoke-direct {v3, p1, p2, v2}, Ll/D1;-><init>(FFF)V
 
     .line 35
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -299,7 +299,7 @@
 
 
 # virtual methods
-.method public get(I)Ll/C;
+.method public get(I)Ll/C1;
     .locals 1
 
     iget-object v0, p0, Lf5/V10;->g:Ljava/util/ArrayList;
@@ -308,7 +308,7 @@
 
     move-result-object p1
 
-    check-cast p1, Ll/D;
+    check-cast p1, Ll/D1;
 
     return-object p1
 .end method

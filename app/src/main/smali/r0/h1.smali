@@ -1,176 +1,521 @@
-.class public abstract Lr0/h1;
+.class public final Lr0/H1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/view/translation/ViewTranslationCallback;
+
 
 # static fields
-.field public static final a:Ljava/util/LinkedHashMap;
+.field public static final a:Lr0/H1;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ljava/util/LinkedHashMap;
+    new-instance v0, Lr0/H1;
 
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lr0/h1;->a:Ljava/util/LinkedHashMap;
+    sput-object v0, Lr0/H1;->a:Lr0/H1;
 
     return-void
 .end method
 
-.method public static final a(Landroid/content/Context;)Lv4/N;
-    .locals 9
 
-    sget-object v0, Lr0/h1;->a:Ljava/util/LinkedHashMap;
+# virtual methods
+.method public final onClearTranslation(Landroid/view/View;)Z
+    .locals 14
 
-    monitor-enter v0
+    const-string v0, "null cannot be cast to non-null type androidx.compose.ui.platform.AndroidComposeView"
 
-    :try_start_0
-    invoke-virtual {v0, p0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v1
+    check-cast p1, Lr0/u;
 
-    if-nez v1, :cond_0
+    invoke-virtual {p1}, Lr0/u;->getContentCaptureManager$ui_release()Lt5/c;
 
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    move-result-object p1
 
-    move-result-object v3
+    const/4 v0, 0x1
 
-    const-string v1, "animator_duration_scale"
+    iput v0, p1, Lt5/c;->m:I
 
-    invoke-static {v1}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-virtual {p1}, Lt5/c;->e()Li/s;
 
-    move-result-object v4
+    move-result-object p1
 
-    const/4 v1, 0x6
+    iget-object v1, p1, Li/s;->c:[Ljava/lang/Object;
 
-    const/4 v2, 0x0
+    iget-object p1, p1, Li/s;->a:[J
 
-    const/4 v5, -0x1
+    array-length v2, p1
 
-    invoke-static {v5, v2, v1}, Lu4/l;->a(III)Lu4/d;
+    add-int/lit8 v2, v2, -0x2
 
-    move-result-object v6
+    if-ltz v2, :cond_5
 
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+    const/4 v3, 0x0
 
-    move-result-object v1
+    move v4, v3
 
-    invoke-static {v1}, Lh8/b;->I(Landroid/os/Looper;)Landroid/os/Handler;
+    :goto_0
+    aget-wide v5, p1, v4
 
-    move-result-object v1
+    not-long v7, v5
 
-    new-instance v5, Lr0/g1;
+    const/4 v9, 0x7
 
-    invoke-direct {v5, v6, v1}, Lr0/g1;-><init>(Lu4/d;Landroid/os/Handler;)V
+    shl-long/2addr v7, v9
 
-    new-instance v1, Lr0/f1;
+    and-long/2addr v7, v5
 
-    const/4 v8, 0x0
+    const-wide v9, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
 
-    move-object v2, v1
+    and-long/2addr v7, v9
 
-    move-object v7, p0
+    cmp-long v7, v7, v9
 
-    invoke-direct/range {v2 .. v8}, Lr0/f1;-><init>(Landroid/content/ContentResolver;Landroid/net/Uri;Lr0/g1;Lu4/d;Landroid/content/Context;Ly9/d;)V
+    if-eqz v7, :cond_4
 
-    new-instance v2, Lv4/h;
+    sub-int v7, v4, v2
 
-    invoke-direct {v2, v1}, Lv4/h;-><init>(Lh4/e;)V
+    not-int v7, v7
 
-    new-instance v1, Lx4/d;
+    ushr-int/lit8 v7, v7, 0x1f
 
-    new-instance v3, Ls4/n0;
+    const/16 v8, 0x8
 
-    const/4 v4, 0x0
+    rsub-int/lit8 v7, v7, 0x8
 
-    invoke-direct {v3, v4}, Ls4/a0;-><init>(Ls4/X;)V
+    move v9, v3
 
-    sget-object v4, Ls4/F;->a:Lz4/d;
+    :goto_1
+    if-ge v9, v7, :cond_3
 
-    sget-object v4, Lx4/m;->a:Lt4/d;
+    const-wide/16 v10, 0xff
 
-    invoke-static {v3, v4}, Lk4/a;->W(Ly9/g;Ly9/i;)Ly9/i;
+    and-long/2addr v10, v5
 
-    move-result-object v3
+    const-wide/16 v12, 0x80
 
-    invoke-direct {v1, v3}, Lx4/d;-><init>(Ly9/i;)V
+    cmp-long v10, v10, v12
 
-    new-instance v3, Lv4/M;
+    if-gez v10, :cond_2
 
-    const-wide/16 v4, 0x0
+    shl-int/lit8 v10, v4, 0x3
 
-    const-wide v6, 0x7fffffffffffffffL
+    add-int/2addr v10, v9
 
-    invoke-direct {v3, v4, v5, v6, v7}, Lv4/M;-><init>(JJ)V
+    aget-object v10, v1, v10
 
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    check-cast v10, Lr0/J0;
 
-    move-result-object v4
+    iget-object v10, v10, Lr0/J0;->a:Lx0/m;
 
-    const-string v5, "animator_duration_scale"
+    iget-object v10, v10, Lx0/m;->d:Lx0/i;
 
-    const/high16 v6, 0x3f800000    # 1.0f
+    sget-object v11, Lx0/p;->w:Lx0/s;
 
-    invoke-static {v4, v5, v6}, Landroid/provider/Settings$Global;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)F
+    iget-object v10, v10, Lx0/i;->g:Ljava/util/LinkedHashMap;
 
-    move-result v4
+    invoke-virtual {v10, v11}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    move-result-object v11
 
-    move-result-object v4
+    const/4 v12, 0x0
 
-    invoke-static {v2, v1, v3, v4}, Lv4/F;->j(Lv4/h;Lx4/d;Lv4/M;Ljava/lang/Float;)Lv4/A;
+    if-nez v11, :cond_0
 
-    move-result-object v1
+    move-object v11, v12
 
-    invoke-interface {v0, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_0
+    if-eqz v11, :cond_2
 
-    goto :goto_0
+    sget-object v11, Lx0/h;->l:Lx0/s;
 
-    :catchall_0
-    move-exception p0
+    invoke-virtual {v10, v11}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    if-nez v10, :cond_1
+
+    goto :goto_2
+
+    :cond_1
+    move-object v12, v10
+
+    :goto_2
+    check-cast v12, Lx0/a;
+
+    if-eqz v12, :cond_2
+
+    iget-object v10, v12, Lx0/a;->b:Lu9/e;
+
+    check-cast v10, Lh4/a;
+
+    if-eqz v10, :cond_2
+
+    invoke-interface {v10}, Lh4/a;->b()Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Ljava/lang/Boolean;
+
+    :cond_2
+    shr-long/2addr v5, v8
+
+    add-int/lit8 v9, v9, 0x1
 
     goto :goto_1
 
-    :cond_0
-    :goto_0
-    check-cast v1, Lv4/N;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :cond_3
+    if-ne v7, v8, :cond_5
 
-    monitor-exit v0
+    :cond_4
+    if-eq v4, v2, :cond_5
 
-    return-object v1
-
-    :goto_1
-    monitor-exit v0
-
-    throw p0
-.end method
-
-.method public static final b(Landroid/view/View;)Lf5/r;
-    .locals 1
-
-    const v0, 0x7f070028
-
-    invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    instance-of v0, p0, Lf5/r;
-
-    if-eqz v0, :cond_0
-
-    check-cast p0, Lf5/r;
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    :cond_0
-    const/4 p0, 0x0
+    :cond_5
+    return v0
+.end method
+
+.method public final onHideTranslation(Landroid/view/View;)Z
+    .locals 14
+
+    const-string v0, "null cannot be cast to non-null type androidx.compose.ui.platform.AndroidComposeView"
+
+    invoke-static {p1, v0}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p1, Lr0/u;
+
+    invoke-virtual {p1}, Lr0/u;->getContentCaptureManager$ui_release()Lt5/c;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    iput v0, p1, Lt5/c;->m:I
+
+    invoke-virtual {p1}, Lt5/c;->e()Li/s;
+
+    move-result-object p1
+
+    iget-object v1, p1, Li/s;->c:[Ljava/lang/Object;
+
+    iget-object p1, p1, Li/s;->a:[J
+
+    array-length v2, p1
+
+    add-int/lit8 v2, v2, -0x2
+
+    if-ltz v2, :cond_5
+
+    const/4 v3, 0x0
+
+    move v4, v3
 
     :goto_0
-    return-object p0
+    aget-wide v5, p1, v4
+
+    not-long v7, v5
+
+    const/4 v9, 0x7
+
+    shl-long/2addr v7, v9
+
+    and-long/2addr v7, v5
+
+    const-wide v9, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
+
+    and-long/2addr v7, v9
+
+    cmp-long v7, v7, v9
+
+    if-eqz v7, :cond_4
+
+    sub-int v7, v4, v2
+
+    not-int v7, v7
+
+    ushr-int/lit8 v7, v7, 0x1f
+
+    const/16 v8, 0x8
+
+    rsub-int/lit8 v7, v7, 0x8
+
+    move v9, v3
+
+    :goto_1
+    if-ge v9, v7, :cond_3
+
+    const-wide/16 v10, 0xff
+
+    and-long/2addr v10, v5
+
+    const-wide/16 v12, 0x80
+
+    cmp-long v10, v10, v12
+
+    if-gez v10, :cond_2
+
+    shl-int/lit8 v10, v4, 0x3
+
+    add-int/2addr v10, v9
+
+    aget-object v10, v1, v10
+
+    check-cast v10, Lr0/J0;
+
+    iget-object v10, v10, Lr0/J0;->a:Lx0/m;
+
+    iget-object v10, v10, Lx0/m;->d:Lx0/i;
+
+    sget-object v11, Lx0/p;->w:Lx0/s;
+
+    iget-object v10, v10, Lx0/i;->g:Ljava/util/LinkedHashMap;
+
+    invoke-virtual {v10, v11}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v11
+
+    const/4 v12, 0x0
+
+    if-nez v11, :cond_0
+
+    move-object v11, v12
+
+    :cond_0
+    sget-object v13, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-static {v11, v13}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_2
+
+    sget-object v11, Lx0/h;->k:Lx0/s;
+
+    invoke-virtual {v10, v11}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    if-nez v10, :cond_1
+
+    goto :goto_2
+
+    :cond_1
+    move-object v12, v10
+
+    :goto_2
+    check-cast v12, Lx0/a;
+
+    if-eqz v12, :cond_2
+
+    iget-object v10, v12, Lx0/a;->b:Lu9/e;
+
+    check-cast v10, Lh4/c;
+
+    if-eqz v10, :cond_2
+
+    sget-object v11, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-interface {v10, v11}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Ljava/lang/Boolean;
+
+    :cond_2
+    shr-long/2addr v5, v8
+
+    add-int/lit8 v9, v9, 0x1
+
+    goto :goto_1
+
+    :cond_3
+    if-ne v7, v8, :cond_5
+
+    :cond_4
+    if-eq v4, v2, :cond_5
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_5
+    return v0
+.end method
+
+.method public final onShowTranslation(Landroid/view/View;)Z
+    .locals 13
+
+    const-string v0, "null cannot be cast to non-null type androidx.compose.ui.platform.AndroidComposeView"
+
+    invoke-static {p1, v0}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p1, Lr0/u;
+
+    invoke-virtual {p1}, Lr0/u;->getContentCaptureManager$ui_release()Lt5/c;
+
+    move-result-object p1
+
+    const/4 v0, 0x2
+
+    iput v0, p1, Lt5/c;->m:I
+
+    invoke-virtual {p1}, Lt5/c;->e()Li/s;
+
+    move-result-object p1
+
+    iget-object v1, p1, Li/s;->c:[Ljava/lang/Object;
+
+    iget-object p1, p1, Li/s;->a:[J
+
+    array-length v2, p1
+
+    sub-int/2addr v2, v0
+
+    if-ltz v2, :cond_5
+
+    const/4 v0, 0x0
+
+    move v3, v0
+
+    :goto_0
+    aget-wide v4, p1, v3
+
+    not-long v6, v4
+
+    const/4 v8, 0x7
+
+    shl-long/2addr v6, v8
+
+    and-long/2addr v6, v4
+
+    const-wide v8, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
+
+    and-long/2addr v6, v8
+
+    cmp-long v6, v6, v8
+
+    if-eqz v6, :cond_4
+
+    sub-int v6, v3, v2
+
+    not-int v6, v6
+
+    ushr-int/lit8 v6, v6, 0x1f
+
+    const/16 v7, 0x8
+
+    rsub-int/lit8 v6, v6, 0x8
+
+    move v8, v0
+
+    :goto_1
+    if-ge v8, v6, :cond_3
+
+    const-wide/16 v9, 0xff
+
+    and-long/2addr v9, v4
+
+    const-wide/16 v11, 0x80
+
+    cmp-long v9, v9, v11
+
+    if-gez v9, :cond_2
+
+    shl-int/lit8 v9, v3, 0x3
+
+    add-int/2addr v9, v8
+
+    aget-object v9, v1, v9
+
+    check-cast v9, Lr0/J0;
+
+    iget-object v9, v9, Lr0/J0;->a:Lx0/m;
+
+    iget-object v9, v9, Lx0/m;->d:Lx0/i;
+
+    sget-object v10, Lx0/p;->w:Lx0/s;
+
+    iget-object v9, v9, Lx0/i;->g:Ljava/util/LinkedHashMap;
+
+    invoke-virtual {v9, v10}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    const/4 v11, 0x0
+
+    if-nez v10, :cond_0
+
+    move-object v10, v11
+
+    :cond_0
+    sget-object v12, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {v10, v12}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_2
+
+    sget-object v10, Lx0/h;->k:Lx0/s;
+
+    invoke-virtual {v9, v10}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    if-nez v9, :cond_1
+
+    goto :goto_2
+
+    :cond_1
+    move-object v11, v9
+
+    :goto_2
+    check-cast v11, Lx0/a;
+
+    if-eqz v11, :cond_2
+
+    iget-object v9, v11, Lx0/a;->b:Lu9/e;
+
+    check-cast v9, Lh4/c;
+
+    if-eqz v9, :cond_2
+
+    sget-object v10, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-interface {v9, v10}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    check-cast v9, Ljava/lang/Boolean;
+
+    :cond_2
+    shr-long/2addr v4, v7
+
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_1
+
+    :cond_3
+    if-ne v6, v7, :cond_5
+
+    :cond_4
+    if-eq v3, v2, :cond_5
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_5
+    const/4 p1, 0x1
+
+    return p1
 .end method

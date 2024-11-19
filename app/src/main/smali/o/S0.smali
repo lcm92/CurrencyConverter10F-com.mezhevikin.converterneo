@@ -527,9 +527,9 @@
 
     if-nez v11, :cond_7
 
-    iget-object v11, v8, Lk0/z;->k:Lk0/B;
+    iget-object v11, v8, Lk0/z;->k:Lk0/B1;
 
-    iget-wide v13, v11, Lk0/B;->C:J
+    iget-wide v13, v11, Lk0/B1;->C:J
 
     invoke-virtual {v8}, Lk0/z;->c()J
 

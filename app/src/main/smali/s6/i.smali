@@ -111,13 +111,13 @@
 
     invoke-static {v2, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v1, Lb/C;
+    check-cast v1, Lb/C1;
 
     sget v0, Lb/n;->z:I
 
     new-instance v0, Lb/g;
 
-    invoke-direct {v0, v1, v2}, Lb/g;-><init>(Lb/C;Lb/n;)V
+    invoke-direct {v0, v1, v2}, Lb/g;-><init>(Lb/C1;Lb/n;)V
 
     iget-object v1, v2, Lb/n;->g:Landroidx/lifecycle/v;
 

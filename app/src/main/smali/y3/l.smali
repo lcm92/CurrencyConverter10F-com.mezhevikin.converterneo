@@ -178,7 +178,7 @@
 
     move-result-object v1
 
-    sget-object v2, Ly3/n;->f:Lw2/K;
+    sget-object v2, Ly3/n;->f:Lw2/K1;
 
     if-eq v1, v2, :cond_0
 

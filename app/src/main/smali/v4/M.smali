@@ -1,239 +1,245 @@
-.class public final Lv4/M;
+.class public final Lv4/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lv4/e;
+
 
 # instance fields
-.field public final a:J
+.field public final synthetic g:Lv4/b;
 
-.field public final b:J
+.field public final synthetic h:Lc/d;
 
 
 # direct methods
-.method public constructor <init>(JJ)V
-    .locals 4
+.method public constructor <init>(Lv4/b;Lc/d;)V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide p1, p0, Lv4/M;->a:J
+    iput-object p1, p0, Lv4/m;->g:Lv4/b;
 
-    iput-wide p3, p0, Lv4/M;->b:J
-
-    const-wide/16 v0, 0x0
-
-    cmp-long v2, p1, v0
-
-    const-string v3, " ms) cannot be negative"
-
-    if-ltz v2, :cond_1
-
-    cmp-long p1, p3, v0
-
-    if-ltz p1, :cond_0
+    iput-object p2, p0, Lv4/m;->h:Lc/d;
 
     return-void
-
-    :cond_0
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    const-string p2, "replayExpiration("
-
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, p3, p4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    new-instance p2, Ljava/lang/IllegalArgumentException;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p2
-
-    :cond_1
-    new-instance p3, Ljava/lang/StringBuilder;
-
-    const-string p4, "stopTimeout("
-
-    invoke-direct {p3, p4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p3, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p3, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    new-instance p2, Ljava/lang/IllegalArgumentException;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p2
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final c(Lv4/f;Ly9/d;)Ljava/lang/Object;
+    .locals 9
 
-    instance-of v0, p1, Lv4/M;
+    instance-of v0, p2, Lv4/l;
 
     if-eqz v0, :cond_0
 
-    check-cast p1, Lv4/M;
+    move-object v0, p2
 
-    iget-wide v0, p1, Lv4/M;->a:J
+    check-cast v0, Lv4/l;
 
-    iget-wide v2, p0, Lv4/M;->a:J
+    iget v1, v0, Lv4/l;->k:I
 
-    cmp-long v0, v2, v0
+    const/high16 v2, -0x80000000
 
-    if-nez v0, :cond_0
+    and-int v3, v1, v2
 
-    iget-wide v0, p0, Lv4/M;->b:J
+    if-eqz v3, :cond_0
 
-    iget-wide v2, p1, Lv4/M;->b:J
+    sub-int/2addr v1, v2
 
-    cmp-long p1, v0, v2
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x1
+    iput v1, v0, Lv4/l;->k:I
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    new-instance v0, Lv4/l;
+
+    invoke-direct {v0, p0, p2}, Lv4/l;-><init>(Lv4/m;Ly9/d;)V
 
     :goto_0
-    return p1
-.end method
+    iget-object p2, v0, Lv4/l;->j:Ljava/lang/Object;
 
-.method public final hashCode()I
-    .locals 3
+    sget-object v1, Lz9/a;->g:Lz9/a;
 
-    iget-wide v0, p0, Lv4/M;->a:J
+    iget v2, v0, Lv4/l;->k:I
 
-    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
+    sget-object v3, Lu9/y;->a:Lu9/y;
 
-    move-result v0
+    const/4 v4, 0x3
 
-    mul-int/lit8 v0, v0, 0x1f
+    const/4 v5, 0x2
 
-    iget-wide v1, p0, Lv4/M;->b:J
+    const/4 v6, 0x1
 
-    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
+    const/4 v7, 0x0
 
-    move-result v1
+    if-eqz v2, :cond_4
 
-    add-int/2addr v1, v0
+    if-eq v2, v6, :cond_3
 
-    return v1
-.end method
+    if-eq v2, v5, :cond_2
 
-.method public final toString()Ljava/lang/String;
-    .locals 8
+    if-ne v2, v4, :cond_1
 
-    new-instance v0, Lw9/b;
+    iget-object p1, v0, Lv4/l;->m:Ljava/lang/Object;
 
-    const/4 v1, 0x2
+    check-cast p1, Lw4/t;
 
-    invoke-direct {v0, v1}, Lw9/b;-><init>(I)V
+    :try_start_0
+    invoke-static {p2}, Lu9/a;->e(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    iget-wide v1, p0, Lv4/M;->a:J
+    goto :goto_2
 
-    const-wide/16 v3, 0x0
+    :catchall_0
+    move-exception p2
 
-    cmp-long v3, v1, v3
-
-    const-string v4, "ms"
-
-    if-lez v3, :cond_0
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    const-string v5, "stopTimeout="
-
-    invoke-direct {v3, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v3, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lw9/b;->add(Ljava/lang/Object;)Z
-
-    :cond_0
-    iget-wide v1, p0, Lv4/M;->b:J
-
-    const-wide v5, 0x7fffffffffffffffL
-
-    cmp-long v3, v1, v5
-
-    if-gez v3, :cond_1
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    const-string v5, "replayExpiration="
-
-    invoke-direct {v3, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v3, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lw9/b;->add(Ljava/lang/Object;)Z
+    goto :goto_4
 
     :cond_1
-    invoke-static {v0}, Lll/d;->k(Lw9/b;)Lw9/b;
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    move-result-object v2
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    const-string v1, "SharingStarted.WhileSubscribed("
+    throw p1
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    :cond_2
+    iget-object p1, v0, Lv4/l;->m:Ljava/lang/Object;
 
-    const/4 v5, 0x0
+    check-cast p1, Ljava/lang/Throwable;
 
-    const/4 v6, 0x0
+    invoke-static {p2}, Lu9/a;->e(Ljava/lang/Object;)V
 
-    const/4 v3, 0x0
+    goto :goto_6
 
-    const/4 v4, 0x0
+    :cond_3
+    iget-object p1, v0, Lv4/l;->n:Lv4/f;
 
-    const/16 v7, 0x3f
+    iget-object v2, v0, Lv4/l;->m:Ljava/lang/Object;
 
-    invoke-static/range {v2 .. v7}, Lv9/k;->r0(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lh4/c;I)Ljava/lang/String;
+    check-cast v2, Lv4/m;
 
-    move-result-object v1
+    :try_start_1
+    invoke-static {p2}, Lu9/a;->e(Ljava/lang/Object;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    const/16 v2, 0x29
+    goto :goto_1
 
-    invoke-static {v0, v1, v2}, La5/m;->l(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+    :catchall_1
+    move-exception p1
 
-    move-result-object v0
+    goto :goto_5
 
-    return-object v0
+    :cond_4
+    invoke-static {p2}, Lu9/a;->e(Ljava/lang/Object;)V
+
+    :try_start_2
+    iget-object p2, p0, Lv4/m;->g:Lv4/b;
+
+    iput-object p0, v0, Lv4/l;->m:Ljava/lang/Object;
+
+    iput-object p1, v0, Lv4/l;->n:Lv4/f;
+
+    iput v6, v0, Lv4/l;->k:I
+
+    invoke-virtual {p2, p1, v0}, Lv4/b;->c(Lv4/f;Ly9/d;)Ljava/lang/Object;
+
+    move-result-object p2
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_3
+
+    if-ne p2, v1, :cond_5
+
+    return-object v1
+
+    :cond_5
+    move-object v2, p0
+
+    :goto_1
+    new-instance p2, Lw4/t;
+
+    iget-object v5, v0, La4/c;->h:Ly9/i;
+
+    invoke-static {v5}, Li4/h;->c(Ljava/lang/Object;)V
+
+    invoke-direct {p2, p1, v5}, Lw4/t;-><init>(Lv4/f;Ly9/i;)V
+
+    :try_start_3
+    iget-object p1, v2, Lv4/m;->h:Lc/d;
+
+    iput-object p2, v0, Lv4/l;->m:Ljava/lang/Object;
+
+    iput-object v7, v0, Lv4/l;->n:Lv4/f;
+
+    iput v4, v0, Lv4/l;->k:I
+
+    invoke-virtual {p1, p2, v7, v0}, Lc/d;->h(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    if-ne v3, v1, :cond_6
+
+    return-object v1
+
+    :cond_6
+    move-object p1, p2
+
+    :goto_2
+    invoke-virtual {p1}, La4/c;->l()V
+
+    return-object v3
+
+    :goto_3
+    move-object v8, p2
+
+    move-object p2, p1
+
+    move-object p1, v8
+
+    goto :goto_4
+
+    :catchall_2
+    move-exception p1
+
+    goto :goto_3
+
+    :goto_4
+    invoke-virtual {p1}, La4/c;->l()V
+
+    throw p2
+
+    :catchall_3
+    move-exception p1
+
+    move-object v2, p0
+
+    :goto_5
+    new-instance p2, Lv4/S1;
+
+    invoke-direct {p2, p1}, Lv4/S1;-><init>(Ljava/lang/Throwable;)V
+
+    iget-object v2, v2, Lv4/m;->h:Lc/d;
+
+    iput-object p1, v0, Lv4/l;->m:Ljava/lang/Object;
+
+    iput-object v7, v0, Lv4/l;->n:Lv4/f;
+
+    iput v5, v0, Lv4/l;->k:I
+
+    invoke-static {p2, v2, p1, v0}, Lv4/F1;->c(Lv4/S1;Lc/d;Ljava/lang/Throwable;La4/c;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    if-ne p2, v1, :cond_7
+
+    return-object v1
+
+    :cond_7
+    :goto_6
+    throw p1
 .end method

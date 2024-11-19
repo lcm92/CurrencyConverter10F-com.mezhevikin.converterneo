@@ -133,7 +133,7 @@
 
     iget-boolean v0, p0, Lz/f;->c:Z
 
-    invoke-static {v2, v1, v0}, Lk/P;->c(IIZ)I
+    invoke-static {v2, v1, v0}, Lk/P1;->c(IIZ)I
 
     move-result v0
 

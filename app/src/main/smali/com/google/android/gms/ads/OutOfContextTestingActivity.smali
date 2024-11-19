@@ -23,15 +23,15 @@
 
     iget-object p1, p1, Lb2/l;->b:Lb2/j;
 
-    new-instance v0, Lw2/Q;
+    new-instance v0, Lw2/Q1;
 
-    invoke-direct {v0}, Lw2/Q;-><init>()V
+    invoke-direct {v0}, Lw2/Q1;-><init>()V
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     new-instance p1, Lb2/b;
 
-    invoke-direct {p1, p0, v0}, Lb2/b;-><init>(Lcom/google/android/gms/ads/OutOfContextTestingActivity;Lw2/Q;)V
+    invoke-direct {p1, p0, v0}, Lb2/b;-><init>(Lcom/google/android/gms/ads/OutOfContextTestingActivity;Lw2/Q1;)V
 
     const/4 v0, 0x0
 
@@ -39,7 +39,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lb2/U;
+    check-cast p1, Lb2/U1;
 
     if-nez p1, :cond_0
 

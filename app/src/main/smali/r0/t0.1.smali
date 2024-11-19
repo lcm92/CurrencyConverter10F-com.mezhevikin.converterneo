@@ -66,7 +66,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, v0}, Lr0/L;->q([F[F)Z
+    invoke-static {p1, v0}, Lr0/L1;->q([F[F)Z
 
     move-result p1
 

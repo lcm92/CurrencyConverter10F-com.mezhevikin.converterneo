@@ -8,13 +8,13 @@
 
 .field public final b:Lw5/e;
 
-.field public final c:Li/D;
+.field public final c:Li/D1;
 
-.field public final d:Li/D;
+.field public final d:Li/D1;
 
-.field public final e:Li/D;
+.field public final e:Li/D1;
 
-.field public final f:Li/D;
+.field public final f:Li/D1;
 
 
 # direct methods
@@ -27,31 +27,31 @@
 
     iput-object p2, p0, Lw5/f;->b:Lw5/e;
 
-    sget p1, Li/H;->a:I
+    sget p1, Li/H1;->a:I
 
-    new-instance p1, Li/D;
+    new-instance p1, Li/D1;
 
-    invoke-direct {p1}, Li/D;-><init>()V
+    invoke-direct {p1}, Li/D1;-><init>()V
 
-    iput-object p1, p0, Lw5/f;->c:Li/D;
+    iput-object p1, p0, Lw5/f;->c:Li/D1;
 
-    new-instance p1, Li/D;
+    new-instance p1, Li/D1;
 
-    invoke-direct {p1}, Li/D;-><init>()V
+    invoke-direct {p1}, Li/D1;-><init>()V
 
-    iput-object p1, p0, Lw5/f;->d:Li/D;
+    iput-object p1, p0, Lw5/f;->d:Li/D1;
 
-    new-instance p1, Li/D;
+    new-instance p1, Li/D1;
 
-    invoke-direct {p1}, Li/D;-><init>()V
+    invoke-direct {p1}, Li/D1;-><init>()V
 
-    iput-object p1, p0, Lw5/f;->e:Li/D;
+    iput-object p1, p0, Lw5/f;->e:Li/D1;
 
-    new-instance p1, Li/D;
+    new-instance p1, Li/D1;
 
-    invoke-direct {p1}, Li/D;-><init>()V
+    invoke-direct {p1}, Li/D1;-><init>()V
 
-    iput-object p1, p0, Lw5/f;->f:Li/D;
+    iput-object p1, p0, Lw5/f;->f:Li/D1;
 
     return-void
 .end method
@@ -61,25 +61,25 @@
 .method public final a()Z
     .locals 1
 
-    iget-object v0, p0, Lw5/f;->c:Li/D;
+    iget-object v0, p0, Lw5/f;->c:Li/D1;
 
-    invoke-virtual {v0}, Li/D;->h()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Lw5/f;->e:Li/D;
-
-    invoke-virtual {v0}, Li/D;->h()Z
+    invoke-virtual {v0}, Li/D1;->h()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lw5/f;->d:Li/D;
+    iget-object v0, p0, Lw5/f;->e:Li/D1;
 
-    invoke-virtual {v0}, Li/D;->h()Z
+    invoke-virtual {v0}, Li/D1;->h()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lw5/f;->d:Li/D1;
+
+    invoke-virtual {v0}, Li/D1;->h()Z
 
     move-result v0
 
@@ -100,28 +100,28 @@
     return v0
 .end method
 
-.method public final b(Li/D;Ljava/lang/Object;)V
+.method public final b(Li/D1;Ljava/lang/Object;)V
     .locals 8
 
-    invoke-virtual {p1, p2}, Li/D;->a(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p2}, Li/D1;->a(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    iget-object p1, p0, Lw5/f;->c:Li/D;
+    iget-object p1, p0, Lw5/f;->c:Li/D1;
 
-    iget p1, p1, Li/D;->d:I
+    iget p1, p1, Li/D1;->d:I
 
-    iget-object p2, p0, Lw5/f;->d:Li/D;
+    iget-object p2, p0, Lw5/f;->d:Li/D1;
 
-    iget p2, p2, Li/D;->d:I
+    iget p2, p2, Li/D1;->d:I
 
     add-int/2addr p1, p2
 
-    iget-object p2, p0, Lw5/f;->e:Li/D;
+    iget-object p2, p0, Lw5/f;->e:Li/D1;
 
-    iget p2, p2, Li/D;->d:I
+    iget p2, p2, Li/D1;->d:I
 
     add-int/2addr p1, p2
 

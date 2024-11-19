@@ -12,7 +12,7 @@
 
 .field public d:Li4/i;
 
-.field public e:Lw/Q;
+.field public e:Lw/Q1;
 
 .field public f:La5/b0;
 
@@ -51,7 +51,7 @@
 
     new-instance p1, Lf6/w;
 
-    sget-wide v0, Lz0/E;->b:J
+    sget-wide v0, Lz0/E1;->b:J
 
     const/4 v2, 0x4
 
@@ -73,11 +73,11 @@
 
     sget-object p1, Lu9/g;->h:Lu9/g;
 
-    new-instance v0, Lm/M;
+    new-instance v0, Lm/M1;
 
     const/16 v1, 0x11
 
-    invoke-direct {v0, v1, p0}, Lm/M;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lm/M1;-><init>(ILjava/lang/Object;)V
 
     invoke-static {p1, v0}, Lu9/a;->c(Lu9/g;Lh4/a;)Lu9/f;
 
@@ -96,7 +96,7 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/inputmethod/EditorInfo;)Ly/A;
+.method public final a(Landroid/view/inputmethod/EditorInfo;)Ly/A1;
     .locals 16
 
     move-object/from16 v0, p0
@@ -439,7 +439,7 @@
     iput v5, v1, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     :cond_14
-    sget v5, Lz0/E;->c:I
+    sget v5, Lz0/E1;->c:I
 
     iget-wide v7, v3, Lf6/w;->b:J
 
@@ -529,17 +529,17 @@
 
     invoke-direct {v5, v1, v0}, Lk3/b;-><init>(ILjava/lang/Object;)V
 
-    iget-object v7, v0, Ly/y;->e:Lw/Q;
+    iget-object v7, v0, Ly/y;->e:Lw/Q1;
 
     iget-object v8, v0, Ly/y;->f:La5/b0;
 
     iget-object v9, v0, Ly/y;->g:Lr0/O0;
 
-    new-instance v1, Ly/A;
+    new-instance v1, Ly/A1;
 
     move-object v3, v1
 
-    invoke-direct/range {v3 .. v9}, Ly/A;-><init>(Lf6/w;Lk3/b;ZLw/Q;La5/b0;Lr0/O0;)V
+    invoke-direct/range {v3 .. v9}, Ly/A1;-><init>(Lf6/w;Lk3/b;ZLw/Q1;La5/b0;Lr0/O0;)V
 
     iget-object v2, v0, Ly/y;->j:Ljava/util/ArrayList;
 

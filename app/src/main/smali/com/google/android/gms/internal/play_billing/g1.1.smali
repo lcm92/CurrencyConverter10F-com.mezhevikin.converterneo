@@ -2642,7 +2642,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lk/P;->i(Ljava/lang/Object;)V
+    invoke-static {v0}, Lk/P1;->i(Ljava/lang/Object;)V
     :try_end_1
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_3
     .catch Ljava/lang/InstantiationException; {:try_start_1 .. :try_end_1} :catch_2

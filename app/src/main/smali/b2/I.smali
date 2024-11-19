@@ -1,83 +1,47 @@
-.class public abstract Lb2/I;
+.class public final Lb2/i;
 .super Lw2/a;
 .source "SourceFile"
 
 # interfaces
-.implements Lb2/J;
+.implements Lb2/o;
+
+
+# instance fields
+.field public final a:Lcom/google/ads/mediation/b;
 
 
 # direct methods
-.method public static asInterface(Landroid/os/IBinder;)Lb2/J;
-    .locals 3
+.method public constructor <init>(Lcom/google/ads/mediation/b;)V
+    .locals 1
 
-    if-nez p0, :cond_0
+    const-string v0, "com.google.android.gms.ads.internal.client.IAdClickListener"
 
-    const/4 p0, 0x0
+    invoke-direct {p0, v0}, Lw2/a;-><init>(Ljava/lang/String;)V
 
-    return-object p0
+    iput-object p1, p0, Lb2/i;->a:Lcom/google/ads/mediation/b;
 
-    :cond_0
-    const-string v0, "com.google.android.gms.ads.internal.client.ILiteSdkInfo"
-
-    invoke-interface {p0, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
-
-    move-result-object v1
-
-    instance-of v2, v1, Lb2/J;
-
-    if-eqz v2, :cond_1
-
-    check-cast v1, Lb2/J;
-
-    return-object v1
-
-    :cond_1
-    new-instance v1, Lb2/H;
-
-    const/4 v2, 0x1
-
-    invoke-direct {v1, p0, v0, v2}, Lcom/google/android/gms/internal/play_billing/e;-><init>(Landroid/os/IBinder;Ljava/lang/String;I)V
-
-    return-object v1
+    return-void
 .end method
 
 
 # virtual methods
 .method public final h(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
-    .locals 1
+    .locals 0
 
     const/4 p2, 0x1
 
-    if-eq p1, p2, :cond_1
+    if-ne p1, p2, :cond_0
 
-    const/4 v0, 0x2
+    iget-object p1, p0, Lb2/i;->a:Lcom/google/ads/mediation/b;
 
-    if-eq p1, v0, :cond_0
+    invoke-virtual {p1}, Lcom/google/ads/mediation/b;->a()V
 
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    return p2
+
+    :cond_0
     const/4 p1, 0x0
 
     return p1
-
-    :cond_0
-    invoke-interface {p0}, Lb2/J;->getAdapterCreator()Lw2/S;
-
-    move-result-object p1
-
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
-
-    invoke-static {p3, p1}, Lw2/b;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
-
-    goto :goto_0
-
-    :cond_1
-    invoke-interface {p0}, Lb2/J;->getLiteSdkVersion()Lb2/k0;
-
-    move-result-object p1
-
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
-
-    invoke-static {p3, p1}, Lw2/b;->d(Landroid/os/Parcel;Landroid/os/Parcelable;)V
-
-    :goto_0
-    return p2
 .end method

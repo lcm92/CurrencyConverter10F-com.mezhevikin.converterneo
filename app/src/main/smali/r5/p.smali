@@ -21,7 +21,7 @@
 
 .field public m:Lq0/c0;
 
-.field public n:Lq0/Z;
+.field public n:Lq0/Z1;
 
 .field public o:Z
 
@@ -84,11 +84,11 @@
 
     move-result-object v1
 
-    check-cast v1, Ls4/X;
+    check-cast v1, Ls4/X1;
 
     new-instance v2, Ls4/a0;
 
-    invoke-direct {v2, v1}, Ls4/a0;-><init>(Ls4/X;)V
+    invoke-direct {v2, v1}, Ls4/a0;-><init>(Ls4/X1;)V
 
     invoke-interface {v0, v2}, Ly9/i;->f(Ly9/i;)Ly9/i;
 
@@ -107,7 +107,7 @@
 .method public n0()Z
     .locals 1
 
-    instance-of v0, p0, Lm/J;
+    instance-of v0, p0, Lm/J1;
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -123,7 +123,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lr5/p;->n:Lq0/Z;
+    iget-object v0, p0, Lr5/p;->n:Lq0/Z1;
 
     if-eqz v0, :cond_0
 
@@ -300,7 +300,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lr5/p;->n:Lq0/Z;
+    iget-object v0, p0, Lr5/p;->n:Lq0/Z1;
 
     if-eqz v0, :cond_1
 
@@ -346,10 +346,10 @@
     return-void
 .end method
 
-.method public x0(Lq0/Z;)V
+.method public x0(Lq0/Z1;)V
     .locals 0
 
-    iput-object p1, p0, Lr5/p;->n:Lq0/Z;
+    iput-object p1, p0, Lr5/p;->n:Lq0/Z1;
 
     return-void
 .end method

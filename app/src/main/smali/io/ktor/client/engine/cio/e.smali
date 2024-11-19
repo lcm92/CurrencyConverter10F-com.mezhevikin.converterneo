@@ -29,7 +29,7 @@
 
     new-array v1, v0, [Lh3/f;
 
-    sget-object v2, Lj3/O;->d:Lj3/N;
+    sget-object v2, Lj3/O1;->d:Lj3/N1;
 
     const/4 v3, 0x0
 
@@ -89,11 +89,11 @@
 
     invoke-static {v4}, Li4/h;->c(Ljava/lang/Object;)V
 
-    check-cast v4, Ls4/X;
+    check-cast v4, Ls4/X1;
 
     new-instance v5, Ls4/n0;
 
-    invoke-direct {v5, v4}, Ls4/a0;-><init>(Ls4/X;)V
+    invoke-direct {v5, v4}, Ls4/a0;-><init>(Ls4/X1;)V
 
     sget-object v4, Ls4/u;->g:Ls4/u;
 
@@ -119,17 +119,17 @@
 
     invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    check-cast v1, Ls4/X;
+    check-cast v1, Ls4/X1;
 
-    sget-object v3, Ls4/S;->g:Ls4/S;
+    sget-object v3, Ls4/S1;->g:Ls4/S1;
 
     new-instance v4, Lio/ktor/client/engine/cio/b;
 
     const/4 v5, 0x0
 
-    invoke-direct {v4, v1, v2, v5}, Lio/ktor/client/engine/cio/b;-><init>(Ls4/X;Ly3/f;Ly9/d;)V
+    invoke-direct {v4, v1, v2, v5}, Lio/ktor/client/engine/cio/b;-><init>(Ls4/X1;Ly3/f;Ly9/d;)V
 
-    invoke-static {v3, p1, v0, v4}, Ls4/y;->t(Ls4/x;Ly9/i;ILh4/e;)Ls4/B;
+    invoke-static {v3, p1, v0, v4}, Ls4/y;->t(Ls4/x;Ly9/i;ILh4/e;)Ls4/B1;
 
     return-void
 .end method
@@ -290,9 +290,9 @@
 
     if-eqz p2, :cond_9
 
-    iget-object p2, v4, Lo3/e;->a:Ls3/K;
+    iget-object p2, v4, Lo3/e;->a:Ls3/K1;
 
-    invoke-virtual {p2}, Ls3/K;->a()I
+    invoke-virtual {p2}, Ls3/K1;->a()I
 
     move-result v8
 
@@ -300,7 +300,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v7, p2, Ls3/K;->b:Ljava/lang/String;
+    iget-object v7, p2, Ls3/K1;->b:Ljava/lang/String;
 
     invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -312,7 +312,7 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    iget-object v6, p2, Ls3/K;->a:Ls3/I;
+    iget-object v6, p2, Ls3/K1;->a:Ls3/I1;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -328,7 +328,7 @@
 
     move-object v10, p2
 
-    invoke-direct/range {v5 .. v10}, Lio/ktor/client/engine/cio/d;-><init>(Ls3/I;Ljava/lang/String;ILio/ktor/client/engine/cio/e;Ljava/lang/String;)V
+    invoke-direct/range {v5 .. v10}, Lio/ktor/client/engine/cio/d;-><init>(Ls3/I1;Ljava/lang/String;ILio/ktor/client/engine/cio/e;Ljava/lang/String;)V
 
     iget-object v5, p1, Lio/ktor/client/engine/cio/e;->l:Lj9/b;
 

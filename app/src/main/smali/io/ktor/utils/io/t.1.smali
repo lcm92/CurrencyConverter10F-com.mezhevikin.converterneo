@@ -49,7 +49,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1, p1, p0}, Lio/ktor/utils/io/D;->g0(Lio/ktor/utils/io/D;ILo/F;La4/c;)Ljava/lang/Object;
+    invoke-static {v0, v1, p1, p0}, Lio/ktor/utils/io/D;->g0(Lio/ktor/utils/io/D;ILo/F1;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 

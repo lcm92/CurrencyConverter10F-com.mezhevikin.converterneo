@@ -478,7 +478,7 @@
 
     move-result-object v1
 
-    invoke-interface {v1}, Lo3/b;->g()Ls3/K;
+    invoke-interface {v1}, Lo3/b;->g()Ls3/K1;
 
     move-result-object v1
 
@@ -492,7 +492,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lp3/b;->h()Ls3/A;
+    invoke-virtual {v1}, Lp3/b;->h()Ls3/A1;
 
     move-result-object v1
 

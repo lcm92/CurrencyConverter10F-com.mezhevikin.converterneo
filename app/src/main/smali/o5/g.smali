@@ -71,7 +71,7 @@
 
     check-cast v1, Lj1/h;
 
-    invoke-virtual {v0}, Lj1/H;->b()Lj1/k;
+    invoke-virtual {v0}, Lj1/H1;->b()Lj1/k;
 
     move-result-object v0
 
@@ -98,9 +98,9 @@
 
     check-cast v0, Lk/o;
 
-    iget-object v0, v0, Lk/o;->e:Li/A;
+    iget-object v0, v0, Lk/o;->e:Li/A1;
 
-    invoke-virtual {v0, v1}, Li/A;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Li/A1;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 

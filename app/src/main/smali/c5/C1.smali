@@ -120,7 +120,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lq/n;->e(Lr5/d;Z)Lo0/E;
+    invoke-static {v0, v1}, Lq/n;->e(Lr5/d;Z)Lo0/E1;
 
     move-result-object v0
 
@@ -247,7 +247,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lq/n;->e(Lr5/d;Z)Lo0/E;
+    invoke-static {v0, v1}, Lq/n;->e(Lr5/d;Z)Lo0/E1;
 
     move-result-object v0
 

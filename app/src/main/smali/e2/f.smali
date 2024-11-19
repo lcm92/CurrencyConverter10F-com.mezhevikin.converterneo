@@ -7,15 +7,15 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    new-instance v0, Lw2/K;
+    new-instance v0, Lw2/K1;
 
-    new-instance v1, Lw2/J;
+    new-instance v1, Lw2/J1;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     const/4 v2, 0x3
 
-    invoke-direct {v0, v2, v1}, Lw2/K;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v2, v1}, Lw2/K1;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method

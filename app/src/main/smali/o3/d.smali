@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Ls3/G;
+.field public final a:Ls3/G1;
 
 .field public b:Ls3/y;
 
@@ -26,11 +26,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Ls3/G;
+    new-instance v0, Ls3/G1;
 
-    invoke-direct {v0}, Ls3/G;-><init>()V
+    invoke-direct {v0}, Ls3/G1;-><init>()V
 
-    iput-object v0, p0, Lo3/d;->a:Ls3/G;
+    iput-object v0, p0, Lo3/d;->a:Ls3/G1;
 
     sget-object v0, Ls3/y;->b:Ls3/y;
 
@@ -50,7 +50,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Ls4/a0;-><init>(Ls4/X;)V
+    invoke-direct {v0, v1}, Ls4/a0;-><init>(Ls4/X1;)V
 
     iput-object v0, p0, Lo3/d;->e:Ls4/n0;
 
@@ -78,9 +78,9 @@
 
     new-instance v7, Lo3/e;
 
-    iget-object v0, p0, Lo3/d;->a:Ls3/G;
+    iget-object v0, p0, Lo3/d;->a:Ls3/G1;
 
-    invoke-virtual {v0}, Ls3/G;->b()Ls3/K;
+    invoke-virtual {v0}, Ls3/G1;->b()Ls3/K1;
 
     move-result-object v1
 
@@ -123,7 +123,7 @@
 
     move-object v0, v7
 
-    invoke-direct/range {v0 .. v6}, Lo3/e;-><init>(Ls3/K;Ls3/y;Ls3/s;Lv3/d;Ls4/n0;Lh9/g;)V
+    invoke-direct/range {v0 .. v6}, Lo3/e;-><init>(Ls3/K1;Ls3/y;Ls3/s;Lv3/d;Ls4/n0;Lh9/g;)V
 
     return-object v7
 
@@ -216,19 +216,19 @@
 
     invoke-virtual {p0, v0}, Lo3/d;->c(Lm9/a;)V
 
-    iget-object v0, p1, Lo3/d;->a:Ls3/G;
+    iget-object v0, p1, Lo3/d;->a:Ls3/G1;
 
-    iget-object v2, p0, Lo3/d;->a:Ls3/G;
+    iget-object v2, p0, Lo3/d;->a:Ls3/G1;
 
-    invoke-static {v2, v0}, Lp1/h;->n(Ls3/G;Ls3/G;)V
+    invoke-static {v2, v0}, Lp1/h;->n(Ls3/G1;Ls3/G1;)V
 
-    iget-object v0, v2, Ls3/G;->h:Ljava/util/List;
+    iget-object v0, v2, Ls3/G1;->h:Ljava/util/List;
 
     const-string v3, "<set-?>"
 
     invoke-static {v0, v3}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iput-object v0, v2, Ls3/G;->h:Ljava/util/List;
+    iput-object v0, v2, Ls3/G1;->h:Ljava/util/List;
 
     iget-object v0, p0, Lo3/d;->c:Ls3/r;
 

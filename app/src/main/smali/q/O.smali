@@ -1,65 +1,78 @@
-.class public final Lq/O;
-.super Ljava/lang/Object;
+.class public final Lq/o;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lq/b0;
+.implements Lh4/c;
 
 
-# static fields
-.field public static final a:Lq/O;
+# instance fields
+.field public final synthetic h:Lo0/N1;
+
+.field public final synthetic i:Lo0/D1;
+
+.field public final synthetic j:Lo0/G1;
+
+.field public final synthetic k:I
+
+.field public final synthetic l:I
+
+.field public final synthetic m:Lq/q;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lo0/N1;Lo0/D1;Lo0/G1;IILq/q;)V
+    .locals 0
 
-    new-instance v0, Lq/O;
+    iput-object p1, p0, Lq/o;->h:Lo0/N1;
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lq/o;->i:Lo0/D1;
 
-    sput-object v0, Lq/O;->a:Lq/O;
+    iput-object p3, p0, Lq/o;->j:Lo0/G1;
+
+    iput p4, p0, Lq/o;->k:I
+
+    iput p5, p0, Lq/o;->l:I
+
+    iput-object p6, p0, Lq/o;->m:Lq/q;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Z)Lr5/q;
-    .locals 5
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
 
-    const/high16 v0, 0x3f800000    # 1.0f
+    move-object v0, p1
 
-    float-to-double v1, v0
+    check-cast v0, Lo0/M1;
 
-    const-wide/16 v3, 0x0
+    iget-object p1, p0, Lq/o;->j:Lo0/G1;
 
-    cmpl-double v1, v1, v3
+    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
 
-    if-lez v1, :cond_0
+    move-result-object v3
 
-    new-instance v1, Landroidx/compose/foundation/layout/LayoutWeightElement;
+    iget-object p1, p0, Lq/o;->m:Lq/q;
 
-    const v2, 0x7f7fffff    # Float.MAX_VALUE
+    iget-object v6, p1, Lq/q;->a:Lr5/d;
 
-    invoke-static {v0, v2}, Lk4/a;->v(FF)F
+    iget v4, p0, Lq/o;->k:I
 
-    move-result v0
+    iget v5, p0, Lq/o;->l:I
 
-    invoke-direct {v1, v0, p1}, Landroidx/compose/foundation/layout/LayoutWeightElement;-><init>(FZ)V
+    iget-object v1, p0, Lq/o;->h:Lo0/N1;
 
-    return-object v1
+    iget-object v2, p0, Lq/o;->i:Lo0/D1;
 
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    invoke-static/range {v0 .. v6}, Lq/n;->b(Lo0/M1;Lo0/N1;Lo0/D1;Ll6/k;IILr5/d;)V
 
-    const-string v0, "invalid weight 1.0; must be greater than zero"
+    sget-object p1, Lu9/y;->a:Lu9/y;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-object p1
 .end method

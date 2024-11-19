@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lm/W;
+.implements Lm/W1;
 
 
 # instance fields
@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final b(Lp/i;Lf5/p;)Lm/X;
+.method public final b(Lp/i;Lf5/p;)Lm/X1;
     .locals 11
 
     const v0, 0x3aef0613

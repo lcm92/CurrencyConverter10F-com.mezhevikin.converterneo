@@ -21,7 +21,7 @@
 .method public constructor <init>(Lk1/i;Ln5/a;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lj1/u;-><init>(Lj1/H;)V
+    invoke-direct {p0, p1}, Lj1/u;-><init>(Lj1/H1;)V
 
     iput-object p2, p0, Lk1/h;->p:Ln5/a;
 

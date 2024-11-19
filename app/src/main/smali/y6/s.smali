@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final a:Lq/P;
+.field public final a:Lq/P1;
 
 .field public b:Ly6/L1;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Lq/P;)V
+.method public constructor <init>(Landroid/view/View;Lq/P1;)V
     .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Ly6/s;->a:Lq/P;
+    iput-object p2, p0, Ly6/s;->a:Lq/P1;
 
     sget p2, Ly6/o;->a:I
 
@@ -136,13 +136,13 @@
     return-object v1
 
     :cond_2
-    invoke-static/range {p1 .. p1}, Ly6/t;->i(Landroid/view/View;)Lq/P;
+    invoke-static/range {p1 .. p1}, Ly6/t;->i(Landroid/view/View;)Lq/P1;
 
     move-result-object v3
 
     if-eqz v3, :cond_3
 
-    iget-object v3, v3, Lq/P;->g:Landroid/view/WindowInsets;
+    iget-object v3, v3, Lq/P1;->g:Landroid/view/WindowInsets;
 
     invoke-static {v3, v8}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 

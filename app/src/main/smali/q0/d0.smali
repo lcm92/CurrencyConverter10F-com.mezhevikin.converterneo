@@ -48,13 +48,13 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast p1, Lq0/D;
+    check-cast p1, Lq0/D1;
 
-    check-cast p2, Lq0/D;
+    check-cast p2, Lq0/D1;
 
-    iget v0, p1, Lq0/D;->p:I
+    iget v0, p1, Lq0/D1;->p:I
 
-    iget v1, p2, Lq0/D;->p:I
+    iget v1, p2, Lq0/D1;->p:I
 
     invoke-static {v0, v1}, Li4/h;->g(II)I
 
@@ -81,13 +81,13 @@
     return v0
 
     :pswitch_0
-    check-cast p1, Lq0/D;
+    check-cast p1, Lq0/D1;
 
-    check-cast p2, Lq0/D;
+    check-cast p2, Lq0/D1;
 
-    iget v0, p2, Lq0/D;->p:I
+    iget v0, p2, Lq0/D1;->p:I
 
-    iget v1, p1, Lq0/D;->p:I
+    iget v1, p1, Lq0/D1;->p:I
 
     invoke-static {v0, v1}, Li4/h;->g(II)I
 

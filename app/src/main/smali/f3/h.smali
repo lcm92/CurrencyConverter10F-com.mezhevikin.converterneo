@@ -8,7 +8,7 @@
 
 .field public final h:Ly9/i;
 
-.field public final i:Ls3/A;
+.field public final i:Ls3/A1;
 
 .field public final j:Ls3/z;
 
@@ -43,9 +43,9 @@
     iput-object p1, p0, Lf3/h;->h:Ly9/i;
 
     .line 4
-    iget-object p1, p2, Lo3/g;->a:Ls3/A;
+    iget-object p1, p2, Lo3/g;->a:Ls3/A1;
 
-    iput-object p1, p0, Lf3/h;->i:Ls3/A;
+    iput-object p1, p0, Lf3/h;->i:Ls3/A1;
 
     .line 5
     iget-object p1, p2, Lo3/g;->d:Ls3/z;
@@ -128,11 +128,11 @@
     move-result-object p1
 
     .line 16
-    invoke-virtual {p3}, Lp3/b;->h()Ls3/A;
+    invoke-virtual {p3}, Lp3/b;->h()Ls3/A1;
 
     move-result-object v0
 
-    iput-object v0, p0, Lf3/h;->i:Ls3/A;
+    iput-object v0, p0, Lf3/h;->i:Ls3/A1;
 
     .line 17
     invoke-virtual {p3}, Lp3/b;->i()Ls3/z;
@@ -339,19 +339,19 @@
     .end packed-switch
 .end method
 
-.method public final h()Ls3/A;
+.method public final h()Ls3/A1;
     .locals 1
 
     iget v0, p0, Lf3/h;->g:I
 
     packed-switch v0, :pswitch_data_0
 
-    iget-object v0, p0, Lf3/h;->i:Ls3/A;
+    iget-object v0, p0, Lf3/h;->i:Ls3/A1;
 
     return-object v0
 
     :pswitch_0
-    iget-object v0, p0, Lf3/h;->i:Ls3/A;
+    iget-object v0, p0, Lf3/h;->i:Ls3/A1;
 
     return-object v0
 

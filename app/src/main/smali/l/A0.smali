@@ -190,11 +190,11 @@
 
     move-result-object p2
 
-    check-cast p2, Ll/B;
+    check-cast p2, Ll/B1;
 
     iget-object p0, p0, Ll/o0;->g:Ll/s0;
 
-    invoke-virtual {p0, p1, p3, p2}, Ll/s0;->g(Ljava/lang/Object;Ljava/lang/Object;Ll/B;)V
+    invoke-virtual {p0, p1, p3, p2}, Ll/s0;->g(Ljava/lang/Object;Ljava/lang/Object;Ll/B1;)V
 
     :cond_b
     return-object v4
@@ -245,12 +245,12 @@
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v2, p1, p2, p3}, Ll/s0;->g(Ljava/lang/Object;Ljava/lang/Object;Ll/B;)V
+    invoke-virtual {v2, p1, p2, p3}, Ll/s0;->g(Ljava/lang/Object;Ljava/lang/Object;Ll/B1;)V
 
     goto :goto_0
 
     :cond_2
-    invoke-virtual {v2, p2, p3}, Ll/s0;->h(Ljava/lang/Object;Ll/B;)V
+    invoke-virtual {v2, p2, p3}, Ll/s0;->h(Ljava/lang/Object;Ll/B1;)V
 
     :goto_0
     invoke-virtual {p4, p0}, Lf5/p;->f(Ljava/lang/Object;)Z

@@ -18,7 +18,7 @@
 
 
 # direct methods
-.method public constructor <init>(Li/D;)V
+.method public constructor <init>(Li/D1;)V
     .locals 2
 
     const/4 v0, 0x1
@@ -37,11 +37,11 @@
     iput v0, p0, Ll5/c;->h:I
 
     .line 9
-    new-instance v0, Li/B;
+    new-instance v0, Li/B1;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, p0, v1}, Li/B;-><init>(Li/D;Ll5/c;Ly9/d;)V
+    invoke-direct {v0, p1, p0, v1}, Li/B1;-><init>(Li/D1;Ll5/c;Ly9/d;)V
 
     invoke-static {v0}, Lp4/h;->e(Lh4/e;)Lp4/f;
 
@@ -358,9 +358,9 @@
 
     iget-object v2, p0, Ll5/c;->j:Ljava/lang/Object;
 
-    check-cast v2, Li/D;
+    check-cast v2, Li/D1;
 
-    invoke-virtual {v2, v0}, Li/D;->k(I)V
+    invoke-virtual {v2, v0}, Li/D1;->k(I)V
 
     iput v1, p0, Ll5/c;->h:I
 

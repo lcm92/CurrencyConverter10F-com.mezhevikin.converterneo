@@ -10,7 +10,7 @@
 
 .field public final c:La4/i;
 
-.field public final d:Ls4/B;
+.field public final d:Ls4/B1;
 
 .field volatile synthetic isStarted:I
 
@@ -78,12 +78,12 @@
 
     const/4 p3, 0x2
 
-    invoke-static {p5, p1, p4, p2, p3}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {p5, p1, p4, p2, p3}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     move-result-object p3
 
     :goto_0
-    iput-object p3, p0, Lio/ktor/network/util/c;->d:Ls4/B;
+    iput-object p3, p0, Lio/ktor/network/util/c;->d:Ls4/B1;
 
     return-void
 .end method

@@ -1,82 +1,18 @@
-.class public final Lq/H;
-.super Li4/i;
+.class public interface abstract Lq/h;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/c;
-
-
-# instance fields
-.field public final synthetic h:I
-
-.field public final synthetic i:Lh5/d;
-
-
-# direct methods
-.method public synthetic constructor <init>(ILh5/d;)V
-    .locals 0
-
-    iput p1, p0, Lq/H;->h:I
-
-    iput-object p2, p0, Lq/H;->i:Lh5/d;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
-
-    return-void
-.end method
 
 
 # virtual methods
-.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public a()F
+    .locals 1
 
-    iget v0, p0, Lq/H;->h:I
+    const/4 v0, 0x0
 
-    packed-switch v0, :pswitch_data_0
+    int-to-float v0, v0
 
-    check-cast p1, Lr5/o;
+    return v0
+.end method
 
-    iget-object v0, p0, Lq/H;->i:Lh5/d;
-
-    invoke-virtual {v0, p1}, Lh5/d;->b(Ljava/lang/Object;)V
-
-    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    return-object p1
-
-    :pswitch_0
-    check-cast p1, Lo0/M;
-
-    iget-object p1, p0, Lq/H;->i:Lh5/d;
-
-    iget v0, p1, Lh5/d;->i:I
-
-    if-lez v0, :cond_1
-
-    iget-object p1, p1, Lh5/d;->g:[Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    :cond_0
-    aget-object v2, p1, v1
-
-    check-cast v2, Lo0/F;
-
-    invoke-interface {v2}, Lo0/F;->j()V
-
-    add-int/lit8 v1, v1, 0x1
-
-    if-lt v1, v0, :cond_0
-
-    :cond_1
-    sget-object p1, Lu9/y;->a:Lu9/y;
-
-    return-object p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+.method public abstract c(ILo0/G1;[I[I)V
 .end method

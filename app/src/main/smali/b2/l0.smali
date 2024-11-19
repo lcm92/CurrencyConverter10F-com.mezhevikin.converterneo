@@ -142,20 +142,20 @@
 
     move-result-object v0
 
-    instance-of v1, v0, Lb2/N;
+    instance-of v1, v0, Lb2/N1;
 
     if-eqz v1, :cond_7
 
     move-object p1, v0
 
-    check-cast p1, Lb2/N;
+    check-cast p1, Lb2/N1;
 
     goto :goto_3
 
     :cond_7
-    new-instance v0, Lb2/N;
+    new-instance v0, Lb2/N1;
 
-    invoke-direct {v0, p1}, Lb2/N;-><init>(Landroid/os/IBinder;)V
+    invoke-direct {v0, p1}, Lb2/N1;-><init>(Landroid/os/IBinder;)V
 
     move-object p1, v0
 
@@ -172,7 +172,7 @@
     .end packed-switch
 .end method
 
-.method public h(Landroid/content/Context;Lb2/z0;Ljava/lang/String;Lw2/S;I)Lb2/y;
+.method public h(Landroid/content/Context;Lb2/z0;Ljava/lang/String;Lw2/S1;I)Lb2/y;
     .locals 9
 
     invoke-static {p1}, Lw2/h;->a(Landroid/content/Context;)V
@@ -228,7 +228,7 @@
 
     move v8, p5
 
-    invoke-virtual/range {v3 .. v8}, Lb2/z;->Z(Lu2/b;Lb2/z0;Ljava/lang/String;Lw2/S;I)Landroid/os/IBinder;
+    invoke-virtual/range {v3 .. v8}, Lb2/z;->Z(Lu2/b;Lb2/z0;Ljava/lang/String;Lw2/S1;I)Landroid/os/IBinder;
 
     move-result-object p2
 
@@ -313,7 +313,7 @@
 
     move v8, p5
 
-    invoke-virtual/range {v3 .. v8}, Lb2/z;->Z(Lu2/b;Lb2/z0;Ljava/lang/String;Lw2/S;I)Landroid/os/IBinder;
+    invoke-virtual/range {v3 .. v8}, Lb2/z;->Z(Lu2/b;Lb2/z0;Ljava/lang/String;Lw2/S1;I)Landroid/os/IBinder;
 
     move-result-object p1
 

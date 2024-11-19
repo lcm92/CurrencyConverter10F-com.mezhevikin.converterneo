@@ -11,7 +11,7 @@
 # instance fields
 .field public t:Ly/f;
 
-.field public u:Lw/Q;
+.field public u:Lw/Q1;
 
 .field public v:La5/b0;
 
@@ -19,14 +19,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ly/f;Lw/Q;La5/b0;)V
+.method public constructor <init>(Ly/f;Lw/Q1;La5/b0;)V
     .locals 0
 
     invoke-direct {p0}, Lr5/p;-><init>()V
 
     iput-object p1, p0, Ly/u;->t:Ly/f;
 
-    iput-object p2, p0, Ly/u;->u:Lw/Q;
+    iput-object p2, p0, Ly/u;->u:Lw/Q1;
 
     iput-object p3, p0, Ly/u;->v:La5/b0;
 
@@ -45,7 +45,7 @@
 
 
 # virtual methods
-.method public final S(Lq0/Z;)V
+.method public final S(Lq0/Z1;)V
     .locals 1
 
     iget-object v0, p0, Ly/u;->w:Lf5/j0;

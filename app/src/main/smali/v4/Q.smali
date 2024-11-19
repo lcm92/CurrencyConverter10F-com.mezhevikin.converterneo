@@ -1,77 +1,53 @@
-.class public final Lv4/Q;
-.super Lw4/d;
+.class public final Lv4/q;
+.super La4/c;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
-
 # instance fields
-.field private volatile _state:Ljava/lang/Object;
+.field public j:Lv4/r;
+
+.field public synthetic k:Ljava/lang/Object;
+
+.field public l:I
+
+.field public final synthetic m:Lv4/r;
+
+.field public n:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lv4/r;Ly9/d;)V
+    .locals 0
 
-    const-class v0, Ljava/lang/Object;
+    iput-object p1, p0, Lv4/q;->m:Lv4/r;
 
-    const-string v1, "_state"
-
-    const-class v2, Lv4/Q;
-
-    invoke-static {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
-    move-result-object v0
-
-    sput-object v0, Lv4/Q;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lw4/b;)Z
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Lv4/P;
+    iput-object p1, p0, Lv4/q;->k:Ljava/lang/Object;
 
-    sget-object p1, Lv4/Q;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    iget p1, p0, Lv4/q;->l:I
 
-    invoke-virtual {p1, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/high16 v0, -0x80000000
 
-    move-result-object v0
+    or-int/2addr p1, v0
 
-    if-eqz v0, :cond_0
+    iput p1, p0, Lv4/q;->l:I
 
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    sget-object v0, Lv4/F;->b:Li8/i;
-
-    invoke-virtual {p1, p0, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    const/4 p1, 0x1
-
-    :goto_0
-    return p1
-.end method
-
-.method public final b(Lw4/b;)[Ly9/d;
-    .locals 1
-
-    check-cast p1, Lv4/P;
-
-    sget-object p1, Lv4/Q;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    iget-object p1, p0, Lv4/q;->m:Lv4/r;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, p0, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {p1, v0, p0}, Lv4/r;->a(Ljava/lang/Object;Ly9/d;)Ljava/lang/Object;
 
-    sget-object p1, Lw4/c;->a:[Ly9/d;
+    move-result-object p1
 
     return-object p1
 .end method

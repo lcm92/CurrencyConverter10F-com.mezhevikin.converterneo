@@ -18,7 +18,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/view/View;Lq/P;)V
+.method public static a(Landroid/view/View;Lq/P1;)V
     .locals 3
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -33,7 +33,7 @@
 
     new-instance v2, Ly6/u;
 
-    invoke-direct {v2, p1}, Ly6/u;-><init>(Lq/P;)V
+    invoke-direct {v2, p1}, Ly6/u;-><init>(Lq/P1;)V
 
     :cond_0
     invoke-static {p0, v2}, La6/k;->o(Landroid/view/View;Ly6/u;)V
@@ -64,7 +64,7 @@
     :cond_2
     new-instance v2, Ly6/s;
 
-    invoke-direct {v2, p0, p1}, Ly6/s;-><init>(Landroid/view/View;Lq/P;)V
+    invoke-direct {v2, p0, p1}, Ly6/s;-><init>(Landroid/view/View;Lq/P1;)V
 
     invoke-virtual {p0, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 

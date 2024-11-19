@@ -100,7 +100,7 @@
 
     move-object v5, p1
 
-    check-cast v5, Lk0/B;
+    check-cast v5, Lk0/B1;
 
     new-instance v6, Lw/h0;
 
@@ -126,9 +126,9 @@
 
     sget-object p1, Lo/S0;->a:Lo/t0;
 
-    new-instance v8, Lo/S;
+    new-instance v8, Lo/S1;
 
-    invoke-direct {v8, v5}, Lo/S;-><init>(Ll6/b;)V
+    invoke-direct {v8, v5}, Lo/S1;-><init>(Ll6/b;)V
 
     new-instance p1, Lo/C0;
 
@@ -136,7 +136,7 @@
 
     move-object v4, p1
 
-    invoke-direct/range {v4 .. v9}, Lo/C0;-><init>(Lk0/B;Lh4/f;Lh4/c;Lo/S;Ly9/d;)V
+    invoke-direct/range {v4 .. v9}, Lo/C0;-><init>(Lk0/B1;Lh4/f;Lh4/c;Lo/S1;Ly9/d;)V
 
     invoke-static {p1, p0}, Ls4/y;->g(Lh4/e;Ly9/d;)Ljava/lang/Object;
 
@@ -162,7 +162,7 @@
 .method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    check-cast p1, Lk0/B;
+    check-cast p1, Lk0/B1;
 
     check-cast p2, Ly9/d;
 

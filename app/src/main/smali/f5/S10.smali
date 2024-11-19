@@ -13,16 +13,16 @@
 
 .field public final synthetic m:Ly9/i;
 
-.field public final synthetic n:Lv4/N;
+.field public final synthetic n:Lv4/N1;
 
 
 # direct methods
-.method public constructor <init>(Ly9/i;Lv4/N;Ly9/d;)V
+.method public constructor <init>(Ly9/i;Lv4/N1;Ly9/d;)V
     .locals 0
 
     iput-object p1, p0, Lf5/S10;->m:Ly9/i;
 
-    iput-object p2, p0, Lf5/S10;->n:Lv4/N;
+    iput-object p2, p0, Lf5/S10;->n:Lv4/N1;
 
     const/4 p1, 0x2
 
@@ -40,9 +40,9 @@
 
     iget-object v1, p0, Lf5/S10;->m:Ly9/i;
 
-    iget-object v2, p0, Lf5/S10;->n:Lv4/N;
+    iget-object v2, p0, Lf5/S10;->n:Lv4/N1;
 
-    invoke-direct {v0, v1, v2, p1}, Lf5/S10;-><init>(Ly9/i;Lv4/N;Ly9/d;)V
+    invoke-direct {v0, v1, v2, p1}, Lf5/S10;-><init>(Ly9/i;Lv4/N1;Ly9/d;)V
 
     iput-object p2, v0, Lf5/S10;->l:Ljava/lang/Object;
 
@@ -98,7 +98,7 @@
 
     move-result v1
 
-    iget-object v5, p0, Lf5/S10;->n:Lv4/N;
+    iget-object v5, p0, Lf5/S10;->n:Lv4/N1;
 
     if-eqz v1, :cond_3
 
@@ -123,7 +123,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v1, v5, p1, v3}, Lf5/R10;-><init>(Lv4/N;Lf5/o0;Ly9/d;)V
+    invoke-direct {v1, v5, p1, v3}, Lf5/R10;-><init>(Lv4/N1;Lf5/o0;Ly9/d;)V
 
     iput v2, p0, Lf5/S10;->k:I
 

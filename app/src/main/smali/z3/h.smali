@@ -305,7 +305,7 @@
     :cond_8
     if-eqz v2, :cond_a
 
-    iget-object v0, v2, Lio/ktor/network/util/c;->d:Ls4/B;
+    iget-object v0, v2, Lio/ktor/network/util/c;->d:Ls4/B1;
 
     if-eqz v0, :cond_9
 

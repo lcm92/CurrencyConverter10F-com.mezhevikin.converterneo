@@ -11,7 +11,7 @@
 
 .field public final h:Lx4/d;
 
-.field public i:Ls4/B;
+.field public i:Ls4/B1;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 .method public final a()V
     .locals 2
 
-    iget-object v0, p0, Lf5/T1;->i:Ls4/B;
+    iget-object v0, p0, Lf5/T1;->i:Ls4/B1;
 
     if-eqz v0, :cond_0
 
@@ -49,7 +49,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lf5/T1;->i:Ls4/B;
+    iput-object v0, p0, Lf5/T1;->i:Ls4/B1;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 .method public final b()V
     .locals 5
 
-    iget-object v0, p0, Lf5/T1;->i:Ls4/B;
+    iget-object v0, p0, Lf5/T1;->i:Ls4/B1;
 
     const/4 v1, 0x0
 
@@ -80,11 +80,11 @@
 
     const/4 v4, 0x3
 
-    invoke-static {v3, v1, v2, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B;
+    invoke-static {v3, v1, v2, v0, v4}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
 
     move-result-object v0
 
-    iput-object v0, p0, Lf5/T1;->i:Ls4/B;
+    iput-object v0, p0, Lf5/T1;->i:Ls4/B1;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 .method public final c()V
     .locals 2
 
-    iget-object v0, p0, Lf5/T1;->i:Ls4/B;
+    iget-object v0, p0, Lf5/T1;->i:Ls4/B1;
 
     if-eqz v0, :cond_0
 
@@ -105,7 +105,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lf5/T1;->i:Ls4/B;
+    iput-object v0, p0, Lf5/T1;->i:Ls4/B1;
 
     return-void
 .end method

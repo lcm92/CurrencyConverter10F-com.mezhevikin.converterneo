@@ -1,35 +1,25 @@
-.class public final Lo/M;
-.super La4/c;
+.class public final Lo/m;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public j:Lk0/z;
+.field public a:Ll/x;
 
-.field public synthetic k:Ljava/lang/Object;
-
-.field public l:I
+.field public final b:Lr5/r;
 
 
-# virtual methods
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+# direct methods
+.method public constructor <init>(Ll/x;)V
+    .locals 0
 
-    iput-object p1, p0, Lo/M;->k:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iget p1, p0, Lo/M;->l:I
+    iput-object p1, p0, Lo/m;->a:Ll/x;
 
-    const/high16 v0, -0x80000000
+    sget-object p1, Landroidx/compose/foundation/gestures/a;->b:Lo/V1;
 
-    or-int/2addr p1, v0
+    iput-object p1, p0, Lo/m;->b:Lr5/r;
 
-    iput p1, p0, Lo/M;->l:I
-
-    const/4 p1, 0x0
-
-    invoke-static {p1, p0}, Lo4/j;->h(Lk0/z;La4/a;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

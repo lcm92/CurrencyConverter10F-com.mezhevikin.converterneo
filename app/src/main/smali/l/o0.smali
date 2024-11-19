@@ -80,9 +80,9 @@
 
     move-result-object p1
 
-    check-cast p1, Ll/B;
+    check-cast p1, Ll/B1;
 
-    invoke-virtual {v2, v1, v0, p1}, Ll/s0;->g(Ljava/lang/Object;Ljava/lang/Object;Ll/B;)V
+    invoke-virtual {v2, v1, v0, p1}, Ll/s0;->g(Ljava/lang/Object;Ljava/lang/Object;Ll/B1;)V
 
     goto :goto_0
 
@@ -93,9 +93,9 @@
 
     move-result-object p1
 
-    check-cast p1, Ll/B;
+    check-cast p1, Ll/B1;
 
-    invoke-virtual {v2, v0, p1}, Ll/s0;->h(Ljava/lang/Object;Ll/B;)V
+    invoke-virtual {v2, v0, p1}, Ll/s0;->h(Ljava/lang/Object;Ll/B1;)V
 
     :goto_0
     return-void

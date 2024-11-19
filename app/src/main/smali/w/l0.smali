@@ -86,9 +86,9 @@
 
     move-result-object v6
 
-    check-cast v6, Lo/O;
+    check-cast v6, Lo/O1;
 
-    sget-object v7, Lo/O;->g:Lo/O;
+    sget-object v7, Lo/O1;->g:Lo/O1;
 
     if-eq v6, v7, :cond_2
 
@@ -121,11 +121,11 @@
     if-ne v6, v7, :cond_4
 
     :cond_3
-    new-instance v6, Lj3/F;
+    new-instance v6, Lj3/F1;
 
     const/16 v2, 0x18
 
-    invoke-direct {v6, v2, v3}, Lj3/F;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v6, v2, v3}, Lj3/F1;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {v1, v6}, Lf5/p;->a0(Ljava/lang/Object;)V
 
@@ -199,7 +199,7 @@
 
     move-object v10, v2
 
-    check-cast v10, Lo/O;
+    check-cast v10, Lo/O1;
 
     iget-boolean v2, v0, Lw/l0;->i:Z
 
@@ -237,7 +237,7 @@
 
     iget-object v15, v0, Lw/l0;->j:Lp/i;
 
-    invoke-static/range {v8 .. v16}, Landroidx/compose/foundation/gestures/a;->b(Lr5/q;Lo/k0;Lo/O;Lm/n0;ZZLo/m;Lp/i;Lo/d;)Lr5/q;
+    invoke-static/range {v8 .. v16}, Landroidx/compose/foundation/gestures/a;->b(Lr5/q;Lo/k0;Lo/O1;Lm/n0;ZZLo/m;Lp/i;Lo/d;)Lr5/q;
 
     move-result-object v2
 
