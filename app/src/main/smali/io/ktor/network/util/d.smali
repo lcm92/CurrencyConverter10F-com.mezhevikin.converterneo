@@ -30,7 +30,7 @@
 .method public final b()Ljava/lang/Object;
     .locals 2
 
-    sget-object v0, Lk9/a;->a:Ljava/util/TimeZone;
+    sget-object v0, LK3/a;->a:Ljava/util/TimeZone;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 

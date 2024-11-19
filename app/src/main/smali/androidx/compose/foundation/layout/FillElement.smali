@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/FillElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -98,36 +98,36 @@
     return v1
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
-    new-instance v0, Lq/B1;
+    new-instance v0, Lq/B;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iget v1, p0, Landroidx/compose/foundation/layout/FillElement;->a:I
 
-    iput v1, v0, Lq/B1;->t:I
+    iput v1, v0, Lq/B;->t:I
 
     iget v1, p0, Landroidx/compose/foundation/layout/FillElement;->b:F
 
-    iput v1, v0, Lq/B1;->u:F
+    iput v1, v0, Lq/B;->u:F
 
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 1
 
-    check-cast p1, Lq/B1;
+    check-cast p1, Lq/B;
 
     iget v0, p0, Landroidx/compose/foundation/layout/FillElement;->a:I
 
-    iput v0, p1, Lq/B1;->t:I
+    iput v0, p1, Lq/B;->t:I
 
     iget v0, p0, Landroidx/compose/foundation/layout/FillElement;->b:F
 
-    iput v0, p1, Lq/B1;->u:F
+    iput v0, p1, Lq/B;->u:F
 
     return-void
 .end method

@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public final a:Lq0/D1;
+.field public final a:Lq0/D;
 
 .field public final b:Lx0/d;
 
 
 # direct methods
-.method public constructor <init>(Lq0/D1;Lx0/d;)V
+.method public constructor <init>(Lq0/D;Lx0/d;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lx0/n;->a:Lq0/D1;
+    iput-object p1, p0, Lx0/n;->a:Lq0/D;
 
     iput-object p2, p0, Lx0/n;->b:Lx0/d;
 
@@ -37,9 +37,9 @@
 
     iget-object v3, p0, Lx0/n;->b:Lx0/d;
 
-    iget-object v4, p0, Lx0/n;->a:Lq0/D1;
+    iget-object v4, p0, Lx0/n;->a:Lq0/D;
 
-    invoke-direct {v1, v3, v2, v4, v0}, Lx0/m;-><init>(Lr5/p;ZLq0/D1;Lx0/i;)V
+    invoke-direct {v1, v3, v2, v4, v0}, Lx0/m;-><init>(LR/p;ZLq0/D;Lx0/i;)V
 
     return-object v1
 .end method

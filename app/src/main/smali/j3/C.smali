@@ -1,33 +1,55 @@
-.class public final Lj3/c;
+.class public final LJ3/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lj3/a;
-
-.field public static final b:Lh9/a;
+# instance fields
+.field private volatile synthetic current:Ljava/lang/Object;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 3
 
-    new-instance v0, Lj3/a;
+    const-class v0, Ljava/lang/Object;
 
-    const/4 v1, 0x0
+    const-string v1, "current"
 
-    invoke-direct {v0, v1}, Lj3/a;-><init>(I)V
+    const-class v2, LJ3/c;
 
-    sput-object v0, Lj3/c;->a:Lj3/a;
-
-    new-instance v0, Lh9/a;
-
-    const-string v1, "BodyProgress"
-
-    invoke-direct {v0, v1}, Lh9/a;-><init>(Ljava/lang/String;)V
-
-    sput-object v0, Lj3/c;->b:Lh9/a;
+    invoke-static {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    sget-object v0, LV3/u;->g:LV3/u;
+
+    iput-object v0, p0, LJ3/c;->current:Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ll2/g;)Ljava/lang/Object;
+    .locals 1
+
+    const-string v0, "key"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, LJ3/c;->current:Ljava/lang/Object;
+
+    check-cast v0, Ljava/util/Map;
+
+    invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

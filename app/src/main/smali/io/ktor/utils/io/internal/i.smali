@@ -8,7 +8,7 @@
 
 .field public b:I
 
-.field public c:Lq9/b;
+.field public c:LQ3/b;
 
 
 # direct methods
@@ -23,27 +23,27 @@
 
     iput-object p1, p0, Lio/ktor/utils/io/internal/i;->a:Lio/ktor/utils/io/D;
 
-    sget-object p1, Lq9/b;->i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object p1, LQ3/b;->i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-    sget-object p1, Lq9/b;->l:Lq9/b;
+    sget-object p1, LQ3/b;->l:LQ3/b;
 
-    iput-object p1, p0, Lio/ktor/utils/io/internal/i;->c:Lq9/b;
+    iput-object p1, p0, Lio/ktor/utils/io/internal/i;->c:LQ3/b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lq9/b;)V
+.method public final a(LQ3/b;)V
     .locals 3
 
     iget v0, p0, Lio/ktor/utils/io/internal/i;->b:I
 
-    iget-object v1, p0, Lio/ktor/utils/io/internal/i;->c:Lq9/b;
+    iget-object v1, p0, Lio/ktor/utils/io/internal/i;->c:LQ3/b;
 
-    iget v2, v1, Lp9/a;->c:I
+    iget v2, v1, LP3/a;->c:I
 
-    iget v1, v1, Lp9/a;->b:I
+    iget v1, v1, LP3/a;->b:I
 
     sub-int/2addr v2, v1
 
@@ -56,11 +56,11 @@
     invoke-virtual {v1, v0}, Lio/ktor/utils/io/D;->c(I)V
 
     :cond_0
-    iput-object p1, p0, Lio/ktor/utils/io/internal/i;->c:Lq9/b;
+    iput-object p1, p0, Lio/ktor/utils/io/internal/i;->c:LQ3/b;
 
-    iget v0, p1, Lp9/a;->c:I
+    iget v0, p1, LP3/a;->c:I
 
-    iget p1, p1, Lp9/a;->b:I
+    iget p1, p1, LP3/a;->b:I
 
     sub-int/2addr v0, p1
 
@@ -69,7 +69,7 @@
     return-void
 .end method
 
-.method public final b(I)Lq9/b;
+.method public final b(I)LQ3/b;
     .locals 3
 
     iget-object v0, p0, Lio/ktor/utils/io/internal/i;->a:Lio/ktor/utils/io/D;
@@ -82,9 +82,9 @@
 
     if-eqz p1, :cond_0
 
-    new-instance v1, Lq9/b;
+    new-instance v1, LQ3/b;
 
-    sget-object v2, Ln9/b;->a:Ljava/nio/ByteBuffer;
+    sget-object v2, LN3/b;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->slice()Ljava/nio/ByteBuffer;
 
@@ -100,19 +100,19 @@
 
     invoke-static {p1, v2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v1, p1, v0, v0}, Lq9/b;-><init>(Ljava/nio/ByteBuffer;Lq9/b;Lr9/f;)V
+    invoke-direct {v1, p1, v0, v0}, LQ3/b;-><init>(Ljava/nio/ByteBuffer;LQ3/b;LR3/f;)V
 
     const/4 p1, 0x0
 
-    iput p1, v1, Lp9/a;->d:I
+    iput p1, v1, LP3/a;->d:I
 
-    iput p1, v1, Lp9/a;->b:I
+    iput p1, v1, LP3/a;->b:I
 
-    iget p1, v1, Lp9/a;->f:I
+    iget p1, v1, LP3/a;->f:I
 
-    iput p1, v1, Lp9/a;->c:I
+    iput p1, v1, LP3/a;->c:I
 
-    invoke-virtual {p0, v1}, Lio/ktor/utils/io/internal/i;->a(Lq9/b;)V
+    invoke-virtual {p0, v1}, Lio/ktor/utils/io/internal/i;->a(LQ3/b;)V
 
     move-object v0, v1
 

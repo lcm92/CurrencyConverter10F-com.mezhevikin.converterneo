@@ -1,21 +1,31 @@
-.class public interface abstract Lo3/b;
-.super Ljava/lang/Object;
+.class public LO3/b;
+.super Ljava/nio/charset/MalformedInputException;
 .source "SourceFile"
 
-# interfaces
-.implements Ls3/w;
-.implements Ls4/x;
+
+# instance fields
+.field public final g:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Ljava/nio/charset/MalformedInputException;-><init>(I)V
+
+    iput-object p1, p0, LO3/b;->g:Ljava/lang/String;
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract b()Ly9/i;
-.end method
+.method public final getMessage()Ljava/lang/String;
+    .locals 1
 
-.method public abstract g()Ls3/K1;
-.end method
+    iget-object v0, p0, LO3/b;->g:Ljava/lang/String;
 
-.method public abstract y()Ls3/y;
-.end method
-
-.method public abstract z()Lh9/g;
+    return-object v0
 .end method

@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/G1;
-.implements Ls4/U1;
+.implements Ls4/G;
+.implements Ls4/U;
 .implements Lh4/c;
 
 
@@ -34,7 +34,7 @@
     goto :goto_2
 
     :cond_0
-    sget-object v2, Ls4/y;->j:Ls4/J1;
+    sget-object v2, Ls4/y;->j:Ls4/J;
 
     :cond_1
     sget-object v3, Ls4/g0;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
@@ -57,13 +57,13 @@
     goto :goto_0
 
     :cond_3
-    instance-of v0, v1, Ls4/U1;
+    instance-of v0, v1, Ls4/U;
 
     if-eqz v0, :cond_8
 
-    check-cast v1, Ls4/U1;
+    check-cast v1, Ls4/U;
 
-    invoke-interface {v1}, Ls4/U1;->e()Ls4/i0;
+    invoke-interface {v1}, Ls4/U;->e()Ls4/i0;
 
     move-result-object v0
 
@@ -159,7 +159,7 @@
     return-object v0
 .end method
 
-.method public getParent()Ls4/X1;
+.method public getParent()Ls4/X;
     .locals 1
 
     invoke-virtual {p0}, Ls4/b0;->q()Ls4/g0;

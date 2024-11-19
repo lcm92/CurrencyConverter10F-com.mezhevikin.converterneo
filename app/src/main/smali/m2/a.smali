@@ -1,44 +1,19 @@
-.class public interface abstract Lm2/a;
+.class public abstract LM2/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a()Z
-.end method
+# static fields
+.field public static final synthetic a:I
 
-.method public abstract b()[Ll2/c;
-.end method
 
-.method public abstract c()Z
-.end method
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
 
-.method public abstract d()V
-.end method
+    const-class v0, LM2/a;
 
-.method public abstract e()Ljava/lang/String;
-.end method
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-.method public abstract f()Ljava/util/Set;
-.end method
-
-.method public abstract g(Lo2/e;Ljava/util/Set;)V
-.end method
-
-.method public abstract h()V
-.end method
-
-.method public abstract i(Ljava/lang/String;)V
-.end method
-
-.method public abstract j()Z
-.end method
-
-.method public abstract k(Lj7/C1;)V
-.end method
-
-.method public abstract m(Lk3/b;)V
-.end method
-
-.method public abstract n()I
+    return-void
 .end method

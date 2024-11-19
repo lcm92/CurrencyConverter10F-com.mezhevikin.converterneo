@@ -1,62 +1,88 @@
-.class public final Lw/i;
+.class public final LW/i;
 .super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements Lh4/c;
+
+
+# static fields
+.field public static final i:LW/i;
+
+.field public static final j:LW/i;
+
+.field public static final k:LW/i;
+
+.field public static final l:LW/i;
+
+.field public static final m:LW/i;
 
 
 # instance fields
-.field public final synthetic h:Ljava/lang/String;
-
-.field public final synthetic i:Lr5/q;
-
-.field public final synthetic j:Lz0/F1;
-
-.field public final synthetic k:Lh4/c;
-
-.field public final synthetic l:I
-
-.field public final synthetic m:Z
-
-.field public final synthetic n:I
-
-.field public final synthetic o:I
-
-.field public final synthetic p:La5/Z1;
-
-.field public final synthetic q:I
-
-.field public final synthetic r:I
+.field public final synthetic h:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lr5/q;Lz0/F1;Lh4/c;IZIILa5/Z1;II)V
+.method static synthetic constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, LW/i;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, LW/i;-><init>(II)V
+
+    sput-object v0, LW/i;->i:LW/i;
+
+    new-instance v0, LW/i;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, LW/i;-><init>(II)V
+
+    sput-object v0, LW/i;->j:LW/i;
+
+    new-instance v0, LW/i;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, LW/i;-><init>(II)V
+
+    sput-object v0, LW/i;->k:LW/i;
+
+    new-instance v0, LW/i;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x3
+
+    invoke-direct {v0, v1, v2}, LW/i;-><init>(II)V
+
+    sput-object v0, LW/i;->l:LW/i;
+
+    new-instance v0, LW/i;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x4
+
+    invoke-direct {v0, v1, v2}, LW/i;-><init>(II)V
+
+    sput-object v0, LW/i;->m:LW/i;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(II)V
     .locals 0
 
-    iput-object p1, p0, Lw/i;->h:Ljava/lang/String;
-
-    iput-object p2, p0, Lw/i;->i:Lr5/q;
-
-    iput-object p3, p0, Lw/i;->j:Lz0/F1;
-
-    iput-object p4, p0, Lw/i;->k:Lh4/c;
-
-    iput p5, p0, Lw/i;->l:I
-
-    iput-boolean p6, p0, Lw/i;->m:Z
-
-    iput p7, p0, Lw/i;->n:I
-
-    iput p8, p0, Lw/i;->o:I
-
-    iput-object p9, p0, Lw/i;->p:La5/Z1;
-
-    iput p10, p0, Lw/i;->q:I
-
-    iput p11, p0, Lw/i;->r:I
-
-    const/4 p1, 0x2
+    iput p2, p0, LW/i;->h:I
 
     invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
@@ -65,48 +91,72 @@
 
 
 # virtual methods
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    move-object v9, p1
+    iget v0, p0, LW/i;->h:I
 
-    check-cast v9, Lf5/p;
+    packed-switch v0, :pswitch_data_0
 
-    check-cast p2, Ljava/lang/Number;
+    check-cast p1, LW/t;
 
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+    invoke-static {p1}, LW/d;->B(LW/t;)Z
 
-    iget p1, p0, Lw/i;->q:I
+    move-result p1
 
-    or-int/lit8 p1, p1, 0x1
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-static {p1}, Lf5/d;->T(I)I
-
-    move-result v10
-
-    iget v6, p0, Lw/i;->n:I
-
-    iget v11, p0, Lw/i;->r:I
-
-    iget-object v0, p0, Lw/i;->h:Ljava/lang/String;
-
-    iget-object v1, p0, Lw/i;->i:Lr5/q;
-
-    iget-object v2, p0, Lw/i;->j:Lz0/F1;
-
-    iget-object v3, p0, Lw/i;->k:Lh4/c;
-
-    iget v4, p0, Lw/i;->l:I
-
-    iget-boolean v5, p0, Lw/i;->m:Z
-
-    iget v7, p0, Lw/i;->o:I
-
-    iget-object v8, p0, Lw/i;->p:La5/Z1;
-
-    invoke-static/range {v0 .. v11}, Lw/N1;->a(Ljava/lang/String;Lr5/q;Lz0/F1;Lh4/c;IZIILa5/Z1;Lf5/p;II)V
-
-    sget-object p1, Lu9/y;->a:Lu9/y;
+    move-result-object p1
 
     return-object p1
+
+    :pswitch_0
+    check-cast p1, LW/t;
+
+    invoke-static {p1}, LW/d;->B(LW/t;)Z
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    return-object p1
+
+    :pswitch_1
+    check-cast p1, LW/b;
+
+    iget p1, p1, LW/b;->a:I
+
+    sget-object p1, LW/p;->b:LW/p;
+
+    return-object p1
+
+    :pswitch_2
+    check-cast p1, LW/b;
+
+    iget p1, p1, LW/b;->a:I
+
+    sget-object p1, LW/p;->b:LW/p;
+
+    return-object p1
+
+    :pswitch_3
+    check-cast p1, LW/k;
+
+    const/4 v0, 0x0
+
+    invoke-interface {p1, v0}, LW/k;->b(Z)V
+
+    sget-object p1, LU3/y;->a:LU3/y;
+
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

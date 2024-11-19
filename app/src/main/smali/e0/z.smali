@@ -1,25 +1,152 @@
-.class public final Le0/z;
-.super Le0/A1;
+.class public final LE0/z;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final c:F
+.field public final a:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(F)V
-    .locals 2
+.method public varargs constructor <init>([LE0/y;)V
+    .locals 10
 
-    const/4 v0, 0x3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v1, 0x0
+    new-instance v0, Ljava/util/LinkedHashMap;
 
-    invoke-direct {p0, v0, v1, v1}, Le0/A1;-><init>(IZZ)V
+    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    iput p1, p0, Le0/z;->c:F
+    array-length v1, p1
+
+    const/4 v2, 0x0
+
+    if-gtz v1, :cond_3
+
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-virtual {v0}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/Map$Entry;
+
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v4, v1
+
+    check-cast v4, Ljava/util/List;
+
+    invoke-interface {v4}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    const/4 v5, 0x1
+
+    if-ne v1, v5, :cond_0
+
+    invoke-static {p1, v4}, LV3/q;->f0(Ljava/util/Collection;Ljava/lang/Iterable;)V
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "\'"
+
+    const-string v0, "\' must be unique. Actual [ ["
+
+    invoke-static {p1, v3, v0}, LA/m;->p(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/16 v9, 0x3f
+
+    invoke-static/range {v4 .. v9}, LV3/k;->r0(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lh4/c;I)Ljava/lang/String;
+
+    move-result-object v0
+
+    const/16 v1, 0x5d
+
+    invoke-static {p1, v0, v1}, LA/m;->l(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    iput-object v0, p0, LE0/z;->a:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result p1
+
+    if-gtz p1, :cond_2
 
     return-void
+
+    :cond_2
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    new-instance p1, Ljava/lang/ClassCastException;
+
+    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+
+    throw p1
+
+    :cond_3
+    aget-object p1, p1, v2
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method
 
 
@@ -34,7 +161,7 @@
     return v0
 
     :cond_0
-    instance-of v1, p1, Le0/z;
+    instance-of v1, p1, LE0/z;
 
     const/4 v2, 0x0
 
@@ -43,17 +170,17 @@
     return v2
 
     :cond_1
-    check-cast p1, Le0/z;
+    iget-object v1, p0, LE0/z;->a:Ljava/util/ArrayList;
 
-    iget v1, p0, Le0/z;->c:F
+    check-cast p1, LE0/z;
 
-    iget p1, p1, Le0/z;->c:F
+    iget-object p1, p1, LE0/z;->a:Ljava/util/ArrayList;
 
-    invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
+    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_2
+    if-nez p1, :cond_2
 
     return v2
 
@@ -64,31 +191,11 @@
 .method public final hashCode()I
     .locals 1
 
-    iget v0, p0, Le0/z;->c:F
+    iget-object v0, p0, LE0/z;->a:Ljava/util/ArrayList;
 
-    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
     return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "VerticalTo(y="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget v1, p0, Le0/z;->c:F
-
-    const/16 v2, 0x29
-
-    invoke-static {v0, v1, v2}, La5/m;->j(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method

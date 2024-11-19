@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -77,42 +77,42 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
-    new-instance v0, Ly5/n;
+    new-instance v0, LY/n;
 
     iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Lh4/c;
 
-    invoke-direct {v0, v1}, Ly5/n;-><init>(Lh4/c;)V
+    invoke-direct {v0, v1}, LY/n;-><init>(Lh4/c;)V
 
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 2
 
-    check-cast p1, Ly5/n;
+    check-cast p1, LY/n;
 
     iget-object v0, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Lh4/c;
 
-    iput-object v0, p1, Ly5/n;->t:Lh4/c;
+    iput-object v0, p1, LY/n;->t:Lh4/c;
 
     const/4 v0, 0x2
 
-    invoke-static {p1, v0}, Lq0/f;->t(Lq0/m;I)Lq0/Z1;
+    invoke-static {p1, v0}, Lq0/f;->t(Lq0/m;I)Lq0/Z;
 
     move-result-object v0
 
-    iget-object v0, v0, Lq0/Z1;->s:Lq0/Z1;
+    iget-object v0, v0, Lq0/Z;->s:Lq0/Z;
 
     if-eqz v0, :cond_0
 
-    iget-object p1, p1, Ly5/n;->t:Lh4/c;
+    iget-object p1, p1, LY/n;->t:Lh4/c;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p1, v1}, Lq0/Z1;->g1(Lh4/c;Z)V
+    invoke-virtual {v0, p1, v1}, Lq0/Z;->g1(Lh4/c;Z)V
 
     :cond_0
     return-void

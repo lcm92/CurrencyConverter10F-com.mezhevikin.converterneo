@@ -1,39 +1,32 @@
-.class public final Lv4/s;
-.super La4/c;
+.class public final Lv4/S;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lv4/f;
 
 
 # instance fields
-.field public j:Lh4/e;
+.field public final g:Ljava/lang/Throwable;
 
-.field public k:Li4/s;
 
-.field public l:Lv4/r;
+# direct methods
+.method public constructor <init>(Ljava/lang/Throwable;)V
+    .locals 0
 
-.field public synthetic m:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.field public n:I
+    iput-object p1, p0, Lv4/S;->g:Ljava/lang/Throwable;
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(Ljava/lang/Object;LY3/d;)Ljava/lang/Object;
+    .locals 0
 
-    iput-object p1, p0, Lv4/s;->m:Ljava/lang/Object;
+    iget-object p1, p0, Lv4/S;->g:Ljava/lang/Throwable;
 
-    iget p1, p0, Lv4/s;->n:I
-
-    const/high16 v0, -0x80000000
-
-    or-int/2addr p1, v0
-
-    iput p1, p0, Lv4/s;->n:I
-
-    const/4 p1, 0x0
-
-    invoke-static {p1, p1, p0}, Lv4/F1;->g(Lv4/e;Lh4/e;La4/c;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
+    throw p1
 .end method

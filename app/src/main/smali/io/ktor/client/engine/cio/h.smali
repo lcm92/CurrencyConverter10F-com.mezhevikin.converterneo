@@ -10,15 +10,15 @@
 .method public final b()Ljava/lang/Object;
     .locals 3
 
-    sget v0, Laa/j;->a:I
+    sget v0, LA4/j;->a:I
 
-    new-instance v0, Laa/i;
+    new-instance v0, LA4/i;
 
     const/4 v1, 0x0
 
     const/16 v2, 0x64
 
-    invoke-direct {v0, v2, v1}, Laa/i;-><init>(II)V
+    invoke-direct {v0, v2, v1}, LA4/i;-><init>(II)V
 
     return-object v0
 .end method

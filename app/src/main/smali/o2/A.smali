@@ -1,10 +1,8 @@
-.class public abstract Lo2/a;
-.super La8/a;
+.class public interface abstract LO2/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lo2/e;
 
-
-# static fields
-.field public static final synthetic b:I
+# virtual methods
+.method public abstract a()V
+.end method

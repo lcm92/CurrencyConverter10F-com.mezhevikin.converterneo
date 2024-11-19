@@ -29,7 +29,7 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p1, p1, p0}, Lv4/F1;->h(Lv4/e;Lh4/e;La4/c;)Ljava/lang/Object;
+    invoke-static {p1, p1, p0}, Lv4/F;->h(Lv4/e;Lh4/e;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -30,7 +30,7 @@
 .method public final j(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Ly9/g;
+    check-cast p1, LY3/g;
 
     instance-of v0, p1, Ls4/t;
 

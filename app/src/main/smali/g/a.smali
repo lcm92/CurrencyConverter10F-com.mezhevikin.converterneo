@@ -1,56 +1,75 @@
-.class public final synthetic Lg/a;
-.super Ljava/lang/Object;
+.class public final LG/A;
+.super LG/C;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/util/concurrent/Executor;
 
-
-# instance fields
-.field public final synthetic g:I
+# static fields
+.field public static final c:LG/A;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 4
 
-    iput p1, p0, Lg/a;->g:I
+    new-instance v0, LG/A;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x0
+
+    const/4 v2, 0x2
+
+    const/4 v3, 0x1
+
+    invoke-direct {v0, v3, v1, v2}, LG/C;-><init>(III)V
+
+    sput-object v0, LG/A;->c:LG/A;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final execute(Ljava/lang/Runnable;)V
+.method public final a(LA/p;Lo2/b;LF/H0;Lz2/b;)V
+    .locals 0
+
+    const/4 p3, 0x0
+
+    invoke-virtual {p1, p3}, LA/p;->c(I)I
+
+    move-result p1
+
+    :goto_0
+    if-ge p3, p1, :cond_0
+
+    invoke-virtual {p2}, Lo2/b;->l()V
+
+    add-int/lit8 p3, p3, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public final b(I)Ljava/lang/String;
     .locals 1
 
-    iget v0, p0, Lg/a;->g:I
+    const/4 v0, 0x0
 
-    packed-switch v0, :pswitch_data_0
+    invoke-static {p1, v0}, LH2/b;->L(II)Z
 
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+    move-result v0
 
-    return-void
+    if-eqz v0, :cond_0
 
-    :pswitch_0
-    invoke-static {}, Lg/b;->G0()Lg/b;
+    const-string p1, "count"
 
-    move-result-object v0
+    goto :goto_0
 
-    iget-object v0, v0, Lg/b;->a:Lg/c;
+    :cond_0
+    invoke-super {p0, p1}, LG/C;->b(I)Ljava/lang/String;
 
-    iget-object v0, v0, Lg/c;->b:Ljava/util/concurrent/ExecutorService;
+    move-result-object p1
 
-    invoke-interface {v0, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    :goto_0
+    return-object p1
 .end method

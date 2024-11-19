@@ -1,144 +1,294 @@
-.class public final Le3/c;
-.super Li4/i;
+.class public final LE3/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/c;
-
-
-# static fields
-.field public static final i:Le3/c;
-
-.field public static final j:Le3/c;
-
-.field public static final k:Le3/c;
+.implements Lv4/f;
 
 
 # instance fields
-.field public final synthetic h:I
+.field public final synthetic g:I
+
+.field public final synthetic h:Lv4/f;
+
+.field public final synthetic i:Ljava/nio/charset/Charset;
+
+.field public final synthetic j:LM3/a;
+
+.field public final synthetic k:Lio/ktor/utils/io/I;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 3
-
-    new-instance v0, Le3/c;
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Le3/c;-><init>(II)V
-
-    sput-object v0, Le3/c;->i:Le3/c;
-
-    new-instance v0, Le3/c;
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x1
-
-    invoke-direct {v0, v1, v2}, Le3/c;-><init>(II)V
-
-    sput-object v0, Le3/c;->j:Le3/c;
-
-    new-instance v0, Le3/c;
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x2
-
-    invoke-direct {v0, v1, v2}, Le3/c;-><init>(II)V
-
-    sput-object v0, Le3/c;->k:Le3/c;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(II)V
+.method public synthetic constructor <init>(Lv4/f;Ljava/nio/charset/Charset;LM3/a;Lio/ktor/utils/io/I;I)V
     .locals 0
 
-    iput p2, p0, Le3/c;->h:I
+    iput p5, p0, LE3/c;->g:I
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    iput-object p1, p0, LE3/c;->h:Lv4/f;
+
+    iput-object p2, p0, LE3/c;->i:Ljava/nio/charset/Charset;
+
+    iput-object p3, p0, LE3/c;->j:LM3/a;
+
+    iput-object p4, p0, LE3/c;->k:Lio/ktor/utils/io/I;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+.method public final a(Ljava/lang/Object;LY3/d;)Ljava/lang/Object;
+    .locals 7
 
-    const-string v0, "$this$null"
+    iget v0, p0, LE3/c;->g:I
 
-    sget-object v1, Lu9/y;->a:Lu9/y;
+    packed-switch v0, :pswitch_data_0
 
-    iget v2, p0, Le3/c;->h:I
+    instance-of v0, p2, LF3/b;
 
-    packed-switch v2, :pswitch_data_0
+    if-eqz v0, :cond_0
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v0, p2
 
-    return-object v1
+    check-cast v0, LF3/b;
 
-    :pswitch_0
-    check-cast p1, Lio/ktor/client/engine/cio/f;
+    iget v1, v0, LF3/b;->k:I
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    const/high16 v2, -0x80000000
 
-    return-object v1
+    and-int v3, v1, v2
 
-    :pswitch_1
-    check-cast p1, Le3/f;
+    if-eqz v3, :cond_0
 
-    const-string v0, "$this$install"
+    sub-int/2addr v1, v2
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    iput v1, v0, LF3/b;->k:I
 
-    sget-object v0, Lj3/o;->a:Ljj/a;
+    goto :goto_0
 
-    new-instance v0, Lj3/b;
+    :cond_0
+    new-instance v0, LF3/b;
 
-    const/4 v2, 0x3
+    invoke-direct {v0, p0, p2}, LF3/b;-><init>(LE3/c;LY3/d;)V
 
-    const/4 v3, 0x0
+    :goto_0
+    iget-object p2, v0, LF3/b;->j:Ljava/lang/Object;
+
+    sget-object v1, LZ3/a;->g:LZ3/a;
+
+    iget v2, v0, LF3/b;->k:I
+
+    const/4 v3, 0x2
 
     const/4 v4, 0x1
 
-    invoke-direct {v0, v2, v3, v4}, Lj3/b;-><init>(ILy9/d;I)V
+    if-eqz v2, :cond_3
 
-    iget-object v4, p1, Le3/f;->k:Lo3/f;
+    if-eq v2, v4, :cond_2
 
-    sget-object v5, Lo3/f;->j:Li8/i;
+    if-ne v2, v3, :cond_1
 
-    invoke-virtual {v4, v5, v0}, Ll9/d;->f(Li8/i;Lh4/f;)V
+    invoke-static {p2}, LU3/a;->e(Ljava/lang/Object;)V
 
-    new-instance v0, Lh3/c;
+    goto :goto_2
 
-    invoke-direct {v0, v2, v3}, Lh3/c;-><init>(ILy9/d;)V
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    iget-object p1, p1, Le3/f;->l:Lp3/a;
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
 
-    sget-object v4, Lp3/a;->k:Li8/i;
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, v4, v0}, Ll9/d;->f(Li8/i;Lh4/f;)V
+    throw p1
 
-    new-instance v0, Le3/d;
+    :cond_2
+    iget-object p1, v0, LF3/b;->l:Lv4/f;
 
-    const/4 v5, 0x2
+    invoke-static {p2}, LU3/a;->e(Ljava/lang/Object;)V
 
-    invoke-direct {v0, v2, v3, v5}, Le3/d;-><init>(ILy9/d;I)V
+    goto :goto_1
 
-    invoke-virtual {p1, v4, v0}, Ll9/d;->f(Li8/i;Lh4/f;)V
+    :cond_3
+    invoke-static {p2}, LU3/a;->e(Ljava/lang/Object;)V
 
+    check-cast p1, LF3/k;
+
+    iget-object p2, p0, LE3/c;->h:Lv4/f;
+
+    iput-object p2, v0, LF3/b;->l:Lv4/f;
+
+    iput v4, v0, LF3/b;->k:I
+
+    check-cast p1, LG3/f;
+
+    iget-object v2, p0, LE3/c;->j:LM3/a;
+
+    iget-object v4, p0, LE3/c;->k:Lio/ktor/utils/io/I;
+
+    iget-object v5, p0, LE3/c;->i:Ljava/nio/charset/Charset;
+
+    invoke-virtual {p1, v5, v2, v4, v0}, LG3/f;->a(Ljava/nio/charset/Charset;LM3/a;Lio/ktor/utils/io/I;La4/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v1, :cond_4
+
+    goto :goto_3
+
+    :cond_4
+    move-object v6, p2
+
+    move-object p2, p1
+
+    move-object p1, v6
+
+    :goto_1
+    const/4 v2, 0x0
+
+    iput-object v2, v0, LF3/b;->l:Lv4/f;
+
+    iput v3, v0, LF3/b;->k:I
+
+    invoke-interface {p1, p2, v0}, Lv4/f;->a(Ljava/lang/Object;LY3/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v1, :cond_5
+
+    goto :goto_3
+
+    :cond_5
+    :goto_2
+    sget-object v1, LU3/y;->a:LU3/y;
+
+    :goto_3
+    return-object v1
+
+    :pswitch_0
+    instance-of v0, p2, LE3/b;
+
+    if-eqz v0, :cond_6
+
+    move-object v0, p2
+
+    check-cast v0, LE3/b;
+
+    iget v1, v0, LE3/b;->k:I
+
+    const/high16 v2, -0x80000000
+
+    and-int v3, v1, v2
+
+    if-eqz v3, :cond_6
+
+    sub-int/2addr v1, v2
+
+    iput v1, v0, LE3/b;->k:I
+
+    goto :goto_4
+
+    :cond_6
+    new-instance v0, LE3/b;
+
+    invoke-direct {v0, p0, p2}, LE3/b;-><init>(LE3/c;LY3/d;)V
+
+    :goto_4
+    iget-object p2, v0, LE3/b;->j:Ljava/lang/Object;
+
+    sget-object v1, LZ3/a;->g:LZ3/a;
+
+    iget v2, v0, LE3/b;->k:I
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x1
+
+    if-eqz v2, :cond_9
+
+    if-eq v2, v4, :cond_8
+
+    if-ne v2, v3, :cond_7
+
+    invoke-static {p2}, LU3/a;->e(Ljava/lang/Object;)V
+
+    goto :goto_6
+
+    :cond_7
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_8
+    iget-object p1, v0, LE3/b;->l:Lv4/f;
+
+    invoke-static {p2}, LU3/a;->e(Ljava/lang/Object;)V
+
+    goto :goto_5
+
+    :cond_9
+    invoke-static {p2}, LU3/a;->e(Ljava/lang/Object;)V
+
+    check-cast p1, LF3/j;
+
+    iget-object p2, p0, LE3/c;->h:Lv4/f;
+
+    iput-object p2, v0, LE3/b;->l:Lv4/f;
+
+    iput v4, v0, LE3/b;->k:I
+
+    iget-object v2, p0, LE3/c;->j:LM3/a;
+
+    iget-object v4, p0, LE3/c;->k:Lio/ktor/utils/io/I;
+
+    iget-object v5, p0, LE3/c;->i:Ljava/nio/charset/Charset;
+
+    invoke-virtual {p1, v5, v2, v4, v0}, LF3/j;->a(Ljava/nio/charset/Charset;LM3/a;Lio/ktor/utils/io/I;La4/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v1, :cond_a
+
+    goto :goto_7
+
+    :cond_a
+    move-object v6, p2
+
+    move-object p2, p1
+
+    move-object p1, v6
+
+    :goto_5
+    const/4 v2, 0x0
+
+    iput-object v2, v0, LE3/b;->l:Lv4/f;
+
+    iput v3, v0, LE3/b;->k:I
+
+    invoke-interface {p1, p2, v0}, Lv4/f;->a(Ljava/lang/Object;LY3/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v1, :cond_b
+
+    goto :goto_7
+
+    :cond_b
+    :goto_6
+    sget-object v1, LU3/y;->a:LU3/y;
+
+    :goto_7
     return-object v1
 
     nop
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

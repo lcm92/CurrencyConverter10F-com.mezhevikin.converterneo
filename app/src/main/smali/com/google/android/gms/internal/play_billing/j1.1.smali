@@ -274,7 +274,7 @@
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    invoke-static {v1, p1}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -312,7 +312,7 @@
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    invoke-static {v1, p1}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -380,7 +380,7 @@
     :cond_0
     new-instance v2, Ljava/lang/IllegalStateException;
 
-    invoke-static {v1, v0}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v0}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -432,7 +432,7 @@
     :cond_3
     new-instance v2, Ljava/lang/IllegalStateException;
 
-    invoke-static {v1, v0}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v0}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 

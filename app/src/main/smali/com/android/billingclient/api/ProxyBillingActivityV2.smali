@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public A:Le6/l;
+.field public A:LE0/l;
 
-.field public B:Le6/l;
+.field public B:LE0/l;
 
 .field public C:Landroid/os/ResultReceiver;
 
@@ -35,17 +35,17 @@
 
     invoke-direct {v0, v1}, Ll2/g;-><init>(I)V
 
-    new-instance v1, Lj7/A1;
+    new-instance v1, LJ1/A;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, v2}, Lj7/A1;-><init>(Lcom/android/billingclient/api/ProxyBillingActivityV2;I)V
+    invoke-direct {v1, p0, v2}, LJ1/A;-><init>(Lcom/android/billingclient/api/ProxyBillingActivityV2;I)V
 
-    invoke-virtual {p0, v1, v0}, Lb/n;->k(Lj7/A1;Ll2/g;)Le6/l;
+    invoke-virtual {p0, v1, v0}, Lb/n;->k(LJ1/A;Ll2/g;)LE0/l;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->A:Le6/l;
+    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->A:LE0/l;
 
     new-instance v0, Ll2/g;
 
@@ -53,17 +53,17 @@
 
     invoke-direct {v0, v1}, Ll2/g;-><init>(I)V
 
-    new-instance v1, Lj7/A1;
+    new-instance v1, LJ1/A;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, p0, v2}, Lj7/A1;-><init>(Lcom/android/billingclient/api/ProxyBillingActivityV2;I)V
+    invoke-direct {v1, p0, v2}, LJ1/A;-><init>(Lcom/android/billingclient/api/ProxyBillingActivityV2;I)V
 
-    invoke-virtual {p0, v1, v0}, Lb/n;->k(Lj7/A1;Ll2/g;)Le6/l;
+    invoke-virtual {p0, v1, v0}, Lb/n;->k(LJ1/A;Ll2/g;)LE0/l;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->B:Le6/l;
+    iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->B:LE0/l;
 
     const-string v0, "external_payment_dialog_result_receiver"
 
@@ -119,7 +119,7 @@
 
     iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->C:Landroid/os/ResultReceiver;
 
-    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->A:Le6/l;
+    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->A:LE0/l;
 
     invoke-static {p1, v6}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -133,7 +133,7 @@
 
     invoke-direct {v1, p1, v4, v3, v3}, Le/f;-><init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
 
-    invoke-virtual {v0, v1}, Le6/l;->u(Le/f;)V
+    invoke-virtual {v0, v1}, LE0/l;->u(Le/f;)V
 
     return-void
 
@@ -172,7 +172,7 @@
 
     iput-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->D:Landroid/os/ResultReceiver;
 
-    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->B:Le6/l;
+    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivityV2;->B:LE0/l;
 
     invoke-static {p1, v6}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -186,7 +186,7 @@
 
     invoke-direct {v1, p1, v4, v3, v3}, Le/f;-><init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
 
-    invoke-virtual {v0, v1}, Le6/l;->u(Le/f;)V
+    invoke-virtual {v0, v1}, LE0/l;->u(Le/f;)V
 
     return-void
 

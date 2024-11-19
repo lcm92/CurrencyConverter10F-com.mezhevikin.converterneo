@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/BackgroundElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -14,22 +14,22 @@
 # instance fields
 .field public final a:J
 
-.field public final b:Ly5/H1;
+.field public final b:LY/H;
 
 .field public final c:F
 
-.field public final d:Ly5/M1;
+.field public final d:LY/M;
 
 
 # direct methods
-.method public constructor <init>(JLy5/A1;FLy5/M1;I)V
+.method public constructor <init>(JLY/A;FLY/M;I)V
     .locals 1
 
     and-int/lit8 v0, p6, 0x1
 
     if-eqz v0, :cond_0
 
-    sget-wide p1, Ly5/s;->i:J
+    sget-wide p1, LY/s;->i:J
 
     :cond_0
     and-int/lit8 p6, p6, 0x2
@@ -43,11 +43,11 @@
 
     iput-wide p1, p0, Landroidx/compose/foundation/BackgroundElement;->a:J
 
-    iput-object p3, p0, Landroidx/compose/foundation/BackgroundElement;->b:Ly5/H1;
+    iput-object p3, p0, Landroidx/compose/foundation/BackgroundElement;->b:LY/H;
 
     iput p4, p0, Landroidx/compose/foundation/BackgroundElement;->c:F
 
-    iput-object p5, p0, Landroidx/compose/foundation/BackgroundElement;->d:Ly5/M1;
+    iput-object p5, p0, Landroidx/compose/foundation/BackgroundElement;->d:LY/M;
 
     return-void
 .end method
@@ -80,15 +80,15 @@
 
     iget-wide v3, p1, Landroidx/compose/foundation/BackgroundElement;->a:J
 
-    invoke-static {v1, v2, v3, v4}, Ly5/s;->c(JJ)Z
+    invoke-static {v1, v2, v3, v4}, LY/s;->c(JJ)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->b:Ly5/H1;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->b:LY/H;
 
-    iget-object v2, p1, Landroidx/compose/foundation/BackgroundElement;->b:Ly5/H1;
+    iget-object v2, p1, Landroidx/compose/foundation/BackgroundElement;->b:LY/H;
 
     invoke-static {v1, v2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -104,9 +104,9 @@
 
     if-nez v1, :cond_2
 
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:Ly5/M1;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:LY/M;
 
-    iget-object p1, p1, Landroidx/compose/foundation/BackgroundElement;->d:Ly5/M1;
+    iget-object p1, p1, Landroidx/compose/foundation/BackgroundElement;->d:LY/M;
 
     invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -123,7 +123,7 @@
 .method public final hashCode()I
     .locals 3
 
-    sget v0, Ly5/s;->j:I
+    sget v0, LY/s;->j:I
 
     iget-wide v0, p0, Landroidx/compose/foundation/BackgroundElement;->a:J
 
@@ -135,7 +135,7 @@
 
     mul-int/2addr v0, v1
 
-    iget-object v2, p0, Landroidx/compose/foundation/BackgroundElement;->b:Ly5/H1;
+    iget-object v2, p0, Landroidx/compose/foundation/BackgroundElement;->b:LY/H;
 
     if-eqz v2, :cond_0
 
@@ -155,11 +155,11 @@
 
     iget v2, p0, Landroidx/compose/foundation/BackgroundElement;->c:F
 
-    invoke-static {v2, v0, v1}, La5/m;->e(FII)I
+    invoke-static {v2, v0, v1}, LA/m;->e(FII)I
 
     move-result v0
 
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:Ly5/M1;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:LY/M;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -170,28 +170,28 @@
     return v1
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 3
 
     new-instance v0, Lm/q;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iget-wide v1, p0, Landroidx/compose/foundation/BackgroundElement;->a:J
 
     iput-wide v1, v0, Lm/q;->t:J
 
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->b:Ly5/H1;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->b:LY/H;
 
-    iput-object v1, v0, Lm/q;->u:Ly5/H1;
+    iput-object v1, v0, Lm/q;->u:LY/H;
 
     iget v1, p0, Landroidx/compose/foundation/BackgroundElement;->c:F
 
     iput v1, v0, Lm/q;->v:F
 
-    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:Ly5/M1;
+    iget-object v1, p0, Landroidx/compose/foundation/BackgroundElement;->d:LY/M;
 
-    iput-object v1, v0, Lm/q;->w:Ly5/M1;
+    iput-object v1, v0, Lm/q;->w:LY/M;
 
     const-wide v1, 0x7fc000007fc00000L    # 2.247117487993712E307
 
@@ -200,7 +200,7 @@
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 2
 
     check-cast p1, Lm/q;
@@ -209,17 +209,17 @@
 
     iput-wide v0, p1, Lm/q;->t:J
 
-    iget-object v0, p0, Landroidx/compose/foundation/BackgroundElement;->b:Ly5/H1;
+    iget-object v0, p0, Landroidx/compose/foundation/BackgroundElement;->b:LY/H;
 
-    iput-object v0, p1, Lm/q;->u:Ly5/H1;
+    iput-object v0, p1, Lm/q;->u:LY/H;
 
     iget v0, p0, Landroidx/compose/foundation/BackgroundElement;->c:F
 
     iput v0, p1, Lm/q;->v:F
 
-    iget-object v0, p0, Landroidx/compose/foundation/BackgroundElement;->d:Ly5/M1;
+    iget-object v0, p0, Landroidx/compose/foundation/BackgroundElement;->d:LY/M;
 
-    iput-object v0, p1, Lm/q;->w:Ly5/M1;
+    iput-object v0, p1, Lm/q;->w:LY/M;
 
     return-void
 .end method

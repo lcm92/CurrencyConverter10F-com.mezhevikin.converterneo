@@ -26,11 +26,11 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, La8/h;
+    new-instance v0, LA2/h;
 
     const/16 v1, 0x13
 
-    invoke-direct {v0, v1}, La8/h;-><init>(I)V
+    invoke-direct {v0, v1}, LA2/h;-><init>(I)V
 
     sput-object v0, Landroidx/versionedparcelable/ParcelImpl;->CREATOR:Landroid/os/Parcelable$Creator;
 

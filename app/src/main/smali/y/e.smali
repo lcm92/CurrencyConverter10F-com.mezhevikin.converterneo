@@ -1,146 +1,112 @@
-.class public final Ly/e;
-.super La4/i;
+.class public final LY/E;
+.super LY/F;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/e;
 
 
 # instance fields
-.field public k:I
+.field public final a:LX/e;
 
-.field public synthetic l:Ljava/lang/Object;
-
-.field public final synthetic m:Lo6/g;
-
-.field public final synthetic n:Ly/f;
-
-.field public final synthetic o:Ly/u;
+.field public final b:LY/i;
 
 
 # direct methods
-.method public constructor <init>(Lo6/g;Ly/f;Ly/u;Ly9/d;)V
-    .locals 0
+.method public constructor <init>(LX/e;)V
+    .locals 1
 
-    iput-object p1, p0, Ly/e;->m:Lo6/g;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Ly/e;->n:Ly/f;
+    iput-object p1, p0, LY/E;->a:LX/e;
 
-    iput-object p3, p0, Ly/e;->o:Ly/u;
+    invoke-static {p1}, LL4/d;->D(LX/e;)Z
 
-    const/4 p1, 0x2
+    move-result v0
 
-    invoke-direct {p0, p1, p4}, La4/i;-><init>(ILy9/d;)V
+    if-nez v0, :cond_0
+
+    invoke-static {}, LY/H;->h()LY/i;
+
+    move-result-object v0
+
+    invoke-static {v0, p1}, LY/G;->a(LY/G;LX/e;)V
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    iput-object v0, p0, LY/E;->b:LY/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Ly9/d;Ljava/lang/Object;)Ly9/d;
-    .locals 4
+.method public final a()LX/d;
+    .locals 5
 
-    new-instance v0, Ly/e;
+    new-instance v0, LX/d;
 
-    iget-object v1, p0, Ly/e;->o:Ly/u;
+    iget-object v1, p0, LY/E;->a:LX/e;
 
-    iget-object v2, p0, Ly/e;->m:Lo6/g;
+    iget v2, v1, LX/e;->a:F
 
-    iget-object v3, p0, Ly/e;->n:Ly/f;
+    iget v3, v1, LX/e;->c:F
 
-    invoke-direct {v0, v2, v3, v1, p1}, Ly/e;-><init>(Lo6/g;Ly/f;Ly/u;Ly9/d;)V
+    iget v4, v1, LX/e;->d:F
 
-    iput-object p2, v0, Ly/e;->l:Ljava/lang/Object;
+    iget v1, v1, LX/e;->b:F
+
+    invoke-direct {v0, v2, v1, v3, v4}, LX/d;-><init>(FFFF)V
 
     return-object v0
 .end method
 
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 9
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
-    sget-object v0, Lz9/a;->g:Lz9/a;
+    const/4 v0, 0x1
 
-    iget v1, p0, Ly/e;->k:I
+    if-ne p0, p1, :cond_0
 
-    const/4 v2, 0x1
-
-    if-eqz v1, :cond_1
-
-    if-eq v1, v2, :cond_0
-
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return v0
 
     :cond_0
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+    instance-of v1, p1, LY/E;
 
-    goto :goto_0
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
 
     :cond_1
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+    check-cast p1, LY/E;
 
-    iget-object p1, p0, Ly/e;->l:Ljava/lang/Object;
+    iget-object p1, p1, LY/E;->a:LX/e;
 
-    move-object v4, p1
+    iget-object v1, p0, LY/E;->a:LX/e;
 
-    check-cast v4, Lr0/S1;
+    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    new-instance p1, Ly/d;
+    move-result p1
 
-    iget-object v5, p0, Ly/e;->m:Lo6/g;
+    if-nez p1, :cond_2
 
-    iget-object v6, p0, Ly/e;->n:Ly/f;
-
-    iget-object v7, p0, Ly/e;->o:Ly/u;
-
-    const/4 v8, 0x0
-
-    move-object v3, p1
-
-    invoke-direct/range {v3 .. v8}, Ly/d;-><init>(Lr0/S1;Lo6/g;Ly/f;Ly/u;Ly9/d;)V
-
-    iput v2, p0, Ly/e;->k:I
-
-    invoke-static {p1, p0}, Ls4/y;->g(Lh4/e;Ly9/d;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    if-ne p1, v0, :cond_2
-
-    return-object v0
+    return v2
 
     :cond_2
-    :goto_0
-    new-instance p1, Lg8/c;
-
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
-
-    throw p1
+    return v0
 .end method
 
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final hashCode()I
+    .locals 1
 
-    check-cast p1, Lr0/S1;
+    iget-object v0, p0, LY/E;->a:LX/e;
 
-    check-cast p2, Ly9/d;
+    invoke-virtual {v0}, LX/e;->hashCode()I
 
-    invoke-virtual {p0, p2, p1}, Ly/e;->d(Ly9/d;Ljava/lang/Object;)Ly9/d;
+    move-result v0
 
-    move-result-object p1
-
-    check-cast p1, Ly/e;
-
-    sget-object p2, Lu9/y;->a:Lu9/y;
-
-    invoke-virtual {p1, p2}, Ly/e;->f(Ljava/lang/Object;)Ljava/lang/Object;
-
-    sget-object p1, Lz9/a;->g:Lz9/a;
-
-    return-object p1
+    return v0
 .end method

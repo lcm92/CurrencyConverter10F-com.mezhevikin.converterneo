@@ -1,60 +1,49 @@
-.class public final La3/e;
-.super Ljava/lang/Object;
+.class public final LA3/E;
+.super La4/c;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/g;
 
 
 # instance fields
-.field public final synthetic g:Ln5/a;
+.field public j:Lz3/o;
 
+.field public k:LY3/i;
 
-# direct methods
-.method public constructor <init>(Ln5/a;)V
-    .locals 0
+.field public l:LA3/D;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.field public synthetic m:Ljava/lang/Object;
 
-    iput-object p1, p0, La3/e;->g:Ln5/a;
-
-    return-void
-.end method
+.field public n:I
 
 
 # virtual methods
-.method public final g(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
-    check-cast p1, Lk/i;
+    iput-object p1, p0, LA3/E;->m:Ljava/lang/Object;
 
-    check-cast p2, Lj1/h;
+    iget p1, p0, LA3/E;->n:I
 
-    check-cast p3, Lf5/p;
+    const/high16 v0, -0x80000000
 
-    check-cast p4, Ljava/lang/Number;
+    or-int/2addr p1, v0
 
-    invoke-virtual {p4}, Ljava/lang/Number;->intValue()I
+    iput p1, p0, LA3/E;->n:I
 
-    const-string p4, "$this$composable"
+    const/4 v1, 0x0
 
-    invoke-static {p1, p4}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v2, 0x0
 
-    const-string p1, "entry"
+    const/4 v0, 0x0
 
-    invoke-static {p2, p1}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v3, 0x0
 
-    const/16 p1, 0x8
+    const/4 v4, 0x0
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-object v5, p0
+
+    invoke-static/range {v0 .. v5}, Lo4/j;->D(Lz3/o;Lio/ktor/utils/io/D;Lio/ktor/utils/io/D;LA0/s;LY3/i;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
-
-    iget-object p4, p0, La3/e;->g:Ln5/a;
-
-    invoke-virtual {p4, p2, p3, p1}, Ln5/a;->h(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    sget-object p1, Lu9/y;->a:Lu9/y;
 
     return-object p1
 .end method

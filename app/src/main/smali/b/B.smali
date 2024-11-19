@@ -1,99 +1,49 @@
-.class public final Lb/b;
+.class public abstract LB/B;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:F
+# static fields
+.field public static final a:LF/X0;
 
-.field public final b:F
+.field public static final b:LB/h;
 
-.field public final c:F
-
-.field public final d:I
+.field public static final c:LB/h;
 
 
 # direct methods
-.method public constructor <init>(Landroid/window/BackEvent;)V
+.method static constructor <clinit>()V
     .locals 4
 
-    const-string v0, "backEvent"
+    sget-object v0, LB/A;->h:LB/A;
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    new-instance v1, LF/X0;
 
-    sget-object v0, Lb/a;->a:Lb/a;
+    invoke-direct {v1, v0}, LF/p0;-><init>(Lh4/a;)V
 
-    invoke-virtual {v0, p1}, Lb/a;->d(Landroid/window/BackEvent;)F
+    sput-object v1, LB/B;->a:LF/X0;
 
-    move-result v1
+    new-instance v0, LB/h;
 
-    invoke-virtual {v0, p1}, Lb/a;->e(Landroid/window/BackEvent;)F
+    const v1, 0x3e23d70a    # 0.16f
 
-    move-result v2
+    const v2, 0x3e75c28f    # 0.24f
 
-    invoke-virtual {v0, p1}, Lb/a;->b(Landroid/window/BackEvent;)F
+    const v3, 0x3da3d70a    # 0.08f
 
-    move-result v3
+    invoke-direct {v0, v1, v2, v3, v2}, LB/h;-><init>(FFFF)V
 
-    invoke-virtual {v0, p1}, Lb/a;->c(Landroid/window/BackEvent;)I
+    sput-object v0, LB/B;->b:LB/h;
 
-    move-result p1
+    new-instance v0, LB/h;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const v1, 0x3df5c28f    # 0.12f
 
-    iput v1, p0, Lb/b;->a:F
+    const v2, 0x3d23d70a    # 0.04f
 
-    iput v2, p0, Lb/b;->b:F
+    invoke-direct {v0, v3, v1, v2, v1}, LB/h;-><init>(FFFF)V
 
-    iput v3, p0, Lb/b;->c:F
-
-    iput p1, p0, Lb/b;->d:I
+    sput-object v0, LB/B;->c:LB/h;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "BackEventCompat{touchX="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget v1, p0, Lb/b;->a:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v1, ", touchY="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lb/b;->b:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v1, ", progress="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lb/b;->c:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v1, ", swipeEdge="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lb/b;->d:I
-
-    const/16 v2, 0x7d
-
-    invoke-static {v0, v1, v2}, La5/m;->k(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method

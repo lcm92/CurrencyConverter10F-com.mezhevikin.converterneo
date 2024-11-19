@@ -1,126 +1,126 @@
-.class public final Lo0/x;
-.super Lq0/B1;
+.class public final LO0/x;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final synthetic b:Lo0/A1;
+.field public final a:Z
 
-.field public final synthetic c:Lh4/e;
+.field public final b:Z
+
+.field public final c:Z
 
 
 # direct methods
-.method public constructor <init>(Lo0/A1;Lh4/e;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
-    iput-object p1, p0, Lo0/x;->b:Lo0/A1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lo0/x;->c:Lh4/e;
+    const/4 v0, 0x1
 
-    invoke-direct {p0, p3}, Lq0/B1;-><init>(Ljava/lang/String;)V
+    iput-boolean v0, p0, LO0/x;->a:Z
+
+    iput-boolean v0, p0, LO0/x;->b:Z
+
+    iput-boolean v0, p0, LO0/x;->c:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Lo0/G1;Ljava/util/List;J)Lo0/F1;
-    .locals 6
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-    iget-object v2, p0, Lo0/x;->b:Lo0/A1;
+    const/4 v0, 0x1
 
-    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
+    if-ne p0, p1, :cond_0
 
-    move-result-object p2
-
-    iget-object v0, v2, Lo0/A1;->n:Lo0/v;
-
-    iput-object p2, v0, Lo0/v;->g:Ll6/k;
-
-    invoke-interface {p1}, Ll6/b;->b()F
-
-    move-result p2
-
-    iput p2, v0, Lo0/v;->h:F
-
-    invoke-interface {p1}, Ll6/b;->n()F
-
-    move-result p2
-
-    iput p2, v0, Lo0/v;->i:F
-
-    invoke-interface {p1}, Lo0/m;->B()Z
-
-    move-result p1
-
-    iget-object p2, p0, Lo0/x;->c:Lh4/e;
-
-    const/4 v1, 0x0
-
-    if-nez p1, :cond_0
-
-    iget-object p1, v2, Lo0/A1;->g:Lq0/D1;
-
-    iget-object p1, p1, Lq0/D1;->i:Lq0/D1;
-
-    if-eqz p1, :cond_0
-
-    iput v1, v2, Lo0/A1;->k:I
-
-    new-instance p1, Ll6/a;
-
-    invoke-direct {p1, p3, p4}, Ll6/a;-><init>(J)V
-
-    iget-object p3, v2, Lo0/A1;->o:Lo0/t;
-
-    invoke-interface {p2, p3, p1}, Lh4/e;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    move-object v4, p1
-
-    check-cast v4, Lo0/F1;
-
-    iget v3, v2, Lo0/A1;->k:I
-
-    new-instance p1, Lo0/w;
-
-    const/4 v5, 0x0
-
-    move-object v0, p1
-
-    move-object v1, v4
-
-    invoke-direct/range {v0 .. v5}, Lo0/w;-><init>(Lo0/F1;Lo0/A1;ILo0/F1;I)V
-
-    return-object p1
+    return v0
 
     :cond_0
-    iput v1, v2, Lo0/A1;->j:I
+    instance-of v1, p1, LO0/x;
 
-    new-instance p1, Ll6/a;
+    const/4 v2, 0x0
 
-    invoke-direct {p1, p3, p4}, Ll6/a;-><init>(J)V
+    if-nez v1, :cond_1
 
-    invoke-interface {p2, v0, p1}, Lh4/e;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    return v2
 
-    move-result-object p1
+    :cond_1
+    check-cast p1, LO0/x;
 
-    move-object v4, p1
+    iget-boolean v1, p1, LO0/x;->a:Z
 
-    check-cast v4, Lo0/F1;
+    iget-boolean v3, p0, LO0/x;->a:Z
 
-    iget v3, v2, Lo0/A1;->j:I
+    if-eq v3, v1, :cond_2
 
-    new-instance p1, Lo0/w;
+    return v2
 
-    const/4 v5, 0x1
+    :cond_2
+    iget-boolean v1, p0, LO0/x;->b:Z
 
-    move-object v0, p1
+    iget-boolean v3, p1, LO0/x;->b:Z
 
-    move-object v1, v4
+    if-eq v1, v3, :cond_3
 
-    invoke-direct/range {v0 .. v5}, Lo0/w;-><init>(Lo0/F1;Lo0/A1;ILo0/F1;I)V
+    return v2
 
-    return-object p1
+    :cond_3
+    iget-boolean v1, p0, LO0/x;->c:Z
+
+    iget-boolean p1, p1, LO0/x;->c:Z
+
+    if-eq v1, p1, :cond_4
+
+    return v2
+
+    :cond_4
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 4
+
+    iget-boolean v0, p0, LO0/x;->a:Z
+
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    move-result v0
+
+    const/16 v1, 0x1f
+
+    mul-int/2addr v0, v1
+
+    iget-boolean v2, p0, LO0/x;->b:Z
+
+    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
+
+    move-result v0
+
+    const/4 v2, 0x1
+
+    invoke-static {v2}, Ll/i;->b(I)I
+
+    move-result v3
+
+    add-int/2addr v3, v0
+
+    mul-int/2addr v3, v1
+
+    iget-boolean v0, p0, LO0/x;->c:Z
+
+    invoke-static {v3, v1, v0}, Lk/P;->c(IIZ)I
+
+    move-result v0
+
+    invoke-static {v2}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    return v1
 .end method

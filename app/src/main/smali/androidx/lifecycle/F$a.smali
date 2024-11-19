@@ -57,7 +57,7 @@
 
     invoke-direct {v0}, Landroidx/lifecycle/F$a;-><init>()V
 
-    invoke-static {p0, v0}, Ly6/z;->c(Landroid/app/Activity;Landroidx/lifecycle/F$a;)V
+    invoke-static {p0, v0}, LY0/z;->c(Landroid/app/Activity;Landroidx/lifecycle/F$a;)V
 
     return-void
 .end method

@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -49,7 +49,7 @@
 
     iget-object v0, p0, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;->a:Lr0/l0;
 
-    iget-object v0, v0, Lr0/l0;->a:Lu5/d;
+    iget-object v0, v0, Lr0/l0;->a:LU/d;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -58,20 +58,20 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 1
 
     iget-object v0, p0, Landroidx/compose/ui/platform/DragAndDropModifierOnDragListener$modifier$1;->a:Lr0/l0;
 
-    iget-object v0, v0, Lr0/l0;->a:Lu5/d;
+    iget-object v0, v0, Lr0/l0;->a:LU/d;
 
     return-object v0
 .end method
 
-.method public final bridge synthetic k(Lr5/p;)V
+.method public final bridge synthetic k(LR/p;)V
     .locals 0
 
-    check-cast p1, Lu5/d;
+    check-cast p1, LU/d;
 
     return-void
 .end method

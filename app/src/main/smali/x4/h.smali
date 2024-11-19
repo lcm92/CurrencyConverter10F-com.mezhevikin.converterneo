@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/C1;
+.implements Ls4/C;
 
 
 # static fields
@@ -15,7 +15,7 @@
 
 .field public final j:I
 
-.field public final synthetic k:Ls4/C1;
+.field public final synthetic k:Ls4/C;
 
 .field public final l:Lx4/j;
 
@@ -50,11 +50,11 @@
 
     iput p2, p0, Lx4/h;->j:I
 
-    instance-of p2, p1, Ls4/C1;
+    instance-of p2, p1, Ls4/C;
 
     if-eqz p2, :cond_0
 
-    check-cast p1, Ls4/C1;
+    check-cast p1, Ls4/C;
 
     goto :goto_0
 
@@ -64,10 +64,10 @@
     :goto_0
     if-nez p1, :cond_1
 
-    sget-object p1, Ls4/A1;->a:Ls4/C1;
+    sget-object p1, Ls4/A;->a:Ls4/C;
 
     :cond_1
-    iput-object p1, p0, Lx4/h;->k:Ls4/C1;
+    iput-object p1, p0, Lx4/h;->k:Ls4/C;
 
     new-instance p1, Lx4/j;
 
@@ -195,26 +195,26 @@
 .method public final b(JLs4/f;)V
     .locals 1
 
-    iget-object v0, p0, Lx4/h;->k:Ls4/C1;
+    iget-object v0, p0, Lx4/h;->k:Ls4/C;
 
-    invoke-interface {v0, p1, p2, p3}, Ls4/C1;->b(JLs4/f;)V
+    invoke-interface {v0, p1, p2, p3}, Ls4/C;->b(JLs4/f;)V
 
     return-void
 .end method
 
-.method public final g(JLs4/r0;Ly9/i;)Ls4/G1;
+.method public final g(JLs4/r0;LY3/i;)Ls4/G;
     .locals 1
 
-    iget-object v0, p0, Lx4/h;->k:Ls4/C1;
+    iget-object v0, p0, Lx4/h;->k:Ls4/C;
 
-    invoke-interface {v0, p1, p2, p3, p4}, Ls4/C1;->g(JLs4/r0;Ly9/i;)Ls4/G1;
+    invoke-interface {v0, p1, p2, p3, p4}, Ls4/C;->g(JLs4/r0;LY3/i;)Ls4/G;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final u(Ly9/i;Ljava/lang/Runnable;)V
+.method public final u(LY3/i;Ljava/lang/Runnable;)V
     .locals 1
 
     iget-object p1, p0, Lx4/h;->l:Lx4/j;
@@ -246,22 +246,22 @@
     goto :goto_0
 
     :cond_0
-    new-instance p2, Lc7/e;
+    new-instance p2, LC1/e;
 
     const/16 v0, 0x12
 
-    invoke-direct {p2, p0, v0, p1}, Lc7/e;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p2, p0, v0, p1}, LC1/e;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     iget-object p1, p0, Lx4/h;->i:Lz4/k;
 
-    invoke-virtual {p1, p0, p2}, Lz4/k;->u(Ly9/i;Ljava/lang/Runnable;)V
+    invoke-virtual {p1, p0, p2}, Lz4/k;->u(LY3/i;Ljava/lang/Runnable;)V
 
     :cond_1
     :goto_0
     return-void
 .end method
 
-.method public final y(Ly9/i;Ljava/lang/Runnable;)V
+.method public final y(LY3/i;Ljava/lang/Runnable;)V
     .locals 1
 
     iget-object p1, p0, Lx4/h;->l:Lx4/j;
@@ -293,15 +293,15 @@
     goto :goto_0
 
     :cond_0
-    new-instance p2, Lc7/e;
+    new-instance p2, LC1/e;
 
     const/16 v0, 0x12
 
-    invoke-direct {p2, p0, v0, p1}, Lc7/e;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p2, p0, v0, p1}, LC1/e;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     iget-object p1, p0, Lx4/h;->i:Lz4/k;
 
-    invoke-virtual {p1, p0, p2}, Lz4/k;->y(Ly9/i;Ljava/lang/Runnable;)V
+    invoke-virtual {p1, p0, p2}, Lz4/k;->y(LY3/i;Ljava/lang/Runnable;)V
 
     :cond_1
     :goto_0

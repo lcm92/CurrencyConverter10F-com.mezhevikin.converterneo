@@ -8,7 +8,7 @@
 
 .field public final b:Ljava/lang/String;
 
-.field public final c:Lk5/k;
+.field public final c:LK/k;
 
 
 # direct methods
@@ -25,13 +25,13 @@
 
     iput-object p2, p0, Lq4/f;->b:Ljava/lang/String;
 
-    new-instance p1, Lk5/k;
+    new-instance p1, LK/k;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p2, p0}, Lk5/k;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LK/k;-><init>(ILjava/lang/Object;)V
 
-    iput-object p1, p0, Lq4/f;->c:Lk5/k;
+    iput-object p1, p0, Lq4/f;->c:LK/k;
 
     return-void
 .end method

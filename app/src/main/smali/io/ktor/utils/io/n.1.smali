@@ -6,7 +6,7 @@
 # instance fields
 .field public j:Lio/ktor/utils/io/D;
 
-.field public k:Lp9/c;
+.field public k:LP3/c;
 
 .field public l:Ljava/nio/ByteBuffer;
 
@@ -25,7 +25,7 @@
 
     iput-object p1, p0, Lio/ktor/utils/io/n;->o:Lio/ktor/utils/io/D;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+    invoke-direct {p0, p2}, La4/c;-><init>(LY3/d;)V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     iget-object v1, p0, Lio/ktor/utils/io/n;->o:Lio/ktor/utils/io/D;
 
-    invoke-virtual {v1, p1, v0, v0, p0}, Lio/ktor/utils/io/D;->O(ILp9/c;Ljava/nio/ByteBuffer;La4/c;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, v0, v0, p0}, Lio/ktor/utils/io/D;->O(ILP3/c;Ljava/nio/ByteBuffer;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 

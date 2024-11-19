@@ -1,287 +1,270 @@
-.class public final Lo0/w;
-.super Ljava/lang/Object;
+.class public final LO0/w;
+.super Lr0/a;
 .source "SourceFile"
-
-# interfaces
-.implements Lo0/F1;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final o:Landroid/view/Window;
 
-.field public final synthetic b:Lo0/F1;
+.field public final p:LF/j0;
 
-.field public final synthetic c:Lo0/A1;
+.field public q:Z
 
-.field public final synthetic d:I
-
-.field public final synthetic e:Lo0/F1;
+.field public r:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(Lo0/F1;Lo0/A1;ILo0/F1;I)V
+.method public constructor <init>(Landroid/content/Context;Landroid/view/Window;)V
     .locals 0
 
-    iput p5, p0, Lo0/w;->a:I
+    invoke-direct {p0, p1}, Lr0/a;-><init>(Landroid/content/Context;)V
 
-    iput-object p2, p0, Lo0/w;->c:Lo0/A1;
+    iput-object p2, p0, LO0/w;->o:Landroid/view/Window;
 
-    iput p3, p0, Lo0/w;->d:I
+    sget-object p1, LO0/t;->a:LN/a;
 
-    iput-object p4, p0, Lo0/w;->e:Lo0/F1;
+    sget-object p2, LF/W;->l:LF/W;
 
-    iput-object p1, p0, Lo0/w;->b:Lo0/F1;
+    invoke-static {p1, p2}, LF/d;->J(Ljava/lang/Object;LF/M0;)LF/j0;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object p1
+
+    iput-object p1, p0, LO0/w;->p:LF/j0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final f()I
-    .locals 1
+.method public final a(ILF/p;)V
+    .locals 2
 
-    iget v0, p0, Lo0/w;->a:I
+    const v0, 0x6770d814
 
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {p2, v0}, LF/p;->S(I)LF/p;
 
-    iget-object v0, p0, Lo0/w;->b:Lo0/F1;
+    and-int/lit8 v0, p1, 0x6
 
-    invoke-interface {v0}, Lo0/F1;->f()I
+    const/4 v1, 0x2
 
-    move-result v0
+    if-nez v0, :cond_1
 
-    return v0
-
-    :pswitch_0
-    iget-object v0, p0, Lo0/w;->b:Lo0/F1;
-
-    invoke-interface {v0}, Lo0/F1;->f()I
+    invoke-virtual {p2, p0}, LF/p;->h(Ljava/lang/Object;)Z
 
     move-result v0
 
-    return v0
+    if-eqz v0, :cond_0
 
-    nop
+    const/4 v0, 0x4
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final h()I
-    .locals 1
-
-    iget v0, p0, Lo0/w;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, Lo0/w;->b:Lo0/F1;
-
-    invoke-interface {v0}, Lo0/F1;->h()I
-
-    move-result v0
-
-    return v0
-
-    :pswitch_0
-    iget-object v0, p0, Lo0/w;->b:Lo0/F1;
-
-    invoke-interface {v0}, Lo0/F1;->h()I
-
-    move-result v0
-
-    return v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final i()Ljava/util/Map;
-    .locals 1
-
-    iget v0, p0, Lo0/w;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, Lo0/w;->b:Lo0/F1;
-
-    invoke-interface {v0}, Lo0/F1;->i()Ljava/util/Map;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, Lo0/w;->b:Lo0/F1;
-
-    invoke-interface {v0}, Lo0/F1;->i()Ljava/util/Map;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final j()V
-    .locals 6
-
-    iget v0, p0, Lo0/w;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, Lo0/w;->c:Lo0/A1;
-
-    iget v1, p0, Lo0/w;->d:I
-
-    iput v1, v0, Lo0/A1;->j:I
-
-    iget-object v1, p0, Lo0/w;->e:Lo0/F1;
-
-    invoke-interface {v1}, Lo0/F1;->j()V
-
-    iget v1, v0, Lo0/A1;->j:I
-
-    invoke-virtual {v0, v1}, Lo0/A1;->d(I)V
-
-    return-void
-
-    :pswitch_0
-    iget-object v0, p0, Lo0/w;->c:Lo0/A1;
-
-    iget v1, p0, Lo0/w;->d:I
-
-    iput v1, v0, Lo0/A1;->k:I
-
-    iget-object v1, p0, Lo0/w;->e:Lo0/F1;
-
-    invoke-interface {v1}, Lo0/F1;->j()V
-
-    iget-object v1, v0, Lo0/A1;->r:Ljava/util/LinkedHashMap;
-
-    invoke-virtual {v1}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Iterable;
-
-    const-string v2, "<this>"
-
-    invoke-static {v1, v2}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
+    goto :goto_0
 
     :cond_0
+    move v0, v1
+
     :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/util/Map$Entry;
-
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lo0/V1;
-
-    iget-object v4, v0, Lo0/A1;->s:Lh5/d;
-
-    invoke-virtual {v4, v3}, Lh5/d;->k(Ljava/lang/Object;)I
-
-    move-result v3
-
-    const/4 v4, 0x1
-
-    if-ltz v3, :cond_2
-
-    iget v5, v0, Lo0/A1;->k:I
-
-    if-lt v3, v5, :cond_1
+    or-int/2addr v0, p1
 
     goto :goto_1
 
     :cond_1
-    const/4 v2, 0x0
+    move v0, p1
+
+    :goto_1
+    and-int/lit8 v0, v0, 0x3
+
+    if-ne v0, v1, :cond_3
+
+    invoke-virtual {p2}, LF/p;->x()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
 
     goto :goto_2
 
     :cond_2
-    :goto_1
-    invoke-interface {v2}, Lo0/V1;->a()V
+    invoke-virtual {p2}, LF/p;->L()V
 
-    move v2, v4
+    goto :goto_3
 
+    :cond_3
     :goto_2
-    if-ne v2, v4, :cond_0
+    iget-object v0, p0, LO0/w;->p:LF/j0;
 
-    invoke-interface {v1}, Ljava/util/Iterator;->remove()V
+    invoke-virtual {v0}, LF/j0;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lh4/e;
+
+    const/4 v1, 0x0
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {v0, p2, v1}, Lh4/e;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :goto_3
+    invoke-virtual {p2}, LF/p;->r()LF/s0;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_4
+
+    new-instance v0, LO0/v;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1, p0}, LO0/v;-><init>(IILjava/lang/Object;)V
+
+    iput-object v0, p2, LF/s0;->d:Lh4/e;
+
+    :cond_4
+    return-void
+.end method
+
+.method public final d(ZIIII)V
+    .locals 0
+
+    invoke-super/range {p0 .. p5}, Lr0/a;->d(ZIIII)V
+
+    iget-boolean p1, p0, LO0/w;->q:Z
+
+    if-nez p1, :cond_1
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object p1
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result p2
+
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result p1
+
+    iget-object p3, p0, LO0/w;->o:Landroid/view/Window;
+
+    invoke-virtual {p3, p2, p1}, Landroid/view/Window;->setLayout(II)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public final e(II)V
+    .locals 2
+
+    iget-boolean v0, p0, LO0/w;->q:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-super {p0, p1, p2}, Lr0/a;->e(II)V
 
     goto :goto_0
 
-    :cond_3
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object p1
+
+    iget p1, p1, Landroid/util/DisplayMetrics;->density:F
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object p2
+
+    iget p2, p2, Landroid/content/res/Configuration;->screenWidthDp:I
+
+    int-to-float p2, p2
+
+    mul-float/2addr p2, p1
+
+    invoke-static {p2}, Ljava/lang/Math;->round(F)I
+
+    move-result p1
+
+    const/high16 p2, -0x80000000
+
+    invoke-static {p1, p2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
+    move-result p1
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v0
+
+    iget v0, v0, Landroid/util/DisplayMetrics;->density:F
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v1
+
+    iget v1, v1, Landroid/content/res/Configuration;->screenHeightDp:I
+
+    int-to-float v1, v1
+
+    mul-float/2addr v1, v0
+
+    invoke-static {v1}, Ljava/lang/Math;->round(F)I
+
+    move-result v0
+
+    invoke-static {v0, p2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
+    move-result p2
+
+    invoke-super {p0, p1, p2}, Lr0/a;->e(II)V
+
+    :goto_0
     return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method public final k()Lh4/c;
+.method public final getShouldCreateCompositionOnAttachedToWindow()Z
     .locals 1
 
-    iget v0, p0, Lo0/w;->a:I
+    iget-boolean v0, p0, LO0/w;->r:Z
 
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, Lo0/w;->b:Lo0/F1;
-
-    invoke-interface {v0}, Lo0/F1;->k()Lh4/c;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, Lo0/w;->b:Lo0/F1;
-
-    invoke-interface {v0}, Lo0/F1;->k()Lh4/c;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return v0
 .end method

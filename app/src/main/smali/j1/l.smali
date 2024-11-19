@@ -1,102 +1,88 @@
-.class public final Lj1/l;
-.super Li4/i;
+.class public final synthetic LJ1/l;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/c;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic h:I
+.field public final synthetic g:I
 
-.field public final synthetic i:Lj1/B1;
+.field public final synthetic h:LJ1/b;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILj1/B1;)V
+.method public synthetic constructor <init>(LJ1/b;Ljava/lang/Object;I)V
     .locals 0
 
-    iput p1, p0, Lj1/l;->h:I
+    iput p3, p0, LJ1/l;->g:I
 
-    iput-object p2, p0, Lj1/l;->i:Lj1/B1;
+    iput-object p1, p0, LJ1/l;->h:LJ1/b;
 
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final run()V
+    .locals 4
 
-    iget v0, p0, Lj1/l;->h:I
+    const/16 v0, 0x18
 
-    packed-switch v0, :pswitch_data_0
+    iget-object v1, p0, LJ1/l;->h:LJ1/b;
 
-    check-cast p1, Lj1/u;
+    iget v2, p0, LJ1/l;->g:I
 
-    const-string v0, "destination"
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    packed-switch v2, :pswitch_data_0
 
-    iget-object v0, p0, Lj1/l;->i:Lj1/B1;
+    sget-object v2, LJ1/z;->l:LJ1/e;
 
-    iget-object v0, v0, Lj1/B1;->m:Ljava/util/LinkedHashMap;
+    const/4 v3, 0x3
 
-    iget p1, p1, Lj1/u;->l:I
+    invoke-virtual {v1, v0, v3, v2}, LJ1/b;->t(IILJ1/e;)V
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, LA/s;->e(LJ1/e;)V
 
-    move-result-object p1
-
-    invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    xor-int/lit8 p1, p1, 0x1
-
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 
     :pswitch_0
-    check-cast p1, Lj1/u;
+    sget-object v2, LJ1/z;->l:LJ1/e;
 
-    const-string v0, "destination"
+    const/4 v3, 0x7
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v3, v2}, LJ1/b;->t(IILJ1/e;)V
 
-    iget-object v0, p0, Lj1/l;->i:Lj1/B1;
+    new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v0, v0, Lj1/B1;->m:Ljava/util/LinkedHashMap;
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iget p1, p1, Lj1/u;->l:I
+    invoke-static {v2, v0}, LA/s;->f(LJ1/e;Ljava/util/ArrayList;)V
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    return-void
 
-    move-result-object p1
+    :pswitch_1
+    sget-object v2, LJ1/z;->l:LJ1/e;
 
-    invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    const/16 v3, 0x9
 
-    move-result p1
+    invoke-virtual {v1, v0, v3, v2}, LJ1/b;->t(IILJ1/e;)V
 
-    xor-int/lit8 p1, p1, 0x1
+    sget-object v0, Lcom/google/android/gms/internal/play_billing/D;->h:Lcom/google/android/gms/internal/play_billing/A;
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    sget-object v0, Lcom/google/android/gms/internal/play_billing/U;->k:Lcom/google/android/gms/internal/play_billing/U;
 
-    move-result-object p1
+    invoke-static {v2, v0}, LA/s;->h(LJ1/e;Ljava/util/List;)V
 
-    return-object p1
-
-    nop
+    return-void
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

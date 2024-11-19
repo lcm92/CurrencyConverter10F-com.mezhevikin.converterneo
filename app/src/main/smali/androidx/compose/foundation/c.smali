@@ -19,11 +19,11 @@
 
 .field public final synthetic m:Lh4/a;
 
-.field public final synthetic n:Ly8/n;
+.field public final synthetic n:LY2/n;
 
 
 # direct methods
-.method public constructor <init>(ZLjava/lang/String;Lx0/f;Ljava/lang/String;Lh4/a;Lh4/a;Ly8/n;)V
+.method public constructor <init>(ZLjava/lang/String;Lx0/f;Ljava/lang/String;Lh4/a;Lh4/a;LY2/n;)V
     .locals 0
 
     iput-boolean p1, p0, Landroidx/compose/foundation/c;->h:Z
@@ -38,7 +38,7 @@
 
     iput-object p6, p0, Landroidx/compose/foundation/c;->m:Lh4/a;
 
-    iput-object p7, p0, Landroidx/compose/foundation/c;->n:Ly8/n;
+    iput-object p7, p0, Landroidx/compose/foundation/c;->n:LY2/n;
 
     const/4 p1, 0x3
 
@@ -56,11 +56,11 @@
 
     move-object/from16 v1, p1
 
-    check-cast v1, Lr5/q;
+    check-cast v1, LR/q;
 
     move-object/from16 v1, p2
 
-    check-cast v1, Lf5/p;
+    check-cast v1, LF/p;
 
     move-object/from16 v2, p3
 
@@ -70,17 +70,17 @@
 
     const v2, 0x755f393b
 
-    invoke-virtual {v1, v2}, Lf5/p;->Q(I)V
+    invoke-virtual {v1, v2}, LF/p;->Q(I)V
 
-    sget-object v2, Landroidx/compose/foundation/f;->a:Lf5/X10;
+    sget-object v2, Landroidx/compose/foundation/f;->a:LF/X0;
 
-    invoke-virtual {v1, v2}, Lf5/p;->k(Lf5/p0;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, LF/p;->k(LF/p0;)Ljava/lang/Object;
 
     move-result-object v2
 
     move-object v4, v2
 
-    check-cast v4, Lm/W1;
+    check-cast v4, Lm/W;
 
     instance-of v2, v4, Lm/b0;
 
@@ -90,9 +90,9 @@
 
     const v3, -0x66efc583
 
-    invoke-virtual {v1, v3}, Lf5/p;->Q(I)V
+    invoke-virtual {v1, v3}, LF/p;->Q(I)V
 
-    invoke-virtual {v1, v12}, Lf5/p;->p(Z)V
+    invoke-virtual {v1, v12}, LF/p;->p(Z)V
 
     const/4 v3, 0x0
 
@@ -104,13 +104,13 @@
     :cond_0
     const v3, -0x66ee1fbe
 
-    invoke-virtual {v1, v3}, Lf5/p;->Q(I)V
+    invoke-virtual {v1, v3}, LF/p;->Q(I)V
 
-    invoke-virtual {v1}, Lf5/p;->G()Ljava/lang/Object;
+    invoke-virtual {v1}, LF/p;->G()Ljava/lang/Object;
 
     move-result-object v3
 
-    sget-object v5, Lf5/l;->a:Lf5/W1;
+    sget-object v5, LF/l;->a:LF/W;
 
     if-ne v3, v5, :cond_1
 
@@ -118,19 +118,19 @@
 
     invoke-direct {v3}, Lp/i;-><init>()V
 
-    invoke-virtual {v1, v3}, Lf5/p;->a0(Ljava/lang/Object;)V
+    invoke-virtual {v1, v3}, LF/p;->a0(Ljava/lang/Object;)V
 
     :cond_1
     check-cast v3, Lp/i;
 
-    invoke-virtual {v1, v12}, Lf5/p;->p(Z)V
+    invoke-virtual {v1, v12}, LF/p;->p(Z)V
 
     goto :goto_0
 
     :goto_1
-    sget-object v13, Lr5/n;->a:Lr5/n;
+    sget-object v13, LR/n;->a:LR/n;
 
-    iget-object v8, v0, Landroidx/compose/foundation/c;->n:Ly8/n;
+    iget-object v8, v0, Landroidx/compose/foundation/c;->n:LY2/n;
 
     iget-boolean v5, v0, Landroidx/compose/foundation/c;->h:Z
 
@@ -168,7 +168,7 @@
 
     move-object/from16 v22, v11
 
-    invoke-direct/range {v13 .. v22}, Landroidx/compose/foundation/CombinedClickableElement;-><init>(Lp/i;Lm/b0;ZLjava/lang/String;Lx0/f;Ly8/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
+    invoke-direct/range {v13 .. v22}, Landroidx/compose/foundation/CombinedClickableElement;-><init>(Lp/i;Lm/b0;ZLjava/lang/String;Lx0/f;LY2/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
 
     goto :goto_2
 
@@ -195,14 +195,14 @@
 
     move-object/from16 v22, v11
 
-    invoke-direct/range {v13 .. v22}, Landroidx/compose/foundation/CombinedClickableElement;-><init>(Lp/i;Lm/b0;ZLjava/lang/String;Lx0/f;Ly8/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
+    invoke-direct/range {v13 .. v22}, Landroidx/compose/foundation/CombinedClickableElement;-><init>(Lp/i;Lm/b0;ZLjava/lang/String;Lx0/f;LY2/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
 
     goto :goto_2
 
     :cond_3
     if-eqz v14, :cond_4
 
-    invoke-static {v13, v14, v4}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W1;)Lr5/q;
+    invoke-static {v13, v14, v4}, Landroidx/compose/foundation/f;->a(LR/q;Lp/i;Lm/W;)LR/q;
 
     move-result-object v2
 
@@ -226,9 +226,9 @@
 
     move-object/from16 v22, v11
 
-    invoke-direct/range {v13 .. v22}, Landroidx/compose/foundation/CombinedClickableElement;-><init>(Lp/i;Lm/b0;ZLjava/lang/String;Lx0/f;Ly8/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
+    invoke-direct/range {v13 .. v22}, Landroidx/compose/foundation/CombinedClickableElement;-><init>(Lp/i;Lm/b0;ZLjava/lang/String;Lx0/f;LY2/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
 
-    invoke-interface {v2, v3}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {v2, v3}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object v2
 
@@ -239,14 +239,14 @@
 
     move-object v3, v2
 
-    invoke-direct/range {v3 .. v11}, Landroidx/compose/foundation/d;-><init>(Lm/W1;ZLjava/lang/String;Lx0/f;Ly8/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
+    invoke-direct/range {v3 .. v11}, Landroidx/compose/foundation/d;-><init>(Lm/W;ZLjava/lang/String;Lx0/f;LY2/n;Ljava/lang/String;Lh4/a;Lh4/a;)V
 
-    invoke-static {v13, v2}, Lr5/a;->b(Lr5/q;Lh4/f;)Lr5/q;
+    invoke-static {v13, v2}, LR/a;->b(LR/q;Lh4/f;)LR/q;
 
     move-result-object v2
 
     :goto_2
-    invoke-virtual {v1, v12}, Lf5/p;->p(Z)V
+    invoke-virtual {v1, v12}, LF/p;->p(Z)V
 
     return-object v2
 .end method

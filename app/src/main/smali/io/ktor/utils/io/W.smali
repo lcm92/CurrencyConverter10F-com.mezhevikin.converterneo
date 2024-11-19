@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public j:Lq9/b;
+.field public j:LQ3/b;
 
 .field public synthetic k:Ljava/lang/Object;
 

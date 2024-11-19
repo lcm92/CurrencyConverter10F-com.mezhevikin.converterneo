@@ -1,92 +1,252 @@
-.class public final Lb/y;
-.super Ljava/lang/Object;
+.class public abstract LB/y;
+.super LR/p;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/window/OnBackAnimationCallback;
+.implements Lq0/l;
+.implements Lq0/o;
+.implements Lq0/v;
 
 
 # instance fields
-.field public final synthetic a:Lh4/c;
+.field public A:J
 
-.field public final synthetic b:Lh4/c;
+.field public B:Z
 
-.field public final synthetic c:Lh4/a;
+.field public final C:Li/y;
 
-.field public final synthetic d:Lh4/a;
+.field public final t:Lp/i;
+
+.field public final u:Z
+
+.field public final v:F
+
+.field public final w:LA/Z;
+
+.field public final x:LC/m;
+
+.field public y:LB/F;
+
+.field public z:F
 
 
 # direct methods
-.method public constructor <init>(Lh4/c;Lh4/c;Lh4/a;Lh4/a;)V
+.method public constructor <init>(Lp/i;ZFLA/Z;LC/m;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, LR/p;-><init>()V
 
-    iput-object p1, p0, Lb/y;->a:Lh4/c;
+    iput-object p1, p0, LB/y;->t:Lp/i;
 
-    iput-object p2, p0, Lb/y;->b:Lh4/c;
+    iput-boolean p2, p0, LB/y;->u:Z
 
-    iput-object p3, p0, Lb/y;->c:Lh4/a;
+    iput p3, p0, LB/y;->v:F
 
-    iput-object p4, p0, Lb/y;->d:Lh4/a;
+    iput-object p4, p0, LB/y;->w:LA/Z;
+
+    iput-object p5, p0, LB/y;->x:LC/m;
+
+    const-wide/16 p1, 0x0
+
+    iput-wide p1, p0, LB/y;->A:J
+
+    new-instance p1, Li/y;
+
+    invoke-direct {p1}, Li/y;-><init>()V
+
+    iput-object p1, p0, LB/y;->C:Li/y;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onBackCancelled()V
+.method public final A0(Lp/m;)V
+    .locals 3
+
+    instance-of v0, p1, Lp/k;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lp/k;
+
+    iget-wide v0, p0, LB/y;->A:J
+
+    iget v2, p0, LB/y;->z:F
+
+    invoke-virtual {p0, p1, v0, v1, v2}, LB/y;->y0(Lp/k;JF)V
+
+    goto :goto_0
+
+    :cond_0
+    instance-of v0, p1, Lp/l;
+
+    if-eqz v0, :cond_1
+
+    check-cast p1, Lp/l;
+
+    iget-object p1, p1, Lp/l;->a:Lp/k;
+
+    invoke-virtual {p0, p1}, LB/y;->B0(Lp/k;)V
+
+    goto :goto_0
+
+    :cond_1
+    instance-of v0, p1, Lp/j;
+
+    if-eqz v0, :cond_2
+
+    check-cast p1, Lp/j;
+
+    iget-object p1, p1, Lp/j;->a:Lp/k;
+
+    invoke-virtual {p0, p1}, LB/y;->B0(Lp/k;)V
+
+    :cond_2
+    :goto_0
+    return-void
+.end method
+
+.method public abstract B0(Lp/k;)V
+.end method
+
+.method public final e(Lq0/F;)V
+    .locals 4
+
+    invoke-virtual {p1}, Lq0/F;->a()V
+
+    iget-object v0, p0, LB/y;->y:LB/F;
+
+    if-eqz v0, :cond_0
+
+    iget v1, p0, LB/y;->z:F
+
+    iget-object v2, p0, LB/y;->w:LA/Z;
+
+    invoke-virtual {v2}, LA/Z;->i()J
+
+    move-result-wide v2
+
+    invoke-virtual {v0, p1, v1, v2, v3}, LB/F;->b(Lq0/F;FJ)V
+
+    :cond_0
+    invoke-virtual {p0, p1}, LB/y;->z0(Lq0/F;)V
+
+    return-void
+.end method
+
+.method public final n0()Z
     .locals 1
 
-    iget-object v0, p0, Lb/y;->d:Lh4/a;
+    const/4 v0, 0x0
 
-    invoke-interface {v0}, Lh4/a;->b()Ljava/lang/Object;
+    return v0
+.end method
+
+.method public final q0()V
+    .locals 5
+
+    invoke-virtual {p0}, LR/p;->m0()Ls4/x;
+
+    move-result-object v0
+
+    new-instance v1, LB/x;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p0, v2}, LB/x;-><init>(LB/y;LY3/d;)V
+
+    const/4 v3, 0x3
+
+    const/4 v4, 0x0
+
+    invoke-static {v0, v2, v4, v1, v3}, Ls4/y;->u(Ls4/x;LY3/i;ILh4/e;I)Ls4/B;
 
     return-void
 .end method
 
-.method public final onBackInvoked()V
-    .locals 1
+.method public final y(J)V
+    .locals 4
 
-    iget-object v0, p0, Lb/y;->c:Lh4/a;
+    const/4 v0, 0x1
 
-    invoke-interface {v0}, Lh4/a;->b()Ljava/lang/Object;
+    iput-boolean v0, p0, LB/y;->B:Z
+
+    invoke-static {p0}, Lq0/f;->v(Lq0/m;)Lq0/D;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lq0/D;->w:LL0/b;
+
+    invoke-static {p1, p2}, LL4/d;->S(J)J
+
+    move-result-wide p1
+
+    iput-wide p1, p0, LB/y;->A:J
+
+    iget p1, p0, LB/y;->v:F
+
+    invoke-static {p1}, Ljava/lang/Float;->isNaN(F)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    iget-boolean p1, p0, LB/y;->u:Z
+
+    iget-wide v1, p0, LB/y;->A:J
+
+    invoke-static {v0, p1, v1, v2}, LB/q;->a(LL0/b;ZJ)F
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v0, p1}, LL0/b;->M(F)F
+
+    move-result p1
+
+    :goto_0
+    iput p1, p0, LB/y;->z:F
+
+    iget-object p1, p0, LB/y;->C:Li/y;
+
+    iget-object p2, p1, Li/y;->a:[Ljava/lang/Object;
+
+    iget v0, p1, Li/y;->b:I
+
+    const/4 v1, 0x0
+
+    move v2, v1
+
+    :goto_1
+    if-ge v2, v0, :cond_1
+
+    aget-object v3, p2, v2
+
+    check-cast v3, Lp/m;
+
+    invoke-virtual {p0, v3}, LB/y;->A0(Lp/m;)V
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    iget-object p2, p1, Li/y;->a:[Ljava/lang/Object;
+
+    iget v0, p1, Li/y;->b:I
+
+    invoke-static {p2, v1, v0}, LV3/j;->k0([Ljava/lang/Object;II)V
+
+    iput v1, p1, Li/y;->b:I
 
     return-void
 .end method
 
-.method public final onBackProgressed(Landroid/window/BackEvent;)V
-    .locals 2
-
-    const-string v0, "backEvent"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-object v0, p0, Lb/y;->b:Lh4/c;
-
-    new-instance v1, Lb/b;
-
-    invoke-direct {v1, p1}, Lb/b;-><init>(Landroid/window/BackEvent;)V
-
-    invoke-interface {v0, v1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-void
+.method public abstract y0(Lp/k;JF)V
 .end method
 
-.method public final onBackStarted(Landroid/window/BackEvent;)V
-    .locals 2
-
-    const-string v0, "backEvent"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-object v0, p0, Lb/y;->a:Lh4/c;
-
-    new-instance v1, Lb/b;
-
-    invoke-direct {v1, p1}, Lb/b;-><init>(Landroid/window/BackEvent;)V
-
-    invoke-interface {v0, v1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-void
+.method public abstract z0(Lq0/F;)V
 .end method

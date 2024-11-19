@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Lio/ktor/client/engine/cio/a;
 
-.field public final b:La9/G1;
+.field public final b:LA3/G;
 
 .field public final c:I
 
@@ -27,11 +27,11 @@
 
     iput-object v0, p0, Lio/ktor/client/engine/cio/f;->a:Lio/ktor/client/engine/cio/a;
 
-    new-instance v0, La9/G1;
+    new-instance v0, LA3/G;
 
-    invoke-direct {v0}, La9/G1;-><init>()V
+    invoke-direct {v0}, LA3/G;-><init>()V
 
-    iput-object v0, p0, Lio/ktor/client/engine/cio/f;->b:La9/G1;
+    iput-object v0, p0, Lio/ktor/client/engine/cio/f;->b:LA3/G;
 
     const/16 v0, 0x3e8
 

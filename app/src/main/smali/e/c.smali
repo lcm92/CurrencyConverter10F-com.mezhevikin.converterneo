@@ -1,19 +1,29 @@
-.class public final Le/c;
+.class public abstract LE/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lj7/A1;
+# static fields
+.field public static final a:F
+
+.field public static final b:F
 
 
 # direct methods
-.method public constructor <init>(Lj7/A1;Ll2/g;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-wide/16 v0, 0x0
 
-    iput-object p1, p0, Le/c;->a:Lj7/A1;
+    double-to-float v0, v0
+
+    sput v0, LE/c;->a:F
+
+    const-wide/high16 v0, 0x4008000000000000L    # 3.0
+
+    double-to-float v0, v0
+
+    sput v0, LE/c;->b:F
 
     return-void
 .end method

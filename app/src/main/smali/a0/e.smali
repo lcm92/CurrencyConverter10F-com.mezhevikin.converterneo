@@ -1,198 +1,78 @@
-.class public final La0/e;
+.class public abstract LA0/E;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ly5/p;
 
+# static fields
+.field public static final a:Landroid/text/Layout$Alignment;
 
-# virtual methods
-.method public final a()V
-    .locals 1
+.field public static final b:Landroid/text/Layout$Alignment;
 
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+# direct methods
+.method static constructor <clinit>()V
+    .locals 8
 
-    throw v0
-.end method
+    invoke-static {}, Landroid/text/Layout$Alignment;->values()[Landroid/text/Layout$Alignment;
 
-.method public final b(FFFFFFLj7/t;)V
-    .locals 0
+    move-result-object v0
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    sget-object v1, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    array-length v2, v0
 
-    throw p1
-.end method
+    const/4 v3, 0x0
 
-.method public final c(FJLj7/t;)V
-    .locals 0
+    move v4, v3
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    move-object v3, v1
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    :goto_0
+    if-ge v4, v2, :cond_2
 
-    throw p1
-.end method
+    aget-object v5, v0, v4
 
-.method public final d(FF)V
-    .locals 0
+    invoke-virtual {v5}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    move-result-object v6
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    const-string v7, "ALIGN_LEFT"
 
-    throw p1
-.end method
+    invoke-static {v6, v7}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-.method public final e()V
-    .locals 1
+    move-result v6
 
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    if-eqz v6, :cond_0
 
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    move-object v1, v5
 
-    throw v0
-.end method
+    goto :goto_1
 
-.method public final f()V
-    .locals 1
+    :cond_0
+    invoke-virtual {v5}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    move-result-object v6
 
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    const-string v7, "ALIGN_RIGHT"
 
-    throw v0
-.end method
+    invoke-static {v6, v7}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-.method public final g(FFFFFFLj7/t;)V
-    .locals 0
+    move-result v6
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    if-eqz v6, :cond_1
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    move-object v3, v5
 
-    throw p1
-.end method
+    :cond_1
+    :goto_1
+    add-int/lit8 v4, v4, 0x1
 
-.method public final h(Ly5/G1;Lj7/t;)V
-    .locals 0
+    goto :goto_0
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    :cond_2
+    sput-object v1, LA0/E;->a:Landroid/text/Layout$Alignment;
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    sput-object v3, LA0/E;->b:Landroid/text/Layout$Alignment;
 
-    throw p1
-.end method
-
-.method public final i(Ly5/g;JJJJLj7/t;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final j(Ly5/g;JLj7/t;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final k(Lx5/d;Lj7/t;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final l([F)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final n()V
-    .locals 1
-
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw v0
-.end method
-
-.method public final o(JJLj7/t;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final p(FFFFI)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final q(FF)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final r(FFFFLj7/t;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final s()V
-    .locals 1
-
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw v0
-.end method
-
-.method public final t(Ly5/G1;I)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
+    return-void
 .end method

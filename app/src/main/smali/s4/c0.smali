@@ -8,12 +8,12 @@
 
 
 # direct methods
-.method public constructor <init>(Ly9/d;Ls4/g0;)V
+.method public constructor <init>(LY3/d;Ls4/g0;)V
     .locals 1
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0, p1}, Ls4/f;-><init>(ILy9/d;)V
+    invoke-direct {p0, v0, p1}, Ls4/f;-><init>(ILY3/d;)V
 
     iput-object p2, p0, Ls4/c0;->o:Ls4/g0;
 

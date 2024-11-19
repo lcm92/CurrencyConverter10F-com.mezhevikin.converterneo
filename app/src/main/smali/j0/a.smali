@@ -1,53 +1,161 @@
-.class public final Lj0/a;
-.super La4/c;
+.class public final LJ0/a;
+.super Landroid/text/style/CharacterStyle;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/text/style/UpdateAppearance;
 
 
 # instance fields
-.field public synthetic j:Ljava/lang/Object;
-
-.field public final synthetic k:Le6/l;
-
-.field public l:I
+.field public final a:La0/c;
 
 
 # direct methods
-.method public constructor <init>(Le6/l;La4/c;)V
+.method public constructor <init>(La0/c;)V
     .locals 0
 
-    iput-object p1, p0, Lj0/a;->k:Le6/l;
+    invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+    iput-object p1, p0, LJ0/a;->a:La0/c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final updateDrawState(Landroid/text/TextPaint;)V
     .locals 6
 
-    iput-object p1, p0, Lj0/a;->j:Ljava/lang/Object;
+    if-eqz p1, :cond_7
 
-    iget p1, p0, Lj0/a;->l:I
+    sget-object v0, La0/f;->b:La0/f;
 
-    const/high16 v0, -0x80000000
+    iget-object v1, p0, LJ0/a;->a:La0/c;
 
-    or-int/2addr p1, v0
+    invoke-static {v1, v0}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    iput p1, p0, Lj0/a;->l:I
+    move-result v0
 
-    const-wide/16 v3, 0x0
+    if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lj0/a;->k:Le6/l;
+    sget-object v0, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
-    const-wide/16 v1, 0x0
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    move-object v5, p0
+    goto :goto_2
 
-    invoke-virtual/range {v0 .. v5}, Le6/l;->f(JJLa4/c;)Ljava/lang/Object;
+    :cond_0
+    instance-of v0, v1, La0/g;
 
-    move-result-object p1
+    if-eqz v0, :cond_7
 
-    return-object p1
+    sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
+
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    check-cast v1, La0/g;
+
+    iget v0, v1, La0/g;->b:F
+
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+
+    iget v0, v1, La0/g;->c:F
+
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeMiter(F)V
+
+    iget v0, v1, La0/g;->e:I
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, v2}, LY/H;->s(II)Z
+
+    move-result v3
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x1
+
+    if-eqz v3, :cond_1
+
+    sget-object v0, Landroid/graphics/Paint$Join;->MITER:Landroid/graphics/Paint$Join;
+
+    goto :goto_0
+
+    :cond_1
+    invoke-static {v0, v5}, LY/H;->s(II)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    sget-object v0, Landroid/graphics/Paint$Join;->ROUND:Landroid/graphics/Paint$Join;
+
+    goto :goto_0
+
+    :cond_2
+    invoke-static {v0, v4}, LY/H;->s(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    sget-object v0, Landroid/graphics/Paint$Join;->BEVEL:Landroid/graphics/Paint$Join;
+
+    goto :goto_0
+
+    :cond_3
+    sget-object v0, Landroid/graphics/Paint$Join;->MITER:Landroid/graphics/Paint$Join;
+
+    :goto_0
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeJoin(Landroid/graphics/Paint$Join;)V
+
+    iget v0, v1, La0/g;->d:I
+
+    invoke-static {v0, v2}, LY/H;->r(II)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_4
+
+    sget-object v0, Landroid/graphics/Paint$Cap;->BUTT:Landroid/graphics/Paint$Cap;
+
+    goto :goto_1
+
+    :cond_4
+    invoke-static {v0, v5}, LY/H;->r(II)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    sget-object v0, Landroid/graphics/Paint$Cap;->ROUND:Landroid/graphics/Paint$Cap;
+
+    goto :goto_1
+
+    :cond_5
+    invoke-static {v0, v4}, LY/H;->r(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    sget-object v0, Landroid/graphics/Paint$Cap;->SQUARE:Landroid/graphics/Paint$Cap;
+
+    goto :goto_1
+
+    :cond_6
+    sget-object v0, Landroid/graphics/Paint$Cap;->BUTT:Landroid/graphics/Paint$Cap;
+
+    :goto_1
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeCap(Landroid/graphics/Paint$Cap;)V
+
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setPathEffect(Landroid/graphics/PathEffect;)Landroid/graphics/PathEffect;
+
+    :cond_7
+    :goto_2
+    return-void
 .end method

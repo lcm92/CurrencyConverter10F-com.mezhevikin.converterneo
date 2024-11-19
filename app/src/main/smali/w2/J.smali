@@ -1,35 +1,66 @@
-.class public abstract Lw2/j;
+.class public abstract LW2/j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:La5/l;
+.field public static a:Ljava/util/ArrayList;
 
-.field public static final b:La5/l;
+.field public static b:LW2/m;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
-    const-string v0, "gad:force_dynamite_loading_enabled"
+    new-instance v0, Ljava/util/ArrayList;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
-
-    move-result-object v0
-
-    sput-object v0, Lw2/j;->a:La5/l;
-
-    const-string v0, "gad:force_local_loading_enabled"
-
-    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
-
-    move-result-object v0
-
-    sput-object v0, Lw2/j;->b:La5/l;
+    sput-object v0, LW2/j;->a:Ljava/util/ArrayList;
 
     return-void
+.end method
+
+.method public static a(Ljava/lang/String;)LW2/m;
+    .locals 3
+
+    sget-object v0, LW2/j;->a:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v2, v1
+
+    check-cast v2, LW2/m;
+
+    iget-object v2, v2, LW2/m;->a:Ljava/lang/String;
+
+    invoke-static {v2, p0}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_0
+    check-cast v1, LW2/m;
+
+    return-object v1
 .end method

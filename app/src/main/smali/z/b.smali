@@ -1,206 +1,154 @@
-.class public final Lz/b;
+.class public abstract LZ/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static h:Lz/b;
+.field public static final a:J
 
+.field public static final b:J
 
-# instance fields
-.field public final a:Ll6/k;
+.field public static final c:J
 
-.field public final b:Lz0/F1;
+.field public static final d:J
 
-.field public final c:Ll6/c;
-
-.field public final d:Le6/o;
-
-.field public final e:Lz0/F1;
-
-.field public f:F
-
-.field public g:F
+.field public static final synthetic e:I
 
 
 # direct methods
-.method public constructor <init>(Ll6/k;Lz0/F1;Ll6/c;Le6/o;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 9
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x3
 
-    iput-object p1, p0, Lz/b;->a:Ll6/k;
+    int-to-long v0, v0
 
-    iput-object p2, p0, Lz/b;->b:Lz0/F1;
+    const/16 v2, 0x20
 
-    iput-object p3, p0, Lz/b;->c:Ll6/c;
+    shl-long v3, v0, v2
 
-    iput-object p4, p0, Lz/b;->d:Le6/o;
+    const/4 v5, 0x0
 
-    invoke-static {p2, p1}, Lp4/h;->g(Lz0/F1;Ll6/k;)Lz0/F1;
+    int-to-long v5, v5
 
-    move-result-object p1
+    const-wide v7, 0xffffffffL
 
-    iput-object p1, p0, Lz/b;->e:Lz0/F1;
+    and-long/2addr v5, v7
 
-    const/high16 p1, 0x7fc00000    # Float.NaN
+    or-long/2addr v5, v3
 
-    iput p1, p0, Lz/b;->f:F
+    sput-wide v5, LZ/b;->a:J
 
-    iput p1, p0, Lz/b;->g:F
+    const/4 v5, 0x1
+
+    int-to-long v5, v5
+
+    and-long/2addr v5, v7
+
+    or-long/2addr v5, v3
+
+    sput-wide v5, LZ/b;->b:J
+
+    const/4 v5, 0x2
+
+    int-to-long v5, v5
+
+    and-long/2addr v5, v7
+
+    or-long/2addr v3, v5
+
+    sput-wide v3, LZ/b;->c:J
+
+    const/4 v3, 0x4
+
+    int-to-long v3, v3
+
+    shl-long v2, v3, v2
+
+    and-long/2addr v0, v7
+
+    or-long/2addr v0, v2
+
+    sput-wide v0, LZ/b;->d:J
 
     return-void
 .end method
 
+.method public static final a(JJ)Z
+    .locals 0
 
-# virtual methods
-.method public final a(JI)J
-    .locals 19
+    cmp-long p0, p0, p2
 
-    move-object/from16 v0, p0
+    if-nez p0, :cond_0
 
-    move/from16 v1, p3
+    const/4 p0, 0x1
 
-    iget v2, v0, Lz/b;->g:F
-
-    iget v3, v0, Lz/b;->f:F
-
-    invoke-static {v2}, Ljava/lang/Float;->isNaN(F)Z
-
-    move-result v4
-
-    const/4 v5, 0x0
-
-    if-nez v4, :cond_0
-
-    invoke-static {v3}, Ljava/lang/Float;->isNaN(F)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
+    goto :goto_0
 
     :cond_0
-    sget-object v6, Lz/c;->a:Ljava/lang/String;
+    const/4 p0, 0x0
 
-    const/16 v2, 0xf
+    :goto_0
+    return p0
+.end method
 
-    invoke-static {v5, v5, v2}, Lk4/a;->c(III)J
+.method public static b(J)Ljava/lang/String;
+    .locals 2
 
-    move-result-wide v8
+    sget-wide v0, LZ/b;->a:J
 
-    iget-object v3, v0, Lz/b;->c:Ll6/c;
+    invoke-static {p0, p1, v0, v1}, LZ/b;->a(JJ)Z
 
-    const/4 v12, 0x0
+    move-result v0
 
-    const/4 v13, 0x1
+    if-eqz v0, :cond_0
 
-    iget-object v7, v0, Lz/b;->e:Lz0/F1;
+    const-string p0, "Rgb"
 
-    iget-object v11, v0, Lz/b;->d:Le6/o;
+    goto :goto_0
 
-    const/16 v14, 0x60
+    :cond_0
+    sget-wide v0, LZ/b;->b:J
 
-    move-object v10, v3
+    invoke-static {p0, p1, v0, v1}, LZ/b;->a(JJ)Z
 
-    invoke-static/range {v6 .. v14}, Lp2/c;->b(Ljava/lang/String;Lz0/F1;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
+    move-result v0
 
-    move-result-object v4
+    if-eqz v0, :cond_1
 
-    invoke-virtual {v4}, Lz0/a;->b()F
+    const-string p0, "Xyz"
 
-    move-result v4
-
-    sget-object v10, Lz/c;->b:Ljava/lang/String;
-
-    invoke-static {v5, v5, v2}, Lk4/a;->c(III)J
-
-    move-result-wide v12
-
-    const/16 v16, 0x0
-
-    const/16 v17, 0x2
-
-    iget-object v11, v0, Lz/b;->e:Lz0/F1;
-
-    iget-object v15, v0, Lz/b;->d:Le6/o;
-
-    const/16 v18, 0x60
-
-    move-object v14, v3
-
-    invoke-static/range {v10 .. v18}, Lp2/c;->b(Ljava/lang/String;Lz0/F1;JLl6/b;Le6/o;Lv9/t;II)Lz0/a;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lz0/a;->b()F
-
-    move-result v2
-
-    sub-float v3, v2, v4
-
-    iput v4, v0, Lz/b;->g:F
-
-    iput v3, v0, Lz/b;->f:F
-
-    move v2, v4
+    goto :goto_0
 
     :cond_1
-    const/4 v4, 0x1
+    sget-wide v0, LZ/b;->c:J
 
-    if-eq v1, v4, :cond_3
+    invoke-static {p0, p1, v0, v1}, LZ/b;->a(JJ)Z
 
-    sub-int/2addr v1, v4
+    move-result v0
 
-    int-to-float v1, v1
+    if-eqz v0, :cond_2
 
-    mul-float/2addr v3, v1
-
-    add-float/2addr v3, v2
-
-    invoke-static {v3}, Ljava/lang/Math;->round(F)I
-
-    move-result v1
-
-    if-gez v1, :cond_2
+    const-string p0, "Lab"
 
     goto :goto_0
 
     :cond_2
-    move v5, v1
+    sget-wide v0, LZ/b;->d:J
 
-    :goto_0
-    invoke-static/range {p1 .. p2}, Ll6/a;->g(J)I
+    invoke-static {p0, p1, v0, v1}, LZ/b;->a(JJ)Z
 
-    move-result v1
+    move-result p0
 
-    if-le v5, v1, :cond_4
+    if-eqz p0, :cond_3
 
-    move v5, v1
+    const-string p0, "Cmyk"
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_3
-    invoke-static/range {p1 .. p2}, Ll6/a;->i(J)I
+    const-string p0, "Unknown"
 
-    move-result v5
-
-    :cond_4
-    :goto_1
-    invoke-static/range {p1 .. p2}, Ll6/a;->g(J)I
-
-    move-result v1
-
-    invoke-static/range {p1 .. p2}, Ll6/a;->j(J)I
-
-    move-result v2
-
-    invoke-static/range {p1 .. p2}, Ll6/a;->h(J)I
-
-    move-result v3
-
-    invoke-static {v2, v3, v5, v1}, Lk4/a;->b(IIII)J
-
-    move-result-wide v1
-
-    return-wide v1
+    :goto_0
+    return-object p0
 .end method

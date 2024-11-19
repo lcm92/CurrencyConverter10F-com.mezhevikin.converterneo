@@ -40,7 +40,7 @@
     return v0
 .end method
 
-.method public final g(ILy9/i;)V
+.method public final g(ILY3/i;)V
     .locals 6
 
     sget v0, Lu4/f;->b:I
@@ -89,40 +89,40 @@
     goto :goto_4
 
     :cond_3
-    sget-object v3, Lu4/f;->j:Li8/i;
+    sget-object v3, Lu4/f;->j:LI2/i;
 
     if-eq v2, v3, :cond_9
 
-    sget-object v3, Lu4/f;->k:Li8/i;
+    sget-object v3, Lu4/f;->k:LI2/i;
 
     if-ne v2, v3, :cond_4
 
     goto :goto_3
 
     :cond_4
-    sget-object v3, Lu4/f;->g:Li8/i;
+    sget-object v3, Lu4/f;->g:LI2/i;
 
     if-eq v2, v3, :cond_2
 
-    sget-object v3, Lu4/f;->f:Li8/i;
+    sget-object v3, Lu4/f;->f:LI2/i;
 
     if-ne v2, v3, :cond_5
 
     goto :goto_1
 
     :cond_5
-    sget-object p1, Lu4/f;->i:Li8/i;
+    sget-object p1, Lu4/f;->i:LI2/i;
 
     if-eq v2, p1, :cond_8
 
-    sget-object p1, Lu4/f;->d:Li8/i;
+    sget-object p1, Lu4/f;->d:LI2/i;
 
     if-ne v2, p1, :cond_6
 
     goto :goto_2
 
     :cond_6
-    sget-object p1, Lu4/f;->l:Li8/i;
+    sget-object p1, Lu4/f;->l:LI2/i;
 
     if-ne v2, p1, :cond_7
 
@@ -167,13 +167,13 @@
 
     if-eqz p1, :cond_a
 
-    invoke-static {p1, v0, v5}, Lx4/a;->a(Lh4/c;Ljava/lang/Object;Lg8/c;)Lg8/c;
+    invoke-static {p1, v0, v5}, Lx4/a;->a(Lh4/c;Ljava/lang/Object;LG2/c;)LG2/c;
 
     move-result-object p1
 
     if-eqz p1, :cond_a
 
-    invoke-static {p2, p1}, Ls4/y;->o(Ly9/i;Ljava/lang/Throwable;)V
+    invoke-static {p2, p1}, Ls4/y;->o(LY3/i;Ljava/lang/Throwable;)V
 
     :cond_a
     return-void
@@ -182,12 +182,12 @@
     :goto_4
     if-eqz v1, :cond_c
 
-    sget-object v3, Lu4/f;->j:Li8/i;
+    sget-object v3, Lu4/f;->j:LI2/i;
 
     goto :goto_5
 
     :cond_c
-    sget-object v3, Lu4/f;->k:Li8/i;
+    sget-object v3, Lu4/f;->k:LI2/i;
 
     :goto_5
     invoke-virtual {p0, v2, p1, v3}, Lu4/m;->j(Ljava/lang/Object;ILjava/lang/Object;)Z
@@ -210,13 +210,13 @@
 
     if-eqz p1, :cond_d
 
-    invoke-static {p1, v0, v5}, Lx4/a;->a(Lh4/c;Ljava/lang/Object;Lg8/c;)Lg8/c;
+    invoke-static {p1, v0, v5}, Lx4/a;->a(Lh4/c;Ljava/lang/Object;LG2/c;)LG2/c;
 
     move-result-object p1
 
     if-eqz p1, :cond_d
 
-    invoke-static {p2, p1}, Ls4/y;->o(Ly9/i;Ljava/lang/Throwable;)V
+    invoke-static {p2, p1}, Ls4/y;->o(LY3/i;Ljava/lang/Throwable;)V
 
     :cond_d
     return-void
@@ -312,7 +312,7 @@
     return-void
 .end method
 
-.method public final n(ILi8/i;)V
+.method public final n(ILI2/i;)V
     .locals 1
 
     iget-object v0, p0, Lu4/m;->l:Ljava/util/concurrent/atomic/AtomicReferenceArray;

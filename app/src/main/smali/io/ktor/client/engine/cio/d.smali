@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic h:Ls3/I1;
+.field public final synthetic h:Ls3/I;
 
 .field public final synthetic i:Ljava/lang/String;
 
@@ -19,10 +19,10 @@
 
 
 # direct methods
-.method public constructor <init>(Ls3/I1;Ljava/lang/String;ILio/ktor/client/engine/cio/e;Ljava/lang/String;)V
+.method public constructor <init>(Ls3/I;Ljava/lang/String;ILio/ktor/client/engine/cio/e;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lio/ktor/client/engine/cio/d;->h:Ls3/I1;
+    iput-object p1, p0, Lio/ktor/client/engine/cio/d;->h:Ls3/I;
 
     iput-object p2, p0, Lio/ktor/client/engine/cio/d;->i:Ljava/lang/String;
 
@@ -44,9 +44,9 @@
 .method public final b()Ljava/lang/Object;
     .locals 9
 
-    iget-object v0, p0, Lio/ktor/client/engine/cio/d;->h:Ls3/I1;
+    iget-object v0, p0, Lio/ktor/client/engine/cio/d;->h:Ls3/I;
 
-    invoke-static {v0}, Lp0/d;->g(Ls3/I1;)Z
+    invoke-static {v0}, Lp0/d;->g(Ls3/I;)Z
 
     move-result v4
 
@@ -54,17 +54,17 @@
 
     iget-object v1, p0, Lio/ktor/client/engine/cio/d;->k:Lio/ktor/client/engine/cio/e;
 
-    new-instance v8, La5/g0;
+    new-instance v8, LA/g0;
 
     iget-object v2, p0, Lio/ktor/client/engine/cio/d;->l:Ljava/lang/String;
 
     const/4 v3, 0x6
 
-    invoke-direct {v8, v1, v3, v2}, La5/g0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v8, v1, v3, v2}, LA/g0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    iget-object v6, v1, Lio/ktor/client/engine/cio/e;->m:Le6/l;
+    iget-object v6, v1, Lio/ktor/client/engine/cio/e;->m:LE0/l;
 
-    iget-object v7, v1, Lio/ktor/client/engine/cio/e;->o:Ly9/i;
+    iget-object v7, v1, Lio/ktor/client/engine/cio/e;->o:LY3/i;
 
     iget-object v2, p0, Lio/ktor/client/engine/cio/d;->i:Ljava/lang/String;
 
@@ -74,7 +74,7 @@
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v8}, Lio/ktor/client/engine/cio/q;-><init>(Ljava/lang/String;IZLio/ktor/client/engine/cio/f;Le6/l;Ly9/i;La5/g0;)V
+    invoke-direct/range {v1 .. v8}, Lio/ktor/client/engine/cio/q;-><init>(Ljava/lang/String;IZLio/ktor/client/engine/cio/f;LE0/l;LY3/i;LA/g0;)V
 
     return-object v0
 .end method

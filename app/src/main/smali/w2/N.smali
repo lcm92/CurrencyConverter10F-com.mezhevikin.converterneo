@@ -1,33 +1,78 @@
-.class public abstract Lw2/n;
+.class public final LW2/n;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LB4/a;
+
 
 # static fields
-.field public static final a:Ljava/util/concurrent/atomic/AtomicReference;
+.field public static final a:LW2/n;
 
-.field public static final b:Ljava/util/concurrent/atomic/AtomicReference;
+.field public static final b:LF4/j0;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+    new-instance v0, LW2/n;
 
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lw2/n;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    sput-object v0, LW2/n;->a:LW2/n;
 
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+    sget-object v0, LD4/e;->m:LD4/e;
 
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+    const-string v1, "Date"
 
-    sput-object v0, Lw2/n;->b:Ljava/util/concurrent/atomic/AtomicReference;
+    invoke-static {v1, v0}, LH2/b;->r(Ljava/lang/String;LD4/f;)LF4/j0;
 
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+    move-result-object v0
 
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+    sput-object v0, LW2/n;->b:LF4/j0;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final a(LH4/s;Ljava/lang/Object;)V
+    .locals 2
+
+    check-cast p2, Ljava/util/Date;
+
+    const-string v0, "value"
+
+    invoke-static {p2, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p2}, Ljava/util/Date;->getTime()J
+
+    move-result-wide v0
+
+    invoke-virtual {p1, v0, v1}, LH4/s;->l(J)V
+
+    return-void
+.end method
+
+.method public final b(LE4/b;)Ljava/lang/Object;
+    .locals 3
+
+    new-instance v0, Ljava/util/Date;
+
+    invoke-interface {p1}, LE4/b;->b()J
+
+    move-result-wide v1
+
+    invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
+
+    return-object v0
+.end method
+
+.method public final d()LD4/g;
+    .locals 1
+
+    sget-object v0, LW2/n;->b:LF4/j0;
+
+    return-object v0
 .end method

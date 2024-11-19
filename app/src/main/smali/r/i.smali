@@ -1,138 +1,210 @@
-.class public final Lr/i;
-.super Li4/i;
+.class public final LR/i;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements LR/d;
 
 
 # instance fields
-.field public final synthetic h:Lr5/q;
+.field public final a:F
 
-.field public final synthetic i:Lr/u;
-
-.field public final synthetic j:Lq/V1;
-
-.field public final synthetic k:Z
-
-.field public final synthetic l:Lo/m;
-
-.field public final synthetic m:Z
-
-.field public final synthetic n:I
-
-.field public final synthetic o:Lr5/c;
-
-.field public final synthetic p:Lq/h;
-
-.field public final synthetic q:Lr5/h;
-
-.field public final synthetic r:Lq/f;
-
-.field public final synthetic s:Lh4/c;
-
-.field public final synthetic t:I
-
-.field public final synthetic u:I
+.field public final b:F
 
 
 # direct methods
-.method public constructor <init>(Lr5/q;Lr/u;Lq/V1;ZLo/m;ZILr5/c;Lq/h;Lr5/h;Lq/f;Lh4/c;II)V
+.method public constructor <init>(FF)V
     .locals 0
 
-    iput-object p1, p0, Lr/i;->h:Lr5/q;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lr/i;->i:Lr/u;
+    iput p1, p0, LR/i;->a:F
 
-    iput-object p3, p0, Lr/i;->j:Lq/V1;
-
-    iput-boolean p4, p0, Lr/i;->k:Z
-
-    iput-object p5, p0, Lr/i;->l:Lo/m;
-
-    iput-boolean p6, p0, Lr/i;->m:Z
-
-    iput p7, p0, Lr/i;->n:I
-
-    iput-object p8, p0, Lr/i;->o:Lr5/c;
-
-    iput-object p9, p0, Lr/i;->p:Lq/h;
-
-    iput-object p10, p0, Lr/i;->q:Lr5/h;
-
-    iput-object p11, p0, Lr/i;->r:Lq/f;
-
-    iput-object p12, p0, Lr/i;->s:Lh4/c;
-
-    iput p13, p0, Lr/i;->t:I
-
-    iput p14, p0, Lr/i;->u:I
-
-    const/4 p1, 0x2
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    iput p2, p0, LR/i;->b:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 16
+.method public final a(JJLL0/k;)J
+    .locals 4
 
-    move-object/from16 v0, p0
+    const/16 v0, 0x20
 
-    move-object/from16 v13, p1
+    shr-long v1, p3, v0
 
-    check-cast v13, Lf5/p;
+    long-to-int v1, v1
 
-    move-object/from16 v1, p2
+    shr-long v2, p1, v0
 
-    check-cast v1, Ljava/lang/Number;
+    long-to-int v0, v2
 
-    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+    sub-int/2addr v1, v0
 
-    iget v1, v0, Lr/i;->t:I
+    int-to-float v0, v1
 
-    or-int/lit8 v1, v1, 0x1
+    const/high16 v1, 0x40000000    # 2.0f
 
-    invoke-static {v1}, Lf5/d;->T(I)I
+    div-float/2addr v0, v1
 
-    move-result v14
+    const-wide v2, 0xffffffffL
 
-    iget v1, v0, Lr/i;->u:I
+    and-long/2addr p3, v2
 
-    invoke-static {v1}, Lf5/d;->T(I)I
+    long-to-int p3, p3
 
-    move-result v15
+    and-long/2addr p1, v2
 
-    iget-object v9, v0, Lr/i;->p:Lq/h;
+    long-to-int p1, p1
 
-    iget-object v10, v0, Lr/i;->q:Lr5/h;
+    sub-int/2addr p3, p1
 
-    iget-object v1, v0, Lr/i;->h:Lr5/q;
+    int-to-float p1, p3
 
-    iget-object v2, v0, Lr/i;->i:Lr/u;
+    div-float/2addr p1, v1
 
-    iget-object v3, v0, Lr/i;->j:Lq/V1;
+    sget-object p2, LL0/k;->g:LL0/k;
 
-    iget-boolean v4, v0, Lr/i;->k:Z
+    iget p3, p0, LR/i;->a:F
 
-    iget-object v5, v0, Lr/i;->l:Lo/m;
+    if-ne p5, p2, :cond_0
 
-    iget-boolean v6, v0, Lr/i;->m:Z
+    goto :goto_0
 
-    iget v7, v0, Lr/i;->n:I
+    :cond_0
+    const/4 p2, -0x1
 
-    iget-object v8, v0, Lr/i;->o:Lr5/c;
+    int-to-float p2, p2
 
-    iget-object v11, v0, Lr/i;->r:Lq/f;
+    mul-float/2addr p3, p2
 
-    iget-object v12, v0, Lr/i;->s:Lh4/c;
+    :goto_0
+    const/4 p2, 0x1
 
-    invoke-static/range {v1 .. v15}, Lp2/b;->b(Lr5/q;Lr/u;Lq/V1;ZLo/m;ZILr5/c;Lq/h;Lr5/h;Lq/f;Lh4/c;Lf5/p;II)V
+    int-to-float p2, p2
 
-    sget-object v1, Lu9/y;->a:Lu9/y;
+    add-float/2addr p3, p2
 
-    return-object v1
+    mul-float/2addr p3, v0
+
+    iget p4, p0, LR/i;->b:F
+
+    add-float/2addr p2, p4
+
+    mul-float/2addr p2, p1
+
+    invoke-static {p3}, Ljava/lang/Math;->round(F)I
+
+    move-result p1
+
+    invoke-static {p2}, Ljava/lang/Math;->round(F)I
+
+    move-result p2
+
+    invoke-static {p1, p2}, LH2/b;->j(II)J
+
+    move-result-wide p1
+
+    return-wide p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, LR/i;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, LR/i;
+
+    iget v1, p1, LR/i;->a:F
+
+    iget v3, p0, LR/i;->a:F
+
+    invoke-static {v3, v1}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget v1, p0, LR/i;->b:F
+
+    iget p1, p1, LR/i;->b:F
+
+    invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    return v2
+
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    iget v0, p0, LR/i;->a:F
+
+    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget v1, p0, LR/i;->b:F
+
+    invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "BiasAlignment(horizontalBias="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v1, p0, LR/i;->a:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", verticalBias="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, LR/i;->b:F
+
+    const/16 v2, 0x29
+
+    invoke-static {v0, v1, v2}, LA/m;->j(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

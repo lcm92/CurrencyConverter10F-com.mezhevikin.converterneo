@@ -1,43 +1,129 @@
-.class public final Lc1/d;
-.super Ljava/lang/Object;
+.class public abstract LC1/d;
+.super LC1/f;
 .source "SourceFile"
 
 
 # static fields
-.field public static final b:Ljava/lang/ThreadLocal;
+.field public static final h:Ljava/lang/String;
 
 
 # instance fields
-.field public final a:Landroid/text/TextPaint;
+.field public final g:LC1/c;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ljava/lang/ThreadLocal;
+    const-string v0, "BrdcstRcvrCnstrntTrckr"
 
-    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
+    invoke-static {v0}, Lv1/m;->n(Ljava/lang/String;)Ljava/lang/String;
 
-    sput-object v0, Lc1/d;->b:Ljava/lang/ThreadLocal;
+    move-result-object v0
+
+    sput-object v0, LC1/d;->h:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Landroid/content/Context;LH1/a;)V
+    .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, LC1/f;-><init>(Landroid/content/Context;LH1/a;)V
 
-    new-instance v0, Landroid/text/TextPaint;
+    new-instance p1, LC1/c;
 
-    invoke-direct {v0}, Landroid/text/TextPaint;-><init>()V
+    invoke-direct {p1, p0}, LC1/c;-><init>(LC1/d;)V
 
-    iput-object v0, p0, Lc1/d;->a:Landroid/text/TextPaint;
-
-    const/high16 v1, 0x41200000    # 10.0f
-
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTextSize(F)V
+    iput-object p1, p0, LC1/d;->g:LC1/c;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final d()V
+    .locals 4
+
+    invoke-static {}, Lv1/m;->i()Lv1/m;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, ": registering receiver"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    new-array v2, v2, [Ljava/lang/Throwable;
+
+    sget-object v3, LC1/d;->h:Ljava/lang/String;
+
+    invoke-virtual {v0, v3, v1, v2}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+
+    invoke-virtual {p0}, LC1/d;->f()Landroid/content/IntentFilter;
+
+    move-result-object v0
+
+    iget-object v1, p0, LC1/f;->b:Landroid/content/Context;
+
+    iget-object v2, p0, LC1/d;->g:LC1/c;
+
+    invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    return-void
+.end method
+
+.method public final e()V
+    .locals 4
+
+    invoke-static {}, Lv1/m;->i()Lv1/m;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, ": unregistering receiver"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    new-array v2, v2, [Ljava/lang/Throwable;
+
+    sget-object v3, LC1/d;->h:Ljava/lang/String;
+
+    invoke-virtual {v0, v3, v1, v2}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+
+    iget-object v0, p0, LC1/d;->g:LC1/c;
+
+    iget-object v1, p0, LC1/f;->b:Landroid/content/Context;
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    return-void
+.end method
+
+.method public abstract f()Landroid/content/IntentFilter;
+.end method
+
+.method public abstract g(Landroid/content/Intent;)V
 .end method

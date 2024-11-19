@@ -1,34 +1,51 @@
-.class public final Ls4/b;
-.super Ljava/lang/Object;
+.class public Ls4/B;
+.super Ls4/a;
 .source "SourceFile"
 
-# interfaces
-.implements Ls4/l0;
 
-
-# static fields
-.field public static final g:Ls4/b;
+# instance fields
+.field public final synthetic j:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(LY3/i;ZZI)V
+    .locals 0
 
-    new-instance v0, Ls4/b;
+    iput p4, p0, Ls4/B;->j:I
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Ls4/b;->g:Ls4/b;
+    invoke-direct {p0, p1, p2, p3}, Ls4/a;-><init>(LY3/i;ZZ)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
+.method public X(Ljava/lang/Throwable;)Z
     .locals 1
 
-    const-string v0, "Active"
+    iget v0, p0, Ls4/B;->j:I
 
-    return-object v0
+    packed-switch v0, :pswitch_data_0
+
+    invoke-super {p0, p1}, Ls4/g0;->X(Ljava/lang/Throwable;)Z
+
+    move-result p1
+
+    return p1
+
+    :pswitch_0
+    iget-object v0, p0, Ls4/a;->i:LY3/i;
+
+    invoke-static {v0, p1}, Ls4/y;->o(LY3/i;Ljava/lang/Throwable;)V
+
+    const/4 p1, 0x1
+
+    return p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method

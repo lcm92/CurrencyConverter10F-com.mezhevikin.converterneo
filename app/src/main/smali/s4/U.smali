@@ -1,32 +1,11 @@
-.class public final Ls4/u;
+.class public interface abstract Ls4/U;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ly9/h;
 
+# virtual methods
+.method public abstract d()Z
+.end method
 
-# static fields
-.field public static final synthetic g:Ls4/u;
-
-.field public static final synthetic h:Ls4/u;
-
-
-# direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Ls4/u;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Ls4/u;->g:Ls4/u;
-
-    new-instance v0, Ls4/u;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Ls4/u;->h:Ls4/u;
-
-    return-void
+.method public abstract e()Ls4/i0;
 .end method

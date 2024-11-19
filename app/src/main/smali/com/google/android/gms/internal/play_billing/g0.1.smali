@@ -17,13 +17,13 @@
 
     new-instance v0, Lcom/google/android/gms/internal/play_billing/g0;
 
-    new-instance v1, Lg7/b;
+    new-instance v1, LG1/b;
 
     const-string v2, "Failure occurred while trying to finish a future."
 
     const/4 v3, 0x2
 
-    invoke-direct {v1, v2, v3}, Lg7/b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v3}, LG1/b;-><init>(Ljava/lang/String;I)V
 
     invoke-direct {v0, v1}, Lcom/google/android/gms/internal/play_billing/g0;-><init>(Ljava/lang/Throwable;)V
 

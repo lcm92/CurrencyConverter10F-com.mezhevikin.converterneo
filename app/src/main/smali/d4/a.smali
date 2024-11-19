@@ -1,62 +1,134 @@
-.class public abstract Ld4/a;
+.class public final LD4/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Ljava/lang/Integer;
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/util/ArrayList;
+
+.field public final c:Ljava/util/HashSet;
+
+.field public final d:Ljava/util/ArrayList;
+
+.field public final e:Ljava/util/ArrayList;
+
+.field public final f:Ljava/util/ArrayList;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "serialName"
 
-    :try_start_0
-    const-string v1, "android.os.Build$VERSION"
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v1
+    iput-object p1, p0, LD4/a;->a:Ljava/lang/String;
 
-    const-string v2, "SDK_INT"
+    new-instance p1, Ljava/util/ArrayList;
 
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    move-result-object v1
+    iput-object p1, p0, LD4/a;->b:Ljava/util/ArrayList;
 
-    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance p1, Ljava/util/HashSet;
 
-    move-result-object v1
+    invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
-    instance-of v2, v1, Ljava/lang/Integer;
+    iput-object p1, p0, LD4/a;->c:Ljava/util/HashSet;
 
-    if-eqz v2, :cond_0
+    new-instance p1, Ljava/util/ArrayList;
 
-    check-cast v1, Ljava/lang/Integer;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    goto :goto_0
+    iput-object p1, p0, LD4/a;->d:Ljava/util/ArrayList;
 
-    :catchall_0
-    :cond_0
-    move-object v1, v0
+    new-instance p1, Ljava/util/ArrayList;
 
-    :goto_0
-    if-eqz v1, :cond_1
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+    iput-object p1, p0, LD4/a;->e:Ljava/util/ArrayList;
 
-    move-result v2
+    new-instance p1, Ljava/util/ArrayList;
 
-    if-lez v2, :cond_1
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    move-object v0, v1
-
-    :cond_1
-    sput-object v0, Ld4/a;->a:Ljava/lang/Integer;
+    iput-object p1, p0, LD4/a;->f:Ljava/util/ArrayList;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;LD4/g;Ljava/util/List;Z)V
+    .locals 1
+
+    const-string v0, "descriptor"
+
+    invoke-static {p2, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "annotations"
+
+    invoke-static {p3, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, LD4/a;->c:Ljava/util/HashSet;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, LD4/a;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    iget-object p1, p0, LD4/a;->d:Ljava/util/ArrayList;
+
+    invoke-virtual {p1, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    iget-object p1, p0, LD4/a;->e:Ljava/util/ArrayList;
+
+    invoke-virtual {p1, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    invoke-static {p4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    iget-object p2, p0, LD4/a;->f:Ljava/util/ArrayList;
+
+    invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    return-void
+
+    :cond_0
+    const-string p2, "Element with name \'"
+
+    const-string p3, "\' is already registered in "
+
+    invoke-static {p2, p1, p3}, LA/m;->p(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    iget-object p2, p0, LD4/a;->a:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
 .end method

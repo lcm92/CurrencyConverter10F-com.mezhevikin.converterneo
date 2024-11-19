@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic o:La5/h0;
+.field public final synthetic o:LA/h0;
 
 
 # direct methods
-.method public constructor <init>(ZLa5/h0;)V
+.method public constructor <init>(ZLA/h0;)V
     .locals 0
 
-    iput-object p2, p0, Lio/ktor/utils/io/F;->o:La5/h0;
+    iput-object p2, p0, Lio/ktor/utils/io/F;->o:LA/h0;
 
     invoke-direct {p0, p1}, Lio/ktor/utils/io/D;-><init>(Z)V
 
@@ -23,9 +23,9 @@
 .method public final a(Ljava/lang/Throwable;)Z
     .locals 1
 
-    iget-object v0, p0, Lio/ktor/utils/io/F;->o:La5/h0;
+    iget-object v0, p0, Lio/ktor/utils/io/F;->o:LA/h0;
 
-    invoke-virtual {v0, p1}, La5/h0;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, LA/h0;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

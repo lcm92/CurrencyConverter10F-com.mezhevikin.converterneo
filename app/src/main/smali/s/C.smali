@@ -1,49 +1,59 @@
-.class public final Ls/c;
-.super La4/c;
+.class public final LS/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public j:Ly9/k;
-
-.field public synthetic k:Ljava/lang/Object;
-
-.field public final synthetic l:Ls/d;
-
-.field public m:I
+# static fields
+.field public static final a:LS/c;
 
 
 # direct methods
-.method public constructor <init>(Ls/d;La4/c;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Ls/c;->l:Ls/d;
+    new-instance v0, LS/c;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, LS/c;->a:LS/c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(Landroid/view/ViewStructure;I)I
+    .locals 0
 
-    iput-object p1, p0, Ls/c;->k:Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Landroid/view/ViewStructure;->addChildCount(I)I
 
-    iget p1, p0, Ls/c;->m:I
+    move-result p1
 
-    const/high16 v0, -0x80000000
+    return p1
+.end method
 
-    or-int/2addr p1, v0
+.method public final b(Landroid/view/ViewStructure;I)Landroid/view/ViewStructure;
+    .locals 0
 
-    iput p1, p0, Ls/c;->m:I
-
-    iget-object p1, p0, Ls/c;->l:Ls/d;
-
-    invoke-virtual {p1, p0}, Ls/d;->j(La4/c;)Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Landroid/view/ViewStructure;->newChild(I)Landroid/view/ViewStructure;
 
     move-result-object p1
 
     return-object p1
+.end method
+
+.method public final c(Landroid/view/ViewStructure;IIIIII)V
+    .locals 0
+
+    invoke-virtual/range {p1 .. p7}, Landroid/view/ViewStructure;->setDimens(IIIIII)V
+
+    return-void
+.end method
+
+.method public final d(Landroid/view/ViewStructure;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    invoke-virtual {p1, p2, p3, p4, p5}, Landroid/view/ViewStructure;->setId(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
 .end method

@@ -1,553 +1,346 @@
-.class public final Ly1/f;
+.class public final LY1/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
+
+# static fields
+.field public static final h:LY1/f;
+
+.field public static final i:LY1/f;
 
 
 # instance fields
-.field public final synthetic g:I
+.field public final a:I
 
-.field public final h:Ly1/g;
+.field public final b:I
+
+.field public final c:Ljava/lang/String;
+
+.field public d:Z
+
+.field public e:I
+
+.field public f:Z
+
+.field public g:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Ly1/g;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
-    iput p2, p0, Ly1/f;->g:I
+    new-instance v0, LY1/f;
 
-    iput-object p1, p0, Ly1/f;->h:Ly1/g;
+    const/16 v1, 0x140
 
+    const/16 v2, 0x32
+
+    const-string v3, "320x50_mb"
+
+    invoke-direct {v0, v1, v2, v3}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    sput-object v0, LY1/f;->h:LY1/f;
+
+    new-instance v0, LY1/f;
+
+    const/16 v3, 0x1d4
+
+    const/16 v4, 0x3c
+
+    const-string v5, "468x60_as"
+
+    invoke-direct {v0, v3, v4, v5}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    new-instance v0, LY1/f;
+
+    const/16 v3, 0x64
+
+    const-string v4, "320x100_as"
+
+    invoke-direct {v0, v1, v3, v4}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    new-instance v0, LY1/f;
+
+    const/16 v1, 0x2d8
+
+    const/16 v3, 0x5a
+
+    const-string v4, "728x90_as"
+
+    invoke-direct {v0, v1, v3, v4}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    new-instance v0, LY1/f;
+
+    const/16 v1, 0x12c
+
+    const/16 v3, 0xfa
+
+    const-string v4, "300x250_as"
+
+    invoke-direct {v0, v1, v3, v4}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    new-instance v0, LY1/f;
+
+    const/16 v1, 0xa0
+
+    const/16 v3, 0x258
+
+    const-string v4, "160x600_as"
+
+    invoke-direct {v0, v1, v3, v4}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    new-instance v0, LY1/f;
+
+    const/4 v1, -0x1
+
+    const/4 v3, -0x2
+
+    const-string v4, "smart_banner"
+
+    invoke-direct {v0, v1, v3, v4}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    new-instance v0, LY1/f;
+
+    const/4 v1, -0x4
+
+    const/4 v3, -0x3
+
+    const-string v4, "fluid"
+
+    invoke-direct {v0, v3, v1, v4}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    new-instance v0, LY1/f;
+
+    const-string v1, "invalid"
+
+    const/4 v4, 0x0
+
+    invoke-direct {v0, v4, v4, v1}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    sput-object v0, LY1/f;->i:LY1/f;
+
+    new-instance v0, LY1/f;
+
+    const-string v1, "50x50_mb"
+
+    invoke-direct {v0, v2, v2, v1}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    const-string v0, "search_v2"
+
+    new-instance v1, LY1/f;
+
+    invoke-direct {v1, v3, v4, v0}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(II)V
+    .locals 3
+
+    const/4 v0, -0x1
+
+    if-ne p1, v0, :cond_0
+
+    .line 1
+    const-string v0, "FULL"
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    const/4 v1, -0x2
+
+    if-ne p2, v1, :cond_1
+
+    .line 3
+    const-string v1, "AUTO"
+
+    goto :goto_1
+
+    :cond_1
+    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    :goto_1
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "x"
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "_as"
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 4
+    invoke-direct {p0, p1, p2, v0}, LY1/f;-><init>(IILjava/lang/String;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(IILjava/lang/String;)V
+    .locals 1
+
+    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    if-gez p1, :cond_1
+
+    const/4 v0, -0x1
+
+    if-eq p1, v0, :cond_1
+
+    const/4 v0, -0x3
+
+    if-ne p1, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    const-string p3, "Invalid width for AdSize: "
+
+    .line 6
+    invoke-static {p3, p1}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 7
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    :cond_1
+    :goto_0
+    if-gez p2, :cond_3
+
+    const/4 v0, -0x2
+
+    if-eq p2, v0, :cond_3
+
+    const/4 v0, -0x4
+
+    if-ne p2, v0, :cond_2
+
+    goto :goto_1
+
+    .line 8
+    :cond_2
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p3, "Invalid height for AdSize: "
+
+    .line 9
+    invoke-static {p3, p2}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 10
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 11
+    :cond_3
+    :goto_1
+    iput p1, p0, LY1/f;->a:I
+
+    iput p2, p0, LY1/f;->b:I
+
+    iput-object p3, p0, LY1/f;->c:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 9
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-    iget v0, p0, Ly1/f;->g:I
+    const/4 v0, 0x0
 
-    packed-switch v0, :pswitch_data_0
+    if-nez p1, :cond_0
 
-    iget-object v0, p0, Ly1/f;->h:Ly1/g;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    invoke-static {}, Lv1/m;->i()Lv1/m;
-
-    move-result-object v1
-
-    sget-object v2, Ly1/g;->q:Ljava/lang/String;
-
-    const-string v3, "Checking if commands are complete."
-
-    const/4 v4, 0x0
-
-    new-array v5, v4, [Ljava/lang/Throwable;
-
-    invoke-virtual {v1, v2, v3, v5}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-
-    invoke-virtual {v0}, Ly1/g;->c()V
-
-    iget-object v1, v0, Ly1/g;->n:Ljava/util/ArrayList;
-
-    monitor-enter v1
-
-    :try_start_0
-    iget-object v3, v0, Ly1/g;->o:Landroid/content/Intent;
-
-    if-eqz v3, :cond_1
-
-    invoke-static {}, Lv1/m;->i()Lv1/m;
-
-    move-result-object v3
-
-    const-string v5, "Removing command %s"
-
-    iget-object v6, v0, Ly1/g;->o:Landroid/content/Intent;
-
-    filled-new-array {v6}, [Ljava/lang/Object;
-
-    move-result-object v6
-
-    invoke-static {v5, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v5
-
-    new-array v6, v4, [Ljava/lang/Throwable;
-
-    invoke-virtual {v3, v2, v5, v6}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-
-    iget-object v3, v0, Ly1/g;->n:Ljava/util/ArrayList;
-
-    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/content/Intent;
-
-    iget-object v5, v0, Ly1/g;->o:Landroid/content/Intent;
-
-    invoke-virtual {v3, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    const/4 v3, 0x0
-
-    iput-object v3, v0, Ly1/g;->o:Landroid/content/Intent;
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v0
-
-    goto :goto_2
+    return v0
 
     :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const/4 v1, 0x1
 
-    const-string v2, "Dequeue-d command is not the first."
+    if-ne p1, p0, :cond_1
 
-    invoke-direct {v0, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    return v1
 
     :cond_1
-    :goto_0
-    iget-object v3, v0, Ly1/g;->h:Le6/l;
+    instance-of v2, p1, LY1/f;
 
-    iget-object v3, v3, Le6/l;->h:Ljava/lang/Object;
+    if-nez v2, :cond_2
 
-    check-cast v3, Lf7/i;
-
-    iget-object v5, v0, Ly1/g;->l:Ly1/b;
-
-    iget-object v6, v5, Ly1/b;->i:Ljava/lang/Object;
-
-    monitor-enter v6
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :try_start_1
-    iget-object v5, v5, Ly1/b;->h:Ljava/util/HashMap;
-
-    invoke-virtual {v5}, Ljava/util/HashMap;->isEmpty()Z
-
-    move-result v5
-
-    monitor-exit v6
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
-
-    if-eqz v5, :cond_2
-
-    :try_start_2
-    iget-object v5, v0, Ly1/g;->n:Ljava/util/ArrayList;
-
-    invoke-virtual {v5}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    iget-object v5, v3, Lf7/i;->i:Ljava/lang/Object;
-
-    monitor-enter v5
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    :try_start_3
-    iget-object v3, v3, Lf7/i;->g:Ljava/util/ArrayDeque;
-
-    invoke-virtual {v3}, Ljava/util/ArrayDeque;->isEmpty()Z
-
-    move-result v3
-
-    monitor-exit v5
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    if-eqz v3, :cond_2
-
-    :try_start_4
-    invoke-static {}, Lv1/m;->i()Lv1/m;
-
-    move-result-object v3
-
-    const-string v5, "No more commands & intents."
-
-    new-array v4, v4, [Ljava/lang/Throwable;
-
-    invoke-virtual {v3, v2, v5, v4}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-
-    iget-object v0, v0, Ly1/g;->p:Landroidx/work/impl/background/systemalarm/SystemAlarmService;
-
-    if-eqz v0, :cond_3
-
-    invoke-virtual {v0}, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->a()V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    goto :goto_1
-
-    :catchall_1
-    move-exception v0
-
-    :try_start_5
-    monitor-exit v5
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
-
-    :try_start_6
-    throw v0
+    return v0
 
     :cond_2
-    iget-object v2, v0, Ly1/g;->n:Ljava/util/ArrayList;
+    check-cast p1, LY1/f;
 
-    invoke-virtual {v2}, Ljava/util/ArrayList;->isEmpty()Z
+    iget v2, p0, LY1/f;->a:I
 
-    move-result v2
+    iget v3, p1, LY1/f;->a:I
 
-    if-nez v2, :cond_3
+    if-ne v2, v3, :cond_3
 
-    invoke-virtual {v0}, Ly1/g;->f()V
+    iget v2, p0, LY1/f;->b:I
+
+    iget v3, p1, LY1/f;->b:I
+
+    if-ne v2, v3, :cond_3
+
+    iget-object v2, p0, LY1/f;->c:Ljava/lang/String;
+
+    iget-object p1, p1, LY1/f;->c:Ljava/lang/String;
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    return v1
 
     :cond_3
-    :goto_1
-    monitor-exit v1
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
+    return v0
+.end method
 
-    return-void
+.method public final hashCode()I
+    .locals 1
 
-    :catchall_2
-    move-exception v0
+    iget-object v0, p0, LY1/f;->c:Ljava/lang/String;
 
-    :try_start_7
-    monitor-exit v6
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_2
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
-    :try_start_8
-    throw v0
+    move-result v0
 
-    :goto_2
-    monitor-exit v1
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
+    return v0
+.end method
 
-    throw v0
+.method public final toString()Ljava/lang/String;
+    .locals 1
 
-    :pswitch_0
-    const-string v0, "Acquiring operation wake lock ("
+    iget-object v0, p0, LY1/f;->c:Ljava/lang/String;
 
-    iget-object v1, p0, Ly1/f;->h:Ly1/g;
-
-    iget-object v1, v1, Ly1/g;->n:Ljava/util/ArrayList;
-
-    monitor-enter v1
-
-    :try_start_9
-    iget-object v2, p0, Ly1/f;->h:Ly1/g;
-
-    iget-object v3, v2, Ly1/g;->n:Ljava/util/ArrayList;
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/content/Intent;
-
-    iput-object v3, v2, Ly1/g;->o:Landroid/content/Intent;
-
-    monitor-exit v1
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_5
-
-    iget-object v1, p0, Ly1/f;->h:Ly1/g;
-
-    iget-object v1, v1, Ly1/g;->o:Landroid/content/Intent;
-
-    if-eqz v1, :cond_4
-
-    invoke-virtual {v1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
-
-    move-result-object v1
-
-    iget-object v2, p0, Ly1/f;->h:Ly1/g;
-
-    iget-object v2, v2, Ly1/g;->o:Landroid/content/Intent;
-
-    const-string v3, "KEY_START_ID"
-
-    invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result v2
-
-    invoke-static {}, Lv1/m;->i()Lv1/m;
-
-    move-result-object v3
-
-    sget-object v5, Ly1/g;->q:Ljava/lang/String;
-
-    const-string v6, "Processing command %s, %s"
-
-    iget-object v7, p0, Ly1/f;->h:Ly1/g;
-
-    iget-object v7, v7, Ly1/g;->o:Landroid/content/Intent;
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    filled-new-array {v7, v8}, [Ljava/lang/Object;
-
-    move-result-object v7
-
-    invoke-static {v6, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v6
-
-    new-array v7, v4, [Ljava/lang/Throwable;
-
-    invoke-virtual {v3, v5, v6, v7}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-
-    iget-object v3, p0, Ly1/f;->h:Ly1/g;
-
-    iget-object v3, v3, Ly1/g;->g:Landroid/content/Context;
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v7, " ("
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v7, ")"
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-static {v3, v6}, Lf7/k;->a(Landroid/content/Context;Ljava/lang/String;)Landroid/os/PowerManager$WakeLock;
-
-    move-result-object v3
-
-    :try_start_a
-    invoke-static {}, Lv1/m;->i()Lv1/m;
-
-    move-result-object v6
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, ") "
-
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    new-array v7, v4, [Ljava/lang/Throwable;
-
-    invoke-virtual {v6, v5, v0, v7}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-
-    invoke-virtual {v3}, Landroid/os/PowerManager$WakeLock;->acquire()V
-
-    iget-object v0, p0, Ly1/f;->h:Ly1/g;
-
-    iget-object v6, v0, Ly1/g;->l:Ly1/b;
-
-    iget-object v7, v0, Ly1/g;->o:Landroid/content/Intent;
-
-    invoke-virtual {v6, v2, v7, v0}, Ly1/b;->d(ILandroid/content/Intent;Ly1/g;)V
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_3
-
-    invoke-static {}, Lv1/m;->i()Lv1/m;
-
-    move-result-object v0
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    const-string v6, "Releasing operation wake lock ("
-
-    invoke-direct {v2, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ") "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    new-array v2, v4, [Ljava/lang/Throwable;
-
-    invoke-virtual {v0, v5, v1, v2}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-
-    invoke-virtual {v3}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    iget-object v0, p0, Ly1/f;->h:Ly1/g;
-
-    new-instance v1, Ly1/f;
-
-    const/4 v2, 0x1
-
-    invoke-direct {v1, v0, v2}, Ly1/f;-><init>(Ly1/g;I)V
-
-    :goto_3
-    invoke-virtual {v0, v1}, Ly1/g;->e(Ljava/lang/Runnable;)V
-
-    goto :goto_4
-
-    :catchall_3
-    move-exception v0
-
-    :try_start_b
-    invoke-static {}, Lv1/m;->i()Lv1/m;
-
-    move-result-object v2
-
-    sget-object v5, Ly1/g;->q:Ljava/lang/String;
-
-    const-string v6, "Unexpected error in onHandleIntent"
-
-    filled-new-array {v0}, [Ljava/lang/Throwable;
-
-    move-result-object v0
-
-    invoke-virtual {v2, v5, v6, v0}, Lv1/m;->f(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_4
-
-    invoke-static {}, Lv1/m;->i()Lv1/m;
-
-    move-result-object v0
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    const-string v6, "Releasing operation wake lock ("
-
-    invoke-direct {v2, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ") "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    new-array v2, v4, [Ljava/lang/Throwable;
-
-    invoke-virtual {v0, v5, v1, v2}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-
-    invoke-virtual {v3}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    iget-object v0, p0, Ly1/f;->h:Ly1/g;
-
-    new-instance v1, Ly1/f;
-
-    const/4 v2, 0x1
-
-    invoke-direct {v1, v0, v2}, Ly1/f;-><init>(Ly1/g;I)V
-
-    goto :goto_3
-
-    :catchall_4
-    move-exception v0
-
-    invoke-static {}, Lv1/m;->i()Lv1/m;
-
-    move-result-object v2
-
-    sget-object v5, Ly1/g;->q:Ljava/lang/String;
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    const-string v7, "Releasing operation wake lock ("
-
-    invoke-direct {v6, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ") "
-
-    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    new-array v4, v4, [Ljava/lang/Throwable;
-
-    invoke-virtual {v2, v5, v1, v4}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-
-    invoke-virtual {v3}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    iget-object v1, p0, Ly1/f;->h:Ly1/g;
-
-    new-instance v2, Ly1/f;
-
-    const/4 v3, 0x1
-
-    invoke-direct {v2, v1, v3}, Ly1/f;-><init>(Ly1/g;I)V
-
-    invoke-virtual {v1, v2}, Ly1/g;->e(Ljava/lang/Runnable;)V
-
-    throw v0
-
-    :cond_4
-    :goto_4
-    return-void
-
-    :catchall_5
-    move-exception v0
-
-    :try_start_c
-    monitor-exit v1
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_5
-
-    throw v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

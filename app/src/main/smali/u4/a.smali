@@ -10,9 +10,9 @@
 .method public final X(Ljava/lang/Throwable;)Z
     .locals 1
 
-    iget-object v0, p0, Ls4/a;->i:Ly9/i;
+    iget-object v0, p0, Ls4/a;->i:LY3/i;
 
-    invoke-static {v0, p1}, Ls4/y;->o(Ly9/i;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1}, Ls4/y;->o(LY3/i;Ljava/lang/Throwable;)V
 
     const/4 p1, 0x1
 

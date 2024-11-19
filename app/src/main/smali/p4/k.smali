@@ -88,16 +88,16 @@
 
     packed-switch v0, :pswitch_data_0
 
-    new-instance v0, Ll5/c;
+    new-instance v0, LL/c;
 
-    invoke-direct {v0, p0}, Ll5/c;-><init>(Lp4/k;)V
+    invoke-direct {v0, p0}, LL/c;-><init>(Lp4/k;)V
 
     return-object v0
 
     :pswitch_0
-    new-instance v0, Lh9/j;
+    new-instance v0, LH3/j;
 
-    invoke-direct {v0, p0}, Lh9/j;-><init>(Lp4/k;)V
+    invoke-direct {v0, p0}, LH3/j;-><init>(Lp4/k;)V
 
     return-object v0
 

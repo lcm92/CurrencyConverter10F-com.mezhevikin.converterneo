@@ -1,110 +1,123 @@
-.class public final Lg/c;
-.super La/a;
+.class public abstract LG/C;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final a:I
 
-.field public final b:Ljava/util/concurrent/ExecutorService;
-
-.field public volatile c:Landroid/os/Handler;
+.field public final b:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(II)V
+    .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Ljava/lang/Object;
+    .line 2
+    iput p1, p0, LG/C;->a:I
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lg/c;->a:Ljava/lang/Object;
-
-    new-instance v0, La8/p;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, La8/p;-><init>(I)V
-
-    const/4 v1, 0x4
-
-    invoke-static {v1, v0}, Ljava/util/concurrent/Executors;->newFixedThreadPool(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lg/c;->b:Ljava/util/concurrent/ExecutorService;
+    .line 3
+    iput p2, p0, LG/C;->b:I
 
     return-void
 .end method
 
-.method public static G0(Landroid/os/Looper;)Landroid/os/Handler;
-    .locals 4
+.method public synthetic constructor <init>(III)V
+    .locals 2
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    and-int/lit8 v0, p3, 0x1
 
-    const/16 v1, 0x1c
+    const/4 v1, 0x0
 
-    if-lt v0, v1, :cond_0
+    if-eqz v0, :cond_0
 
-    invoke-static {p0}, Lr6/c;->b(Landroid/os/Looper;)Landroid/os/Handler;
-
-    move-result-object p0
-
-    return-object p0
+    move p1, v1
 
     :cond_0
-    :try_start_0
-    const-class v0, Landroid/os/Handler;
+    and-int/lit8 p3, p3, 0x2
 
-    const-class v1, Landroid/os/Looper;
+    if-eqz p3, :cond_1
 
-    const-class v2, Landroid/os/Handler$Callback;
+    move p2, v1
 
-    sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    .line 4
+    :cond_1
+    invoke-direct {p0, p1, p2}, LG/C;-><init>(II)V
 
-    filled-new-array {v1, v2, v3}, [Ljava/lang/Class;
+    return-void
+.end method
 
-    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+# virtual methods
+.method public abstract a(LA/p;Lo2/b;LF/H0;Lz2/b;)V
+.end method
+
+.method public b(I)Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "IntParameter("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const/16 p1, 0x29
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public c(I)Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "ObjectParameter("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const/16 p1, 0x29
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    const/4 v2, 0x0
-
-    filled-new-array {p0, v2, v1}, [Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Li4/t;->a(Ljava/lang/Class;)Li4/d;
 
     move-result-object v0
 
-    check-cast v0, Landroid/os/Handler;
-    :try_end_0
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v0}, Li4/d;->b()Ljava/lang/String;
 
-    return-object v0
+    move-result-object v0
 
-    :catch_0
-    new-instance v0, Landroid/os/Handler;
+    if-nez v0, :cond_0
 
-    invoke-direct {v0, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    const-string v0, ""
 
-    return-object v0
-
-    :catch_1
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-direct {v0, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
+    :cond_0
     return-object v0
 .end method

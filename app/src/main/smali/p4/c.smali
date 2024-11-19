@@ -37,9 +37,9 @@
     iget-object p1, p1, Lp4/d;->a:Lp4/k;
 
     .line 4
-    new-instance v0, Lh9/j;
+    new-instance v0, LH3/j;
 
-    invoke-direct {v0, p1}, Lh9/j;-><init>(Lp4/k;)V
+    invoke-direct {v0, p1}, LH3/j;-><init>(Lp4/k;)V
 
     .line 5
     iput-object v0, p0, Lp4/c;->h:Ljava/util/Iterator;

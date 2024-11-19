@@ -77,7 +77,7 @@
 
     const-string v1, "at index "
 
-    invoke-static {v1, v2}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -138,7 +138,7 @@
 
     const-string v2, "]"
 
-    invoke-static {v1, v0, v2}, Lk/P1;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0, v2}, Lk/P;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

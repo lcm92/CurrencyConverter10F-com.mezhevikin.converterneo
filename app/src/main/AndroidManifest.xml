@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mezhevikin.converterneo"
     platformBuildVersionCode="35"
@@ -110,7 +109,7 @@
             android:taskAffinity=""
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-        <activity
+        <property
             android:name="android.adservices.AD_SERVICES_CONFIG"
             android:resource="@xml/gma_ad_services_config" />
         <provider
@@ -290,21 +289,5 @@
             android:exported="false"
             android:stateNotNeeded="true"
             android:theme="@style/Theme.PlayCore.Transparent" />
-
-        <meta-data
-            android:name="com.android.stamp.source"
-            android:value="https://play.google.com/store" />
-        <meta-data
-            android:name="com.android.stamp.type"
-            android:value="STAMP_TYPE_DISTRIBUTION_APK" />
-        <meta-data
-            android:name="com.android.vending.splits"
-            android:resource="@xml/splits0" />
-        <meta-data
-            android:name="com.android.vending.derived.apk.id"
-            android:value="3" />
-        <meta-data
-            android:name="com.android.dynamic.apk.fused.modules"
-            android:value="base" />
     </application>
 </manifest>

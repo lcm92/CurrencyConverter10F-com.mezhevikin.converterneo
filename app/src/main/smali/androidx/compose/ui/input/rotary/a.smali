@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final a()Lr5/q;
+.method public static final a()LR/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/input/rotary/RotaryInputElement;

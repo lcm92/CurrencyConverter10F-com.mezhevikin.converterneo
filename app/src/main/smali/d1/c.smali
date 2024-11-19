@@ -1,62 +1,64 @@
-.class public abstract Ld1/c;
+.class public final LD1/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
 
 # instance fields
-.field public a:I
+.field public final synthetic g:I
 
-.field public b:Ljava/nio/ByteBuffer;
+.field public final synthetic h:Landroid/app/Notification;
 
-.field public c:I
+.field public final synthetic i:I
 
-.field public d:I
+.field public final synthetic j:Landroidx/work/impl/foreground/SystemForegroundService;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Landroidx/work/impl/foreground/SystemForegroundService;ILandroid/app/Notification;I)V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sget-object v0, Lo2/g;->h:Lo2/g;
+    iput-object p1, p0, LD1/c;->j:Landroidx/work/impl/foreground/SystemForegroundService;
 
-    if-nez v0, :cond_0
+    iput p2, p0, LD1/c;->g:I
 
-    new-instance v0, Lo2/g;
+    iput-object p3, p0, LD1/c;->h:Landroid/app/Notification;
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput p4, p0, LD1/c;->i:I
 
-    sput-object v0, Lo2/g;->h:Lo2/g;
-
-    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)I
-    .locals 2
+.method public final run()V
+    .locals 5
 
-    iget v0, p0, Ld1/c;->d:I
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    if-ge p1, v0, :cond_0
+    iget-object v1, p0, LD1/c;->h:Landroid/app/Notification;
 
-    iget-object v0, p0, Ld1/c;->b:Ljava/nio/ByteBuffer;
+    const/16 v2, 0x1d
 
-    iget v1, p0, Ld1/c;->c:I
+    iget v3, p0, LD1/c;->g:I
 
-    add-int/2addr v1, p1
+    iget-object v4, p0, LD1/c;->j:Landroidx/work/impl/foreground/SystemForegroundService;
 
-    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->getShort(I)S
+    if-lt v0, v2, :cond_0
 
-    move-result p1
+    iget v0, p0, LD1/c;->i:I
+
+    invoke-static {v4, v3, v1, v0}, LA0/i;->l(Landroidx/work/impl/foreground/SystemForegroundService;ILandroid/app/Notification;I)V
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    invoke-virtual {v4, v3, v1}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
 
     :goto_0
-    return p1
+    return-void
 .end method

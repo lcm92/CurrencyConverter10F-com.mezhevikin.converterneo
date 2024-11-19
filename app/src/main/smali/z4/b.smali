@@ -14,7 +14,7 @@
 
 .field public static final p:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-.field public static final q:Li8/i;
+.field public static final q:LI2/i;
 
 
 # instance fields
@@ -69,7 +69,7 @@
 
     sput-object v0, Lz4/b;->p:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    new-instance v0, Li8/i;
+    new-instance v0, LI2/i;
 
     const-string v1, "NOT_IN_STACK"
 
@@ -77,9 +77,9 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Li8/i;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2, v3}, LI2/i;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lz4/b;->q:Li8/i;
+    sput-object v0, Lz4/b;->q:LI2/i;
 
     return-void
 .end method
@@ -181,7 +181,7 @@
     :cond_1
     const-string p1, " should not exceed maximal supported number of threads 2097150"
 
-    invoke-static {p5, p2, p1}, La5/m;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p5, p2, p1}, LA/m;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -198,7 +198,7 @@
     :cond_2
     const-string p3, " should be greater than or equals to core pool size "
 
-    invoke-static {p2, p1, p5, p3}, Lk/P1;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1, p5, p3}, Lk/P;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -217,7 +217,7 @@
 
     const-string p3, " should be at least 1"
 
-    invoke-static {p2, p1, p3}, La5/m;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1, p3}, LA/m;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -624,7 +624,7 @@
 
     const-string v0, " was terminated"
 
-    invoke-static {p2, p3, v0}, La5/m;->m(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p3, v0}, LA/m;->m(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -986,7 +986,7 @@
     move-result-object v0
 
     :goto_0
-    sget-object v5, Lz4/b;->q:Li8/i;
+    sget-object v5, Lz4/b;->q:LI2/i;
 
     if-ne v0, v5, :cond_1
 
@@ -1148,7 +1148,7 @@
     move-result-object v1
 
     :goto_0
-    sget-object v9, Lz4/b;->q:Li8/i;
+    sget-object v9, Lz4/b;->q:LI2/i;
 
     if-ne v1, v9, :cond_2
 

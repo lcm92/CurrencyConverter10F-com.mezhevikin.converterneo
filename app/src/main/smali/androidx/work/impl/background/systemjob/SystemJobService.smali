@@ -58,7 +58,7 @@
 
     const-string v2, " executed on JobScheduler"
 
-    invoke-static {p1, v2}, La5/m;->i(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v2}, LA/m;->i(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -384,7 +384,7 @@
 
     if-lt v0, v4, :cond_6
 
-    invoke-static {p1}, La6/y;->d(Landroid/app/job/JobParameters;)Landroid/net/Network;
+    invoke-static {p1}, LA0/y;->d(Landroid/app/job/JobParameters;)Landroid/net/Network;
 
     move-result-object p1
 
@@ -489,7 +489,7 @@
 
     const-string v4, "onStopJob for "
 
-    invoke-static {v4, p1}, Lk/P1;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, p1}, Lk/P;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 

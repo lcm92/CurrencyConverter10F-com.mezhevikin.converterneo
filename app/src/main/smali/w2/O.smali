@@ -1,162 +1,127 @@
-.class public final Lw2/o;
-.super Lw2/a;
+.class public abstract synthetic LW2/o;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lw2/s;
 
-
-# instance fields
-.field public final a:Landroid/graphics/drawable/Drawable;
-
-.field public final b:Landroid/net/Uri;
-
-.field public final c:D
-
-.field public final d:I
-
-.field public final e:I
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Landroid/graphics/drawable/Drawable;Landroid/net/Uri;DII)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 7
 
-    const-string v0, "com.google.android.gms.ads.internal.formats.client.INativeAdImage"
+    invoke-static {}, LW2/p;->values()[LW2/p;
 
-    invoke-direct {p0, v0}, Lw2/a;-><init>(Ljava/lang/String;)V
+    move-result-object v0
 
-    iput-object p1, p0, Lw2/o;->a:Landroid/graphics/drawable/Drawable;
+    array-length v0, v0
 
-    iput-object p2, p0, Lw2/o;->b:Landroid/net/Uri;
+    new-array v0, v0, [I
 
-    iput-wide p3, p0, Lw2/o;->c:D
+    const/4 v1, 0x0
 
-    iput p5, p0, Lw2/o;->d:I
+    const/4 v2, 0x1
 
-    iput p6, p0, Lw2/o;->e:I
+    :try_start_0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
+    :catch_0
+    const/4 v3, 0x2
+
+    :try_start_1
+    aput v3, v0, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    const/4 v4, 0x3
+
+    :try_start_2
+    aput v4, v0, v3
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    const/4 v5, 0x4
+
+    :try_start_3
+    aput v5, v0, v4
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    const/4 v6, 0x5
+
+    :try_start_4
+    aput v6, v0, v5
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    const/4 v5, 0x6
+
+    :try_start_5
+    aput v5, v0, v6
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    const/4 v6, 0x7
+
+    :try_start_6
+    aput v6, v0, v5
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
+    const/16 v5, 0x8
+
+    :try_start_7
+    aput v5, v0, v6
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    :catch_7
+    const/16 v5, 0x9
+
+    const/16 v6, 0x12
+
+    :try_start_8
+    aput v5, v0, v6
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    :catch_8
+    sput-object v0, LW2/o;->a:[I
+
+    invoke-static {}, LW2/q;->values()[LW2/q;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    :try_start_9
+    aput v2, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    :catch_9
+    :try_start_a
+    aput v3, v0, v3
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+
+    :catch_a
+    :try_start_b
+    aput v4, v0, v2
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+
+    :catch_b
     return-void
-.end method
-
-
-# virtual methods
-.method public final B()I
-    .locals 1
-
-    iget v0, p0, Lw2/o;->d:I
-
-    return v0
-.end method
-
-.method public final R()I
-    .locals 1
-
-    iget v0, p0, Lw2/o;->e:I
-
-    return v0
-.end method
-
-.method public final a()Landroid/net/Uri;
-    .locals 1
-
-    iget-object v0, p0, Lw2/o;->b:Landroid/net/Uri;
-
-    return-object v0
-.end method
-
-.method public final b()Lu2/a;
-    .locals 2
-
-    new-instance v0, Lu2/b;
-
-    iget-object v1, p0, Lw2/o;->a:Landroid/graphics/drawable/Drawable;
-
-    invoke-direct {v0, v1}, Lu2/b;-><init>(Ljava/lang/Object;)V
-
-    return-object v0
-.end method
-
-.method public final h(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
-    .locals 2
-
-    const/4 p2, 0x1
-
-    if-eq p1, p2, :cond_4
-
-    const/4 v0, 0x2
-
-    if-eq p1, v0, :cond_3
-
-    const/4 v0, 0x3
-
-    if-eq p1, v0, :cond_2
-
-    const/4 v0, 0x4
-
-    if-eq p1, v0, :cond_1
-
-    const/4 v0, 0x5
-
-    if-eq p1, v0, :cond_0
-
-    const/4 p1, 0x0
-
-    return p1
-
-    :cond_0
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
-
-    iget p1, p0, Lw2/o;->e:I
-
-    invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeInt(I)V
-
-    goto :goto_0
-
-    :cond_1
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
-
-    iget p1, p0, Lw2/o;->d:I
-
-    invoke-virtual {p3, p1}, Landroid/os/Parcel;->writeInt(I)V
-
-    goto :goto_0
-
-    :cond_2
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
-
-    iget-wide v0, p0, Lw2/o;->c:D
-
-    invoke-virtual {p3, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
-
-    goto :goto_0
-
-    :cond_3
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
-
-    iget-object p1, p0, Lw2/o;->b:Landroid/net/Uri;
-
-    invoke-static {p3, p1}, Lw2/b;->d(Landroid/os/Parcel;Landroid/os/Parcelable;)V
-
-    goto :goto_0
-
-    :cond_4
-    invoke-virtual {p0}, Lw2/o;->b()Lu2/a;
-
-    move-result-object p1
-
-    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
-
-    invoke-static {p3, p1}, Lw2/b;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
-
-    :goto_0
-    return p2
-.end method
-
-.method public final u()D
-    .locals 2
-
-    iget-wide v0, p0, Lw2/o;->c:D
-
-    return-wide v0
 .end method

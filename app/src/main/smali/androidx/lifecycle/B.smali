@@ -53,9 +53,9 @@
 
     iget-object p2, p0, Landroidx/lifecycle/B;->this$0:Landroidx/lifecycle/C;
 
-    iget-object p2, p2, Landroidx/lifecycle/C;->n:La5/Z1;
+    iget-object p2, p2, Landroidx/lifecycle/C;->n:LA/Z;
 
-    iput-object p2, p1, Landroidx/lifecycle/F;->g:La5/Z1;
+    iput-object p2, p1, Landroidx/lifecycle/F;->g:LA/Z;
 
     :cond_0
     return-void
@@ -82,7 +82,7 @@
 
     invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
 
-    iget-object p1, p1, Landroidx/lifecycle/C;->m:Lb5/t;
+    iget-object p1, p1, Landroidx/lifecycle/C;->m:LB/t;
 
     const-wide/16 v1, 0x2bc
 

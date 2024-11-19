@@ -1,106 +1,130 @@
-.class public final synthetic Lb/k;
-.super Ljava/lang/Object;
+.class public final LB/k;
+.super La4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lh4/e;
 
 
 # instance fields
-.field public final synthetic g:I
+.field public k:I
 
-.field public final synthetic h:I
-
-.field public final synthetic i:Ljava/lang/Object;
-
-.field public final synthetic j:Ljava/io/Serializable;
+.field public final synthetic l:LB/p;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/io/Serializable;I)V
+.method public constructor <init>(LB/p;LY3/d;)V
     .locals 0
 
-    iput p4, p0, Lb/k;->g:I
+    iput-object p1, p0, LB/k;->l:LB/p;
 
-    iput-object p1, p0, Lb/k;->i:Ljava/lang/Object;
+    const/4 p1, 0x2
 
-    iput p2, p0, Lb/k;->h:I
-
-    iput-object p3, p0, Lb/k;->j:Ljava/io/Serializable;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, La4/i;-><init>(ILY3/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
+.method public final d(LY3/d;Ljava/lang/Object;)LY3/d;
+    .locals 1
 
-    iget v0, p0, Lb/k;->g:I
+    new-instance p2, LB/k;
 
-    packed-switch v0, :pswitch_data_0
+    iget-object v0, p0, LB/k;->l:LB/p;
 
-    iget-object v0, p0, Lb/k;->i:Ljava/lang/Object;
+    invoke-direct {p2, v0, p1}, LB/k;-><init>(LB/p;LY3/d;)V
 
-    check-cast v0, Ll1/a;
+    return-object p2
+.end method
 
-    iget-object v0, v0, Ll1/a;->b:Ll1/c;
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
 
-    iget v1, p0, Lb/k;->h:I
+    sget-object v0, LZ3/a;->g:LZ3/a;
 
-    iget-object v2, p0, Lb/k;->j:Ljava/io/Serializable;
+    iget v1, p0, LB/k;->k:I
 
-    invoke-interface {v0, v1, v2}, Ll1/c;->f(ILjava/io/Serializable;)V
+    const/4 v2, 0x1
 
-    return-void
+    if-eqz v1, :cond_1
 
-    :pswitch_0
-    const-string v0, "this$0"
+    if-ne v1, v2, :cond_0
 
-    iget-object v1, p0, Lb/k;->i:Ljava/lang/Object;
+    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
 
-    check-cast v1, Lb/l;
+    goto :goto_0
 
-    invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    const-string v0, "$e"
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    iget-object v2, p0, Lb/k;->j:Ljava/io/Serializable;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    check-cast v2, Landroid/content/IntentSender$SendIntentException;
+    throw p1
 
-    invoke-static {v2, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    :cond_1
+    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
 
-    new-instance v0, Landroid/content/Intent;
+    iget-object p1, p0, LB/k;->l:LB/p;
 
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+    iget-object p1, p1, LB/p;->g:Ll/c;
 
-    const-string v3, "androidx.activity.result.contract.action.INTENT_SENDER_REQUEST"
+    new-instance v1, Ljava/lang/Float;
 
-    invoke-virtual {v0, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    const/high16 v3, 0x3f800000    # 1.0f
 
-    move-result-object v0
+    invoke-direct {v1, v3}, Ljava/lang/Float;-><init>(F)V
 
-    const-string v3, "androidx.activity.result.contract.extra.SEND_INTENT_EXCEPTION"
+    sget-object v3, Ll/A;->a:Ll/v;
 
-    invoke-virtual {v0, v3, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
+    const/16 v4, 0xe1
 
-    move-result-object v0
+    const/4 v5, 0x0
 
-    const/4 v2, 0x0
+    const/4 v6, 0x2
 
-    iget v3, p0, Lb/k;->h:I
+    invoke-static {v4, v5, v3, v6}, Ll/d;->l(IILl/z;I)Ll/B0;
 
-    invoke-virtual {v1, v3, v2, v0}, Lb/l;->a(IILandroid/content/Intent;)Z
+    move-result-object v3
 
-    return-void
+    iput v2, p0, LB/k;->k:I
 
-    nop
+    invoke-static {p1, v1, v3, p0}, Ll/c;->c(Ll/c;Ljava/lang/Object;Ll/l;La4/i;)Ljava/lang/Object;
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    move-result-object p1
+
+    if-ne p1, v0, :cond_2
+
+    return-object v0
+
+    :cond_2
+    :goto_0
+    sget-object p1, LU3/y;->a:LU3/y;
+
+    return-object p1
+.end method
+
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Ls4/x;
+
+    check-cast p2, LY3/d;
+
+    invoke-virtual {p0, p2, p1}, LB/k;->d(LY3/d;Ljava/lang/Object;)LY3/d;
+
+    move-result-object p1
+
+    check-cast p1, LB/k;
+
+    sget-object p2, LU3/y;->a:LU3/y;
+
+    invoke-virtual {p1, p2}, LB/k;->f(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

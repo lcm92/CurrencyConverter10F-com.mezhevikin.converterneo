@@ -1,18 +1,18 @@
 .class public final Landroidx/compose/foundation/MagnifierElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:La5/h0;
+.field public final a:LA/h0;
 
 .field public final b:Lh4/c;
 
@@ -34,12 +34,12 @@
 
 
 # direct methods
-.method public constructor <init>(La5/h0;Lh4/c;Lh4/c;FZJFFZLm/p0;)V
+.method public constructor <init>(LA/h0;Lh4/c;Lh4/c;FZJFFZLm/p0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/MagnifierElement;->a:La5/h0;
+    iput-object p1, p0, Landroidx/compose/foundation/MagnifierElement;->a:LA/h0;
 
     iput-object p2, p0, Landroidx/compose/foundation/MagnifierElement;->b:Lh4/c;
 
@@ -85,9 +85,9 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/MagnifierElement;
 
-    iget-object v1, p1, Landroidx/compose/foundation/MagnifierElement;->a:La5/h0;
+    iget-object v1, p1, Landroidx/compose/foundation/MagnifierElement;->a:LA/h0;
 
-    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->a:La5/h0;
+    iget-object v3, p0, Landroidx/compose/foundation/MagnifierElement;->a:LA/h0;
 
     if-eq v3, v1, :cond_2
 
@@ -132,7 +132,7 @@
 
     iget v3, p1, Landroidx/compose/foundation/MagnifierElement;->g:F
 
-    invoke-static {v1, v3}, Ll6/e;->a(FF)Z
+    invoke-static {v1, v3}, LL0/e;->a(FF)Z
 
     move-result v1
 
@@ -145,7 +145,7 @@
 
     iget v3, p1, Landroidx/compose/foundation/MagnifierElement;->h:F
 
-    invoke-static {v1, v3}, Ll6/e;->a(FF)Z
+    invoke-static {v1, v3}, LL0/e;->a(FF)Z
 
     move-result v1
 
@@ -194,7 +194,7 @@
 .method public final hashCode()I
     .locals 5
 
-    iget-object v0, p0, Landroidx/compose/foundation/MagnifierElement;->a:La5/h0;
+    iget-object v0, p0, Landroidx/compose/foundation/MagnifierElement;->a:LA/h0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -226,37 +226,37 @@
 
     iget v3, p0, Landroidx/compose/foundation/MagnifierElement;->d:F
 
-    invoke-static {v3, v0, v1}, La5/m;->e(FII)I
+    invoke-static {v3, v0, v1}, LA/m;->e(FII)I
 
     move-result v0
 
     iget-boolean v3, p0, Landroidx/compose/foundation/MagnifierElement;->e:Z
 
-    invoke-static {v0, v1, v3}, Lk/P1;->c(IIZ)I
+    invoke-static {v0, v1, v3}, Lk/P;->c(IIZ)I
 
     move-result v0
 
     iget-wide v3, p0, Landroidx/compose/foundation/MagnifierElement;->f:J
 
-    invoke-static {v0, v1, v3, v4}, Lk/P1;->b(IIJ)I
+    invoke-static {v0, v1, v3, v4}, Lk/P;->b(IIJ)I
 
     move-result v0
 
     iget v3, p0, Landroidx/compose/foundation/MagnifierElement;->g:F
 
-    invoke-static {v3, v0, v1}, La5/m;->e(FII)I
+    invoke-static {v3, v0, v1}, LA/m;->e(FII)I
 
     move-result v0
 
     iget v3, p0, Landroidx/compose/foundation/MagnifierElement;->h:F
 
-    invoke-static {v3, v0, v1}, La5/m;->e(FII)I
+    invoke-static {v3, v0, v1}, LA/m;->e(FII)I
 
     move-result v0
 
     iget-boolean v3, p0, Landroidx/compose/foundation/MagnifierElement;->i:Z
 
-    invoke-static {v0, v1, v3}, Lk/P1;->c(IIZ)I
+    invoke-static {v0, v1, v3}, Lk/P;->c(IIZ)I
 
     move-result v0
 
@@ -284,14 +284,14 @@
     return v1
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 13
 
     new-instance v12, Lm/e0;
 
     iget-object v11, p0, Landroidx/compose/foundation/MagnifierElement;->j:Lm/p0;
 
-    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->a:La5/h0;
+    iget-object v1, p0, Landroidx/compose/foundation/MagnifierElement;->a:LA/h0;
 
     iget v8, p0, Landroidx/compose/foundation/MagnifierElement;->g:F
 
@@ -311,12 +311,12 @@
 
     move-object v0, v12
 
-    invoke-direct/range {v0 .. v11}, Lm/e0;-><init>(La5/h0;Lh4/c;Lh4/c;FZJFFZLm/p0;)V
+    invoke-direct/range {v0 .. v11}, Lm/e0;-><init>(LA/h0;Lh4/c;Lh4/c;FZJFFZLm/p0;)V
 
     return-object v12
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 21
 
     move-object/from16 v0, p0
@@ -341,11 +341,11 @@
 
     iget-object v10, v1, Lm/e0;->D:Landroid/view/View;
 
-    iget-object v11, v1, Lm/e0;->E:Ll6/b;
+    iget-object v11, v1, Lm/e0;->E:LL0/b;
 
-    iget-object v12, v0, Landroidx/compose/foundation/MagnifierElement;->a:La5/h0;
+    iget-object v12, v0, Landroidx/compose/foundation/MagnifierElement;->a:LA/h0;
 
-    iput-object v12, v1, Lm/e0;->t:La5/h0;
+    iput-object v12, v1, Lm/e0;->t:LA/h0;
 
     iget-object v12, v0, Landroidx/compose/foundation/MagnifierElement;->b:Lh4/c;
 
@@ -397,11 +397,11 @@
 
     move-object/from16 v19, v0
 
-    invoke-static {v1}, Lq0/f;->v(Lq0/m;)Lq0/D1;
+    invoke-static {v1}, Lq0/f;->v(Lq0/m;)Lq0/D;
 
     move-result-object v0
 
-    iget-object v0, v0, Lq0/D1;->w:Ll6/b;
+    iget-object v0, v0, Lq0/D;->w:LL0/b;
 
     move-object/from16 v20, v0
 
@@ -444,13 +444,13 @@
 
     if-nez v0, :cond_2
 
-    invoke-static {v11, v5}, Ll6/e;->a(FF)Z
+    invoke-static {v11, v5}, LL0/e;->a(FF)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    invoke-static {v10, v7}, Ll6/e;->a(FF)Z
+    invoke-static {v10, v7}, LL0/e;->a(FF)Z
 
     move-result v0
 

@@ -12,7 +12,7 @@
 
 .field public m:Lio/ktor/utils/io/F;
 
-.field public n:Lk9/b;
+.field public n:LK3/b;
 
 .field public synthetic o:Ljava/lang/Object;
 
@@ -27,7 +27,7 @@
 
     iput-object p1, p0, Lio/ktor/client/engine/cio/l;->p:Lio/ktor/client/engine/cio/q;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+    invoke-direct {p0, p2}, La4/c;-><init>(LY3/d;)V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, v0, p0}, Lio/ktor/client/engine/cio/q;->f(Lo3/e;Ly9/i;La4/c;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v0, p0}, Lio/ktor/client/engine/cio/q;->f(Lo3/e;LY3/i;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 

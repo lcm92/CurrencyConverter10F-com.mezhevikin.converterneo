@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -16,7 +16,7 @@
 
 .field public final b:Lr/d;
 
-.field public final c:Lo/O1;
+.field public final c:Lo/O;
 
 .field public final d:Z
 
@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lo4/c;Lr/d;Lo/O1;ZZ)V
+.method public constructor <init>(Lo4/c;Lr/d;Lo/O;ZZ)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,7 +33,7 @@
 
     iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->b:Lr/d;
 
-    iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O1;
+    iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O;
 
     iput-boolean p4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
@@ -87,9 +87,9 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O1;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O;
 
-    iget-object v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O1;
+    iget-object v3, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O;
 
     if-eq v1, v3, :cond_4
 
@@ -140,7 +140,7 @@
 
     mul-int/2addr v2, v1
 
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O1;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -152,7 +152,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
-    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
 
     move-result v0
 
@@ -167,12 +167,12 @@
     return v1
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 7
 
-    new-instance v6, Ls/F1;
+    new-instance v6, Ls/F;
 
-    iget-object v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O1;
+    iget-object v3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O;
 
     iget-boolean v4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
@@ -184,36 +184,36 @@
 
     move-object v0, v6
 
-    invoke-direct/range {v0 .. v5}, Ls/F1;-><init>(Lo4/c;Lr/d;Lo/O1;ZZ)V
+    invoke-direct/range {v0 .. v5}, Ls/F;-><init>(Lo4/c;Lr/d;Lo/O;ZZ)V
 
     return-object v6
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 3
 
-    check-cast p1, Ls/F1;
+    check-cast p1, Ls/F;
 
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->a:Lo4/c;
 
-    iput-object v0, p1, Ls/F1;->t:Lo4/c;
+    iput-object v0, p1, Ls/F;->t:Lo4/c;
 
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->b:Lr/d;
 
-    iput-object v0, p1, Ls/F1;->u:Lr/d;
+    iput-object v0, p1, Ls/F;->u:Lr/d;
 
-    iget-object v0, p1, Ls/F1;->v:Lo/O1;
+    iget-object v0, p1, Ls/F;->v:Lo/O;
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O1;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->c:Lo/O;
 
     if-eq v0, v1, :cond_0
 
-    iput-object v1, p1, Ls/F1;->v:Lo/O1;
+    iput-object v1, p1, Ls/F;->v:Lo/O;
 
     invoke-static {p1}, Lq0/f;->p(Lq0/m0;)V
 
     :cond_0
-    iget-boolean v0, p1, Ls/F1;->w:Z
+    iget-boolean v0, p1, Ls/F;->w:Z
 
     iget-boolean v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;->d:Z
 
@@ -221,16 +221,16 @@
 
     if-ne v0, v1, :cond_1
 
-    iget-boolean v0, p1, Ls/F1;->x:Z
+    iget-boolean v0, p1, Ls/F;->x:Z
 
     if-eq v0, v2, :cond_2
 
     :cond_1
-    iput-boolean v1, p1, Ls/F1;->w:Z
+    iput-boolean v1, p1, Ls/F;->w:Z
 
-    iput-boolean v2, p1, Ls/F1;->x:Z
+    iput-boolean v2, p1, Ls/F;->x:Z
 
-    invoke-virtual {p1}, Ls/F1;->y0()V
+    invoke-virtual {p1}, Ls/F;->y0()V
 
     invoke-static {p1}, Lq0/f;->p(Lq0/m0;)V
 

@@ -1,9 +1,8 @@
-.class public final Lr/c;
+.class public interface abstract LR/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public a:Lf5/g0;
-
-.field public b:Lf5/g0;
+# virtual methods
+.method public abstract a(IILL0/k;)I
+.end method

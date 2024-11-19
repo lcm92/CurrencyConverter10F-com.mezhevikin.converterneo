@@ -1,152 +1,85 @@
-.class public final Lj1/e;
-.super Landroidx/lifecycle/V;
+.class public final LJ1/e;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Landroidx/lifecycle/T;
 
 
 # instance fields
-.field public a:Lp1/e;
+.field public a:I
 
-.field public b:Landroidx/lifecycle/v;
+.field public b:Ljava/lang/String;
+
+
+# direct methods
+.method public static a()LJ1/d;
+    .locals 2
+
+    new-instance v0, LJ1/d;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    const-string v1, ""
+
+    iput-object v1, v0, LJ1/d;->a:Ljava/lang/String;
+
+    return-object v0
+.end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Class;)Landroidx/lifecycle/Q;
-    .locals 3
+.method public final toString()Ljava/lang/String;
+    .locals 4
 
-    invoke-virtual {p1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
+    iget v0, p0, LJ1/e;->a:I
 
-    move-result-object p1
+    sget v1, Lcom/google/android/gms/internal/play_billing/q0;->a:I
 
-    if-eqz p1, :cond_1
+    sget-object v1, Lcom/google/android/gms/internal/play_billing/M;->i:Lcom/google/android/gms/internal/play_billing/Z;
 
-    iget-object v0, p0, Lj1/e;->b:Landroidx/lifecycle/v;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-eqz v0, :cond_0
+    move-result-object v0
 
-    iget-object v0, p0, Lj1/e;->a:Lp1/e;
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/internal/play_billing/Z;->containsKey(Ljava/lang/Object;)Z
 
-    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+    move-result v2
 
-    iget-object v1, p0, Lj1/e;->b:Landroidx/lifecycle/v;
+    if-nez v2, :cond_0
 
-    invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
-
-    const/4 v2, 0x0
-
-    invoke-static {v0, v1, p1, v2}, Landroidx/lifecycle/K;->b(Lp1/e;Landroidx/lifecycle/v;Ljava/lang/String;Landroid/os/Bundle;)Landroidx/lifecycle/I;
-
-    move-result-object p1
-
-    iget-object v0, p1, Landroidx/lifecycle/I;->h:Landroidx/lifecycle/H;
-
-    new-instance v1, Lj1/f;
-
-    invoke-direct {v1, v0}, Lj1/f;-><init>(Landroidx/lifecycle/H;)V
-
-    invoke-virtual {v1, p1}, Landroidx/lifecycle/Q;->a(Landroidx/lifecycle/I;)V
-
-    return-object v1
-
-    :cond_0
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    const-string v0, "AbstractSavedStateViewModelFactory constructed with empty constructor supports only calls to create(modelClass: Class<T>, extras: CreationExtras)."
-
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "Local and anonymous classes can not be ViewModels"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public final c(Ljava/lang/Class;Lg1/b;)Landroidx/lifecycle/Q;
-    .locals 2
-
-    sget-object p1, Li1/c;->a:Li1/c;
-
-    iget-object v0, p2, Lh9/r;->g:Ljava/lang/Object;
-
-    check-cast v0, Ljava/util/LinkedHashMap;
-
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    if-eqz p1, :cond_1
-
-    iget-object v0, p0, Lj1/e;->a:Lp1/e;
-
-    if-eqz v0, :cond_0
-
-    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
-
-    iget-object p2, p0, Lj1/e;->b:Landroidx/lifecycle/v;
-
-    invoke-static {p2}, Li4/h;->c(Ljava/lang/Object;)V
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, p2, p1, v1}, Landroidx/lifecycle/K;->b(Lp1/e;Landroidx/lifecycle/v;Ljava/lang/String;Landroid/os/Bundle;)Landroidx/lifecycle/I;
-
-    move-result-object p1
-
-    iget-object p2, p1, Landroidx/lifecycle/I;->h:Landroidx/lifecycle/H;
-
-    new-instance v0, Lj1/f;
-
-    invoke-direct {v0, p2}, Lj1/f;-><init>(Landroidx/lifecycle/H;)V
-
-    invoke-virtual {v0, p1}, Landroidx/lifecycle/Q;->a(Landroidx/lifecycle/I;)V
+    sget-object v0, Lcom/google/android/gms/internal/play_billing/M;->h:Lcom/google/android/gms/internal/play_billing/M;
 
     goto :goto_0
 
     :cond_0
-    invoke-static {p2}, Landroidx/lifecycle/K;->d(Lg1/b;)Landroidx/lifecycle/H;
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/internal/play_billing/Z;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v0
 
-    new-instance v0, Lj1/f;
-
-    invoke-direct {v0, p1}, Lj1/f;-><init>(Landroidx/lifecycle/H;)V
+    check-cast v0, Lcom/google/android/gms/internal/play_billing/M;
 
     :goto_0
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, LJ1/e;->b:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "Response Code: "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", Debug Message: "
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
     return-object v0
-
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string p2, "VIEW_MODEL_KEY must always be provided by ViewModelProvider"
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public final d(Landroidx/lifecycle/Q;)V
-    .locals 2
-
-    iget-object v0, p0, Lj1/e;->a:Lp1/e;
-
-    if-eqz v0, :cond_0
-
-    iget-object v1, p0, Lj1/e;->b:Landroidx/lifecycle/v;
-
-    invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
-
-    invoke-static {p1, v0, v1}, Landroidx/lifecycle/K;->a(Landroidx/lifecycle/Q;Lp1/e;Landroidx/lifecycle/v;)V
-
-    :cond_0
-    return-void
 .end method

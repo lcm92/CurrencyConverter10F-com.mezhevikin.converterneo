@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract b(Ljava/lang/String;)Ljj/a;
+.method public abstract b(Ljava/lang/String;)LJ4/a;
 .end method

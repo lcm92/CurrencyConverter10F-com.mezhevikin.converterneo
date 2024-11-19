@@ -1,5 +1,5 @@
 .class public final Lz4/c;
-.super Ls4/Q1;
+.super Ls4/Q;
 .source "SourceFile"
 
 # interfaces
@@ -75,7 +75,7 @@
     return-void
 
     :cond_2
-    invoke-static {v2, v1}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v1}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
     throw v1
 
     :cond_3
-    invoke-static {v2, v1}, La5/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v1}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -122,9 +122,9 @@
 .method public final execute(Ljava/lang/Runnable;)V
     .locals 1
 
-    sget-object v0, Ly9/j;->g:Ly9/j;
+    sget-object v0, LY3/j;->g:LY3/j;
 
-    invoke-virtual {p0, v0, p1}, Lz4/c;->u(Ly9/i;Ljava/lang/Runnable;)V
+    invoke-virtual {p0, v0, p1}, Lz4/c;->u(LY3/i;Ljava/lang/Runnable;)V
 
     return-void
 .end method
@@ -137,22 +137,22 @@
     return-object v0
 .end method
 
-.method public final u(Ly9/i;Ljava/lang/Runnable;)V
+.method public final u(LY3/i;Ljava/lang/Runnable;)V
     .locals 1
 
     sget-object v0, Lz4/c;->j:Ls4/t;
 
-    invoke-virtual {v0, p1, p2}, Ls4/t;->u(Ly9/i;Ljava/lang/Runnable;)V
+    invoke-virtual {v0, p1, p2}, Ls4/t;->u(LY3/i;Ljava/lang/Runnable;)V
 
     return-void
 .end method
 
-.method public final y(Ly9/i;Ljava/lang/Runnable;)V
+.method public final y(LY3/i;Ljava/lang/Runnable;)V
     .locals 1
 
     sget-object v0, Lz4/c;->j:Ls4/t;
 
-    invoke-virtual {v0, p1, p2}, Ls4/t;->y(Ly9/i;Ljava/lang/Runnable;)V
+    invoke-virtual {v0, p1, p2}, Ls4/t;->y(LY3/i;Ljava/lang/Runnable;)V
 
     return-void
 .end method

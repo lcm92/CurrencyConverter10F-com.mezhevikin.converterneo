@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/ScrollSemanticsElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -123,7 +123,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->b:Z
 
-    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
 
     move-result v0
 
@@ -147,7 +147,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->d:Z
 
-    invoke-static {v0, v1, v2}, Lk/P1;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
 
     move-result v0
 
@@ -162,12 +162,12 @@
     return v1
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
     new-instance v0, Lm/w0;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iget-object v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Lm/z0;
 
@@ -184,7 +184,7 @@
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 1
 
     check-cast p1, Lm/w0;

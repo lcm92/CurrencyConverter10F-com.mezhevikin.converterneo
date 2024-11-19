@@ -1,81 +1,33 @@
-.class public final synthetic Ly/c;
-.super Li4/f;
+.class public final LY/C;
+.super LY/F;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/c;
 
 
 # instance fields
-.field public final synthetic o:Ly/u;
+.field public final a:LY/i;
 
 
 # direct methods
-.method public constructor <init>(Ly/u;)V
-    .locals 6
+.method public constructor <init>(LY/i;)V
+    .locals 0
 
-    iput-object p1, p0, Ly/c;->o:Ly/u;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-class v2, Li4/g;
-
-    const-string v3, "localToScreen"
-
-    const/4 v1, 0x1
-
-    const-string v4, "startInput$localToScreen(Landroidx/compose/foundation/text/input/internal/LegacyPlatformTextInputServiceAdapter$LegacyPlatformTextInputNode;[F)V"
-
-    const/4 v5, 0x0
-
-    move-object v0, p0
-
-    invoke-direct/range {v0 .. v5}, Li4/f;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+    iput-object p1, p0, LY/C;->a:LY/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final a()LX/d;
+    .locals 1
 
-    check-cast p1, Ly5/B1;
+    iget-object v0, p0, LY/C;->a:LY/i;
 
-    iget-object p1, p1, Ly5/B1;->a:[F
-
-    iget-object v0, p0, Ly/c;->o:Ly/u;
-
-    iget-object v0, v0, Ly/u;->w:Lf5/j0;
-
-    invoke-virtual {v0}, Lf5/j0;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LY/i;->c()LX/d;
 
     move-result-object v0
 
-    check-cast v0, Lo0/p;
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {v0}, Lo0/p;->o()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    if-nez v0, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    invoke-interface {v0, p1}, Lo0/p;->s([F)V
-
-    :cond_2
-    :goto_1
-    sget-object p1, Lu9/y;->a:Lu9/y;
-
-    return-object p1
+    return-object v0
 .end method

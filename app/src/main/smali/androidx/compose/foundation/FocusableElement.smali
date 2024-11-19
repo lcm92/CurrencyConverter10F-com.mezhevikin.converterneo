@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/FocusableElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -85,26 +85,26 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
-    new-instance v0, Lm/O1;
+    new-instance v0, Lm/O;
 
     iget-object v1, p0, Landroidx/compose/foundation/FocusableElement;->a:Lp/i;
 
-    invoke-direct {v0, v1}, Lm/O1;-><init>(Lp/i;)V
+    invoke-direct {v0, v1}, Lm/O;-><init>(Lp/i;)V
 
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 1
 
-    check-cast p1, Lm/O1;
+    check-cast p1, Lm/O;
 
     iget-object v0, p0, Landroidx/compose/foundation/FocusableElement;->a:Lp/i;
 
-    invoke-virtual {p1, v0}, Lm/O1;->B0(Lp/i;)V
+    invoke-virtual {p1, v0}, Lm/O;->B0(Lp/i;)V
 
     return-void
 .end method

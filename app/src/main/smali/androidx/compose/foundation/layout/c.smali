@@ -45,15 +45,15 @@
 
     sput-object v0, Landroidx/compose/foundation/layout/c;->c:Landroidx/compose/foundation/layout/FillElement;
 
-    sget-object v0, Lr5/b;->k:Lr5/i;
+    sget-object v0, LR/b;->k:LR/i;
 
     new-instance v2, Landroidx/compose/foundation/layout/WrapContentElement;
 
-    new-instance v3, Lc5/v;
+    new-instance v3, LC/v;
 
     const/16 v4, 0xd
 
-    invoke-direct {v3, v4, v0}, Lc5/v;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v4, v0}, LC/v;-><init>(ILjava/lang/Object;)V
 
     const/4 v4, 0x0
 
@@ -61,15 +61,15 @@
 
     sput-object v2, Landroidx/compose/foundation/layout/c;->d:Landroidx/compose/foundation/layout/WrapContentElement;
 
-    sget-object v0, Lr5/b;->g:Lr5/i;
+    sget-object v0, LR/b;->g:LR/i;
 
     new-instance v2, Landroidx/compose/foundation/layout/WrapContentElement;
 
-    new-instance v3, Lc5/v;
+    new-instance v3, LC/v;
 
     const/16 v5, 0xd
 
-    invoke-direct {v3, v5, v0}, Lc5/v;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v5, v0}, LC/v;-><init>(ILjava/lang/Object;)V
 
     invoke-direct {v2, v1, v4, v3, v0}, Landroidx/compose/foundation/layout/WrapContentElement;-><init>(IZLh4/e;Ljava/lang/Object;)V
 
@@ -78,7 +78,7 @@
     return-void
 .end method
 
-.method public static a(F)Lr5/q;
+.method public static a(F)LR/q;
     .locals 2
 
     new-instance v0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;
@@ -90,7 +90,7 @@
     return-object v0
 .end method
 
-.method public static final b(Lr5/q;F)Lr5/q;
+.method public static final b(LR/q;F)LR/q;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -109,14 +109,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFI)V
 
-    invoke-interface {p0, v6}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v6}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final c(FF)Lr5/q;
+.method public static final c(FF)LR/q;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -138,7 +138,7 @@
     return-object v6
 .end method
 
-.method public static final d(Lr5/q;FF)Lr5/q;
+.method public static final d(LR/q;FF)LR/q;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -157,14 +157,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, v6}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v6}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static e(Lr5/q;FFFFI)Lr5/q;
+.method public static e(LR/q;FFFFI)LR/q;
     .locals 8
 
     and-int/lit8 v0, p5, 0x2
@@ -215,14 +215,14 @@
 
     invoke-direct/range {v2 .. v7}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, p2}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, p2}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final f(Lr5/q;F)Lr5/q;
+.method public static final f(LR/q;F)LR/q;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -241,14 +241,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, v6}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v6}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final g(Lr5/q;FF)Lr5/q;
+.method public static final g(LR/q;FF)LR/q;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -267,14 +267,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, v6}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v6}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final h(Lr5/q;FFFF)Lr5/q;
+.method public static final h(LR/q;FFFF)LR/q;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -293,14 +293,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, v6}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v6}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final i(Lr5/q;F)Lr5/q;
+.method public static final i(LR/q;F)LR/q;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -319,19 +319,19 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFI)V
 
-    invoke-interface {p0, v6}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v6}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static j(Lr5/q;)Lr5/q;
+.method public static j(LR/q;)LR/q;
     .locals 5
 
-    sget-object v0, Lr5/b;->k:Lr5/i;
+    sget-object v0, LR/b;->k:LR/i;
 
-    invoke-virtual {v0, v0}, Lr5/i;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v0}, LR/i;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -342,9 +342,9 @@
     goto :goto_0
 
     :cond_0
-    sget-object v1, Lr5/b;->g:Lr5/i;
+    sget-object v1, LR/b;->g:LR/i;
 
-    invoke-virtual {v0, v1}, Lr5/i;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, LR/i;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -357,11 +357,11 @@
     :cond_1
     new-instance v1, Landroidx/compose/foundation/layout/WrapContentElement;
 
-    new-instance v2, Lc5/v;
+    new-instance v2, LC/v;
 
     const/16 v3, 0xd
 
-    invoke-direct {v2, v3, v0}, Lc5/v;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, v0}, LC/v;-><init>(ILjava/lang/Object;)V
 
     const/4 v3, 0x3
 
@@ -372,7 +372,7 @@
     move-object v0, v1
 
     :goto_0
-    invoke-interface {p0, v0}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 

@@ -3,5 +3,5 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lv4/N1;
+.implements Lv4/N;
 .implements Lv4/y;

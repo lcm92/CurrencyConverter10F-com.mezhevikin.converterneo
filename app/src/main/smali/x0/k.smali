@@ -1,5 +1,5 @@
 .class public final Lx0/k;
-.super Lr5/p;
+.super LR/p;
 .source "SourceFile"
 
 # interfaces
@@ -18,7 +18,7 @@
 
     iput-object p1, p0, Lx0/k;->t:Li4/i;
 
-    invoke-direct {p0}, Lr5/p;-><init>()V
+    invoke-direct {p0}, LR/p;-><init>()V
 
     return-void
 .end method

@@ -1,3 +1,3 @@
-.class public final Lq2/b;
-.super Lv2/h;
+.class public final LQ2/b;
+.super Ljava/lang/RuntimeException;
 .source "SourceFile"

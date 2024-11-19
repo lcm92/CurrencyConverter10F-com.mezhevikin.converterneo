@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/focus/FocusChangedElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -77,28 +77,28 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
-    new-instance v0, Lw5/a;
+    new-instance v0, LW/a;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iget-object v1, p0, Landroidx/compose/ui/focus/FocusChangedElement;->a:Lh4/c;
 
-    iput-object v1, v0, Lw5/a;->t:Lh4/c;
+    iput-object v1, v0, LW/a;->t:Lh4/c;
 
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 1
 
-    check-cast p1, Lw5/a;
+    check-cast p1, LW/a;
 
     iget-object v0, p0, Landroidx/compose/ui/focus/FocusChangedElement;->a:Lh4/c;
 
-    iput-object v0, p1, Lw5/a;->t:Lh4/c;
+    iput-object v0, p1, LW/a;->t:Lh4/c;
 
     return-void
 .end method

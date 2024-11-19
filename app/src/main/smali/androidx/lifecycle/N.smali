@@ -108,7 +108,7 @@
 
     sget-object v0, Li1/c;->a:Li1/c;
 
-    iget-object v1, p2, Lh9/r;->g:Ljava/lang/Object;
+    iget-object v1, p2, LH3/r;->g:Ljava/lang/Object;
 
     check-cast v1, Ljava/util/LinkedHashMap;
 
@@ -325,7 +325,7 @@
 
     invoke-static {p2}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-static {p1}, Lh8/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
+    invoke-static {p1}, LH2/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
 
     move-result-object p1
 

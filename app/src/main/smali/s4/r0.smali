@@ -14,11 +14,11 @@
 .method public constructor <init>(JLs4/s0;)V
     .locals 1
 
-    iget-object v0, p3, La4/c;->h:Ly9/i;
+    iget-object v0, p3, La4/c;->h:LY3/i;
 
     invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-direct {p0, p3, v0}, Lx4/q;-><init>(Ly9/d;Ly9/i;)V
+    invoke-direct {p0, p3, v0}, Lx4/q;-><init>(LY3/d;LY3/i;)V
 
     iput-wide p1, p0, Ls4/r0;->k:J
 
@@ -62,9 +62,9 @@
 .method public final run()V
     .locals 3
 
-    iget-object v0, p0, Ls4/a;->i:Ly9/i;
+    iget-object v0, p0, Ls4/a;->i:LY3/i;
 
-    invoke-static {v0}, Ls4/y;->k(Ly9/i;)Ls4/C1;
+    invoke-static {v0}, Ls4/y;->k(LY3/i;)Ls4/C;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

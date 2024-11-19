@@ -1,212 +1,77 @@
-.class public final Lf3/g;
+.class public final LF3/g;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lo3/b;
+.implements Lv4/e;
 
 
 # instance fields
-.field public final synthetic g:I
+.field public final synthetic g:Lv4/h;
 
-.field public final synthetic h:Lo3/b;
+.field public final synthetic h:Ls3/d;
+
+.field public final synthetic i:Ljava/nio/charset/Charset;
+
+.field public final synthetic j:LM3/a;
+
+.field public final synthetic k:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lf3/f;Lo3/b;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lf3/g;->g:I
-
-    const-string v0, "call"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p2, p0, Lf3/g;->h:Lo3/b;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lm3/a;Lo3/b;)V
+.method public constructor <init>(Lv4/h;Ls3/d;Ljava/nio/charset/Charset;LM3/a;Ljava/lang/Object;)V
     .locals 0
 
-    const/4 p1, 0x1
-
-    iput p1, p0, Lf3/g;->g:I
-
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
-    iput-object p2, p0, Lf3/g;->h:Lo3/b;
+    iput-object p1, p0, LF3/g;->g:Lv4/h;
+
+    iput-object p2, p0, LF3/g;->h:Ls3/d;
+
+    iput-object p3, p0, LF3/g;->i:Ljava/nio/charset/Charset;
+
+    iput-object p4, p0, LF3/g;->j:LM3/a;
+
+    iput-object p5, p0, LF3/g;->k:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ls3/q;
-    .locals 1
+.method public final c(Lv4/f;LY3/d;)Ljava/lang/Object;
+    .locals 7
 
-    iget v0, p0, Lf3/g;->g:I
+    new-instance v6, LF3/f;
 
-    packed-switch v0, :pswitch_data_0
+    iget-object v2, p0, LF3/g;->h:Ls3/d;
 
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
+    iget-object v3, p0, LF3/g;->i:Ljava/nio/charset/Charset;
 
-    invoke-interface {v0}, Ls3/w;->a()Ls3/q;
+    iget-object v4, p0, LF3/g;->j:LM3/a;
 
-    move-result-object v0
+    iget-object v5, p0, LF3/g;->k:Ljava/lang/Object;
 
-    return-object v0
+    move-object v0, v6
 
-    :pswitch_0
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
+    move-object v1, p1
 
-    invoke-interface {v0}, Ls3/w;->a()Ls3/q;
+    invoke-direct/range {v0 .. v5}, LF3/f;-><init>(Lv4/f;Ls3/d;Ljava/nio/charset/Charset;LM3/a;Ljava/lang/Object;)V
 
-    move-result-object v0
+    iget-object p1, p0, LF3/g;->g:Lv4/h;
 
-    return-object v0
+    invoke-virtual {p1, v6, p2}, Lv4/h;->c(Lv4/f;LY3/d;)Ljava/lang/Object;
 
-    nop
+    move-result-object p1
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
+    sget-object p2, LZ3/a;->g:LZ3/a;
 
-.method public final b()Ly9/i;
-    .locals 1
+    if-ne p1, p2, :cond_0
 
-    iget v0, p0, Lf3/g;->g:I
+    return-object p1
 
-    packed-switch v0, :pswitch_data_0
+    :cond_0
+    sget-object p1, LU3/y;->a:LU3/y;
 
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
-
-    invoke-interface {v0}, Lo3/b;->b()Ly9/i;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
-
-    invoke-interface {v0}, Lo3/b;->b()Ly9/i;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final g()Ls3/K1;
-    .locals 1
-
-    iget v0, p0, Lf3/g;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
-
-    invoke-interface {v0}, Lo3/b;->g()Ls3/K1;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
-
-    invoke-interface {v0}, Lo3/b;->g()Ls3/K1;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final y()Ls3/y;
-    .locals 1
-
-    iget v0, p0, Lf3/g;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
-
-    invoke-interface {v0}, Lo3/b;->y()Ls3/y;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
-
-    invoke-interface {v0}, Lo3/b;->y()Ls3/y;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final z()Lh9/g;
-    .locals 1
-
-    iget v0, p0, Lf3/g;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
-
-    invoke-interface {v0}, Lo3/b;->z()Lh9/g;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, Lf3/g;->h:Lo3/b;
-
-    invoke-interface {v0}, Lo3/b;->z()Lh9/g;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

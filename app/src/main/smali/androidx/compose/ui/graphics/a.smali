@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final a(Lh4/c;)Lr5/q;
+.method public static final a(Lh4/c;)LR/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;
@@ -14,7 +14,7 @@
     return-object v0
 .end method
 
-.method public static b(Lr5/q;FFLy5/M1;ZI)Lr5/q;
+.method public static b(LR/q;FFLY/M;ZI)LR/q;
     .locals 22
 
     move/from16 v0, p5
@@ -47,13 +47,13 @@
     move/from16 v8, p2
 
     :goto_1
-    sget-wide v13, Ly5/Q1;->b:J
+    sget-wide v13, LY/Q;->b:J
 
     and-int/lit16 v1, v0, 0x800
 
     if-eqz v1, :cond_2
 
-    sget-object v1, Ly5/H1;->a:Ll2/g;
+    sget-object v1, LY/H;->a:Ll2/g;
 
     move-object v15, v1
 
@@ -77,7 +77,7 @@
     move/from16 v16, p4
 
     :goto_3
-    sget-wide v19, Ly5/y;->a:J
+    sget-wide v19, LY/y;->a:J
 
     new-instance v0, Landroidx/compose/ui/graphics/GraphicsLayerElement;
 
@@ -103,11 +103,11 @@
 
     move-wide/from16 v17, v19
 
-    invoke-direct/range {v2 .. v21}, Landroidx/compose/ui/graphics/GraphicsLayerElement;-><init>(FFFFFFFFFFJLy5/M1;ZJJI)V
+    invoke-direct/range {v2 .. v21}, Landroidx/compose/ui/graphics/GraphicsLayerElement;-><init>(FFFFFFFFFFJLY/M;ZJJI)V
 
     move-object/from16 v1, p0
 
-    invoke-interface {v1, v0}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {v1, v0}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object v0
 

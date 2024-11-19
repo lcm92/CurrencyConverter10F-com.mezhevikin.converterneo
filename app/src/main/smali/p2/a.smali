@@ -1,16 +1,11 @@
-.class public abstract Lp2/a;
+.class public interface abstract LP2/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/os/Parcelable;
+.implements Ljava/util/concurrent/Future;
 
 
 # virtual methods
-.method public final describeContents()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
+.method public abstract a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 .end method

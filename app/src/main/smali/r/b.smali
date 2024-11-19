@@ -1,112 +1,150 @@
-.class public final Lr/b;
-.super Li4/i;
+.class public final LR/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements LY3/h;
 
 
-# instance fields
-.field public final synthetic h:Lr5/q;
+# static fields
+.field public static final g:LR/i;
 
-.field public final synthetic i:Lr/u;
+.field public static final h:LR/i;
 
-.field public final synthetic j:Lq/V1;
+.field public static final i:LR/i;
 
-.field public final synthetic k:Z
+.field public static final j:LR/i;
 
-.field public final synthetic l:Lq/h;
+.field public static final k:LR/i;
 
-.field public final synthetic m:Lr5/c;
+.field public static final l:LR/i;
 
-.field public final synthetic n:Lo/m;
+.field public static final m:LR/i;
 
-.field public final synthetic o:Z
+.field public static final n:LR/i;
 
-.field public final synthetic p:Lh4/c;
+.field public static final o:LR/i;
 
-.field public final synthetic q:I
+.field public static final p:LR/h;
 
-.field public final synthetic r:I
+.field public static final q:LR/h;
+
+.field public static final r:LR/h;
+
+.field public static final s:LR/g;
+
+.field public static final t:LR/g;
+
+.field public static final u:LR/g;
+
+.field public static final synthetic v:LR/b;
 
 
 # direct methods
-.method public constructor <init>(Lr5/q;Lr/u;Lq/V1;ZLq/h;Lr5/c;Lo/m;ZLh4/c;II)V
-    .locals 0
+.method static synthetic constructor <clinit>()V
+    .locals 4
 
-    iput-object p1, p0, Lr/b;->h:Lr5/q;
+    new-instance v0, LR/i;
 
-    iput-object p2, p0, Lr/b;->i:Lr/u;
+    const/high16 v1, -0x40800000    # -1.0f
 
-    iput-object p3, p0, Lr/b;->j:Lq/V1;
+    invoke-direct {v0, v1, v1}, LR/i;-><init>(FF)V
 
-    iput-boolean p4, p0, Lr/b;->k:Z
+    sput-object v0, LR/b;->g:LR/i;
 
-    iput-object p5, p0, Lr/b;->l:Lq/h;
+    new-instance v0, LR/i;
 
-    iput-object p6, p0, Lr/b;->m:Lr5/c;
+    const/4 v2, 0x0
 
-    iput-object p7, p0, Lr/b;->n:Lo/m;
+    invoke-direct {v0, v2, v1}, LR/i;-><init>(FF)V
 
-    iput-boolean p8, p0, Lr/b;->o:Z
+    sput-object v0, LR/b;->h:LR/i;
 
-    iput-object p9, p0, Lr/b;->p:Lh4/c;
+    new-instance v0, LR/i;
 
-    iput p10, p0, Lr/b;->q:I
+    const/high16 v3, 0x3f800000    # 1.0f
 
-    iput p11, p0, Lr/b;->r:I
+    invoke-direct {v0, v3, v1}, LR/i;-><init>(FF)V
 
-    const/4 p1, 0x2
+    sput-object v0, LR/b;->i:LR/i;
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    new-instance v0, LR/i;
+
+    invoke-direct {v0, v1, v2}, LR/i;-><init>(FF)V
+
+    sput-object v0, LR/b;->j:LR/i;
+
+    new-instance v0, LR/i;
+
+    invoke-direct {v0, v2, v2}, LR/i;-><init>(FF)V
+
+    sput-object v0, LR/b;->k:LR/i;
+
+    new-instance v0, LR/i;
+
+    invoke-direct {v0, v3, v2}, LR/i;-><init>(FF)V
+
+    sput-object v0, LR/b;->l:LR/i;
+
+    new-instance v0, LR/i;
+
+    invoke-direct {v0, v1, v3}, LR/i;-><init>(FF)V
+
+    sput-object v0, LR/b;->m:LR/i;
+
+    new-instance v0, LR/i;
+
+    invoke-direct {v0, v2, v3}, LR/i;-><init>(FF)V
+
+    sput-object v0, LR/b;->n:LR/i;
+
+    new-instance v0, LR/i;
+
+    invoke-direct {v0, v3, v3}, LR/i;-><init>(FF)V
+
+    sput-object v0, LR/b;->o:LR/i;
+
+    new-instance v0, LR/h;
+
+    invoke-direct {v0, v1}, LR/h;-><init>(F)V
+
+    sput-object v0, LR/b;->p:LR/h;
+
+    new-instance v0, LR/h;
+
+    invoke-direct {v0, v2}, LR/h;-><init>(F)V
+
+    sput-object v0, LR/b;->q:LR/h;
+
+    new-instance v0, LR/h;
+
+    invoke-direct {v0, v3}, LR/h;-><init>(F)V
+
+    sput-object v0, LR/b;->r:LR/h;
+
+    new-instance v0, LR/g;
+
+    invoke-direct {v0, v1}, LR/g;-><init>(F)V
+
+    sput-object v0, LR/b;->s:LR/g;
+
+    new-instance v0, LR/g;
+
+    invoke-direct {v0, v2}, LR/g;-><init>(F)V
+
+    sput-object v0, LR/b;->t:LR/g;
+
+    new-instance v0, LR/g;
+
+    invoke-direct {v0, v3}, LR/g;-><init>(F)V
+
+    sput-object v0, LR/b;->u:LR/g;
+
+    new-instance v0, LR/b;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, LR/b;->v:LR/b;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
-
-    move-object v9, p1
-
-    check-cast v9, Lf5/p;
-
-    check-cast p2, Ljava/lang/Number;
-
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
-
-    iget p1, p0, Lr/b;->q:I
-
-    or-int/lit8 p1, p1, 0x1
-
-    invoke-static {p1}, Lf5/d;->T(I)I
-
-    move-result v10
-
-    iget-object v6, p0, Lr/b;->n:Lo/m;
-
-    iget v11, p0, Lr/b;->r:I
-
-    iget-object v0, p0, Lr/b;->h:Lr5/q;
-
-    iget-object v1, p0, Lr/b;->i:Lr/u;
-
-    iget-object v2, p0, Lr/b;->j:Lq/V1;
-
-    iget-boolean v3, p0, Lr/b;->k:Z
-
-    iget-object v4, p0, Lr/b;->l:Lq/h;
-
-    iget-object v5, p0, Lr/b;->m:Lr5/c;
-
-    iget-boolean v7, p0, Lr/b;->o:Z
-
-    iget-object v8, p0, Lr/b;->p:Lh4/c;
-
-    invoke-static/range {v0 .. v11}, Lp1/h;->a(Lr5/q;Lr/u;Lq/V1;ZLq/h;Lr5/c;Lo/m;ZLh4/c;Lf5/p;II)V
-
-    sget-object p1, Lu9/y;->a:Lu9/y;
-
-    return-object p1
 .end method

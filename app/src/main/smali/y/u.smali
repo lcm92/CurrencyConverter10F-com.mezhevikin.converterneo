@@ -1,89 +1,72 @@
-.class public final Ly/u;
-.super Lr5/p;
+.class public final synthetic LY/u;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lq0/l;
-.implements Lq0/p;
-.implements Lq0/m;
+.implements LZ/i;
 
 
 # instance fields
-.field public t:Ly/f;
+.field public final synthetic g:I
 
-.field public u:Lw/Q1;
-
-.field public v:La5/b0;
-
-.field public final w:Lf5/j0;
+.field public final synthetic h:Landroid/graphics/ColorSpace;
 
 
 # direct methods
-.method public constructor <init>(Ly/f;Lw/Q1;La5/b0;)V
+.method public synthetic constructor <init>(Landroid/graphics/ColorSpace;I)V
     .locals 0
 
-    invoke-direct {p0}, Lr5/p;-><init>()V
+    iput p2, p0, LY/u;->g:I
 
-    iput-object p1, p0, Ly/u;->t:Ly/f;
+    iput-object p1, p0, LY/u;->h:Landroid/graphics/ColorSpace;
 
-    iput-object p2, p0, Ly/u;->u:Lw/Q1;
-
-    iput-object p3, p0, Ly/u;->v:La5/b0;
-
-    sget-object p1, Lf5/W1;->l:Lf5/W1;
-
-    const/4 p2, 0x0
-
-    invoke-static {p2, p1}, Lf5/d;->J(Ljava/lang/Object;Lf5/M10;)Lf5/j0;
-
-    move-result-object p1
-
-    iput-object p1, p0, Ly/u;->w:Lf5/j0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final S(Lq0/Z1;)V
+.method public final c(D)D
     .locals 1
 
-    iget-object v0, p0, Ly/u;->w:Lf5/j0;
+    iget v0, p0, LY/u;->g:I
 
-    invoke-virtual {v0, p1}, Lf5/j0;->setValue(Ljava/lang/Object;)V
+    packed-switch v0, :pswitch_data_0
 
-    return-void
-.end method
+    iget-object v0, p0, LY/u;->h:Landroid/graphics/ColorSpace;
 
-.method public final q0()V
-    .locals 2
+    check-cast v0, Landroid/graphics/ColorSpace$Rgb;
 
-    iget-object v0, p0, Ly/u;->t:Ly/f;
+    invoke-virtual {v0}, Landroid/graphics/ColorSpace$Rgb;->getEotf()Ljava/util/function/DoubleUnaryOperator;
 
-    iget-object v1, v0, Ly/f;->a:Ly/u;
+    move-result-object v0
 
-    if-nez v1, :cond_0
+    invoke-interface {v0, p1, p2}, Ljava/util/function/DoubleUnaryOperator;->applyAsDouble(D)D
 
-    iput-object p0, v0, Ly/f;->a:Ly/u;
+    move-result-wide p1
 
-    return-void
+    return-wide p1
 
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
+    :pswitch_0
+    iget-object v0, p0, LY/u;->h:Landroid/graphics/ColorSpace;
 
-    const-string v1, "Expected textInputModifierNode to be null"
+    check-cast v0, Landroid/graphics/ColorSpace$Rgb;
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroid/graphics/ColorSpace$Rgb;->getOetf()Ljava/util/function/DoubleUnaryOperator;
 
-    throw v0
-.end method
+    move-result-object v0
 
-.method public final r0()V
-    .locals 1
+    invoke-interface {v0, p1, p2}, Ljava/util/function/DoubleUnaryOperator;->applyAsDouble(D)D
 
-    iget-object v0, p0, Ly/u;->t:Ly/f;
+    move-result-wide p1
 
-    invoke-virtual {v0, p0}, Ly/f;->k(Ly/u;)V
+    return-wide p1
 
-    return-void
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

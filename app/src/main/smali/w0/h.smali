@@ -1,74 +1,37 @@
-.class public final Lw0/h;
-.super Ljava/lang/Object;
+.class public final LW0/h;
+.super Ljava/lang/Thread;
 .source "SourceFile"
 
-# interfaces
-.implements Lr5/r;
 
-
-# static fields
-.field public static final g:Lw0/h;
+# instance fields
+.field public final g:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Ljava/lang/Runnable;)V
     .locals 1
 
-    new-instance v0, Lw0/h;
+    const-string v0, "fonts-androidx"
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
-    sput-object v0, Lw0/h;->g:Lw0/h;
+    const/16 p1, 0xa
+
+    iput p1, p0, LW0/h;->g:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final f(Ly9/i;)Ly9/i;
-    .locals 0
-
-    invoke-static {p0, p1}, Lk4/a;->W(Ly9/g;Ly9/i;)Ly9/i;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final h(Ljava/lang/Object;Lh4/e;)Ljava/lang/Object;
-    .locals 0
-
-    invoke-interface {p2, p1, p0}, Lh4/e;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final n(Ly9/h;)Ly9/i;
-    .locals 0
-
-    invoke-static {p0, p1}, Lk4/a;->T(Ly9/g;Ly9/h;)Ly9/i;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final t(Ly9/h;)Ly9/g;
-    .locals 0
-
-    invoke-static {p0, p1}, Lk4/a;->H(Ly9/g;Ly9/h;)Ly9/g;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final w()F
+.method public final run()V
     .locals 1
 
-    const/4 v0, 0x0
+    iget v0, p0, LW0/h;->g:I
 
-    return v0
+    invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
+
+    invoke-super {p0}, Ljava/lang/Thread;->run()V
+
+    return-void
 .end method

@@ -43,11 +43,11 @@
 
     move-result-object p1
 
-    new-instance v0, Ls6/i;
+    new-instance v0, LS0/i;
 
     const/4 v1, 0x4
 
-    invoke-direct {v0, p0, v1, p1}, Ls6/i;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1}, LS0/i;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     invoke-static {v0}, Ll1/f;->a(Ljava/lang/Runnable;)V
 

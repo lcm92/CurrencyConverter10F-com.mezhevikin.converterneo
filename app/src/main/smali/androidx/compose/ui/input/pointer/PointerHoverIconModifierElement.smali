@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/input/pointer/PointerHoverIconModifierElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -51,7 +51,7 @@
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object v1, Lw/N1;->b:Lk0/a;
+    sget-object v1, Lw/N;->b:Lk0/a;
 
     invoke-virtual {v1, v1}, Lk0/a;->equals(Ljava/lang/Object;)Z
 
@@ -92,12 +92,12 @@
     return v1
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
     new-instance v0, Lk0/l;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iget-boolean v1, p0, Landroidx/compose/ui/input/pointer/PointerHoverIconModifierElement;->a:Z
 
@@ -106,14 +106,14 @@
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 3
 
     check-cast p1, Lk0/l;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object v0, Lw/N1;->b:Lk0/a;
+    sget-object v0, Lw/N;->b:Lk0/a;
 
     invoke-virtual {v0, v0}, Lk0/a;->equals(Ljava/lang/Object;)Z
 
@@ -195,7 +195,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget-object v1, Lw/N1;->b:Lk0/a;
+    sget-object v1, Lw/N;->b:Lk0/a;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

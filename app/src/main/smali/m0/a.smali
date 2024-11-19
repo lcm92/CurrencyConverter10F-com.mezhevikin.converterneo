@@ -1,10 +1,11 @@
-.class public final Lm0/a;
-.super Lr5/p;
+.class public interface abstract LM0/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lq0/m;
 
+# virtual methods
+.method public abstract a(F)F
+.end method
 
-# instance fields
-.field public t:Lr0/m;
+.method public abstract b(F)F
+.end method

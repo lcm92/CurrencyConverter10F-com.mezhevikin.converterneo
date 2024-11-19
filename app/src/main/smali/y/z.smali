@@ -1,105 +1,154 @@
-.class public final Ly/z;
+.class public final LY/z;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Ly/z;
+# instance fields
+.field public final a:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(I)V
+    .locals 0
 
-    new-instance v0, Ly/z;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Ly/z;->a:Ly/z;
+    iput p1, p0, LY/z;->a:I
 
     return-void
 .end method
 
+.method public static final a(II)Z
+    .locals 0
+
+    if-ne p0, p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
 
 # virtual methods
-.method public final a(Landroid/view/inputmethod/EditorInfo;Lg6/b;)V
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
-    sget-object v0, Lg6/b;->i:Lg6/b;
+    instance-of v0, p1, LY/z;
 
-    sget-object v0, Lg6/b;->i:Lg6/b;
+    const/4 v1, 0x0
 
-    invoke-static {p2, v0}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    check-cast p1, LY/z;
+
+    iget p1, p1, LY/z;->a:I
+
+    iget v0, p0, LY/z;->a:I
+
+    if-eq v0, p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x1
+
+    :goto_0
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget v0, p0, LY/z;->a:I
+
+    invoke-static {v0}, Ljava/lang/Integer;->hashCode(I)I
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    return v0
+.end method
 
-    const/4 p2, 0x0
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    iput-object p2, p1, Landroid/view/inputmethod/EditorInfo;->hintLocales:Landroid/os/LocaleList;
+    iget v0, p0, LY/z;->a:I
 
-    goto :goto_1
+    const/4 v1, 0x0
 
-    :cond_0
-    new-instance v0, Ljava/util/ArrayList;
-
-    const/16 v1, 0xa
-
-    invoke-static {p2, v1}, Lv9/m;->d0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v1}, LY/z;->a(II)Z
 
     move-result v1
 
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+    if-eqz v1, :cond_0
 
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    const-string v0, "Argb8888"
 
-    move-result-object p2
+    goto :goto_0
 
-    :goto_0
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+    :cond_0
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, LY/z;->a(II)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lg6/a;
-
-    iget-object v1, v1, Lg6/a;->a:Ljava/util/Locale;
-
-    invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    const-string v0, "Alpha8"
 
     goto :goto_0
 
     :cond_1
-    const/4 p2, 0x0
+    const/4 v1, 0x2
 
-    new-array p2, p2, [Ljava/util/Locale;
+    invoke-static {v0, v1}, LY/z;->a(II)Z
 
-    invoke-interface {v0, p2}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    move-result v1
 
-    move-result-object p2
+    if-eqz v1, :cond_2
 
-    check-cast p2, [Ljava/util/Locale;
+    const-string v0, "Rgb565"
 
-    array-length v0, p2
+    goto :goto_0
 
-    invoke-static {p2, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    :cond_2
+    const/4 v1, 0x3
 
-    move-result-object p2
+    invoke-static {v0, v1}, LY/z;->a(II)Z
 
-    check-cast p2, [Ljava/util/Locale;
+    move-result v1
 
-    new-instance v0, Landroid/os/LocaleList;
+    if-eqz v1, :cond_3
 
-    invoke-direct {v0, p2}, Landroid/os/LocaleList;-><init>([Ljava/util/Locale;)V
+    const-string v0, "F16"
 
-    iput-object v0, p1, Landroid/view/inputmethod/EditorInfo;->hintLocales:Landroid/os/LocaleList;
+    goto :goto_0
 
-    :goto_1
-    return-void
+    :cond_3
+    const/4 v1, 0x4
+
+    invoke-static {v0, v1}, LY/z;->a(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    const-string v0, "Gpu"
+
+    goto :goto_0
+
+    :cond_4
+    const-string v0, "Unknown"
+
+    :goto_0
+    return-object v0
 .end method

@@ -1,53 +1,66 @@
-.class public abstract Lz/a;
+.class public final LZ/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:J
+.field public static final b:LZ/a;
 
-.field public static final synthetic b:I
+
+# instance fields
+.field public final a:[F
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 2
 
-    const/high16 v0, 0x7fc00000    # Float.NaN
+    const/16 v0, 0x9
 
-    invoke-static {v0, v0}, Lz/a;->a(FF)J
+    new-array v0, v0, [F
 
-    move-result-wide v0
+    fill-array-data v0, :array_0
 
-    sput-wide v0, Lz/a;->a:J
+    new-instance v1, LZ/a;
+
+    invoke-direct {v1, v0}, LZ/a;-><init>([F)V
+
+    sput-object v1, LZ/a;->b:LZ/a;
+
+    return-void
+
+    nop
+
+    :array_0
+    .array-data 4
+        0x3f652546    # 0.8951f
+        -0x40bff2e5    # -0.7502f
+        0x3d1f559b    # 0.0389f
+        0x3e886595    # 0.2664f
+        0x3fdb53f8    # 1.7135f
+        -0x4273b646    # -0.0685f
+        -0x41dab9f5    # -0.1614f
+        0x3d1652bd    # 0.0367f
+        0x3f83c9ef    # 1.0296f
+    .end array-data
+.end method
+
+.method public constructor <init>([F)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LZ/a;->a:[F
 
     return-void
 .end method
 
-.method public static a(FF)J
-    .locals 4
 
-    invoke-static {p0}, Ljava/lang/Float;->floatToRawIntBits(F)I
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 1
 
-    move-result p0
+    const-string v0, "Bradford"
 
-    int-to-long v0, p0
-
-    invoke-static {p1}, Ljava/lang/Float;->floatToRawIntBits(F)I
-
-    move-result p0
-
-    int-to-long p0, p0
-
-    const/16 v2, 0x20
-
-    shl-long/2addr v0, v2
-
-    const-wide v2, 0xffffffffL
-
-    and-long/2addr p0, v2
-
-    or-long/2addr p0, v0
-
-    return-wide p0
+    return-object v0
 .end method

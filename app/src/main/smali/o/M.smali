@@ -1,25 +1,23 @@
-.class public final Lo/m;
+.class public abstract LO/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public a:Ll/x;
-
-.field public final b:Lr5/r;
+# static fields
+.field public static final a:LF/X0;
 
 
 # direct methods
-.method public constructor <init>(Ll/x;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, LO/j;->j:LO/j;
 
-    iput-object p1, p0, Lo/m;->a:Ll/x;
+    new-instance v1, LF/X0;
 
-    sget-object p1, Landroidx/compose/foundation/gestures/a;->b:Lo/V1;
+    invoke-direct {v1, v0}, LF/p0;-><init>(Lh4/a;)V
 
-    iput-object p1, p0, Lo/m;->b:Lr5/r;
+    sput-object v1, LO/m;->a:LF/X0;
 
     return-void
 .end method

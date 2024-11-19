@@ -7,5 +7,5 @@
 
 
 # virtual methods
-.method public abstract b(Ly9/i;II)Lv4/e;
+.method public abstract b(LY3/i;II)Lv4/e;
 .end method

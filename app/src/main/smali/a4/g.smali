@@ -1,46 +1,60 @@
-.class public abstract La4/g;
-.super La4/a;
+.class public final synthetic LA4/g;
+.super Li4/f;
 .source "SourceFile"
+
+# interfaces
+.implements Lh4/e;
+
+
+# static fields
+.field public static final o:LA4/g;
 
 
 # direct methods
-.method public constructor <init>(Ly9/d;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 7
 
-    invoke-direct {p0, p1}, La4/a;-><init>(Ly9/d;)V
+    new-instance v6, LA4/g;
 
-    if-eqz p1, :cond_1
+    const-string v4, "createSegment(JLkotlinx/coroutines/sync/SemaphoreSegment;)Lkotlinx/coroutines/sync/SemaphoreSegment;"
 
-    invoke-interface {p1}, Ly9/d;->o()Ly9/i;
+    const/4 v5, 0x1
 
-    move-result-object p1
+    const/4 v1, 0x2
 
-    sget-object v0, Ly9/j;->g:Ly9/j;
+    const-class v2, LA4/j;
 
-    if-ne p1, v0, :cond_0
+    const-string v3, "createSegment"
 
-    goto :goto_0
+    move-object v0, v6
 
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    invoke-direct/range {v0 .. v5}, Li4/f;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
-    const-string v0, "Coroutines with restricted suspension must have EmptyCoroutineContext"
+    sput-object v6, LA4/g;->o:LA4/g;
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_1
-    :goto_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final o()Ly9/i;
-    .locals 1
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
-    sget-object v0, Ly9/j;->g:Ly9/j;
+    check-cast p1, Ljava/lang/Number;
 
-    return-object v0
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+
+    move-result-wide v0
+
+    check-cast p2, LA4/k;
+
+    sget p1, LA4/j;->a:I
+
+    new-instance p1, LA4/k;
+
+    const/4 v2, 0x0
+
+    invoke-direct {p1, v0, v1, p2, v2}, LA4/k;-><init>(JLA4/k;I)V
+
+    return-object p1
 .end method

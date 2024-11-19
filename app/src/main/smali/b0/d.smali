@@ -1,137 +1,55 @@
-.class public interface abstract Lb0/d;
-.super Ljava/lang/Object;
+.class public final LB0/d;
+.super Lv2/h;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lb0/c;
+# instance fields
+.field public final i:Ljava/text/BreakIterator;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 1
 
-    sget-object v0, Lb0/c;->a:Lb0/c;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lb0/d;->a:Lb0/c;
+    invoke-static {}, Ljava/text/BreakIterator;->getCharacterInstance()Ljava/text/BreakIterator;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/text/BreakIterator;->setText(Ljava/lang/String;)V
+
+    iput-object v0, p0, LB0/d;->i:Ljava/text/BreakIterator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract A()F
-.end method
-
-.method public abstract B(Landroid/graphics/Outline;J)V
-.end method
-
-.method public abstract C()F
-.end method
-
-.method public abstract D()F
-.end method
-
-.method public abstract E()F
-.end method
-
-.method public abstract F()I
-.end method
-
-.method public abstract G(J)V
-.end method
-
-.method public abstract H()J
-.end method
-
-.method public abstract I(Ll6/b;Ll6/k;Lb0/b;La5/h0;)V
-.end method
-
-.method public abstract J()F
-.end method
-
-.method public abstract K(Z)V
-.end method
-
-.method public abstract L()I
-.end method
-
-.method public abstract M()F
-.end method
-
-.method public abstract a()F
-.end method
-
-.method public abstract b(F)V
-.end method
-
-.method public abstract c(F)V
-.end method
-
-.method public abstract d(F)V
-.end method
-
-.method public abstract e(F)V
-.end method
-
-.method public abstract g()V
-.end method
-
-.method public abstract i(F)V
-.end method
-
-.method public abstract j(F)V
-.end method
-
-.method public abstract k(F)V
-.end method
-
-.method public l()Z
+.method public final N(I)I
     .locals 1
 
-    const/4 v0, 0x1
+    iget-object v0, p0, LB0/d;->i:Ljava/text/BreakIterator;
 
-    return v0
+    invoke-virtual {v0, p1}, Ljava/text/BreakIterator;->following(I)I
+
+    move-result p1
+
+    return p1
 .end method
 
-.method public abstract m(F)V
-.end method
+.method public final P(I)I
+    .locals 1
 
-.method public abstract n(F)V
-.end method
+    iget-object v0, p0, LB0/d;->i:Ljava/text/BreakIterator;
 
-.method public abstract o()V
-.end method
+    invoke-virtual {v0, p1}, Ljava/text/BreakIterator;->preceding(I)I
 
-.method public abstract p(I)V
-.end method
+    move-result p1
 
-.method public abstract q(J)V
-.end method
-
-.method public abstract r()F
-.end method
-
-.method public abstract s()Landroid/graphics/Matrix;
-.end method
-
-.method public abstract t(F)V
-.end method
-
-.method public abstract u()F
-.end method
-
-.method public abstract v(IIJ)V
-.end method
-
-.method public abstract w()F
-.end method
-
-.method public abstract x(Ly5/p;)V
-.end method
-
-.method public abstract y()J
-.end method
-
-.method public abstract z(J)V
+    return p1
 .end method

@@ -1,167 +1,61 @@
-.class public interface abstract Lo0/q;
+.class public final synthetic LO0/q;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lr5/o;
+.implements Landroid/window/OnBackInvokedCallback;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lh4/a;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lh4/a;I)V
+    .locals 0
+
+    iput p2, p0, LO0/q;->a:I
+
+    iput-object p1, p0, LO0/q;->b:Lh4/a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public a(Lq0/N1;Lo0/D1;I)I
-    .locals 4
+.method public final onBackInvoked()V
+    .locals 2
 
-    new-instance v0, Lo0/j;
+    iget v0, p0, LO0/q;->a:I
 
-    const/4 v1, 0x1
+    packed-switch v0, :pswitch_data_0
 
-    const/4 v2, 0x2
+    iget-object v0, p0, LO0/q;->b:Lh4/a;
 
-    const/4 v3, 0x1
+    const-string v1, "$onBackInvoked"
 
-    invoke-direct {v0, p2, v1, v2, v3}, Lo0/j;-><init>(Lo0/D1;III)V
+    invoke-static {v0, v1}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 p2, 0x0
+    invoke-interface {v0}, Lh4/a;->b()Ljava/lang/Object;
 
-    const/16 v1, 0xd
+    return-void
 
-    invoke-static {p3, p2, v1}, Lk4/a;->c(III)J
+    :pswitch_0
+    iget-object v0, p0, LO0/q;->b:Lh4/a;
 
-    move-result-wide p2
+    if-eqz v0, :cond_0
 
-    new-instance v1, Lo0/o;
+    invoke-interface {v0}, Lh4/a;->b()Ljava/lang/Object;
 
-    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
+    :cond_0
+    return-void
 
-    move-result-object v2
-
-    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
-
-    invoke-interface {p0, v1, v0, p2, p3}, Lo0/q;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Lo0/F1;->h()I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public c(Lq0/N1;Lo0/D1;I)I
-    .locals 4
-
-    new-instance v0, Lo0/j;
-
-    const/4 v1, 0x2
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x1
-
-    invoke-direct {v0, p2, v1, v2, v3}, Lo0/j;-><init>(Lo0/D1;III)V
-
-    const/4 p2, 0x0
-
-    const/4 v1, 0x7
-
-    invoke-static {p2, p3, v1}, Lk4/a;->c(III)J
-
-    move-result-wide p2
-
-    new-instance v1, Lo0/o;
-
-    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
-
-    move-result-object v2
-
-    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
-
-    invoke-interface {p0, v1, v0, p2, p3}, Lo0/q;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Lo0/F1;->f()I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public d(Lq0/N1;Lo0/D1;I)I
-    .locals 3
-
-    new-instance v0, Lo0/j;
-
-    const/4 v1, 0x2
-
-    const/4 v2, 0x1
-
-    invoke-direct {v0, p2, v1, v1, v2}, Lo0/j;-><init>(Lo0/D1;III)V
-
-    const/4 p2, 0x0
-
-    const/16 v1, 0xd
-
-    invoke-static {p3, p2, v1}, Lk4/a;->c(III)J
-
-    move-result-wide p2
-
-    new-instance v1, Lo0/o;
-
-    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
-
-    move-result-object v2
-
-    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
-
-    invoke-interface {p0, v1, v0, p2, p3}, Lo0/q;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Lo0/F1;->h()I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public f(Lq0/N1;Lo0/D1;I)I
-    .locals 3
-
-    new-instance v0, Lo0/j;
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x1
-
-    invoke-direct {v0, p2, v1, v1, v2}, Lo0/j;-><init>(Lo0/D1;III)V
-
-    const/4 p2, 0x0
-
-    const/4 v1, 0x7
-
-    invoke-static {p2, p3, v1}, Lk4/a;->c(III)J
-
-    move-result-wide p2
-
-    new-instance v1, Lo0/o;
-
-    invoke-interface {p1}, Lo0/m;->getLayoutDirection()Ll6/k;
-
-    move-result-object v2
-
-    invoke-direct {v1, p1, v2}, Lo0/o;-><init>(Lo0/m;Ll6/k;)V
-
-    invoke-interface {p0, v1, v0, p2, p3}, Lo0/q;->h(Lo0/G1;Lo0/D1;J)Lo0/F1;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Lo0/F1;->f()I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public abstract h(Lo0/G1;Lo0/D1;J)Lo0/F1;
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

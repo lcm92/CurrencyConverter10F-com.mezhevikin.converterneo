@@ -1,64 +1,74 @@
-.class public final synthetic Lo0/b;
-.super Li4/f;
+.class public final LO0/B;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements Lh4/a;
 
 
-# static fields
-.field public static final o:Lo0/b;
+# instance fields
+.field public final synthetic h:Li4/r;
+
+.field public final synthetic i:LO0/C;
+
+.field public final synthetic j:LL0/i;
+
+.field public final synthetic k:J
+
+.field public final synthetic l:J
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(Li4/r;LO0/C;LL0/i;JJ)V
+    .locals 0
 
-    new-instance v6, Lo0/b;
+    iput-object p1, p0, LO0/B;->h:Li4/r;
 
-    const-string v4, "max(II)I"
+    iput-object p2, p0, LO0/B;->i:LO0/C;
 
-    const/4 v5, 0x1
+    iput-object p3, p0, LO0/B;->j:LL0/i;
 
-    const/4 v1, 0x2
+    iput-wide p4, p0, LO0/B;->k:J
 
-    const-class v2, Lk4/a;
+    iput-wide p6, p0, LO0/B;->l:J
 
-    const-string v3, "max"
+    const/4 p1, 0x0
 
-    move-object v0, v6
-
-    invoke-direct/range {v0 .. v5}, Li4/f;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    sput-object v6, Lo0/b;->o:Lo0/b;
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final b()Ljava/lang/Object;
+    .locals 8
 
-    check-cast p1, Ljava/lang/Number;
+    iget-object v0, p0, LO0/B;->i:LO0/C;
 
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {v0}, LO0/C;->getPositionProvider()LO0/F;
 
-    move-result p1
+    move-result-object v1
 
-    check-cast p2, Ljava/lang/Number;
+    invoke-virtual {v0}, LO0/C;->getParentLayoutDirection()LL0/k;
 
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+    move-result-object v5
 
-    move-result p2
+    iget-wide v3, p0, LO0/B;->k:J
 
-    invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
+    iget-wide v6, p0, LO0/B;->l:J
 
-    move-result p1
+    iget-object v2, p0, LO0/B;->j:LL0/i;
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-interface/range {v1 .. v7}, LO0/F;->a(LL0/i;JLL0/k;J)J
 
-    move-result-object p1
+    move-result-wide v0
 
-    return-object p1
+    iget-object v2, p0, LO0/B;->h:Li4/r;
+
+    iput-wide v0, v2, Li4/r;->g:J
+
+    sget-object v0, LU3/y;->a:LU3/y;
+
+    return-object v0
 .end method

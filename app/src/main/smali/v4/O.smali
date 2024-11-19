@@ -1,27 +1,33 @@
-.class public final Lv4/o;
+.class public final Lv4/O;
 .super La4/c;
 .source "SourceFile"
 
 
 # instance fields
-.field public j:Lk/s;
+.field public j:Lv4/P;
 
-.field public k:Ljava/lang/Object;
+.field public k:Lv4/f;
 
-.field public synthetic l:Ljava/lang/Object;
+.field public l:Lv4/Q;
 
-.field public final synthetic m:Lk/s;
+.field public m:Ls4/X;
 
-.field public n:I
+.field public n:Ljava/lang/Object;
+
+.field public synthetic o:Ljava/lang/Object;
+
+.field public final synthetic p:Lv4/P;
+
+.field public q:I
 
 
 # direct methods
-.method public constructor <init>(Lk/s;Ly9/d;)V
+.method public constructor <init>(Lv4/P;LY3/d;)V
     .locals 0
 
-    iput-object p1, p0, Lv4/o;->m:Lk/s;
+    iput-object p1, p0, Lv4/O;->p:Lv4/P;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+    invoke-direct {p0, p2}, La4/c;-><init>(LY3/d;)V
 
     return-void
 .end method
@@ -31,23 +37,23 @@
 .method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iput-object p1, p0, Lv4/o;->l:Ljava/lang/Object;
+    iput-object p1, p0, Lv4/O;->o:Ljava/lang/Object;
 
-    iget p1, p0, Lv4/o;->n:I
+    iget p1, p0, Lv4/O;->q:I
 
     const/high16 v0, -0x80000000
 
     or-int/2addr p1, v0
 
-    iput p1, p0, Lv4/o;->n:I
+    iput p1, p0, Lv4/O;->q:I
 
-    iget-object p1, p0, Lv4/o;->m:Lk/s;
+    iget-object p1, p0, Lv4/O;->p:Lv4/P;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, p0}, Lk/s;->a(Ljava/lang/Object;Ly9/d;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p0}, Lv4/P;->c(Lv4/f;LY3/d;)Ljava/lang/Object;
 
-    move-result-object p1
+    sget-object p1, LZ3/a;->g:LZ3/a;
 
     return-object p1
 .end method

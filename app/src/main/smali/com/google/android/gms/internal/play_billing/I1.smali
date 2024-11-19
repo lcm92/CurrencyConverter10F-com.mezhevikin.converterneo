@@ -1860,7 +1860,7 @@
     move-object v6, p0
 
     :goto_2
-    new-instance p0, La9/H1;
+    new-instance p0, LA3/H;
 
     int-to-long v1, p3
 
@@ -1872,7 +1872,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v6}, La9/H1;-><init>(JJILjava/lang/IndexOutOfBoundsException;)V
+    invoke-direct/range {v0 .. v6}, LA3/H;-><init>(JJILjava/lang/IndexOutOfBoundsException;)V
 
     throw p0
 
@@ -1933,7 +1933,7 @@
     move-object v8, p0
 
     :goto_4
-    new-instance p0, La9/H1;
+    new-instance p0, LA3/H;
 
     int-to-long v3, v1
 
@@ -1945,7 +1945,7 @@
 
     move-object v2, p0
 
-    invoke-direct/range {v2 .. v8}, La9/H1;-><init>(JJILjava/lang/IndexOutOfBoundsException;)V
+    invoke-direct/range {v2 .. v8}, LA3/H;-><init>(JJILjava/lang/IndexOutOfBoundsException;)V
 
     throw p0
 

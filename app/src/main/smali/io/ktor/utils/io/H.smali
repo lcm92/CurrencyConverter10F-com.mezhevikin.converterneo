@@ -6,7 +6,7 @@
 # static fields
 .field public static final synthetic a:Lio/ktor/utils/io/H;
 
-.field public static final b:Lu9/n;
+.field public static final b:LU3/n;
 
 
 # direct methods
@@ -21,11 +21,11 @@
 
     sget-object v0, Lio/ktor/utils/io/G;->h:Lio/ktor/utils/io/G;
 
-    invoke-static {v0}, Lu9/a;->d(Lh4/a;)Lu9/n;
+    invoke-static {v0}, LU3/a;->d(Lh4/a;)LU3/n;
 
     move-result-object v0
 
-    sput-object v0, Lio/ktor/utils/io/H;->b:Lu9/n;
+    sput-object v0, Lio/ktor/utils/io/H;->b:LU3/n;
 
     return-void
 .end method

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/gestures/ScrollableElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -14,7 +14,7 @@
 # instance fields
 .field public final a:Lo/k0;
 
-.field public final b:Lo/O1;
+.field public final b:Lo/O;
 
 .field public final c:Lm/n0;
 
@@ -30,14 +30,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lm/n0;Lo/d;Lo/m;Lo/O1;Lo/k0;Lp/i;ZZ)V
+.method public constructor <init>(Lm/n0;Lo/d;Lo/m;Lo/O;Lo/k0;Lp/i;ZZ)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p5, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->a:Lo/k0;
 
-    iput-object p4, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O1;
+    iput-object p4, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O;
 
     iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->c:Lm/n0;
 
@@ -90,9 +90,9 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O1;
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O;
 
-    iget-object v3, p1, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O1;
+    iget-object v3, p1, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O;
 
     if-eq v1, v3, :cond_3
 
@@ -185,7 +185,7 @@
 
     mul-int/2addr v0, v1
 
-    iget-object v2, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O1;
+    iget-object v2, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O;
 
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
@@ -217,13 +217,13 @@
 
     iget-boolean v3, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->d:Z
 
-    invoke-static {v2, v1, v3}, Lk/P1;->c(IIZ)I
+    invoke-static {v2, v1, v3}, Lk/P;->c(IIZ)I
 
     move-result v2
 
     iget-boolean v3, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->e:Z
 
-    invoke-static {v2, v1, v3}, Lk/P1;->c(IIZ)I
+    invoke-static {v2, v1, v3}, Lk/P;->c(IIZ)I
 
     move-result v2
 
@@ -277,7 +277,7 @@
     return v2
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 10
 
     new-instance v9, Lo/j0;
@@ -292,7 +292,7 @@
 
     iget-object v3, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->f:Lo/m;
 
-    iget-object v4, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O1;
+    iget-object v4, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O;
 
     iget-boolean v7, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->d:Z
 
@@ -300,12 +300,12 @@
 
     move-object v0, v9
 
-    invoke-direct/range {v0 .. v8}, Lo/j0;-><init>(Lm/n0;Lo/d;Lo/m;Lo/O1;Lo/k0;Lp/i;ZZ)V
+    invoke-direct/range {v0 .. v8}, Lo/j0;-><init>(Lm/n0;Lo/d;Lo/m;Lo/O;Lo/k0;Lp/i;ZZ)V
 
     return-object v9
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 11
 
     check-cast p1, Lo/j0;
@@ -320,13 +320,13 @@
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p1, Lo/j0;->J:Lhh/e;
+    iget-object v0, p1, Lo/j0;->J:LH4/e;
 
-    iput-boolean v1, v0, Lhh/e;->a:Z
+    iput-boolean v1, v0, LH4/e;->a:Z
 
-    iget-object v0, p1, Lo/j0;->G:Lo/U1;
+    iget-object v0, p1, Lo/j0;->G:Lo/U;
 
-    iput-boolean v1, v0, Lo/U1;->t:Z
+    iput-boolean v1, v0, Lo/U;->t:Z
 
     move v0, v2
 
@@ -369,13 +369,13 @@
 
     iput-object v7, v6, Lo/s0;->b:Lm/n0;
 
-    iget-object v8, v6, Lo/s0;->d:Lo/O1;
+    iget-object v8, v6, Lo/s0;->d:Lo/O;
 
-    iget-object v9, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O1;
+    iget-object v9, p0, Landroidx/compose/foundation/gestures/ScrollableElement;->b:Lo/O;
 
     if-eq v8, v9, :cond_3
 
-    iput-object v9, v6, Lo/s0;->d:Lo/O1;
+    iput-object v9, v6, Lo/s0;->d:Lo/O;
 
     move v3, v2
 
@@ -393,13 +393,13 @@
     :cond_4
     iput-object v5, v6, Lo/s0;->c:Lo/m;
 
-    iget-object v5, p1, Lo/j0;->F:Le6/l;
+    iget-object v5, p1, Lo/j0;->F:LE0/l;
 
-    iput-object v5, v6, Lo/s0;->f:Le6/l;
+    iput-object v5, v6, Lo/s0;->f:LE0/l;
 
     iget-object v5, p1, Lo/j0;->K:Lo/k;
 
-    iput-object v9, v5, Lo/k;->t:Lo/O1;
+    iput-object v9, v5, Lo/k;->t:Lo/O;
 
     iput-boolean v10, v5, Lo/k;->v:Z
 
@@ -413,16 +413,16 @@
 
     sget-object v4, Lo/e;->j:Lo/e;
 
-    iget-object v5, v6, Lo/s0;->d:Lo/O1;
+    iget-object v5, v6, Lo/s0;->d:Lo/O;
 
-    sget-object v6, Lo/O1;->g:Lo/O1;
+    sget-object v6, Lo/O;->g:Lo/O;
 
     if-ne v5, v6, :cond_5
 
     goto :goto_2
 
     :cond_5
-    sget-object v6, Lo/O1;->h:Lo/O1;
+    sget-object v6, Lo/O;->h:Lo/O;
 
     :goto_2
     iput-object v4, p1, Lo/j0;->w:Lo/e;
@@ -439,14 +439,14 @@
 
     invoke-virtual {p1}, Lo/j0;->E0()V
 
-    iget-object v1, p1, Lo/j0;->C:Lk0/B1;
+    iget-object v1, p1, Lo/j0;->C:Lk0/B;
 
     if-eqz v1, :cond_6
 
     invoke-virtual {p1, v1}, Lq0/n;->z0(Lq0/m;)V
 
     :cond_6
-    iput-object v5, p1, Lo/j0;->C:Lk0/B1;
+    iput-object v5, p1, Lo/j0;->C:Lk0/B;
 
     :cond_7
     move v3, v2
@@ -467,11 +467,11 @@
     iput-object v4, p1, Lo/j0;->y:Lp/i;
 
     :cond_9
-    iget-object v1, p1, Lo/j0;->v:Lo/O1;
+    iget-object v1, p1, Lo/j0;->v:Lo/O;
 
     if-eq v1, v6, :cond_a
 
-    iput-object v6, p1, Lo/j0;->v:Lo/O1;
+    iput-object v6, p1, Lo/j0;->v:Lo/O;
 
     goto :goto_3
 
@@ -481,16 +481,16 @@
     :goto_3
     if-eqz v2, :cond_b
 
-    iget-object v1, p1, Lo/j0;->C:Lk0/B1;
+    iget-object v1, p1, Lo/j0;->C:Lk0/B;
 
     if-eqz v1, :cond_b
 
-    invoke-virtual {v1}, Lk0/B1;->A0()V
+    invoke-virtual {v1}, Lk0/B;->A0()V
 
     :cond_b
     if-eqz v0, :cond_c
 
-    iput-object v5, p1, Lo/j0;->M:Lc5/v;
+    iput-object v5, p1, Lo/j0;->M:LC/v;
 
     iput-object v5, p1, Lo/j0;->N:Lo/i0;
 

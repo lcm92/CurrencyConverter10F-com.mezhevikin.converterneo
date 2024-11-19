@@ -1,12 +1,12 @@
 .class final Landroidx/compose/animation/EnterExitTransitionElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -20,17 +20,17 @@
 
 .field public final d:Ll/p0;
 
-.field public final e:Lk/J1;
+.field public final e:Lk/J;
 
-.field public final f:Lk/K1;
+.field public final f:Lk/K;
 
 .field public final g:Lh4/a;
 
-.field public final h:Lk/B1;
+.field public final h:Lk/B;
 
 
 # direct methods
-.method public constructor <init>(Ll/v0;Ll/p0;Ll/p0;Ll/p0;Lk/J1;Lk/K1;Lh4/a;Lk/B1;)V
+.method public constructor <init>(Ll/v0;Ll/p0;Ll/p0;Ll/p0;Lk/J;Lk/K;Lh4/a;Lk/B;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,13 +43,13 @@
 
     iput-object p4, p0, Landroidx/compose/animation/EnterExitTransitionElement;->d:Ll/p0;
 
-    iput-object p5, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J1;
+    iput-object p5, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J;
 
-    iput-object p6, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K1;
+    iput-object p6, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K;
 
     iput-object p7, p0, Landroidx/compose/animation/EnterExitTransitionElement;->g:Lh4/a;
 
-    iput-object p8, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B1;
+    iput-object p8, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B;
 
     return-void
 .end method
@@ -129,9 +129,9 @@
     return v2
 
     :cond_5
-    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J1;
+    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J;
 
-    iget-object v3, p1, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J1;
+    iget-object v3, p1, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J;
 
     invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -142,9 +142,9 @@
     return v2
 
     :cond_6
-    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K1;
+    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K;
 
-    iget-object v3, p1, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K1;
+    iget-object v3, p1, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K;
 
     invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -168,9 +168,9 @@
     return v2
 
     :cond_8
-    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B1;
+    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B;
 
-    iget-object p1, p1, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B1;
+    iget-object p1, p1, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B;
 
     invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -249,11 +249,11 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J1;
+    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J;
 
-    iget-object v1, v1, Lk/J1;->a:Lk/U1;
+    iget-object v1, v1, Lk/J;->a:Lk/U;
 
-    invoke-virtual {v1}, Lk/U1;->hashCode()I
+    invoke-virtual {v1}, Lk/U;->hashCode()I
 
     move-result v1
 
@@ -261,11 +261,11 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K1;
+    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K;
 
-    iget-object v0, v0, Lk/K1;->a:Lk/U1;
+    iget-object v0, v0, Lk/K;->a:Lk/U;
 
-    invoke-virtual {v0}, Lk/U1;->hashCode()I
+    invoke-virtual {v0}, Lk/U;->hashCode()I
 
     move-result v0
 
@@ -283,7 +283,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B1;
+    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -294,14 +294,14 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 10
 
-    new-instance v9, Lk/I1;
+    new-instance v9, Lk/I;
 
-    iget-object v5, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J1;
+    iget-object v5, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J;
 
-    iget-object v6, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K1;
+    iget-object v6, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K;
 
     iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->a:Ll/v0;
 
@@ -313,51 +313,51 @@
 
     iget-object v7, p0, Landroidx/compose/animation/EnterExitTransitionElement;->g:Lh4/a;
 
-    iget-object v8, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B1;
+    iget-object v8, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B;
 
     move-object v0, v9
 
-    invoke-direct/range {v0 .. v8}, Lk/I1;-><init>(Ll/v0;Ll/p0;Ll/p0;Ll/p0;Lk/J1;Lk/K1;Lh4/a;Lk/B1;)V
+    invoke-direct/range {v0 .. v8}, Lk/I;-><init>(Ll/v0;Ll/p0;Ll/p0;Ll/p0;Lk/J;Lk/K;Lh4/a;Lk/B;)V
 
     return-object v9
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 1
 
-    check-cast p1, Lk/I1;
+    check-cast p1, Lk/I;
 
     iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->a:Ll/v0;
 
-    iput-object v0, p1, Lk/I1;->t:Ll/v0;
+    iput-object v0, p1, Lk/I;->t:Ll/v0;
 
     iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->b:Ll/p0;
 
-    iput-object v0, p1, Lk/I1;->u:Ll/p0;
+    iput-object v0, p1, Lk/I;->u:Ll/p0;
 
     iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->c:Ll/p0;
 
-    iput-object v0, p1, Lk/I1;->v:Ll/p0;
+    iput-object v0, p1, Lk/I;->v:Ll/p0;
 
     iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->d:Ll/p0;
 
-    iput-object v0, p1, Lk/I1;->w:Ll/p0;
+    iput-object v0, p1, Lk/I;->w:Ll/p0;
 
-    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J1;
+    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J;
 
-    iput-object v0, p1, Lk/I1;->x:Lk/J1;
+    iput-object v0, p1, Lk/I;->x:Lk/J;
 
-    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K1;
+    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K;
 
-    iput-object v0, p1, Lk/I1;->y:Lk/K1;
+    iput-object v0, p1, Lk/I;->y:Lk/K;
 
     iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->g:Lh4/a;
 
-    iput-object v0, p1, Lk/I1;->z:Lh4/a;
+    iput-object v0, p1, Lk/I;->z:Lh4/a;
 
-    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B1;
+    iget-object v0, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B;
 
-    iput-object v0, p1, Lk/I1;->A:Lk/B1;
+    iput-object v0, p1, Lk/I;->A:Lk/B;
 
     return-void
 .end method
@@ -403,7 +403,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J1;
+    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->e:Lk/J;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -411,7 +411,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K1;
+    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->f:Lk/K;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -427,7 +427,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B1;
+    iget-object v1, p0, Landroidx/compose/animation/EnterExitTransitionElement;->h:Lk/B;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

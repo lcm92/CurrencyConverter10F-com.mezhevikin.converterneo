@@ -1,42 +1,27 @@
-.class public final Lv2/i;
-.super Ldalvik/system/PathClassLoader;
+.class public abstract LV2/i;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public final loadClass(Ljava/lang/String;Z)Ljava/lang/Class;
-    .locals 1
+# static fields
+.field public static final a:Ljava/text/DateFormat;
 
-    const-string v0, "java."
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
 
-    move-result v0
+    const/4 v0, 0x3
 
-    if-nez v0, :cond_0
+    invoke-static {v0, v0}, Ljava/text/DateFormat;->getDateTimeInstance(II)Ljava/text/DateFormat;
 
-    const-string v0, "android."
+    move-result-object v0
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    const-string v1, "getDateTimeInstance(...)"
 
-    move-result v0
+    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-nez v0, :cond_0
+    sput-object v0, LV2/i;->a:Ljava/text/DateFormat;
 
-    :try_start_0
-    invoke-virtual {p0, p1}, Ljava/lang/ClassLoader;->findClass(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object p1
-    :try_end_0
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p1
-
-    :catch_0
-    :cond_0
-    invoke-super {p0, p1, p2}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;Z)Ljava/lang/Class;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

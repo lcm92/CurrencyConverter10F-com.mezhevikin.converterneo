@@ -1,187 +1,418 @@
-.class public final Lw2/p;
-.super Lp2/a;
+.class public final enum LW2/p;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lw2/p;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final synthetic A:[LW2/p;
+
+.field public static final enum h:LW2/p;
+
+.field public static final enum i:LW2/p;
+
+.field public static final enum j:LW2/p;
+
+.field public static final enum k:LW2/p;
+
+.field public static final enum l:LW2/p;
+
+.field public static final enum m:LW2/p;
+
+.field public static final enum n:LW2/p;
+
+.field public static final enum o:LW2/p;
+
+.field public static final enum p:LW2/p;
+
+.field public static final enum q:LW2/p;
+
+.field public static final enum r:LW2/p;
+
+.field public static final enum s:LW2/p;
+
+.field public static final enum t:LW2/p;
+
+.field public static final enum u:LW2/p;
+
+.field public static final enum v:LW2/p;
+
+.field public static final enum w:LW2/p;
+
+.field public static final enum x:LW2/p;
+
+.field public static final enum y:LW2/p;
+
+.field public static final enum z:LW2/p;
 
 
 # instance fields
-.field public final g:I
-
-.field public final h:Z
-
-.field public final i:I
-
-.field public final j:Z
-
-.field public final k:I
-
-.field public final l:Lb2/u0;
-
-.field public final m:Z
-
-.field public final n:I
-
-.field public final o:I
-
-.field public final p:Z
-
-.field public final q:I
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 22
 
-    new-instance v0, La8/h;
+    new-instance v0, LW2/p;
 
-    const/16 v1, 0x14
+    const-string v1, "C"
 
-    invoke-direct {v0, v1}, La8/h;-><init>(I)V
+    const-string v2, "CLEAR"
 
-    sput-object v0, Lw2/p;->CREATOR:Landroid/os/Parcelable$Creator;
+    const/4 v3, 0x0
+
+    invoke-direct {v0, v2, v3, v1}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v0, LW2/p;->h:LW2/p;
+
+    new-instance v1, LW2/p;
+
+    const-string v2, "<"
+
+    const-string v3, "BACKSPACE"
+
+    const/4 v4, 0x1
+
+    invoke-direct {v1, v3, v4, v2}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v1, LW2/p;->i:LW2/p;
+
+    new-instance v2, LW2/p;
+
+    const-string v3, "%"
+
+    const-string v4, "PERCENT"
+
+    const/4 v5, 0x2
+
+    invoke-direct {v2, v4, v5, v3}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v2, LW2/p;->j:LW2/p;
+
+    new-instance v3, LW2/p;
+
+    const-string v4, "+"
+
+    const-string v5, "PLUS"
+
+    const/4 v6, 0x3
+
+    invoke-direct {v3, v5, v6, v4}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v3, LW2/p;->k:LW2/p;
+
+    new-instance v4, LW2/p;
+
+    const-string v5, "-"
+
+    const-string v6, "MINUS"
+
+    const/4 v7, 0x4
+
+    invoke-direct {v4, v6, v7, v5}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v4, LW2/p;->l:LW2/p;
+
+    new-instance v5, LW2/p;
+
+    const-string v6, "*"
+
+    const-string v7, "MULTIPLY"
+
+    const/4 v8, 0x5
+
+    invoke-direct {v5, v7, v8, v6}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v5, LW2/p;->m:LW2/p;
+
+    new-instance v6, LW2/p;
+
+    const-string v7, "/"
+
+    const-string v8, "DIVIDE"
+
+    const/4 v9, 0x6
+
+    invoke-direct {v6, v8, v9, v7}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v6, LW2/p;->n:LW2/p;
+
+    new-instance v7, LW2/p;
+
+    const-string v8, "="
+
+    const-string v9, "EQUAL"
+
+    const/4 v10, 0x7
+
+    invoke-direct {v7, v9, v10, v8}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v7, LW2/p;->o:LW2/p;
+
+    new-instance v8, LW2/p;
+
+    const-string v9, "1"
+
+    const-string v10, "ONE"
+
+    const/16 v11, 0x8
+
+    invoke-direct {v8, v10, v11, v9}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v8, LW2/p;->p:LW2/p;
+
+    new-instance v9, LW2/p;
+
+    const-string v10, "2"
+
+    const-string v11, "TWO"
+
+    const/16 v12, 0x9
+
+    invoke-direct {v9, v11, v12, v10}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v9, LW2/p;->q:LW2/p;
+
+    new-instance v10, LW2/p;
+
+    const-string v11, "3"
+
+    const-string v12, "THREE"
+
+    const/16 v13, 0xa
+
+    invoke-direct {v10, v12, v13, v11}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v10, LW2/p;->r:LW2/p;
+
+    new-instance v11, LW2/p;
+
+    const-string v12, "4"
+
+    const-string v13, "FOUR"
+
+    const/16 v14, 0xb
+
+    invoke-direct {v11, v13, v14, v12}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v11, LW2/p;->s:LW2/p;
+
+    new-instance v12, LW2/p;
+
+    const-string v13, "5"
+
+    const-string v14, "FIVE"
+
+    const/16 v15, 0xc
+
+    invoke-direct {v12, v14, v15, v13}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v12, LW2/p;->t:LW2/p;
+
+    new-instance v13, LW2/p;
+
+    const-string v14, "6"
+
+    const-string v15, "SIX"
+
+    move-object/from16 v16, v12
+
+    const/16 v12, 0xd
+
+    invoke-direct {v13, v15, v12, v14}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v13, LW2/p;->u:LW2/p;
+
+    new-instance v14, LW2/p;
+
+    const-string v12, "7"
+
+    const-string v15, "SEVEN"
+
+    move-object/from16 v17, v13
+
+    const/16 v13, 0xe
+
+    invoke-direct {v14, v15, v13, v12}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v14, LW2/p;->v:LW2/p;
+
+    new-instance v15, LW2/p;
+
+    const-string v12, "8"
+
+    const-string v13, "EIGHT"
+
+    move-object/from16 v18, v14
+
+    const/16 v14, 0xf
+
+    invoke-direct {v15, v13, v14, v12}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v15, LW2/p;->w:LW2/p;
+
+    new-instance v14, LW2/p;
+
+    const-string v12, "9"
+
+    const-string v13, "NINE"
+
+    move-object/from16 v19, v15
+
+    const/16 v15, 0x10
+
+    invoke-direct {v14, v13, v15, v12}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v14, LW2/p;->x:LW2/p;
+
+    new-instance v15, LW2/p;
+
+    const-string v12, "0"
+
+    const-string v13, "ZERO"
+
+    move-object/from16 v20, v14
+
+    const/16 v14, 0x11
+
+    invoke-direct {v15, v13, v14, v12}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v15, LW2/p;->y:LW2/p;
+
+    new-instance v14, LW2/p;
+
+    const-string v12, "."
+
+    const-string v13, "DOT"
+
+    move-object/from16 v21, v15
+
+    const/16 v15, 0x12
+
+    invoke-direct {v14, v13, v15, v12}, LW2/p;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v14, LW2/p;->z:LW2/p;
+
+    move-object/from16 v12, v16
+
+    move-object/from16 v13, v17
+
+    move-object/from16 v16, v20
+
+    move-object/from16 v20, v14
+
+    move-object/from16 v14, v18
+
+    move-object/from16 v17, v21
+
+    move-object/from16 v15, v19
+
+    move-object/from16 v18, v20
+
+    filled-new-array/range {v0 .. v18}, [LW2/p;
+
+    move-result-object v0
+
+    sput-object v0, LW2/p;->A:[LW2/p;
 
     return-void
 .end method
 
-.method public constructor <init>(IZIZILb2/u0;ZIIZI)V
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iput p1, p0, Lw2/p;->g:I
-
-    iput-boolean p2, p0, Lw2/p;->h:Z
-
-    iput p3, p0, Lw2/p;->i:I
-
-    iput-boolean p4, p0, Lw2/p;->j:Z
-
-    iput p5, p0, Lw2/p;->k:I
-
-    iput-object p6, p0, Lw2/p;->l:Lb2/u0;
-
-    iput-boolean p7, p0, Lw2/p;->m:Z
-
-    iput p8, p0, Lw2/p;->n:I
-
-    iput-boolean p10, p0, Lw2/p;->p:Z
-
-    iput p9, p0, Lw2/p;->o:I
-
-    iput p11, p0, Lw2/p;->q:I
+    iput-object p3, p0, LW2/p;->g:Ljava/lang/String;
 
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LW2/p;
+    .locals 1
+
+    const-class v0, LW2/p;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, LW2/p;
+
+    return-object p0
+.end method
+
+.method public static values()[LW2/p;
+    .locals 1
+
+    sget-object v0, LW2/p;->A:[LW2/p;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [LW2/p;
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
+.method public final a()Ljava/lang/String;
+    .locals 2
 
-    const/16 v0, 0x4f45
+    sget-object v0, LW2/o;->a:[I
 
-    invoke-static {p1, v0}, Lp2/c;->w(Landroid/os/Parcel;I)I
+    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aget v0, v0, v1
+
+    const/16 v1, 0x9
+
+    if-ne v0, v1, :cond_1
+
+    sget-object v0, LV2/q;->d:LU3/n;
+
+    invoke-virtual {v0}, LU3/n;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    const-string v1, "."
+
+    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    const/4 v1, 0x1
+    if-eqz v0, :cond_0
 
-    const/4 v2, 0x4
+    const-string v0, "dot"
 
-    invoke-static {p1, v1, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    goto :goto_0
 
-    iget v1, p0, Lw2/p;->g:I
+    :cond_0
+    const-string v0, "comma"
 
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
+    goto :goto_0
 
-    const/4 v1, 0x2
+    :cond_1
+    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
-    invoke-static {p1, v1, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    move-result-object v0
 
-    iget-boolean v1, p0, Lw2/p;->h:Z
+    sget-object v1, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
 
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
-    const/4 v1, 0x3
+    move-result-object v0
 
-    invoke-static {p1, v1, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    const-string v1, "toLowerCase(...)"
 
-    iget v1, p0, Lw2/p;->i:I
+    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    invoke-static {p1, v2, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
-
-    iget-boolean v1, p0, Lw2/p;->j:Z
-
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/4 v1, 0x5
-
-    invoke-static {p1, v1, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
-
-    iget v1, p0, Lw2/p;->k:I
-
-    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    iget-object v1, p0, Lw2/p;->l:Lb2/u0;
-
-    const/4 v3, 0x6
-
-    invoke-static {p1, v3, v1, p2}, Lp2/c;->s(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
-
-    const/4 p2, 0x7
-
-    invoke-static {p1, p2, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
-
-    iget-boolean p2, p0, Lw2/p;->m:Z
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/16 p2, 0x8
-
-    invoke-static {p1, p2, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
-
-    iget p2, p0, Lw2/p;->n:I
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/16 p2, 0x9
-
-    invoke-static {p1, p2, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
-
-    iget p2, p0, Lw2/p;->o:I
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/16 p2, 0xa
-
-    invoke-static {p1, p2, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
-
-    iget-boolean p2, p0, Lw2/p;->p:Z
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    const/16 p2, 0xb
-
-    invoke-static {p1, p2, v2}, Lp2/c;->y(Landroid/os/Parcel;II)V
-
-    iget p2, p0, Lw2/p;->q:I
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    invoke-static {p1, v0}, Lp2/c;->x(Landroid/os/Parcel;I)V
-
-    return-void
+    :goto_0
+    return-object v0
 .end method

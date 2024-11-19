@@ -30,12 +30,12 @@
     return-object v0
 .end method
 
-.method public final u(Ly9/i;Ljava/lang/Runnable;)V
+.method public final u(LY3/i;Ljava/lang/Runnable;)V
     .locals 0
 
     sget-object p2, Ls4/x0;->i:Ls4/u;
 
-    invoke-interface {p1, p2}, Ly9/i;->t(Ly9/h;)Ly9/g;
+    invoke-interface {p1, p2}, LY3/i;->t(LY3/h;)LY3/g;
 
     move-result-object p1
 

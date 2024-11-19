@@ -1,73 +1,27 @@
-.class public final Lv2/l;
-.super Lcom/google/android/gms/internal/play_billing/e;
+.class public abstract LV2/l;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public final Z(Lu2/b;Ljava/lang/String;ILu2/b;)Lu2/a;
-    .locals 1
+# static fields
+.field public static final a:LU3/n;
 
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/play_billing/e;->D()Landroid/os/Parcel;
 
-    move-result-object v0
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
 
-    invoke-static {v0, p1}, Ly2/a;->c(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    new-instance v0, LV2/j;
 
-    invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    const/4 v1, 0x0
 
-    invoke-virtual {v0, p3}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-direct {v0, v1}, LV2/j;-><init>(I)V
 
-    invoke-static {v0, p4}, Ly2/a;->c(Landroid/os/Parcel;Landroid/os/IInterface;)V
-
-    const/4 p1, 0x2
-
-    invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/internal/play_billing/e;->h(Landroid/os/Parcel;I)Landroid/os/Parcel;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
-
-    move-result-object p2
-
-    invoke-static {p2}, Lu2/b;->X(Landroid/os/IBinder;)Lu2/a;
-
-    move-result-object p2
-
-    invoke-virtual {p1}, Landroid/os/Parcel;->recycle()V
-
-    return-object p2
-.end method
-
-.method public final a0(Lu2/b;Ljava/lang/String;ILu2/b;)Lu2/a;
-    .locals 1
-
-    invoke-virtual {p0}, Lcom/google/android/gms/internal/play_billing/e;->D()Landroid/os/Parcel;
+    invoke-static {v0}, LU3/a;->d(Lh4/a;)LU3/n;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Ly2/a;->c(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    sput-object v0, LV2/l;->a:LU3/n;
 
-    invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p3}, Landroid/os/Parcel;->writeInt(I)V
-
-    invoke-static {v0, p4}, Ly2/a;->c(Landroid/os/Parcel;Landroid/os/IInterface;)V
-
-    const/4 p1, 0x3
-
-    invoke-virtual {p0, v0, p1}, Lcom/google/android/gms/internal/play_billing/e;->h(Landroid/os/Parcel;I)Landroid/os/Parcel;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
-
-    move-result-object p2
-
-    invoke-static {p2}, Lu2/b;->X(Landroid/os/IBinder;)Lu2/a;
-
-    move-result-object p2
-
-    invoke-virtual {p1}, Landroid/os/Parcel;->recycle()V
-
-    return-object p2
+    return-void
 .end method

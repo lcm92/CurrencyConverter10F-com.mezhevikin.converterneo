@@ -36,9 +36,9 @@
 
     iget-object v0, p0, Landroidx/lifecycle/G;->b:Ljava/lang/Object;
 
-    check-cast v0, Lo5/l;
+    check-cast v0, LO/l;
 
-    invoke-virtual {v0}, Lo5/l;->a()Ljava/util/Map;
+    invoke-virtual {v0}, LO/l;->a()Ljava/util/Map;
 
     move-result-object v0
 

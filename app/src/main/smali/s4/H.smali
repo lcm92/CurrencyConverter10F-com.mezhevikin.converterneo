@@ -1,137 +1,171 @@
-.class public final Ls4/h;
-.super Ls4/Z1;
+.class public final Ls4/H;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ls4/l0;
+.implements Lh4/c;
 
 
 # instance fields
-.field public final k:Ls4/f;
+.field public final synthetic g:I
+
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Ls4/f;)V
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
     .locals 0
 
-    invoke-direct {p0}, Lx4/i;-><init>()V
+    iput p1, p0, Ls4/H;->g:I
 
-    iput-object p1, p0, Ls4/h;->k:Ls4/f;
+    iput-object p2, p0, Ls4/H;->h:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final a(Ljava/lang/Throwable;)V
+    .locals 1
+
+    iget v0, p0, Ls4/H;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Ls4/H;->h:Ljava/lang/Object;
+
+    check-cast v0, Lh4/c;
+
+    invoke-interface {v0, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+
+    :pswitch_0
+    iget-object p1, p0, Ls4/H;->h:Ljava/lang/Object;
+
+    check-cast p1, Ls4/G;
+
+    invoke-interface {p1}, Ls4/G;->a()V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
 .method public final bridge synthetic j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .locals 1
+
+    iget v0, p0, Ls4/H;->g:I
+
+    packed-switch v0, :pswitch_data_0
 
     check-cast p1, Ljava/lang/Throwable;
 
-    invoke-virtual {p0, p1}, Ls4/h;->r(Ljava/lang/Throwable;)V
+    invoke-virtual {p0, p1}, Ls4/H;->a(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lu9/y;->a:Lu9/y;
+    sget-object p1, LU3/y;->a:LU3/y;
 
     return-object p1
+
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
+    invoke-virtual {p0, p1}, Ls4/H;->a(Ljava/lang/Throwable;)V
+
+    sget-object p1, LU3/y;->a:LU3/y;
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final r(Ljava/lang/Throwable;)V
-    .locals 6
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    invoke-virtual {p0}, Ls4/b0;->q()Ls4/g0;
+    iget v0, p0, Ls4/H;->g:I
 
-    move-result-object p1
+    packed-switch v0, :pswitch_data_0
 
-    iget-object v0, p0, Ls4/h;->k:Ls4/f;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ls4/f;->n(Ls4/g0;)Ljava/lang/Throwable;
+    const-string v1, "InvokeOnCancel["
 
-    move-result-object p1
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ls4/f;->v()Z
+    iget-object v1, p0, Ls4/H;->h:Ljava/lang/Object;
 
-    move-result v1
+    check-cast v1, Lh4/c;
 
-    if-nez v1, :cond_0
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    goto :goto_1
+    move-result-object v1
 
-    :cond_0
-    iget-object v1, v0, Ls4/f;->j:Ly9/d;
+    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    const-string v2, "null cannot be cast to non-null type kotlinx.coroutines.internal.DispatchedContinuation<*>"
+    move-result-object v1
 
-    invoke-static {v1, v2}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    check-cast v1, Lx4/g;
+    const/16 v1, 0x40
 
-    :goto_0
-    sget-object v2, Lx4/g;->n:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Ls4/y;->l(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    sget-object v4, Lx4/a;->d:Li8/i;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v3, v4}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    const/16 v1, 0x5d
 
-    move-result v5
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    if-eqz v5, :cond_3
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    :cond_1
-    invoke-virtual {v2, v1, v4, p1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+    move-result-object v0
 
-    move-result v3
+    return-object v0
 
-    if-eqz v3, :cond_2
+    :pswitch_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    goto :goto_2
+    const-string v1, "DisposeOnCancel["
 
-    :cond_2
-    invoke-virtual {v2, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v3
+    iget-object v1, p0, Ls4/H;->h:Ljava/lang/Object;
 
-    if-eq v3, v4, :cond_1
+    check-cast v1, Ls4/G;
 
-    goto :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    :cond_3
-    instance-of v4, v3, Ljava/lang/Throwable;
+    const/16 v1, 0x5d
 
-    if-eqz v4, :cond_4
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    goto :goto_2
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    :cond_4
-    const/4 v4, 0x0
+    move-result-object v0
 
-    invoke-virtual {v2, v1, v3, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
+    return-object v0
 
-    move-result v4
+    nop
 
-    if-eqz v4, :cond_6
-
-    :goto_1
-    invoke-virtual {v0, p1}, Ls4/f;->P(Ljava/lang/Throwable;)Z
-
-    invoke-virtual {v0}, Ls4/f;->v()Z
-
-    move-result p1
-
-    if-nez p1, :cond_5
-
-    invoke-virtual {v0}, Ls4/f;->l()V
-
-    :cond_5
-    :goto_2
-    return-void
-
-    :cond_6
-    invoke-virtual {v2, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    if-eq v4, v3, :cond_4
-
-    goto :goto_0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

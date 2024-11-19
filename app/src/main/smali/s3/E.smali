@@ -1,8 +1,3 @@
-.class public interface abstract Ls3/e;
-.super Ljava/lang/Object;
+.class public final LS3/e;
+.super LS3/h;
 .source "SourceFile"
-
-
-# virtual methods
-.method public abstract n(Ls3/d;)Z
-.end method

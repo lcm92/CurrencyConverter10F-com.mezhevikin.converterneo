@@ -1,56 +1,230 @@
-.class public final Lm1/b;
+.class public final LM1/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/os/IInterface;
+.implements LQ2/d;
 
 
-# instance fields
-.field public a:Landroid/os/IBinder;
+# static fields
+.field public static final a:LM1/b;
+
+.field public static final b:LQ2/c;
+
+.field public static final c:LQ2/c;
+
+.field public static final d:LQ2/c;
+
+.field public static final e:LQ2/c;
+
+.field public static final f:LQ2/c;
+
+.field public static final g:LQ2/c;
+
+.field public static final h:LQ2/c;
+
+.field public static final i:LQ2/c;
+
+.field public static final j:LQ2/c;
+
+.field public static final k:LQ2/c;
+
+.field public static final l:LQ2/c;
+
+.field public static final m:LQ2/c;
 
 
-# virtual methods
-.method public final asBinder()Landroid/os/IBinder;
+# direct methods
+.method static constructor <clinit>()V
     .locals 1
 
-    iget-object v0, p0, Lm1/b;->a:Landroid/os/IBinder;
+    new-instance v0, LM1/b;
 
-    return-object v0
-.end method
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-.method public final h([Ljava/lang/String;)V
-    .locals 3
+    sput-object v0, LM1/b;->a:LM1/b;
 
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+    const-string v0, "sdkVersion"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
 
     move-result-object v0
 
-    :try_start_0
-    const-string v1, "androidx.room.IMultiInstanceInvalidationCallback"
+    sput-object v0, LM1/b;->b:LQ2/c;
 
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+    const-string v0, "model"
 
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeStringArray([Ljava/lang/String;)V
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
 
-    iget-object p1, p0, Lm1/b;->a:Landroid/os/IBinder;
+    move-result-object v0
 
-    const/4 v1, 0x0
+    sput-object v0, LM1/b;->c:LQ2/c;
 
-    const/4 v2, 0x1
+    const-string v0, "hardware"
 
-    invoke-interface {p1, v2, v0, v1, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
 
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+    move-result-object v0
+
+    sput-object v0, LM1/b;->d:LQ2/c;
+
+    const-string v0, "device"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
+
+    move-result-object v0
+
+    sput-object v0, LM1/b;->e:LQ2/c;
+
+    const-string v0, "product"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
+
+    move-result-object v0
+
+    sput-object v0, LM1/b;->f:LQ2/c;
+
+    const-string v0, "osBuild"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
+
+    move-result-object v0
+
+    sput-object v0, LM1/b;->g:LQ2/c;
+
+    const-string v0, "manufacturer"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
+
+    move-result-object v0
+
+    sput-object v0, LM1/b;->h:LQ2/c;
+
+    const-string v0, "fingerprint"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
+
+    move-result-object v0
+
+    sput-object v0, LM1/b;->i:LQ2/c;
+
+    const-string v0, "locale"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
+
+    move-result-object v0
+
+    sput-object v0, LM1/b;->j:LQ2/c;
+
+    const-string v0, "country"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
+
+    move-result-object v0
+
+    sput-object v0, LM1/b;->k:LQ2/c;
+
+    const-string v0, "mccMnc"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
+
+    move-result-object v0
+
+    sput-object v0, LM1/b;->l:LQ2/c;
+
+    const-string v0, "applicationBuild"
+
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
+
+    move-result-object v0
+
+    sput-object v0, LM1/b;->m:LQ2/c;
 
     return-void
+.end method
 
-    :catchall_0
-    move-exception p1
 
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+# virtual methods
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
 
-    throw p1
+    check-cast p1, LM1/a;
+
+    check-cast p2, LQ2/e;
+
+    check-cast p1, LM1/h;
+
+    iget-object v0, p1, LM1/h;->a:Ljava/lang/Integer;
+
+    sget-object v1, LM1/b;->b:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->b:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->c:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->c:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->d:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->d:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->e:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->e:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->f:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->f:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->g:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->g:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->h:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->h:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->i:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->i:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->j:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->j:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->k:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object v0, p1, LM1/h;->k:Ljava/lang/String;
+
+    sget-object v1, LM1/b;->l:LQ2/c;
+
+    invoke-interface {p2, v1, v0}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    iget-object p1, p1, LM1/h;->l:Ljava/lang/String;
+
+    sget-object v0, LM1/b;->m:LQ2/c;
+
+    invoke-interface {p2, v0, p1}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
+
+    return-void
 .end method

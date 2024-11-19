@@ -1,64 +1,56 @@
-.class public final synthetic Lo0/a;
-.super Li4/f;
+.class public final synthetic LO0/A;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field public static final o:Lo0/a;
+# instance fields
+.field public final synthetic g:I
+
+.field public final synthetic h:Lh4/a;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public synthetic constructor <init>(Lh4/a;I)V
+    .locals 0
 
-    new-instance v6, Lo0/a;
+    iput p2, p0, LO0/A;->g:I
 
-    const-string v4, "min(II)I"
+    iput-object p1, p0, LO0/A;->h:Lh4/a;
 
-    const/4 v5, 0x1
-
-    const/4 v1, 0x2
-
-    const-class v2, Lk4/a;
-
-    const-string v3, "min"
-
-    move-object v0, v6
-
-    invoke-direct/range {v0 .. v5}, Li4/f;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    sput-object v6, Lo0/a;->o:Lo0/a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final run()V
+    .locals 1
 
-    check-cast p1, Ljava/lang/Number;
+    iget v0, p0, LO0/A;->g:I
 
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+    packed-switch v0, :pswitch_data_0
 
-    move-result p1
+    iget-object v0, p0, LO0/A;->h:Lh4/a;
 
-    check-cast p2, Ljava/lang/Number;
+    invoke-interface {v0}, Lh4/a;->b()Ljava/lang/Object;
 
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+    return-void
 
-    move-result p2
+    :pswitch_0
+    iget-object v0, p0, LO0/A;->h:Lh4/a;
 
-    invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
+    invoke-interface {v0}, Lh4/a;->b()Ljava/lang/Object;
 
-    move-result p1
+    return-void
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    nop
 
-    move-result-object p1
-
-    return-object p1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

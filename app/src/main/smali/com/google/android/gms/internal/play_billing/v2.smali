@@ -31,7 +31,7 @@
 
     if-nez v2, :cond_0
 
-    new-instance v2, Lg7/b;
+    new-instance v2, LG1/b;
 
     iget-object v3, p0, Lcom/google/android/gms/internal/play_billing/v2;->a:Ljava/io/Serializable;
 
@@ -47,7 +47,7 @@
 
     const/4 v4, 0x4
 
-    invoke-direct {v2, v3, v4}, Lg7/b;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v3, v4}, LG1/b;-><init>(Ljava/lang/String;I)V
 
     new-instance v3, Lcom/google/android/gms/internal/play_billing/t1;
 

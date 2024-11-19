@@ -79,7 +79,7 @@
     :cond_0
     sget-object v0, Landroidx/lifecycle/S;->d:Ll2/g;
 
-    iget-object p2, p2, Lh9/r;->g:Ljava/lang/Object;
+    iget-object p2, p2, LH3/r;->g:Ljava/lang/Object;
 
     check-cast p2, Ljava/util/LinkedHashMap;
 
@@ -106,7 +106,7 @@
 
     if-nez p2, :cond_2
 
-    invoke-static {p1}, Lh8/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
+    invoke-static {p1}, LH2/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
 
     move-result-object p1
 
@@ -257,7 +257,7 @@
     throw v1
 
     :cond_0
-    invoke-static {p1}, Lh8/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
+    invoke-static {p1}, LH2/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
 
     move-result-object p2
 

@@ -8,7 +8,7 @@
 
 .field public static final f:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
-.field public static final g:Li8/i;
+.field public static final g:LI2/i;
 
 
 # instance fields
@@ -49,7 +49,7 @@
 
     sput-object v0, Lx4/l;->f:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
-    new-instance v0, Li8/i;
+    new-instance v0, LI2/i;
 
     const-string v1, "REMOVE_FROZEN"
 
@@ -57,9 +57,9 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Li8/i;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, v1, v2, v3}, LI2/i;-><init>(Ljava/lang/String;IZ)V
 
-    sput-object v0, Lx4/l;->g:Li8/i;
+    sput-object v0, Lx4/l;->g:LI2/i;
 
     return-void
 .end method
@@ -508,7 +508,7 @@
 
     if-eqz v1, :cond_1
 
-    sget-object v0, Lx4/l;->g:Li8/i;
+    sget-object v0, Lx4/l;->g:LI2/i;
 
     return-object v0
 

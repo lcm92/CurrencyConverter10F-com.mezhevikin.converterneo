@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:Li/A1;
+.field public final a:Li/A;
 
 .field public b:Ls/t;
 
-.field public final c:Li/D1;
+.field public final c:Li/D;
 
 .field public final d:Ljava/util/ArrayList;
 
@@ -20,7 +20,7 @@
 
 .field public final h:Ljava/util/ArrayList;
 
-.field public final i:Lr5/q;
+.field public final i:LR/q;
 
 
 # direct methods
@@ -29,21 +29,21 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sget-object v0, Li/G1;->a:[J
+    sget-object v0, Li/G;->a:[J
 
-    new-instance v0, Li/A1;
+    new-instance v0, Li/A;
 
-    invoke-direct {v0}, Li/A1;-><init>()V
+    invoke-direct {v0}, Li/A;-><init>()V
 
-    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A1;
+    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A;
 
-    sget v0, Li/H1;->a:I
+    sget v0, Li/H;->a:I
 
-    new-instance v0, Li/D1;
+    new-instance v0, Li/D;
 
-    invoke-direct {v0}, Li/D1;-><init>()V
+    invoke-direct {v0}, Li/D;-><init>()V
 
-    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/a;->c:Li/D1;
+    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/a;->c:Li/D;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -79,7 +79,7 @@
 
     invoke-direct {v0, p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$DisplayingDisappearingItemsElement;-><init>(Landroidx/compose/foundation/lazy/layout/a;)V
 
-    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/a;->i:Lr5/q;
+    iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/a;->i:LR/q;
 
     return-void
 .end method
@@ -130,14 +130,14 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lk/P1;->i(Ljava/lang/Object;)V
+    invoke-static {v0}, Lk/P;->i(Ljava/lang/Object;)V
 
     const/4 v0, 0x0
 
     throw v0
 .end method
 
-.method public final b(IILjava/util/ArrayList;La5/l;Lr/j;ZZII)V
+.method public final b(IILjava/util/ArrayList;LA/l;Lr/j;ZZII)V
     .locals 29
 
     move-object/from16 v0, p0
@@ -186,9 +186,9 @@
 
     move-result-object v12
 
-    check-cast v12, Lo0/N1;
+    check-cast v12, Lo0/N;
 
-    invoke-virtual {v12}, Lo0/N1;->r()Ljava/lang/Object;
+    invoke-virtual {v12}, Lo0/N;->r()Ljava/lang/Object;
 
     add-int/lit8 v11, v11, 0x1
 
@@ -200,9 +200,9 @@
     goto :goto_0
 
     :cond_1
-    iget-object v6, v0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A1;
+    iget-object v6, v0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A;
 
-    iget v8, v6, Li/A1;->e:I
+    iget v8, v6, Li/A;->e:I
 
     if-nez v8, :cond_2
 
@@ -211,7 +211,7 @@
     return-void
 
     :cond_2
-    invoke-static/range {p3 .. p3}, Lv9/k;->m0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static/range {p3 .. p3}, LV3/k;->m0(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -233,9 +233,9 @@
     const/4 v9, 0x1
 
     :goto_3
-    iget-object v10, v6, Li/A1;->b:[Ljava/lang/Object;
+    iget-object v10, v6, Li/A;->b:[Ljava/lang/Object;
 
-    iget-object v11, v6, Li/A1;->a:[J
+    iget-object v11, v6, Li/A;->a:[J
 
     array-length v12, v11
 
@@ -245,7 +245,7 @@
 
     const/16 v17, 0x7
 
-    iget-object v8, v0, Landroidx/compose/foundation/lazy/layout/a;->c:Li/D1;
+    iget-object v8, v0, Landroidx/compose/foundation/lazy/layout/a;->c:Li/D;
 
     const-wide v18, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
 
@@ -299,7 +299,7 @@
 
     aget-object v15, v10, v22
 
-    invoke-virtual {v14, v15}, Li/D1;->a(Ljava/lang/Object;)Z
+    invoke-virtual {v14, v15}, Li/D;->a(Ljava/lang/Object;)Z
 
     :cond_5
     const/16 v15, 0x8
@@ -348,7 +348,7 @@
 
     iget-object v8, v7, Lr/n;->h:Ljava/lang/Object;
 
-    invoke-virtual {v14, v8}, Li/D1;->j(Ljava/lang/Object;)Z
+    invoke-virtual {v14, v8}, Li/D;->j(Ljava/lang/Object;)Z
 
     iget-object v8, v7, Lr/n;->b:Ljava/util/List;
 
@@ -367,9 +367,9 @@
 
     move-result-object v11
 
-    check-cast v11, Lo0/N1;
+    check-cast v11, Lo0/N;
 
-    invoke-virtual {v11}, Lo0/N1;->r()Ljava/lang/Object;
+    invoke-virtual {v11}, Lo0/N;->r()Ljava/lang/Object;
 
     add-int/lit8 v10, v10, 0x1
 
@@ -378,9 +378,9 @@
     :cond_9
     iget-object v7, v7, Lr/n;->h:Ljava/lang/Object;
 
-    iget-object v8, v0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A1;
+    iget-object v8, v0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A;
 
-    invoke-virtual {v8, v7}, Li/A1;->g(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v7}, Li/A;->g(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
@@ -427,7 +427,7 @@
 
     invoke-direct {v10, v5, v12}, Ls/o;-><init>(Ls/t;I)V
 
-    invoke-static {v7, v10}, Lv9/p;->e0(Ljava/util/List;Ljava/util/Comparator;)V
+    invoke-static {v7, v10}, LV3/p;->e0(Ljava/util/List;Ljava/util/Comparator;)V
 
     :cond_b
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
@@ -455,13 +455,13 @@
 
     iget-object v1, v2, Lr/n;->h:Ljava/lang/Object;
 
-    invoke-virtual {v6, v1}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v1}, Li/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-static {v1}, Lk/P1;->i(Ljava/lang/Object;)V
+    invoke-static {v1}, Lk/P;->i(Ljava/lang/Object;)V
 
     invoke-virtual {v2, v10}, Lr/n;->a(I)J
 
@@ -489,7 +489,7 @@
 
     invoke-direct {v10, v5, v12}, Ls/o;-><init>(Ls/t;I)V
 
-    invoke-static {v2, v10}, Lv9/p;->e0(Ljava/util/List;Ljava/util/Comparator;)V
+    invoke-static {v2, v10}, LV3/p;->e0(Ljava/util/List;Ljava/util/Comparator;)V
 
     :cond_e
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
@@ -517,13 +517,13 @@
 
     iget-object v1, v2, Lr/n;->h:Ljava/lang/Object;
 
-    invoke-virtual {v6, v1}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v1}, Li/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-static {v1}, Lk/P1;->i(Ljava/lang/Object;)V
+    invoke-static {v1}, Lk/P;->i(Ljava/lang/Object;)V
 
     invoke-virtual {v2, v5}, Lr/n;->a(I)J
 
@@ -531,9 +531,9 @@
 
     :cond_10
     :goto_9
-    iget-object v5, v14, Li/D1;->b:[Ljava/lang/Object;
+    iget-object v5, v14, Li/D;->b:[Ljava/lang/Object;
 
-    iget-object v10, v14, Li/D1;->a:[J
+    iget-object v10, v14, Li/D;->a:[J
 
     array-length v11, v10
 
@@ -608,15 +608,15 @@
 
     aget-object v1, v5, v1
 
-    invoke-virtual {v6, v1}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v1}, Li/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
     invoke-static {v2}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-static {v2}, Lk/P1;->i(Ljava/lang/Object;)V
+    invoke-static {v2}, Lk/P;->i(Ljava/lang/Object;)V
 
-    invoke-virtual {v4, v1}, La5/l;->b(Ljava/lang/Object;)I
+    invoke-virtual {v4, v1}, LA/l;->b(Ljava/lang/Object;)I
 
     const/4 v1, 0x0
 
@@ -675,9 +675,9 @@
 
     const/4 v3, 0x1
 
-    invoke-direct {v2, v4, v3}, Ls/p;-><init>(La5/l;I)V
+    invoke-direct {v2, v4, v3}, Ls/p;-><init>(LA/l;I)V
 
-    invoke-static {v13, v2}, Lv9/p;->e0(Ljava/util/List;Ljava/util/Comparator;)V
+    invoke-static {v13, v2}, LV3/p;->e0(Ljava/util/List;Ljava/util/Comparator;)V
 
     :cond_16
     invoke-virtual {v13}, Ljava/util/ArrayList;->size()I
@@ -697,13 +697,13 @@
 
     iget-object v10, v5, Lr/n;->h:Ljava/lang/Object;
 
-    invoke-virtual {v6, v10}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v10}, Li/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v10
 
     invoke-static {v10}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-static {v10}, Lk/P1;->i(Ljava/lang/Object;)V
+    invoke-static {v10}, Lk/P;->i(Ljava/lang/Object;)V
 
     invoke-static {v1, v5}, Landroidx/compose/foundation/lazy/layout/a;->e([ILr/n;)I
 
@@ -711,7 +711,7 @@
 
     if-eqz p6, :cond_18
 
-    invoke-static/range {p3 .. p3}, Lv9/k;->l0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static/range {p3 .. p3}, LV3/k;->l0(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v11
 
@@ -800,9 +800,9 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v2, v4, v3}, Ls/p;-><init>(La5/l;I)V
+    invoke-direct {v2, v4, v3}, Ls/p;-><init>(LA/l;I)V
 
-    invoke-static {v12, v2}, Lv9/p;->e0(Ljava/util/List;Ljava/util/Comparator;)V
+    invoke-static {v12, v2}, LV3/p;->e0(Ljava/util/List;Ljava/util/Comparator;)V
 
     :cond_1b
     invoke-virtual {v12}, Ljava/util/ArrayList;->size()I
@@ -822,13 +822,13 @@
 
     iget-object v5, v4, Lr/n;->h:Ljava/lang/Object;
 
-    invoke-virtual {v6, v5}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v5}, Li/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
     invoke-static {v5}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-static {v5}, Lk/P1;->i(Ljava/lang/Object;)V
+    invoke-static {v5}, Lk/P;->i(Ljava/lang/Object;)V
 
     invoke-static {v1, v4}, Landroidx/compose/foundation/lazy/layout/a;->e([ILr/n;)I
 
@@ -836,7 +836,7 @@
 
     if-eqz p6, :cond_1d
 
-    invoke-static/range {p3 .. p3}, Lv9/k;->s0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static/range {p3 .. p3}, LV3/k;->s0(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v14
 
@@ -905,7 +905,7 @@
 
     invoke-virtual {v12}, Ljava/util/ArrayList;->clear()V
 
-    invoke-virtual {v11}, Li/D1;->b()V
+    invoke-virtual {v11}, Li/D;->b()V
 
     return-void
 .end method
@@ -913,15 +913,15 @@
 .method public final c()V
     .locals 15
 
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A1;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A;
 
-    iget v1, v0, Li/A1;->e:I
+    iget v1, v0, Li/A;->e:I
 
     if-eqz v1, :cond_4
 
-    iget-object v1, v0, Li/A1;->c:[Ljava/lang/Object;
+    iget-object v1, v0, Li/A;->c:[Ljava/lang/Object;
 
-    iget-object v2, v0, Li/A1;->a:[J
+    iget-object v2, v0, Li/A;->a:[J
 
     array-length v3, v2
 
@@ -990,7 +990,7 @@
 
     aget-object v0, v1, v0
 
-    invoke-static {v0}, Lk/P1;->i(Ljava/lang/Object;)V
+    invoke-static {v0}, Lk/P;->i(Ljava/lang/Object;)V
 
     const/4 v0, 0x0
 
@@ -1007,7 +1007,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {v0}, Li/A1;->a()V
+    invoke-virtual {v0}, Li/A;->a()V
 
     :cond_4
     sget-object v0, Ls/g;->h:Ls/g;
@@ -1022,15 +1022,15 @@
 
     iget-object p1, p1, Lr/n;->h:Ljava/lang/Object;
 
-    iget-object p2, p0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A1;
+    iget-object p2, p0, Landroidx/compose/foundation/lazy/layout/a;->a:Li/A;
 
-    invoke-virtual {p2, p1}, Li/A1;->e(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, p1}, Li/A;->e(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     invoke-static {p1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-static {p1}, Lk/P1;->i(Ljava/lang/Object;)V
+    invoke-static {p1}, Lk/P;->i(Ljava/lang/Object;)V
 
     const/4 p1, 0x0
 

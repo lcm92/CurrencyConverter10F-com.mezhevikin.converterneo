@@ -1,55 +1,31 @@
-.class public final Lr/q;
-.super La4/c;
+.class public interface abstract LR/q;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public j:Lr/u;
-
-.field public k:Lm/g0;
-
-.field public l:Lh4/e;
-
-.field public synthetic m:Ljava/lang/Object;
-
-.field public final synthetic n:Lr/u;
-
-.field public o:I
-
-
-# direct methods
-.method public constructor <init>(Lr/u;La4/c;)V
-    .locals 0
-
-    iput-object p1, p0, Lr/q;->n:Lr/u;
-
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
-
-    return-void
+# virtual methods
+.method public abstract b(Lh4/c;)Z
 .end method
 
+.method public abstract g(Ljava/lang/Object;Lh4/e;)Ljava/lang/Object;
+.end method
 
-# virtual methods
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+.method public i(LR/q;)LR/q;
     .locals 1
 
-    iput-object p1, p0, Lr/q;->m:Ljava/lang/Object;
+    sget-object v0, LR/n;->a:LR/n;
 
-    iget p1, p0, Lr/q;->o:I
+    if-ne p1, v0, :cond_0
 
-    const/high16 v0, -0x80000000
+    move-object v0, p0
 
-    or-int/2addr p1, v0
+    goto :goto_0
 
-    iput p1, p0, Lr/q;->o:I
+    :cond_0
+    new-instance v0, LR/k;
 
-    iget-object p1, p0, Lr/q;->n:Lr/u;
+    invoke-direct {v0, p0, p1}, LR/k;-><init>(LR/q;LR/q;)V
 
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0, v0, p0}, Lr/u;->b(Lm/g0;Lh4/e;La4/c;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
+    :goto_0
+    return-object v0
 .end method

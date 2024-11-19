@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/layout/OnSizeChangedModifier;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -76,44 +76,44 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 3
 
-    new-instance v0, Lo0/K1;
+    new-instance v0, Lo0/K;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iget-object v1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lh4/c;
 
-    iput-object v1, v0, Lo0/K1;->t:Lh4/c;
+    iput-object v1, v0, Lo0/K;->t:Lh4/c;
 
     const/high16 v1, -0x80000000
 
-    invoke-static {v1, v1}, Lll/d;->b(II)J
+    invoke-static {v1, v1}, LL4/d;->b(II)J
 
     move-result-wide v1
 
-    iput-wide v1, v0, Lo0/K1;->u:J
+    iput-wide v1, v0, Lo0/K;->u:J
 
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 2
 
-    check-cast p1, Lo0/K1;
+    check-cast p1, Lo0/K;
 
     iget-object v0, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lh4/c;
 
-    iput-object v0, p1, Lo0/K1;->t:Lh4/c;
+    iput-object v0, p1, Lo0/K;->t:Lh4/c;
 
     const/high16 v0, -0x80000000
 
-    invoke-static {v0, v0}, Lll/d;->b(II)J
+    invoke-static {v0, v0}, LL4/d;->b(II)J
 
     move-result-wide v0
 
-    iput-wide v0, p1, Lo0/K1;->u:J
+    iput-wide v0, p1, Lo0/K;->u:J
 
     return-void
 .end method

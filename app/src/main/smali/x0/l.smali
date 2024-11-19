@@ -30,9 +30,9 @@
 .method public final j(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    check-cast p1, Lq0/D1;
+    check-cast p1, Lq0/D;
 
-    invoke-virtual {p1}, Lq0/D1;->o()Lx0/i;
+    invoke-virtual {p1}, Lq0/D;->o()Lx0/i;
 
     move-result-object p1
 

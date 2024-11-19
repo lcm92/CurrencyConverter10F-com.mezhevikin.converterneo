@@ -1,8 +1,8 @@
-.class public interface abstract Lw1/a;
+.class public interface abstract LW1/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/String;Z)V
+.method public abstract a()J
 .end method

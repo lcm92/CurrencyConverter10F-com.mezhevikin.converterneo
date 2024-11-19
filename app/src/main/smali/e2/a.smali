@@ -1,161 +1,116 @@
-.class public final Le2/a;
-.super Lp2/a;
+.class public final LE2/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Le2/a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
-# instance fields
-.field public final g:Ljava/lang/String;
-
-.field public final h:I
-
-.field public final i:I
-
-.field public final j:Z
-
-.field public final k:Z
+.field public static final a:LE2/a;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
-    new-instance v0, La8/h;
+    new-instance v0, LE2/a;
 
-    const/4 v1, 0x7
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0, v1}, La8/h;-><init>(I)V
-
-    sput-object v0, Le2/a;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    return-void
-.end method
-
-.method public constructor <init>(II)V
-    .locals 8
-
-    .line 3
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "afma-sdk-a-v"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, "."
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "0"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v7, 0x0
-
-    const/4 v6, 0x1
-
-    move-object v2, p0
-
-    move v4, p1
-
-    move v5, p2
-
-    .line 4
-    invoke-direct/range {v2 .. v7}, Le2/a;-><init>(Ljava/lang/String;IIZZ)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;IIZZ)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Le2/a;->g:Ljava/lang/String;
-
-    iput p2, p0, Le2/a;->h:I
-
-    iput p3, p0, Le2/a;->i:I
-
-    iput-boolean p4, p0, Le2/a;->j:Z
-
-    iput-boolean p5, p0, Le2/a;->k:Z
+    sput-object v0, LE2/a;->a:LE2/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
-    const/16 p2, 0x4f45
+    const/4 v0, 0x1
 
-    invoke-static {p1, p2}, Lp2/c;->w(Landroid/os/Parcel;I)I
+    if-ne p1, p0, :cond_0
 
-    move-result p2
+    return v0
 
-    iget-object v0, p0, Le2/a;->g:Ljava/lang/String;
+    :cond_0
+    instance-of v1, p1, LE2/a;
 
-    const/4 v1, 0x2
+    const/4 v2, 0x0
 
-    invoke-static {p1, v1, v0}, Lp2/c;->t(Landroid/os/Parcel;ILjava/lang/String;)V
+    if-nez v1, :cond_1
 
-    const/4 v0, 0x3
+    return v2
 
-    const/4 v1, 0x4
+    :cond_1
+    check-cast p1, LE2/a;
 
-    invoke-static {p1, v0, v1}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    iget v0, p0, Le2/a;->h:I
+    const/4 p1, 0x0
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-static {p1, p1}, Lo2/p;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    invoke-static {p1, v1, v1}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    move-result v1
 
-    iget v0, p0, Le2/a;->i:I
+    if-eqz v1, :cond_2
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-static {p1, p1}, Lo2/p;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    const/4 v0, 0x5
+    move-result v1
 
-    invoke-static {p1, v0, v1}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    if-eqz v1, :cond_2
 
-    iget-boolean v0, p0, Le2/a;->j:Z
+    invoke-static {p1, p1}, Lo2/p;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    move-result v1
 
-    const/4 v0, 0x6
+    if-eqz v1, :cond_2
 
-    invoke-static {p1, v0, v1}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    invoke-static {p1, p1}, Lo2/p;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    iget-boolean v0, p0, Le2/a;->k:Z
+    move-result v1
 
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    if-eqz v1, :cond_2
 
-    invoke-static {p1, p2}, Lp2/c;->x(Landroid/os/Parcel;I)V
+    invoke-static {p1, p1}, Lo2/p;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    return-void
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    return v0
+
+    :cond_2
+    return v2
+.end method
+
+.method public final hashCode()I
+    .locals 9
+
+    sget-object v4, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v4
+
+    move-object v1, v4
+
+    move-object v3, v4
+
+    filled-new-array/range {v0 .. v8}, [Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result v0
+
+    return v0
 .end method

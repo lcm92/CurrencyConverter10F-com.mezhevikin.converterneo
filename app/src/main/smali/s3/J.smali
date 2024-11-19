@@ -1,47 +1,100 @@
-.class public abstract Ls3/j;
+.class public final LS3/j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Ljava/util/List;
+# instance fields
+.field public final a:Ljava/util/concurrent/atomic/AtomicReference;
+
+.field public b:Z
+
+.field public c:Z
+
+.field public d:Z
+
+.field public e:Z
+
+.field public f:Z
+
+.field public g:I
+
+.field public h:I
+
+.field public i:I
+
+.field public j:J
+
+.field public k:Ljava/lang/Integer;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 11
+.method public constructor <init>()V
+    .locals 2
 
-    const-string v9, "***,dd-MMM-YYYY hh:mm:ss zzz"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v10, "*** MMM d YYYY hh:mm:ss zzz"
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
-    const-string v0, "***, dd MMM YYYY hh:mm:ss zzz"
+    sget-object v1, LS3/i;->g:LS3/i;
 
-    const-string v1, "****, dd-MMM-YYYY hh:mm:ss zzz"
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
 
-    const-string v2, "*** MMM d hh:mm:ss YYYY"
-
-    const-string v3, "***, dd-MMM-YYYY hh:mm:ss zzz"
-
-    const-string v4, "***, dd-MMM-YYYY hh-mm-ss zzz"
-
-    const-string v5, "***, dd MMM YYYY hh:mm:ss zzz"
-
-    const-string v6, "*** dd-MMM-YYYY hh:mm:ss zzz"
-
-    const-string v7, "*** dd MMM YYYY hh:mm:ss zzz"
-
-    const-string v8, "*** dd-MMM-YYYY hh-mm-ss zzz"
-
-    filled-new-array/range {v0 .. v10}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lv9/l;->a0([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    sput-object v0, Ls3/j;->a:Ljava/util/List;
+    iput-object v0, p0, LS3/j;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()LS3/l;
+    .locals 3
+
+    sget v0, LS3/l;->i:I
+
+    iget v0, p0, LS3/j;->g:I
+
+    if-ltz v0, :cond_0
+
+    sget v1, LS3/l;->i:I
+
+    if-gt v0, v1, :cond_0
+
+    sget-object v1, LS3/l;->j:[LS3/l;
+
+    aget-object v0, v1, v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    return-object v0
+
+    :cond_1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Unsupported opcode "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v2, p0, LS3/j;->g:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method

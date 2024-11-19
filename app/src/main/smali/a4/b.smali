@@ -1,58 +1,82 @@
-.class public final La4/b;
-.super Ljava/lang/Object;
+.class public final LA4/b;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Ly9/d;
+.implements Lh4/c;
 
 
-# static fields
-.field public static final g:La4/b;
+# instance fields
+.field public final synthetic h:I
+
+.field public final synthetic i:LA4/d;
+
+.field public final synthetic j:LA4/c;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(LA4/d;LA4/c;I)V
+    .locals 0
 
-    new-instance v0, La4/b;
+    iput p3, p0, LA4/b;->h:I
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, LA4/b;->i:LA4/d;
 
-    sput-object v0, La4/b;->g:La4/b;
+    iput-object p2, p0, LA4/b;->j:LA4/c;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final o()Ly9/i;
-    .locals 2
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
-    new-instance v0, Ljava/lang/IllegalStateException;
+    iget v0, p0, LA4/b;->h:I
 
-    const-string v1, "This continuation is already complete"
+    packed-switch v0, :pswitch_data_0
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    check-cast p1, Ljava/lang/Throwable;
 
-    throw v0
-.end method
+    sget-object p1, LA4/d;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-.method public final s(Ljava/lang/Object;)V
-    .locals 1
+    iget-object v0, p0, LA4/b;->j:LA4/c;
 
-    new-instance p1, Ljava/lang/IllegalStateException;
+    iget-object v1, v0, LA4/c;->h:Ljava/lang/Object;
 
-    const-string v0, "This continuation is already complete"
+    iget-object v2, p0, LA4/b;->i:LA4/d;
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p1, v2, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    throw p1
-.end method
+    iget-object p1, v0, LA4/c;->h:Ljava/lang/Object;
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
+    invoke-virtual {v2, p1}, LA4/d;->e(Ljava/lang/Object;)V
 
-    const-string v0, "This continuation is already complete"
+    sget-object p1, LU3/y;->a:LU3/y;
 
-    return-object v0
+    return-object p1
+
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
+    iget-object p1, p0, LA4/b;->j:LA4/c;
+
+    iget-object p1, p1, LA4/c;->h:Ljava/lang/Object;
+
+    iget-object v0, p0, LA4/b;->i:LA4/d;
+
+    invoke-virtual {v0, p1}, LA4/d;->e(Ljava/lang/Object;)V
+
+    sget-object p1, LU3/y;->a:LU3/y;
+
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

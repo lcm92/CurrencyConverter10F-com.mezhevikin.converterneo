@@ -1,121 +1,35 @@
-.class public final Lf3/a;
-.super Ljava/lang/IllegalStateException;
+.class public abstract LF3/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic g:I
-
-.field public final h:Ljava/io/Serializable;
+# static fields
+.field public static final a:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Lf3/a;->g:I
-
-    .line 1
-    const-string v0, "Client already closed"
-
-    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput-object v0, p0, Lf3/a;->h:Ljava/io/Serializable;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lf3/c;)V
+.method static constructor <clinit>()V
     .locals 2
 
-    const/4 v0, 0x0
+    const-class v0, LG3/d;
 
-    iput v0, p0, Lf3/a;->g:I
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-    const-string v0, "call"
+    move-result-object v1
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ljava/util/ServiceLoader;->load(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/ServiceLoader;
 
-    .line 3
-    invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
+    move-result-object v0
 
-    .line 4
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v1, "load(it, it.classLoader)"
 
-    const-string v1, "Response already received: "
+    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-static {v0}, LV3/k;->E0(Ljava/lang/Iterable;)Ljava/util/List;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lf3/a;->h:Ljava/io/Serializable;
+    sput-object v0, LF3/a;->a:Ljava/util/List;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public getCause()Ljava/lang/Throwable;
-    .locals 1
-
-    iget v0, p0, Lf3/a;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-super {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, Lf3/a;->h:Ljava/io/Serializable;
-
-    check-cast v0, Ljava/lang/Throwable;
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public getMessage()Ljava/lang/String;
-    .locals 1
-
-    iget v0, p0, Lf3/a;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-super {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, Lf3/a;->h:Ljava/io/Serializable;
-
-    check-cast v0, Ljava/lang/String;
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

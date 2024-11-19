@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/focus/FocusOwnerImpl$modifier$2;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -49,7 +49,7 @@
 
     iget-object v0, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$modifier$2;->a:Landroidx/compose/ui/focus/b;
 
-    iget-object v0, v0, Landroidx/compose/ui/focus/b;->f:Lw5/t;
+    iget-object v0, v0, Landroidx/compose/ui/focus/b;->f:LW/t;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -58,20 +58,20 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 1
 
     iget-object v0, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$modifier$2;->a:Landroidx/compose/ui/focus/b;
 
-    iget-object v0, v0, Landroidx/compose/ui/focus/b;->f:Lw5/t;
+    iget-object v0, v0, Landroidx/compose/ui/focus/b;->f:LW/t;
 
     return-object v0
 .end method
 
-.method public final bridge synthetic k(Lr5/p;)V
+.method public final bridge synthetic k(LR/p;)V
     .locals 0
 
-    check-cast p1, Lw5/t;
+    check-cast p1, LW/t;
 
     return-void
 .end method

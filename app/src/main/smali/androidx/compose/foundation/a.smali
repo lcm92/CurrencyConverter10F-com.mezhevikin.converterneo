@@ -4,10 +4,10 @@
 
 
 # direct methods
-.method public static a(Lr5/q;Ly5/A1;)Lr5/q;
+.method public static a(LR/q;LY/A;)LR/q;
     .locals 8
 
-    sget-object v5, Ly5/H1;->a:Ll2/g;
+    sget-object v5, LY/H;->a:Ll2/g;
 
     new-instance v7, Landroidx/compose/foundation/BackgroundElement;
 
@@ -21,16 +21,16 @@
 
     move-object v3, p1
 
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/BackgroundElement;-><init>(JLy5/A1;FLy5/M1;I)V
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/BackgroundElement;-><init>(JLY/A;FLY/M;I)V
 
-    invoke-interface {p0, v7}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v7}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final b(Lr5/q;JLy5/M1;)Lr5/q;
+.method public static final b(LR/q;JLY/M;)LR/q;
     .locals 8
 
     new-instance v7, Landroidx/compose/foundation/BackgroundElement;
@@ -47,16 +47,16 @@
 
     move-object v5, p3
 
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/BackgroundElement;-><init>(JLy5/A1;FLy5/M1;I)V
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/BackgroundElement;-><init>(JLY/A;FLY/M;I)V
 
-    invoke-interface {p0, v7}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v7}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final c(Lr5/q;Lp/i;Lm/W1;ZLjava/lang/String;Lx0/f;Lh4/a;)Lr5/q;
+.method public static final c(LR/q;Lp/i;Lm/W;ZLjava/lang/String;Lx0/f;Lh4/a;)LR/q;
     .locals 9
 
     instance-of v0, p2, Lm/b0;
@@ -109,11 +109,11 @@
     goto :goto_0
 
     :cond_1
-    sget-object v6, Lr5/n;->a:Lr5/n;
+    sget-object v6, LR/n;->a:LR/n;
 
     if-eqz p1, :cond_2
 
-    invoke-static {v6, p1, p2}, Landroidx/compose/foundation/f;->a(Lr5/q;Lp/i;Lm/W1;)Lr5/q;
+    invoke-static {v6, p1, p2}, Landroidx/compose/foundation/f;->a(LR/q;Lp/i;Lm/W;)LR/q;
 
     move-result-object v7
 
@@ -135,7 +135,7 @@
 
     invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/ClickableElement;-><init>(Lp/i;Lm/b0;ZLjava/lang/String;Lx0/f;Lh4/a;)V
 
-    invoke-interface {v7, v8}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {v7, v8}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object v7
 
@@ -156,21 +156,21 @@
 
     move-object v5, p6
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/b;-><init>(Lm/W1;ZLjava/lang/String;Lx0/f;Lh4/a;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/b;-><init>(Lm/W;ZLjava/lang/String;Lx0/f;Lh4/a;)V
 
-    invoke-static {v6, v7}, Lr5/a;->b(Lr5/q;Lh4/f;)Lr5/q;
+    invoke-static {v6, v7}, LR/a;->b(LR/q;Lh4/f;)LR/q;
 
     move-result-object v7
 
     :goto_0
-    invoke-interface {p0, v7}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v7}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static synthetic d(Lr5/q;Lp/i;Lm/W1;ZLh4/a;I)Lr5/q;
+.method public static synthetic d(LR/q;Lp/i;Lm/W;ZLh4/a;I)LR/q;
     .locals 7
 
     and-int/lit8 p5, p5, 0x4
@@ -194,14 +194,14 @@
 
     move-object v6, p4
 
-    invoke-static/range {v0 .. v6}, Landroidx/compose/foundation/a;->c(Lr5/q;Lp/i;Lm/W1;ZLjava/lang/String;Lx0/f;Lh4/a;)Lr5/q;
+    invoke-static/range {v0 .. v6}, Landroidx/compose/foundation/a;->c(LR/q;Lp/i;Lm/W;ZLjava/lang/String;Lx0/f;Lh4/a;)LR/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static e(Lr5/q;ZLjava/lang/String;Lh4/a;I)Lr5/q;
+.method public static e(LR/q;ZLjava/lang/String;Lh4/a;I)LR/q;
     .locals 1
 
     and-int/lit8 v0, p4, 0x1
@@ -224,7 +224,7 @@
 
     invoke-direct {p4, p1, p2, v0, p3}, Lm/x;-><init>(ZLjava/lang/String;Lx0/f;Lh4/a;)V
 
-    invoke-static {p0, p4}, Lr5/a;->b(Lr5/q;Lh4/f;)Lr5/q;
+    invoke-static {p0, p4}, LR/a;->b(LR/q;Lh4/f;)LR/q;
 
     move-result-object p0
 

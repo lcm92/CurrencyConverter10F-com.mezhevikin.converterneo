@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public A:Lv8/d;
+.field public A:LV2/d;
 
 
 # direct methods
@@ -18,10 +18,10 @@
 
 
 # virtual methods
-.method public final l()Lv8/d;
+.method public final l()LV2/d;
     .locals 1
 
-    iget-object v0, p0, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->A:Lv8/d;
+    iget-object v0, p0, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->A:LV2/d;
 
     if-eqz v0, :cond_0
 
@@ -48,9 +48,9 @@
 
     invoke-super {p0, p1}, Lb/n;->onCreate(Landroid/os/Bundle;)V
 
-    new-instance v5, Lb/G1;
+    new-instance v5, Lb/G;
 
-    sget-object p1, Lb/F1;->i:Lb/F1;
+    sget-object p1, Lb/F;->i:Lb/F;
 
     invoke-direct {v5}, Ljava/lang/Object;-><init>()V
 
@@ -76,7 +76,7 @@
 
     invoke-static {v3, v4}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v3}, Lb/F1;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v3}, Lb/F;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-virtual {v7}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -84,7 +84,7 @@
 
     invoke-static {v3, v4}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v3}, Lb/F1;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v3}, Lb/F;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -142,7 +142,7 @@
 
     move-object v4, v5
 
-    invoke-virtual/range {v3 .. v9}, Lb/p;->b(Lb/G1;Lb/G1;Landroid/view/Window;Landroid/view/View;ZZ)V
+    invoke-virtual/range {v3 .. v9}, Lb/p;->b(Lb/G;Lb/G;Landroid/view/Window;Landroid/view/View;ZZ)V
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -152,7 +152,7 @@
 
     invoke-virtual {p1, v3}, Lb/p;->a(Landroid/view/Window;)V
 
-    sget-object p1, Lu8/b;->a:Ln5/a;
+    sget-object p1, LU2/b;->a:LN/a;
 
     sget-object v3, Lc/a;->a:Landroid/view/ViewGroup$LayoutParams;
 
@@ -192,7 +192,7 @@
     :goto_1
     if-eqz v3, :cond_4
 
-    invoke-virtual {v3, v5}, Lr0/a;->setParentCompositionContext(Lf5/r;)V
+    invoke-virtual {v3, v5}, Lr0/a;->setParentCompositionContext(LF/r;)V
 
     invoke-virtual {v3, p1}, Lr0/f0;->setContent(Lh4/e;)V
 
@@ -203,7 +203,7 @@
 
     invoke-direct {v3, p0}, Lr0/f0;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
 
-    invoke-virtual {v3, v5}, Lr0/a;->setParentCompositionContext(Lf5/r;)V
+    invoke-virtual {v3, v5}, Lr0/a;->setParentCompositionContext(LF/r;)V
 
     invoke-virtual {v3, p1}, Lr0/f0;->setContent(Lh4/e;)V
 
@@ -251,16 +251,16 @@
     invoke-virtual {p0, v3, p1}, Lb/n;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :goto_2
-    const-class p1, Lh8/b;
+    const-class p1, LH2/b;
 
     monitor-enter p1
 
     :try_start_0
-    sget-object v3, Lh8/b;->a:Lh8/f;
+    sget-object v3, LH2/b;->a:LH2/f;
 
     if-nez v3, :cond_9
 
-    new-instance v3, Le6/b;
+    new-instance v3, LE0/b;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -274,13 +274,13 @@
     move-object v4, p0
 
     :goto_3
-    invoke-direct {v3, v4, v2}, Le6/b;-><init>(Landroid/content/Context;B)V
+    invoke-direct {v3, v4, v2}, LE0/b;-><init>(Landroid/content/Context;B)V
 
-    new-instance v4, Lh8/f;
+    new-instance v4, LH2/f;
 
-    invoke-direct {v4, v3}, Lh8/f;-><init>(Le6/b;)V
+    invoke-direct {v4, v3}, LH2/f;-><init>(LE0/b;)V
 
-    sput-object v4, Lh8/b;->a:Lh8/f;
+    sput-object v4, LH2/b;->a:LH2/f;
 
     goto :goto_4
 
@@ -291,35 +291,35 @@
 
     :cond_9
     :goto_4
-    sget-object v3, Lh8/b;->a:Lh8/f;
+    sget-object v3, LH2/b;->a:LH2/f;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit p1
 
-    iget-object p1, v3, Lh8/f;->g:Li8/c;
+    iget-object p1, v3, LH2/f;->g:LI2/c;
 
-    invoke-interface {p1}, Li8/c;->a()Ljava/lang/Object;
+    invoke-interface {p1}, LI2/c;->a()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lh8/e;
+    check-cast p1, LH2/e;
 
     const-string v3, "create(...)"
 
     invoke-static {p1, v3}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v3, p1, Lh8/e;->b:Landroid/content/Context;
+    iget-object v3, p1, LH2/e;->b:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v3
 
-    sget-object v4, Lh8/i;->e:Li8/i;
+    sget-object v4, LH2/i;->e:LI2/i;
 
-    iget-object v6, p1, Lh8/e;->a:Lh8/i;
+    iget-object v6, p1, LH2/e;->a:LH2/i;
 
-    iget-object v7, v6, Lh8/i;->a:Li8/o;
+    iget-object v7, v6, LH2/i;->a:LI2/o;
 
     if-nez v7, :cond_b
 
@@ -345,20 +345,20 @@
 
     if-eqz v9, :cond_a
 
-    iget-object v4, v4, Li8/i;->h:Ljava/lang/String;
+    iget-object v4, v4, LI2/i;->h:Ljava/lang/String;
 
-    invoke-static {v4, v7, v6}, Li8/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v4, v7, v6}, LI2/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
     invoke-static {v8, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_a
-    new-instance v4, Lj8/a;
+    new-instance v4, LJ2/a;
 
-    invoke-direct {v4, v3}, Lj8/a;-><init>(I)V
+    invoke-direct {v4, v3}, LJ2/a;-><init>(I)V
 
-    invoke-static {v4}, Lt2/a;->v(Le9/a;)Lb5/F1;
+    invoke-static {v4}, Lt2/a;->v(LE3/a;)LB/F;
 
     move-result-object v3
 
@@ -371,57 +371,57 @@
 
     const-string v9, "requestUpdateInfo(%s)"
 
-    invoke-virtual {v4, v9, v8}, Li8/i;->h(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v4, v9, v8}, LI2/i;->h(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    new-instance v4, Lg8/d;
+    new-instance v4, LG2/d;
 
-    invoke-direct {v4}, Lg8/d;-><init>()V
+    invoke-direct {v4}, LG2/d;-><init>()V
 
-    new-instance v8, Lh8/g;
+    new-instance v8, LH2/g;
 
-    invoke-direct {v8, v6, v4, v3, v4}, Lh8/g;-><init>(Lh8/i;Lg8/d;Ljava/lang/String;Lg8/d;)V
+    invoke-direct {v8, v6, v4, v3, v4}, LH2/g;-><init>(LH2/i;LG2/d;Ljava/lang/String;LG2/d;)V
 
-    new-instance v3, Lh8/g;
+    new-instance v3, LH2/g;
 
-    invoke-direct {v3, v7, v4, v4, v8}, Lh8/g;-><init>(Li8/o;Lg8/d;Lg8/d;Lh8/g;)V
+    invoke-direct {v3, v7, v4, v4, v8}, LH2/g;-><init>(LI2/o;LG2/d;LG2/d;LH2/g;)V
 
-    invoke-virtual {v7}, Li8/o;->a()Landroid/os/Handler;
+    invoke-virtual {v7}, LI2/o;->a()Landroid/os/Handler;
 
     move-result-object v6
 
     invoke-virtual {v6, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    iget-object v3, v4, Lg8/d;->a:Lb5/F1;
+    iget-object v3, v4, LG2/d;->a:LB/F;
 
     :goto_5
-    new-instance v4, Lv8/e;
+    new-instance v4, LV2/e;
 
-    invoke-direct {v4, p1, p0}, Lv8/e;-><init>(Lh8/e;Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
+    invoke-direct {v4, p1, p0}, LV2/e;-><init>(LH2/e;Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
 
-    new-instance p1, Ll7/b;
+    new-instance p1, LL1/b;
 
-    invoke-direct {p1, v1, v4}, Ll7/b;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v1, v4}, LL1/b;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object v4, Lg8/e;->a:Lg8/g;
+    sget-object v4, LG2/e;->a:LG2/g;
 
-    new-instance v6, Lg8/f;
+    new-instance v6, LG2/f;
 
-    invoke-direct {v6, v4, p1}, Lg8/f;-><init>(Lg8/g;Ll7/b;)V
+    invoke-direct {v6, v4, p1}, LG2/f;-><init>(LG2/g;LL1/b;)V
 
-    iget-object p1, v3, Lb5/F1;->c:Ljava/lang/Object;
+    iget-object p1, v3, LB/F;->c:Ljava/lang/Object;
 
-    check-cast p1, La5/V1;
+    check-cast p1, LA/V;
 
-    invoke-virtual {p1, v6}, La5/V1;->j(Lg8/f;)V
+    invoke-virtual {p1, v6}, LA/V;->j(LG2/f;)V
 
-    iget-object v4, v3, Lb5/F1;->b:Ljava/lang/Object;
+    iget-object v4, v3, LB/F;->b:Ljava/lang/Object;
 
     monitor-enter v4
 
     :try_start_1
-    iget-boolean p1, v3, Lb5/F1;->a:Z
+    iget-boolean p1, v3, LB/F;->a:Z
 
     if-nez p1, :cond_c
 
@@ -439,14 +439,14 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    iget-object p1, v3, Lb5/F1;->c:Ljava/lang/Object;
+    iget-object p1, v3, LB/F;->c:Ljava/lang/Object;
 
-    check-cast p1, La5/V1;
+    check-cast p1, LA/V;
 
-    invoke-virtual {p1, v3}, La5/V1;->k(Lb5/F1;)V
+    invoke-virtual {p1, v3}, LA/V;->k(LB/F;)V
 
     :goto_6
-    invoke-static {}, Lw8/z;->a()Lw8/C1;
+    invoke-static {}, LW2/z;->a()LW2/C;
 
     move-result-object p1
 
@@ -456,7 +456,7 @@
 
     const-string v4, "<this>"
 
-    iget-object p1, p1, Lw8/C1;->f:Ljava/util/Date;
+    iget-object p1, p1, LW2/C;->f:Ljava/util/Date;
 
     invoke-static {p1, v4}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -501,29 +501,29 @@
     :goto_7
     new-instance v3, Ly/s;
 
-    new-instance v4, Ll8/f;
+    new-instance v4, LL2/f;
 
-    invoke-direct {v4, p1}, Ll8/f;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, p1}, LL2/f;-><init>(Landroid/content/Context;)V
 
-    invoke-direct {v3, v4}, Ly/s;-><init>(Ll8/f;)V
+    invoke-direct {v3, v4}, Ly/s;-><init>(LL2/f;)V
 
     iget-object p1, v3, Ly/s;->h:Ljava/lang/Object;
 
-    check-cast p1, Ll8/f;
+    check-cast p1, LL2/f;
 
-    iget-object v4, p1, Ll8/f;->b:Ljava/lang/String;
+    iget-object v4, p1, LL2/f;->b:Ljava/lang/String;
 
     filled-new-array {v4}, [Ljava/lang/Object;
 
     move-result-object v4
 
-    sget-object v6, Ll8/f;->c:Li8/i;
+    sget-object v6, LL2/f;->c:LI2/i;
 
     const-string v7, "requestInAppReview (%s)"
 
-    invoke-virtual {v6, v7, v4}, Li8/i;->g(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v6, v7, v4}, LI2/i;->g(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    iget-object v4, p1, Ll8/f;->a:Lm8/h;
+    iget-object v4, p1, LL2/f;->a:LM2/h;
 
     if-nez v4, :cond_11
 
@@ -537,18 +537,18 @@
 
     if-eqz v7, :cond_f
 
-    iget-object v6, v6, Li8/i;->h:Ljava/lang/String;
+    iget-object v6, v6, LI2/i;->h:Ljava/lang/String;
 
     const-string v7, "Play Store app is either not installed or not the official version"
 
-    invoke-static {v6, v7, p1}, Li8/i;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v6, v7, p1}, LI2/i;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v4, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_f
-    new-instance p1, Lj8/a;
+    new-instance p1, LJ2/a;
 
     new-instance v4, Lcom/google/android/gms/common/api/Status;
 
@@ -562,7 +562,7 @@
 
     move-result-object v8
 
-    sget-object v9, Ln8/a;->a:Ljava/util/HashMap;
+    sget-object v9, LN2/a;->a:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -585,7 +585,7 @@
 
     check-cast v9, Ljava/lang/String;
 
-    sget-object v11, Ln8/a;->b:Ljava/util/HashMap;
+    sget-object v11, LN2/a;->b:Ljava/util/HashMap;
 
     invoke-virtual {v11, v10}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -626,72 +626,72 @@
 
     invoke-direct {v4, v7, v6, v5, v5}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;Landroid/app/PendingIntent;Ll2/a;)V
 
-    invoke-direct {p1, v4}, Le9/a;-><init>(Lcom/google/android/gms/common/api/Status;)V
+    invoke-direct {p1, v4}, LE3/a;-><init>(Lcom/google/android/gms/common/api/Status;)V
 
-    invoke-static {p1}, Lt2/a;->v(Le9/a;)Lb5/F1;
+    invoke-static {p1}, Lt2/a;->v(LE3/a;)LB/F;
 
     move-result-object p1
 
     goto :goto_9
 
     :cond_11
-    new-instance v6, Lg8/d;
+    new-instance v6, LG2/d;
 
-    invoke-direct {v6}, Lg8/d;-><init>()V
+    invoke-direct {v6}, LG2/d;-><init>()V
 
-    new-instance v7, Ll8/d;
+    new-instance v7, LL2/d;
 
-    invoke-direct {v7, p1, v6, v6}, Ll8/d;-><init>(Ll8/f;Lg8/d;Lg8/d;)V
+    invoke-direct {v7, p1, v6, v6}, LL2/d;-><init>(LL2/f;LG2/d;LG2/d;)V
 
-    new-instance p1, Lm8/f;
+    new-instance p1, LM2/f;
 
-    invoke-direct {p1, v4, v6, v6, v7}, Lm8/f;-><init>(Lm8/h;Lg8/d;Lg8/d;Ll8/d;)V
+    invoke-direct {p1, v4, v6, v6, v7}, LM2/f;-><init>(LM2/h;LG2/d;LG2/d;LL2/d;)V
 
-    invoke-virtual {v4}, Lm8/h;->a()Landroid/os/Handler;
+    invoke-virtual {v4}, LM2/h;->a()Landroid/os/Handler;
 
     move-result-object v4
 
     invoke-virtual {v4, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    iget-object p1, v6, Lg8/d;->a:Lb5/F1;
+    iget-object p1, v6, LG2/d;->a:LB/F;
 
     :goto_9
     const-string v4, "requestReviewFlow(...)"
 
     invoke-static {p1, v4}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v4, Ls7/b;
+    new-instance v4, LS1/b;
 
     const/4 v6, 0x4
 
-    invoke-direct {v4, p1, v3, p0, v6}, Ls7/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v4, p1, v3, p0, v6}, LS1/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
-    invoke-virtual {p1, v4}, Lb5/F1;->a(Lg8/b;)V
+    invoke-virtual {p1, v4}, LB/F;->a(LG2/b;)V
 
     :goto_a
-    new-instance p1, Lv8/d;
+    new-instance p1, LV2/d;
 
-    invoke-direct {p1, p0}, Lv8/d;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
+    invoke-direct {p1, p0}, LV2/d;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
 
-    iput-object p1, p0, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->A:Lv8/d;
+    iput-object p1, p0, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->A:LV2/d;
 
-    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()Lv8/d;
+    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()LV2/d;
 
     move-result-object p1
 
-    iget-object p1, p1, Lv8/d;->d:Lf5/S1;
+    iget-object p1, p1, LV2/d;->d:LF/S;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v3, Lv8/f;
+    new-instance v3, LV2/f;
 
-    invoke-direct {v3, v2, p1}, Lv8/f;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v2, p1}, LV2/f;-><init>(ILjava/lang/Object;)V
 
-    iget-object v4, p1, Lf5/S1;->d:Ljava/lang/Object;
+    iget-object v4, p1, LF/S;->d:Ljava/lang/Object;
 
-    check-cast v4, Lz2/P1;
+    check-cast v4, Lz2/P;
 
-    iget-object v6, p1, Lf5/S1;->c:Ljava/lang/Object;
+    iget-object v6, p1, LF/S;->c:Ljava/lang/Object;
 
     move-object v9, v6
 
@@ -701,42 +701,42 @@
 
     invoke-direct {v10}, Ljava/lang/Object;-><init>()V
 
-    new-instance v11, Lt7/j;
+    new-instance v11, LT1/j;
 
-    invoke-direct {v11, p1, v0, v3}, Lt7/j;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v11, p1, v0, v3}, LT1/j;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    new-instance v12, La5/s;
+    new-instance v12, LA/s;
 
     const/4 p1, 0x7
 
-    invoke-direct {v12, p1}, La5/s;-><init>(I)V
+    invoke-direct {v12, p1}, LA/s;-><init>(I)V
 
-    iget-object p1, v4, Lz2/P1;->d:Ljava/lang/Object;
+    iget-object p1, v4, Lz2/P;->d:Ljava/lang/Object;
 
     monitor-enter p1
 
     const/4 v0, 0x1
 
     :try_start_2
-    iput-boolean v0, v4, Lz2/P1;->f:Z
+    iput-boolean v0, v4, Lz2/P;->f:Z
 
     monitor-exit p1
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    iput-object v10, v4, Lz2/P1;->h:Lo2/g;
+    iput-object v10, v4, Lz2/P;->h:Lo2/g;
 
-    iget-object p1, v4, Lz2/P1;->b:Lz2/b;
+    iget-object p1, v4, Lz2/P;->b:Lz2/b;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v3, Lf7/n;
+    new-instance v3, LF1/n;
 
     move-object v7, v3
 
     move-object v8, p1
 
-    invoke-direct/range {v7 .. v12}, Lf7/n;-><init>(Lz2/b;Lcom/mezhevikin/converterneo/activities/ConverterActivity;Lo2/g;Lo8/c;Lo8/b;)V
+    invoke-direct/range {v7 .. v12}, LF1/n;-><init>(Lz2/b;Lcom/mezhevikin/converterneo/activities/ConverterActivity;Lo2/g;LO2/c;LO2/b;)V
 
     iget-object p1, p1, Lz2/b;->j:Ljava/lang/Object;
 
@@ -746,13 +746,13 @@
 
     const-string p1, "95705352"
 
-    sput-object p1, Lv8/o;->e:Ljava/lang/String;
+    sput-object p1, LV2/o;->e:Ljava/lang/String;
 
     const-string p1, "neo.getconverter.org"
 
-    sput-object p1, Lv8/o;->f:Ljava/lang/String;
+    sput-object p1, LV2/o;->f:Ljava/lang/String;
 
-    sget-object p1, Lv8/o;->g:Ljava/util/LinkedHashMap;
+    sget-object p1, LV2/o;->g:Ljava/util/LinkedHashMap;
 
     invoke-static {p0}, Li0/c;->w(Landroid/content/Context;)Ljava/lang/String;
 
@@ -762,11 +762,11 @@
 
     invoke-interface {p1, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-instance v3, Lv8/r;
+    new-instance v3, LV2/r;
 
-    invoke-direct {v3, p0}, Lv8/r;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
+    invoke-direct {v3, p0}, LV2/r;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
 
-    sput-object v3, Lv8/o;->a:Lv8/r;
+    sput-object v3, LV2/o;->a:LV2/r;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -790,21 +790,21 @@
 
     move-result-object v3
 
-    sput-object v3, Lv8/o;->c:Landroid/content/SharedPreferences;
+    sput-object v3, LV2/o;->c:Landroid/content/SharedPreferences;
 
-    new-instance v3, Lv8/k;
+    new-instance v3, LV2/k;
 
     const/4 v4, 0x5
 
-    invoke-direct {v3, v4}, Lv8/k;-><init>(I)V
+    invoke-direct {v3, v4}, LV2/k;-><init>(I)V
 
     invoke-static {v3}, Le3/j;->a(Lh4/c;)Le3/f;
 
     move-result-object v3
 
-    sput-object v3, Lv8/o;->b:Le3/f;
+    sput-object v3, LV2/o;->b:Le3/f;
 
-    sget-object v3, Lv8/o;->c:Landroid/content/SharedPreferences;
+    sget-object v3, LV2/o;->c:Landroid/content/SharedPreferences;
 
     const-string v4, "preferences"
 
@@ -820,9 +820,9 @@
 
     const-string v2, "install"
 
-    invoke-static {v2, v5, v1}, Lv8/o;->b(Ljava/lang/String;Ljava/lang/Integer;I)V
+    invoke-static {v2, v5, v1}, LV2/o;->b(Ljava/lang/String;Ljava/lang/Integer;I)V
 
-    sget-object v1, Lv8/o;->c:Landroid/content/SharedPreferences;
+    sget-object v1, LV2/o;->c:Landroid/content/SharedPreferences;
 
     if-eqz v1, :cond_12
 
@@ -845,7 +845,7 @@
 
     :cond_13
     :goto_b
-    invoke-static {}, Lw8/r;->b()Z
+    invoke-static {}, LW2/r;->b()Z
 
     move-result v0
 
@@ -853,19 +853,19 @@
 
     move-result-object v0
 
-    new-instance v1, Lu9/i;
+    new-instance v1, LU3/i;
 
     const-string v2, "premium"
 
-    invoke-direct {v1, v2, v0}, Lu9/i;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v0}, LU3/i;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()Lv8/d;
+    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()LV2/d;
 
     move-result-object v0
 
-    iget-object v0, v0, Lv8/d;->d:Lf5/S1;
+    iget-object v0, v0, LV2/d;->d:LF/S;
 
-    invoke-virtual {v0}, Lf5/S1;->a()Z
+    invoke-virtual {v0}, LF/S;->a()Z
 
     move-result v0
 
@@ -873,17 +873,17 @@
 
     move-result-object v0
 
-    new-instance v2, Lu9/i;
+    new-instance v2, LU3/i;
 
     const-string v3, "can-show-ads"
 
-    invoke-direct {v2, v3, v0}, Lu9/i;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v3, v0}, LU3/i;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    filled-new-array {v1, v2}, [Lu9/i;
+    filled-new-array {v1, v2}, [LU3/i;
 
     move-result-object v0
 
-    invoke-static {v0}, Lv9/y;->I0([Lu9/i;)Ljava/util/Map;
+    invoke-static {v0}, LV3/y;->I0([LU3/i;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -928,13 +928,13 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onStart()V
 
-    sget-object v0, Lw8/c;->a:Lw8/c;
+    sget-object v0, LW2/c;->a:LW2/c;
 
-    invoke-static {}, Lw8/c;->b()Lw8/e;
+    invoke-static {}, LW2/c;->b()LW2/e;
 
     move-result-object v0
 
-    iget-object v0, v0, Lw8/e;->b:Ly/s;
+    iget-object v0, v0, LW2/e;->b:Ly/s;
 
     invoke-virtual {v0}, Ly/s;->t()Z
 
@@ -944,9 +944,9 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lw8/c;->j:Lf5/j0;
+    sget-object v0, LW2/c;->j:LF/j0;
 
-    invoke-virtual {v0}, Lf5/j0;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LF/j0;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -961,23 +961,23 @@
     goto :goto_0
 
     :cond_0
-    new-instance v0, Lw8/a;
+    new-instance v0, LW2/a;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, La4/i;-><init>(ILy9/d;)V
+    invoke-direct {v0, v1, v2}, La4/i;-><init>(ILY3/d;)V
 
     const/4 v3, 0x0
 
-    sget-object v4, Lw8/c;->e:Lx4/d;
+    sget-object v4, LW2/c;->e:Lx4/d;
 
     const/4 v5, 0x3
 
-    invoke-static {v4, v2, v3, v0, v5}, Ls4/y;->u(Ls4/x;Ly9/i;ILh4/e;I)Ls4/B1;
+    invoke-static {v4, v2, v3, v0, v5}, Ls4/y;->u(Ls4/x;LY3/i;ILh4/e;I)Ls4/B;
 
     :cond_1
     :goto_0
-    sget-object v0, Lv8/o;->a:Lv8/r;
+    sget-object v0, LV2/o;->a:LV2/r;
 
     const/16 v0, 0x4650
 
@@ -987,20 +987,20 @@
 
     const-string v2, "open-app"
 
-    invoke-static {v2, v0, v1}, Lv8/o;->b(Ljava/lang/String;Ljava/lang/Integer;I)V
+    invoke-static {v2, v0, v1}, LV2/o;->b(Ljava/lang/String;Ljava/lang/Integer;I)V
 
-    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()Lv8/d;
+    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()LV2/d;
 
     move-result-object v0
 
     :try_start_0
-    invoke-virtual {v0}, Lv8/d;->a()Z
+    invoke-virtual {v0}, LV2/d;->a()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {v0}, Lv8/d;->b()V
+    invoke-virtual {v0}, LV2/d;->b()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1021,29 +1021,29 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onStop()V
 
-    sget-object v0, Lw8/c;->a:Lw8/c;
+    sget-object v0, LW2/c;->a:LW2/c;
 
-    sget-object v0, Lw8/z;->a:Ljava/io/File;
+    sget-object v0, LW2/z;->a:Ljava/io/File;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    invoke-static {}, Lw8/z;->a()Lw8/C1;
+    invoke-static {}, LW2/z;->a()LW2/C;
 
     move-result-object v2
 
-    sget-object v3, Lv8/m;->a:Lgg/r;
+    sget-object v3, LV2/m;->a:LG4/r;
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object v4, Lw8/C1;->Companion:Lw8/B1;
+    sget-object v4, LW2/C;->Companion:LW2/B;
 
-    invoke-virtual {v4}, Lw8/B1;->serializer()Lbb/a;
+    invoke-virtual {v4}, LW2/B;->serializer()LB4/a;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4, v2}, Lgg/c;->b(Lbb/a;Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v3, v4, v2}, LG4/c;->b(LB4/a;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1057,19 +1057,19 @@
 
     invoke-static {v2, v3}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v3, Lw8/z;->c:Le6/l;
+    sget-object v3, LW2/z;->c:LE0/l;
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    iget-object v4, v3, Le6/l;->i:Ljava/lang/Object;
+    iget-object v4, v3, LE0/l;->i:Ljava/lang/Object;
 
     check-cast v4, Ljavax/crypto/spec/SecretKeySpec;
 
-    iget-object v5, v3, Le6/l;->j:Ljava/lang/Object;
+    iget-object v5, v3, LE0/l;->j:Ljava/lang/Object;
 
     check-cast v5, Ljavax/crypto/spec/IvParameterSpec;
 
-    iget-object v3, v3, Le6/l;->h:Ljava/lang/Object;
+    iget-object v3, v3, LE0/l;->h:Ljava/lang/Object;
 
     check-cast v3, Ljavax/crypto/Cipher;
 
@@ -1094,7 +1094,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-static {v3, v1}, Lh8/b;->G(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v3, v1}, LH2/b;->G(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     return-void
 
@@ -1109,7 +1109,7 @@
     :catchall_1
     move-exception v1
 
-    invoke-static {v3, v0}, Lh8/b;->G(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v3, v0}, LH2/b;->G(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     throw v1
 

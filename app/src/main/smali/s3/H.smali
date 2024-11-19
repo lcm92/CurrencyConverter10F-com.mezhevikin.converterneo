@@ -1,70 +1,91 @@
-.class public final Ls3/h;
-.super Li4/i;
+.class public abstract LS3/h;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/c;
 
 
 # instance fields
-.field public final synthetic h:Z
+.field public final a:Z
+
+.field public final b:LS3/l;
+
+.field public final c:[B
+
+.field public final d:Z
+
+.field public final e:Z
+
+.field public final f:Z
+
+.field public final g:Ljava/nio/ByteBuffer;
 
 
 # direct methods
-.method public constructor <init>(Z)V
+.method public constructor <init>(ZLS3/l;[BZZZ)V
     .locals 0
 
-    iput-boolean p1, p0, Ls3/h;->h:Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, 0x1
+    iput-boolean p1, p0, LS3/h;->a:Z
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    iput-object p2, p0, LS3/h;->b:LS3/l;
+
+    iput-object p3, p0, LS3/h;->c:[B
+
+    iput-boolean p4, p0, LS3/h;->d:Z
+
+    iput-boolean p5, p0, LS3/h;->e:Z
+
+    iput-boolean p6, p0, LS3/h;->f:Z
+
+    invoke-static {p3}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
+
+    move-result-object p1
+
+    const-string p2, "wrap(data)"
+
+    invoke-static {p1, p2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object p1, p0, LS3/h;->g:Ljava/nio/ByteBuffer;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    check-cast p1, Lu9/i;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v0, "it"
+    const-string v1, "Frame "
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-boolean v0, p0, Ls3/h;->h:Z
+    iget-object v1, p0, LS3/h;->b:LS3/l;
 
-    if-eqz v0, :cond_1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    iget-object p1, p1, Lu9/i;->g:Ljava/lang/Object;
+    const-string v1, " (fin="
 
-    check-cast p1, Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, "$"
+    iget-boolean v1, p0, LS3/h;->a:Z
 
-    invoke-static {p1, v0}, Lq4/r;->w(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result p1
+    const-string v1, ", buffer len = "
 
-    if-nez p1, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    goto :goto_0
+    iget-object v1, p0, LS3/h;->c:[B
 
-    :cond_0
-    const/4 p1, 0x0
+    array-length v1, v1
 
-    goto :goto_1
+    const/16 v2, 0x29
 
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
+    invoke-static {v0, v1, v2}, LA/m;->k(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
-    :goto_1
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-result-object v0
 
-    move-result-object p1
-
-    return-object p1
+    return-object v0
 .end method

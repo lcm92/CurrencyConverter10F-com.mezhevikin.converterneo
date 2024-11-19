@@ -1,54 +1,69 @@
-.class public final Lo0/r;
-.super Lr5/p;
+.class public abstract LO0/r;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lq0/w;
 
-
-# instance fields
-.field public t:Lh4/f;
-
-
-# virtual methods
-.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
+# direct methods
+.method public static final a(Lh4/a;)Landroid/window/OnBackInvokedCallback;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lh4/a;",
+            ")",
+            "Landroid/window/OnBackInvokedCallback;"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lo0/r;->t:Lh4/f;
+    new-instance v0, LO0/q;
 
-    new-instance v1, Ll6/a;
+    const/4 v1, 0x0
 
-    invoke-direct {v1, p3, p4}, Ll6/a;-><init>(J)V
-
-    invoke-interface {v0, p1, p2, v1}, Lh4/f;->h(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lo0/F1;
-
-    return-object p1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "LayoutModifierImpl(measureBlock="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget-object v1, p0, Lo0/r;->t:Lh4/f;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
+    invoke-direct {v0, p0, v1}, LO0/q;-><init>(Lh4/a;I)V
 
     return-object v0
+.end method
+
+.method public static final b(Landroid/view/View;Ljava/lang/Object;)V
+    .locals 1
+
+    instance-of v0, p1, Landroid/window/OnBackInvokedCallback;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->findOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    const v0, 0xf4240
+
+    check-cast p1, Landroid/window/OnBackInvokedCallback;
+
+    invoke-interface {p0, v0, p1}, Landroid/window/OnBackInvokedDispatcher;->registerOnBackInvokedCallback(ILandroid/window/OnBackInvokedCallback;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public static final c(Landroid/view/View;Ljava/lang/Object;)V
+    .locals 1
+
+    instance-of v0, p1, Landroid/window/OnBackInvokedCallback;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroid/view/View;->findOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    check-cast p1, Landroid/window/OnBackInvokedCallback;
+
+    invoke-interface {p0, p1}, Landroid/window/OnBackInvokedDispatcher;->unregisterOnBackInvokedCallback(Landroid/window/OnBackInvokedCallback;)V
+
+    :cond_0
+    return-void
 .end method

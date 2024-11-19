@@ -1,119 +1,107 @@
-.class public final Ls/d;
+.class public final LS/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lr5/o;
+
+# static fields
+.field public static final a:LS/d;
 
 
-# instance fields
-.field public a:Z
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
 
-.field public b:Ly9/k;
+    new-instance v0, LS/d;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, LS/d;->a:LS/d;
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final j(La4/c;)Ljava/lang/Object;
-    .locals 5
+.method public final a(Landroid/view/ViewStructure;)Landroid/view/autofill/AutofillId;
+    .locals 0
 
-    instance-of v0, p1, Ls/c;
+    invoke-virtual {p1}, Landroid/view/ViewStructure;->getAutofillId()Landroid/view/autofill/AutofillId;
 
-    if-eqz v0, :cond_0
+    move-result-object p1
 
-    move-object v0, p1
+    return-object p1
+.end method
 
-    check-cast v0, Ls/c;
+.method public final b(Landroid/view/autofill/AutofillValue;)Z
+    .locals 0
 
-    iget v1, v0, Ls/c;->m:I
+    invoke-virtual {p1}, Landroid/view/autofill/AutofillValue;->isDate()Z
 
-    const/high16 v2, -0x80000000
+    move-result p1
 
-    and-int v3, v1, v2
+    return p1
+.end method
 
-    if-eqz v3, :cond_0
+.method public final c(Landroid/view/autofill/AutofillValue;)Z
+    .locals 0
 
-    sub-int/2addr v1, v2
+    invoke-virtual {p1}, Landroid/view/autofill/AutofillValue;->isList()Z
 
-    iput v1, v0, Ls/c;->m:I
+    move-result p1
 
-    goto :goto_0
+    return p1
+.end method
 
-    :cond_0
-    new-instance v0, Ls/c;
+.method public final d(Landroid/view/autofill/AutofillValue;)Z
+    .locals 0
 
-    invoke-direct {v0, p0, p1}, Ls/c;-><init>(Ls/d;La4/c;)V
+    invoke-virtual {p1}, Landroid/view/autofill/AutofillValue;->isText()Z
 
-    :goto_0
-    iget-object p1, v0, Ls/c;->k:Ljava/lang/Object;
+    move-result p1
 
-    sget-object v1, Lz9/a;->g:Lz9/a;
+    return p1
+.end method
 
-    iget v2, v0, Ls/c;->m:I
+.method public final e(Landroid/view/autofill/AutofillValue;)Z
+    .locals 0
 
-    sget-object v3, Lu9/y;->a:Lu9/y;
+    invoke-virtual {p1}, Landroid/view/autofill/AutofillValue;->isToggle()Z
 
-    const/4 v4, 0x1
+    move-result p1
 
-    if-eqz v2, :cond_2
+    return p1
+.end method
 
-    if-ne v2, v4, :cond_1
+.method public final f(Landroid/view/ViewStructure;[Ljava/lang/String;)V
+    .locals 0
 
-    iget-object v0, v0, Ls/c;->j:Ly9/k;
+    invoke-virtual {p1, p2}, Landroid/view/ViewStructure;->setAutofillHints([Ljava/lang/String;)V
 
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+    return-void
+.end method
 
-    goto :goto_1
+.method public final g(Landroid/view/ViewStructure;Landroid/view/autofill/AutofillId;I)V
+    .locals 0
 
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
+    invoke-virtual {p1, p2, p3}, Landroid/view/ViewStructure;->setAutofillId(Landroid/view/autofill/AutofillId;I)V
 
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+    return-void
+.end method
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+.method public final h(Landroid/view/ViewStructure;I)V
+    .locals 0
 
-    throw p1
+    invoke-virtual {p1, p2}, Landroid/view/ViewStructure;->setAutofillType(I)V
 
-    :cond_2
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
+    return-void
+.end method
 
-    iget-boolean p1, p0, Ls/d;->a:Z
+.method public final i(Landroid/view/autofill/AutofillValue;)Ljava/lang/CharSequence;
+    .locals 0
 
-    if-nez p1, :cond_4
+    invoke-virtual {p1}, Landroid/view/autofill/AutofillValue;->getTextValue()Ljava/lang/CharSequence;
 
-    iget-object p1, p0, Ls/d;->b:Ly9/k;
+    move-result-object p1
 
-    iput-object p1, v0, Ls/c;->j:Ly9/k;
-
-    iput v4, v0, Ls/c;->m:I
-
-    new-instance v2, Ly9/k;
-
-    invoke-static {v0}, Lll/d;->C(Ly9/d;)Ly9/d;
-
-    move-result-object v0
-
-    sget-object v4, Lz9/a;->h:Lz9/a;
-
-    invoke-direct {v2, v0, v4}, Ly9/k;-><init>(Ly9/d;Lz9/a;)V
-
-    iput-object v2, p0, Ls/d;->b:Ly9/k;
-
-    invoke-virtual {v2}, Ly9/k;->a()Ljava/lang/Object;
-
-    move-result-object v0
-
-    if-ne v0, v1, :cond_3
-
-    return-object v1
-
-    :cond_3
-    move-object v0, p1
-
-    :goto_1
-    if-eqz v0, :cond_4
-
-    invoke-interface {v0, v3}, Ly9/d;->s(Ljava/lang/Object;)V
-
-    :cond_4
-    return-object v3
+    return-object p1
 .end method

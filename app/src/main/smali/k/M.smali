@@ -1,152 +1,77 @@
-.class public final Lk/m;
+.class public abstract LK/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lo0/q;
+.implements Ljava/util/Iterator;
+.implements Lj4/a;
 
 
 # instance fields
-.field public final a:Ll/p0;
+.field public g:[Ljava/lang/Object;
 
-.field public final b:Lf5/c0;
+.field public h:I
 
-.field public final synthetic c:Lk/o;
+.field public i:I
 
 
 # direct methods
-.method public constructor <init>(Lk/o;Ll/p0;Lf5/c0;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk/m;->c:Lk/o;
+    sget-object v0, LK/l;->e:LK/l;
 
-    iput-object p2, p0, Lk/m;->a:Ll/p0;
+    iget-object v0, v0, LK/l;->d:[Ljava/lang/Object;
 
-    iput-object p3, p0, Lk/m;->b:Lf5/c0;
+    iput-object v0, p0, LK/m;->g:[Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lq0/N1;Lo0/D1;I)I
+.method public final a([Ljava/lang/Object;II)V
     .locals 0
 
-    invoke-interface {p2, p3}, Lo0/D1;->U(I)I
+    iput-object p1, p0, LK/m;->g:[Ljava/lang/Object;
 
-    move-result p1
+    iput p2, p0, LK/m;->h:I
 
-    return p1
+    iput p3, p0, LK/m;->i:I
+
+    return-void
 .end method
 
-.method public final c(Lq0/N1;Lo0/D1;I)I
-    .locals 0
+.method public final hasNext()Z
+    .locals 2
 
-    invoke-interface {p2, p3}, Lo0/D1;->T(I)I
+    iget v0, p0, LK/m;->i:I
 
-    move-result p1
+    iget v1, p0, LK/m;->h:I
 
-    return p1
-.end method
+    if-ge v0, v1, :cond_0
 
-.method public final d(Lq0/N1;Lo0/D1;I)I
-    .locals 0
-
-    invoke-interface {p2, p3}, Lo0/D1;->c(I)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final f(Lq0/N1;Lo0/D1;I)I
-    .locals 0
-
-    invoke-interface {p2, p3}, Lo0/D1;->Q(I)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
-    .locals 4
-
-    invoke-interface {p2, p3, p4}, Lo0/D1;->a(J)Lo0/N1;
-
-    move-result-object p2
-
-    new-instance p3, La5/y;
-
-    iget-object p4, p0, Lk/m;->c:Lk/o;
-
-    const/16 v0, 0x11
-
-    invoke-direct {p3, p4, v0, p0}, La5/y;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    new-instance v0, Lj3/F1;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1, p4}, Lj3/F1;-><init>(ILjava/lang/Object;)V
-
-    iget-object v1, p0, Lk/m;->a:Ll/p0;
-
-    invoke-virtual {v1, p3, v0}, Ll/p0;->a(Lh4/c;Lh4/c;)Ll/o0;
-
-    move-result-object p3
-
-    iput-object p3, p4, Lk/o;->f:Ll/o0;
-
-    invoke-interface {p1}, Lo0/m;->B()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget p3, p2, Lo0/N1;->g:I
-
-    iget v0, p2, Lo0/N1;->h:I
-
-    invoke-static {p3, v0}, Lll/d;->b(II)J
-
-    move-result-wide v0
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p3}, Ll/o0;->getValue()Ljava/lang/Object;
-
-    move-result-object p3
-
-    check-cast p3, Ll6/j;
-
-    iget-wide v0, p3, Ll6/j;->a:J
+    const/4 v0, 0x0
 
     :goto_0
-    const/16 p3, 0x20
+    return v0
+.end method
 
-    shr-long v2, v0, p3
+.method public final remove()V
+    .locals 2
 
-    long-to-int p3, v2
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    const-wide v2, 0xffffffffL
+    const-string v1, "Operation is not supported for read-only collection"
 
-    and-long/2addr v2, v0
+    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
-    long-to-int v2, v2
-
-    new-instance v3, Lk/l;
-
-    invoke-direct {v3, p4, p2, v0, v1}, Lk/l;-><init>(Lk/o;Lo0/N1;J)V
-
-    sget-object p2, Lv9/u;->g:Lv9/u;
-
-    invoke-interface {p1, p3, v2, p2, v3}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
-
-    move-result-object p1
-
-    return-object p1
+    throw v0
 .end method

@@ -1,41 +1,80 @@
-.class public final Lb/h;
-.super Ljava/lang/Object;
+.class public final LB/H;
+.super Landroid/graphics/drawable/RippleDrawable;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lb/h;
+# instance fields
+.field public final g:Z
+
+.field public h:LY/s;
+
+.field public i:Ljava/lang/Integer;
+
+.field public j:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Z)V
+    .locals 4
 
-    new-instance v0, Lb/h;
+    const/high16 v0, -0x1000000
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
-    sput-object v0, Lb/h;->a:Lb/h;
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-eqz p1, :cond_0
+
+    new-instance v2, Landroid/graphics/drawable/ColorDrawable;
+
+    const/4 v3, -0x1
+
+    invoke-direct {v2, v3}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, v1
+
+    :goto_0
+    invoke-direct {p0, v0, v1, v2}, Landroid/graphics/drawable/RippleDrawable;-><init>(Landroid/content/res/ColorStateList;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+
+    iput-boolean p1, p0, LB/H;->g:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/app/Activity;)Landroid/window/OnBackInvokedDispatcher;
+.method public final getDirtyBounds()Landroid/graphics/Rect;
+    .locals 2
+
+    iget-boolean v0, p0, LB/H;->g:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, LB/H;->j:Z
+
+    :cond_0
+    invoke-super {p0}, Landroid/graphics/drawable/RippleDrawable;->getDirtyBounds()Landroid/graphics/Rect;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    iput-boolean v1, p0, LB/H;->j:Z
+
+    return-object v0
+.end method
+
+.method public final isProjected()Z
     .locals 1
 
-    const-string v0, "activity"
+    iget-boolean v0, p0, LB/H;->j:Z
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Landroid/app/Activity;->getOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
-
-    move-result-object p1
-
-    const-string v0, "activity.getOnBackInvokedDispatcher()"
-
-    invoke-static {p1, v0}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object p1
+    return v0
 .end method

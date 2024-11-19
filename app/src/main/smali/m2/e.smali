@@ -1,17 +1,64 @@
-.class public abstract Lm2/e;
+.class public abstract LM2/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final g:LG2/d;
+
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>()V
     .locals 1
 
-    new-instance v0, Ljava/util/WeakHashMap;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
+    const/4 v0, 0x0
 
-    invoke-static {v0}, Ljava/util/Collections;->newSetFromMap(Ljava/util/Map;)Ljava/util/Set;
+    iput-object v0, p0, LM2/e;->g:LG2/d;
 
+    return-void
+.end method
+
+.method public constructor <init>(LG2/d;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LM2/e;->g:LG2/d;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public final run()V
+    .locals 2
+
+    :try_start_0
+    invoke-virtual {p0}, LM2/e;->a()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    iget-object v1, p0, LM2/e;->g:LG2/d;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1, v0}, LG2/d;->a(Ljava/lang/Exception;)V
+
+    :cond_0
     return-void
 .end method

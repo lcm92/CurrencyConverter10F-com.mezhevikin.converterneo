@@ -1,48 +1,39 @@
-.class public final Ly/r;
+.class public final LY/r;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lf6/i;
 
-
-# instance fields
-.field public final synthetic a:[Lf6/i;
+# static fields
+.field public static final a:LY/r;
 
 
 # direct methods
-.method public constructor <init>([Lf6/i;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LY/r;
 
-    iput-object p1, p0, Ly/r;->a:[Lf6/i;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, LY/r;->a:LY/r;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lf6/j;)V
-    .locals 4
+.method public final a(Landroid/graphics/Canvas;Z)V
+    .locals 0
 
-    iget-object v0, p0, Ly/r;->a:[Lf6/i;
+    if-eqz p2, :cond_0
 
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v1, :cond_0
-
-    aget-object v3, v0, v2
-
-    invoke-interface {v3, p1}, Lf6/i;->a(Lf6/j;)V
-
-    add-int/lit8 v2, v2, 0x1
+    invoke-static {p1}, LY/a;->k(Landroid/graphics/Canvas;)V
 
     goto :goto_0
 
     :cond_0
+    invoke-static {p1}, LY/a;->p(Landroid/graphics/Canvas;)V
+
+    :goto_0
     return-void
 .end method

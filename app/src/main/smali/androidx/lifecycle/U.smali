@@ -14,7 +14,7 @@
 .method public a(Ljava/lang/Class;)Landroidx/lifecycle/Q;
     .locals 0
 
-    invoke-static {p1}, Lh8/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
+    invoke-static {p1}, LH2/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
 
     move-result-object p1
 

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/layout/OnGloballyPositionedElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -76,28 +76,28 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
-    new-instance v0, Lo0/J1;
+    new-instance v0, Lo0/J;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iget-object v1, p0, Landroidx/compose/ui/layout/OnGloballyPositionedElement;->a:Lh4/c;
 
-    iput-object v1, v0, Lo0/J1;->t:Lh4/c;
+    iput-object v1, v0, Lo0/J;->t:Lh4/c;
 
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 1
 
-    check-cast p1, Lo0/J1;
+    check-cast p1, Lo0/J;
 
     iget-object v0, p0, Landroidx/compose/ui/layout/OnGloballyPositionedElement;->a:Lh4/c;
 
-    iput-object v0, p1, Lo0/J1;->t:Lh4/c;
+    iput-object v0, p1, Lo0/J;->t:Lh4/c;
 
     return-void
 .end method

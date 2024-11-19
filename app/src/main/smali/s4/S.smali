@@ -1,41 +1,34 @@
-.class public final Ls4/s;
+.class public final Ls4/S;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ly9/h;
+.implements Ls4/x;
 
 
-# instance fields
-.field public final g:Li4/i;
-
-.field public final h:Ly9/h;
+# static fields
+.field public static final g:Ls4/S;
 
 
 # direct methods
-.method public constructor <init>(Ly9/h;Lh4/c;)V
+.method static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "baseKey"
+    new-instance v0, Ls4/S;
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    check-cast p2, Li4/i;
-
-    iput-object p2, p0, Ls4/s;->g:Li4/i;
-
-    instance-of p2, p1, Ls4/s;
-
-    if-eqz p2, :cond_0
-
-    check-cast p1, Ls4/s;
-
-    iget-object p1, p1, Ls4/s;->h:Ly9/h;
-
-    :cond_0
-    iput-object p1, p0, Ls4/s;->h:Ly9/h;
+    sput-object v0, Ls4/S;->g:Ls4/S;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final b()LY3/i;
+    .locals 1
+
+    sget-object v0, LY3/j;->g:LY3/j;
+
+    return-object v0
 .end method

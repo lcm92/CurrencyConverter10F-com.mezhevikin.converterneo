@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/G1;
+.implements Ls4/G;
 
 
 # instance fields

@@ -25,7 +25,7 @@
 
     iput-object p1, p0, Lio/ktor/utils/io/x;->o:Lio/ktor/utils/io/D;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+    invoke-direct {p0, p2}, La4/c;-><init>(LY3/d;)V
 
     return-void
 .end method

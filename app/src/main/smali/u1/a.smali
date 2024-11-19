@@ -1,535 +1,235 @@
-.class public abstract Lu1/a;
+.class public final LU1/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final f:LU1/a;
+
+
 # instance fields
-.field public final a:Li/f;
+.field public final a:J
 
-.field public final b:Li/f;
+.field public final b:I
 
-.field public final c:Li/f;
+.field public final c:I
+
+.field public final d:J
+
+.field public final e:I
 
 
 # direct methods
-.method public constructor <init>(Li/f;Li/f;Li/f;)V
+.method static constructor <clinit>()V
+    .locals 9
+
+    new-instance v8, LU1/a;
+
+    const-wide/32 v5, 0x240c8400
+
+    const v7, 0x14000
+
+    const-wide/32 v1, 0xa00000
+
+    const/16 v3, 0xc8
+
+    const/16 v4, 0x2710
+
+    move-object v0, v8
+
+    invoke-direct/range {v0 .. v7}, LU1/a;-><init>(JIIJI)V
+
+    sput-object v8, LU1/a;->f:LU1/a;
+
+    return-void
+.end method
+
+.method public constructor <init>(JIIJI)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lu1/a;->a:Li/f;
+    iput-wide p1, p0, LU1/a;->a:J
 
-    iput-object p2, p0, Lu1/a;->b:Li/f;
+    iput p3, p0, LU1/a;->b:I
 
-    iput-object p3, p0, Lu1/a;->c:Li/f;
+    iput p4, p0, LU1/a;->c:I
+
+    iput-wide p5, p0, LU1/a;->d:J
+
+    iput p7, p0, LU1/a;->e:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()Lu1/b;
-.end method
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
 
-.method public final b(Ljava/lang/Class;)Ljava/lang/Class;
-    .locals 4
+    const/4 v0, 0x1
 
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    if-ne p1, p0, :cond_0
 
-    move-result-object v0
+    return v0
 
-    iget-object v1, p0, Lu1/a;->c:Li/f;
-
-    invoke-virtual {v1, v0}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Class;
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p1}, Ljava/lang/Class;->getPackage()Ljava/lang/Package;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Package;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v2
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "."
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, "Parcelizer"
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
+    :cond_0
+    instance-of v1, p1, LU1/a;
 
     const/4 v2, 0x0
 
-    invoke-virtual {p1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    if-eqz v1, :cond_2
 
-    move-result-object v3
+    check-cast p1, LU1/a;
 
-    invoke-static {v0, v2, v3}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+    iget-wide v3, p1, LU1/a;->a:J
 
-    move-result-object v0
+    iget-wide v5, p0, LU1/a;->a:J
 
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    cmp-long v1, v5, v3
 
-    move-result-object p1
+    if-nez v1, :cond_1
 
-    invoke-virtual {v1, p1, v0}, Li/I1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget v1, p0, LU1/a;->b:I
 
-    :cond_0
-    return-object v0
-.end method
+    iget v3, p1, LU1/a;->b:I
 
-.method public final c(Ljava/lang/String;)Ljava/lang/reflect/Method;
-    .locals 4
+    if-ne v1, v3, :cond_1
 
-    iget-object v0, p0, Lu1/a;->a:Li/f;
+    iget v1, p0, LU1/a;->c:I
 
-    invoke-virtual {v0, p1}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iget v3, p1, LU1/a;->c:I
 
-    move-result-object v1
+    if-ne v1, v3, :cond_1
 
-    check-cast v1, Ljava/lang/reflect/Method;
+    iget-wide v3, p0, LU1/a;->d:J
 
-    if-nez v1, :cond_0
+    iget-wide v5, p1, LU1/a;->d:J
 
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    cmp-long v1, v3, v5
 
-    const-class v1, Lu1/a;
+    if-nez v1, :cond_1
 
-    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+    iget v1, p0, LU1/a;->e:I
 
-    move-result-object v2
+    iget p1, p1, LU1/a;->e:I
 
-    const/4 v3, 0x1
-
-    invoke-static {p1, v3, v2}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
-
-    move-result-object v2
-
-    const-string v3, "read"
-
-    filled-new-array {v1}, [Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v2, v3, v1}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v1
-
-    invoke-virtual {v0, p1, v1}, Li/I1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_0
-    return-object v1
-.end method
-
-.method public final d(Ljava/lang/Class;)Ljava/lang/reflect/Method;
-    .locals 4
-
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lu1/a;->b:Li/f;
-
-    invoke-virtual {v1, v0}, Li/I1;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/reflect/Method;
-
-    if-nez v0, :cond_0
-
-    invoke-virtual {p0, p1}, Lu1/a;->b(Ljava/lang/Class;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    const-class v2, Lu1/a;
-
-    filled-new-array {p1, v2}, [Ljava/lang/Class;
-
-    move-result-object v2
-
-    const-string v3, "write"
-
-    invoke-virtual {v0, v3, v2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1, v0}, Li/I1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_0
-    return-object v0
-.end method
-
-.method public abstract e(I)Z
-.end method
-
-.method public final f(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
-    .locals 0
-
-    invoke-virtual {p0, p2}, Lu1/a;->e(I)Z
-
-    move-result p2
-
-    if-nez p2, :cond_0
-
-    return-object p1
-
-    :cond_0
-    move-object p1, p0
-
-    check-cast p1, Lu1/b;
-
-    const-class p2, Lu1/b;
-
-    invoke-virtual {p2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
-
-    move-result-object p2
-
-    iget-object p1, p1, Lu1/b;->e:Landroid/os/Parcel;
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final g()Lu1/c;
-    .locals 3
-
-    move-object v0, p0
-
-    check-cast v0, Lu1/b;
-
-    iget-object v0, v0, Lu1/b;->e:Landroid/os/Parcel;
-
-    invoke-virtual {v0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return-object v1
-
-    :cond_0
-    invoke-virtual {p0}, Lu1/a;->a()Lu1/b;
-
-    move-result-object v2
-
-    :try_start_0
-    invoke-virtual {p0, v0}, Lu1/a;->c(Ljava/lang/String;)Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
-    filled-new-array {v2}, [Ljava/lang/Object;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lu1/c;
-    :try_end_0
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_3
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
-    :catch_0
-    move-exception v0
+    if-ne v1, p1, :cond_1
 
     goto :goto_0
 
-    :catch_1
-    move-exception v0
-
-    goto :goto_1
-
-    :catch_2
-    move-exception v0
-
-    goto :goto_2
-
-    :catch_3
-    move-exception v0
-
-    goto :goto_3
+    :cond_1
+    move v0, v2
 
     :goto_0
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    const-string v2, "VersionedParcel encountered ClassNotFoundException"
-
-    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v1
-
-    :goto_1
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    const-string v2, "VersionedParcel encountered NoSuchMethodException"
-
-    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v1
-
-    :goto_2
-    invoke-virtual {v0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
-
-    move-result-object v1
-
-    instance-of v1, v1, Ljava/lang/RuntimeException;
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/RuntimeException;
-
-    throw v0
-
-    :cond_1
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    const-string v2, "VersionedParcel encountered InvocationTargetException"
-
-    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v1
-
-    :goto_3
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    const-string v2, "VersionedParcel encountered IllegalAccessException"
-
-    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v1
-.end method
-
-.method public abstract h(I)V
-.end method
-
-.method public final i(Lu1/c;)V
-    .locals 3
-
-    const/4 v0, 0x0
-
-    if-nez p1, :cond_0
-
-    move-object p1, p0
-
-    check-cast p1, Lu1/b;
-
-    iget-object p1, p1, Lu1/b;->e:Landroid/os/Parcel;
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    return-void
-
-    :cond_0
-    :try_start_0
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {p0, v1}, Lu1/a;->b(Ljava/lang/Class;)Ljava/lang/Class;
-
-    move-result-object v1
-    :try_end_0
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_4
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v1
-
-    move-object v2, p0
-
-    check-cast v2, Lu1/b;
-
-    iget-object v2, v2, Lu1/b;->e:Landroid/os/Parcel;
-
-    invoke-virtual {v2, v1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lu1/a;->a()Lu1/b;
-
-    move-result-object v1
-
-    :try_start_1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v2
-
-    invoke-virtual {p0, v2}, Lu1/a;->d(Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v2
-
-    filled-new-array {p1, v1}, [Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-virtual {v2, v0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_1
-    .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_3
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_2
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
-
-    iget p1, v1, Lu1/b;->i:I
-
-    if-ltz p1, :cond_1
-
-    iget-object v0, v1, Lu1/b;->d:Landroid/util/SparseIntArray;
-
-    invoke-virtual {v0, p1}, Landroid/util/SparseIntArray;->get(I)I
-
-    move-result p1
-
-    iget-object v0, v1, Lu1/b;->e:Landroid/os/Parcel;
-
-    invoke-virtual {v0}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v1
-
-    sub-int v2, v1, p1
-
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->setDataPosition(I)V
-
-    invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInt(I)V
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->setDataPosition(I)V
-
-    :cond_1
-    return-void
-
-    :catch_0
-    move-exception p1
-
-    goto :goto_0
-
-    :catch_1
-    move-exception p1
-
-    goto :goto_1
-
-    :catch_2
-    move-exception p1
-
-    goto :goto_2
-
-    :catch_3
-    move-exception p1
-
-    goto :goto_3
-
-    :goto_0
-    new-instance v0, Ljava/lang/RuntimeException;
-
-    const-string v1, "VersionedParcel encountered ClassNotFoundException"
-
-    invoke-direct {v0, v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v0
-
-    :goto_1
-    new-instance v0, Ljava/lang/RuntimeException;
-
-    const-string v1, "VersionedParcel encountered NoSuchMethodException"
-
-    invoke-direct {v0, v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v0
-
-    :goto_2
-    invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
-
-    move-result-object v0
-
-    instance-of v0, v0, Ljava/lang/RuntimeException;
-
-    if-eqz v0, :cond_2
-
-    invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/RuntimeException;
-
-    throw p1
+    return v0
 
     :cond_2
-    new-instance v0, Ljava/lang/RuntimeException;
+    return v2
+.end method
 
-    const-string v1, "VersionedParcel encountered InvocationTargetException"
+.method public final hashCode()I
+    .locals 7
 
-    invoke-direct {v0, v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    iget-wide v0, p0, LU1/a;->a:J
 
-    throw v0
+    const/16 v2, 0x20
 
-    :goto_3
-    new-instance v0, Ljava/lang/RuntimeException;
+    ushr-long v3, v0, v2
 
-    const-string v1, "VersionedParcel encountered IllegalAccessException"
+    xor-long/2addr v0, v3
 
-    invoke-direct {v0, v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    long-to-int v0, v0
 
-    throw v0
+    const v1, 0xf4243
 
-    :catch_4
-    move-exception v0
+    xor-int/2addr v0, v1
 
-    new-instance v1, Ljava/lang/RuntimeException;
+    mul-int/2addr v0, v1
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget v3, p0, LU1/a;->b:I
 
-    move-result-object p1
+    xor-int/2addr v0, v3
 
-    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    mul-int/2addr v0, v1
 
-    move-result-object p1
+    iget v3, p0, LU1/a;->c:I
 
-    const-string v2, " does not have a Parcelizer"
+    xor-int/2addr v0, v3
 
-    invoke-virtual {p1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    mul-int/2addr v0, v1
 
-    move-result-object p1
+    iget-wide v3, p0, LU1/a;->d:J
 
-    invoke-direct {v1, p1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    ushr-long v5, v3, v2
 
-    throw v1
+    xor-long v2, v5, v3
+
+    long-to-int v2, v2
+
+    xor-int/2addr v0, v2
+
+    mul-int/2addr v0, v1
+
+    iget v1, p0, LU1/a;->e:I
+
+    xor-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "EventStoreConfig{maxStorageSizeInBytes="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-wide v1, p0, LU1/a;->a:J
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v1, ", loadBatchSize="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, LU1/a;->b:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", criticalSectionEnterTimeoutMs="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, LU1/a;->c:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", eventCleanUpAge="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-wide v1, p0, LU1/a;->d:J
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v1, ", maxBlobByteSizePerRow="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, LU1/a;->e:I
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

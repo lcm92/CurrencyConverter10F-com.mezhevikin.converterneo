@@ -1,84 +1,57 @@
-.class public final Ls3/u;
-.super Li4/i;
+.class public final LS3/u;
+.super La4/c;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/a;
-
-
-# static fields
-.field public static final i:Ls3/u;
-
-.field public static final j:Ls3/u;
 
 
 # instance fields
-.field public final synthetic h:I
+.field public j:LS3/x;
+
+.field public k:Ljava/nio/ByteBuffer;
+
+.field public l:Li4/s;
+
+.field public m:I
+
+.field public synthetic n:Ljava/lang/Object;
+
+.field public final synthetic o:LS3/x;
+
+.field public p:I
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 3
-
-    new-instance v0, Ls3/u;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2}, Ls3/u;-><init>(II)V
-
-    sput-object v0, Ls3/u;->i:Ls3/u;
-
-    new-instance v0, Ls3/u;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    invoke-direct {v0, v1, v2}, Ls3/u;-><init>(II)V
-
-    sput-object v0, Ls3/u;->j:Ls3/u;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(II)V
+.method public constructor <init>(LS3/x;La4/c;)V
     .locals 0
 
-    iput p2, p0, Ls3/u;->h:I
+    iput-object p1, p0, LS3/u;->o:LS3/x;
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    invoke-direct {p0, p2}, La4/c;-><init>(LY3/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/lang/Object;
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget v0, p0, Ls3/u;->h:I
+    iput-object p1, p0, LS3/u;->n:Ljava/lang/Object;
 
-    packed-switch v0, :pswitch_data_0
+    iget p1, p0, LS3/u;->p:I
 
-    new-instance v0, Ljava/util/ArrayList;
+    const/high16 v0, -0x80000000
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    or-int/2addr p1, v0
 
-    return-object v0
+    iput p1, p0, LS3/u;->p:I
 
-    :pswitch_0
-    new-instance v0, Ljava/util/ArrayList;
+    iget-object p1, p0, LS3/u;->o:LS3/x;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    const/4 v0, 0x0
 
-    return-object v0
+    invoke-virtual {p1, v0, v0, p0}, LS3/x;->c(LS3/h;Ljava/nio/ByteBuffer;La4/c;)Ljava/lang/Object;
 
-    nop
+    move-result-object p1
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

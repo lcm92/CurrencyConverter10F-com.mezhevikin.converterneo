@@ -1,125 +1,120 @@
-.class public final Lk/a;
-.super Ljava/lang/Object;
+.class public final LK/a;
+.super LH3/l;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:F
+.field public final j:LK/f;
 
-.field public final b:F
+.field public k:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(FF)V
-    .locals 0
+.method public constructor <init>(LK/f;Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
-    iput p1, p0, Lk/a;->a:F
+    invoke-direct {p0, p2, v0, p3}, LH3/l;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    iput p2, p0, Lk/a;->b:F
+    iput-object p1, p0, LK/a;->j:LK/f;
+
+    iput-object p3, p0, LK/a;->k:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final getValue()Ljava/lang/Object;
+    .locals 1
 
-    const/4 v0, 0x1
+    iget-object v0, p0, LK/a;->k:Ljava/lang/Object;
 
-    if-ne p0, p1, :cond_0
+    return-object v0
+.end method
 
-    return v0
+.method public final setValue(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
+
+    iget-object v0, p0, LK/a;->k:Ljava/lang/Object;
+
+    iput-object p1, p0, LK/a;->k:Ljava/lang/Object;
+
+    iget-object v1, p0, LK/a;->j:LK/f;
+
+    iget-object v1, v1, LK/f;->h:Ljava/util/Iterator;
+
+    check-cast v1, LK/d;
+
+    iget-object v2, v1, LK/d;->j:LN/c;
+
+    iget-object v3, p0, LH3/l;->h:Ljava/lang/Object;
+
+    invoke-virtual {v2, v3}, LN/c;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    goto :goto_2
 
     :cond_0
-    instance-of v1, p1, Lk/a;
+    iget-boolean v4, v1, LK/c;->i:Z
 
-    const/4 v2, 0x0
+    if-eqz v4, :cond_3
 
-    if-nez v1, :cond_1
+    if-eqz v4, :cond_2
 
-    return v2
+    iget-object v4, v1, LK/c;->g:[LK/m;
+
+    iget v5, v1, LK/c;->h:I
+
+    aget-object v4, v4, v5
+
+    iget-object v5, v4, LK/m;->g:[Ljava/lang/Object;
+
+    iget v4, v4, LK/m;->i:I
+
+    aget-object v4, v5, v4
+
+    invoke-virtual {v2, v3, p1}, LN/c;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 p1, 0x0
+
+    if-eqz v4, :cond_1
+
+    invoke-virtual {v4}, Ljava/lang/Object;->hashCode()I
+
+    move-result v3
+
+    goto :goto_0
 
     :cond_1
-    check-cast p1, Lk/a;
+    move v3, p1
 
-    iget v1, p1, Lk/a;->a:F
+    :goto_0
+    iget-object v5, v2, LN/c;->h:LK/l;
 
-    iget v3, p0, Lk/a;->a:F
+    invoke-virtual {v1, v3, v5, v4, p1}, LK/d;->c(ILK/l;Ljava/lang/Object;I)V
 
-    invoke-static {v3, v1}, Ljava/lang/Float;->compare(FF)I
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    return v2
+    goto :goto_1
 
     :cond_2
-    iget v1, p0, Lk/a;->b:F
+    new-instance p1, Ljava/util/NoSuchElementException;
 
-    iget p1, p1, Lk/a;->b:F
+    invoke-direct {p1}, Ljava/util/NoSuchElementException;-><init>()V
 
-    invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    return v2
+    throw p1
 
     :cond_3
-    return v0
-.end method
+    invoke-virtual {v2, v3, p1}, LN/c;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-.method public final hashCode()I
-    .locals 2
+    :goto_1
+    iget p1, v2, LN/c;->j:I
 
-    iget v0, p0, Lk/a;->a:F
+    iput p1, v1, LK/d;->m:I
 
-    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
-
-    move-result v0
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget v1, p0, Lk/a;->b:F
-
-    invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
-
-    move-result v1
-
-    add-int/2addr v1, v0
-
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "FlingResult(distanceCoefficient="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget v1, p0, Lk/a;->a:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v1, ", velocityCoefficient="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lk/a;->b:F
-
-    const/16 v2, 0x29
-
-    invoke-static {v0, v1, v2}, La5/m;->j(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
-
-    move-result-object v0
-
+    :goto_2
     return-object v0
 .end method

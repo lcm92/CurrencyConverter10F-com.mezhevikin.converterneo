@@ -1,109 +1,134 @@
-.class public final synthetic Lb/d;
-.super Ljava/lang/Object;
+.class public final LB/D;
+.super La4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lh4/e;
 
 
 # instance fields
-.field public final synthetic g:I
+.field public k:I
 
-.field public final synthetic h:Lb/n;
+.field public final synthetic l:LB/F;
+
+.field public final synthetic m:F
+
+.field public final synthetic n:Ll/B0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lb/n;I)V
+.method public constructor <init>(LB/F;FLl/B0;LY3/d;)V
     .locals 0
 
-    iput p2, p0, Lb/d;->g:I
+    iput-object p1, p0, LB/D;->l:LB/F;
 
-    iput-object p1, p0, Lb/d;->h:Lb/n;
+    iput p2, p0, LB/D;->m:F
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p3, p0, LB/D;->n:Ll/B0;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p4}, La4/i;-><init>(ILY3/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final d(LY3/d;Ljava/lang/Object;)LY3/d;
     .locals 3
 
-    iget v0, p0, Lb/d;->g:I
+    new-instance p2, LB/D;
 
-    packed-switch v0, :pswitch_data_0
+    iget-object v0, p0, LB/D;->n:Ll/B0;
 
-    iget-object v0, p0, Lb/d;->h:Lb/n;
+    iget-object v1, p0, LB/D;->l:LB/F;
 
-    const-string v1, "this$0"
+    iget v2, p0, LB/D;->m:F
 
-    invoke-static {v0, v1}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {p2, v1, v2, v0, p1}, LB/D;-><init>(LB/F;FLl/B0;LY3/d;)V
 
-    :try_start_0
-    invoke-static {v0}, Lb/n;->g(Lb/n;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
+    return-object p2
+.end method
 
-    goto :goto_0
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
-    :catch_0
-    move-exception v0
+    sget-object v0, LZ3/a;->g:LZ3/a;
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    iget v1, p0, LB/D;->k:I
 
-    move-result-object v1
+    const/4 v2, 0x1
 
-    const-string v2, "Attempt to invoke virtual method \'android.os.Handler android.app.FragmentHostCallback.getHandler()\' on a null object reference"
+    if-eqz v1, :cond_1
 
-    invoke-static {v1, v2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-ne v1, v2, :cond_0
 
-    move-result v1
-
-    if-eqz v1, :cond_0
+    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
 
     goto :goto_0
 
     :cond_0
-    throw v0
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    :catch_1
-    move-exception v0
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
-
-    const-string v2, "Can not perform this action after onSaveInstanceState"
-
-    invoke-static {v1, v2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    :goto_0
-    return-void
+    throw p1
 
     :cond_1
-    throw v0
+    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
 
-    :pswitch_0
-    const-string v0, "this$0"
+    iget-object p1, p0, LB/D;->l:LB/F;
 
-    iget-object v1, p0, Lb/d;->h:Lb/n;
+    iget-object p1, p1, LB/F;->c:Ljava/lang/Object;
 
-    invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    check-cast p1, Ll/c;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    new-instance v1, Ljava/lang/Float;
 
-    return-void
+    iget v3, p0, LB/D;->m:F
 
-    nop
+    invoke-direct {v1, v3}, Ljava/lang/Float;-><init>(F)V
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    iput v2, p0, LB/D;->k:I
+
+    iget-object v2, p0, LB/D;->n:Ll/B0;
+
+    invoke-static {p1, v1, v2, p0}, Ll/c;->c(Ll/c;Ljava/lang/Object;Ll/l;La4/i;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v0, :cond_2
+
+    return-object v0
+
+    :cond_2
+    :goto_0
+    sget-object p1, LU3/y;->a:LU3/y;
+
+    return-object p1
+.end method
+
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Ls4/x;
+
+    check-cast p2, LY3/d;
+
+    invoke-virtual {p0, p2, p1}, LB/D;->d(LY3/d;Ljava/lang/Object;)LY3/d;
+
+    move-result-object p1
+
+    check-cast p1, LB/D;
+
+    sget-object p2, LU3/y;->a:LU3/y;
+
+    invoke-virtual {p1, p2}, LB/D;->f(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

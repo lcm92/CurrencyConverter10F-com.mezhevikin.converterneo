@@ -1,68 +1,41 @@
-.class public final Lz2/f;
-.super Ljava/lang/Object;
+.class public final synthetic LZ2/f;
+.super Li4/m;
 .source "SourceFile"
 
-# interfaces
-.implements Lz2/K1;
 
-
-# instance fields
-.field public final synthetic g:I
-
-.field public final h:Lj5/e;
+# static fields
+.field public static final n:LZ2/f;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lj5/e;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
-    iput p2, p0, Lz2/f;->g:I
+    new-instance v0, LZ2/f;
 
-    iput-object p1, p0, Lz2/f;->h:Lj5/e;
+    const-string v1, "getCode()Ljava/lang/String;"
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x0
+
+    const-class v3, LW2/m;
+
+    const-string v4, "code"
+
+    invoke-direct {v0, v3, v4, v1, v2}, Li4/m;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    sput-object v0, LZ2/f;->n:LZ2/f;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 2
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    iget v0, p0, Lz2/f;->g:I
+    check-cast p1, LW2/m;
 
-    packed-switch v0, :pswitch_data_0
+    iget-object p1, p1, LW2/m;->a:Ljava/lang/String;
 
-    iget-object v0, p0, Lz2/f;->h:Lj5/e;
-
-    iget-object v0, v0, Lj5/e;->g:Ljava/lang/Object;
-
-    check-cast v0, Landroid/app/Application;
-
-    new-instance v1, Lz2/p;
-
-    invoke-direct {v1, v0}, Landroid/content/ContextWrapper;-><init>(Landroid/content/Context;)V
-
-    return-object v1
-
-    :pswitch_0
-    iget-object v0, p0, Lz2/f;->h:Lj5/e;
-
-    iget-object v0, v0, Lj5/e;->g:Ljava/lang/Object;
-
-    check-cast v0, Landroid/app/Application;
-
-    new-instance v1, Lz2/e;
-
-    invoke-direct {v1, v0}, Lz2/e;-><init>(Landroid/app/Application;)V
-
-    return-object v1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

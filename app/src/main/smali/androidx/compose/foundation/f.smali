@@ -4,25 +4,25 @@
 
 
 # static fields
-.field public static final a:Lf5/X10;
+.field public static final a:LF/X0;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 2
 
-    sget-object v0, Lm/Y1;->i:Lm/Y1;
+    sget-object v0, Lm/Y;->i:Lm/Y;
 
-    new-instance v1, Lf5/X10;
+    new-instance v1, LF/X0;
 
-    invoke-direct {v1, v0}, Lf5/p0;-><init>(Lh4/a;)V
+    invoke-direct {v1, v0}, LF/p0;-><init>(Lh4/a;)V
 
-    sput-object v1, Landroidx/compose/foundation/f;->a:Lf5/X10;
+    sput-object v1, Landroidx/compose/foundation/f;->a:LF/X0;
 
     return-void
 .end method
 
-.method public static final a(Lr5/q;Lp/i;Lm/W1;)Lr5/q;
+.method public static final a(LR/q;Lp/i;Lm/W;)LR/q;
     .locals 2
 
     if-nez p2, :cond_0
@@ -40,20 +40,20 @@
 
     invoke-direct {v0, p1, p2}, Landroidx/compose/foundation/IndicationModifierElement;-><init>(Lp/i;Lm/b0;)V
 
-    invoke-interface {p0, v0}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 
     return-object p0
 
     :cond_1
-    new-instance v0, La5/J1;
+    new-instance v0, LA/J;
 
     const/4 v1, 0x2
 
-    invoke-direct {v0, p2, v1, p1}, La5/J1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p2, v1, p1}, LA/J;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    invoke-static {p0, v0}, Lr5/a;->b(Lr5/q;Lh4/f;)Lr5/q;
+    invoke-static {p0, v0}, LR/a;->b(LR/q;Lh4/f;)LR/q;
 
     move-result-object p0
 

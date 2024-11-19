@@ -1,11 +1,10 @@
-.class public interface abstract Lm2/c;
-.super Ljava/lang/Object;
+.class public abstract LM2/c;
+.super LA2/a;
 .source "SourceFile"
 
+# interfaces
+.implements LM2/d;
 
-# virtual methods
-.method public abstract D(I)V
-.end method
 
-.method public abstract L()V
-.end method
+# static fields
+.field public static final synthetic b:I

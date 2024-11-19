@@ -1,31 +1,25 @@
-.class public final Ll3/a;
+.class public final LL3/a;
 .super La4/c;
 .source "SourceFile"
 
 
 # instance fields
-.field public j:Ll3/c;
+.field public j:LL3/b;
 
-.field public k:Ls3/K1;
+.field public synthetic k:Ljava/lang/Object;
 
-.field public l:Ls3/f;
+.field public final synthetic l:LL3/b;
 
-.field public m:Laa/d;
-
-.field public synthetic n:Ljava/lang/Object;
-
-.field public final synthetic o:Ll3/c;
-
-.field public p:I
+.field public m:I
 
 
 # direct methods
-.method public constructor <init>(Ll3/c;La4/c;)V
+.method public constructor <init>(LL3/b;LY3/d;)V
     .locals 0
 
-    iput-object p1, p0, Ll3/a;->o:Ll3/c;
+    iput-object p1, p0, LL3/a;->l:LL3/b;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
+    invoke-direct {p0, p2}, La4/c;-><init>(LY3/d;)V
 
     return-void
 .end method
@@ -35,21 +29,19 @@
 .method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iput-object p1, p0, Ll3/a;->n:Ljava/lang/Object;
+    iput-object p1, p0, LL3/a;->k:Ljava/lang/Object;
 
-    iget p1, p0, Ll3/a;->p:I
+    iget p1, p0, LL3/a;->m:I
 
     const/high16 v0, -0x80000000
 
     or-int/2addr p1, v0
 
-    iput p1, p0, Ll3/a;->p:I
+    iput p1, p0, LL3/a;->m:I
 
-    iget-object p1, p0, Ll3/a;->o:Ll3/c;
+    iget-object p1, p0, LL3/a;->l:LL3/b;
 
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0, v0, p0}, Ll3/c;->k(Ls3/K1;Ls3/f;La4/c;)Ljava/lang/Object;
+    invoke-virtual {p1, p0}, LL3/b;->f(LY3/d;)Ljava/lang/Object;
 
     move-result-object p1
 

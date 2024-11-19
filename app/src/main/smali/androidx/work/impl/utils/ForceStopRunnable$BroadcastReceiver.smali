@@ -66,7 +66,7 @@
     invoke-static {p2, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-static {p1}, Lf7/e;->c(Landroid/content/Context;)V
+    invoke-static {p1}, LF1/e;->c(Landroid/content/Context;)V
 
     :cond_1
     return-void

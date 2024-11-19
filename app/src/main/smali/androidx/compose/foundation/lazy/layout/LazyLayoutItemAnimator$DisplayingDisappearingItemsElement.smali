@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$DisplayingDisappearingItemsElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -77,12 +77,12 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
     new-instance v0, Ls/m;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$DisplayingDisappearingItemsElement;->a:Landroidx/compose/foundation/lazy/layout/a;
 
@@ -91,7 +91,7 @@
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 2
 
     check-cast p1, Ls/m;
@@ -106,9 +106,9 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p1, Lr5/p;->g:Lr5/p;
+    iget-object v0, p1, LR/p;->g:LR/p;
 
-    iget-boolean v0, v0, Lr5/p;->s:Z
+    iget-boolean v0, v0, LR/p;->s:Z
 
     if-eqz v0, :cond_0
 

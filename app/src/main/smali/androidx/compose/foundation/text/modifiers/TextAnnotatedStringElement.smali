@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -14,9 +14,9 @@
 # instance fields
 .field public final a:Lz0/f;
 
-.field public final b:Lz0/F1;
+.field public final b:Lz0/F;
 
-.field public final c:Le6/o;
+.field public final c:LE0/o;
 
 .field public final d:Lh4/c;
 
@@ -28,20 +28,20 @@
 
 .field public final h:I
 
-.field public final i:La5/Z1;
+.field public final i:LA/Z;
 
 
 # direct methods
-.method public constructor <init>(Lz0/f;Lz0/F1;Le6/o;Lh4/c;IZIILa5/Z1;)V
+.method public constructor <init>(Lz0/f;Lz0/F;LE0/o;Lh4/c;IZIILA/Z;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->a:Lz0/f;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F1;
+    iput-object p2, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F;
 
-    iput-object p3, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:Le6/o;
+    iput-object p3, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:LE0/o;
 
     iput-object p4, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->d:Lh4/c;
 
@@ -53,7 +53,7 @@
 
     iput p8, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->h:I
 
-    iput-object p9, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:La5/Z1;
+    iput-object p9, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:LA/Z;
 
     return-void
 .end method
@@ -81,9 +81,9 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;
 
-    iget-object v1, p1, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:La5/Z1;
+    iget-object v1, p1, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:LA/Z;
 
-    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:La5/Z1;
+    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:LA/Z;
 
     invoke-static {v3, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -107,9 +107,9 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F1;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F;
 
-    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F1;
+    iget-object v3, p1, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F;
 
     invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -131,9 +131,9 @@
     return v2
 
     :cond_5
-    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:Le6/o;
+    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:LE0/o;
 
-    iget-object v4, p1, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:Le6/o;
+    iget-object v4, p1, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:LE0/o;
 
     invoke-static {v3, v4}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -218,9 +218,9 @@
 
     mul-int/2addr v0, v1
 
-    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F1;
+    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F;
 
-    invoke-virtual {v2}, Lz0/F1;->hashCode()I
+    invoke-virtual {v2}, Lz0/F;->hashCode()I
 
     move-result v2
 
@@ -228,7 +228,7 @@
 
     mul-int/2addr v2, v1
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:Le6/o;
+    iget-object v0, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:LE0/o;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -266,7 +266,7 @@
 
     iget-boolean v3, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->f:Z
 
-    invoke-static {v0, v1, v3}, Lk/P1;->c(IIZ)I
+    invoke-static {v0, v1, v3}, Lk/P;->c(IIZ)I
 
     move-result v0
 
@@ -284,7 +284,7 @@
 
     mul-int/2addr v0, v3
 
-    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:La5/Z1;
+    iget-object v3, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:LA/Z;
 
     if-eqz v3, :cond_1
 
@@ -300,24 +300,24 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 3
 
     new-instance v0, Lz/h;
 
     iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->a:Lz0/f;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iput-object v1, v0, Lz/h;->t:Lz0/f;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F1;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F;
 
-    iput-object v1, v0, Lz/h;->u:Lz0/F1;
+    iput-object v1, v0, Lz/h;->u:Lz0/F;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:Le6/o;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:LE0/o;
 
-    iput-object v1, v0, Lz/h;->v:Le6/o;
+    iput-object v1, v0, Lz/h;->v:LE0/o;
 
     iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->d:Lh4/c;
 
@@ -345,31 +345,31 @@
 
     iput-object v1, v0, Lz/h;->C:Lh4/c;
 
-    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:La5/Z1;
+    iget-object v2, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:LA/Z;
 
-    iput-object v2, v0, Lz/h;->D:La5/Z1;
+    iput-object v2, v0, Lz/h;->D:LA/Z;
 
     iput-object v1, v0, Lz/h;->E:Lh4/c;
 
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 14
 
     check-cast p1, Lz/h;
 
-    iget-object v0, p1, Lz/h;->D:La5/Z1;
+    iget-object v0, p1, Lz/h;->D:LA/Z;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:La5/Z1;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->i:LA/Z;
 
     invoke-static {v1, v0}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    iput-object v1, p1, Lz/h;->D:La5/Z1;
+    iput-object v1, p1, Lz/h;->D:LA/Z;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F1;
+    iget-object v1, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->b:Lz0/F;
 
     const/4 v2, 0x0
 
@@ -377,13 +377,13 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p1, Lz/h;->u:Lz0/F1;
+    iget-object v0, p1, Lz/h;->u:Lz0/F;
 
     if-eq v1, v0, :cond_0
 
-    iget-object v4, v1, Lz0/F1;->a:Lz0/y;
+    iget-object v4, v1, Lz0/F;->a:Lz0/y;
 
-    iget-object v0, v0, Lz0/F1;->a:Lz0/y;
+    iget-object v0, v0, Lz0/F;->a:Lz0/y;
 
     invoke-virtual {v4, v0}, Lz0/y;->b(Lz0/y;)Z
 
@@ -433,7 +433,7 @@
 
     iget-object v7, p1, Lz/h;->t:Lz0/f;
 
-    sget-object v8, Lv9/t;->g:Lv9/t;
+    sget-object v8, LV3/t;->g:LV3/t;
 
     iget-object v7, v7, Lz0/f;->i:Ljava/util/List;
 
@@ -498,15 +498,15 @@
     iput-object v4, p1, Lz/h;->I:Lz/f;
 
     :cond_7
-    iget-object v5, p1, Lz/h;->u:Lz0/F1;
+    iget-object v5, p1, Lz/h;->u:Lz0/F;
 
-    invoke-virtual {v5, v1}, Lz0/F1;->c(Lz0/F1;)Z
+    invoke-virtual {v5, v1}, Lz0/F;->c(Lz0/F;)Z
 
     move-result v5
 
     xor-int/2addr v5, v3
 
-    iput-object v1, p1, Lz/h;->u:Lz0/F1;
+    iput-object v1, p1, Lz/h;->u:Lz0/F;
 
     iget-object v1, p1, Lz/h;->B:Ljava/util/List;
 
@@ -554,9 +554,9 @@
     move v5, v3
 
     :cond_b
-    iget-object v1, p1, Lz/h;->v:Le6/o;
+    iget-object v1, p1, Lz/h;->v:LE0/o;
 
-    iget-object v7, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:Le6/o;
+    iget-object v7, p0, Landroidx/compose/foundation/text/modifiers/TextAnnotatedStringElement;->c:LE0/o;
 
     invoke-static {v1, v7}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -564,7 +564,7 @@
 
     if-nez v1, :cond_c
 
-    iput-object v7, p1, Lz/h;->v:Le6/o;
+    iput-object v7, p1, Lz/h;->v:LE0/o;
 
     move v5, v3
 
@@ -638,9 +638,9 @@
 
     iget-object v2, p1, Lz/h;->t:Lz0/f;
 
-    iget-object v7, p1, Lz/h;->u:Lz0/F1;
+    iget-object v7, p1, Lz/h;->u:Lz0/F;
 
-    iget-object v8, p1, Lz/h;->v:Le6/o;
+    iget-object v8, p1, Lz/h;->v:LE0/o;
 
     iget v9, p1, Lz/h;->x:I
 
@@ -654,9 +654,9 @@
 
     iput-object v2, v1, Lz/d;->a:Lz0/f;
 
-    iput-object v7, v1, Lz/d;->b:Lz0/F1;
+    iput-object v7, v1, Lz/d;->b:Lz0/F;
 
-    iput-object v8, v1, Lz/d;->c:Le6/o;
+    iput-object v8, v1, Lz/d;->c:LE0/o;
 
     iput v9, v1, Lz/d;->d:I
 
@@ -668,9 +668,9 @@
 
     iput-object v13, v1, Lz/d;->h:Ljava/util/List;
 
-    iput-object v4, v1, Lz/d;->l:La6/s;
+    iput-object v4, v1, Lz/d;->l:LA0/s;
 
-    iput-object v4, v1, Lz/d;->n:Lz0/C1;
+    iput-object v4, v1, Lz/d;->n:Lz0/C;
 
     const/4 v2, -0x1
 
@@ -679,7 +679,7 @@
     iput v2, v1, Lz/d;->o:I
 
     :cond_13
-    iget-boolean v1, p1, Lr5/p;->s:Z
+    iget-boolean v1, p1, LR/p;->s:Z
 
     if-nez v1, :cond_14
 

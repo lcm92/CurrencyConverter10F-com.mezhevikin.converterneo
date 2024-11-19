@@ -23,9 +23,9 @@
 
 .field public final l:Landroidx/lifecycle/v;
 
-.field public final m:Lb5/t;
+.field public final m:LB/t;
 
-.field public final n:La5/Z1;
+.field public final n:LA/Z;
 
 
 # direct methods
@@ -58,21 +58,21 @@
 
     iput-object v0, p0, Landroidx/lifecycle/C;->l:Landroidx/lifecycle/v;
 
-    new-instance v0, Lb5/t;
+    new-instance v0, LB/t;
 
     const/4 v1, 0x5
 
-    invoke-direct {v0, v1, p0}, Lb5/t;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LB/t;-><init>(ILjava/lang/Object;)V
 
-    iput-object v0, p0, Landroidx/lifecycle/C;->m:Lb5/t;
+    iput-object v0, p0, Landroidx/lifecycle/C;->m:LB/t;
 
-    new-instance v0, La5/Z1;
+    new-instance v0, LA/Z;
 
     const/16 v1, 0x18
 
-    invoke-direct {v0, v1, p0}, La5/Z1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LA/Z;-><init>(ILjava/lang/Object;)V
 
-    iput-object v0, p0, Landroidx/lifecycle/C;->n:La5/Z1;
+    iput-object v0, p0, Landroidx/lifecycle/C;->n:LA/Z;
 
     return-void
 .end method
@@ -113,7 +113,7 @@
 
     invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
 
-    iget-object v1, p0, Landroidx/lifecycle/C;->m:Lb5/t;
+    iget-object v1, p0, Landroidx/lifecycle/C;->m:LB/t;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 

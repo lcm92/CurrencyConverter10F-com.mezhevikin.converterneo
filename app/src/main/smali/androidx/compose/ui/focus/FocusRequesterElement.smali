@@ -1,27 +1,27 @@
 .class final Landroidx/compose/ui/focus/FocusRequesterElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lw5/p;
+.field public final a:LW/p;
 
 
 # direct methods
-.method public constructor <init>(Lw5/p;)V
+.method public constructor <init>(LW/p;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Lw5/p;
+    iput-object p1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:LW/p;
 
     return-void
 .end method
@@ -49,9 +49,9 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/focus/FocusRequesterElement;
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Lw5/p;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:LW/p;
 
-    iget-object p1, p1, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Lw5/p;
+    iget-object p1, p1, Landroidx/compose/ui/focus/FocusRequesterElement;->a:LW/p;
 
     invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -68,7 +68,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Lw5/p;
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:LW/p;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -77,38 +77,38 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
-    new-instance v0, Lw5/r;
+    new-instance v0, LW/r;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Lw5/p;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:LW/p;
 
-    iput-object v1, v0, Lw5/r;->t:Lw5/p;
+    iput-object v1, v0, LW/r;->t:LW/p;
 
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 1
 
-    check-cast p1, Lw5/r;
+    check-cast p1, LW/r;
 
-    iget-object v0, p1, Lw5/r;->t:Lw5/p;
+    iget-object v0, p1, LW/r;->t:LW/p;
 
-    iget-object v0, v0, Lw5/p;->a:Lh5/d;
+    iget-object v0, v0, LW/p;->a:LH/d;
 
-    invoke-virtual {v0, p1}, Lh5/d;->n(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, LH/d;->n(Ljava/lang/Object;)Z
 
-    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Lw5/p;
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:LW/p;
 
-    iput-object v0, p1, Lw5/r;->t:Lw5/p;
+    iput-object v0, p1, LW/r;->t:LW/p;
 
-    iget-object v0, v0, Lw5/p;->a:Lh5/d;
+    iget-object v0, v0, LW/p;->a:LH/d;
 
-    invoke-virtual {v0, p1}, Lh5/d;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, LH/d;->b(Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -122,7 +122,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:Lw5/p;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusRequesterElement;->a:LW/p;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

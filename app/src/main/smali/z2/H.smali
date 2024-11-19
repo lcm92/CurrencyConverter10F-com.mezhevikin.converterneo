@@ -1,49 +1,96 @@
-.class public final Lz2/h;
-.super Ljava/lang/Object;
+.class public final LZ2/h;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lo8/e;
-.implements Lo8/d;
+.implements Lh4/c;
 
 
 # instance fields
-.field public final g:Lo8/e;
+.field public final synthetic h:I
 
-.field public final h:Lo8/d;
+.field public final synthetic i:Ljava/util/List;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lo8/e;Lo8/d;)V
-    .locals 0
+.method public constructor <init>(ILjava/util/List;)V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
-    iput-object p1, p0, Lz2/h;->g:Lo8/e;
+    iput p1, p0, LZ2/h;->h:I
 
-    iput-object p2, p0, Lz2/h;->h:Lo8/d;
+    packed-switch p1, :pswitch_data_0
+
+    sget-object p1, LZ2/f;->n:LZ2/f;
+
+    iput-object p2, p0, LZ2/h;->i:Ljava/util/List;
+
+    invoke-direct {p0, v0}, Li4/i;-><init>(I)V
 
     return-void
+
+    :pswitch_0
+    iput-object p2, p0, LZ2/h;->i:Ljava/util/List;
+
+    invoke-direct {p0, v0}, Li4/i;-><init>(I)V
+
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method
 
 
 # virtual methods
-.method public final b(Li8/i;)V
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lz2/h;->h:Lo8/d;
+    iget v0, p0, LZ2/h;->h:I
 
-    invoke-interface {v0, p1}, Lo8/d;->b(Li8/i;)V
+    packed-switch v0, :pswitch_data_0
 
-    return-void
-.end method
+    check-cast p1, Ljava/lang/Number;
 
-.method public final c(Lz2/i;)V
-    .locals 1
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
-    iget-object v0, p0, Lz2/h;->g:Lo8/e;
+    move-result p1
 
-    invoke-interface {v0, p1}, Lo8/e;->c(Lz2/i;)V
+    iget-object v0, p0, LZ2/h;->i:Ljava/util/List;
 
-    return-void
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :pswitch_0
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    iget-object v0, p0, LZ2/h;->i:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    sget-object v0, LZ2/f;->n:LZ2/f;
+
+    invoke-virtual {v0, p1}, LZ2/f;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

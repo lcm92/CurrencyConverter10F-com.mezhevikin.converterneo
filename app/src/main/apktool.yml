@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: Converter100.apk
+apkFileName: Converter_1.0.0.apk
 compressionType: false
 doNotCompress:
 - classes.dex

@@ -1,19 +1,34 @@
-.class public final Lc1/c;
-.super Lo2/g;
+.class public final LC1/c;
+.super Landroid/content/BroadcastReceiver;
 .source "SourceFile"
 
 
+# instance fields
+.field public final synthetic a:LC1/d;
+
+
+# direct methods
+.method public constructor <init>(LC1/d;)V
+    .locals 0
+
+    iput-object p1, p0, LC1/c;->a:LC1/d;
+
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public final k(Landroid/content/pm/PackageManager;Ljava/lang/String;)[Landroid/content/pm/Signature;
-    .locals 1
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 0
 
-    const/16 v0, 0x40
+    if-eqz p2, :cond_0
 
-    invoke-virtual {p1, p2, v0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    iget-object p1, p0, LC1/c;->a:LC1/d;
 
-    move-result-object p1
+    invoke-virtual {p1, p2}, LC1/d;->g(Landroid/content/Intent;)V
 
-    iget-object p1, p1, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
-
-    return-object p1
+    :cond_0
+    return-void
 .end method

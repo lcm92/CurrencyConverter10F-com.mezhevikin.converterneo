@@ -1,51 +1,68 @@
-.class public final Lv4/g;
-.super La4/c;
+.class public final Lv4/G;
+.super Lw4/d;
 .source "SourceFile"
 
 
 # instance fields
-.field public synthetic j:Ljava/lang/Object;
+.field public a:J
 
-.field public k:I
-
-.field public final synthetic l:Lv4/h;
-
-.field public m:Lv4/f;
-
-.field public n:Ljava/util/Iterator;
-
-
-# direct methods
-.method public constructor <init>(Lv4/h;Ly9/d;)V
-    .locals 0
-
-    iput-object p1, p0, Lv4/g;->l:Lv4/h;
-
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly9/d;)V
-
-    return-void
-.end method
+.field public b:Ls4/f;
 
 
 # virtual methods
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(Lw4/b;)Z
+    .locals 4
 
-    iput-object p1, p0, Lv4/g;->j:Ljava/lang/Object;
+    check-cast p1, Lv4/E;
 
-    iget p1, p0, Lv4/g;->k:I
+    iget-wide v0, p0, Lv4/G;->a:J
 
-    const/high16 v0, -0x80000000
+    const-wide/16 v2, 0x0
 
-    or-int/2addr p1, v0
+    cmp-long v0, v0, v2
 
-    iput p1, p0, Lv4/g;->k:I
+    if-ltz v0, :cond_0
 
-    iget-object p1, p0, Lv4/g;->l:Lv4/h;
+    const/4 p1, 0x0
 
-    const/4 v0, 0x0
+    goto :goto_0
 
-    invoke-virtual {p1, v0, p0}, Lv4/h;->c(Lv4/f;Ly9/d;)Ljava/lang/Object;
+    :cond_0
+    iget-wide v0, p1, Lv4/E;->o:J
+
+    iget-wide v2, p1, Lv4/E;->p:J
+
+    cmp-long v2, v0, v2
+
+    if-gez v2, :cond_1
+
+    iput-wide v0, p1, Lv4/E;->p:J
+
+    :cond_1
+    iput-wide v0, p0, Lv4/G;->a:J
+
+    const/4 p1, 0x1
+
+    :goto_0
+    return p1
+.end method
+
+.method public final b(Lw4/b;)[LY3/d;
+    .locals 4
+
+    check-cast p1, Lv4/E;
+
+    iget-wide v0, p0, Lv4/G;->a:J
+
+    const-wide/16 v2, -0x1
+
+    iput-wide v2, p0, Lv4/G;->a:J
+
+    const/4 v2, 0x0
+
+    iput-object v2, p0, Lv4/G;->b:Ls4/f;
+
+    invoke-virtual {p1, v0, v1}, Lv4/E;->v(J)[LY3/d;
 
     move-result-object p1
 

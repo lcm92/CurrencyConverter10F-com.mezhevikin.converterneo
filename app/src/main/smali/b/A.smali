@@ -1,89 +1,36 @@
-.class public final Lb/a;
-.super Ljava/lang/Object;
+.class public final LB/A;
+.super Li4/i;
 .source "SourceFile"
+
+# interfaces
+.implements Lh4/a;
 
 
 # static fields
-.field public static final a:Lb/a;
+.field public static final h:LB/A;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
-    new-instance v0, Lb/a;
+    new-instance v0, LB/A;
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x0
 
-    sput-object v0, Lb/a;->a:Lb/a;
+    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
+
+    sput-object v0, LB/A;->h:LB/A;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(FFFI)Landroid/window/BackEvent;
+.method public final bridge synthetic b()Ljava/lang/Object;
     .locals 1
 
-    new-instance v0, Landroid/window/BackEvent;
-
-    invoke-direct {v0, p1, p2, p3, p4}, Landroid/window/BackEvent;-><init>(FFFI)V
+    sget-object v0, LB/e;->a:LB/e;
 
     return-object v0
-.end method
-
-.method public final b(Landroid/window/BackEvent;)F
-    .locals 1
-
-    const-string v0, "backEvent"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Landroid/window/BackEvent;->getProgress()F
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final c(Landroid/window/BackEvent;)I
-    .locals 1
-
-    const-string v0, "backEvent"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Landroid/window/BackEvent;->getSwipeEdge()I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final d(Landroid/window/BackEvent;)F
-    .locals 1
-
-    const-string v0, "backEvent"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Landroid/window/BackEvent;->getTouchX()F
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final e(Landroid/window/BackEvent;)F
-    .locals 1
-
-    const-string v0, "backEvent"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Landroid/window/BackEvent;->getTouchY()F
-
-    move-result p1
-
-    return p1
 .end method

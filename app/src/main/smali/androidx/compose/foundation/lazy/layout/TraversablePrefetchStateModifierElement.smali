@@ -1,27 +1,27 @@
 .class final Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Ls/A1;
+.field public final a:Ls/A;
 
 
 # direct methods
-.method public constructor <init>(Ls/A1;)V
+.method public constructor <init>(Ls/A;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A1;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A;
 
     return-void
 .end method
@@ -49,9 +49,9 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A1;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A;
 
-    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A1;
+    iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A;
 
     invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -68,7 +68,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A1;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -77,28 +77,28 @@
     return v0
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
-    new-instance v0, Ls/N1;
+    new-instance v0, Ls/N;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A1;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A;
 
-    iput-object v1, v0, Ls/N1;->t:Ls/A1;
+    iput-object v1, v0, Ls/N;->t:Ls/A;
 
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 1
 
-    check-cast p1, Ls/N1;
+    check-cast p1, Ls/N;
 
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A1;
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A;
 
-    iput-object v0, p1, Ls/N1;->t:Ls/A1;
+    iput-object v0, p1, Ls/N;->t:Ls/A;
 
     return-void
 .end method
@@ -112,7 +112,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A1;
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/TraversablePrefetchStateModifierElement;->a:Ls/A;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -1,22 +1,35 @@
-.class public final Lp/j;
-.super Ljava/lang/Object;
+.class public final LP/j;
+.super LP/t;
 .source "SourceFile"
-
-# interfaces
-.implements Lp/m;
 
 
 # instance fields
-.field public final a:Lp/k;
+.field public final b:LP/e;
 
 
 # direct methods
-.method public constructor <init>(Lp/k;)V
+.method public constructor <init>(LP/e;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lp/j;->a:Lp/k;
+    iput-object p1, p0, LP/j;->b:LP/e;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final c()V
+    .locals 1
+
+    iget-object v0, p0, LP/j;->b:LP/e;
+
+    invoke-virtual {v0}, LP/e;->c()V
+
+    new-instance v0, LE3/a;
+
+    invoke-direct {v0}, Ljava/lang/Exception;-><init>()V
+
+    throw v0
 .end method

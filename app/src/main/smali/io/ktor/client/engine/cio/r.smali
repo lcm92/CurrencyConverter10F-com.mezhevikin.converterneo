@@ -9,16 +9,16 @@
 # instance fields
 .field public final synthetic h:I
 
-.field public final synthetic i:Ls4/B1;
+.field public final synthetic i:Ls4/B;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ls4/B1;I)V
+.method public synthetic constructor <init>(Ls4/B;I)V
     .locals 0
 
     iput p2, p0, Lio/ktor/client/engine/cio/r;->h:I
 
-    iput-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B1;
+    iput-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B;
 
     const/4 p1, 0x1
 
@@ -38,26 +38,26 @@
 
     check-cast p1, Ljava/lang/Throwable;
 
-    iget-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B1;
+    iget-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Ls4/g0;->c(Ljava/util/concurrent/CancellationException;)V
 
-    sget-object p1, Lu9/y;->a:Lu9/y;
+    sget-object p1, LU3/y;->a:LU3/y;
 
     return-object p1
 
     :pswitch_0
     check-cast p1, Ljava/lang/Throwable;
 
-    iget-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B1;
+    iget-object p1, p0, Lio/ktor/client/engine/cio/r;->i:Ls4/B;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Ls4/g0;->c(Ljava/util/concurrent/CancellationException;)V
 
-    sget-object p1, Lu9/y;->a:Lu9/y;
+    sget-object p1, LU3/y;->a:LU3/y;
 
     return-object p1
 

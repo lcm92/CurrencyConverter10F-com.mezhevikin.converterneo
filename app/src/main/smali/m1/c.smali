@@ -1,159 +1,54 @@
-.class public final Lm1/c;
+.class public final LM1/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LQ2/d;
 
-# instance fields
-.field public final a:[J
 
-.field public final b:[Z
+# static fields
+.field public static final a:LM1/c;
 
-.field public final c:[I
-
-.field public d:Z
-
-.field public e:Z
+.field public static final b:LQ2/c;
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 4
+.method static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LM1/c;
 
-    new-array v0, p1, [J
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lm1/c;->a:[J
+    sput-object v0, LM1/c;->a:LM1/c;
 
-    new-array v1, p1, [Z
+    const-string v0, "logRequest"
 
-    iput-object v1, p0, Lm1/c;->b:[Z
+    invoke-static {v0}, LQ2/c;->a(Ljava/lang/String;)LQ2/c;
 
-    new-array p1, p1, [I
+    move-result-object v0
 
-    iput-object p1, p0, Lm1/c;->c:[I
-
-    const-wide/16 v2, 0x0
-
-    invoke-static {v0, v2, v3}, Ljava/util/Arrays;->fill([JJ)V
-
-    const/4 p1, 0x0
-
-    invoke-static {v1, p1}, Ljava/util/Arrays;->fill([ZZ)V
+    sput-object v0, LM1/c;->b:LQ2/c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()[I
-    .locals 9
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
 
-    monitor-enter p0
+    check-cast p1, LM1/p;
 
-    :try_start_0
-    iget-boolean v0, p0, Lm1/c;->d:Z
+    check-cast p2, LQ2/e;
 
-    if-eqz v0, :cond_5
+    check-cast p1, LM1/i;
 
-    iget-boolean v0, p0, Lm1/c;->e:Z
+    iget-object p1, p1, LM1/i;->a:Ljava/util/ArrayList;
 
-    if-eqz v0, :cond_0
+    sget-object v0, LM1/c;->b:LQ2/c;
 
-    goto :goto_4
+    invoke-interface {p2, v0, p1}, LQ2/e;->c(LQ2/c;Ljava/lang/Object;)LQ2/e;
 
-    :cond_0
-    iget-object v0, p0, Lm1/c;->a:[J
-
-    array-length v0, v0
-
-    const/4 v1, 0x0
-
-    move v2, v1
-
-    :goto_0
-    const/4 v3, 0x1
-
-    if-ge v2, v0, :cond_4
-
-    iget-object v4, p0, Lm1/c;->a:[J
-
-    aget-wide v5, v4, v2
-
-    const-wide/16 v7, 0x0
-
-    cmp-long v4, v5, v7
-
-    if-lez v4, :cond_1
-
-    move v4, v3
-
-    goto :goto_1
-
-    :cond_1
-    move v4, v1
-
-    :goto_1
-    iget-object v5, p0, Lm1/c;->b:[Z
-
-    aget-boolean v6, v5, v2
-
-    if-eq v4, v6, :cond_3
-
-    iget-object v6, p0, Lm1/c;->c:[I
-
-    if-eqz v4, :cond_2
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v3, 0x2
-
-    :goto_2
-    aput v3, v6, v2
-
-    goto :goto_3
-
-    :catchall_0
-    move-exception v0
-
-    goto :goto_5
-
-    :cond_3
-    iget-object v3, p0, Lm1/c;->c:[I
-
-    aput v1, v3, v2
-
-    :goto_3
-    aput-boolean v4, v5, v2
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_4
-    iput-boolean v3, p0, Lm1/c;->e:Z
-
-    iput-boolean v1, p0, Lm1/c;->d:Z
-
-    iget-object v0, p0, Lm1/c;->c:[I
-
-    monitor-exit p0
-
-    return-object v0
-
-    :cond_5
-    :goto_4
-    monitor-exit p0
-
-    const/4 v0, 0x0
-
-    return-object v0
-
-    :goto_5
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
+    return-void
 .end method

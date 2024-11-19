@@ -1,112 +1,84 @@
-.class public final Ly/t;
-.super La4/i;
+.class public final synthetic LY/t;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements Ljava/util/function/DoubleUnaryOperator;
 
 
 # instance fields
-.field public k:I
+.field public final synthetic a:I
 
-.field public final synthetic l:Ly/u;
-
-.field public final synthetic m:Ly/e;
+.field public final synthetic b:Li4/i;
 
 
 # direct methods
-.method public constructor <init>(Ly/u;Ly/e;Ly9/d;)V
+.method public synthetic constructor <init>(Li4/i;I)V
     .locals 0
 
-    iput-object p1, p0, Ly/t;->l:Ly/u;
+    iput p2, p0, LY/t;->a:I
 
-    iput-object p2, p0, Ly/t;->m:Ly/e;
+    iput-object p1, p0, LY/t;->b:Li4/i;
 
-    const/4 p1, 0x2
-
-    invoke-direct {p0, p1, p3}, La4/i;-><init>(ILy9/d;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Ly9/d;Ljava/lang/Object;)Ly9/d;
-    .locals 2
+.method public final applyAsDouble(D)D
+    .locals 1
 
-    new-instance p2, Ly/t;
+    iget v0, p0, LY/t;->a:I
 
-    iget-object v0, p0, Ly/t;->m:Ly/e;
+    packed-switch v0, :pswitch_data_0
 
-    iget-object v1, p0, Ly/t;->l:Ly/u;
-
-    invoke-direct {p2, v1, v0, p1}, Ly/t;-><init>(Ly/u;Ly/e;Ly9/d;)V
-
-    return-object p2
-.end method
-
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
-
-    sget-object v0, Lz9/a;->g:Lz9/a;
-
-    iget v1, p0, Ly/t;->k:I
-
-    const/4 v2, 0x1
-
-    if-eqz v1, :cond_1
-
-    if-eq v1, v2, :cond_0
-
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_0
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
-
-    new-instance p1, Lg8/c;
-
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
-
-    throw p1
-
-    :cond_1
-    invoke-static {p1}, Lu9/a;->e(Ljava/lang/Object;)V
-
-    iput v2, p0, Ly/t;->k:I
-
-    iget-object p1, p0, Ly/t;->m:Ly/e;
-
-    iget-object v1, p0, Ly/t;->l:Ly/u;
-
-    invoke-static {v1, p1, p0}, Lr0/z0;->a(Ly/u;Ly/e;La4/c;)V
-
-    return-object v0
-.end method
-
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    check-cast p1, Ls4/x;
-
-    check-cast p2, Ly9/d;
-
-    invoke-virtual {p0, p2, p1}, Ly/t;->d(Ly9/d;Ljava/lang/Object;)Ly9/d;
+    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
 
-    check-cast p1, Ly/t;
+    iget-object p2, p0, LY/t;->b:Li4/i;
 
-    sget-object p2, Lu9/y;->a:Lu9/y;
+    check-cast p2, LZ/p;
 
-    invoke-virtual {p1, p2}, Ly/t;->f(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, p1}, LZ/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object p1, Lz9/a;->g:Lz9/a;
+    move-result-object p1
 
-    return-object p1
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
+
+    move-result-wide p1
+
+    return-wide p1
+
+    :pswitch_0
+    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p1
+
+    iget-object p2, p0, LY/t;->b:Li4/i;
+
+    check-cast p2, LZ/p;
+
+    invoke-virtual {p2, p1}, LZ/p;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
+
+    move-result-wide p1
+
+    return-wide p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

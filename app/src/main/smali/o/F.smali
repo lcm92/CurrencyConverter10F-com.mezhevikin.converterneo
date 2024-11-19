@@ -1,99 +1,49 @@
-.class public final Lo/f;
+.class public final LO/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lo/d;
-
 
 # instance fields
-.field public final b:Ll/B0;
+.field public final a:Ljava/lang/Object;
+
+.field public b:Z
+
+.field public final c:LO/l;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 4
+.method public constructor <init>(LO/i;Ljava/lang/Object;)V
+    .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Ll/v;
-
-    const v1, 0x3dcccccd    # 0.1f
-
-    const/high16 v2, 0x3e800000    # 0.25f
-
-    invoke-direct {v0, v2, v1, v2}, Ll/v;-><init>(FFF)V
-
-    const/16 v1, 0x7d
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x2
-
-    invoke-static {v1, v2, v0, v3}, Ll/d;->l(IILl/z;I)Ll/B0;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lo/f;->b:Ll/B0;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(FFF)F
-    .locals 3
-
-    add-float/2addr p2, p1
-
-    sub-float/2addr p2, p1
-
-    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
-
-    move-result p2
-
-    cmpg-float v0, p2, p3
-
-    if-gtz v0, :cond_0
+    iput-object p2, p0, LO/f;->a:Ljava/lang/Object;
 
     const/4 v0, 0x1
 
-    goto :goto_0
+    iput-boolean v0, p0, LO/f;->b:Z
 
-    :cond_0
-    const/4 v0, 0x0
+    iget-object v0, p1, LO/i;->a:Ljava/util/Map;
 
-    :goto_0
-    const v1, 0x3e99999a    # 0.3f
+    invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    mul-float/2addr v1, p3
+    move-result-object p2
 
-    const/4 v2, 0x0
+    check-cast p2, Ljava/util/Map;
 
-    mul-float/2addr v2, p2
+    new-instance v0, LA/h0;
 
-    sub-float/2addr v1, v2
+    const/16 v1, 0xe
 
-    sub-float v2, p3, v1
+    invoke-direct {v0, v1, p1}, LA/h0;-><init>(ILjava/lang/Object;)V
 
-    if-eqz v0, :cond_1
+    sget-object p1, LO/m;->a:LF/X0;
 
-    cmpg-float v0, v2, p2
+    new-instance p1, LO/l;
 
-    if-gez v0, :cond_1
+    invoke-direct {p1, p2, v0}, LO/l;-><init>(Ljava/util/Map;Lh4/c;)V
 
-    sub-float v1, p3, p2
+    iput-object p1, p0, LO/f;->c:LO/l;
 
-    :cond_1
-    sub-float/2addr p1, v1
-
-    return p1
-.end method
-
-.method public final b()Ll/l;
-    .locals 1
-
-    iget-object v0, p0, Lo/f;->b:Ll/B0;
-
-    return-object v0
+    return-void
 .end method

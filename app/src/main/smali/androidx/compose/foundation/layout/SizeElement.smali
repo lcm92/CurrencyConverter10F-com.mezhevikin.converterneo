@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/SizeElement;
-.super Lq0/S1;
+.super Lq0/S;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S1;"
+        "Lq0/S;"
     }
 .end annotation
 
@@ -138,7 +138,7 @@
 
     iget v3, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
-    invoke-static {v3, v1}, Ll6/e;->a(FF)Z
+    invoke-static {v3, v1}, LL0/e;->a(FF)Z
 
     move-result v1
 
@@ -151,7 +151,7 @@
 
     iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
-    invoke-static {v1, v3}, Ll6/e;->a(FF)Z
+    invoke-static {v1, v3}, LL0/e;->a(FF)Z
 
     move-result v1
 
@@ -164,7 +164,7 @@
 
     iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
-    invoke-static {v1, v3}, Ll6/e;->a(FF)Z
+    invoke-static {v1, v3}, LL0/e;->a(FF)Z
 
     move-result v1
 
@@ -177,7 +177,7 @@
 
     iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
-    invoke-static {v1, v3}, Ll6/e;->a(FF)Z
+    invoke-static {v1, v3}, LL0/e;->a(FF)Z
 
     move-result v1
 
@@ -213,19 +213,19 @@
 
     iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
-    invoke-static {v2, v0, v1}, La5/m;->e(FII)I
+    invoke-static {v2, v0, v1}, LA/m;->e(FII)I
 
     move-result v0
 
     iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
-    invoke-static {v2, v0, v1}, La5/m;->e(FII)I
+    invoke-static {v2, v0, v1}, LA/m;->e(FII)I
 
     move-result v0
 
     iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
-    invoke-static {v2, v0, v1}, La5/m;->e(FII)I
+    invoke-static {v2, v0, v1}, LA/m;->e(FII)I
 
     move-result v0
 
@@ -240,12 +240,12 @@
     return v1
 .end method
 
-.method public final j()Lr5/p;
+.method public final j()LR/p;
     .locals 2
 
     new-instance v0, Lq/d0;
 
-    invoke-direct {v0}, Lr5/p;-><init>()V
+    invoke-direct {v0}, LR/p;-><init>()V
 
     iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
@@ -270,7 +270,7 @@
     return-object v0
 .end method
 
-.method public final k(Lr5/p;)V
+.method public final k(LR/p;)V
     .locals 1
 
     check-cast p1, Lq/d0;

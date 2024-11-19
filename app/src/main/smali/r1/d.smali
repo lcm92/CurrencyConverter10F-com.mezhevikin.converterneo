@@ -396,13 +396,13 @@
 
     if-eqz v4, :cond_3
 
-    new-instance v4, Li8/i;
+    new-instance v4, LI2/i;
 
     const-string v5, "SELECT identity_hash FROM room_master_table WHERE id = 42 LIMIT 1"
 
     const/16 v6, 0x8
 
-    invoke-direct {v4, v5, v6, v0}, Li8/i;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v4, v5, v6, v0}, LI2/i;-><init>(Ljava/lang/String;IZ)V
 
     invoke-virtual {p1, v4}, Lr1/b;->m(Lq1/c;)Landroid/database/Cursor;
 

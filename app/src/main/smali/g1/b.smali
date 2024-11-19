@@ -1,45 +1,91 @@
-.class public final Lg1/b;
-.super Lh9/r;
+.class public final LG1/b;
+.super Ljava/lang/Throwable;
 .source "SourceFile"
 
 
+# instance fields
+.field public final synthetic g:I
+
+
 # direct methods
-.method public synthetic constructor <init>()V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
-    sget-object v0, Lg1/a;->h:Lg1/a;
+    const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lg1/b;-><init>(Lh9/r;)V
+    iput v0, p0, LG1/b;->g:I
+
+    const-string v0, "message"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    invoke-direct {p0, p1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lh9/r;)V
-    .locals 2
+.method public synthetic constructor <init>(Ljava/lang/String;I)V
+    .locals 0
 
-    const-string v0, "initialExtras"
+    .line 1
+    iput p2, p0, LG1/b;->g:I
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
-    .line 2
-    invoke-direct {p0, v0, v1}, Lh9/r;-><init>(IZ)V
-
-    .line 3
-    iget-object v0, p0, Lh9/r;->g:Ljava/lang/Object;
-
-    check-cast v0, Ljava/util/LinkedHashMap;
-
-    iget-object p1, p1, Lh9/r;->g:Ljava/lang/Object;
-
-    check-cast p1, Ljava/util/LinkedHashMap;
-
-    .line 4
-    invoke-interface {v0, p1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+    invoke-direct {p0, p1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public declared-synchronized fillInStackTrace()Ljava/lang/Throwable;
+    .locals 1
+
+    iget v0, p0, LG1/b;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    :pswitch_0
+    invoke-super {p0}, Ljava/lang/Throwable;->fillInStackTrace()Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    return-object v0
+
+    :pswitch_1
+    monitor-enter p0
+
+    monitor-exit p0
+
+    return-object p0
+
+    :pswitch_2
+    monitor-enter p0
+
+    monitor-exit p0
+
+    return-object p0
+
+    :pswitch_3
+    monitor-enter p0
+
+    monitor-exit p0
+
+    return-object p0
+
+    :pswitch_4
+    monitor-enter p0
+
+    monitor-exit p0
+
+    return-object p0
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_4
+        :pswitch_0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+    .end packed-switch
 .end method

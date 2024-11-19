@@ -1,304 +1,190 @@
-.class public Lk0/h;
+.class public final LK0/h;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final b:LK0/h;
+
+.field public static final c:LK0/h;
+
+.field public static final d:LK0/h;
+
+
 # instance fields
-.field public final a:Lh5/d;
+.field public final a:I
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, LK0/h;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, LK0/h;-><init>(I)V
+
+    sput-object v0, LK0/h;->b:LK0/h;
+
+    new-instance v0, LK0/h;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, LK0/h;-><init>(I)V
+
+    sput-object v0, LK0/h;->c:LK0/h;
+
+    new-instance v0, LK0/h;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, v1}, LK0/h;-><init>(I)V
+
+    sput-object v0, LK0/h;->d:LK0/h;
+
+    return-void
+.end method
+
 .method public constructor <init>(I)V
-    .locals 1
-
-    packed-switch p1, :pswitch_data_0
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance p1, Lh5/d;
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [Lk0/g;
-
-    invoke-direct {p1, v0}, Lh5/d;-><init>([Ljava/lang/Object;)V
-
-    iput-object p1, p0, Lk0/h;->a:Lh5/d;
+    iput p1, p0, LK0/h;->a:I
 
     return-void
-
-    :pswitch_0
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    new-instance p1, Lh5/d;
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [Ls/i;
-
-    invoke-direct {p1, v0}, Lh5/d;-><init>([Ljava/lang/Object;)V
-
-    iput-object p1, p0, Lk0/h;->a:Lh5/d;
-
-    return-void
-
-    :pswitch_1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    new-instance p1, Lh5/d;
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [Lo/h;
-
-    invoke-direct {p1, v0}, Lh5/d;-><init>([Ljava/lang/Object;)V
-
-    iput-object p1, p0, Lk0/h;->a:Lh5/d;
-
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method
 
 
 # virtual methods
-.method public a(Li/n;Lo0/p;Ly/s;Z)Z
-    .locals 6
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
-    iget-object v0, p0, Lk0/h;->a:Lh5/d;
+    const/4 v0, 0x1
 
-    iget v1, v0, Lh5/d;->i:I
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, LK0/h;
 
     const/4 v2, 0x0
 
-    if-lez v1, :cond_3
+    if-nez v1, :cond_1
 
-    iget-object v0, v0, Lh5/d;->g:[Ljava/lang/Object;
-
-    move v3, v2
-
-    move v4, v3
-
-    :cond_0
-    aget-object v5, v0, v3
-
-    check-cast v5, Lk0/g;
-
-    invoke-virtual {v5, p1, p2, p3, p4}, Lk0/g;->a(Li/n;Lo0/p;Ly/s;Z)Z
-
-    move-result v5
-
-    if-nez v5, :cond_2
-
-    if-eqz v4, :cond_1
-
-    goto :goto_0
+    return v2
 
     :cond_1
-    move v4, v2
+    check-cast p1, LK0/h;
 
-    goto :goto_1
+    iget p1, p1, LK0/h;->a:I
+
+    iget v1, p0, LK0/h;->a:I
+
+    if-eq v1, p1, :cond_2
+
+    return v2
 
     :cond_2
-    :goto_0
-    const/4 v4, 0x1
-
-    :goto_1
-    add-int/lit8 v3, v3, 0x1
-
-    if-lt v3, v1, :cond_0
-
-    move v2, v4
-
-    :cond_3
-    return v2
+    return v0
 .end method
 
-.method public b(Ljava/util/concurrent/CancellationException;)V
-    .locals 6
+.method public final hashCode()I
+    .locals 1
 
-    iget-object v0, p0, Lk0/h;->a:Lh5/d;
+    iget v0, p0, LK0/h;->a:I
 
-    iget v1, v0, Lh5/d;->i:I
+    return v0
+.end method
 
-    new-array v2, v1, [Ls4/e;
+.method public final toString()Ljava/lang/String;
+    .locals 5
+
+    iget v0, p0, LK0/h;->a:I
+
+    if-nez v0, :cond_0
+
+    const-string v0, "TextDecoration.None"
+
+    return-object v0
+
+    :cond_0
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    and-int/lit8 v2, v0, 0x1
+
+    if-eqz v2, :cond_1
+
+    const-string v2, "Underline"
+
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_1
+    and-int/lit8 v0, v0, 0x2
+
+    if-eqz v0, :cond_2
+
+    const-string v0, "LineThrough"
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_2
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    const/4 v2, 0x1
+
+    if-ne v0, v2, :cond_3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v2, "TextDecoration."
+
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_3
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v2, "TextDecoration["
+
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v2, ", "
 
     const/4 v3, 0x0
 
-    move v4, v3
+    const/16 v4, 0x3e
 
-    :goto_0
-    if-ge v4, v1, :cond_0
+    invoke-static {v1, v2, v3, v4}, Lv2/h;->D(Ljava/util/List;Ljava/lang/String;LA3/A;I)Ljava/lang/String;
 
-    iget-object v5, v0, Lh5/d;->g:[Ljava/lang/Object;
+    move-result-object v1
 
-    aget-object v5, v5, v4
+    const/16 v2, 0x5d
 
-    check-cast v5, Lo/h;
+    invoke-static {v0, v1, v2}, LA/m;->l(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
 
-    iget-object v5, v5, Lo/h;->b:Ls4/f;
+    move-result-object v0
 
-    aput-object v5, v2, v4
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    :goto_1
-    if-ge v3, v1, :cond_1
-
-    aget-object v4, v2, v3
-
-    invoke-interface {v4, p1}, Ls4/e;->P(Ljava/lang/Throwable;)Z
-
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    invoke-virtual {v0}, Lh5/d;->l()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_2
-
-    return-void
-
-    :cond_2
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "uncancelled requests present"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public c(Ly/s;)V
-    .locals 2
-
-    iget-object p1, p0, Lk0/h;->a:Lh5/d;
-
-    iget v0, p1, Lh5/d;->i:I
-
-    add-int/lit8 v0, v0, -0x1
-
-    :goto_0
-    const/4 v1, -0x1
-
-    if-ge v1, v0, :cond_1
-
-    iget-object v1, p1, Lh5/d;->g:[Ljava/lang/Object;
-
-    aget-object v1, v1, v0
-
-    check-cast v1, Lk0/g;
-
-    iget-object v1, v1, Lk0/g;->c:Lj7/s;
-
-    iget v1, v1, Lj7/s;->b:I
-
-    if-nez v1, :cond_0
-
-    invoke-virtual {p1, v0}, Lh5/d;->o(I)Ljava/lang/Object;
-
-    :cond_0
-    add-int/lit8 v0, v0, -0x1
-
-    goto :goto_0
-
-    :cond_1
-    return-void
-.end method
-
-.method public d()V
-    .locals 4
-
-    const/4 v0, 0x0
-
-    :goto_0
-    iget-object v1, p0, Lk0/h;->a:Lh5/d;
-
-    iget v2, v1, Lh5/d;->i:I
-
-    if-ge v0, v2, :cond_1
-
-    iget-object v2, v1, Lh5/d;->g:[Ljava/lang/Object;
-
-    aget-object v2, v2, v0
-
-    check-cast v2, Lk0/g;
-
-    iget-object v3, v2, Lk0/g;->b:Lr5/p;
-
-    iget-boolean v3, v3, Lr5/p;->s:Z
-
-    if-nez v3, :cond_0
-
-    invoke-virtual {v2}, Lk0/g;->f()V
-
-    invoke-virtual {v1, v0}, Lh5/d;->o(I)Ljava/lang/Object;
-
-    goto :goto_0
-
-    :cond_0
-    add-int/lit8 v0, v0, 0x1
-
-    invoke-virtual {v2}, Lk0/h;->d()V
-
-    goto :goto_0
-
-    :cond_1
-    return-void
-.end method
-
-.method public e()V
-    .locals 5
-
-    new-instance v0, Ln4/g;
-
-    iget-object v1, p0, Lk0/h;->a:Lh5/d;
-
-    iget v2, v1, Lh5/d;->i:I
-
-    const/4 v3, 0x1
-
-    sub-int/2addr v2, v3
-
-    const/4 v4, 0x0
-
-    invoke-direct {v0, v4, v2, v3}, Ln4/e;-><init>(III)V
-
-    iget v0, v0, Ln4/e;->h:I
-
-    if-ltz v0, :cond_0
-
-    :goto_0
-    iget-object v2, v1, Lh5/d;->g:[Ljava/lang/Object;
-
-    aget-object v2, v2, v4
-
-    check-cast v2, Lo/h;
-
-    iget-object v2, v2, Lo/h;->b:Ls4/f;
-
-    sget-object v3, Lu9/y;->a:Lu9/y;
-
-    invoke-virtual {v2, v3}, Ls4/f;->s(Ljava/lang/Object;)V
-
-    if-eq v4, v0, :cond_0
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {v1}, Lh5/d;->h()V
-
-    return-void
+    return-object v0
 .end method

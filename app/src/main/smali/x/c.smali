@@ -1,128 +1,491 @@
-.class public final Lx/c;
-.super Lq0/n;
+.class public final LX/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lq0/w;
-.implements Lq0/k0;
-.implements Lw5/c;
 
 
 # instance fields
-.field public v:Lh4/a;
-
-.field public w:Z
-
-.field public final x:Lk0/B1;
+.field public final a:J
 
 
 # direct methods
-.method public constructor <init>(Lh4/a;)V
-    .locals 2
+.method public synthetic constructor <init>(J)V
+    .locals 0
 
-    invoke-direct {p0}, Lq0/n;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lx/c;->v:Lh4/a;
-
-    new-instance p1, Lx/b;
-
-    const/4 v0, 0x0
-
-    invoke-direct {p1, p0, v0}, Lx/b;-><init>(Lx/c;Ly9/d;)V
-
-    sget-object v1, Lk0/v;->a:Lk0/i;
-
-    new-instance v1, Lk0/B1;
-
-    invoke-direct {v1, v0, v0, v0, p1}, Lk0/B1;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lh4/e;)V
-
-    invoke-virtual {p0, v1}, Lq0/n;->y0(Lq0/m;)V
-
-    iput-object v1, p0, Lx/c;->x:Lk0/B1;
+    iput-wide p1, p0, LX/c;->a:J
 
     return-void
+.end method
+
+.method public static a(JFI)J
+    .locals 4
+
+    and-int/lit8 v0, p3, 0x1
+
+    const/16 v1, 0x20
+
+    if-eqz v0, :cond_0
+
+    shr-long v2, p0, v1
+
+    long-to-int v0, v2
+
+    invoke-static {v0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    and-int/lit8 p3, p3, 0x2
+
+    const-wide v2, 0xffffffffL
+
+    if-eqz p3, :cond_1
+
+    and-long/2addr p0, v2
+
+    long-to-int p0, p0
+
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p2
+
+    :cond_1
+    invoke-static {v0}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p0
+
+    int-to-long p0, p0
+
+    invoke-static {p2}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p2
+
+    int-to-long p2, p2
+
+    shl-long/2addr p0, v1
+
+    and-long/2addr p2, v2
+
+    or-long/2addr p0, p2
+
+    return-wide p0
+.end method
+
+.method public static final b(JJ)Z
+    .locals 0
+
+    cmp-long p0, p0, p2
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public static final c(J)F
+    .locals 3
+
+    const/16 v0, 0x20
+
+    shr-long v0, p0, v0
+
+    long-to-int v0, v0
+
+    invoke-static {v0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v0
+
+    const-wide v1, 0xffffffffL
+
+    and-long/2addr p0, v1
+
+    long-to-int p0, p0
+
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p0
+
+    mul-float/2addr v0, v0
+
+    mul-float/2addr p0, p0
+
+    add-float/2addr p0, v0
+
+    float-to-double p0, p0
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->sqrt(D)D
+
+    move-result-wide p0
+
+    double-to-float p0, p0
+
+    return p0
+.end method
+
+.method public static final d(J)F
+    .locals 1
+
+    const/16 v0, 0x20
+
+    shr-long/2addr p0, v0
+
+    long-to-int p0, p0
+
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final e(J)F
+    .locals 2
+
+    const-wide v0, 0xffffffffL
+
+    and-long/2addr p0, v0
+
+    long-to-int p0, p0
+
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static final f(J)Z
+    .locals 2
+
+    const-wide v0, 0x7fffffff7fffffffL
+
+    and-long/2addr p0, v0
+
+    const-wide v0, 0x7f8000017f800001L    # 1.4044497680738353E306
+
+    sub-long v0, p0, v0
+
+    not-long p0, p0
+
+    and-long/2addr p0, v0
+
+    const-wide v0, -0x7fffffff80000000L    # -1.0609978955E-314
+
+    and-long/2addr p0, v0
+
+    cmp-long p0, p0, v0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public static final g(JJ)J
+    .locals 6
+
+    const/16 v0, 0x20
+
+    shr-long v1, p0, v0
+
+    long-to-int v1, v1
+
+    invoke-static {v1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v1
+
+    shr-long v2, p2, v0
+
+    long-to-int v2, v2
+
+    invoke-static {v2}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v2
+
+    sub-float/2addr v1, v2
+
+    const-wide v2, 0xffffffffL
+
+    and-long/2addr p0, v2
+
+    long-to-int p0, p0
+
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p0
+
+    and-long p1, p2, v2
+
+    long-to-int p1, p1
+
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p1
+
+    sub-float/2addr p0, p1
+
+    invoke-static {v1}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p1
+
+    int-to-long p1, p1
+
+    invoke-static {p0}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p0
+
+    int-to-long v4, p0
+
+    shl-long p0, p1, v0
+
+    and-long p2, v4, v2
+
+    or-long/2addr p0, p2
+
+    return-wide p0
+.end method
+
+.method public static final h(JJ)J
+    .locals 5
+
+    const/16 v0, 0x20
+
+    shr-long v1, p0, v0
+
+    long-to-int v1, v1
+
+    invoke-static {v1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v1
+
+    shr-long v2, p2, v0
+
+    long-to-int v2, v2
+
+    invoke-static {v2}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v2
+
+    add-float/2addr v2, v1
+
+    const-wide v3, 0xffffffffL
+
+    and-long/2addr p0, v3
+
+    long-to-int p0, p0
+
+    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p0
+
+    and-long p1, p2, v3
+
+    long-to-int p1, p1
+
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p1
+
+    add-float/2addr p1, p0
+
+    invoke-static {v2}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p0
+
+    int-to-long p2, p0
+
+    invoke-static {p1}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p0
+
+    int-to-long p0, p0
+
+    shl-long/2addr p2, v0
+
+    and-long/2addr p0, v3
+
+    or-long/2addr p0, p2
+
+    return-wide p0
+.end method
+
+.method public static final i(FJ)J
+    .locals 6
+
+    const/16 v0, 0x20
+
+    shr-long v1, p1, v0
+
+    long-to-int v1, v1
+
+    invoke-static {v1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result v1
+
+    mul-float/2addr v1, p0
+
+    const-wide v2, 0xffffffffL
+
+    and-long/2addr p1, v2
+
+    long-to-int p1, p1
+
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p1
+
+    mul-float/2addr p1, p0
+
+    invoke-static {v1}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p0
+
+    int-to-long v4, p0
+
+    invoke-static {p1}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result p0
+
+    int-to-long p0, p0
+
+    shl-long v0, v4, v0
+
+    and-long/2addr p0, v2
+
+    or-long/2addr p0, v0
+
+    return-wide p0
+.end method
+
+.method public static j(J)Ljava/lang/String;
+    .locals 2
+
+    invoke-static {p0, p1}, Lv2/h;->L(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Offset("
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-static {p0, p1}, LX/c;->d(J)F
+
+    move-result v1
+
+    invoke-static {v1}, Lt2/a;->S(F)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {p0, p1}, LX/c;->e(J)F
+
+    move-result p0
+
+    invoke-static {p0}, Lt2/a;->S(F)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 p0, 0x29
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_0
+    const-string p0, "Offset.Unspecified"
+
+    :goto_0
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public final Q()V
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
 
-    iget-object v0, p0, Lx/c;->x:Lk0/B1;
+    instance-of v0, p1, LX/c;
 
-    invoke-virtual {v0}, Lk0/B1;->Q()V
+    const/4 v1, 0x0
 
-    return-void
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    check-cast p1, LX/c;
+
+    iget-wide v2, p1, LX/c;->a:J
+
+    iget-wide v4, p0, LX/c;->a:J
+
+    cmp-long p1, v4, v2
+
+    if-eqz p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x1
+
+    :goto_0
+    return v1
 .end method
 
-.method public final X(Lk0/i;Lk0/j;J)V
-    .locals 1
+.method public final hashCode()I
+    .locals 2
 
-    iget-object v0, p0, Lx/c;->x:Lk0/B1;
+    iget-wide v0, p0, LX/c;->a:J
 
-    invoke-virtual {v0, p1, p2, p3, p4}, Lk0/B1;->X(Lk0/i;Lk0/j;J)V
-
-    return-void
-.end method
-
-.method public final h(Lo0/G1;Lo0/D1;J)Lo0/F1;
-    .locals 4
-
-    sget v0, Landroidx/compose/foundation/text/handwriting/a;->a:F
-
-    invoke-interface {p1, v0}, Ll6/b;->j(F)I
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
 
     move-result v0
 
-    sget v1, Landroidx/compose/foundation/text/handwriting/a;->b:F
-
-    invoke-interface {p1, v1}, Ll6/b;->j(F)I
-
-    move-result v1
-
-    mul-int/lit8 v2, v1, 0x2
-
-    mul-int/lit8 v3, v0, 0x2
-
-    invoke-static {v2, v3, p3, p4}, Lk4/a;->V(IIJ)J
-
-    move-result-wide p3
-
-    invoke-interface {p2, p3, p4}, Lo0/D1;->a(J)Lo0/N1;
-
-    move-result-object p2
-
-    iget p3, p2, Lo0/N1;->h:I
-
-    sub-int/2addr p3, v3
-
-    iget p4, p2, Lo0/N1;->g:I
-
-    sub-int/2addr p4, v2
-
-    new-instance v2, Lc5/F1;
-
-    const/4 v3, 0x1
-
-    invoke-direct {v2, p2, v1, v0, v3}, Lc5/F1;-><init>(Ljava/lang/Object;III)V
-
-    sget-object p2, Lv9/u;->g:Lv9/u;
-
-    invoke-interface {p1, p4, p3, p2, v2}, Lo0/G1;->K(IILjava/util/Map;Lh4/c;)Lo0/F1;
-
-    move-result-object p1
-
-    return-object p1
+    return v0
 .end method
 
-.method public final r(Lw5/s;)V
-    .locals 0
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    invoke-virtual {p1}, Lw5/s;->a()Z
+    iget-wide v0, p0, LX/c;->a:J
 
-    move-result p1
+    invoke-static {v0, v1}, LX/c;->j(J)Ljava/lang/String;
 
-    iput-boolean p1, p0, Lx/c;->w:Z
+    move-result-object v0
 
-    return-void
+    return-object v0
 .end method

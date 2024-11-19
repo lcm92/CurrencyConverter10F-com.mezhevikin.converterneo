@@ -1,97 +1,237 @@
-.class public abstract Lw2/m;
+.class public final LW2/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LB4/f;
+.end annotation
+
+
 # static fields
-.field public static final a:La5/l;
+.field public static final Companion:LW2/l;
 
-.field public static final b:La5/l;
+.field public static final g:[LB4/a;
 
-.field public static final c:La5/l;
 
-.field public static final d:La5/l;
+# instance fields
+.field public final a:Ljava/lang/String;
 
-.field public static final e:La5/l;
+.field public b:Ljava/lang/String;
 
-.field public static final f:La5/l;
+.field public final c:Ljava/lang/String;
+
+.field public final d:Ljava/util/List;
+
+.field public final e:Ljava/util/List;
+
+.field public final f:Ljava/util/List;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 6
 
-    new-instance v0, La5/l;
-
-    const-wide/16 v1, 0x2710
-
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v1
-
-    const/4 v2, 0x2
-
-    const-string v3, "gads:dynamite_load:fail:sample_rate"
-
-    invoke-direct {v0, v3, v1, v2}, La5/l;-><init>(Ljava/lang/String;Ljava/lang/Object;I)V
-
-    sput-object v0, Lw2/m;->a:La5/l;
-
-    new-instance v0, La5/l;
-
-    const-string v1, "gads:public_beta:traffic_multiplier"
-
-    const-string v2, "1.0"
-
-    const/4 v3, 0x4
-
-    invoke-direct {v0, v1, v2, v3}, La5/l;-><init>(Ljava/lang/String;Ljava/lang/Object;I)V
-
-    sput-object v0, Lw2/m;->b:La5/l;
-
-    new-instance v0, La5/l;
-
-    const-string v1, "gads:sdk_crash_report_class_prefix"
-
-    const-string v2, "com.google."
-
-    invoke-direct {v0, v1, v2, v3}, La5/l;-><init>(Ljava/lang/String;Ljava/lang/Object;I)V
-
-    sput-object v0, Lw2/m;->c:La5/l;
-
-    const-string v0, "gads:sdk_crash_report_enabled"
+    const/4 v0, 0x0
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+    new-instance v2, LW2/l;
 
-    move-result-object v0
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lw2/m;->d:La5/l;
+    sput-object v2, LW2/m;->Companion:LW2/l;
 
-    const-string v0, "gads:sdk_crash_report_full_stacktrace"
+    new-instance v2, LF4/c;
 
-    invoke-static {v0, v1}, La5/l;->e(Ljava/lang/String;Z)La5/l;
+    sget-object v3, LF4/r0;->a:LF4/r0;
 
-    move-result-object v0
+    invoke-direct {v2, v3, v1}, LF4/c;-><init>(LB4/a;I)V
 
-    sput-object v0, Lw2/m;->e:La5/l;
+    new-instance v4, LF4/c;
 
-    new-instance v0, La5/l;
+    invoke-direct {v4, v3, v1}, LF4/c;-><init>(LB4/a;I)V
 
-    const-wide v1, 0x3f847ae147ae147bL    # 0.01
+    new-instance v5, LF4/c;
 
-    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-direct {v5, v3, v1}, LF4/c;-><init>(LB4/a;I)V
 
-    move-result-object v1
+    const/4 v3, 0x6
 
-    const/4 v2, 0x3
+    new-array v3, v3, [LB4/a;
 
-    const-string v3, "gads:trapped_exception_sample_rate"
+    aput-object v0, v3, v1
 
-    invoke-direct {v0, v3, v1, v2}, La5/l;-><init>(Ljava/lang/String;Ljava/lang/Object;I)V
+    const/4 v1, 0x1
 
-    sput-object v0, Lw2/m;->f:La5/l;
+    aput-object v0, v3, v1
+
+    const/4 v1, 0x2
+
+    aput-object v0, v3, v1
+
+    const/4 v0, 0x3
+
+    aput-object v2, v3, v0
+
+    const/4 v0, 0x4
+
+    aput-object v4, v3, v0
+
+    const/4 v0, 0x5
+
+    aput-object v5, v3, v0
+
+    sput-object v3, LW2/m;->g:[LB4/a;
 
     return-void
+.end method
+
+.method public constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    and-int/lit8 v0, p1, 0x1
+
+    const-string v1, ""
+
+    if-nez v0, :cond_0
+
+    iput-object v1, p0, LW2/m;->a:Ljava/lang/String;
+
+    goto :goto_0
+
+    :cond_0
+    iput-object p2, p0, LW2/m;->a:Ljava/lang/String;
+
+    :goto_0
+    and-int/lit8 p2, p1, 0x2
+
+    if-nez p2, :cond_1
+
+    iput-object v1, p0, LW2/m;->b:Ljava/lang/String;
+
+    goto :goto_1
+
+    :cond_1
+    iput-object p3, p0, LW2/m;->b:Ljava/lang/String;
+
+    :goto_1
+    and-int/lit8 p2, p1, 0x4
+
+    if-nez p2, :cond_2
+
+    iput-object v1, p0, LW2/m;->c:Ljava/lang/String;
+
+    goto :goto_2
+
+    :cond_2
+    iput-object p4, p0, LW2/m;->c:Ljava/lang/String;
+
+    :goto_2
+    and-int/lit8 p2, p1, 0x8
+
+    sget-object p3, LV3/t;->g:LV3/t;
+
+    if-nez p2, :cond_3
+
+    iput-object p3, p0, LW2/m;->d:Ljava/util/List;
+
+    goto :goto_3
+
+    :cond_3
+    iput-object p5, p0, LW2/m;->d:Ljava/util/List;
+
+    :goto_3
+    and-int/lit8 p2, p1, 0x10
+
+    if-nez p2, :cond_4
+
+    iput-object p3, p0, LW2/m;->e:Ljava/util/List;
+
+    goto :goto_4
+
+    :cond_4
+    iput-object p6, p0, LW2/m;->e:Ljava/util/List;
+
+    :goto_4
+    and-int/lit8 p1, p1, 0x20
+
+    if-nez p1, :cond_5
+
+    iput-object p3, p0, LW2/m;->f:Ljava/util/List;
+
+    goto :goto_5
+
+    :cond_5
+    iput-object p7, p0, LW2/m;->f:Ljava/util/List;
+
+    :goto_5
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    iget-object v0, p0, LW2/m;->a:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_0
+    move p1, v1
+
+    :goto_0
+    if-ne v0, p1, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_1
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget-object v0, p0, LW2/m;->a:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "Currency["
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, LW2/m;->a:Ljava/lang/String;
+
+    const/16 v2, 0x5d
+
+    invoke-static {v0, v1, v2}, LA/m;->l(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

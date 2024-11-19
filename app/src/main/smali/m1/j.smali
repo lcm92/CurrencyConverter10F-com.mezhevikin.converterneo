@@ -1,249 +1,135 @@
-.class public abstract Lm1/j;
-.super Ljava/lang/Object;
+.class public final LM1/j;
+.super LM1/r;
 .source "SourceFile"
 
 
 # instance fields
-.field public volatile a:Lr1/b;
-
-.field public b:Ljava/util/concurrent/Executor;
-
-.field public c:Lq1/b;
-
-.field public final d:Lm1/e;
-
-.field public e:Z
-
-.field public f:Z
-
-.field public g:Ljava/util/ArrayList;
-
-.field public final h:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
-
-.field public final i:Ljava/lang/ThreadLocal;
+.field public final a:LM1/h;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(LM1/h;)V
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Ljava/util/concurrent/locks/ReentrantReadWriteLock;
-
-    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;-><init>()V
-
-    iput-object v0, p0, Lm1/j;->h:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
-
-    new-instance v0, Ljava/lang/ThreadLocal;
-
-    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
-
-    iput-object v0, p0, Lm1/j;->i:Ljava/lang/ThreadLocal;
-
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
-
-    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
-
-    invoke-virtual {p0}, Lm1/j;->d()Lm1/e;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lm1/j;->d:Lm1/e;
+    iput-object p1, p0, LM1/j;->a:LM1/h;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 2
-
-    iget-boolean v0, p0, Lm1/j;->e:Z
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    :cond_0
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/os/Looper;->getThread()Ljava/lang/Thread;
-
-    move-result-object v0
-
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
-
-    move-result-object v1
-
-    if-eq v0, v1, :cond_1
-
-    return-void
-
-    :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "Cannot access database on the main thread since it may potentially lock the UI for a long period of time."
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public final b()V
-    .locals 2
-
-    iget-object v0, p0, Lm1/j;->c:Lq1/b;
-
-    invoke-interface {v0}, Lq1/b;->s()Lr1/b;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lr1/b;->h:Landroid/database/sqlite/SQLiteClosable;
-
-    check-cast v0, Landroid/database/sqlite/SQLiteDatabase;
-
-    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Lm1/j;->i:Ljava/lang/ThreadLocal;
-
-    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "Cannot access database on a different coroutine context inherited from a suspending transaction."
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    :cond_1
-    :goto_0
-    return-void
-.end method
-
-.method public final c()V
-    .locals 2
-
-    invoke-virtual {p0}, Lm1/j;->a()V
-
-    iget-object v0, p0, Lm1/j;->c:Lq1/b;
-
-    invoke-interface {v0}, Lq1/b;->s()Lr1/b;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lm1/j;->d:Lm1/e;
-
-    invoke-virtual {v1, v0}, Lm1/e;->c(Lr1/b;)V
-
-    invoke-virtual {v0}, Lr1/b;->b()V
-
-    return-void
-.end method
-
-.method public abstract d()Lm1/e;
-.end method
-
-.method public abstract e(Lm1/a;)Lq1/b;
-.end method
-
-.method public final f()V
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
-    iget-object v0, p0, Lm1/j;->c:Lq1/b;
+    const/4 v0, 0x1
 
-    invoke-interface {v0}, Lq1/b;->s()Lr1/b;
+    if-ne p1, p0, :cond_0
 
-    move-result-object v0
+    return v0
 
-    invoke-virtual {v0}, Lr1/b;->h()V
-
-    iget-object v0, p0, Lm1/j;->c:Lq1/b;
-
-    invoke-interface {v0}, Lq1/b;->s()Lr1/b;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lr1/b;->h:Landroid/database/sqlite/SQLiteClosable;
-
-    check-cast v0, Landroid/database/sqlite/SQLiteDatabase;
-
-    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lm1/j;->d:Lm1/e;
-
-    iget-object v1, v0, Lm1/e;->d:Ljava/util/concurrent/atomic/AtomicBoolean;
+    :cond_0
+    instance-of v1, p1, LM1/r;
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x1
+    if-eqz v1, :cond_2
 
-    invoke-virtual {v1, v2, v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    check-cast p1, LM1/r;
+
+    sget-object v1, LM1/q;->g:LM1/q;
+
+    move-object v3, p1
+
+    check-cast v3, LM1/j;
+
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {v1, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
-    iget-object v1, v0, Lm1/e;->c:Landroidx/work/impl/WorkDatabase_Impl;
+    iget-object v1, p0, LM1/j;->a:LM1/h;
 
-    iget-object v1, v1, Lm1/j;->b:Ljava/util/concurrent/Executor;
+    check-cast p1, LM1/j;
 
-    iget-object v0, v0, Lm1/e;->i:Li7/a;
+    iget-object p1, p1, LM1/j;->a:LM1/h;
 
-    invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    invoke-virtual {v1, p1}, LM1/h;->equals(Ljava/lang/Object;)Z
 
-    :cond_0
-    return-void
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move v0, v2
+
+    :goto_0
+    return v0
+
+    :cond_2
+    return v2
 .end method
 
-.method public final g(Lq1/c;)Landroid/database/Cursor;
-    .locals 1
+.method public final hashCode()I
+    .locals 2
 
-    invoke-virtual {p0}, Lm1/j;->a()V
+    sget-object v0, LM1/q;->g:LM1/q;
 
-    invoke-virtual {p0}, Lm1/j;->b()V
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
-    iget-object v0, p0, Lm1/j;->c:Lq1/b;
+    move-result v0
 
-    invoke-interface {v0}, Lq1/b;->s()Lr1/b;
+    const v1, 0xf4243
+
+    xor-int/2addr v0, v1
+
+    mul-int/2addr v0, v1
+
+    iget-object v1, p0, LM1/j;->a:LM1/h;
+
+    invoke-virtual {v1}, LM1/h;->hashCode()I
+
+    move-result v1
+
+    xor-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "ClientInfo{clientType="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    sget-object v1, LM1/q;->g:LM1/q;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", androidClientInfo="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, LM1/j;->a:LM1/h;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, "}"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lr1/b;->m(Lq1/c;)Landroid/database/Cursor;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final h()V
-    .locals 1
-
-    iget-object v0, p0, Lm1/j;->c:Lq1/b;
-
-    invoke-interface {v0}, Lq1/b;->s()Lr1/b;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lr1/b;->n()V
-
-    return-void
+    return-object v0
 .end method

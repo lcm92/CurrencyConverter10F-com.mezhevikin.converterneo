@@ -92,7 +92,7 @@
     goto :goto_0
 
     :cond_1
-    iget-object p1, p1, Ln2/c;->m:Lb8/a;
+    iget-object p1, p1, Ln2/c;->m:LB2/a;
 
     const/4 p2, 0x3
 
@@ -303,7 +303,7 @@
 
     const-string v4, "."
 
-    invoke-static {v2, p1, v4}, Lk/P1;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p1, v4}, Lk/P;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

@@ -1,33 +1,25 @@
-.class public final Li3/a;
-.super Ljava/net/ConnectException;
+.class public abstract LI3/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final g:Ljava/lang/Throwable;
+# static fields
+.field public static final a:LR3/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
 
-    const-string v0, "message"
+    new-instance v0, LR3/c;
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    const/16 v1, 0x800
 
-    invoke-direct {p0, p1}, Ljava/net/ConnectException;-><init>(Ljava/lang/String;)V
+    const/16 v2, 0x1002
 
-    iput-object p2, p0, Li3/a;->g:Ljava/lang/Throwable;
+    invoke-direct {v0, v1, v2}, LR3/c;-><init>(II)V
+
+    sput-object v0, LI3/a;->a:LR3/c;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final getCause()Ljava/lang/Throwable;
-    .locals 1
-
-    iget-object v0, p0, Li3/a;->g:Ljava/lang/Throwable;
-
-    return-object v0
 .end method

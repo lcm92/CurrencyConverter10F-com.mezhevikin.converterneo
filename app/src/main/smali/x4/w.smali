@@ -10,7 +10,7 @@
 
 
 # direct methods
-.method public constructor <init>(ILy9/i;)V
+.method public constructor <init>(ILY3/i;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

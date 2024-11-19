@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final a(Landroidx/compose/material3/MinimumInteractiveModifier;ZLp/i;ZLx0/f;Lh4/c;)Lr5/q;
+.method public static final a(Landroidx/compose/material3/MinimumInteractiveModifier;ZLp/i;ZLx0/f;Lh4/c;)LR/q;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/selection/ToggleableElement;
@@ -23,7 +23,7 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/selection/ToggleableElement;-><init>(ZLp/i;ZLx0/f;Lh4/c;)V
 
-    invoke-interface {p0, v6}, Lr5/q;->i(Lr5/q;)Lr5/q;
+    invoke-interface {p0, v6}, LR/q;->i(LR/q;)LR/q;
 
     move-result-object p0
 

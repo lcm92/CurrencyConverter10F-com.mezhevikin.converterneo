@@ -1,38 +1,17 @@
-.class public final Le3/g;
-.super Li4/i;
+.class public final LE3/g;
+.super LE3/a;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/a;
-
-
-# static fields
-.field public static final h:Le3/g;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    new-instance v0, Le3/g;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
-
-    sput-object v0, Le3/g;->h:Le3/g;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final b()Ljava/lang/Object;
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
 
-    new-instance v0, Lh9/g;
+    const-string v0, "message"
 
-    invoke-direct {v0}, Lh9/g;-><init>()V
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return-object v0
+    invoke-direct {p0, p1, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    return-void
 .end method
