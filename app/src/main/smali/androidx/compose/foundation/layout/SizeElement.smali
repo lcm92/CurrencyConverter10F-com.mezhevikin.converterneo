@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/SizeElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -138,7 +138,7 @@
 
     iget v3, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
-    invoke-static {v3, v1}, Ll5/e;->a(FF)Z
+    invoke-static {v3, v1}, Ldef/l5/EL5;->a(FF)Z
 
     move-result v1
 
@@ -151,7 +151,7 @@
 
     iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
-    invoke-static {v1, v3}, Ll5/e;->a(FF)Z
+    invoke-static {v1, v3}, Ldef/l5/EL5;->a(FF)Z
 
     move-result v1
 
@@ -164,7 +164,7 @@
 
     iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
-    invoke-static {v1, v3}, Ll5/e;->a(FF)Z
+    invoke-static {v1, v3}, Ldef/l5/EL5;->a(FF)Z
 
     move-result v1
 
@@ -177,7 +177,7 @@
 
     iget v3, p1, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
-    invoke-static {v1, v3}, Ll5/e;->a(FF)Z
+    invoke-static {v1, v3}, Ldef/l5/EL5;->a(FF)Z
 
     move-result v1
 
@@ -213,19 +213,19 @@
 
     iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
-    invoke-static {v2, v0, v1}, Laa/m;->e(FII)I
+    invoke-static {v2, v0, v1}, Ldef/aa/MAA;->e(FII)I
 
     move-result v0
 
     iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
-    invoke-static {v2, v0, v1}, Laa/m;->e(FII)I
+    invoke-static {v2, v0, v1}, Ldef/aa/MAA;->e(FII)I
 
     move-result v0
 
     iget v2, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
-    invoke-static {v2, v0, v1}, Laa/m;->e(FII)I
+    invoke-static {v2, v0, v1}, Ldef/aa/MAA;->e(FII)I
 
     move-result v0
 
@@ -240,60 +240,60 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lq/d0;
+    new-instance v0, Ldef/q/D0Q;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
     iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
-    iput v1, v0, Lq/d0;->t:F
+    iput v1, v0, Ldef/q/D0Q;->t:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
-    iput v1, v0, Lq/d0;->u:F
+    iput v1, v0, Ldef/q/D0Q;->u:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
-    iput v1, v0, Lq/d0;->v:F
+    iput v1, v0, Ldef/q/D0Q;->v:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
-    iput v1, v0, Lq/d0;->w:F
+    iput v1, v0, Ldef/q/D0Q;->w:F
 
     iget-boolean v1, p0, Landroidx/compose/foundation/layout/SizeElement;->e:Z
 
-    iput-boolean v1, v0, Lq/d0;->x:Z
+    iput-boolean v1, v0, Ldef/q/D0Q;->x:Z
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lq/d0;
+    check-cast p1, Ldef/q/D0Q;
 
     iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->a:F
 
-    iput v0, p1, Lq/d0;->t:F
+    iput v0, p1, Ldef/q/D0Q;->t:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->b:F
 
-    iput v0, p1, Lq/d0;->u:F
+    iput v0, p1, Ldef/q/D0Q;->u:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->c:F
 
-    iput v0, p1, Lq/d0;->v:F
+    iput v0, p1, Ldef/q/D0Q;->v:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/SizeElement;->d:F
 
-    iput v0, p1, Lq/d0;->w:F
+    iput v0, p1, Ldef/q/D0Q;->w:F
 
     iget-boolean v0, p0, Landroidx/compose/foundation/layout/SizeElement;->e:Z
 
-    iput-boolean v0, p1, Lq/d0;->x:Z
+    iput-boolean v0, p1, Ldef/q/D0Q;->x:Z
 
     return-void
 .end method

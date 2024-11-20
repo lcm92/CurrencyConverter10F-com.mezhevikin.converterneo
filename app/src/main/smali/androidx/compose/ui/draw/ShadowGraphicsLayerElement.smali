@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -14,7 +14,7 @@
 # instance fields
 .field public final a:F
 
-.field public final b:Lya/ma;
+.field public final b:Ldef/ya/MAYA;
 
 .field public final c:Z
 
@@ -24,14 +24,14 @@
 
 
 # direct methods
-.method public constructor <init>(FLya/ma;ZJJ)V
+.method public constructor <init>(FLdef/ya/MAYA;ZJJ)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->a:F
 
-    iput-object p2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Lya/ma;
+    iput-object p2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Ldef/ya/MAYA;
 
     iput-boolean p3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:Z
 
@@ -69,7 +69,7 @@
 
     iget v3, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->a:F
 
-    invoke-static {v3, v1}, Ll5/e;->a(FF)Z
+    invoke-static {v3, v1}, Ldef/l5/EL5;->a(FF)Z
 
     move-result v1
 
@@ -78,11 +78,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Lya/ma;
+    iget-object v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Ldef/ya/MAYA;
 
-    iget-object v3, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Lya/ma;
+    iget-object v3, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Ldef/ya/MAYA;
 
-    invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -104,7 +104,7 @@
 
     iget-wide v5, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:J
 
-    invoke-static {v3, v4, v5, v6}, Lya/s;->c(JJ)Z
+    invoke-static {v3, v4, v5, v6}, Ldef/ya/SYA;->c(JJ)Z
 
     move-result v1
 
@@ -117,7 +117,7 @@
 
     iget-wide v5, p1, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:J
 
-    invoke-static {v3, v4, v5, v6}, Lya/s;->c(JJ)Z
+    invoke-static {v3, v4, v5, v6}, Ldef/ya/SYA;->c(JJ)Z
 
     move-result p1
 
@@ -142,7 +142,7 @@
 
     mul-int/2addr v0, v1
 
-    iget-object v2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Lya/ma;
+    iget-object v2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Ldef/ya/MAYA;
 
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
@@ -154,15 +154,15 @@
 
     iget-boolean v0, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->c:Z
 
-    invoke-static {v2, v1, v0}, Lk/pa;->c(IIZ)I
+    invoke-static {v2, v1, v0}, Ldef/k/PAK;->c(IIZ)I
 
     move-result v0
 
-    sget v2, Lya/s;->j:I
+    sget v2, Ldef/ya/SYA;->j:I
 
     iget-wide v2, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->d:J
 
-    invoke-static {v0, v1, v2, v3}, Lk/pa;->b(IIJ)I
+    invoke-static {v0, v1, v2, v3}, Ldef/k/PAK;->b(IIJ)I
 
     move-result v0
 
@@ -177,50 +177,50 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 3
 
-    new-instance v0, Lya/n;
+    new-instance v0, Ldef/ya/NYA;
 
-    new-instance v1, Laa/h0;
+    new-instance v1, Ldef/aa/H0AA;
 
     const/16 v2, 0x10
 
-    invoke-direct {v1, v2, p0}, Laa/h0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Ldef/aa/H0AA;-><init>(ILjava/lang/Object;)V
 
-    invoke-direct {v0, v1}, Lya/n;-><init>(Lh4/c;)V
+    invoke-direct {v0, v1}, Ldef/ya/NYA;-><init>(Ldef/h4/CH4;)V
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 2
 
-    check-cast p1, Lya/n;
+    check-cast p1, Ldef/ya/NYA;
 
-    new-instance v0, Laa/h0;
+    new-instance v0, Ldef/aa/H0AA;
 
     const/16 v1, 0x10
 
-    invoke-direct {v0, v1, p0}, Laa/h0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Ldef/aa/H0AA;-><init>(ILjava/lang/Object;)V
 
-    iput-object v0, p1, Lya/n;->t:Lh4/c;
+    iput-object v0, p1, Ldef/ya/NYA;->t:Ldef/h4/CH4;
 
     const/4 v0, 0x2
 
-    invoke-static {p1, v0}, Lq0/f;->t(Lq0/m;I)Lq0/za;
+    invoke-static {p1, v0}, Ldef/q0/FQ0;->t(Ldef/q0/MQ0;I)Ldef/q0/ZAQ0;
 
     move-result-object v0
 
-    iget-object v0, v0, Lq0/za;->s:Lq0/za;
+    iget-object v0, v0, Ldef/q0/ZAQ0;->s:Ldef/q0/ZAQ0;
 
     if-eqz v0, :cond_0
 
-    iget-object p1, p1, Lya/n;->t:Lh4/c;
+    iget-object p1, p1, Ldef/ya/NYA;->t:Ldef/h4/CH4;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p1, v1}, Lq0/za;->g1(Lh4/c;Z)V
+    invoke-virtual {v0, p1, v1}, Ldef/q0/ZAQ0;->g1(Ldef/h4/CH4;Z)V
 
     :cond_0
     return-void
@@ -237,7 +237,7 @@
 
     iget v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->a:F
 
-    invoke-static {v1}, Ll5/e;->b(F)Ljava/lang/String;
+    invoke-static {v1}, Ldef/l5/EL5;->b(F)Ljava/lang/String;
 
     move-result-object v1
 
@@ -247,7 +247,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Lya/ma;
+    iget-object v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->b:Ldef/ya/MAYA;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -267,11 +267,11 @@
 
     const-string v3, ", spotColor="
 
-    invoke-static {v1, v2, v0, v3}, Lk/pa;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Ldef/k/PAK;->h(JLjava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget-wide v1, p0, Landroidx/compose/ui/draw/ShadowGraphicsLayerElement;->e:J
 
-    invoke-static {v1, v2}, Lya/s;->i(J)Ljava/lang/String;
+    invoke-static {v1, v2}, Ldef/ya/SYA;->i(J)Ljava/lang/String;
 
     move-result-object v1
 

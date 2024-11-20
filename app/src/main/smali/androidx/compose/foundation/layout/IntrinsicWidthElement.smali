@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/IntrinsicWidthElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x2
 
-    invoke-static {v0}, Ll/i;->b(I)I
+    invoke-static {v0}, Ldef/l/IL;->b(I)I
 
     move-result v0
 
@@ -66,36 +66,36 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lq/sa;
+    new-instance v0, Ldef/q/SAQ;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
     const/4 v1, 0x2
 
-    iput v1, v0, Lq/sa;->t:I
+    iput v1, v0, Ldef/q/SAQ;->t:I
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lq/sa;->u:Z
+    iput-boolean v1, v0, Ldef/q/SAQ;->u:Z
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lq/sa;
+    check-cast p1, Ldef/q/SAQ;
 
     const/4 v0, 0x2
 
-    iput v0, p1, Lq/sa;->t:I
+    iput v0, p1, Ldef/q/SAQ;->t:I
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lq/sa;->u:Z
+    iput-boolean v0, p1, Ldef/q/SAQ;->u:Z
 
     return-void
 .end method

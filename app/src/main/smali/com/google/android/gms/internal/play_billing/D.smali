@@ -104,7 +104,7 @@
 
     const-string v0, "at index "
 
-    invoke-static {v0, v1}, Laa/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Ldef/aa/MAA;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 

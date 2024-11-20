@@ -25,7 +25,7 @@
 
     const-string p2, "activity"
 
-    invoke-static {p1, p2}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -47,15 +47,15 @@
 
     const-string p2, "null cannot be cast to non-null type androidx.lifecycle.ReportFragment"
 
-    invoke-static {p1, p2}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ldef/i4/HI4;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Landroidx/lifecycle/F;
 
     iget-object p2, p0, Landroidx/lifecycle/B;->this$0:Landroidx/lifecycle/C;
 
-    iget-object p2, p2, Landroidx/lifecycle/C;->n:Laa/za;
+    iget-object p2, p2, Landroidx/lifecycle/C;->n:Ldef/aa/ZAAA;
 
-    iput-object p2, p1, Landroidx/lifecycle/F;->g:Laa/za;
+    iput-object p2, p1, Landroidx/lifecycle/F;->g:Ldef/aa/ZAAA;
 
     :cond_0
     return-void
@@ -66,7 +66,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p1, p0, Landroidx/lifecycle/B;->this$0:Landroidx/lifecycle/C;
 
@@ -80,9 +80,9 @@
 
     iget-object v0, p1, Landroidx/lifecycle/C;->k:Landroid/os/Handler;
 
-    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
+    invoke-static {v0}, Ldef/i4/HI4;->c(Ljava/lang/Object;)V
 
-    iget-object p1, p1, Landroidx/lifecycle/C;->m:Lba/t;
+    iget-object p1, p1, Landroidx/lifecycle/C;->m:Ldef/ba/TBA;
 
     const-wide/16 v1, 0x2bc
 
@@ -97,7 +97,7 @@
 
     const-string p2, "activity"
 
-    invoke-static {p1, p2}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p2, Landroidx/lifecycle/B$a;
 
@@ -115,7 +115,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p1, p0, Landroidx/lifecycle/B;->this$0:Landroidx/lifecycle/C;
 

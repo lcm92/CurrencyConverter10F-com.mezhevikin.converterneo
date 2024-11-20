@@ -57,16 +57,16 @@
     return-void
 .end method
 
-.method public final g(Landroidx/lifecycle/v;Lp1/e;)V
+.method public final g(Landroidx/lifecycle/v;Ldef/p1/EP1;)V
     .locals 1
 
     const-string v0, "registry"
 
-    invoke-static {p2, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "lifecycle"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-boolean v0, p0, Landroidx/lifecycle/I;->i:Z
 
@@ -82,9 +82,9 @@
 
     iget-object v0, p0, Landroidx/lifecycle/I;->g:Ljava/lang/String;
 
-    iget-object p1, p1, Landroidx/lifecycle/H;->e:Lp1/d;
+    iget-object p1, p1, Landroidx/lifecycle/H;->e:Ldef/p1/DP1;
 
-    invoke-virtual {p2, v0, p1}, Lp1/e;->c(Ljava/lang/String;Lp1/d;)V
+    invoke-virtual {p2, v0, p1}, Ldef/p1/EP1;->c(Ljava/lang/String;Ldef/p1/DP1;)V
 
     return-void
 

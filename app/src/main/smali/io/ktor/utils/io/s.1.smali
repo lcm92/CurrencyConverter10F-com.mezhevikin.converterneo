@@ -1,56 +1,56 @@
 .class public final Lio/ktor/utils/io/s;
-.super Li4/i;
+.super Ldef/i4/II4;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/c;
+.implements Ldef/h4/CH4;
 
 
 # instance fields
-.field public final synthetic h:Li4/s;
+.field public final synthetic h:Ldef/i4/SI4;
 
 .field public final synthetic i:I
 
 .field public final synthetic j:[C
 
-.field public final synthetic k:Li4/q;
+.field public final synthetic k:Ldef/i4/QI4;
 
-.field public final synthetic l:Li4/q;
+.field public final synthetic l:Ldef/i4/QI4;
 
-.field public final synthetic m:Li4/o;
+.field public final synthetic m:Ldef/i4/OI4;
 
-.field public final synthetic n:Li4/o;
+.field public final synthetic n:Ldef/i4/OI4;
 
 .field public final synthetic o:Ljava/lang/Appendable;
 
-.field public final synthetic p:Li4/q;
+.field public final synthetic p:Ldef/i4/QI4;
 
 
 # direct methods
-.method public constructor <init>(Li4/s;I[CLi4/q;Li4/q;Li4/o;Li4/o;Ljava/lang/Appendable;Li4/q;)V
+.method public constructor <init>(Ldef/i4/SI4;I[CLdef/i4/QI4;Ldef/i4/QI4;Ldef/i4/OI4;Ldef/i4/OI4;Ljava/lang/Appendable;Ldef/i4/QI4;)V
     .locals 0
 
-    iput-object p1, p0, Lio/ktor/utils/io/s;->h:Li4/s;
+    iput-object p1, p0, Lio/ktor/utils/io/s;->h:Ldef/i4/SI4;
 
     iput p2, p0, Lio/ktor/utils/io/s;->i:I
 
     iput-object p3, p0, Lio/ktor/utils/io/s;->j:[C
 
-    iput-object p4, p0, Lio/ktor/utils/io/s;->k:Li4/q;
+    iput-object p4, p0, Lio/ktor/utils/io/s;->k:Ldef/i4/QI4;
 
-    iput-object p5, p0, Lio/ktor/utils/io/s;->l:Li4/q;
+    iput-object p5, p0, Lio/ktor/utils/io/s;->l:Ldef/i4/QI4;
 
-    iput-object p6, p0, Lio/ktor/utils/io/s;->m:Li4/o;
+    iput-object p6, p0, Lio/ktor/utils/io/s;->m:Ldef/i4/OI4;
 
-    iput-object p7, p0, Lio/ktor/utils/io/s;->n:Li4/o;
+    iput-object p7, p0, Lio/ktor/utils/io/s;->n:Ldef/i4/OI4;
 
     iput-object p8, p0, Lio/ktor/utils/io/s;->o:Ljava/lang/Appendable;
 
-    iput-object p9, p0, Lio/ktor/utils/io/s;->p:Li4/q;
+    iput-object p9, p0, Lio/ktor/utils/io/s;->p:Ldef/i4/QI4;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    invoke-direct {p0, p1}, Ldef/i4/II4;-><init>(I)V
 
     return-void
 .end method
@@ -68,15 +68,15 @@
 
     const-string v2, "buffer"
 
-    invoke-static {v1, v2}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Ljava/nio/Buffer;->position()I
 
     move-result v2
 
-    iget-object v3, v0, Lio/ktor/utils/io/s;->h:Li4/s;
+    iget-object v3, v0, Lio/ktor/utils/io/s;->h:Ldef/i4/SI4;
 
-    iget-object v4, v3, Li4/s;->g:Ljava/lang/Object;
+    iget-object v4, v3, Ldef/i4/SI4;->g:Ljava/lang/Object;
 
     check-cast v4, Ljava/nio/ByteBuffer;
 
@@ -122,7 +122,7 @@
 
     iget v6, v0, Lio/ktor/utils/io/s;->i:I
 
-    iget-object v7, v0, Lio/ktor/utils/io/s;->k:Li4/q;
+    iget-object v7, v0, Lio/ktor/utils/io/s;->k:Ldef/i4/QI4;
 
     iget-object v8, v0, Lio/ktor/utils/io/s;->j:[C
 
@@ -133,7 +133,7 @@
     goto :goto_1
 
     :cond_1
-    iget v10, v7, Li4/q;->g:I
+    iget v10, v7, Ldef/i4/QI4;->g:I
 
     sub-int v10, v6, v10
 
@@ -144,7 +144,7 @@
     :goto_1
     const-string v10, "out"
 
-    invoke-static {v8, v10}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v10}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v4}, Ljava/nio/ByteBuffer;->hasArray()Z
 
@@ -251,7 +251,7 @@
 
     const/4 v5, -0x1
 
-    invoke-static {v12, v5}, Lt2/a;->r(II)J
+    invoke-static {v12, v5}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -295,7 +295,7 @@
 
     const/4 v5, 0x2
 
-    invoke-static {v12, v5}, Lt2/a;->r(II)J
+    invoke-static {v12, v5}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -357,7 +357,7 @@
 
     const/4 v5, -0x1
 
-    invoke-static {v12, v5}, Lt2/a;->r(II)J
+    invoke-static {v12, v5}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -402,7 +402,7 @@
 
     const/4 v5, 0x3
 
-    invoke-static {v12, v5}, Lt2/a;->r(II)J
+    invoke-static {v12, v5}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -479,7 +479,7 @@
 
     invoke-virtual {v4, v5}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    invoke-static {v12, v7}, Lt2/a;->r(II)J
+    invoke-static {v12, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -519,7 +519,7 @@
 
     const/4 v5, 0x4
 
-    invoke-static {v12, v5}, Lt2/a;->r(II)J
+    invoke-static {v12, v5}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -691,7 +691,7 @@
 
     const/4 v5, -0x1
 
-    invoke-static {v12, v5}, Lt2/a;->r(II)J
+    invoke-static {v12, v5}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -708,14 +708,14 @@
 
     const/4 v7, 0x0
 
-    invoke-static {v12, v7}, Lt2/a;->r(II)J
+    invoke-static {v12, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
     goto :goto_d
 
     :cond_1d
-    invoke-static {v6}, Lt2/a;->H(I)V
+    invoke-static {v6}, Ldef/t2/AT2;->H(I)V
 
     const/4 v1, 0x0
 
@@ -724,7 +724,7 @@
     :cond_1e
     const/4 v1, 0x0
 
-    invoke-static {v14}, Lt2/a;->T(B)V
+    invoke-static {v14}, Ldef/t2/AT2;->T(B)V
 
     throw v1
 
@@ -743,7 +743,7 @@
 
     invoke-virtual {v4, v5}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    invoke-static {v12, v7}, Lt2/a;->r(II)J
+    invoke-static {v12, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -766,7 +766,7 @@
 
     sub-int/2addr v5, v7
 
-    invoke-static {v5, v6}, Lt2/a;->r(II)J
+    invoke-static {v5, v6}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -793,7 +793,7 @@
 
     if-ne v4, v7, :cond_46
 
-    invoke-static {v5, v6}, Lt2/a;->r(II)J
+    invoke-static {v5, v6}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -822,7 +822,7 @@
 
     const/4 v4, 0x2
 
-    invoke-static {v5, v4}, Lt2/a;->r(II)J
+    invoke-static {v5, v4}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -831,7 +831,7 @@
     :cond_22
     array-length v1, v8
 
-    invoke-static {v9, v1}, Lt2/a;->F(II)Ljava/lang/IndexOutOfBoundsException;
+    invoke-static {v9, v1}, Ldef/t2/AT2;->F(II)Ljava/lang/IndexOutOfBoundsException;
 
     move-result-object v1
 
@@ -924,7 +924,7 @@
 
     const/4 v7, -0x1
 
-    invoke-static {v6, v7}, Lt2/a;->r(II)J
+    invoke-static {v6, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -965,7 +965,7 @@
 
     const/4 v7, 0x2
 
-    invoke-static {v6, v7}, Lt2/a;->r(II)J
+    invoke-static {v6, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -1029,7 +1029,7 @@
 
     const/4 v7, -0x1
 
-    invoke-static {v6, v7}, Lt2/a;->r(II)J
+    invoke-static {v6, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -1069,7 +1069,7 @@
 
     const/4 v7, 0x3
 
-    invoke-static {v6, v7}, Lt2/a;->r(II)J
+    invoke-static {v6, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -1143,7 +1143,7 @@
 
     const/4 v7, -0x1
 
-    invoke-static {v6, v7}, Lt2/a;->r(II)J
+    invoke-static {v6, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -1183,7 +1183,7 @@
 
     const/4 v7, 0x4
 
-    invoke-static {v6, v7}, Lt2/a;->r(II)J
+    invoke-static {v6, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -1351,7 +1351,7 @@
 
     const/4 v7, -0x1
 
-    invoke-static {v6, v7}, Lt2/a;->r(II)J
+    invoke-static {v6, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -1370,7 +1370,7 @@
 
     const/4 v9, 0x0
 
-    invoke-static {v6, v9}, Lt2/a;->r(II)J
+    invoke-static {v6, v9}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v6
 
@@ -1380,7 +1380,7 @@
     goto :goto_1c
 
     :cond_41
-    invoke-static {v7}, Lt2/a;->H(I)V
+    invoke-static {v7}, Ldef/t2/AT2;->H(I)V
 
     const/4 v1, 0x0
 
@@ -1389,14 +1389,14 @@
     :cond_42
     const/4 v1, 0x0
 
-    invoke-static {v7}, Lt2/a;->T(B)V
+    invoke-static {v7}, Ldef/t2/AT2;->T(B)V
 
     throw v1
 
     :cond_43
     const/4 v9, 0x0
 
-    invoke-static {v6, v9}, Lt2/a;->r(II)J
+    invoke-static {v6, v9}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v6
 
@@ -1421,7 +1421,7 @@
 
     sub-int/2addr v6, v5
 
-    invoke-static {v6, v7}, Lt2/a;->r(II)J
+    invoke-static {v6, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v9
 
@@ -1448,7 +1448,7 @@
 
     if-ne v4, v5, :cond_46
 
-    invoke-static {v6, v7}, Lt2/a;->r(II)J
+    invoke-static {v6, v7}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v4
 
@@ -1480,7 +1480,7 @@
 
     const/4 v4, 0x2
 
-    invoke-static {v5, v4}, Lt2/a;->r(II)J
+    invoke-static {v5, v4}, Ldef/t2/AT2;->r(II)J
 
     move-result-wide v4
 
@@ -1488,11 +1488,11 @@
 
     :cond_46
     :goto_1e
-    iget-object v4, v3, Li4/s;->g:Ljava/lang/Object;
+    iget-object v4, v3, Ldef/i4/SI4;->g:Ljava/lang/Object;
 
     check-cast v4, Ljava/nio/ByteBuffer;
 
-    iget-object v5, v0, Lio/ktor/utils/io/s;->p:Li4/q;
+    iget-object v5, v0, Lio/ktor/utils/io/s;->p:Ldef/i4/QI4;
 
     if-eqz v4, :cond_47
 
@@ -1502,23 +1502,23 @@
 
     add-int/2addr v6, v2
 
-    iget v2, v5, Li4/q;->g:I
+    iget v2, v5, Ldef/i4/QI4;->g:I
 
     sub-int/2addr v6, v2
 
     invoke-virtual {v1, v6}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    sget-object v2, Lio/ktor/utils/io/internal/h;->b:Lr8/e;
+    sget-object v2, Lio/ktor/utils/io/internal/h;->b:Ldef/r8/ER8;
 
-    invoke-virtual {v2, v4}, Lr8/d;->l(Ljava/lang/Object;)V
-
-    const/4 v2, 0x0
-
-    iput-object v2, v3, Li4/s;->g:Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Ldef/r8/DR8;->l(Ljava/lang/Object;)V
 
     const/4 v2, 0x0
 
-    iput v2, v5, Li4/q;->g:I
+    iput-object v2, v3, Ldef/i4/SI4;->g:Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    iput v2, v5, Ldef/i4/QI4;->g:I
 
     :cond_47
     shr-long v6, v9, v20
@@ -1529,7 +1529,7 @@
 
     long-to-int v4, v6
 
-    iget-object v6, v0, Lio/ktor/utils/io/s;->l:Li4/q;
+    iget-object v6, v0, Lio/ktor/utils/io/s;->l:Ldef/i4/QI4;
 
     const/4 v7, 0x1
 
@@ -1537,15 +1537,15 @@
 
     move-result v9
 
-    iput v9, v6, Li4/q;->g:I
+    iput v9, v6, Ldef/i4/QI4;->g:I
 
-    iget-object v6, v0, Lio/ktor/utils/io/s;->m:Li4/o;
+    iget-object v6, v0, Lio/ktor/utils/io/s;->m:Ldef/i4/OI4;
 
     const/4 v9, -0x1
 
     if-ne v4, v9, :cond_48
 
-    iput-boolean v7, v6, Li4/o;->g:Z
+    iput-boolean v7, v6, Ldef/i4/OI4;->g:Z
 
     :cond_48
     if-eq v4, v9, :cond_4a
@@ -1576,9 +1576,9 @@
 
     invoke-virtual {v1, v9}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    iget-object v9, v0, Lio/ktor/utils/io/s;->n:Li4/o;
+    iget-object v9, v0, Lio/ktor/utils/io/s;->n:Ldef/i4/OI4;
 
-    iput-boolean v7, v9, Li4/o;->g:Z
+    iput-boolean v7, v9, Ldef/i4/OI4;->g:Z
 
     :cond_49
     const/4 v7, -0x1
@@ -1619,7 +1619,7 @@
 
     invoke-virtual {v1, v7}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    iput-boolean v9, v6, Li4/o;->g:Z
+    iput-boolean v9, v6, Ldef/i4/OI4;->g:Z
 
     :cond_4b
     iget-object v7, v0, Lio/ktor/utils/io/s;->o:Ljava/lang/Appendable;
@@ -1651,11 +1651,11 @@
     goto :goto_20
 
     :goto_21
-    iget v8, v7, Li4/q;->g:I
+    iget v8, v7, Ldef/i4/QI4;->g:I
 
     add-int/2addr v8, v2
 
-    iput v8, v7, Li4/q;->g:I
+    iput v8, v7, Ldef/i4/QI4;->g:I
 
     if-nez v2, :cond_4d
 
@@ -1665,9 +1665,9 @@
 
     if-ge v2, v4, :cond_4d
 
-    sget-object v2, Lio/ktor/utils/io/internal/h;->b:Lr8/e;
+    sget-object v2, Lio/ktor/utils/io/internal/h;->b:Ldef/r8/ER8;
 
-    invoke-virtual {v2}, Lr8/d;->o()Ljava/lang/Object;
+    invoke-virtual {v2}, Ldef/r8/DR8;->o()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -1679,11 +1679,11 @@
 
     move-result v8
 
-    iput v8, v5, Li4/q;->g:I
+    iput v8, v5, Ldef/i4/QI4;->g:I
 
     invoke-virtual {v4, v1}, Ljava/nio/ByteBuffer;->put(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
 
-    iput-object v2, v3, Li4/s;->g:Ljava/lang/Object;
+    iput-object v2, v3, Ldef/i4/SI4;->g:Ljava/lang/Object;
 
     :cond_4d
     move/from16 v2, v24
@@ -1692,35 +1692,35 @@
 
     if-eq v2, v1, :cond_4f
 
-    iget v1, v7, Li4/q;->g:I
+    iget v1, v7, Ldef/i4/QI4;->g:I
 
     if-lt v1, v2, :cond_4f
 
-    iget-boolean v1, v6, Li4/o;->g:Z
+    iget-boolean v1, v6, Ldef/i4/OI4;->g:Z
 
     if-eqz v1, :cond_4e
 
     goto :goto_22
 
     :cond_4e
-    new-instance v1, Lo8/c;
+    new-instance v1, Ldef/o8/CO8;
 
     const-string v2, "Line is longer than limit"
 
-    invoke-direct {v1, v2}, Lo8/b;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ldef/o8/BO8;-><init>(Ljava/lang/String;)V
 
     throw v1
 
     :cond_4f
     :goto_22
-    sget-object v1, Lu8/y;->a:Lu8/y;
+    sget-object v1, Ldef/u8/YU8;->a:Ldef/u8/YU8;
 
     return-object v1
 
     :cond_50
     array-length v1, v8
 
-    invoke-static {v9, v1}, Lt2/a;->F(II)Ljava/lang/IndexOutOfBoundsException;
+    invoke-static {v9, v1}, Ldef/t2/AT2;->F(II)Ljava/lang/IndexOutOfBoundsException;
 
     move-result-object v1
 

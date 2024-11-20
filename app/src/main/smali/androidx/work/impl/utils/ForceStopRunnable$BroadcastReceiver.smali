@@ -13,7 +13,7 @@
 
     const-string v0, "ForceStopRunnable$Rcvr"
 
-    invoke-static {v0}, Lv1/m;->n(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Ldef/v1/MV1;->n(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -49,11 +49,11 @@
 
     if-eqz p2, :cond_1
 
-    invoke-static {}, Lv1/m;->i()Lv1/m;
+    invoke-static {}, Ldef/v1/MV1;->i()Ldef/v1/MV1;
 
     move-result-object p2
 
-    iget p2, p2, Lv1/m;->g:I
+    iget p2, p2, Ldef/v1/MV1;->g:I
 
     const/4 v0, 0x2
 
@@ -66,7 +66,7 @@
     invoke-static {p2, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-static {p1}, Lf6/e;->c(Landroid/content/Context;)V
+    invoke-static {p1}, Ldef/f6/EF6;->c(Landroid/content/Context;)V
 
     :cond_1
     return-void

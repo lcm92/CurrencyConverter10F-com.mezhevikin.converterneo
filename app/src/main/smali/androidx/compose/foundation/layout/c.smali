@@ -45,40 +45,40 @@
 
     sput-object v0, Landroidx/compose/foundation/layout/c;->c:Landroidx/compose/foundation/layout/FillElement;
 
-    sget-object v0, Lra/b;->k:Lra/i;
+    sget-object v0, Ldef/ra/BRA;->k:Ldef/ra/IRA;
 
     new-instance v2, Landroidx/compose/foundation/layout/WrapContentElement;
 
-    new-instance v3, Lca/v;
+    new-instance v3, Ldef/ca/VCA;
 
     const/16 v4, 0xd
 
-    invoke-direct {v3, v4, v0}, Lca/v;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v4, v0}, Ldef/ca/VCA;-><init>(ILjava/lang/Object;)V
 
     const/4 v4, 0x0
 
-    invoke-direct {v2, v1, v4, v3, v0}, Landroidx/compose/foundation/layout/WrapContentElement;-><init>(IZLh4/e;Ljava/lang/Object;)V
+    invoke-direct {v2, v1, v4, v3, v0}, Landroidx/compose/foundation/layout/WrapContentElement;-><init>(IZLdef/h4/EH4;Ljava/lang/Object;)V
 
     sput-object v2, Landroidx/compose/foundation/layout/c;->d:Landroidx/compose/foundation/layout/WrapContentElement;
 
-    sget-object v0, Lra/b;->g:Lra/i;
+    sget-object v0, Ldef/ra/BRA;->g:Ldef/ra/IRA;
 
     new-instance v2, Landroidx/compose/foundation/layout/WrapContentElement;
 
-    new-instance v3, Lca/v;
+    new-instance v3, Ldef/ca/VCA;
 
     const/16 v5, 0xd
 
-    invoke-direct {v3, v5, v0}, Lca/v;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v5, v0}, Ldef/ca/VCA;-><init>(ILjava/lang/Object;)V
 
-    invoke-direct {v2, v1, v4, v3, v0}, Landroidx/compose/foundation/layout/WrapContentElement;-><init>(IZLh4/e;Ljava/lang/Object;)V
+    invoke-direct {v2, v1, v4, v3, v0}, Landroidx/compose/foundation/layout/WrapContentElement;-><init>(IZLdef/h4/EH4;Ljava/lang/Object;)V
 
     sput-object v2, Landroidx/compose/foundation/layout/c;->e:Landroidx/compose/foundation/layout/WrapContentElement;
 
     return-void
 .end method
 
-.method public static a(F)Lra/q;
+.method public static a(F)Ldef/ra/QRA;
     .locals 2
 
     new-instance v0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;
@@ -90,7 +90,7 @@
     return-object v0
 .end method
 
-.method public static final b(Lra/q;F)Lra/q;
+.method public static final b(Ldef/ra/QRA;F)Ldef/ra/QRA;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -109,14 +109,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFI)V
 
-    invoke-interface {p0, v6}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v6}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final c(FF)Lra/q;
+.method public static final c(FF)Ldef/ra/QRA;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -138,7 +138,7 @@
     return-object v6
 .end method
 
-.method public static final d(Lra/q;FF)Lra/q;
+.method public static final d(Ldef/ra/QRA;FF)Ldef/ra/QRA;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -157,14 +157,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, v6}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v6}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static e(Lra/q;FFFFI)Lra/q;
+.method public static e(Ldef/ra/QRA;FFFFI)Ldef/ra/QRA;
     .locals 8
 
     and-int/lit8 v0, p5, 0x2
@@ -215,14 +215,14 @@
 
     invoke-direct/range {v2 .. v7}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, p2}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, p2}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final f(Lra/q;F)Lra/q;
+.method public static final f(Ldef/ra/QRA;F)Ldef/ra/QRA;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -241,14 +241,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, v6}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v6}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final g(Lra/q;FF)Lra/q;
+.method public static final g(Ldef/ra/QRA;FF)Ldef/ra/QRA;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -267,14 +267,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, v6}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v6}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final h(Lra/q;FFFF)Lra/q;
+.method public static final h(Ldef/ra/QRA;FFFF)Ldef/ra/QRA;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -293,14 +293,14 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFZ)V
 
-    invoke-interface {p0, v6}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v6}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final i(Lra/q;F)Lra/q;
+.method public static final i(Ldef/ra/QRA;F)Ldef/ra/QRA;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/layout/SizeElement;
@@ -319,19 +319,19 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/SizeElement;-><init>(FFFFI)V
 
-    invoke-interface {p0, v6}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v6}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static j(Lra/q;)Lra/q;
+.method public static j(Ldef/ra/QRA;)Ldef/ra/QRA;
     .locals 5
 
-    sget-object v0, Lra/b;->k:Lra/i;
+    sget-object v0, Ldef/ra/BRA;->k:Ldef/ra/IRA;
 
-    invoke-virtual {v0, v0}, Lra/i;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v0}, Ldef/ra/IRA;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -342,9 +342,9 @@
     goto :goto_0
 
     :cond_0
-    sget-object v1, Lra/b;->g:Lra/i;
+    sget-object v1, Ldef/ra/BRA;->g:Ldef/ra/IRA;
 
-    invoke-virtual {v0, v1}, Lra/i;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ldef/ra/IRA;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -357,22 +357,22 @@
     :cond_1
     new-instance v1, Landroidx/compose/foundation/layout/WrapContentElement;
 
-    new-instance v2, Lca/v;
+    new-instance v2, Ldef/ca/VCA;
 
     const/16 v3, 0xd
 
-    invoke-direct {v2, v3, v0}, Lca/v;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, v0}, Ldef/ca/VCA;-><init>(ILjava/lang/Object;)V
 
     const/4 v3, 0x3
 
     const/4 v4, 0x0
 
-    invoke-direct {v1, v3, v4, v2, v0}, Landroidx/compose/foundation/layout/WrapContentElement;-><init>(IZLh4/e;Ljava/lang/Object;)V
+    invoke-direct {v1, v3, v4, v2, v0}, Landroidx/compose/foundation/layout/WrapContentElement;-><init>(IZLdef/h4/EH4;Ljava/lang/Object;)V
 
     move-object v0, v1
 
     :goto_0
-    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v0}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 

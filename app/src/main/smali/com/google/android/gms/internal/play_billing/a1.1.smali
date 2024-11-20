@@ -45,7 +45,7 @@
 
     const-string v1, "Index < 0: "
 
-    invoke-static {v1, p1}, Laa/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1}, Ldef/aa/MAA;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -58,7 +58,7 @@
 
     const-string v3, ", "
 
-    invoke-static {p1, v1, v2, v3}, Lk/pa;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1, v2, v3}, Ldef/k/PAK;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

@@ -1,36 +1,36 @@
 .class public final Landroidx/compose/foundation/g;
-.super Li4/i;
+.super Ldef/i4/II4;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/f;
+.implements Ldef/h4/FH4;
 
 
 # instance fields
-.field public final synthetic h:Lm/z0;
+.field public final synthetic h:Ldef/m/Z0M;
 
 .field public final synthetic i:Z
 
-.field public final synthetic j:Lo/m;
+.field public final synthetic j:Ldef/o/MO;
 
 .field public final synthetic k:Z
 
 
 # direct methods
-.method public constructor <init>(Lm/z0;ZLo/m;Z)V
+.method public constructor <init>(Ldef/m/Z0M;ZLdef/o/MO;Z)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/g;->h:Lm/z0;
+    iput-object p1, p0, Landroidx/compose/foundation/g;->h:Ldef/m/Z0M;
 
     iput-boolean p2, p0, Landroidx/compose/foundation/g;->i:Z
 
-    iput-object p3, p0, Landroidx/compose/foundation/g;->j:Lo/m;
+    iput-object p3, p0, Landroidx/compose/foundation/g;->j:Ldef/o/MO;
 
     iput-boolean p4, p0, Landroidx/compose/foundation/g;->k:Z
 
     const/4 p1, 0x3
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    invoke-direct {p0, p1}, Ldef/i4/II4;-><init>(I)V
 
     return-void
 .end method
@@ -40,9 +40,9 @@
 .method public final h(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 8
 
-    check-cast p1, Lra/q;
+    check-cast p1, Ldef/ra/QRA;
 
-    check-cast p2, Lfa/p;
+    check-cast p2, Ldef/fa/PFA;
 
     check-cast p3, Ljava/lang/Number;
 
@@ -50,29 +50,29 @@
 
     const p1, 0x581dd9c4
 
-    invoke-virtual {p2, p1}, Lfa/p;->Q(I)V
+    invoke-virtual {p2, p1}, Ldef/fa/PFA;->Q(I)V
 
     new-instance v0, Landroidx/compose/foundation/ScrollSemanticsElement;
 
-    iget-object p1, p0, Landroidx/compose/foundation/g;->h:Lm/z0;
+    iget-object p1, p0, Landroidx/compose/foundation/g;->h:Ldef/m/Z0M;
 
     iget-boolean v4, p0, Landroidx/compose/foundation/g;->i:Z
 
-    iget-object v5, p0, Landroidx/compose/foundation/g;->j:Lo/m;
+    iget-object v5, p0, Landroidx/compose/foundation/g;->j:Ldef/o/MO;
 
     iget-boolean v3, p0, Landroidx/compose/foundation/g;->k:Z
 
-    invoke-direct {v0, p1, v4, v5, v3}, Landroidx/compose/foundation/ScrollSemanticsElement;-><init>(Lm/z0;ZLo/m;Z)V
+    invoke-direct {v0, p1, v4, v5, v3}, Landroidx/compose/foundation/ScrollSemanticsElement;-><init>(Ldef/m/Z0M;ZLdef/o/MO;Z)V
 
-    sget-object v2, Lo/oa;->g:Lo/oa;
+    sget-object v2, Ldef/o/OAO;->g:Ldef/o/OAO;
 
-    iget-object v6, p1, Lm/z0;->c:Lp/i;
+    iget-object v6, p1, Ldef/m/Z0M;->c:Ldef/p/IP;
 
     move-object v1, p1
 
     move-object v7, p2
 
-    invoke-static/range {v0 .. v7}, Lt2/a;->N(Lra/q;Lo/k0;Lo/oa;ZZLo/m;Lp/i;Lfa/p;)Lra/q;
+    invoke-static/range {v0 .. v7}, Ldef/t2/AT2;->N(Ldef/ra/QRA;Ldef/o/K0O;Ldef/o/OAO;ZZLdef/o/MO;Ldef/p/IP;Ldef/fa/PFA;)Ldef/ra/QRA;
 
     move-result-object p3
 
@@ -80,15 +80,15 @@
 
     iget-boolean v1, p0, Landroidx/compose/foundation/g;->i:Z
 
-    invoke-direct {v0, p1, v1}, Landroidx/compose/foundation/ScrollingLayoutElement;-><init>(Lm/z0;Z)V
+    invoke-direct {v0, p1, v1}, Landroidx/compose/foundation/ScrollingLayoutElement;-><init>(Ldef/m/Z0M;Z)V
 
-    invoke-interface {p3, v0}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p3, v0}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p1
 
     const/4 p3, 0x0
 
-    invoke-virtual {p2, p3}, Lfa/p;->p(Z)V
+    invoke-virtual {p2, p3}, Ldef/fa/PFA;->p(Z)V
 
     return-object p1
 .end method

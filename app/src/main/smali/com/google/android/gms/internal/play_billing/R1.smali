@@ -11,7 +11,7 @@
 
     const-string v1, " of "
 
-    invoke-static {p1, p2, v0, v1}, Lk/pa;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2, v0, v1}, Ldef/k/PAK;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

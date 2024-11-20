@@ -288,7 +288,7 @@
 
     const-string p2, "negative size: "
 
-    invoke-static {p2, p1}, Laa/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p2, p1}, Ldef/aa/MAA;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1605,7 +1605,7 @@
 
     const-string v0, "negative size: "
 
-    invoke-static {v0, p1}, Laa/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p1}, Ldef/aa/MAA;->g(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2642,7 +2642,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lk/pa;->i(Ljava/lang/Object;)V
+    invoke-static {v0}, Ldef/k/PAK;->i(Ljava/lang/Object;)V
     :try_end_1
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_3
     .catch Ljava/lang/InstantiationException; {:try_start_1 .. :try_end_1} :catch_2

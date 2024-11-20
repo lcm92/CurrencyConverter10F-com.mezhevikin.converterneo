@@ -21,13 +21,13 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lv8/l;->a0([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Ldef/v8/LV8;->a0([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     sput-object v0, Landroidx/lifecycle/O;->a:Ljava/util/List;
 
-    invoke-static {v1}, Ll9/d;->F(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Ldef/l9/DL9;->F(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
@@ -41,7 +41,7 @@
 
     const-string v0, "signature"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Ljava/lang/Class;->getConstructors()[Ljava/lang/reflect/Constructor;
 
@@ -49,7 +49,7 @@
 
     const-string v1, "modelClass.constructors"
 
-    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     array-length v1, v0
 
@@ -66,9 +66,9 @@
 
     const-string v5, "constructor.parameterTypes"
 
-    invoke-static {v4, v5}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v4}, Lv8/j;->p0([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v4}, Ldef/v8/JV8;->p0([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 

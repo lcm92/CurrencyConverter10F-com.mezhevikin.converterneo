@@ -19,27 +19,27 @@
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    sget-object p1, Lb2/l;->e:Lb2/l;
+    sget-object p1, Ldef/b2/LB2;->e:Ldef/b2/LB2;
 
-    iget-object p1, p1, Lb2/l;->b:Lb2/j;
+    iget-object p1, p1, Ldef/b2/LB2;->b:Ldef/b2/JB2;
 
-    new-instance v0, Lw2/qa;
+    new-instance v0, Ldef/w2/QAW2;
 
-    invoke-direct {v0}, Lw2/qa;-><init>()V
+    invoke-direct {v0}, Ldef/w2/QAW2;-><init>()V
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance p1, Lb2/b;
+    new-instance p1, Ldef/b2/BB2;
 
-    invoke-direct {p1, p0, v0}, Lb2/b;-><init>(Lcom/google/android/gms/ads/OutOfContextTestingActivity;Lw2/qa;)V
+    invoke-direct {p1, p0, v0}, Ldef/b2/BB2;-><init>(Lcom/google/android/gms/ads/OutOfContextTestingActivity;Ldef/w2/QAW2;)V
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, p0, v0}, Lb2/k;->d(Landroid/content/Context;Z)Ljava/lang/Object;
+    invoke-virtual {p1, p0, v0}, Ldef/b2/KB2;->d(Landroid/content/Context;Z)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lb2/ua;
+    check-cast p1, Ldef/b2/UAB2;
 
     if-nez p1, :cond_0
 
@@ -85,13 +85,13 @@
 
     :cond_2
     :try_start_0
-    new-instance v2, Lu2/b;
+    new-instance v2, Ldef/u2/BU2;
 
-    invoke-direct {v2, p0}, Lu2/b;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v2, p0}, Ldef/u2/BU2;-><init>(Ljava/lang/Object;)V
 
-    new-instance v3, Lu2/b;
+    new-instance v3, Ldef/u2/BU2;
 
-    invoke-direct {v3, v0}, Lu2/b;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v3, v0}, Ldef/u2/BU2;-><init>(Ljava/lang/Object;)V
 
     invoke-virtual {p1}, Lcom/google/android/gms/internal/play_billing/e;->D()Landroid/os/Parcel;
 
@@ -99,9 +99,9 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    invoke-static {v0, v2}, Lw2/b;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v0, v2}, Ldef/w2/BW2;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
-    invoke-static {v0, v3}, Lw2/b;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v0, v3}, Ldef/w2/BW2;->e(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     const/4 v1, 0x1
 

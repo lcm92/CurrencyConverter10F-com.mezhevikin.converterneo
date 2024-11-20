@@ -101,7 +101,7 @@
     return-void
 .end method
 
-.method public static c(Landroid/content/Intent;Ljava/lang/String;)Lj6/e;
+.method public static c(Landroid/content/Intent;Ljava/lang/String;)Ldef/j6/EJ6;
     .locals 2
 
     if-nez p0, :cond_0
@@ -112,26 +112,26 @@
 
     invoke-static {p0, p1}, Lcom/google/android/gms/internal/play_billing/q0;->f(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {}, Lj6/e;->a()Lj6/d;
+    invoke-static {}, Ldef/j6/EJ6;->a()Ldef/j6/DJ6;
 
     move-result-object p0
 
     const/4 p1, 0x6
 
-    iput p1, p0, Lj6/d;->b:I
+    iput p1, p0, Ldef/j6/DJ6;->b:I
 
     const-string p1, "An internal error occurred."
 
-    iput-object p1, p0, Lj6/d;->a:Ljava/lang/String;
+    iput-object p1, p0, Ldef/j6/DJ6;->a:Ljava/lang/String;
 
-    invoke-virtual {p0}, Lj6/d;->c()Lj6/e;
+    invoke-virtual {p0}, Ldef/j6/DJ6;->c()Ldef/j6/EJ6;
 
     move-result-object p0
 
     return-object p0
 
     :cond_0
-    invoke-static {}, Lj6/e;->a()Lj6/d;
+    invoke-static {}, Ldef/j6/EJ6;->a()Ldef/j6/DJ6;
 
     move-result-object v0
 
@@ -143,7 +143,7 @@
 
     move-result v1
 
-    iput v1, v0, Lj6/d;->b:I
+    iput v1, v0, Ldef/j6/DJ6;->b:I
 
     invoke-virtual {p0}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -153,9 +153,9 @@
 
     move-result-object p0
 
-    iput-object p0, v0, Lj6/d;->a:Ljava/lang/String;
+    iput-object p0, v0, Ldef/j6/DJ6;->a:Ljava/lang/String;
 
-    invoke-virtual {v0}, Lj6/d;->c()Lj6/e;
+    invoke-virtual {v0}, Ldef/j6/DJ6;->c()Ldef/j6/EJ6;
 
     move-result-object p0
 
@@ -331,20 +331,20 @@
     return-void
 .end method
 
-.method public static h(Lj6/e;I)Landroid/os/Bundle;
+.method public static h(Ldef/j6/EJ6;I)Landroid/os/Bundle;
     .locals 3
 
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iget v1, p0, Lj6/e;->a:I
+    iget v1, p0, Ldef/j6/EJ6;->a:I
 
     const-string v2, "RESPONSE_CODE"
 
     invoke-virtual {v0, v2, v1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
-    iget-object p0, p0, Lj6/e;->b:Ljava/lang/String;
+    iget-object p0, p0, Ldef/j6/EJ6;->b:Ljava/lang/String;
 
     const-string v1, "DEBUG_MESSAGE"
 

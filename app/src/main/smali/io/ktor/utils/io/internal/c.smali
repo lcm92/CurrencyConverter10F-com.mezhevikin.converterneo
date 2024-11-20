@@ -45,13 +45,13 @@
 
     if-nez v0, :cond_0
 
-    new-instance v0, Lfa/va;
+    new-instance v0, Ldef/fa/VAFA;
 
     const-string v1, "The channel was closed"
 
     const/4 v2, 0x2
 
-    invoke-direct {v0, v1, v2}, Lfa/va;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Ldef/fa/VAFA;-><init>(Ljava/lang/String;I)V
 
     :cond_0
     return-object v0

@@ -1,27 +1,27 @@
 .class final Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lh4/a;
+.field public final a:Ldef/h4/AH4;
 
 
 # direct methods
-.method public constructor <init>(Lh4/a;)V
+.method public constructor <init>(Ldef/h4/AH4;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lh4/a;
+    iput-object p1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Ldef/h4/AH4;
 
     return-void
 .end method
@@ -49,11 +49,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lh4/a;
+    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Ldef/h4/AH4;
 
-    iget-object p1, p1, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lh4/a;
+    iget-object p1, p1, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Ldef/h4/AH4;
 
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -68,7 +68,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lh4/a;
+    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Ldef/h4/AH4;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -77,26 +77,26 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lx/c;
+    new-instance v0, Ldef/x/CX;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lh4/a;
+    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Ldef/h4/AH4;
 
-    invoke-direct {v0, v1}, Lx/c;-><init>(Lh4/a;)V
+    invoke-direct {v0, v1}, Ldef/x/CX;-><init>(Ldef/h4/AH4;)V
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lx/c;
+    check-cast p1, Ldef/x/CX;
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lh4/a;
+    iget-object v0, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Ldef/h4/AH4;
 
-    iput-object v0, p1, Lx/c;->v:Lh4/a;
+    iput-object v0, p1, Ldef/x/CX;->v:Ldef/h4/AH4;
 
     return-void
 .end method
@@ -110,7 +110,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Lh4/a;
+    iget-object v1, p0, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;->a:Ldef/h4/AH4;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

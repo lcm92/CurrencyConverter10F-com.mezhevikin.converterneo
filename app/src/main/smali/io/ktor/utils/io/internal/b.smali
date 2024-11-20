@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ly8/d;
+.implements Ldef/y8/DY8;
 
 
 # static fields
@@ -59,13 +59,13 @@
     return-void
 .end method
 
-.method public static final a(Lio/ktor/utils/io/internal/b;Ls4/xa;Ljava/lang/Throwable;)V
+.method public static final a(Lio/ktor/utils/io/internal/b;Ldef/s4/XAS4;Ljava/lang/Throwable;)V
     .locals 4
 
     :goto_0
     iget-object v0, p0, Lio/ktor/utils/io/internal/b;->state:Ljava/lang/Object;
 
-    instance-of v1, v0, Ly8/d;
+    instance-of v1, v0, Ldef/y8/DY8;
 
     if-nez v1, :cond_0
 
@@ -74,15 +74,15 @@
     :cond_0
     move-object v1, v0
 
-    check-cast v1, Ly8/d;
+    check-cast v1, Ldef/y8/DY8;
 
-    invoke-interface {v1}, Ly8/d;->o()Ly8/i;
+    invoke-interface {v1}, Ldef/y8/DY8;->o()Ldef/y8/IY8;
 
     move-result-object v2
 
-    sget-object v3, Ls4/u;->h:Ls4/u;
+    sget-object v3, Ldef/s4/US4;->h:Ldef/s4/US4;
 
-    invoke-interface {v2, v3}, Ly8/i;->t(Ly8/h;)Ly8/g;
+    invoke-interface {v2, v3}, Ldef/y8/IY8;->t(Ldef/y8/HY8;)Ldef/y8/GY8;
 
     move-result-object v2
 
@@ -104,13 +104,13 @@
 
     const-string p0, "null cannot be cast to non-null type kotlin.coroutines.Continuation<T of io.ktor.utils.io.internal.CancellableReusableContinuation>"
 
-    invoke-static {v0, p0}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, p0}, Ldef/i4/HI4;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p2}, Lu8/a;->b(Ljava/lang/Throwable;)Lu8/k;
+    invoke-static {p2}, Ldef/u8/AU8;->b(Ljava/lang/Throwable;)Ldef/u8/KU8;
 
     move-result-object p0
 
-    invoke-interface {v1, p0}, Ly8/d;->s(Ljava/lang/Object;)V
+    invoke-interface {v1, p0}, Ldef/y8/DY8;->s(Ljava/lang/Object;)V
 
     :goto_1
     return-void
@@ -132,9 +132,9 @@
 
     const-string v0, "cause"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lu8/a;->b(Ljava/lang/Throwable;)Lu8/k;
+    invoke-static {p1}, Ldef/u8/AU8;->b(Ljava/lang/Throwable;)Ldef/u8/KU8;
 
     move-result-object p1
 
@@ -158,7 +158,7 @@
     return-void
 .end method
 
-.method public final c(Ly8/d;)Ljava/lang/Object;
+.method public final c(Ldef/y8/DY8;)Ljava/lang/Object;
     .locals 7
 
     :goto_0
@@ -177,19 +177,19 @@
 
     if-eqz v0, :cond_9
 
-    invoke-interface {p1}, Ly8/d;->o()Ly8/i;
+    invoke-interface {p1}, Ldef/y8/DY8;->o()Ldef/y8/IY8;
 
     move-result-object p1
 
-    sget-object v0, Ls4/u;->h:Ls4/u;
+    sget-object v0, Ldef/s4/US4;->h:Ldef/s4/US4;
 
-    invoke-interface {p1, v0}, Ly8/i;->t(Ly8/h;)Ly8/g;
+    invoke-interface {p1, v0}, Ldef/y8/IY8;->t(Ldef/y8/HY8;)Ldef/y8/GY8;
 
     move-result-object p1
 
     move-object v0, p1
 
-    check-cast v0, Ls4/xa;
+    check-cast v0, Ldef/s4/XAS4;
 
     iget-object p1, p0, Lio/ktor/utils/io/internal/b;->jobCancellationHandler:Ljava/lang/Object;
 
@@ -197,7 +197,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p1, Lio/ktor/utils/io/internal/a;->g:Ls4/xa;
+    iget-object p1, p1, Lio/ktor/utils/io/internal/a;->g:Ldef/s4/XAS4;
 
     goto :goto_1
 
@@ -229,7 +229,7 @@
     :cond_3
     new-instance v3, Lio/ktor/utils/io/internal/a;
 
-    invoke-direct {v3, p0, v0}, Lio/ktor/utils/io/internal/a;-><init>(Lio/ktor/utils/io/internal/b;Ls4/xa;)V
+    invoke-direct {v3, p0, v0}, Lio/ktor/utils/io/internal/a;-><init>(Lio/ktor/utils/io/internal/b;Ldef/s4/XAS4;)V
 
     :goto_2
     iget-object v4, p0, Lio/ktor/utils/io/internal/b;->jobCancellationHandler:Ljava/lang/Object;
@@ -243,7 +243,7 @@
     goto :goto_3
 
     :cond_4
-    iget-object p1, v5, Lio/ktor/utils/io/internal/a;->g:Ls4/xa;
+    iget-object p1, v5, Lio/ktor/utils/io/internal/a;->g:Ldef/s4/XAS4;
 
     if-ne p1, v0, :cond_5
 
@@ -268,7 +268,7 @@
 
     :cond_7
     :goto_4
-    sget-object p1, Lz8/a;->g:Lz8/a;
+    sget-object p1, Ldef/z8/AZ8;->g:Ldef/z8/AZ8;
 
     return-object p1
 
@@ -321,16 +321,16 @@
     goto/16 :goto_0
 .end method
 
-.method public final o()Ly8/i;
+.method public final o()Ldef/y8/IY8;
     .locals 2
 
     iget-object v0, p0, Lio/ktor/utils/io/internal/b;->state:Ljava/lang/Object;
 
-    instance-of v1, v0, Ly8/d;
+    instance-of v1, v0, Ldef/y8/DY8;
 
     if-eqz v1, :cond_0
 
-    check-cast v0, Ly8/d;
+    check-cast v0, Ldef/y8/DY8;
 
     goto :goto_0
 
@@ -340,14 +340,14 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    invoke-interface {v0}, Ly8/d;->o()Ly8/i;
+    invoke-interface {v0}, Ldef/y8/DY8;->o()Ldef/y8/IY8;
 
     move-result-object v0
 
     if-nez v0, :cond_2
 
     :cond_1
-    sget-object v0, Ly8/j;->g:Ly8/j;
+    sget-object v0, Ldef/y8/JY8;->g:Ldef/y8/JY8;
 
     :cond_2
     return-object v0
@@ -361,20 +361,20 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {p1}, Lu8/l;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+    invoke-static {p1}, Ldef/u8/LU8;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
 
     move-result-object v1
 
     if-nez v1, :cond_1
 
-    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Ldef/u8/AU8;->e(Ljava/lang/Object;)V
 
     move-object v1, p1
 
     goto :goto_1
 
     :cond_0
-    instance-of v1, v0, Ly8/d;
+    instance-of v1, v0, Ldef/y8/DY8;
 
     if-eqz v1, :cond_5
 
@@ -391,13 +391,13 @@
 
     if-eqz v3, :cond_4
 
-    instance-of v1, v0, Ly8/d;
+    instance-of v1, v0, Ldef/y8/DY8;
 
     if-eqz v1, :cond_3
 
-    check-cast v0, Ly8/d;
+    check-cast v0, Ldef/y8/DY8;
 
-    invoke-interface {v0, p1}, Ly8/d;->s(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Ldef/y8/DY8;->s(Ljava/lang/Object;)V
 
     :cond_3
     return-void

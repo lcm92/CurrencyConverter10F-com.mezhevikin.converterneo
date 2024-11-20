@@ -23,7 +23,7 @@
 
     const-string v0, "backingBuffer"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lio/ktor/utils/io/internal/s;
 
@@ -61,7 +61,7 @@
 
     const-string v0, "backingBuffer.duplicate()"
 
-    invoke-static {p2, v0}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p2, p0, Lio/ktor/utils/io/internal/l;->c:Ljava/nio/ByteBuffer;
 
@@ -69,7 +69,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, v0}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p1, p0, Lio/ktor/utils/io/internal/l;->d:Ljava/nio/ByteBuffer;
 

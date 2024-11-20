@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/BorderModifierNodeElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -14,22 +14,22 @@
 # instance fields
 .field public final a:F
 
-.field public final b:Lya/oa;
+.field public final b:Ldef/ya/OAYA;
 
-.field public final c:Lya/ma;
+.field public final c:Ldef/ya/MAYA;
 
 
 # direct methods
-.method public constructor <init>(FLya/oa;Lya/ma;)V
+.method public constructor <init>(FLdef/ya/OAYA;Ldef/ya/MAYA;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->a:F
 
-    iput-object p2, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Lya/oa;
+    iput-object p2, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Ldef/ya/OAYA;
 
-    iput-object p3, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Lya/ma;
+    iput-object p3, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Ldef/ya/MAYA;
 
     return-void
 .end method
@@ -61,7 +61,7 @@
 
     iget v3, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->a:F
 
-    invoke-static {v3, v1}, Ll5/e;->a(FF)Z
+    invoke-static {v3, v1}, Ldef/l5/EL5;->a(FF)Z
 
     move-result v1
 
@@ -70,11 +70,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Lya/oa;
+    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Ldef/ya/OAYA;
 
-    iget-object v3, p1, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Lya/oa;
+    iget-object v3, p1, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Ldef/ya/OAYA;
 
-    invoke-virtual {v1, v3}, Lya/oa;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ldef/ya/OAYA;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -83,11 +83,11 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Lya/ma;
+    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Ldef/ya/MAYA;
 
-    iget-object p1, p1, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Lya/ma;
+    iget-object p1, p1, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Ldef/ya/MAYA;
 
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -110,9 +110,9 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Lya/oa;
+    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Ldef/ya/OAYA;
 
-    invoke-virtual {v1}, Lya/oa;->hashCode()I
+    invoke-virtual {v1}, Ldef/ya/OAYA;->hashCode()I
 
     move-result v1
 
@@ -120,7 +120,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Lya/ma;
+    iget-object v0, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Ldef/ya/MAYA;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -131,72 +131,72 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 4
 
-    new-instance v0, Lm/v;
+    new-instance v0, Ldef/m/VM;
 
-    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Lya/oa;
+    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Ldef/ya/OAYA;
 
-    iget-object v2, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Lya/ma;
+    iget-object v2, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Ldef/ya/MAYA;
 
     iget v3, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->a:F
 
-    invoke-direct {v0, v3, v1, v2}, Lm/v;-><init>(FLya/oa;Lya/ma;)V
+    invoke-direct {v0, v3, v1, v2}, Ldef/m/VM;-><init>(FLdef/ya/OAYA;Ldef/ya/MAYA;)V
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 3
 
-    check-cast p1, Lm/v;
+    check-cast p1, Ldef/m/VM;
 
-    iget v0, p1, Lm/v;->w:F
+    iget v0, p1, Ldef/m/VM;->w:F
 
     iget v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->a:F
 
-    invoke-static {v0, v1}, Ll5/e;->a(FF)Z
+    invoke-static {v0, v1}, Ldef/l5/EL5;->a(FF)Z
 
     move-result v0
 
-    iget-object v2, p1, Lm/v;->z:Lva/b;
+    iget-object v2, p1, Ldef/m/VM;->z:Ldef/va/BVA;
 
     if-nez v0, :cond_0
 
-    iput v1, p1, Lm/v;->w:F
+    iput v1, p1, Ldef/m/VM;->w:F
 
-    invoke-virtual {v2}, Lva/b;->y0()V
+    invoke-virtual {v2}, Ldef/va/BVA;->y0()V
 
     :cond_0
-    iget-object v0, p1, Lm/v;->x:Lya/oa;
+    iget-object v0, p1, Ldef/m/VM;->x:Ldef/ya/OAYA;
 
-    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Lya/oa;
+    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Ldef/ya/OAYA;
 
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    iput-object v1, p1, Lm/v;->x:Lya/oa;
+    iput-object v1, p1, Ldef/m/VM;->x:Ldef/ya/OAYA;
 
-    invoke-virtual {v2}, Lva/b;->y0()V
+    invoke-virtual {v2}, Ldef/va/BVA;->y0()V
 
     :cond_1
-    iget-object v0, p1, Lm/v;->y:Lya/ma;
+    iget-object v0, p1, Ldef/m/VM;->y:Ldef/ya/MAYA;
 
-    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Lya/ma;
+    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Ldef/ya/MAYA;
 
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    iput-object v1, p1, Lm/v;->y:Lya/ma;
+    iput-object v1, p1, Ldef/m/VM;->y:Ldef/ya/MAYA;
 
-    invoke-virtual {v2}, Lva/b;->y0()V
+    invoke-virtual {v2}, Ldef/va/BVA;->y0()V
 
     :cond_2
     return-void
@@ -213,7 +213,7 @@
 
     iget v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->a:F
 
-    invoke-static {v1}, Ll5/e;->b(F)Ljava/lang/String;
+    invoke-static {v1}, Ldef/l5/EL5;->b(F)Ljava/lang/String;
 
     move-result-object v1
 
@@ -223,7 +223,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Lya/oa;
+    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->b:Ldef/ya/OAYA;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -231,7 +231,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Lya/ma;
+    iget-object v1, p0, Landroidx/compose/foundation/BorderModifierNodeElement;->c:Ldef/ya/MAYA;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

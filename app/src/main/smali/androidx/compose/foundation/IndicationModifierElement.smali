@@ -1,31 +1,31 @@
 .class final Landroidx/compose/foundation/IndicationModifierElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lp/i;
+.field public final a:Ldef/p/IP;
 
-.field public final b:Lm/b0;
+.field public final b:Ldef/m/B0M;
 
 
 # direct methods
-.method public constructor <init>(Lp/i;Lm/b0;)V
+.method public constructor <init>(Ldef/p/IP;Ldef/m/B0M;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Lp/i;
+    iput-object p1, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Ldef/p/IP;
 
-    iput-object p2, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Lm/b0;
+    iput-object p2, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Ldef/m/B0M;
 
     return-void
 .end method
@@ -53,11 +53,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/IndicationModifierElement;
 
-    iget-object v1, p1, Landroidx/compose/foundation/IndicationModifierElement;->a:Lp/i;
+    iget-object v1, p1, Landroidx/compose/foundation/IndicationModifierElement;->a:Ldef/p/IP;
 
-    iget-object v3, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Lp/i;
+    iget-object v3, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Ldef/p/IP;
 
-    invoke-static {v3, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -66,11 +66,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Lm/b0;
+    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Ldef/m/B0M;
 
-    iget-object p1, p1, Landroidx/compose/foundation/IndicationModifierElement;->b:Lm/b0;
+    iget-object p1, p1, Landroidx/compose/foundation/IndicationModifierElement;->b:Ldef/m/B0M;
 
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -85,7 +85,7 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Lp/i;
+    iget-object v0, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Ldef/p/IP;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -93,7 +93,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Lm/b0;
+    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Ldef/m/B0M;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -104,48 +104,48 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 3
 
-    new-instance v0, Lm/a0;
+    new-instance v0, Ldef/m/A0M;
 
-    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Lm/b0;
+    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Ldef/m/B0M;
 
-    iget-object v2, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Lp/i;
+    iget-object v2, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Ldef/p/IP;
 
-    invoke-interface {v1, v2}, Lm/b0;->a(Lp/i;)Lq0/m;
+    invoke-interface {v1, v2}, Ldef/m/B0M;->a(Ldef/p/IP;)Ldef/q0/MQ0;
 
     move-result-object v1
 
-    invoke-direct {v0}, Lq0/n;-><init>()V
+    invoke-direct {v0}, Ldef/q0/NQ0;-><init>()V
 
-    iput-object v1, v0, Lm/a0;->v:Lq0/m;
+    iput-object v1, v0, Ldef/m/A0M;->v:Ldef/q0/MQ0;
 
-    invoke-virtual {v0, v1}, Lq0/n;->y0(Lq0/m;)V
+    invoke-virtual {v0, v1}, Ldef/q0/NQ0;->y0(Ldef/q0/MQ0;)V
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 2
 
-    check-cast p1, Lm/a0;
+    check-cast p1, Ldef/m/A0M;
 
-    iget-object v0, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Lm/b0;
+    iget-object v0, p0, Landroidx/compose/foundation/IndicationModifierElement;->b:Ldef/m/B0M;
 
-    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Lp/i;
+    iget-object v1, p0, Landroidx/compose/foundation/IndicationModifierElement;->a:Ldef/p/IP;
 
-    invoke-interface {v0, v1}, Lm/b0;->a(Lp/i;)Lq0/m;
+    invoke-interface {v0, v1}, Ldef/m/B0M;->a(Ldef/p/IP;)Ldef/q0/MQ0;
 
     move-result-object v0
 
-    iget-object v1, p1, Lm/a0;->v:Lq0/m;
+    iget-object v1, p1, Ldef/m/A0M;->v:Ldef/q0/MQ0;
 
-    invoke-virtual {p1, v1}, Lq0/n;->z0(Lq0/m;)V
+    invoke-virtual {p1, v1}, Ldef/q0/NQ0;->z0(Ldef/q0/MQ0;)V
 
-    iput-object v0, p1, Lm/a0;->v:Lq0/m;
+    iput-object v0, p1, Ldef/m/A0M;->v:Ldef/q0/MQ0;
 
-    invoke-virtual {p1, v0}, Lq0/n;->y0(Lq0/m;)V
+    invoke-virtual {p1, v0}, Ldef/q0/NQ0;->y0(Ldef/q0/MQ0;)V
 
     return-void
 .end method

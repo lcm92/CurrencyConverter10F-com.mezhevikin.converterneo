@@ -36,7 +36,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p1, p0, Landroidx/lifecycle/B$a;->this$0:Landroidx/lifecycle/C;
 
@@ -50,7 +50,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p1, p0, Landroidx/lifecycle/B$a;->this$0:Landroidx/lifecycle/C;
 

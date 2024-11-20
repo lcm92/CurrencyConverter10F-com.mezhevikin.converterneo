@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field public final a:Ls4/xa;
+.field public final a:Ldef/s4/XAS4;
 
 .field public final b:Lio/ktor/utils/io/jvm/javaio/b;
 
-.field public final c:Ls4/ga;
+.field public final c:Ldef/s4/GAS4;
 
 .field public d:I
 
@@ -42,12 +42,12 @@
     return-void
 .end method
 
-.method public constructor <init>(Ls4/xa;)V
+.method public constructor <init>(Ldef/s4/XAS4;)V
     .locals 4
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->a:Ls4/xa;
+    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->a:Ldef/s4/XAS4;
 
     new-instance v0, Lio/ktor/utils/io/jvm/javaio/b;
 
@@ -65,13 +65,13 @@
 
     if-eqz p1, :cond_0
 
-    new-instance v2, Laa/h0;
+    new-instance v2, Ldef/aa/H0AA;
 
     const/16 v3, 0x1b
 
-    invoke-direct {v2, v3, p0}, Laa/h0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, p0}, Ldef/aa/H0AA;-><init>(ILjava/lang/Object;)V
 
-    invoke-interface {p1, v2}, Ls4/xa;->q(Lh4/c;)Ls4/ga;
+    invoke-interface {p1, v2}, Ldef/s4/XAS4;->q(Ldef/h4/CH4;)Ldef/s4/GAS4;
 
     move-result-object p1
 
@@ -81,17 +81,17 @@
     move-object p1, v1
 
     :goto_0
-    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->c:Ls4/ga;
+    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->c:Ldef/s4/GAS4;
 
     new-instance p1, Lio/ktor/utils/io/jvm/javaio/a;
 
-    invoke-direct {p1, p0, v1}, Lio/ktor/utils/io/jvm/javaio/a;-><init>(Lio/ktor/utils/io/jvm/javaio/c;Ly8/d;)V
+    invoke-direct {p1, p0, v1}, Lio/ktor/utils/io/jvm/javaio/a;-><init>(Lio/ktor/utils/io/jvm/javaio/c;Ldef/y8/DY8;)V
 
     const/4 v1, 0x1
 
-    invoke-static {v1, p1}, Li4/v;->d(ILjava/lang/Object;)V
+    invoke-static {v1, p1}, Ldef/i4/VI4;->d(ILjava/lang/Object;)V
 
-    invoke-interface {p1, v0}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Ldef/h4/CH4;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     iget-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->state:Ljava/lang/Object;
 
@@ -111,7 +111,7 @@
 
 
 # virtual methods
-.method public abstract a(La4/c;)Ljava/lang/Object;
+.method public abstract a(Ldef/a4/CA4;)Ljava/lang/Object;
 .end method
 
 .method public final b([BII)I
@@ -119,7 +119,7 @@
 
     const-string v0, "buffer"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput p2, p0, Lio/ktor/utils/io/jvm/javaio/c;->d:I
 
@@ -134,24 +134,24 @@
     :goto_0
     iget-object v0, p0, Lio/ktor/utils/io/jvm/javaio/c;->state:Ljava/lang/Object;
 
-    instance-of v1, v0, Ly8/d;
+    instance-of v1, v0, Ldef/y8/DY8;
 
     if-eqz v1, :cond_0
 
     const-string p3, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any>"
 
-    invoke-static {v0, p3}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, p3}, Ldef/i4/HI4;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     move-object p3, v0
 
-    check-cast p3, Ly8/d;
+    check-cast p3, Ldef/y8/DY8;
 
     move-object v1, p2
 
     goto :goto_1
 
     :cond_0
-    instance-of v1, v0, Lu8/y;
+    instance-of v1, v0, Ldef/u8/YU8;
 
     if-eqz v1, :cond_1
 
@@ -168,20 +168,20 @@
 
     if-nez v1, :cond_b
 
-    invoke-static {v0, p0}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p0}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_a
 
-    new-instance v1, Lg7/c;
+    new-instance v1, Ldef/g7/CG7;
 
     invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
 
     :goto_1
     const-string v2, "when (value) {\n         \u2026Exception()\n            }"
 
-    invoke-static {v1, v2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v2, Lio/ktor/utils/io/jvm/javaio/c;->f:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
@@ -192,13 +192,13 @@
 
     if-eqz v3, :cond_9
 
-    invoke-static {p3}, Li4/h;->c(Ljava/lang/Object;)V
+    invoke-static {p3}, Ldef/i4/HI4;->c(Ljava/lang/Object;)V
 
-    invoke-interface {p3, p1}, Ly8/d;->s(Ljava/lang/Object;)V
+    invoke-interface {p3, p1}, Ldef/y8/DY8;->s(Ljava/lang/Object;)V
 
     const-string p1, "thread"
 
-    invoke-static {p2, p1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->state:Ljava/lang/Object;
 
@@ -218,31 +218,31 @@
     goto :goto_2
 
     :cond_4
-    sget-object p1, Lio/ktor/utils/io/jvm/javaio/e;->a:Lu8/n;
+    sget-object p1, Lio/ktor/utils/io/jvm/javaio/e;->a:Ldef/u8/NU8;
 
-    invoke-virtual {p1}, Lu8/n;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Ldef/u8/NU8;->getValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lj9/a;
+    check-cast p1, Ldef/j9/AJ9;
 
     const-string p3, "Blocking network thread detected. \nIt can possible lead to a performance decline or even a deadlock.\nPlease make sure you\'re using blocking IO primitives like InputStream and OutputStream only in \nthe context of Dispatchers.IO:\n```\nwithContext(Dispatchers.IO) {\n    myInputStream.read()\n}\n```"
 
-    invoke-interface {p1, p3}, Lj9/a;->a(Ljava/lang/String;)V
+    invoke-interface {p1, p3}, Ldef/j9/AJ9;->a(Ljava/lang/String;)V
 
     :cond_5
     :goto_2
-    sget-object p1, Ls4/p0;->a:Ljava/lang/ThreadLocal;
+    sget-object p1, Ldef/s4/P0S4;->a:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Ls4/pa;
+    check-cast p1, Ldef/s4/PAS4;
 
     if-eqz p1, :cond_6
 
-    invoke-virtual {p1}, Ls4/pa;->H()J
+    invoke-virtual {p1}, Ldef/s4/PAS4;->H()J
 
     move-result-wide v0
 

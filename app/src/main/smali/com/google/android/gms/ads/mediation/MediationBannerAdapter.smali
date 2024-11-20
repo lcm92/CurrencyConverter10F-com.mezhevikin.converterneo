@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lg2/e;
+.implements Ldef/g2/EG2;
 
 
 # annotations
@@ -24,5 +24,5 @@
 .method public abstract synthetic onResume()V
 .end method
 
-.method public abstract requestBannerAd(Landroid/content/Context;Lg2/h;Landroid/os/Bundle;Ly6/f;Lg2/d;Landroid/os/Bundle;)V
+.method public abstract requestBannerAd(Landroid/content/Context;Ldef/g2/HG2;Landroid/os/Bundle;Ldef/y6/FY6;Ldef/g2/DG2;Landroid/os/Bundle;)V
 .end method

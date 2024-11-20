@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lh3/h;
+.implements Ldef/h3/HH3;
 
 
 # static fields

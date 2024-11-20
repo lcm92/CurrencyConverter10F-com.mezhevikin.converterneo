@@ -1,5 +1,5 @@
 .class public final Lio/ktor/utils/io/J;
-.super La4/c;
+.super Ldef/a4/CA4;
 .source "SourceFile"
 
 
@@ -8,7 +8,7 @@
 
 .field public k:Lio/ktor/utils/io/L;
 
-.field public l:Lq8/b;
+.field public l:Ldef/q8/BQ8;
 
 .field public m:J
 
@@ -41,7 +41,7 @@
 
     const-wide/16 v0, 0x0
 
-    invoke-static {p1, p1, v0, v1, p0}, Lt2/a;->q(Lio/ktor/utils/io/I;Lio/ktor/utils/io/L;JLa4/c;)Ljava/lang/Object;
+    invoke-static {p1, p1, v0, v1, p0}, Ldef/t2/AT2;->q(Lio/ktor/utils/io/I;Lio/ktor/utils/io/L;JLdef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 

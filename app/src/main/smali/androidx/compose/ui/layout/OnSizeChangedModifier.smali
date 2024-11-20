@@ -1,27 +1,27 @@
 .class final Landroidx/compose/ui/layout/OnSizeChangedModifier;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lh4/c;
+.field public final a:Ldef/h4/CH4;
 
 
 # direct methods
-.method public constructor <init>(Lh4/c;)V
+.method public constructor <init>(Ldef/h4/CH4;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lh4/c;
+    iput-object p1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Ldef/h4/CH4;
 
     return-void
 .end method
@@ -49,9 +49,9 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/layout/OnSizeChangedModifier;
 
-    iget-object p1, p1, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lh4/c;
+    iget-object p1, p1, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Ldef/h4/CH4;
 
-    iget-object v1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Ldef/h4/CH4;
 
     if-ne v1, p1, :cond_2
 
@@ -67,7 +67,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lh4/c;
+    iget-object v0, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Ldef/h4/CH4;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -76,44 +76,44 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 3
 
-    new-instance v0, Lo0/ka;
+    new-instance v0, Ldef/o0/KAO0;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
-    iget-object v1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Ldef/h4/CH4;
 
-    iput-object v1, v0, Lo0/ka;->t:Lh4/c;
+    iput-object v1, v0, Ldef/o0/KAO0;->t:Ldef/h4/CH4;
 
     const/high16 v1, -0x80000000
 
-    invoke-static {v1, v1}, Ll9/d;->b(II)J
+    invoke-static {v1, v1}, Ldef/l9/DL9;->b(II)J
 
     move-result-wide v1
 
-    iput-wide v1, v0, Lo0/ka;->u:J
+    iput-wide v1, v0, Ldef/o0/KAO0;->u:J
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 2
 
-    check-cast p1, Lo0/ka;
+    check-cast p1, Ldef/o0/KAO0;
 
-    iget-object v0, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Lh4/c;
+    iget-object v0, p0, Landroidx/compose/ui/layout/OnSizeChangedModifier;->a:Ldef/h4/CH4;
 
-    iput-object v0, p1, Lo0/ka;->t:Lh4/c;
+    iput-object v0, p1, Ldef/o0/KAO0;->t:Ldef/h4/CH4;
 
     const/high16 v0, -0x80000000
 
-    invoke-static {v0, v0}, Ll9/d;->b(II)J
+    invoke-static {v0, v0}, Ldef/l9/DL9;->b(II)J
 
     move-result-wide v0
 
-    iput-wide v0, p1, Lo0/ka;->u:J
+    iput-wide v0, p1, Ldef/o0/KAO0;->u:J
 
     return-void
 .end method

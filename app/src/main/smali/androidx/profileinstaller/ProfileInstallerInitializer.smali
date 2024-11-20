@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls1/b;
+.implements Ldef/s1/BS1;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Ls1/b;"
+        "Ldef/s1/BS1;"
     }
 .end annotation
 
@@ -43,15 +43,15 @@
 
     move-result-object p1
 
-    new-instance v0, Ls5/i;
+    new-instance v0, Ldef/s5/IS5;
 
     const/4 v1, 0x4
 
-    invoke-direct {v0, p0, v1, p1}, Ls5/i;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1}, Ldef/s5/IS5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    invoke-static {v0}, Ll1/f;->a(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Ldef/l1/FL1;->a(Ljava/lang/Runnable;)V
 
-    new-instance p1, Lo2/g;
+    new-instance p1, Ldef/o2/GO2;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 

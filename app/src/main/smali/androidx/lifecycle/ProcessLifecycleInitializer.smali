@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls1/b;
+.implements Ldef/s1/BS1;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Ls1/b;"
+        "Ldef/s1/BS1;"
     }
 .end annotation
 
@@ -29,7 +29,7 @@
 .method public final a()Ljava/util/List;
     .locals 1
 
-    sget-object v0, Lv8/t;->g:Lv8/t;
+    sget-object v0, Ldef/v8/TV8;->g:Ldef/v8/TV8;
 
     return-object v0
 .end method
@@ -39,17 +39,17 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Ls1/a;->c(Landroid/content/Context;)Ls1/a;
+    invoke-static {p1}, Ldef/s1/AS1;->c(Landroid/content/Context;)Ldef/s1/AS1;
 
     move-result-object v0
 
     const-string v1, "getInstance(context)"
 
-    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, v0, Ls1/a;->b:Ljava/util/HashSet;
+    iget-object v0, v0, Ldef/s1/AS1;->b:Ljava/util/HashSet;
 
     const-class v1, Landroidx/lifecycle/ProcessLifecycleInitializer;
 
@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ldef/i4/HI4;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroid/app/Application;
 
@@ -109,7 +109,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, v1}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Ldef/i4/HI4;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Landroid/app/Application;
 

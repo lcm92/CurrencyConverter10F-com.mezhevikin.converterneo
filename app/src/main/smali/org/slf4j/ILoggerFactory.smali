@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract b(Ljava/lang/String;)Lj9/a;
+.method public abstract b(Ljava/lang/String;)Ldef/j9/AJ9;
 .end method

@@ -4,56 +4,56 @@
 
 
 # direct methods
-.method public static final a(Lra/q;Lh4/c;)Lra/q;
+.method public static final a(Ldef/ra/QRA;Ldef/h4/CH4;)Ldef/ra/QRA;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/draw/DrawBehindElement;
 
-    invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawBehindElement;-><init>(Lh4/c;)V
+    invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawBehindElement;-><init>(Ldef/h4/CH4;)V
 
-    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v0}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final b(Lra/q;Lh4/c;)Lra/q;
+.method public static final b(Ldef/ra/QRA;Ldef/h4/CH4;)Ldef/ra/QRA;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/draw/DrawWithCacheElement;
 
-    invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawWithCacheElement;-><init>(Lh4/c;)V
+    invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawWithCacheElement;-><init>(Ldef/h4/CH4;)V
 
-    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v0}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final c(Lra/q;Lh4/c;)Lra/q;
+.method public static final c(Ldef/ra/QRA;Ldef/h4/CH4;)Ldef/ra/QRA;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/draw/DrawWithContentElement;
 
-    invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawWithContentElement;-><init>(Lh4/c;)V
+    invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawWithContentElement;-><init>(Ldef/h4/CH4;)V
 
-    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v0}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static d(Lra/q;Ld0/b;Lra/d;Lo0/ia;FLya/l;I)Lra/q;
+.method public static d(Ldef/ra/QRA;Ldef/d0/BD0;Ldef/ra/DRA;Ldef/o0/IAO0;FLdef/ya/LYA;I)Ldef/ra/QRA;
     .locals 7
 
     and-int/lit8 v0, p6, 0x4
 
     if-eqz v0, :cond_0
 
-    sget-object p2, Lra/b;->k:Lra/i;
+    sget-object p2, Ldef/ra/BRA;->k:Ldef/ra/IRA;
 
     :cond_0
     move-object v3, p2
@@ -79,9 +79,9 @@
 
     move-object v6, p5
 
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/draw/PainterElement;-><init>(Ld0/b;ZLra/d;Lo0/ia;FLya/l;)V
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/draw/PainterElement;-><init>(Ldef/d0/BD0;ZLdef/ra/DRA;Ldef/o0/IAO0;FLdef/ya/LYA;)V
 
-    invoke-interface {p0, p2}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, p2}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 

@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final a(Lra/q;Lo4/c;Lr/d;Lo/oa;ZZ)Lra/q;
+.method public static final a(Ldef/ra/QRA;Ldef/o4/CO4;Ldef/r/DR;Ldef/o/OAO;ZZ)Ldef/ra/QRA;
     .locals 7
 
     new-instance v6, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;
@@ -21,9 +21,9 @@
 
     move v5, p5
 
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;-><init>(Lo4/c;Lr/d;Lo/oa;ZZ)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsModifier;-><init>(Ldef/o4/CO4;Ldef/r/DR;Ldef/o/OAO;ZZ)V
 
-    invoke-interface {p0, v6}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v6}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 

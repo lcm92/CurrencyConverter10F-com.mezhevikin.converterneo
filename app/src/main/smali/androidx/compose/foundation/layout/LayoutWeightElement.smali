@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/layout/LayoutWeightElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -106,36 +106,36 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lq/ta;
+    new-instance v0, Ldef/q/TAQ;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
     iget v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->a:F
 
-    iput v1, v0, Lq/ta;->t:F
+    iput v1, v0, Ldef/q/TAQ;->t:F
 
     iget-boolean v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->b:Z
 
-    iput-boolean v1, v0, Lq/ta;->u:Z
+    iput-boolean v1, v0, Ldef/q/TAQ;->u:Z
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lq/ta;
+    check-cast p1, Ldef/q/TAQ;
 
     iget v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->a:F
 
-    iput v0, p1, Lq/ta;->t:F
+    iput v0, p1, Ldef/q/TAQ;->t:F
 
     iget-boolean v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->b:Z
 
-    iput-boolean v0, p1, Lq/ta;->u:Z
+    iput-boolean v0, p1, Ldef/q/TAQ;->u:Z
 
     return-void
 .end method

@@ -6,7 +6,7 @@
 # static fields
 .field public static c:Landroidx/lifecycle/S;
 
-.field public static final d:Ll2/g;
+.field public static final d:Ldef/l2/GL2;
 
 
 # instance fields
@@ -17,13 +17,13 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Ll2/g;
+    new-instance v0, Ldef/l2/GL2;
 
     const/16 v1, 0xd
 
-    invoke-direct {v0, v1}, Ll2/g;-><init>(I)V
+    invoke-direct {v0, v1}, Ldef/l2/GL2;-><init>(I)V
 
-    sput-object v0, Landroidx/lifecycle/S;->d:Ll2/g;
+    sput-object v0, Landroidx/lifecycle/S;->d:Ldef/l2/GL2;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     throw p1
 .end method
 
-.method public final c(Ljava/lang/Class;Lg1/b;)Landroidx/lifecycle/Q;
+.method public final c(Ljava/lang/Class;Ldef/g1/BG1;)Landroidx/lifecycle/Q;
     .locals 1
 
     iget-object v0, p0, Landroidx/lifecycle/S;->b:Landroid/app/Application;
@@ -77,9 +77,9 @@
     goto :goto_0
 
     :cond_0
-    sget-object v0, Landroidx/lifecycle/S;->d:Ll2/g;
+    sget-object v0, Landroidx/lifecycle/S;->d:Ldef/l2/GL2;
 
-    iget-object p2, p2, Lh8/r;->g:Ljava/lang/Object;
+    iget-object p2, p2, Ldef/h8/RH8;->g:Ljava/lang/Object;
 
     check-cast p2, Ljava/util/LinkedHashMap;
 
@@ -106,7 +106,7 @@
 
     if-nez p2, :cond_2
 
-    invoke-static {p1}, Lh7/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
+    invoke-static {p1}, Ldef/h7/BH7;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
 
     move-result-object p1
 
@@ -164,7 +164,7 @@
 
     const-string p1, "{\n                try {\n\u2026          }\n            }"
 
-    invoke-static {p2, p1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_4
 
@@ -257,7 +257,7 @@
     throw v1
 
     :cond_0
-    invoke-static {p1}, Lh7/b;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
+    invoke-static {p1}, Ldef/h7/BH7;->K(Ljava/lang/Class;)Landroidx/lifecycle/Q;
 
     move-result-object p2
 

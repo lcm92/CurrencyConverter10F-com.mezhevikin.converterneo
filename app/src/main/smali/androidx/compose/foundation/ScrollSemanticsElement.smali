@@ -1,37 +1,37 @@
 .class final Landroidx/compose/foundation/ScrollSemanticsElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lm/z0;
+.field public final a:Ldef/m/Z0M;
 
 .field public final b:Z
 
-.field public final c:Lo/m;
+.field public final c:Ldef/o/MO;
 
 .field public final d:Z
 
 
 # direct methods
-.method public constructor <init>(Lm/z0;ZLo/m;Z)V
+.method public constructor <init>(Ldef/m/Z0M;ZLdef/o/MO;Z)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Lm/z0;
+    iput-object p1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Ldef/m/Z0M;
 
     iput-boolean p2, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->b:Z
 
-    iput-object p3, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Lo/m;
+    iput-object p3, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Ldef/o/MO;
 
     iput-boolean p4, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->d:Z
 
@@ -61,11 +61,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/ScrollSemanticsElement;
 
-    iget-object v1, p1, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Lm/z0;
+    iget-object v1, p1, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Ldef/m/Z0M;
 
-    iget-object v3, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Lm/z0;
+    iget-object v3, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Ldef/m/Z0M;
 
-    invoke-static {v3, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -83,11 +83,11 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Lo/m;
+    iget-object v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Ldef/o/MO;
 
-    iget-object v3, p1, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Lo/m;
+    iget-object v3, p1, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Ldef/o/MO;
 
-    invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -111,7 +111,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Lm/z0;
+    iget-object v0, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Ldef/m/Z0M;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -123,11 +123,11 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->b:Z
 
-    invoke-static {v0, v1, v2}, Lk/pa;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Ldef/k/PAK;->c(IIZ)I
 
     move-result v0
 
-    iget-object v2, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Lo/m;
+    iget-object v2, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Ldef/o/MO;
 
     if-nez v2, :cond_0
 
@@ -147,7 +147,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->d:Z
 
-    invoke-static {v0, v1, v2}, Lk/pa;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Ldef/k/PAK;->c(IIZ)I
 
     move-result v0
 
@@ -162,44 +162,44 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lm/w0;
+    new-instance v0, Ldef/m/W0M;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
-    iget-object v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Lm/z0;
+    iget-object v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Ldef/m/Z0M;
 
-    iput-object v1, v0, Lm/w0;->t:Lm/z0;
+    iput-object v1, v0, Ldef/m/W0M;->t:Ldef/m/Z0M;
 
     iget-boolean v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->b:Z
 
-    iput-boolean v1, v0, Lm/w0;->u:Z
+    iput-boolean v1, v0, Ldef/m/W0M;->u:Z
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lm/w0;->v:Z
+    iput-boolean v1, v0, Ldef/m/W0M;->v:Z
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lm/w0;
+    check-cast p1, Ldef/m/W0M;
 
-    iget-object v0, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Lm/z0;
+    iget-object v0, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Ldef/m/Z0M;
 
-    iput-object v0, p1, Lm/w0;->t:Lm/z0;
+    iput-object v0, p1, Ldef/m/W0M;->t:Ldef/m/Z0M;
 
     iget-boolean v0, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->b:Z
 
-    iput-boolean v0, p1, Lm/w0;->u:Z
+    iput-boolean v0, p1, Ldef/m/W0M;->u:Z
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lm/w0;->v:Z
+    iput-boolean v0, p1, Ldef/m/W0M;->v:Z
 
     return-void
 .end method
@@ -213,7 +213,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Lm/z0;
+    iget-object v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->a:Ldef/m/Z0M;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -229,7 +229,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Lo/m;
+    iget-object v1, p0, Landroidx/compose/foundation/ScrollSemanticsElement;->c:Ldef/o/MO;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

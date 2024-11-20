@@ -9,11 +9,11 @@
 
     const-string v0, "activity"
 
-    invoke-static {p0, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "event"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     instance-of v0, p0, Landroidx/lifecycle/t;
 
@@ -38,7 +38,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p0, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0}, Landroidx/lifecycle/F$a;-><init>()V
 
-    invoke-static {p0, v0}, Ly5/z;->c(Landroid/app/Activity;Landroidx/lifecycle/F$a;)V
+    invoke-static {p0, v0}, Ldef/y5/ZY5;->c(Landroid/app/Activity;Landroidx/lifecycle/F$a;)V
 
     :cond_0
     invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;

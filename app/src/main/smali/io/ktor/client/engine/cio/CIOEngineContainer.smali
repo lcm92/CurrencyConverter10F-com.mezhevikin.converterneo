@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Le3/i;
+.implements Ldef/e3/IE3;
 
 
 # direct methods
@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method public a()Lh3/h;
+.method public a()Ldef/h3/HH3;
     .locals 1
 
     sget-object v0, Lio/ktor/client/engine/cio/a;->b:Lio/ktor/client/engine/cio/a;

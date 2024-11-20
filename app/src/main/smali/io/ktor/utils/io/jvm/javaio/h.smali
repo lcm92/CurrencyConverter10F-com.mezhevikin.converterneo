@@ -8,19 +8,19 @@
 
 
 # direct methods
-.method public constructor <init>(Ls4/xa;Lio/ktor/utils/io/jvm/javaio/i;)V
+.method public constructor <init>(Ldef/s4/XAS4;Lio/ktor/utils/io/jvm/javaio/i;)V
     .locals 0
 
     iput-object p2, p0, Lio/ktor/utils/io/jvm/javaio/h;->g:Lio/ktor/utils/io/jvm/javaio/i;
 
-    invoke-direct {p0, p1}, Lio/ktor/utils/io/jvm/javaio/c;-><init>(Ls4/xa;)V
+    invoke-direct {p0, p1}, Lio/ktor/utils/io/jvm/javaio/c;-><init>(Ldef/s4/XAS4;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(La4/c;)Ljava/lang/Object;
+.method public final a(Ldef/a4/CA4;)Ljava/lang/Object;
     .locals 10
 
     instance-of v0, p1, Lio/ktor/utils/io/jvm/javaio/g;
@@ -48,12 +48,12 @@
     :cond_0
     new-instance v0, Lio/ktor/utils/io/jvm/javaio/g;
 
-    invoke-direct {v0, p0, p1}, Lio/ktor/utils/io/jvm/javaio/g;-><init>(Lio/ktor/utils/io/jvm/javaio/h;La4/c;)V
+    invoke-direct {v0, p0, p1}, Lio/ktor/utils/io/jvm/javaio/g;-><init>(Lio/ktor/utils/io/jvm/javaio/h;Ldef/a4/CA4;)V
 
     :goto_0
     iget-object p1, v0, Lio/ktor/utils/io/jvm/javaio/g;->k:Ljava/lang/Object;
 
-    sget-object v1, Lz8/a;->g:Lz8/a;
+    sget-object v1, Ldef/z8/AZ8;->g:Ldef/z8/AZ8;
 
     iget v2, v0, Lio/ktor/utils/io/jvm/javaio/g;->m:I
 
@@ -71,7 +71,7 @@
 
     iget-object v2, v0, Lio/ktor/utils/io/jvm/javaio/g;->j:Lio/ktor/utils/io/jvm/javaio/h;
 
-    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Ldef/u8/AU8;->e(Ljava/lang/Object;)V
 
     goto :goto_1
 
@@ -87,11 +87,11 @@
     :cond_2
     iget-object v2, v0, Lio/ktor/utils/io/jvm/javaio/g;->j:Lio/ktor/utils/io/jvm/javaio/h;
 
-    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Ldef/u8/AU8;->e(Ljava/lang/Object;)V
 
     const-string v6, "null cannot be cast to non-null type kotlin.ByteArray"
 
-    invoke-static {p1, v6}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v6}, Ldef/i4/HI4;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, [B
 
@@ -109,7 +109,7 @@
 
     check-cast v6, Lio/ktor/utils/io/D;
 
-    invoke-virtual {v6, p1, v7, v8, v0}, Lio/ktor/utils/io/D;->G([BIILa4/c;)Ljava/lang/Object;
+    invoke-virtual {v6, p1, v7, v8, v0}, Lio/ktor/utils/io/D;->G([BIILdef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -131,18 +131,18 @@
 
     iget-object v0, v2, Lio/ktor/utils/io/jvm/javaio/h;->g:Lio/ktor/utils/io/jvm/javaio/i;
 
-    iget-object v0, v0, Lio/ktor/utils/io/jvm/javaio/i;->h:Ls4/a0;
+    iget-object v0, v0, Lio/ktor/utils/io/jvm/javaio/i;->h:Ldef/s4/A0S4;
 
-    invoke-virtual {v0}, Ls4/a0;->n0()Z
+    invoke-virtual {v0}, Ldef/s4/A0S4;->n0()Z
 
     iput p1, v2, Lio/ktor/utils/io/jvm/javaio/c;->result:I
 
-    sget-object p1, Lu8/y;->a:Lu8/y;
+    sget-object p1, Ldef/u8/YU8;->a:Ldef/u8/YU8;
 
     return-object p1
 
     :cond_4
-    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Ldef/u8/AU8;->e(Ljava/lang/Object;)V
 
     const/4 p1, 0x0
 
@@ -162,7 +162,7 @@
 
     if-eqz v4, :cond_6
 
-    invoke-static {v0}, Ll9/d;->C(Ly8/d;)Ly8/d;
+    invoke-static {v0}, Ldef/l9/DL9;->C(Ldef/y8/DY8;)Ldef/y8/DY8;
 
     move-result-object v3
 
@@ -171,13 +171,13 @@
     goto :goto_3
 
     :cond_6
-    invoke-static {p1, v2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v2}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_a
 
-    invoke-static {v0}, Ll9/d;->C(Ly8/d;)Ly8/d;
+    invoke-static {v0}, Ldef/l9/DL9;->C(Ldef/y8/DY8;)Ldef/y8/DY8;
 
     move-result-object v4
 

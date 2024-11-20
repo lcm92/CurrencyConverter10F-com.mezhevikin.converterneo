@@ -1,9 +1,9 @@
 .class public final Lio/ktor/utils/io/G;
-.super Li4/i;
+.super Ldef/i4/II4;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/a;
+.implements Ldef/h4/AH4;
 
 
 # static fields
@@ -18,7 +18,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
+    invoke-direct {v0, v1}, Ldef/i4/II4;-><init>(I)V
 
     sput-object v0, Lio/ktor/utils/io/G;->h:Lio/ktor/utils/io/G;
 
@@ -36,7 +36,7 @@
 
     invoke-direct {v0, v1}, Lio/ktor/utils/io/D;-><init>(Z)V
 
-    invoke-static {v0}, Lh7/b;->F(Lio/ktor/utils/io/L;)V
+    invoke-static {v0}, Ldef/h7/BH7;->F(Lio/ktor/utils/io/L;)V
 
     return-object v0
 .end method

@@ -14,22 +14,22 @@
     return-void
 .end method
 
-.method public static final a(Lra/q;ZLp/i;)Lra/q;
+.method public static final a(Ldef/ra/QRA;ZLdef/p/IP;)Ldef/ra/QRA;
     .locals 0
 
     if-eqz p1, :cond_0
 
     new-instance p1, Landroidx/compose/foundation/FocusableElement;
 
-    invoke-direct {p1, p2}, Landroidx/compose/foundation/FocusableElement;-><init>(Lp/i;)V
+    invoke-direct {p1, p2}, Landroidx/compose/foundation/FocusableElement;-><init>(Ldef/p/IP;)V
 
     goto :goto_0
 
     :cond_0
-    sget-object p1, Lra/n;->a:Lra/n;
+    sget-object p1, Ldef/ra/NRA;->a:Ldef/ra/NRA;
 
     :goto_0
-    invoke-interface {p0, p1}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, p1}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 

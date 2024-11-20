@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lr8/f;
+.implements Ldef/r8/FR8;
 
 
 # instance fields
@@ -34,7 +34,7 @@
 
     const-string v0, "instance"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 
     const-string v2, "allocateDirect(BUFFER_SIZE)"
 
-    invoke-static {v1, v2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v2, 0x8
 

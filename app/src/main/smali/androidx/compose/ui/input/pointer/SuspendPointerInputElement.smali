@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -18,11 +18,11 @@
 
 .field public final c:[Ljava/lang/Object;
 
-.field public final d:Lh4/e;
+.field public final d:Ldef/h4/EH4;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Lw/za;Lh4/e;I)V
+.method public constructor <init>(Ljava/lang/Object;Ldef/w/ZAW;Ldef/h4/EH4;I)V
     .locals 1
 
     and-int/lit8 p4, p4, 0x2
@@ -42,7 +42,7 @@
 
     iput-object v0, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->c:[Ljava/lang/Object;
 
-    iput-object p3, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Lh4/e;
+    iput-object p3, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Ldef/h4/EH4;
 
     return-void
 .end method
@@ -74,7 +74,7 @@
 
     iget-object v3, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->a:Ljava/lang/Object;
 
-    invoke-static {v3, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -87,7 +87,7 @@
 
     iget-object v3, p1, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->b:Ljava/lang/Object;
 
-    invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -123,9 +123,9 @@
     return v2
 
     :cond_6
-    iget-object v1, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Lh4/e;
+    iget-object v1, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Ldef/h4/EH4;
 
-    iget-object p1, p1, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Lh4/e;
+    iget-object p1, p1, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Ldef/h4/EH4;
 
     if-ne v1, p1, :cond_7
 
@@ -190,7 +190,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Lh4/e;
+    iget-object v0, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Ldef/h4/EH4;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -201,34 +201,34 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 5
 
-    new-instance v0, Lk0/ba;
+    new-instance v0, Ldef/k0/BAK0;
 
     iget-object v1, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->c:[Ljava/lang/Object;
 
-    iget-object v2, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Lh4/e;
+    iget-object v2, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Ldef/h4/EH4;
 
     iget-object v3, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->a:Ljava/lang/Object;
 
     iget-object v4, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->b:Ljava/lang/Object;
 
-    invoke-direct {v0, v3, v4, v1, v2}, Lk0/ba;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Lh4/e;)V
+    invoke-direct {v0, v3, v4, v1, v2}, Ldef/k0/BAK0;-><init>(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;Ldef/h4/EH4;)V
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 4
 
-    check-cast p1, Lk0/ba;
+    check-cast p1, Ldef/k0/BAK0;
 
-    iget-object v0, p1, Lk0/ba;->t:Ljava/lang/Object;
+    iget-object v0, p1, Ldef/k0/BAK0;->t:Ljava/lang/Object;
 
     iget-object v1, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->a:Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -236,13 +236,13 @@
 
     xor-int/2addr v0, v2
 
-    iput-object v1, p1, Lk0/ba;->t:Ljava/lang/Object;
+    iput-object v1, p1, Ldef/k0/BAK0;->t:Ljava/lang/Object;
 
-    iget-object v1, p1, Lk0/ba;->u:Ljava/lang/Object;
+    iget-object v1, p1, Ldef/k0/BAK0;->u:Ljava/lang/Object;
 
     iget-object v3, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->b:Ljava/lang/Object;
 
-    invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -251,9 +251,9 @@
     move v0, v2
 
     :cond_0
-    iput-object v3, p1, Lk0/ba;->u:Ljava/lang/Object;
+    iput-object v3, p1, Ldef/k0/BAK0;->u:Ljava/lang/Object;
 
-    iget-object v1, p1, Lk0/ba;->v:[Ljava/lang/Object;
+    iget-object v1, p1, Ldef/k0/BAK0;->v:[Ljava/lang/Object;
 
     iget-object v3, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->c:[Ljava/lang/Object;
 
@@ -287,16 +287,16 @@
     move v2, v0
 
     :goto_0
-    iput-object v3, p1, Lk0/ba;->v:[Ljava/lang/Object;
+    iput-object v3, p1, Ldef/k0/BAK0;->v:[Ljava/lang/Object;
 
     if-eqz v2, :cond_4
 
-    invoke-virtual {p1}, Lk0/ba;->A0()V
+    invoke-virtual {p1}, Ldef/k0/BAK0;->A0()V
 
     :cond_4
-    iget-object v0, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Lh4/e;
+    iget-object v0, p0, Landroidx/compose/ui/input/pointer/SuspendPointerInputElement;->d:Ldef/h4/EH4;
 
-    iput-object v0, p1, Lk0/ba;->w:Lh4/e;
+    iput-object v0, p1, Ldef/k0/BAK0;->w:Ldef/h4/EH4;
 
     return-void
 .end method

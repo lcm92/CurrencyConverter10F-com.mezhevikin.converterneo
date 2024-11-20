@@ -1,5 +1,5 @@
 .class public abstract Landroidx/work/impl/WorkDatabase;
-.super Lm1/j;
+.super Ldef/m1/JM1;
 .source "SourceFile"
 
 
@@ -29,30 +29,30 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lm1/j;-><init>()V
+    invoke-direct {p0}, Ldef/m1/JM1;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract i()Ly/s;
+.method public abstract i()Ldef/y/SY;
 .end method
 
-.method public abstract j()Ly/s;
+.method public abstract j()Ldef/y/SY;
 .end method
 
-.method public abstract k()Le5/l;
+.method public abstract k()Ldef/e5/LE5;
 .end method
 
-.method public abstract l()Ly/s;
+.method public abstract l()Ldef/y/SY;
 .end method
 
-.method public abstract m()Lc6/j;
+.method public abstract m()Ldef/c6/JC6;
 .end method
 
-.method public abstract n()Le6/j;
+.method public abstract n()Ldef/e6/JE6;
 .end method
 
-.method public abstract o()Ly/s;
+.method public abstract o()Ldef/y/SY;
 .end method

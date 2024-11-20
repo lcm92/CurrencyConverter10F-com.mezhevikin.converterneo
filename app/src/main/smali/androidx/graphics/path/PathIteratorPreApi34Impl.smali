@@ -7,7 +7,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "androidx.graphics.path"
+    const-string v0, "dtcore"
 
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 

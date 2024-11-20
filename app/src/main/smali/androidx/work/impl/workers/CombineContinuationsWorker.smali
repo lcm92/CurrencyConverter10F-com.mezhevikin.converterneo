@@ -14,16 +14,16 @@
 
 
 # virtual methods
-.method public final doWork()Lv1/l;
+.method public final doWork()Ldef/v1/LV1;
     .locals 2
 
-    invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getInputData()Lv1/f;
+    invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getInputData()Ldef/v1/FV1;
 
     move-result-object v0
 
-    new-instance v1, Lv1/k;
+    new-instance v1, Ldef/v1/KV1;
 
-    invoke-direct {v1, v0}, Lv1/k;-><init>(Lv1/f;)V
+    invoke-direct {v1, v0}, Ldef/v1/KV1;-><init>(Ldef/v1/FV1;)V
 
     return-object v1
 .end method

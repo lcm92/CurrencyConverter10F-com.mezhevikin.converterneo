@@ -7,16 +7,16 @@
 .method private static setPlugin(Ljava/lang/String;)V
     .locals 4
 
-    invoke-static {}, Lb2/i0;->c()Lb2/i0;
+    invoke-static {}, Ldef/b2/I0B2;->c()Ldef/b2/I0B2;
 
     move-result-object v0
 
-    iget-object v1, v0, Lb2/i0;->e:Ljava/lang/Object;
+    iget-object v1, v0, Ldef/b2/I0B2;->e:Ljava/lang/Object;
 
     monitor-enter v1
 
     :try_start_0
-    iget-object v0, v0, Lb2/i0;->f:Lb2/la;
+    iget-object v0, v0, Ldef/b2/I0B2;->f:Ldef/b2/LAB2;
 
     if-eqz v0, :cond_0
 
@@ -35,7 +35,7 @@
     if-eqz v2, :cond_1
 
     :try_start_1
-    invoke-interface {v0, p0}, Lb2/la;->i(Ljava/lang/String;)V
+    invoke-interface {v0, p0}, Ldef/b2/LAB2;->i(Ljava/lang/String;)V
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -53,7 +53,7 @@
     :try_start_2
     const-string v0, "Unable to set plugin."
 
-    invoke-static {v0, p0}, Le2/f;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, p0}, Ldef/e2/FE2;->f(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_1
     monitor-exit v1

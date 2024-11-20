@@ -1,16 +1,16 @@
 .class public final Landroidx/compose/ui/semantics/AppendedSemanticsElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 # interfaces
-.implements Lra/o;
+.implements Ldef/ra/ORA;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;",
-        "Lra/o;"
+        "Ldef/q0/SAQ0;",
+        "Ldef/ra/ORA;"
     }
 .end annotation
 
@@ -18,18 +18,18 @@
 # instance fields
 .field public final a:Z
 
-.field public final b:Lh4/c;
+.field public final b:Ldef/h4/CH4;
 
 
 # direct methods
-.method public constructor <init>(Lh4/c;Z)V
+.method public constructor <init>(Ldef/h4/CH4;Z)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p2, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->a:Z
 
-    iput-object p1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Lh4/c;
+    iput-object p1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Ldef/h4/CH4;
 
     return-void
 .end method
@@ -66,11 +66,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Ldef/h4/CH4;
 
-    iget-object p1, p1, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Lh4/c;
+    iget-object p1, p1, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Ldef/h4/CH4;
 
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -93,7 +93,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Ldef/h4/CH4;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -104,36 +104,36 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lx0/c;
+    new-instance v0, Ldef/x0/CX0;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
     iget-boolean v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->a:Z
 
-    iput-boolean v1, v0, Lx0/c;->t:Z
+    iput-boolean v1, v0, Ldef/x0/CX0;->t:Z
 
-    iget-object v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Ldef/h4/CH4;
 
-    iput-object v1, v0, Lx0/c;->u:Lh4/c;
+    iput-object v1, v0, Ldef/x0/CX0;->u:Ldef/h4/CH4;
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lx0/c;
+    check-cast p1, Ldef/x0/CX0;
 
     iget-boolean v0, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->a:Z
 
-    iput-boolean v0, p1, Lx0/c;->t:Z
+    iput-boolean v0, p1, Ldef/x0/CX0;->t:Z
 
-    iget-object v0, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Lh4/c;
+    iget-object v0, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Ldef/h4/CH4;
 
-    iput-object v0, p1, Lx0/c;->u:Lh4/c;
+    iput-object v0, p1, Ldef/x0/CX0;->u:Ldef/h4/CH4;
 
     return-void
 .end method
@@ -155,7 +155,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->b:Ldef/h4/CH4;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -34,21 +34,21 @@
 
     if-eqz v1, :cond_1
 
-    new-instance p2, Lg/a;
+    new-instance p2, Ldef/g/AG;
 
     const/4 v0, 0x1
 
-    invoke-direct {p2, v0}, Lg/a;-><init>(I)V
+    invoke-direct {p2, v0}, Ldef/g/AG;-><init>(I)V
 
-    new-instance v0, Lk3/b;
+    new-instance v0, Ldef/k3/BK3;
 
     const/4 v1, 0x5
 
-    invoke-direct {v0, v1, p0}, Lk3/b;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Ldef/k3/BK3;-><init>(ILjava/lang/Object;)V
 
     const/4 v1, 0x1
 
-    invoke-static {p1, p2, v0, v1}, Ll1/d;->s(Landroid/content/Context;Ljava/util/concurrent/Executor;Ll1/c;Z)V
+    invoke-static {p1, p2, v0, v1}, Ldef/l1/DL1;->s(Landroid/content/Context;Ljava/util/concurrent/Executor;Ldef/l1/CL1;Z)V
 
     goto/16 :goto_0
 
@@ -87,11 +87,11 @@
 
     if-eqz v0, :cond_2
 
-    new-instance p2, Lk3/b;
+    new-instance p2, Ldef/k3/BK3;
 
     const/4 v0, 0x5
 
-    invoke-direct {p2, v0, p0}, Lk3/b;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, v0, p0}, Ldef/k3/BK3;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -118,9 +118,9 @@
 
     move-result-object p1
 
-    invoke-static {v0, p1}, Ll1/d;->e(Landroid/content/pm/PackageInfo;Ljava/io/File;)V
+    invoke-static {v0, p1}, Ldef/l1/DL1;->e(Landroid/content/pm/PackageInfo;Ljava/io/File;)V
 
-    invoke-virtual {p2, v3, v4}, Lk3/b;->f(ILjava/io/Serializable;)V
+    invoke-virtual {p2, v3, v4}, Ldef/k3/BK3;->f(ILjava/io/Serializable;)V
 
     goto/16 :goto_0
 
@@ -129,7 +129,7 @@
 
     const/4 v0, 0x7
 
-    invoke-virtual {p2, v0, p1}, Lk3/b;->f(ILjava/io/Serializable;)V
+    invoke-virtual {p2, v0, p1}, Ldef/k3/BK3;->f(ILjava/io/Serializable;)V
 
     goto/16 :goto_0
 
@@ -210,11 +210,11 @@
 
     move-result-object p2
 
-    new-instance v0, Lk3/b;
+    new-instance v0, Ldef/k3/BK3;
 
     const/4 v1, 0x5
 
-    invoke-direct {v0, v1, p0}, Lk3/b;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Ldef/k3/BK3;-><init>(ILjava/lang/Object;)V
 
     const-string v1, "DROP_SHADER_CACHE"
 
@@ -232,7 +232,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Ll1/d;->c(Ljava/io/File;)Z
+    invoke-static {p1}, Ldef/l1/DL1;->c(Ljava/io/File;)Z
 
     move-result p1
 
@@ -240,21 +240,21 @@
 
     const/16 p1, 0xe
 
-    invoke-virtual {v0, p1, v4}, Lk3/b;->f(ILjava/io/Serializable;)V
+    invoke-virtual {v0, p1, v4}, Ldef/k3/BK3;->f(ILjava/io/Serializable;)V
 
     goto :goto_0
 
     :cond_5
     const/16 p1, 0xf
 
-    invoke-virtual {v0, p1, v4}, Lk3/b;->f(ILjava/io/Serializable;)V
+    invoke-virtual {v0, p1, v4}, Ldef/k3/BK3;->f(ILjava/io/Serializable;)V
 
     goto :goto_0
 
     :cond_6
     const/16 p1, 0x10
 
-    invoke-virtual {v0, p1, v4}, Lk3/b;->f(ILjava/io/Serializable;)V
+    invoke-virtual {v0, p1, v4}, Ldef/k3/BK3;->f(ILjava/io/Serializable;)V
 
     :cond_7
     :goto_0

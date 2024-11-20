@@ -70,16 +70,16 @@
     return-object v0
 .end method
 
-.method public getForegroundInfoAsync()Lp7/a;
+.method public getForegroundInfoAsync()Ldef/p7/AP7;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lp7/a;"
+            "Ldef/p7/AP7;"
         }
     .end annotation
 
-    new-instance v0, Lg6/k;
+    new-instance v0, Ldef/g6/KG6;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +89,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lg6/k;->l(Ljava/lang/Throwable;)Z
+    invoke-virtual {v0, v1}, Ldef/g6/KG6;->l(Ljava/lang/Throwable;)Z
 
     return-object v0
 .end method
@@ -104,12 +104,12 @@
     return-object v0
 .end method
 
-.method public final getInputData()Lv1/f;
+.method public final getInputData()Ldef/v1/FV1;
     .locals 1
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->b:Lv1/f;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->b:Ldef/v1/FV1;
 
     return-object v0
 .end method
@@ -119,9 +119,9 @@
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->d:Lo2/b;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->d:Ldef/o2/BO2;
 
-    iget-object v0, v0, Lo2/b;->j:Ljava/lang/Object;
+    iget-object v0, v0, Ldef/o2/BO2;->j:Ljava/lang/Object;
 
     check-cast v0, Landroid/net/Network;
 
@@ -156,12 +156,12 @@
     return-object v0
 .end method
 
-.method public getTaskExecutor()Lh6/a;
+.method public getTaskExecutor()Ldef/h6/AH6;
     .locals 1
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->g:Le5/l;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->g:Ldef/e5/LE5;
 
     return-object v0
 .end method
@@ -179,9 +179,9 @@
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->d:Lo2/b;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->d:Ldef/o2/BO2;
 
-    iget-object v0, v0, Lo2/b;->i:Ljava/lang/Object;
+    iget-object v0, v0, Ldef/o2/BO2;->i:Ljava/lang/Object;
 
     check-cast v0, Ljava/util/List;
 
@@ -201,21 +201,21 @@
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->d:Lo2/b;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->d:Ldef/o2/BO2;
 
-    iget-object v0, v0, Lo2/b;->h:Ljava/lang/Object;
+    iget-object v0, v0, Ldef/o2/BO2;->h:Ljava/lang/Object;
 
     check-cast v0, Ljava/util/List;
 
     return-object v0
 .end method
 
-.method public getWorkerFactory()Lv1/t;
+.method public getWorkerFactory()Ldef/v1/TV1;
     .locals 1
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->h:Lv1/s;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->h:Ldef/v1/SV1;
 
     return-object v0
 .end method
@@ -250,14 +250,14 @@
     return-void
 .end method
 
-.method public final setForegroundAsync(Lv1/g;)Lp7/a;
+.method public final setForegroundAsync(Ldef/v1/GV1;)Ldef/p7/AP7;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lv1/g;",
+            "Ldef/v1/GV1;",
             ")",
-            "Lp7/a;"
+            "Ldef/p7/AP7;"
         }
     .end annotation
 
@@ -267,7 +267,7 @@
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->j:Lf6/o;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->j:Ldef/f6/OF6;
 
     invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getApplicationContext()Landroid/content/Context;
 
@@ -279,11 +279,11 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v7, Lg6/k;
+    new-instance v7, Ldef/g6/KG6;
 
     invoke-direct {v7}, Ljava/lang/Object;-><init>()V
 
-    new-instance v8, Lf6/n;
+    new-instance v8, Ldef/f6/NF6;
 
     move-object v1, v8
 
@@ -293,29 +293,29 @@
 
     move-object v5, p1
 
-    invoke-direct/range {v1 .. v6}, Lf6/n;-><init>(Lf6/o;Lg6/k;Ljava/util/UUID;Lv1/g;Landroid/content/Context;)V
+    invoke-direct/range {v1 .. v6}, Ldef/f6/NF6;-><init>(Ldef/f6/OF6;Ldef/g6/KG6;Ljava/util/UUID;Ldef/v1/GV1;Landroid/content/Context;)V
 
-    iget-object p1, v0, Lf6/o;->a:Le5/l;
+    iget-object p1, v0, Ldef/f6/OF6;->a:Ldef/e5/LE5;
 
-    invoke-virtual {p1, v8}, Le5/l;->i(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, v8}, Ldef/e5/LE5;->i(Ljava/lang/Runnable;)V
 
     return-object v7
 .end method
 
-.method public setProgressAsync(Lv1/f;)Lp7/a;
+.method public setProgressAsync(Ldef/v1/FV1;)Ldef/p7/AP7;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lv1/f;",
+            "Ldef/v1/FV1;",
             ")",
-            "Lp7/a;"
+            "Ldef/p7/AP7;"
         }
     .end annotation
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->i:Lf6/q;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->i:Ldef/f6/QF6;
 
     invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getApplicationContext()Landroid/content/Context;
 
@@ -325,17 +325,17 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v2, Lg6/k;
+    new-instance v2, Ldef/g6/KG6;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
-    new-instance v3, Lf6/p;
+    new-instance v3, Ldef/f6/PF6;
 
-    invoke-direct {v3, v0, v1, p1, v2}, Lf6/p;-><init>(Lf6/q;Ljava/util/UUID;Lv1/f;Lg6/k;)V
+    invoke-direct {v3, v0, v1, p1, v2}, Ldef/f6/PF6;-><init>(Ldef/f6/QF6;Ljava/util/UUID;Ldef/v1/FV1;Ldef/g6/KG6;)V
 
-    iget-object p1, v0, Lf6/q;->b:Le5/l;
+    iget-object p1, v0, Ldef/f6/QF6;->b:Ldef/e5/LE5;
 
-    invoke-virtual {p1, v3}, Le5/l;->i(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, v3}, Ldef/e5/LE5;->i(Ljava/lang/Runnable;)V
 
     return-object v2
 .end method
@@ -358,7 +358,7 @@
     return-void
 .end method
 
-.method public abstract startWork()Lp7/a;
+.method public abstract startWork()Ldef/p7/AP7;
 .end method
 
 .method public final stop()V

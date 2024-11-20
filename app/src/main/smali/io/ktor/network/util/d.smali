@@ -1,9 +1,9 @@
 .class public final Lio/ktor/network/util/d;
-.super Li4/i;
+.super Ldef/i4/II4;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/a;
+.implements Ldef/h4/AH4;
 
 
 # static fields
@@ -18,7 +18,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
+    invoke-direct {v0, v1}, Ldef/i4/II4;-><init>(I)V
 
     sput-object v0, Lio/ktor/network/util/d;->h:Lio/ktor/network/util/d;
 
@@ -30,7 +30,7 @@
 .method public final b()Ljava/lang/Object;
     .locals 2
 
-    sget-object v0, Lk8/a;->a:Ljava/util/TimeZone;
+    sget-object v0, Ldef/k8/AK8;->a:Ljava/util/TimeZone;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 

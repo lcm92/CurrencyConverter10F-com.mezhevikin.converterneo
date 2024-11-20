@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls1/b;
+.implements Ldef/s1/BS1;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Ls1/b;"
+        "Ldef/s1/BS1;"
     }
 .end annotation
 
@@ -41,38 +41,38 @@
 .method public final b(Landroid/content/Context;)Ljava/lang/Object;
     .locals 3
 
-    new-instance v0, Lc1/o;
+    new-instance v0, Ldef/c1/OC1;
 
-    new-instance v1, Le5/b;
+    new-instance v1, Ldef/e5/BE5;
 
     const/4 v2, 0x3
 
-    invoke-direct {v1, p1, v2}, Le5/b;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, p1, v2}, Ldef/e5/BE5;-><init>(Landroid/content/Context;I)V
 
-    invoke-direct {v0, v1}, Lc1/o;-><init>(Lc1/f;)V
+    invoke-direct {v0, v1}, Ldef/c1/OC1;-><init>(Ldef/c1/FC1;)V
 
     const/4 v1, 0x1
 
-    iput v1, v0, Lc1/o;->b:I
+    iput v1, v0, Ldef/c1/OC1;->b:I
 
-    sget-object v1, Lc1/g;->k:Lc1/g;
+    sget-object v1, Ldef/c1/GC1;->k:Ldef/c1/GC1;
 
     if-nez v1, :cond_1
 
-    sget-object v1, Lc1/g;->j:Ljava/lang/Object;
+    sget-object v1, Ldef/c1/GC1;->j:Ljava/lang/Object;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v2, Lc1/g;->k:Lc1/g;
+    sget-object v2, Ldef/c1/GC1;->k:Ldef/c1/GC1;
 
     if-nez v2, :cond_0
 
-    new-instance v2, Lc1/g;
+    new-instance v2, Ldef/c1/GC1;
 
-    invoke-direct {v2, v0}, Lc1/g;-><init>(Lc1/o;)V
+    invoke-direct {v2, v0}, Ldef/c1/GC1;-><init>(Ldef/c1/OC1;)V
 
-    sput-object v2, Lc1/g;->k:Lc1/g;
+    sput-object v2, Ldef/c1/GC1;->k:Ldef/c1/GC1;
 
     goto :goto_0
 
@@ -96,7 +96,7 @@
 
     :cond_1
     :goto_2
-    invoke-static {p1}, Ls1/a;->c(Landroid/content/Context;)Ls1/a;
+    invoke-static {p1}, Ldef/s1/AS1;->c(Landroid/content/Context;)Ldef/s1/AS1;
 
     move-result-object p1
 
@@ -104,12 +104,12 @@
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object v1, Ls1/a;->e:Ljava/lang/Object;
+    sget-object v1, Ldef/s1/AS1;->e:Ljava/lang/Object;
 
     monitor-enter v1
 
     :try_start_1
-    iget-object v2, p1, Ls1/a;->a:Ljava/util/HashMap;
+    iget-object v2, p1, Ldef/s1/AS1;->a:Ljava/util/HashMap;
 
     invoke-virtual {v2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -121,7 +121,7 @@
 
     invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
-    invoke-virtual {p1, v0, v2}, Ls1/a;->b(Ljava/lang/Class;Ljava/util/HashSet;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v2}, Ldef/s1/AS1;->b(Ljava/lang/Class;Ljava/util/HashSet;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -144,9 +144,9 @@
 
     move-result-object p1
 
-    new-instance v0, Lc1/h;
+    new-instance v0, Ldef/c1/HC1;
 
-    invoke-direct {v0, p0, p1}, Lc1/h;-><init>(Landroidx/emoji2/text/EmojiCompatInitializer;Landroidx/lifecycle/v;)V
+    invoke-direct {v0, p0, p1}, Ldef/c1/HC1;-><init>(Landroidx/emoji2/text/EmojiCompatInitializer;Landroidx/lifecycle/v;)V
 
     invoke-virtual {p1, v0}, Landroidx/lifecycle/v;->a(Landroidx/lifecycle/s;)V
 

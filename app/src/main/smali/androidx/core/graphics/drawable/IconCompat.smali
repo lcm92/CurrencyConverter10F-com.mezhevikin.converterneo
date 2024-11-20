@@ -146,7 +146,7 @@
 
     if-lt v0, v4, :cond_0
 
-    invoke-static {v1}, Lr5/c;->c(Ljava/lang/Object;)I
+    invoke-static {v1}, Ldef/r5/CR5;->c(Ljava/lang/Object;)I
 
     move-result v0
 
@@ -265,7 +265,7 @@
 
     if-lt v0, v4, :cond_0
 
-    invoke-static {v1}, Lr5/c;->j(Ljava/lang/Object;)Landroid/net/Uri;
+    invoke-static {v1}, Ldef/r5/CR5;->j(Ljava/lang/Object;)Landroid/net/Uri;
 
     move-result-object v0
 

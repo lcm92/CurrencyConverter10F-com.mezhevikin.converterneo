@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/input/rotary/RotaryInputElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -35,7 +35,7 @@
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object p1, Lr0/m;->k:Lr0/m;
+    sget-object p1, Ldef/r0/MR0;->k:Ldef/r0/MR0;
 
     invoke-virtual {p1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -48,7 +48,7 @@
     :cond_2
     const/4 p1, 0x0
 
-    invoke-static {p1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -63,7 +63,7 @@
 .method public final hashCode()I
     .locals 1
 
-    sget-object v0, Lr0/m;->k:Lr0/m;
+    sget-object v0, Ldef/r0/MR0;->k:Ldef/r0/MR0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -74,28 +74,28 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lm0/a;
+    new-instance v0, Ldef/m0/AM0;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
-    sget-object v1, Lr0/m;->k:Lr0/m;
+    sget-object v1, Ldef/r0/MR0;->k:Ldef/r0/MR0;
 
-    iput-object v1, v0, Lm0/a;->t:Lr0/m;
+    iput-object v1, v0, Ldef/m0/AM0;->t:Ldef/r0/MR0;
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lm0/a;
+    check-cast p1, Ldef/m0/AM0;
 
-    sget-object v0, Lr0/m;->k:Lr0/m;
+    sget-object v0, Ldef/r0/MR0;->k:Ldef/r0/MR0;
 
-    iput-object v0, p1, Lm0/a;->t:Lr0/m;
+    iput-object v0, p1, Ldef/m0/AM0;->t:Ldef/r0/MR0;
 
     return-void
 .end method
@@ -109,7 +109,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sget-object v1, Lr0/m;->k:Lr0/m;
+    sget-object v1, Ldef/r0/MR0;->k:Ldef/r0/MR0;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

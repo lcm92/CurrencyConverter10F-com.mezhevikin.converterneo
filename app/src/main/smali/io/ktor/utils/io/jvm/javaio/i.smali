@@ -6,7 +6,7 @@
 # instance fields
 .field public final g:Lio/ktor/utils/io/I;
 
-.field public final h:Ls4/a0;
+.field public final h:Ldef/s4/A0S4;
 
 .field public final i:Lio/ktor/utils/io/jvm/javaio/h;
 
@@ -14,26 +14,26 @@
 
 
 # direct methods
-.method public constructor <init>(Ls4/xa;Lio/ktor/utils/io/I;)V
+.method public constructor <init>(Ldef/s4/XAS4;Lio/ktor/utils/io/I;)V
     .locals 1
 
     const-string v0, "channel"
 
-    invoke-static {p2, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     iput-object p2, p0, Lio/ktor/utils/io/jvm/javaio/i;->g:Lio/ktor/utils/io/I;
 
-    new-instance p2, Ls4/a0;
+    new-instance p2, Ldef/s4/A0S4;
 
-    invoke-direct {p2, p1}, Ls4/a0;-><init>(Ls4/xa;)V
+    invoke-direct {p2, p1}, Ldef/s4/A0S4;-><init>(Ldef/s4/XAS4;)V
 
-    iput-object p2, p0, Lio/ktor/utils/io/jvm/javaio/i;->h:Ls4/a0;
+    iput-object p2, p0, Lio/ktor/utils/io/jvm/javaio/i;->h:Ldef/s4/A0S4;
 
     new-instance p2, Lio/ktor/utils/io/jvm/javaio/h;
 
-    invoke-direct {p2, p1, p0}, Lio/ktor/utils/io/jvm/javaio/h;-><init>(Ls4/xa;Lio/ktor/utils/io/jvm/javaio/i;)V
+    invoke-direct {p2, p1, p0}, Lio/ktor/utils/io/jvm/javaio/h;-><init>(Ldef/s4/XAS4;Lio/ktor/utils/io/jvm/javaio/i;)V
 
     iput-object p2, p0, Lio/ktor/utils/io/jvm/javaio/i;->i:Lio/ktor/utils/io/jvm/javaio/h;
 
@@ -66,21 +66,21 @@
 
     iget-object v0, p0, Lio/ktor/utils/io/jvm/javaio/i;->g:Lio/ktor/utils/io/I;
 
-    invoke-static {v0}, Lv2/h;->q(Lio/ktor/utils/io/I;)V
+    invoke-static {v0}, Ldef/v2/HV2;->q(Lio/ktor/utils/io/I;)V
 
-    iget-object v0, p0, Lio/ktor/utils/io/jvm/javaio/i;->h:Ls4/a0;
+    iget-object v0, p0, Lio/ktor/utils/io/jvm/javaio/i;->h:Ldef/s4/A0S4;
 
-    invoke-virtual {v0}, Ls4/g0;->m()Z
+    invoke-virtual {v0}, Ldef/s4/G0S4;->m()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lio/ktor/utils/io/jvm/javaio/i;->h:Ls4/a0;
+    iget-object v0, p0, Lio/ktor/utils/io/jvm/javaio/i;->h:Ldef/s4/A0S4;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Ls4/g0;->c(Ljava/util/concurrent/CancellationException;)V
+    invoke-virtual {v0, v1}, Ldef/s4/G0S4;->c(Ljava/util/concurrent/CancellationException;)V
 
     goto :goto_0
 
@@ -93,11 +93,11 @@
     :goto_0
     iget-object v0, p0, Lio/ktor/utils/io/jvm/javaio/i;->i:Lio/ktor/utils/io/jvm/javaio/h;
 
-    iget-object v1, v0, Lio/ktor/utils/io/jvm/javaio/c;->c:Ls4/ga;
+    iget-object v1, v0, Lio/ktor/utils/io/jvm/javaio/c;->c:Ldef/s4/GAS4;
 
     if-eqz v1, :cond_1
 
-    invoke-interface {v1}, Ls4/ga;->a()V
+    invoke-interface {v1}, Ldef/s4/GAS4;->a()V
 
     :cond_1
     iget-object v0, v0, Lio/ktor/utils/io/jvm/javaio/c;->b:Lio/ktor/utils/io/jvm/javaio/b;
@@ -108,7 +108,7 @@
 
     invoke-direct {v1, v2}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v1}, Lu8/a;->b(Ljava/lang/Throwable;)Lu8/k;
+    invoke-static {v1}, Ldef/u8/AU8;->b(Ljava/lang/Throwable;)Ldef/u8/KU8;
 
     move-result-object v1
 
@@ -237,7 +237,7 @@
     :try_start_0
     iget-object v0, p0, Lio/ktor/utils/io/jvm/javaio/i;->i:Lio/ktor/utils/io/jvm/javaio/h;
 
-    invoke-static {p1}, Li4/h;->c(Ljava/lang/Object;)V
+    invoke-static {p1}, Ldef/i4/HI4;->c(Ljava/lang/Object;)V
 
     invoke-virtual {v0, p1, p2, p3}, Lio/ktor/utils/io/jvm/javaio/c;->b([BII)I
 

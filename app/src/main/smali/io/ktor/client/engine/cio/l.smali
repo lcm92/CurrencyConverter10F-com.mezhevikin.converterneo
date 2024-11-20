@@ -1,5 +1,5 @@
 .class public final Lio/ktor/client/engine/cio/l;
-.super La4/c;
+.super Ldef/a4/CA4;
 .source "SourceFile"
 
 
@@ -12,7 +12,7 @@
 
 .field public m:Lio/ktor/utils/io/F;
 
-.field public n:Lk8/b;
+.field public n:Ldef/k8/BK8;
 
 .field public synthetic o:Ljava/lang/Object;
 
@@ -22,12 +22,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/ktor/client/engine/cio/q;La4/c;)V
+.method public constructor <init>(Lio/ktor/client/engine/cio/q;Ldef/a4/CA4;)V
     .locals 0
 
     iput-object p1, p0, Lio/ktor/client/engine/cio/l;->p:Lio/ktor/client/engine/cio/q;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly8/d;)V
+    invoke-direct {p0, p2}, Ldef/a4/CA4;-><init>(Ldef/y8/DY8;)V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, v0, p0}, Lio/ktor/client/engine/cio/q;->f(Lo3/e;Ly8/i;La4/c;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v0, p0}, Lio/ktor/client/engine/cio/q;->f(Ldef/o3/EO3;Ldef/y8/IY8;Ldef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 

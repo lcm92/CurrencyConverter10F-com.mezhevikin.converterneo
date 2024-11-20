@@ -1,9 +1,9 @@
 .class public final Lio/ktor/utils/io/jvm/javaio/d;
-.super Li4/i;
+.super Ldef/i4/II4;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/a;
+.implements Ldef/h4/AH4;
 
 
 # static fields
@@ -18,7 +18,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
+    invoke-direct {v0, v1}, Ldef/i4/II4;-><init>(I)V
 
     sput-object v0, Lio/ktor/utils/io/jvm/javaio/d;->h:Lio/ktor/utils/io/jvm/javaio/d;
 
@@ -32,7 +32,7 @@
 
     const/4 v0, 0x1
 
-    sget v1, Lj9/b;->a:I
+    sget v1, Ldef/j9/BJ9;->a:I
 
     const-class v1, Lio/ktor/utils/io/jvm/javaio/c;
 
@@ -40,15 +40,15 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lj9/b;->d(Ljava/lang/String;)Lj9/a;
+    invoke-static {v2}, Ldef/j9/BJ9;->d(Ljava/lang/String;)Ldef/j9/AJ9;
 
     move-result-object v2
 
-    sget-boolean v3, Lj9/b;->d:Z
+    sget-boolean v3, Ldef/j9/BJ9;->d:Z
 
     if-eqz v3, :cond_6
 
-    sget-object v3, Ll9/d;->b:Ll9/c;
+    sget-object v3, Ldef/l9/DL9;->b:Ldef/l9/CL9;
 
     const/4 v4, 0x0
 
@@ -57,7 +57,7 @@
     goto :goto_1
 
     :cond_0
-    sget-boolean v3, Ll9/d;->c:Z
+    sget-boolean v3, Ldef/l9/DL9;->c:Z
 
     if-eqz v3, :cond_1
 
@@ -67,7 +67,7 @@
 
     :cond_1
     :try_start_0
-    new-instance v3, Ll9/c;
+    new-instance v3, Ldef/l9/CL9;
 
     invoke-direct {v3}, Ljava/lang/SecurityManager;-><init>()V
     :try_end_0
@@ -79,9 +79,9 @@
     move-object v3, v4
 
     :goto_0
-    sput-object v3, Ll9/d;->b:Ll9/c;
+    sput-object v3, Ldef/l9/DL9;->b:Ldef/l9/CL9;
 
-    sput-boolean v0, Ll9/d;->c:Z
+    sput-boolean v0, Ldef/l9/DL9;->c:Z
 
     :goto_1
     if-nez v3, :cond_2
@@ -89,11 +89,11 @@
     goto :goto_4
 
     :cond_2
-    invoke-virtual {v3}, Ll9/c;->getClassContext()[Ljava/lang/Class;
+    invoke-virtual {v3}, Ldef/l9/CL9;->getClassContext()[Ljava/lang/Class;
 
     move-result-object v3
 
-    const-class v4, Ll9/d;
+    const-class v4, Ldef/l9/DL9;
 
     invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -148,7 +148,7 @@
 
     if-nez v0, :cond_6
 
-    invoke-interface {v2}, Lj9/a;->b()Ljava/lang/String;
+    invoke-interface {v2}, Ldef/j9/AJ9;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -178,11 +178,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Ll9/d;->L(Ljava/lang/String;)V
+    invoke-static {v0}, Ldef/l9/DL9;->L(Ljava/lang/String;)V
 
     const-string v0, "See http://www.slf4j.org/codes.html#loggerNameMismatch for an explanation"
 
-    invoke-static {v0}, Ll9/d;->L(Ljava/lang/String;)V
+    invoke-static {v0}, Ldef/l9/DL9;->L(Ljava/lang/String;)V
 
     goto :goto_5
 

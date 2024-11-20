@@ -26,13 +26,13 @@
 .method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
-    check-cast p1, Lj6/c;
+    check-cast p1, Ldef/j6/CJ6;
 
     sget v0, Lcom/google/android/gms/internal/play_billing/q0;->a:I
 
-    iget-object p1, p1, Lj6/c;->a:Lj6/i;
+    iget-object p1, p1, Ldef/j6/CJ6;->a:Ldef/j6/IJ6;
 
-    iget-object p1, p1, Lj6/i;->c:Ljava/lang/String;
+    iget-object p1, p1, Ldef/j6/IJ6;->c:Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/gms/internal/play_billing/O0;->n()Lcom/google/android/gms/internal/play_billing/N0;
 

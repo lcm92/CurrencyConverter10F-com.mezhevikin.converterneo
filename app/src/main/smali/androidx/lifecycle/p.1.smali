@@ -19,7 +19,7 @@
 
     const-string p2, "activity"
 
-    invoke-static {p1, p2}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p2, Landroidx/lifecycle/F;->h:I
 

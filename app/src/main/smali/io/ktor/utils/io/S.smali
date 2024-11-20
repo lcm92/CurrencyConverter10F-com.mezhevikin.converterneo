@@ -1,9 +1,9 @@
 .class public final Lio/ktor/utils/io/S;
-.super Li4/i;
+.super Ldef/i4/II4;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/c;
+.implements Ldef/h4/CH4;
 
 
 # static fields
@@ -48,7 +48,7 @@
 
     iput p2, p0, Lio/ktor/utils/io/S;->h:I
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    invoke-direct {p0, p1}, Ldef/i4/II4;-><init>(I)V
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     const-string v0, "it"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -77,7 +77,7 @@
 
     const-string v0, "it"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

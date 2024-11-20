@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/selection/ToggleableElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -14,30 +14,30 @@
 # instance fields
 .field public final a:Z
 
-.field public final b:Lp/i;
+.field public final b:Ldef/p/IP;
 
 .field public final c:Z
 
-.field public final d:Lx0/f;
+.field public final d:Ldef/x0/FX0;
 
-.field public final e:Lh4/c;
+.field public final e:Ldef/h4/CH4;
 
 
 # direct methods
-.method public constructor <init>(ZLp/i;ZLx0/f;Lh4/c;)V
+.method public constructor <init>(ZLdef/p/IP;ZLdef/x0/FX0;Ldef/h4/CH4;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Landroidx/compose/foundation/selection/ToggleableElement;->a:Z
 
-    iput-object p2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Lp/i;
+    iput-object p2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Ldef/p/IP;
 
     iput-boolean p3, p0, Landroidx/compose/foundation/selection/ToggleableElement;->c:Z
 
-    iput-object p4, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Lx0/f;
+    iput-object p4, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Ldef/x0/FX0;
 
-    iput-object p5, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Lh4/c;
+    iput-object p5, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Ldef/h4/CH4;
 
     return-void
 .end method
@@ -83,11 +83,11 @@
     return v1
 
     :cond_3
-    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Lp/i;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Ldef/p/IP;
 
-    iget-object v3, p1, Landroidx/compose/foundation/selection/ToggleableElement;->b:Lp/i;
+    iget-object v3, p1, Landroidx/compose/foundation/selection/ToggleableElement;->b:Ldef/p/IP;
 
-    invoke-static {v2, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -98,7 +98,7 @@
     :cond_4
     const/4 v2, 0x0
 
-    invoke-static {v2, v2}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v2}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -116,11 +116,11 @@
     return v1
 
     :cond_6
-    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Lx0/f;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Ldef/x0/FX0;
 
-    iget-object v3, p1, Landroidx/compose/foundation/selection/ToggleableElement;->d:Lx0/f;
+    iget-object v3, p1, Landroidx/compose/foundation/selection/ToggleableElement;->d:Ldef/x0/FX0;
 
-    invoke-virtual {v2, v3}, Lx0/f;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Ldef/x0/FX0;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -129,9 +129,9 @@
     return v1
 
     :cond_7
-    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Lh4/c;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Ldef/h4/CH4;
 
-    iget-object p1, p1, Landroidx/compose/foundation/selection/ToggleableElement;->e:Lh4/c;
+    iget-object p1, p1, Landroidx/compose/foundation/selection/ToggleableElement;->e:Ldef/h4/CH4;
 
     if-eq v2, p1, :cond_8
 
@@ -154,7 +154,7 @@
 
     mul-int/2addr v0, v1
 
-    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Lp/i;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Ldef/p/IP;
 
     if-eqz v2, :cond_0
 
@@ -174,19 +174,19 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->c:Z
 
-    invoke-static {v0, v1, v2}, Lk/pa;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Ldef/k/PAK;->c(IIZ)I
 
     move-result v0
 
-    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Lx0/f;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Ldef/x0/FX0;
 
-    iget v2, v2, Lx0/f;->a:I
+    iget v2, v2, Ldef/x0/FX0;->a:I
 
-    invoke-static {v2, v0, v1}, Ll/i;->a(III)I
+    invoke-static {v2, v0, v1}, Ldef/l/IL;->a(III)I
 
     move-result v0
 
-    iget-object v1, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Ldef/h4/CH4;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -197,16 +197,16 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 7
 
-    new-instance v6, Lu/a;
+    new-instance v6, Ldef/u/AU;
 
-    iget-object v4, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Lx0/f;
+    iget-object v4, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Ldef/x0/FX0;
 
-    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Lp/i;
+    iget-object v2, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Ldef/p/IP;
 
-    iget-object v5, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Lh4/c;
+    iget-object v5, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Ldef/h4/CH4;
 
     iget-boolean v1, p0, Landroidx/compose/foundation/selection/ToggleableElement;->a:Z
 
@@ -214,46 +214,46 @@
 
     move-object v0, v6
 
-    invoke-direct/range {v0 .. v5}, Lu/a;-><init>(ZLp/i;ZLx0/f;Lh4/c;)V
+    invoke-direct/range {v0 .. v5}, Ldef/u/AU;-><init>(ZLdef/p/IP;ZLdef/x0/FX0;Ldef/h4/CH4;)V
 
     return-object v6
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 7
 
     move-object v0, p1
 
-    check-cast v0, Lu/a;
+    check-cast v0, Ldef/u/AU;
 
-    iget-boolean p1, v0, Lu/a;->N:Z
+    iget-boolean p1, v0, Ldef/u/AU;->N:Z
 
     iget-boolean v1, p0, Landroidx/compose/foundation/selection/ToggleableElement;->a:Z
 
     if-eq p1, v1, :cond_0
 
-    iput-boolean v1, v0, Lu/a;->N:Z
+    iput-boolean v1, v0, Ldef/u/AU;->N:Z
 
-    invoke-static {v0}, Lq0/f;->p(Lq0/m0;)V
+    invoke-static {v0}, Ldef/q0/FQ0;->p(Ldef/q0/M0Q0;)V
 
     :cond_0
-    iget-object p1, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Lh4/c;
+    iget-object p1, p0, Landroidx/compose/foundation/selection/ToggleableElement;->e:Ldef/h4/CH4;
 
-    iput-object p1, v0, Lu/a;->O:Lh4/c;
+    iput-object p1, v0, Ldef/u/AU;->O:Ldef/h4/CH4;
 
-    iget-object v5, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Lx0/f;
+    iget-object v5, p0, Landroidx/compose/foundation/selection/ToggleableElement;->d:Ldef/x0/FX0;
 
     const/4 v2, 0x0
 
     const/4 v4, 0x0
 
-    iget-object v1, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Lp/i;
+    iget-object v1, p0, Landroidx/compose/foundation/selection/ToggleableElement;->b:Ldef/p/IP;
 
     iget-boolean v3, p0, Landroidx/compose/foundation/selection/ToggleableElement;->c:Z
 
-    iget-object v6, v0, Lu/a;->P:Lm/ma;
+    iget-object v6, v0, Ldef/u/AU;->P:Ldef/m/MAM;
 
-    invoke-virtual/range {v0 .. v6}, Lm/j;->F0(Lp/i;Lm/b0;ZLjava/lang/String;Lx0/f;Lh4/a;)V
+    invoke-virtual/range {v0 .. v6}, Ldef/m/JM;->F0(Ldef/p/IP;Ldef/m/B0M;ZLjava/lang/String;Ldef/x0/FX0;Ldef/h4/AH4;)V
 
     return-void
 .end method

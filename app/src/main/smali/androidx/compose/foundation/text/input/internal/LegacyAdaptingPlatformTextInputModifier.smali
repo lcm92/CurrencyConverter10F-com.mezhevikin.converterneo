@@ -1,35 +1,35 @@
 .class final Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Ly/f;
+.field public final a:Ldef/y/FY;
 
-.field public final b:Lw/qa;
+.field public final b:Ldef/w/QAW;
 
-.field public final c:Laa/b0;
+.field public final c:Ldef/aa/B0AA;
 
 
 # direct methods
-.method public constructor <init>(Ly/f;Lw/qa;Laa/b0;)V
+.method public constructor <init>(Ldef/y/FY;Ldef/w/QAW;Ldef/aa/B0AA;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ly/f;
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ldef/y/FY;
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Lw/qa;
+    iput-object p2, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Ldef/w/QAW;
 
-    iput-object p3, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Laa/b0;
+    iput-object p3, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Ldef/aa/B0AA;
 
     return-void
 .end method
@@ -57,11 +57,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;
 
-    iget-object v1, p1, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ly/f;
+    iget-object v1, p1, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ldef/y/FY;
 
-    iget-object v3, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ly/f;
+    iget-object v3, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ldef/y/FY;
 
-    invoke-static {v3, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -70,11 +70,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Lw/qa;
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Ldef/w/QAW;
 
-    iget-object v3, p1, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Lw/qa;
+    iget-object v3, p1, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Ldef/w/QAW;
 
-    invoke-static {v1, v3}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -83,11 +83,11 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Laa/b0;
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Ldef/aa/B0AA;
 
-    iget-object p1, p1, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Laa/b0;
+    iget-object p1, p1, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Ldef/aa/B0AA;
 
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -102,7 +102,7 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ly/f;
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ldef/y/FY;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -110,7 +110,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Lw/qa;
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Ldef/w/QAW;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -120,7 +120,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Laa/b0;
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Ldef/aa/B0AA;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -131,53 +131,53 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 4
 
-    new-instance v0, Ly/u;
+    new-instance v0, Ldef/y/UY;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Laa/b0;
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Ldef/aa/B0AA;
 
-    iget-object v2, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Lw/qa;
+    iget-object v2, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Ldef/w/QAW;
 
-    iget-object v3, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ly/f;
+    iget-object v3, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ldef/y/FY;
 
-    invoke-direct {v0, v3, v2, v1}, Ly/u;-><init>(Ly/f;Lw/qa;Laa/b0;)V
+    invoke-direct {v0, v3, v2, v1}, Ldef/y/UY;-><init>(Ldef/y/FY;Ldef/w/QAW;Ldef/aa/B0AA;)V
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 2
 
-    check-cast p1, Ly/u;
+    check-cast p1, Ldef/y/UY;
 
-    iget-boolean v0, p1, Lra/p;->s:Z
+    iget-boolean v0, p1, Ldef/ra/PRA;->s:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p1, Ly/u;->t:Ly/f;
+    iget-object v0, p1, Ldef/y/UY;->t:Ldef/y/FY;
 
-    invoke-virtual {v0}, Ly/f;->e()V
+    invoke-virtual {v0}, Ldef/y/FY;->e()V
 
-    iget-object v0, p1, Ly/u;->t:Ly/f;
+    iget-object v0, p1, Ldef/y/UY;->t:Ldef/y/FY;
 
-    invoke-virtual {v0, p1}, Ly/f;->k(Ly/u;)V
+    invoke-virtual {v0, p1}, Ldef/y/FY;->k(Ldef/y/UY;)V
 
     :cond_0
-    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ly/f;
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ldef/y/FY;
 
-    iput-object v0, p1, Ly/u;->t:Ly/f;
+    iput-object v0, p1, Ldef/y/UY;->t:Ldef/y/FY;
 
-    iget-boolean v1, p1, Lra/p;->s:Z
+    iget-boolean v1, p1, Ldef/ra/PRA;->s:Z
 
     if-eqz v1, :cond_2
 
-    iget-object v1, v0, Ly/f;->a:Ly/u;
+    iget-object v1, v0, Ldef/y/FY;->a:Ldef/y/UY;
 
     if-nez v1, :cond_1
 
-    iput-object p1, v0, Ly/f;->a:Ly/u;
+    iput-object p1, v0, Ldef/y/FY;->a:Ldef/y/UY;
 
     goto :goto_0
 
@@ -192,13 +192,13 @@
 
     :cond_2
     :goto_0
-    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Lw/qa;
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Ldef/w/QAW;
 
-    iput-object v0, p1, Ly/u;->u:Lw/qa;
+    iput-object v0, p1, Ldef/y/UY;->u:Ldef/w/QAW;
 
-    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Laa/b0;
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Ldef/aa/B0AA;
 
-    iput-object v0, p1, Ly/u;->v:Laa/b0;
+    iput-object v0, p1, Ldef/y/UY;->v:Ldef/aa/B0AA;
 
     return-void
 .end method
@@ -212,7 +212,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ly/f;
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->a:Ldef/y/FY;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -220,7 +220,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Lw/qa;
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->b:Ldef/w/QAW;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -228,7 +228,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Laa/b0;
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/LegacyAdaptingPlatformTextInputModifier;->c:Ldef/aa/B0AA;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

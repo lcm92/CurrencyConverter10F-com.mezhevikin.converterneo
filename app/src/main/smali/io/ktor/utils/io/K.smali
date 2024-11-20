@@ -1,5 +1,5 @@
 .class public final Lio/ktor/utils/io/K;
-.super La4/c;
+.super Ldef/a4/CA4;
 .source "SourceFile"
 
 
@@ -29,7 +29,7 @@
 
     const-wide/16 v0, 0x0
 
-    invoke-static {p1, p1, v0, v1, p0}, Lv2/h;->w(Lio/ktor/utils/io/I;Lio/ktor/utils/io/L;JLa4/c;)Ljava/lang/Object;
+    invoke-static {p1, p1, v0, v1, p0}, Ldef/v2/HV2;->w(Lio/ktor/utils/io/I;Lio/ktor/utils/io/L;JLdef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 

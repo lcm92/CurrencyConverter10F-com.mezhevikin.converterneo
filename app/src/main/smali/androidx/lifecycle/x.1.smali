@@ -42,7 +42,7 @@
 
     const-string p1, "{\n            constructo\u2026tance(`object`)\n        }"
 
-    invoke-static {p0, p1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Ljava/lang/ClassCastException;
 
@@ -152,7 +152,7 @@
     :goto_0
     const-string v5, "fullPackage"
 
-    invoke-static {v3, v5}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v5}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
@@ -165,7 +165,7 @@
     :cond_3
     const-string v5, "name"
 
-    invoke-static {v4, v5}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
@@ -179,18 +179,18 @@
 
     const-string v5, "this as java.lang.String).substring(startIndex)"
 
-    invoke-static {v4, v5}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_1
     const-string v5, "if (fullPackage.isEmpty(\u2026g(fullPackage.length + 1)"
 
-    invoke-static {v4, v5}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v5, "."
 
     const-string v6, "_"
 
-    invoke-static {v4, v5, v6}, Lq4/r;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v5, v6}, Ldef/q4/RQ4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -269,7 +269,7 @@
 
     if-eqz v3, :cond_6
 
-    invoke-static {v3}, Ll9/d;->F(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v3}, Ldef/l9/DL9;->F(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
@@ -378,7 +378,7 @@
 
     const-string v1, "superclass"
 
-    invoke-static {v3, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v1}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v3}, Landroidx/lifecycle/x;->b(Ljava/lang/Class;)I
 
@@ -395,7 +395,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Li4/h;->c(Ljava/lang/Object;)V
+    invoke-static {v3}, Ldef/i4/HI4;->c(Ljava/lang/Object;)V
 
     check-cast v3, Ljava/util/Collection;
 
@@ -408,7 +408,7 @@
 
     const-string v7, "klass.interfaces"
 
-    invoke-static {v3, v7}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v7}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     array-length v7, v3
 
@@ -442,7 +442,7 @@
     :cond_f
     const-string v11, "intrface"
 
-    invoke-static {v10, v11}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v10}, Landroidx/lifecycle/x;->b(Ljava/lang/Class;)I
 
@@ -464,7 +464,7 @@
 
     move-result-object v10
 
-    invoke-static {v10}, Li4/h;->c(Ljava/lang/Object;)V
+    invoke-static {v10}, Ldef/i4/HI4;->c(Ljava/lang/Object;)V
 
     check-cast v10, Ljava/util/Collection;
 

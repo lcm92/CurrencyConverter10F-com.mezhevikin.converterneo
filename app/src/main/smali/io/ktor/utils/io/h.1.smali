@@ -1,5 +1,5 @@
 .class public final Lio/ktor/utils/io/h;
-.super La4/c;
+.super Ldef/a4/CA4;
 .source "SourceFile"
 
 
@@ -20,12 +20,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/ktor/utils/io/D;La4/c;)V
+.method public constructor <init>(Lio/ktor/utils/io/D;Ldef/a4/CA4;)V
     .locals 0
 
     iput-object p1, p0, Lio/ktor/utils/io/h;->o:Lio/ktor/utils/io/D;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(Ly8/d;)V
+    invoke-direct {p0, p2}, Ldef/a4/CA4;-><init>(Ldef/y8/DY8;)V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     iget-object v1, p0, Lio/ktor/utils/io/h;->o:Lio/ktor/utils/io/D;
 
-    invoke-virtual {v1, p1, v0, v0, p0}, Lio/ktor/utils/io/D;->J([BIILa4/c;)Ljava/lang/Object;
+    invoke-virtual {v1, p1, v0, v0, p0}, Lio/ktor/utils/io/D;->J([BIILdef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -149,11 +149,11 @@
 
     :cond_5
     :goto_3
-    invoke-static {p3, v4}, Lcom/google/android/gms/internal/play_billing/q0;->c(Landroid/content/Intent;Ljava/lang/String;)Lj6/e;
+    invoke-static {p3, v4}, Lcom/google/android/gms/internal/play_billing/q0;->c(Landroid/content/Intent;Ljava/lang/String;)Ldef/j6/EJ6;
 
     move-result-object v0
 
-    iget v0, v0, Lj6/e;->a:I
+    iget v0, v0, Ldef/j6/EJ6;->a:I
 
     const/4 v5, -0x1
 
@@ -296,15 +296,15 @@
 
     invoke-virtual {p3, p2, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-static {}, Lj6/e;->a()Lj6/d;
+    invoke-static {}, Ldef/j6/EJ6;->a()Ldef/j6/DJ6;
 
     move-result-object p2
 
-    iput v4, p2, Lj6/d;->b:I
+    iput v4, p2, Ldef/j6/DJ6;->b:I
 
-    iput-object v5, p2, Lj6/d;->a:Ljava/lang/String;
+    iput-object v5, p2, Ldef/j6/DJ6;->a:Ljava/lang/String;
 
-    invoke-virtual {p2}, Lj6/d;->c()Lj6/e;
+    invoke-virtual {p2}, Ldef/j6/DJ6;->c()Ldef/j6/EJ6;
 
     move-result-object p2
 
@@ -312,7 +312,7 @@
 
     const/4 v5, 0x2
 
-    invoke-static {v4, v5, p2}, Lj6/x;->b(IILj6/e;)Lcom/google/android/gms/internal/play_billing/U1;
+    invoke-static {v4, v5, p2}, Ldef/j6/XJ6;->b(IILdef/j6/EJ6;)Lcom/google/android/gms/internal/play_billing/U1;
 
     move-result-object p2
 

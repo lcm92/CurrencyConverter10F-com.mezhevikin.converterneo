@@ -1,27 +1,27 @@
 .class final Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lh4/c;
+.field public final a:Ldef/h4/CH4;
 
 
 # direct methods
-.method public constructor <init>(Lh4/c;)V
+.method public constructor <init>(Ldef/h4/CH4;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Lh4/c;
+    iput-object p1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Ldef/h4/CH4;
 
     return-void
 .end method
@@ -49,11 +49,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;
 
-    iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Ldef/h4/CH4;
 
-    iget-object p1, p1, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Lh4/c;
+    iget-object p1, p1, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Ldef/h4/CH4;
 
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -68,7 +68,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Lh4/c;
+    iget-object v0, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Ldef/h4/CH4;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -77,42 +77,42 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lya/n;
+    new-instance v0, Ldef/ya/NYA;
 
-    iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Ldef/h4/CH4;
 
-    invoke-direct {v0, v1}, Lya/n;-><init>(Lh4/c;)V
+    invoke-direct {v0, v1}, Ldef/ya/NYA;-><init>(Ldef/h4/CH4;)V
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 2
 
-    check-cast p1, Lya/n;
+    check-cast p1, Ldef/ya/NYA;
 
-    iget-object v0, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Lh4/c;
+    iget-object v0, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Ldef/h4/CH4;
 
-    iput-object v0, p1, Lya/n;->t:Lh4/c;
+    iput-object v0, p1, Ldef/ya/NYA;->t:Ldef/h4/CH4;
 
     const/4 v0, 0x2
 
-    invoke-static {p1, v0}, Lq0/f;->t(Lq0/m;I)Lq0/za;
+    invoke-static {p1, v0}, Ldef/q0/FQ0;->t(Ldef/q0/MQ0;I)Ldef/q0/ZAQ0;
 
     move-result-object v0
 
-    iget-object v0, v0, Lq0/za;->s:Lq0/za;
+    iget-object v0, v0, Ldef/q0/ZAQ0;->s:Ldef/q0/ZAQ0;
 
     if-eqz v0, :cond_0
 
-    iget-object p1, p1, Lya/n;->t:Lh4/c;
+    iget-object p1, p1, Ldef/ya/NYA;->t:Ldef/h4/CH4;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p1, v1}, Lq0/za;->g1(Lh4/c;Z)V
+    invoke-virtual {v0, p1, v1}, Ldef/q0/ZAQ0;->g1(Ldef/h4/CH4;Z)V
 
     :cond_0
     return-void
@@ -127,7 +127,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Lh4/c;
+    iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->a:Ldef/h4/CH4;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

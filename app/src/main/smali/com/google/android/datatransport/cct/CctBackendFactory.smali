@@ -14,20 +14,20 @@
 
 
 # virtual methods
-.method public create(Lo6/c;)Lo6/g;
+.method public create(Ldef/o6/CO6;)Ldef/o6/GO6;
     .locals 3
 
-    new-instance v0, Ll6/e;
+    new-instance v0, Ldef/l6/EL6;
 
-    check-cast p1, Lo6/b;
+    check-cast p1, Ldef/o6/BO6;
 
-    iget-object v1, p1, Lo6/b;->a:Landroid/content/Context;
+    iget-object v1, p1, Ldef/o6/BO6;->a:Landroid/content/Context;
 
-    iget-object v2, p1, Lo6/b;->b:Lw6/a;
+    iget-object v2, p1, Ldef/o6/BO6;->b:Ldef/w6/AW6;
 
-    iget-object p1, p1, Lo6/b;->c:Lw6/a;
+    iget-object p1, p1, Ldef/o6/BO6;->c:Ldef/w6/AW6;
 
-    invoke-direct {v0, v1, v2, p1}, Ll6/e;-><init>(Landroid/content/Context;Lw6/a;Lw6/a;)V
+    invoke-direct {v0, v1, v2, p1}, Ldef/l6/EL6;-><init>(Landroid/content/Context;Ldef/w6/AW6;Ldef/w6/AW6;)V
 
     return-object v0
 .end method

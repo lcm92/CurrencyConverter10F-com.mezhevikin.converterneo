@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:Lb2/j0;
+.field public final g:Ldef/b2/J0B2;
 
 
 # direct methods
@@ -13,11 +13,11 @@
 
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
-    new-instance v0, Lb2/j0;
+    new-instance v0, Ldef/b2/J0B2;
 
     invoke-direct {v0}, Landroid/content/ContentProvider;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lb2/j0;
+    iput-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Ldef/b2/J0B2;
 
     return-void
 .end method
@@ -27,9 +27,9 @@
 .method public final attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Lb2/j0;
+    iget-object v0, p0, Lcom/google/android/gms/ads/MobileAdsInitProvider;->g:Ldef/b2/J0B2;
 
-    invoke-virtual {v0, p1, p2}, Lb2/j0;->attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
+    invoke-virtual {v0, p1, p2}, Ldef/b2/J0B2;->attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
 
     return-void
 .end method

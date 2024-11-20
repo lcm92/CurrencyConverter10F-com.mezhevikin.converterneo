@@ -89,7 +89,7 @@
 
     const-string v4, " to a byte array threw an IOException (should never happen)."
 
-    invoke-static {v3, v1, v4}, Lk/pa;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v1, v4}, Ldef/k/PAK;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

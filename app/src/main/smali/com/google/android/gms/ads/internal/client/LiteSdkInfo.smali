@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/ads/internal/client/LiteSdkInfo;
-.super Lb2/ia;
+.super Ldef/b2/IAB2;
 .source "SourceFile"
 
 
@@ -9,27 +9,27 @@
 
     const-string p1, "com.google.android.gms.ads.internal.client.ILiteSdkInfo"
 
-    invoke-direct {p0, p1}, Lw2/a;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ldef/w2/AW2;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getAdapterCreator()Lw2/sa;
+.method public getAdapterCreator()Ldef/w2/SAW2;
     .locals 1
 
-    new-instance v0, Lw2/qa;
+    new-instance v0, Ldef/w2/QAW2;
 
-    invoke-direct {v0}, Lw2/qa;-><init>()V
+    invoke-direct {v0}, Ldef/w2/QAW2;-><init>()V
 
     return-object v0
 .end method
 
-.method public getLiteSdkVersion()Lb2/k0;
+.method public getLiteSdkVersion()Ldef/b2/K0B2;
     .locals 4
 
-    new-instance v0, Lb2/k0;
+    new-instance v0, Ldef/b2/K0B2;
 
     const v1, 0xe8814a2
 
@@ -37,7 +37,7 @@
 
     const-string v3, "23.5.0"
 
-    invoke-direct {v0, v1, v2, v3}, Lb2/k0;-><init>(IILjava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3}, Ldef/b2/K0B2;-><init>(IILjava/lang/String;)V
 
     return-object v0
 .end method

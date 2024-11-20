@@ -1,10 +1,10 @@
 .class public final Lio/ktor/utils/io/W;
-.super La4/c;
+.super Ldef/a4/CA4;
 .source "SourceFile"
 
 
 # instance fields
-.field public j:Lq8/b;
+.field public j:Ldef/q8/BQ8;
 
 .field public synthetic k:Ljava/lang/Object;
 
@@ -29,7 +29,7 @@
 
     const/4 v0, 0x0
 
-    invoke-static {p1, v0, p0}, La/a;->n0(Lio/ktor/utils/io/D;ILa4/c;)Ljava/lang/Object;
+    invoke-static {p1, v0, p0}, Ldef/a/AA;->n0(Lio/ktor/utils/io/D;ILdef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 

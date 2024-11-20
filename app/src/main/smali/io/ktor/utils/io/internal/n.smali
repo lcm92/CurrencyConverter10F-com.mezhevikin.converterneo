@@ -13,7 +13,7 @@
 
     const-string v0, "initial"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p1, Lio/ktor/utils/io/internal/q;->a:Ljava/nio/ByteBuffer;
 

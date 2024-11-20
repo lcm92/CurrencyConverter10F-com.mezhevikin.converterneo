@@ -1,27 +1,27 @@
 .class public final Landroidx/compose/ui/semantics/EmptySemanticsElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lx0/d;
+.field public final a:Ldef/x0/DX0;
 
 
 # direct methods
-.method public constructor <init>(Lx0/d;)V
+.method public constructor <init>(Ldef/x0/DX0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/ui/semantics/EmptySemanticsElement;->a:Lx0/d;
+    iput-object p1, p0, Landroidx/compose/ui/semantics/EmptySemanticsElement;->a:Ldef/x0/DX0;
 
     return-void
 .end method
@@ -54,18 +54,18 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/ui/semantics/EmptySemanticsElement;->a:Lx0/d;
+    iget-object v0, p0, Landroidx/compose/ui/semantics/EmptySemanticsElement;->a:Ldef/x0/DX0;
 
     return-object v0
 .end method
 
-.method public final bridge synthetic k(Lra/p;)V
+.method public final bridge synthetic k(Ldef/ra/PRA;)V
     .locals 0
 
-    check-cast p1, Lx0/d;
+    check-cast p1, Ldef/x0/DX0;
 
     return-void
 .end method

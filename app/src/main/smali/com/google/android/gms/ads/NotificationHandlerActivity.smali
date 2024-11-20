@@ -20,33 +20,33 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     :try_start_0
-    sget-object p1, Lb2/l;->e:Lb2/l;
+    sget-object p1, Ldef/b2/LB2;->e:Ldef/b2/LB2;
 
-    iget-object p1, p1, Lb2/l;->b:Lb2/j;
+    iget-object p1, p1, Ldef/b2/LB2;->b:Ldef/b2/JB2;
 
-    new-instance v0, Lw2/qa;
+    new-instance v0, Ldef/w2/QAW2;
 
-    invoke-direct {v0}, Lw2/qa;-><init>()V
+    invoke-direct {v0}, Ldef/w2/QAW2;-><init>()V
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance p1, Lb2/c;
+    new-instance p1, Ldef/b2/CB2;
 
-    invoke-direct {p1, p0, v0}, Lb2/c;-><init>(Landroid/content/Context;Lw2/qa;)V
+    invoke-direct {p1, p0, v0}, Ldef/b2/CB2;-><init>(Landroid/content/Context;Ldef/w2/QAW2;)V
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, p0, v0}, Lb2/k;->d(Landroid/content/Context;Z)Ljava/lang/Object;
+    invoke-virtual {p1, p0, v0}, Ldef/b2/KB2;->d(Landroid/content/Context;Z)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lw2/m0;
+    check-cast p1, Ldef/w2/M0W2;
 
     if-nez p1, :cond_0
 
     const-string p1, "OfflineUtils is null"
 
-    invoke-static {p1}, Le2/f;->e(Ljava/lang/String;)V
+    invoke-static {p1}, Ldef/e2/FE2;->e(Ljava/lang/String;)V
 
     return-void
 
@@ -60,13 +60,13 @@
 
     move-result-object v0
 
-    check-cast p1, Lw2/k0;
+    check-cast p1, Ldef/w2/K0W2;
 
     invoke-virtual {p1}, Lcom/google/android/gms/internal/play_billing/e;->D()Landroid/os/Parcel;
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lw2/b;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v1, v0}, Ldef/w2/BW2;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/4 v0, 0x1
 
@@ -87,7 +87,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Le2/f;->e(Ljava/lang/String;)V
+    invoke-static {p1}, Ldef/e2/FE2;->e(Ljava/lang/String;)V
 
     return-void
 .end method

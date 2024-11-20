@@ -21,7 +21,7 @@
 
     const-string v2, "allocate(0)"
 
-    invoke-static {v1, v2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v1, Lio/ktor/utils/io/internal/r;->a:Ljava/nio/ByteBuffer;
 

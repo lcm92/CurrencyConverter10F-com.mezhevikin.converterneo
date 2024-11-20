@@ -1,9 +1,9 @@
 .class public final Lio/ktor/client/engine/cio/t;
-.super La4/i;
+.super Ldef/a4/IA4;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements Ldef/h4/EH4;
 
 
 # instance fields
@@ -11,50 +11,50 @@
 
 .field public synthetic l:Ljava/lang/Object;
 
-.field public final synthetic m:Ls3/z;
+.field public final synthetic m:Ldef/s3/ZS3;
 
 .field public final synthetic n:J
 
 .field public final synthetic o:Ljava/lang/String;
 
-.field public final synthetic p:Lt3/i;
+.field public final synthetic p:Ldef/t3/IT3;
 
 .field public final synthetic q:Lio/ktor/utils/io/I;
 
 
 # direct methods
-.method public constructor <init>(Ls3/z;JLjava/lang/String;Lt3/i;Lio/ktor/utils/io/I;Ly8/d;)V
+.method public constructor <init>(Ldef/s3/ZS3;JLjava/lang/String;Ldef/t3/IT3;Lio/ktor/utils/io/I;Ldef/y8/DY8;)V
     .locals 0
 
-    iput-object p1, p0, Lio/ktor/client/engine/cio/t;->m:Ls3/z;
+    iput-object p1, p0, Lio/ktor/client/engine/cio/t;->m:Ldef/s3/ZS3;
 
     iput-wide p2, p0, Lio/ktor/client/engine/cio/t;->n:J
 
     iput-object p4, p0, Lio/ktor/client/engine/cio/t;->o:Ljava/lang/String;
 
-    iput-object p5, p0, Lio/ktor/client/engine/cio/t;->p:Lt3/i;
+    iput-object p5, p0, Lio/ktor/client/engine/cio/t;->p:Ldef/t3/IT3;
 
     iput-object p6, p0, Lio/ktor/client/engine/cio/t;->q:Lio/ktor/utils/io/I;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p7}, La4/i;-><init>(ILy8/d;)V
+    invoke-direct {p0, p1, p7}, Ldef/a4/IA4;-><init>(ILdef/y8/DY8;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Ly8/d;Ljava/lang/Object;)Ly8/d;
+.method public final d(Ldef/y8/DY8;Ljava/lang/Object;)Ldef/y8/DY8;
     .locals 9
 
     new-instance v8, Lio/ktor/client/engine/cio/t;
 
-    iget-object v5, p0, Lio/ktor/client/engine/cio/t;->p:Lt3/i;
+    iget-object v5, p0, Lio/ktor/client/engine/cio/t;->p:Ldef/t3/IT3;
 
     iget-object v6, p0, Lio/ktor/client/engine/cio/t;->q:Lio/ktor/utils/io/I;
 
-    iget-object v1, p0, Lio/ktor/client/engine/cio/t;->m:Ls3/z;
+    iget-object v1, p0, Lio/ktor/client/engine/cio/t;->m:Ldef/s3/ZS3;
 
     iget-wide v2, p0, Lio/ktor/client/engine/cio/t;->n:J
 
@@ -64,7 +64,7 @@
 
     move-object v7, p1
 
-    invoke-direct/range {v0 .. v7}, Lio/ktor/client/engine/cio/t;-><init>(Ls3/z;JLjava/lang/String;Lt3/i;Lio/ktor/utils/io/I;Ly8/d;)V
+    invoke-direct/range {v0 .. v7}, Lio/ktor/client/engine/cio/t;-><init>(Ldef/s3/ZS3;JLjava/lang/String;Ldef/t3/IT3;Lio/ktor/utils/io/I;Ldef/y8/DY8;)V
 
     iput-object p2, v8, Lio/ktor/client/engine/cio/t;->l:Ljava/lang/Object;
 
@@ -74,11 +74,11 @@
 .method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 12
 
-    sget-object v0, Lz8/a;->g:Lz8/a;
+    sget-object v0, Ldef/z8/AZ8;->g:Ldef/z8/AZ8;
 
     iget v1, p0, Lio/ktor/client/engine/cio/t;->k:I
 
-    sget-object v2, Lu8/y;->a:Lu8/y;
+    sget-object v2, Ldef/u8/YU8;->a:Ldef/u8/YU8;
 
     const/4 v3, 0x1
 
@@ -86,7 +86,7 @@
 
     if-ne v1, v3, :cond_0
 
-    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Ldef/u8/AU8;->e(Ljava/lang/Object;)V
 
     goto/16 :goto_7
 
@@ -100,7 +100,7 @@
     throw p1
 
     :cond_1
-    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Ldef/u8/AU8;->e(Ljava/lang/Object;)V
 
     iget-object p1, p0, Lio/ktor/client/engine/cio/t;->l:Ljava/lang/Object;
 
@@ -120,7 +120,7 @@
 
     const-string v6, "chunked"
 
-    invoke-static {v1, v6}, Lu3/i;->a(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v1, v6}, Ldef/u3/IU3;->a(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     move-result v7
 
@@ -133,7 +133,7 @@
     :cond_2
     const-string v7, "identity"
 
-    invoke-static {v1, v7}, Lu3/i;->a(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v1, v7}, Ldef/u3/IU3;->a(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     move-result v8
 
@@ -150,7 +150,7 @@
 
     move-result-object v8
 
-    invoke-static {v1, v8}, Lq4/j;->T(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
+    invoke-static {v1, v8}, Ldef/q4/JQ4;->T(Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v8
 
@@ -173,7 +173,7 @@
 
     check-cast v10, Ljava/lang/String;
 
-    invoke-static {v10}, Lq4/j;->b0(Ljava/lang/String;)Ljava/lang/CharSequence;
+    invoke-static {v10}, Ldef/q4/JQ4;->b0(Ljava/lang/String;)Ljava/lang/CharSequence;
 
     move-result-object v10
 
@@ -189,7 +189,7 @@
 
     const-string v11, "this as java.lang.String).toLowerCase(Locale.ROOT)"
 
-    invoke-static {v10, v11}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v10, v6}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -248,7 +248,7 @@
     :goto_1
     if-eqz v9, :cond_a
 
-    invoke-static {v4, p1, p0}, Lt3/f;->a(Lio/ktor/utils/io/I;Lio/ktor/utils/io/E;La4/c;)Ljava/lang/Object;
+    invoke-static {v4, p1, p0}, Ldef/t3/FT3;->a(Lio/ktor/utils/io/I;Lio/ktor/utils/io/E;Ldef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -279,7 +279,7 @@
 
     if-eqz v1, :cond_b
 
-    invoke-static {v4, p1, v8, v9, p0}, Lt2/a;->p(Lio/ktor/utils/io/I;Lio/ktor/utils/io/L;JLa4/c;)Ljava/lang/Object;
+    invoke-static {v4, p1, v8, v9, p0}, Ldef/t2/AT2;->p(Lio/ktor/utils/io/I;Lio/ktor/utils/io/L;JLdef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -288,11 +288,11 @@
     goto :goto_6
 
     :cond_b
-    iget-object v1, p0, Lio/ktor/client/engine/cio/t;->p:Lt3/i;
+    iget-object v1, p0, Lio/ktor/client/engine/cio/t;->p:Ldef/t3/IT3;
 
     if-eqz v1, :cond_c
 
-    iget-boolean v6, v1, Lt3/i;->a:Z
+    iget-boolean v6, v1, Ldef/t3/IT3;->a:Z
 
     if-ne v6, v3, :cond_c
 
@@ -306,11 +306,11 @@
 
     if-nez v1, :cond_d
 
-    sget-object v1, Ls3/z;->f:Ls3/z;
+    sget-object v1, Ldef/s3/ZS3;->f:Ldef/s3/ZS3;
 
-    iget-object v3, p0, Lio/ktor/client/engine/cio/t;->m:Ls3/z;
+    iget-object v3, p0, Lio/ktor/client/engine/cio/t;->m:Ldef/s3/ZS3;
 
-    invoke-static {v3, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -333,7 +333,7 @@
     :goto_5
     const-wide v5, 0x7fffffffffffffffL
 
-    invoke-static {v4, p1, v5, v6, p0}, Lt2/a;->p(Lio/ktor/utils/io/I;Lio/ktor/utils/io/L;JLa4/c;)Ljava/lang/Object;
+    invoke-static {v4, p1, v5, v6, p0}, Ldef/t2/AT2;->p(Lio/ktor/utils/io/I;Lio/ktor/utils/io/L;JLdef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -354,15 +354,15 @@
 
     check-cast p1, Lio/ktor/utils/io/N;
 
-    check-cast p2, Ly8/d;
+    check-cast p2, Ldef/y8/DY8;
 
-    invoke-virtual {p0, p2, p1}, Lio/ktor/client/engine/cio/t;->d(Ly8/d;Ljava/lang/Object;)Ly8/d;
+    invoke-virtual {p0, p2, p1}, Lio/ktor/client/engine/cio/t;->d(Ldef/y8/DY8;Ljava/lang/Object;)Ldef/y8/DY8;
 
     move-result-object p1
 
     check-cast p1, Lio/ktor/client/engine/cio/t;
 
-    sget-object p2, Lu8/y;->a:Lu8/y;
+    sget-object p2, Ldef/u8/YU8;->a:Ldef/u8/YU8;
 
     invoke-virtual {p1, p2}, Lio/ktor/client/engine/cio/t;->f(Ljava/lang/Object;)Ljava/lang/Object;
 

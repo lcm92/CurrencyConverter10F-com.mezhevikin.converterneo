@@ -43,7 +43,7 @@
 .method public static final a(Ljava/lang/Class;I)I
     .locals 7
 
-    invoke-static {p0}, Li4/t;->a(Ljava/lang/Class;)Li4/d;
+    invoke-static {p0}, Ldef/i4/TI4;->a(Ljava/lang/Class;)Ldef/i4/DI4;
 
     const/4 v0, 0x0
 
@@ -57,7 +57,7 @@
 
     const-string v3, "declaredFields"
 
-    invoke-static {v2, v3}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     array-length v3, v2
 
@@ -107,7 +107,7 @@
     :catchall_0
     move-exception p0
 
-    invoke-static {p0}, Lu8/a;->b(Ljava/lang/Throwable;)Lu8/k;
+    invoke-static {p0}, Ldef/u8/AU8;->b(Ljava/lang/Throwable;)Ldef/u8/KU8;
 
     move-result-object p0
 
@@ -116,7 +116,7 @@
 
     move-result-object p1
 
-    instance-of v0, p0, Lu8/k;
+    instance-of v0, p0, Ldef/u8/KU8;
 
     if-eqz v0, :cond_3
 
@@ -137,22 +137,22 @@
 
     const-string v0, "exception"
 
-    invoke-static {p0, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "cause"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    instance-of v0, p0, Ls4/p;
+    instance-of v0, p0, Ldef/s4/PS4;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
     :try_start_0
-    check-cast p0, Ls4/p;
+    check-cast p0, Ldef/s4/PS4;
 
-    invoke-interface {p0}, Ls4/p;->a()Ljava/lang/Throwable;
+    invoke-interface {p0}, Ldef/s4/PS4;->a()Ljava/lang/Throwable;
 
     move-result-object p0
     :try_end_0
@@ -163,12 +163,12 @@
     :catchall_0
     move-exception p0
 
-    invoke-static {p0}, Lu8/a;->b(Ljava/lang/Throwable;)Lu8/k;
+    invoke-static {p0}, Ldef/u8/AU8;->b(Ljava/lang/Throwable;)Ldef/u8/KU8;
 
     move-result-object p0
 
     :goto_0
-    instance-of p1, p0, Lu8/k;
+    instance-of p1, p0, Ldef/u8/KU8;
 
     if-eqz p1, :cond_0
 
@@ -202,7 +202,7 @@
 
     move-result-object v4
 
-    check-cast v4, Lh4/c;
+    check-cast v4, Ldef/h4/CH4;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_3
 
@@ -210,7 +210,7 @@
 
     if-eqz v4, :cond_2
 
-    invoke-interface {v4, p0}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v4, p0}, Ldef/h4/CH4;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -324,7 +324,7 @@
 
     const-string v5, "exception.javaClass.constructors"
 
-    invoke-static {v2, v5}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v5}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v5, Lio/ktor/utils/io/Q;
 
@@ -349,7 +349,7 @@
 
     const-string v6, "copyOf(...)"
 
-    invoke-static {v2, v6}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v6}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     array-length v6, v2
 
@@ -359,7 +359,7 @@
 
     :cond_9
     :goto_6
-    invoke-static {v2}, Lv8/j;->b0([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v2}, Ldef/v8/JV8;->b0([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v2
 
@@ -384,7 +384,7 @@
 
     const-string v6, "constructor"
 
-    invoke-static {v5, v6}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5}, Ljava/lang/reflect/Constructor;->getParameterTypes()[Ljava/lang/Class;
 
@@ -412,7 +412,7 @@
     :cond_c
     aget-object v8, v6, v4
 
-    invoke-static {v8, v10}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v8, v10}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v8
 
@@ -420,7 +420,7 @@
 
     aget-object v6, v6, v7
 
-    invoke-static {v6, v9}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v9}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -440,7 +440,7 @@
     :cond_d
     aget-object v6, v6, v4
 
-    invoke-static {v6, v9}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v9}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v8
 
@@ -455,7 +455,7 @@
     goto :goto_7
 
     :cond_e
-    invoke-static {v6, v10}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v10}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -558,7 +558,7 @@
 
     if-eqz v5, :cond_15
 
-    invoke-interface {v5, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v5, p1}, Ldef/h4/CH4;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 

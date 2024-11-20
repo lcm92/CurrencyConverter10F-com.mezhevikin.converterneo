@@ -1,27 +1,27 @@
 .class final Landroidx/compose/foundation/FocusableElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lp/i;
+.field public final a:Ldef/p/IP;
 
 
 # direct methods
-.method public constructor <init>(Lp/i;)V
+.method public constructor <init>(Ldef/p/IP;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/FocusableElement;->a:Lp/i;
+    iput-object p1, p0, Landroidx/compose/foundation/FocusableElement;->a:Ldef/p/IP;
 
     return-void
 .end method
@@ -49,11 +49,11 @@
     :cond_1
     check-cast p1, Landroidx/compose/foundation/FocusableElement;
 
-    iget-object p1, p1, Landroidx/compose/foundation/FocusableElement;->a:Lp/i;
+    iget-object p1, p1, Landroidx/compose/foundation/FocusableElement;->a:Ldef/p/IP;
 
-    iget-object v1, p0, Landroidx/compose/foundation/FocusableElement;->a:Lp/i;
+    iget-object v1, p0, Landroidx/compose/foundation/FocusableElement;->a:Ldef/p/IP;
 
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -68,7 +68,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/FocusableElement;->a:Lp/i;
+    iget-object v0, p0, Landroidx/compose/foundation/FocusableElement;->a:Ldef/p/IP;
 
     if-eqz v0, :cond_0
 
@@ -85,26 +85,26 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lm/oa;
+    new-instance v0, Ldef/m/OAM;
 
-    iget-object v1, p0, Landroidx/compose/foundation/FocusableElement;->a:Lp/i;
+    iget-object v1, p0, Landroidx/compose/foundation/FocusableElement;->a:Ldef/p/IP;
 
-    invoke-direct {v0, v1}, Lm/oa;-><init>(Lp/i;)V
+    invoke-direct {v0, v1}, Ldef/m/OAM;-><init>(Ldef/p/IP;)V
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lm/oa;
+    check-cast p1, Ldef/m/OAM;
 
-    iget-object v0, p0, Landroidx/compose/foundation/FocusableElement;->a:Lp/i;
+    iget-object v0, p0, Landroidx/compose/foundation/FocusableElement;->a:Ldef/p/IP;
 
-    invoke-virtual {p1, v0}, Lm/oa;->B0(Lp/i;)V
+    invoke-virtual {p1, v0}, Ldef/m/OAM;->B0(Ldef/p/IP;)V
 
     return-void
 .end method

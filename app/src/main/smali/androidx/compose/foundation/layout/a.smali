@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lq/r;
+.implements Ldef/q/RQ;
 
 
 # static fields
@@ -25,16 +25,16 @@
 
 
 # virtual methods
-.method public final a(Lra/q;Lra/d;)Lra/q;
+.method public final a(Ldef/ra/QRA;Ldef/ra/DRA;)Ldef/ra/QRA;
     .locals 1
 
     new-instance v0, Landroidx/compose/foundation/layout/BoxChildDataElement;
 
-    check-cast p2, Lra/i;
+    check-cast p2, Ldef/ra/IRA;
 
-    invoke-direct {v0, p2}, Landroidx/compose/foundation/layout/BoxChildDataElement;-><init>(Lra/i;)V
+    invoke-direct {v0, p2}, Landroidx/compose/foundation/layout/BoxChildDataElement;-><init>(Ldef/ra/IRA;)V
 
-    invoke-interface {p1, v0}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p1, v0}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p1
 

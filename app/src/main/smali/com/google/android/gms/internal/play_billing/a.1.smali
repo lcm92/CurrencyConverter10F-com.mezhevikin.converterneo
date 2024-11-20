@@ -32,14 +32,14 @@
 
     packed-switch v1, :pswitch_data_0
 
-    check-cast p1, Lj6/c;
+    check-cast p1, Ldef/j6/CJ6;
 
     sget p1, Lcom/google/android/gms/internal/play_billing/q0;->a:I
 
     return v0
 
     :pswitch_0
-    check-cast p1, Lj6/c;
+    check-cast p1, Ldef/j6/CJ6;
 
     sget p1, Lcom/google/android/gms/internal/play_billing/q0;->a:I
 

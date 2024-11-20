@@ -12,20 +12,20 @@
     return-void
 .end method
 
-.method public static read(Lu1/a;)Landroidx/core/app/RemoteActionCompat;
+.method public static read(Ldef/u1/AU1;)Landroidx/core/app/RemoteActionCompat;
     .locals 0
 
-    invoke-static {p0}, Landroidx/core/app/RemoteActionCompatParcelizer;->read(Lu1/a;)Landroidx/core/app/RemoteActionCompat;
+    invoke-static {p0}, Landroidx/core/app/RemoteActionCompatParcelizer;->read(Ldef/u1/AU1;)Landroidx/core/app/RemoteActionCompat;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static write(Landroidx/core/app/RemoteActionCompat;Lu1/a;)V
+.method public static write(Landroidx/core/app/RemoteActionCompat;Ldef/u1/AU1;)V
     .locals 0
 
-    invoke-static {p0, p1}, Landroidx/core/app/RemoteActionCompatParcelizer;->write(Landroidx/core/app/RemoteActionCompat;Lu1/a;)V
+    invoke-static {p0, p1}, Landroidx/core/app/RemoteActionCompatParcelizer;->write(Landroidx/core/app/RemoteActionCompat;Ldef/u1/AU1;)V
 
     return-void
 .end method

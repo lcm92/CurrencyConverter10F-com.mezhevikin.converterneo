@@ -4,50 +4,50 @@
 
 
 # static fields
-.field public static final a:Lo/wa;
+.field public static final a:Ldef/o/WAO;
 
-.field public static final b:Lo/va;
+.field public static final b:Ldef/o/VAO;
 
-.field public static final c:Lo/xa;
+.field public static final c:Ldef/o/XAO;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lo/wa;
+    new-instance v0, Ldef/o/WAO;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroidx/compose/foundation/gestures/a;->a:Lo/wa;
+    sput-object v0, Landroidx/compose/foundation/gestures/a;->a:Ldef/o/WAO;
 
-    new-instance v0, Lo/va;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, Landroidx/compose/foundation/gestures/a;->b:Lo/va;
-
-    new-instance v0, Lo/xa;
+    new-instance v0, Ldef/o/VAO;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroidx/compose/foundation/gestures/a;->c:Lo/xa;
+    sput-object v0, Landroidx/compose/foundation/gestures/a;->b:Ldef/o/VAO;
+
+    new-instance v0, Ldef/o/XAO;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Landroidx/compose/foundation/gestures/a;->c:Ldef/o/XAO;
 
     return-void
 .end method
 
-.method public static final a(Lo/s0;JLa4/c;)Ljava/lang/Object;
+.method public static final a(Ldef/o/S0O;JLdef/a4/CA4;)Ljava/lang/Object;
     .locals 11
 
-    instance-of v0, p3, Lo/ya;
+    instance-of v0, p3, Ldef/o/YAO;
 
     if-eqz v0, :cond_0
 
     move-object v0, p3
 
-    check-cast v0, Lo/ya;
+    check-cast v0, Ldef/o/YAO;
 
-    iget v1, v0, Lo/ya;->m:I
+    iget v1, v0, Ldef/o/YAO;->m:I
 
     const/high16 v2, -0x80000000
 
@@ -57,21 +57,21 @@
 
     sub-int/2addr v1, v2
 
-    iput v1, v0, Lo/ya;->m:I
+    iput v1, v0, Ldef/o/YAO;->m:I
 
     goto :goto_0
 
     :cond_0
-    new-instance v0, Lo/ya;
+    new-instance v0, Ldef/o/YAO;
 
-    invoke-direct {v0, p3}, La4/c;-><init>(Ly8/d;)V
+    invoke-direct {v0, p3}, Ldef/a4/CA4;-><init>(Ldef/y8/DY8;)V
 
     :goto_0
-    iget-object p3, v0, Lo/ya;->l:Ljava/lang/Object;
+    iget-object p3, v0, Ldef/o/YAO;->l:Ljava/lang/Object;
 
-    sget-object v1, Lz8/a;->g:Lz8/a;
+    sget-object v1, Ldef/z8/AZ8;->g:Ldef/z8/AZ8;
 
-    iget v2, v0, Lo/ya;->m:I
+    iget v2, v0, Ldef/o/YAO;->m:I
 
     const/4 v3, 0x1
 
@@ -79,11 +79,11 @@
 
     if-ne v2, v3, :cond_1
 
-    iget-object p0, v0, Lo/ya;->k:Li4/p;
+    iget-object p0, v0, Ldef/o/YAO;->k:Ldef/i4/PI4;
 
-    iget-object p1, v0, Lo/ya;->j:Lo/s0;
+    iget-object p1, v0, Ldef/o/YAO;->j:Ldef/o/S0O;
 
-    invoke-static {p3}, Lu8/a;->e(Ljava/lang/Object;)V
+    invoke-static {p3}, Ldef/u8/AU8;->e(Ljava/lang/Object;)V
 
     move-object p3, p0
 
@@ -101,15 +101,15 @@
     throw p0
 
     :cond_2
-    invoke-static {p3}, Lu8/a;->e(Ljava/lang/Object;)V
+    invoke-static {p3}, Ldef/u8/AU8;->e(Ljava/lang/Object;)V
 
-    new-instance p3, Li4/p;
+    new-instance p3, Ldef/i4/PI4;
 
     invoke-direct {p3}, Ljava/lang/Object;-><init>()V
 
-    sget-object v2, Lm/g0;->g:Lm/g0;
+    sget-object v2, Ldef/m/G0M;->g:Ldef/m/G0M;
 
-    new-instance v10, Lo/za;
+    new-instance v10, Ldef/o/ZAO;
 
     const/4 v9, 0x0
 
@@ -121,15 +121,15 @@
 
     move-object v8, p3
 
-    invoke-direct/range {v4 .. v9}, Lo/za;-><init>(Lo/s0;JLi4/p;Ly8/d;)V
+    invoke-direct/range {v4 .. v9}, Ldef/o/ZAO;-><init>(Ldef/o/S0O;JLdef/i4/PI4;Ldef/y8/DY8;)V
 
-    iput-object p0, v0, Lo/ya;->j:Lo/s0;
+    iput-object p0, v0, Ldef/o/YAO;->j:Ldef/o/S0O;
 
-    iput-object p3, v0, Lo/ya;->k:Li4/p;
+    iput-object p3, v0, Ldef/o/YAO;->k:Ldef/i4/PI4;
 
-    iput v3, v0, Lo/ya;->m:I
+    iput v3, v0, Ldef/o/YAO;->m:I
 
-    invoke-virtual {p0, v2, v10, v0}, Lo/s0;->e(Lm/g0;Lh4/e;La4/c;)Ljava/lang/Object;
+    invoke-virtual {p0, v2, v10, v0}, Ldef/o/S0O;->e(Ldef/m/G0M;Ldef/h4/EH4;Ldef/a4/CA4;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -139,21 +139,21 @@
 
     :cond_3
     :goto_1
-    iget p1, p3, Li4/p;->g:F
+    iget p1, p3, Ldef/i4/PI4;->g:F
 
-    invoke-virtual {p0, p1}, Lo/s0;->g(F)J
+    invoke-virtual {p0, p1}, Ldef/o/S0O;->g(F)J
 
     move-result-wide p0
 
-    new-instance v1, Lxa/c;
+    new-instance v1, Ldef/xa/CXA;
 
-    invoke-direct {v1, p0, p1}, Lxa/c;-><init>(J)V
+    invoke-direct {v1, p0, p1}, Ldef/xa/CXA;-><init>(J)V
 
     :goto_2
     return-object v1
 .end method
 
-.method public static final b(Lra/q;Lo/k0;Lo/oa;Lm/n0;ZZLo/m;Lp/i;Lo/d;)Lra/q;
+.method public static final b(Ldef/ra/QRA;Ldef/o/K0O;Ldef/o/OAO;Ldef/m/N0M;ZZLdef/o/MO;Ldef/p/IP;Ldef/o/DO;)Ldef/ra/QRA;
     .locals 10
 
     new-instance v9, Landroidx/compose/foundation/gestures/ScrollableElement;
@@ -176,11 +176,11 @@
 
     move v8, p5
 
-    invoke-direct/range {v0 .. v8}, Landroidx/compose/foundation/gestures/ScrollableElement;-><init>(Lm/n0;Lo/d;Lo/m;Lo/oa;Lo/k0;Lp/i;ZZ)V
+    invoke-direct/range {v0 .. v8}, Landroidx/compose/foundation/gestures/ScrollableElement;-><init>(Ldef/m/N0M;Ldef/o/DO;Ldef/o/MO;Ldef/o/OAO;Ldef/o/K0O;Ldef/p/IP;ZZ)V
 
     move-object v0, p0
 
-    invoke-interface {p0, v9}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v9}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object v0
 

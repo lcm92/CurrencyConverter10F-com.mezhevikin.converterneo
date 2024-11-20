@@ -9,18 +9,18 @@
 # instance fields
 .field public final g:Lcom/google/android/gms/internal/play_billing/A0;
 
-.field public final h:Lj6/t;
+.field public final h:Ldef/j6/TJ6;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/play_billing/A0;Lj6/t;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/play_billing/A0;Ldef/j6/TJ6;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/google/android/gms/internal/play_billing/v0;->g:Lcom/google/android/gms/internal/play_billing/A0;
 
-    iput-object p2, p0, Lcom/google/android/gms/internal/play_billing/v0;->h:Lj6/t;
+    iput-object p2, p0, Lcom/google/android/gms/internal/play_billing/v0;->h:Ldef/j6/TJ6;
 
     return-void
 .end method
@@ -34,7 +34,7 @@
 
     instance-of v1, v0, Lcom/google/android/gms/internal/play_billing/M0;
 
-    iget-object v2, p0, Lcom/google/android/gms/internal/play_billing/v0;->h:Lj6/t;
+    iget-object v2, p0, Lcom/google/android/gms/internal/play_billing/v0;->h:Ldef/j6/TJ6;
 
     if-eqz v1, :cond_2
 
@@ -69,7 +69,7 @@
     goto :goto_1
 
     :cond_1
-    invoke-virtual {v2, v1}, Lj6/t;->n(Ljava/lang/Throwable;)V
+    invoke-virtual {v2, v1}, Ldef/j6/TJ6;->n(Ljava/lang/Throwable;)V
 
     return-void
 
@@ -136,25 +136,25 @@
 
     move-result v0
 
-    iget-object v1, v2, Lj6/t;->e:Ljava/lang/Object;
+    iget-object v1, v2, Ldef/j6/TJ6;->e:Ljava/lang/Object;
 
-    check-cast v1, Lj6/v;
+    check-cast v1, Ldef/j6/VJ6;
 
-    iget v3, v2, Lj6/t;->b:I
+    iget v3, v2, Ldef/j6/TJ6;->b:I
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const-string v4, "Billing override value was set by a license tester."
 
-    invoke-static {v4, v0}, Lj6/z;->a(Ljava/lang/String;I)Lj6/e;
+    invoke-static {v4, v0}, Ldef/j6/ZJ6;->a(Ljava/lang/String;I)Ldef/j6/EJ6;
 
     move-result-object v0
 
     const/16 v4, 0x69
 
-    invoke-virtual {v1, v4, v3, v0}, Lj6/v;->A(IILj6/e;)V
+    invoke-virtual {v1, v4, v3, v0}, Ldef/j6/VJ6;->A(IILdef/j6/EJ6;)V
 
-    iget-object v1, v2, Lj6/t;->c:Ljava/lang/Object;
+    iget-object v1, v2, Ldef/j6/TJ6;->c:Ljava/lang/Object;
 
     check-cast v1, Ljava/util/function/Consumer;
 
@@ -163,7 +163,7 @@
     goto :goto_4
 
     :cond_4
-    iget-object v0, v2, Lj6/t;->d:Ljava/lang/Object;
+    iget-object v0, v2, Ldef/j6/TJ6;->d:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Runnable;
 
@@ -214,7 +214,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :goto_6
-    invoke-virtual {v2, v0}, Lj6/t;->n(Ljava/lang/Throwable;)V
+    invoke-virtual {v2, v0}, Ldef/j6/TJ6;->n(Ljava/lang/Throwable;)V
 
     return-void
 
@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v0}, Lj6/t;->n(Ljava/lang/Throwable;)V
+    invoke-virtual {v2, v0}, Ldef/j6/TJ6;->n(Ljava/lang/Throwable;)V
 
     return-void
 .end method
@@ -231,7 +231,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 3
 
-    new-instance v0, Le5/l;
+    new-instance v0, Ldef/e5/LE5;
 
     const-class v1, Lcom/google/android/gms/internal/play_billing/v0;
 
@@ -239,25 +239,25 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Le5/l;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ldef/e5/LE5;-><init>(Ljava/lang/String;)V
 
     new-instance v1, Lcom/google/android/gms/internal/play_billing/j;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
-    iget-object v2, v0, Le5/l;->j:Ljava/lang/Object;
+    iget-object v2, v0, Ldef/e5/LE5;->j:Ljava/lang/Object;
 
     check-cast v2, Lcom/google/android/gms/internal/play_billing/j;
 
     iput-object v1, v2, Lcom/google/android/gms/internal/play_billing/j;->b:Lcom/google/android/gms/internal/play_billing/j;
 
-    iput-object v1, v0, Le5/l;->j:Ljava/lang/Object;
+    iput-object v1, v0, Ldef/e5/LE5;->j:Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/gms/internal/play_billing/v0;->h:Lj6/t;
+    iget-object v2, p0, Lcom/google/android/gms/internal/play_billing/v0;->h:Ldef/j6/TJ6;
 
     iput-object v2, v1, Lcom/google/android/gms/internal/play_billing/j;->a:Ljava/lang/Object;
 
-    invoke-virtual {v0}, Le5/l;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ldef/e5/LE5;->toString()Ljava/lang/String;
 
     move-result-object v0
 

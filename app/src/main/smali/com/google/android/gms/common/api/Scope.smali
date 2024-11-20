@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/common/api/Scope;
-.super Lp2/a;
+.super Ldef/p2/AP2;
 .source "SourceFile"
 
 # interfaces
@@ -28,11 +28,11 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, La7/h;
+    new-instance v0, Ldef/a7/HA7;
 
     const/16 v1, 0xb
 
-    invoke-direct {v0, v1}, La7/h;-><init>(I)V
+    invoke-direct {v0, v1}, Ldef/a7/HA7;-><init>(I)V
 
     sput-object v0, Lcom/google/android/gms/common/api/Scope;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -125,7 +125,7 @@
 
     const/16 p2, 0x4f45
 
-    invoke-static {p1, p2}, Lp2/c;->w(Landroid/os/Parcel;I)I
+    invoke-static {p1, p2}, Ldef/p2/CP2;->w(Landroid/os/Parcel;I)I
 
     move-result p2
 
@@ -133,7 +133,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {p1, v1, v0}, Lp2/c;->y(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v0}, Ldef/p2/CP2;->y(Landroid/os/Parcel;II)V
 
     iget v0, p0, Lcom/google/android/gms/common/api/Scope;->g:I
 
@@ -143,9 +143,9 @@
 
     iget-object v1, p0, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
-    invoke-static {p1, v0, v1}, Lp2/c;->t(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, v0, v1}, Ldef/p2/CP2;->t(Landroid/os/Parcel;ILjava/lang/String;)V
 
-    invoke-static {p1, p2}, Lp2/c;->x(Landroid/os/Parcel;I)V
+    invoke-static {p1, p2}, Ldef/p2/CP2;->x(Landroid/os/Parcel;I)V
 
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lu1/c;
+.implements Ldef/u1/CU1;
 
 
 # instance fields

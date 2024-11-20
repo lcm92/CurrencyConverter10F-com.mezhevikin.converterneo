@@ -1,27 +1,27 @@
 .class public final Lcom/mezhevikin/converterneo/activities/ConverterActivity;
-.super Lb/n;
+.super Ldef/b/NB;
 .source "SourceFile"
 
 
 # instance fields
-.field public A:Lv7/d;
+.field public A:Ldef/v7/DV7;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lb/n;-><init>()V
+    invoke-direct {p0}, Ldef/b/NB;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final l()Lv7/d;
+.method public final l()Ldef/v7/DV7;
     .locals 1
 
-    iget-object v0, p0, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->A:Lv7/d;
+    iget-object v0, p0, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->A:Ldef/v7/DV7;
 
     if-eqz v0, :cond_0
 
@@ -30,7 +30,7 @@
     :cond_0
     const-string v0, "ads"
 
-    invoke-static {v0}, Li4/h;->j(Ljava/lang/String;)V
+    invoke-static {v0}, Ldef/i4/HI4;->j(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -46,15 +46,15 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0, p1}, Lb/n;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Ldef/b/NB;->onCreate(Landroid/os/Bundle;)V
 
-    new-instance v5, Lb/ga;
+    new-instance v5, Ldef/b/GAB;
 
-    sget-object p1, Lb/fa;->i:Lb/fa;
+    sget-object p1, Ldef/b/FAB;->i:Ldef/b/FAB;
 
     invoke-direct {v5}, Ljava/lang/Object;-><init>()V
 
-    sget v3, Lb/o;->a:I
+    sget v3, Ldef/b/OB;->a:I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -66,7 +66,7 @@
 
     const-string v3, "window.decorView"
 
-    invoke-static {v7, v3}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v3}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v7}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -74,17 +74,17 @@
 
     const-string v4, "view.resources"
 
-    invoke-static {v3, v4}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v3}, Lb/fa;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v3}, Ldef/b/FAB;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-virtual {v7}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    invoke-static {v3, v4}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v3}, Lb/fa;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v3}, Ldef/b/FAB;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -92,7 +92,7 @@
 
     if-lt p1, v3, :cond_0
 
-    new-instance p1, Lb/s;
+    new-instance p1, Ldef/b/SB;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
@@ -103,7 +103,7 @@
 
     if-lt p1, v3, :cond_1
 
-    new-instance p1, Lb/r;
+    new-instance p1, Ldef/b/RB;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
@@ -114,14 +114,14 @@
 
     if-lt p1, v3, :cond_2
 
-    new-instance p1, Lb/q;
+    new-instance p1, Ldef/b/QB;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     goto :goto_0
 
     :cond_2
-    new-instance p1, Lb/p;
+    new-instance p1, Ldef/b/PB;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
@@ -132,7 +132,7 @@
 
     const-string v10, "window"
 
-    invoke-static {v6, v10}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v10}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v8, 0x1
 
@@ -142,19 +142,19 @@
 
     move-object v4, v5
 
-    invoke-virtual/range {v3 .. v9}, Lb/p;->b(Lb/ga;Lb/ga;Landroid/view/Window;Landroid/view/View;ZZ)V
+    invoke-virtual/range {v3 .. v9}, Ldef/b/PB;->b(Ldef/b/GAB;Ldef/b/GAB;Landroid/view/Window;Landroid/view/View;ZZ)V
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v3
 
-    invoke-static {v3, v10}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v10}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v3}, Lb/p;->a(Landroid/view/Window;)V
+    invoke-virtual {p1, v3}, Ldef/b/PB;->a(Landroid/view/Window;)V
 
-    sget-object p1, Lu7/b;->a:Lna/a;
+    sget-object p1, Ldef/u7/BU7;->a:Ldef/na/ANA;
 
-    sget-object v3, Lc/a;->a:Landroid/view/ViewGroup$LayoutParams;
+    sget-object v3, Ldef/c/AC;->a:Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -176,13 +176,13 @@
 
     move-result-object v3
 
-    instance-of v4, v3, Lr0/f0;
+    instance-of v4, v3, Ldef/r0/F0R0;
 
     const/4 v5, 0x0
 
     if-eqz v4, :cond_3
 
-    check-cast v3, Lr0/f0;
+    check-cast v3, Ldef/r0/F0R0;
 
     goto :goto_1
 
@@ -192,20 +192,20 @@
     :goto_1
     if-eqz v3, :cond_4
 
-    invoke-virtual {v3, v5}, Lr0/a;->setParentCompositionContext(Lfa/r;)V
+    invoke-virtual {v3, v5}, Ldef/r0/AR0;->setParentCompositionContext(Ldef/fa/RFA;)V
 
-    invoke-virtual {v3, p1}, Lr0/f0;->setContent(Lh4/e;)V
+    invoke-virtual {v3, p1}, Ldef/r0/F0R0;->setContent(Ldef/h4/EH4;)V
 
     goto :goto_2
 
     :cond_4
-    new-instance v3, Lr0/f0;
+    new-instance v3, Ldef/r0/F0R0;
 
-    invoke-direct {v3, p0}, Lr0/f0;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
+    invoke-direct {v3, p0}, Ldef/r0/F0R0;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
 
-    invoke-virtual {v3, v5}, Lr0/a;->setParentCompositionContext(Lfa/r;)V
+    invoke-virtual {v3, v5}, Ldef/r0/AR0;->setParentCompositionContext(Ldef/fa/RFA;)V
 
-    invoke-virtual {v3, p1}, Lr0/f0;->setContent(Lh4/e;)V
+    invoke-virtual {v3, p1}, Ldef/r0/F0R0;->setContent(Ldef/h4/EH4;)V
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -235,7 +235,7 @@
     invoke-virtual {p1, v4, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     :cond_6
-    invoke-static {p1}, Lp1/h;->e(Landroid/view/View;)Lp1/f;
+    invoke-static {p1}, Ldef/p1/HP1;->e(Landroid/view/View;)Ldef/p1/FP1;
 
     move-result-object v4
 
@@ -246,21 +246,21 @@
     invoke-virtual {p1, v4, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     :cond_7
-    sget-object p1, Lc/a;->a:Landroid/view/ViewGroup$LayoutParams;
+    sget-object p1, Ldef/c/AC;->a:Landroid/view/ViewGroup$LayoutParams;
 
-    invoke-virtual {p0, v3, p1}, Lb/n;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p0, v3, p1}, Ldef/b/NB;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :goto_2
-    const-class p1, Lh7/b;
+    const-class p1, Ldef/h7/BH7;
 
     monitor-enter p1
 
     :try_start_0
-    sget-object v3, Lh7/b;->a:Lh7/f;
+    sget-object v3, Ldef/h7/BH7;->a:Ldef/h7/FH7;
 
     if-nez v3, :cond_9
 
-    new-instance v3, Le5/b;
+    new-instance v3, Ldef/e5/BE5;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -274,13 +274,13 @@
     move-object v4, p0
 
     :goto_3
-    invoke-direct {v3, v4, v2}, Le5/b;-><init>(Landroid/content/Context;B)V
+    invoke-direct {v3, v4, v2}, Ldef/e5/BE5;-><init>(Landroid/content/Context;B)V
 
-    new-instance v4, Lh7/f;
+    new-instance v4, Ldef/h7/FH7;
 
-    invoke-direct {v4, v3}, Lh7/f;-><init>(Le5/b;)V
+    invoke-direct {v4, v3}, Ldef/h7/FH7;-><init>(Ldef/e5/BE5;)V
 
-    sput-object v4, Lh7/b;->a:Lh7/f;
+    sput-object v4, Ldef/h7/BH7;->a:Ldef/h7/FH7;
 
     goto :goto_4
 
@@ -291,35 +291,35 @@
 
     :cond_9
     :goto_4
-    sget-object v3, Lh7/b;->a:Lh7/f;
+    sget-object v3, Ldef/h7/BH7;->a:Ldef/h7/FH7;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit p1
 
-    iget-object p1, v3, Lh7/f;->g:Li7/c;
+    iget-object p1, v3, Ldef/h7/FH7;->g:Ldef/i7/CI7;
 
-    invoke-interface {p1}, Li7/c;->a()Ljava/lang/Object;
+    invoke-interface {p1}, Ldef/i7/CI7;->a()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lh7/e;
+    check-cast p1, Ldef/h7/EH7;
 
     const-string v3, "create(...)"
 
-    invoke-static {p1, v3}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v3}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v3, p1, Lh7/e;->b:Landroid/content/Context;
+    iget-object v3, p1, Ldef/h7/EH7;->b:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v3
 
-    sget-object v4, Lh7/i;->e:Li7/i;
+    sget-object v4, Ldef/h7/IH7;->e:Ldef/i7/II7;
 
-    iget-object v6, p1, Lh7/e;->a:Lh7/i;
+    iget-object v6, p1, Ldef/h7/EH7;->a:Ldef/h7/IH7;
 
-    iget-object v7, v6, Lh7/i;->a:Li7/o;
+    iget-object v7, v6, Ldef/h7/IH7;->a:Ldef/i7/OI7;
 
     if-nez v7, :cond_b
 
@@ -345,20 +345,20 @@
 
     if-eqz v9, :cond_a
 
-    iget-object v4, v4, Li7/i;->h:Ljava/lang/String;
+    iget-object v4, v4, Ldef/i7/II7;->h:Ljava/lang/String;
 
-    invoke-static {v4, v7, v6}, Li7/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v4, v7, v6}, Ldef/i7/II7;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
     invoke-static {v8, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_a
-    new-instance v4, Lj7/a;
+    new-instance v4, Ldef/j7/AJ7;
 
-    invoke-direct {v4, v3}, Lj7/a;-><init>(I)V
+    invoke-direct {v4, v3}, Ldef/j7/AJ7;-><init>(I)V
 
-    invoke-static {v4}, Lt2/a;->v(Le8/a;)Lba/fa;
+    invoke-static {v4}, Ldef/t2/AT2;->v(Ldef/e8/AE8;)Ldef/ba/FABA;
 
     move-result-object v3
 
@@ -371,57 +371,57 @@
 
     const-string v9, "requestUpdateInfo(%s)"
 
-    invoke-virtual {v4, v9, v8}, Li7/i;->h(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v4, v9, v8}, Ldef/i7/II7;->h(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    new-instance v4, Lg7/d;
+    new-instance v4, Ldef/g7/DG7;
 
-    invoke-direct {v4}, Lg7/d;-><init>()V
+    invoke-direct {v4}, Ldef/g7/DG7;-><init>()V
 
-    new-instance v8, Lh7/g;
+    new-instance v8, Ldef/h7/GH7;
 
-    invoke-direct {v8, v6, v4, v3, v4}, Lh7/g;-><init>(Lh7/i;Lg7/d;Ljava/lang/String;Lg7/d;)V
+    invoke-direct {v8, v6, v4, v3, v4}, Ldef/h7/GH7;-><init>(Ldef/h7/IH7;Ldef/g7/DG7;Ljava/lang/String;Ldef/g7/DG7;)V
 
-    new-instance v3, Lh7/g;
+    new-instance v3, Ldef/h7/GH7;
 
-    invoke-direct {v3, v7, v4, v4, v8}, Lh7/g;-><init>(Li7/o;Lg7/d;Lg7/d;Lh7/g;)V
+    invoke-direct {v3, v7, v4, v4, v8}, Ldef/h7/GH7;-><init>(Ldef/i7/OI7;Ldef/g7/DG7;Ldef/g7/DG7;Ldef/h7/GH7;)V
 
-    invoke-virtual {v7}, Li7/o;->a()Landroid/os/Handler;
+    invoke-virtual {v7}, Ldef/i7/OI7;->a()Landroid/os/Handler;
 
     move-result-object v6
 
     invoke-virtual {v6, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    iget-object v3, v4, Lg7/d;->a:Lba/fa;
+    iget-object v3, v4, Ldef/g7/DG7;->a:Ldef/ba/FABA;
 
     :goto_5
-    new-instance v4, Lv7/e;
+    new-instance v4, Ldef/v7/EV7;
 
-    invoke-direct {v4, p1, p0}, Lv7/e;-><init>(Lh7/e;Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
+    invoke-direct {v4, p1, p0}, Ldef/v7/EV7;-><init>(Ldef/h7/EH7;Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
 
-    new-instance p1, Ll6/b;
+    new-instance p1, Ldef/l6/BL6;
 
-    invoke-direct {p1, v1, v4}, Ll6/b;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v1, v4}, Ldef/l6/BL6;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object v4, Lg7/e;->a:Lg7/g;
+    sget-object v4, Ldef/g7/EG7;->a:Ldef/g7/GG7;
 
-    new-instance v6, Lg7/f;
+    new-instance v6, Ldef/g7/FG7;
 
-    invoke-direct {v6, v4, p1}, Lg7/f;-><init>(Lg7/g;Ll6/b;)V
+    invoke-direct {v6, v4, p1}, Ldef/g7/FG7;-><init>(Ldef/g7/GG7;Ldef/l6/BL6;)V
 
-    iget-object p1, v3, Lba/fa;->c:Ljava/lang/Object;
+    iget-object p1, v3, Ldef/ba/FABA;->c:Ljava/lang/Object;
 
-    check-cast p1, Laa/va;
+    check-cast p1, Ldef/aa/VAAA;
 
-    invoke-virtual {p1, v6}, Laa/va;->j(Lg7/f;)V
+    invoke-virtual {p1, v6}, Ldef/aa/VAAA;->j(Ldef/g7/FG7;)V
 
-    iget-object v4, v3, Lba/fa;->b:Ljava/lang/Object;
+    iget-object v4, v3, Ldef/ba/FABA;->b:Ljava/lang/Object;
 
     monitor-enter v4
 
     :try_start_1
-    iget-boolean p1, v3, Lba/fa;->a:Z
+    iget-boolean p1, v3, Ldef/ba/FABA;->a:Z
 
     if-nez p1, :cond_c
 
@@ -439,14 +439,14 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    iget-object p1, v3, Lba/fa;->c:Ljava/lang/Object;
+    iget-object p1, v3, Ldef/ba/FABA;->c:Ljava/lang/Object;
 
-    check-cast p1, Laa/va;
+    check-cast p1, Ldef/aa/VAAA;
 
-    invoke-virtual {p1, v3}, Laa/va;->k(Lba/fa;)V
+    invoke-virtual {p1, v3}, Ldef/aa/VAAA;->k(Ldef/ba/FABA;)V
 
     :goto_6
-    invoke-static {}, Lw7/z;->a()Lw7/ca;
+    invoke-static {}, Ldef/w7/ZW7;->a()Ldef/w7/CAW7;
 
     move-result-object p1
 
@@ -456,9 +456,9 @@
 
     const-string v4, "<this>"
 
-    iget-object p1, p1, Lw7/ca;->f:Ljava/util/Date;
+    iget-object p1, p1, Ldef/w7/CAW7;->f:Ljava/util/Date;
 
-    invoke-static {p1, v4}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v4}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljava/util/Date;->getTime()J
 
@@ -499,31 +499,31 @@
     move-object p1, p0
 
     :goto_7
-    new-instance v3, Ly/s;
+    new-instance v3, Ldef/y/SY;
 
-    new-instance v4, Ll7/f;
+    new-instance v4, Ldef/l7/FL7;
 
-    invoke-direct {v4, p1}, Ll7/f;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, p1}, Ldef/l7/FL7;-><init>(Landroid/content/Context;)V
 
-    invoke-direct {v3, v4}, Ly/s;-><init>(Ll7/f;)V
+    invoke-direct {v3, v4}, Ldef/y/SY;-><init>(Ldef/l7/FL7;)V
 
-    iget-object p1, v3, Ly/s;->h:Ljava/lang/Object;
+    iget-object p1, v3, Ldef/y/SY;->h:Ljava/lang/Object;
 
-    check-cast p1, Ll7/f;
+    check-cast p1, Ldef/l7/FL7;
 
-    iget-object v4, p1, Ll7/f;->b:Ljava/lang/String;
+    iget-object v4, p1, Ldef/l7/FL7;->b:Ljava/lang/String;
 
     filled-new-array {v4}, [Ljava/lang/Object;
 
     move-result-object v4
 
-    sget-object v6, Ll7/f;->c:Li7/i;
+    sget-object v6, Ldef/l7/FL7;->c:Ldef/i7/II7;
 
     const-string v7, "requestInAppReview (%s)"
 
-    invoke-virtual {v6, v7, v4}, Li7/i;->g(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-virtual {v6, v7, v4}, Ldef/i7/II7;->g(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    iget-object v4, p1, Ll7/f;->a:Lm7/h;
+    iget-object v4, p1, Ldef/l7/FL7;->a:Ldef/m7/HM7;
 
     if-nez v4, :cond_11
 
@@ -537,18 +537,18 @@
 
     if-eqz v7, :cond_f
 
-    iget-object v6, v6, Li7/i;->h:Ljava/lang/String;
+    iget-object v6, v6, Ldef/i7/II7;->h:Ljava/lang/String;
 
     const-string v7, "Play Store app is either not installed or not the official version"
 
-    invoke-static {v6, v7, p1}, Li7/i;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v6, v7, p1}, Ldef/i7/II7;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v4, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_f
-    new-instance p1, Lj7/a;
+    new-instance p1, Ldef/j7/AJ7;
 
     new-instance v4, Lcom/google/android/gms/common/api/Status;
 
@@ -562,7 +562,7 @@
 
     move-result-object v8
 
-    sget-object v9, Ln7/a;->a:Ljava/util/HashMap;
+    sget-object v9, Ldef/n7/AN7;->a:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -585,7 +585,7 @@
 
     check-cast v9, Ljava/lang/String;
 
-    sget-object v11, Ln7/a;->b:Ljava/util/HashMap;
+    sget-object v11, Ldef/n7/AN7;->b:Ljava/util/HashMap;
 
     invoke-virtual {v11, v10}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -624,137 +624,137 @@
 
     move-result-object v6
 
-    invoke-direct {v4, v7, v6, v5, v5}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;Landroid/app/PendingIntent;Ll2/a;)V
+    invoke-direct {v4, v7, v6, v5, v5}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;Landroid/app/PendingIntent;Ldef/l2/AL2;)V
 
-    invoke-direct {p1, v4}, Le8/a;-><init>(Lcom/google/android/gms/common/api/Status;)V
+    invoke-direct {p1, v4}, Ldef/e8/AE8;-><init>(Lcom/google/android/gms/common/api/Status;)V
 
-    invoke-static {p1}, Lt2/a;->v(Le8/a;)Lba/fa;
+    invoke-static {p1}, Ldef/t2/AT2;->v(Ldef/e8/AE8;)Ldef/ba/FABA;
 
     move-result-object p1
 
     goto :goto_9
 
     :cond_11
-    new-instance v6, Lg7/d;
+    new-instance v6, Ldef/g7/DG7;
 
-    invoke-direct {v6}, Lg7/d;-><init>()V
+    invoke-direct {v6}, Ldef/g7/DG7;-><init>()V
 
-    new-instance v7, Ll7/d;
+    new-instance v7, Ldef/l7/DL7;
 
-    invoke-direct {v7, p1, v6, v6}, Ll7/d;-><init>(Ll7/f;Lg7/d;Lg7/d;)V
+    invoke-direct {v7, p1, v6, v6}, Ldef/l7/DL7;-><init>(Ldef/l7/FL7;Ldef/g7/DG7;Ldef/g7/DG7;)V
 
-    new-instance p1, Lm7/f;
+    new-instance p1, Ldef/m7/FM7;
 
-    invoke-direct {p1, v4, v6, v6, v7}, Lm7/f;-><init>(Lm7/h;Lg7/d;Lg7/d;Ll7/d;)V
+    invoke-direct {p1, v4, v6, v6, v7}, Ldef/m7/FM7;-><init>(Ldef/m7/HM7;Ldef/g7/DG7;Ldef/g7/DG7;Ldef/l7/DL7;)V
 
-    invoke-virtual {v4}, Lm7/h;->a()Landroid/os/Handler;
+    invoke-virtual {v4}, Ldef/m7/HM7;->a()Landroid/os/Handler;
 
     move-result-object v4
 
     invoke-virtual {v4, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    iget-object p1, v6, Lg7/d;->a:Lba/fa;
+    iget-object p1, v6, Ldef/g7/DG7;->a:Ldef/ba/FABA;
 
     :goto_9
     const-string v4, "requestReviewFlow(...)"
 
-    invoke-static {p1, v4}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v4}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v4, Ls6/b;
+    new-instance v4, Ldef/s6/BS6;
 
     const/4 v6, 0x4
 
-    invoke-direct {v4, p1, v3, p0, v6}, Ls6/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v4, p1, v3, p0, v6}, Ldef/s6/BS6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
-    invoke-virtual {p1, v4}, Lba/fa;->a(Lg7/b;)V
+    invoke-virtual {p1, v4}, Ldef/ba/FABA;->a(Ldef/g7/BG7;)V
 
     :goto_a
-    new-instance p1, Lv7/d;
+    new-instance p1, Ldef/v7/DV7;
 
-    invoke-direct {p1, p0}, Lv7/d;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
+    invoke-direct {p1, p0}, Ldef/v7/DV7;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
 
-    iput-object p1, p0, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->A:Lv7/d;
+    iput-object p1, p0, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->A:Ldef/v7/DV7;
 
-    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()Lv7/d;
+    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()Ldef/v7/DV7;
 
     move-result-object p1
 
-    iget-object p1, p1, Lv7/d;->d:Lfa/sa;
+    iget-object p1, p1, Ldef/v7/DV7;->d:Ldef/fa/SAFA;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v3, Lv7/f;
+    new-instance v3, Ldef/v7/FV7;
 
-    invoke-direct {v3, v2, p1}, Lv7/f;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v2, p1}, Ldef/v7/FV7;-><init>(ILjava/lang/Object;)V
 
-    iget-object v4, p1, Lfa/sa;->d:Ljava/lang/Object;
+    iget-object v4, p1, Ldef/fa/SAFA;->d:Ljava/lang/Object;
 
-    check-cast v4, Lz2/pa;
+    check-cast v4, Ldef/z2/PAZ2;
 
-    iget-object v6, p1, Lfa/sa;->c:Ljava/lang/Object;
+    iget-object v6, p1, Ldef/fa/SAFA;->c:Ljava/lang/Object;
 
     move-object v9, v6
 
     check-cast v9, Lcom/mezhevikin/converterneo/activities/ConverterActivity;
 
-    new-instance v10, Lo2/g;
+    new-instance v10, Ldef/o2/GO2;
 
     invoke-direct {v10}, Ljava/lang/Object;-><init>()V
 
-    new-instance v11, Lt6/j;
+    new-instance v11, Ldef/t6/JT6;
 
-    invoke-direct {v11, p1, v0, v3}, Lt6/j;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v11, p1, v0, v3}, Ldef/t6/JT6;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    new-instance v12, Laa/s;
+    new-instance v12, Ldef/aa/SAA;
 
     const/4 p1, 0x7
 
-    invoke-direct {v12, p1}, Laa/s;-><init>(I)V
+    invoke-direct {v12, p1}, Ldef/aa/SAA;-><init>(I)V
 
-    iget-object p1, v4, Lz2/pa;->d:Ljava/lang/Object;
+    iget-object p1, v4, Ldef/z2/PAZ2;->d:Ljava/lang/Object;
 
     monitor-enter p1
 
     const/4 v0, 0x1
 
     :try_start_2
-    iput-boolean v0, v4, Lz2/pa;->f:Z
+    iput-boolean v0, v4, Ldef/z2/PAZ2;->f:Z
 
     monitor-exit p1
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    iput-object v10, v4, Lz2/pa;->h:Lo2/g;
+    iput-object v10, v4, Ldef/z2/PAZ2;->h:Ldef/o2/GO2;
 
-    iget-object p1, v4, Lz2/pa;->b:Lz2/b;
+    iget-object p1, v4, Ldef/z2/PAZ2;->b:Ldef/z2/BZ2;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v3, Lf6/n;
+    new-instance v3, Ldef/f6/NF6;
 
     move-object v7, v3
 
     move-object v8, p1
 
-    invoke-direct/range {v7 .. v12}, Lf6/n;-><init>(Lz2/b;Lcom/mezhevikin/converterneo/activities/ConverterActivity;Lo2/g;Lo7/c;Lo7/b;)V
+    invoke-direct/range {v7 .. v12}, Ldef/f6/NF6;-><init>(Ldef/z2/BZ2;Lcom/mezhevikin/converterneo/activities/ConverterActivity;Ldef/o2/GO2;Ldef/o7/CO7;Ldef/o7/BO7;)V
 
-    iget-object p1, p1, Lz2/b;->j:Ljava/lang/Object;
+    iget-object p1, p1, Ldef/z2/BZ2;->j:Ljava/lang/Object;
 
-    check-cast p1, Lz2/v;
+    check-cast p1, Ldef/z2/VZ2;
 
-    invoke-virtual {p1, v3}, Lz2/v;->execute(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, v3}, Ldef/z2/VZ2;->execute(Ljava/lang/Runnable;)V
 
     const-string p1, "95705352"
 
-    sput-object p1, Lv7/o;->e:Ljava/lang/String;
+    sput-object p1, Ldef/v7/OV7;->e:Ljava/lang/String;
 
     const-string p1, "neo.getconverter.org"
 
-    sput-object p1, Lv7/o;->f:Ljava/lang/String;
+    sput-object p1, Ldef/v7/OV7;->f:Ljava/lang/String;
 
-    sget-object p1, Lv7/o;->g:Ljava/util/LinkedHashMap;
+    sget-object p1, Ldef/v7/OV7;->g:Ljava/util/LinkedHashMap;
 
-    invoke-static {p0}, Li0/c;->w(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Ldef/i0/CI0;->w(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -762,11 +762,11 @@
 
     invoke-interface {p1, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-instance v3, Lv7/r;
+    new-instance v3, Ldef/v7/RV7;
 
-    invoke-direct {v3, p0}, Lv7/r;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
+    invoke-direct {v3, p0}, Ldef/v7/RV7;-><init>(Lcom/mezhevikin/converterneo/activities/ConverterActivity;)V
 
-    sput-object v3, Lv7/o;->a:Lv7/r;
+    sput-object v3, Ldef/v7/OV7;->a:Ldef/v7/RV7;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -790,21 +790,21 @@
 
     move-result-object v3
 
-    sput-object v3, Lv7/o;->c:Landroid/content/SharedPreferences;
+    sput-object v3, Ldef/v7/OV7;->c:Landroid/content/SharedPreferences;
 
-    new-instance v3, Lv7/k;
+    new-instance v3, Ldef/v7/KV7;
 
     const/4 v4, 0x5
 
-    invoke-direct {v3, v4}, Lv7/k;-><init>(I)V
+    invoke-direct {v3, v4}, Ldef/v7/KV7;-><init>(I)V
 
-    invoke-static {v3}, Le3/j;->a(Lh4/c;)Le3/f;
+    invoke-static {v3}, Ldef/e3/JE3;->a(Ldef/h4/CH4;)Ldef/e3/FE3;
 
     move-result-object v3
 
-    sput-object v3, Lv7/o;->b:Le3/f;
+    sput-object v3, Ldef/v7/OV7;->b:Ldef/e3/FE3;
 
-    sget-object v3, Lv7/o;->c:Landroid/content/SharedPreferences;
+    sget-object v3, Ldef/v7/OV7;->c:Landroid/content/SharedPreferences;
 
     const-string v4, "preferences"
 
@@ -820,9 +820,9 @@
 
     const-string v2, "install"
 
-    invoke-static {v2, v5, v1}, Lv7/o;->b(Ljava/lang/String;Ljava/lang/Integer;I)V
+    invoke-static {v2, v5, v1}, Ldef/v7/OV7;->b(Ljava/lang/String;Ljava/lang/Integer;I)V
 
-    sget-object v1, Lv7/o;->c:Landroid/content/SharedPreferences;
+    sget-object v1, Ldef/v7/OV7;->c:Landroid/content/SharedPreferences;
 
     if-eqz v1, :cond_12
 
@@ -839,13 +839,13 @@
     goto :goto_b
 
     :cond_12
-    invoke-static {v4}, Li4/h;->j(Ljava/lang/String;)V
+    invoke-static {v4}, Ldef/i4/HI4;->j(Ljava/lang/String;)V
 
     throw v5
 
     :cond_13
     :goto_b
-    invoke-static {}, Lw7/r;->b()Z
+    invoke-static {}, Ldef/w7/RW7;->b()Z
 
     move-result v0
 
@@ -853,19 +853,19 @@
 
     move-result-object v0
 
-    new-instance v1, Lu8/i;
+    new-instance v1, Ldef/u8/IU8;
 
     const-string v2, "premium"
 
-    invoke-direct {v1, v2, v0}, Lu8/i;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v2, v0}, Ldef/u8/IU8;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()Lv7/d;
+    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()Ldef/v7/DV7;
 
     move-result-object v0
 
-    iget-object v0, v0, Lv7/d;->d:Lfa/sa;
+    iget-object v0, v0, Ldef/v7/DV7;->d:Ldef/fa/SAFA;
 
-    invoke-virtual {v0}, Lfa/sa;->a()Z
+    invoke-virtual {v0}, Ldef/fa/SAFA;->a()Z
 
     move-result v0
 
@@ -873,17 +873,17 @@
 
     move-result-object v0
 
-    new-instance v2, Lu8/i;
+    new-instance v2, Ldef/u8/IU8;
 
     const-string v3, "can-show-ads"
 
-    invoke-direct {v2, v3, v0}, Lu8/i;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v3, v0}, Ldef/u8/IU8;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    filled-new-array {v1, v2}, [Lu8/i;
+    filled-new-array {v1, v2}, [Ldef/u8/IU8;
 
     move-result-object v0
 
-    invoke-static {v0}, Lv8/y;->I0([Lu8/i;)Ljava/util/Map;
+    invoke-static {v0}, Ldef/v8/YV8;->I0([Ldef/u8/IU8;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -892,7 +892,7 @@
     return-void
 
     :cond_14
-    invoke-static {v4}, Li4/h;->j(Ljava/lang/String;)V
+    invoke-static {v4}, Ldef/i4/HI4;->j(Ljava/lang/String;)V
 
     throw v5
 
@@ -928,15 +928,15 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onStart()V
 
-    sget-object v0, Lw7/c;->a:Lw7/c;
+    sget-object v0, Ldef/w7/CW7;->a:Ldef/w7/CW7;
 
-    invoke-static {}, Lw7/c;->b()Lw7/e;
+    invoke-static {}, Ldef/w7/CW7;->b()Ldef/w7/EW7;
 
     move-result-object v0
 
-    iget-object v0, v0, Lw7/e;->b:Ly/s;
+    iget-object v0, v0, Ldef/w7/EW7;->b:Ldef/y/SY;
 
-    invoke-virtual {v0}, Ly/s;->t()Z
+    invoke-virtual {v0}, Ldef/y/SY;->t()Z
 
     move-result v0
 
@@ -944,9 +944,9 @@
 
     if-nez v0, :cond_1
 
-    sget-object v0, Lw7/c;->j:Lfa/j0;
+    sget-object v0, Ldef/w7/CW7;->j:Ldef/fa/J0FA;
 
-    invoke-virtual {v0}, Lfa/j0;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Ldef/fa/J0FA;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -961,23 +961,23 @@
     goto :goto_0
 
     :cond_0
-    new-instance v0, Lw7/a;
+    new-instance v0, Ldef/w7/AW7;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, La4/i;-><init>(ILy8/d;)V
+    invoke-direct {v0, v1, v2}, Ldef/a4/IA4;-><init>(ILdef/y8/DY8;)V
 
     const/4 v3, 0x0
 
-    sget-object v4, Lw7/c;->e:Lx4/d;
+    sget-object v4, Ldef/w7/CW7;->e:Ldef/x4/DX4;
 
     const/4 v5, 0x3
 
-    invoke-static {v4, v2, v3, v0, v5}, Ls4/y;->u(Ls4/x;Ly8/i;ILh4/e;I)Ls4/ba;
+    invoke-static {v4, v2, v3, v0, v5}, Ldef/s4/YS4;->u(Ldef/s4/XS4;Ldef/y8/IY8;ILdef/h4/EH4;I)Ldef/s4/BAS4;
 
     :cond_1
     :goto_0
-    sget-object v0, Lv7/o;->a:Lv7/r;
+    sget-object v0, Ldef/v7/OV7;->a:Ldef/v7/RV7;
 
     const/16 v0, 0x4650
 
@@ -987,20 +987,20 @@
 
     const-string v2, "open-app"
 
-    invoke-static {v2, v0, v1}, Lv7/o;->b(Ljava/lang/String;Ljava/lang/Integer;I)V
+    invoke-static {v2, v0, v1}, Ldef/v7/OV7;->b(Ljava/lang/String;Ljava/lang/Integer;I)V
 
-    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()Lv7/d;
+    invoke-virtual {p0}, Lcom/mezhevikin/converterneo/activities/ConverterActivity;->l()Ldef/v7/DV7;
 
     move-result-object v0
 
     :try_start_0
-    invoke-virtual {v0}, Lv7/d;->a()Z
+    invoke-virtual {v0}, Ldef/v7/DV7;->a()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {v0}, Lv7/d;->b()V
+    invoke-virtual {v0}, Ldef/v7/DV7;->b()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1021,33 +1021,33 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onStop()V
 
-    sget-object v0, Lw7/c;->a:Lw7/c;
+    sget-object v0, Ldef/w7/CW7;->a:Ldef/w7/CW7;
 
-    sget-object v0, Lw7/z;->a:Ljava/io/File;
+    sget-object v0, Ldef/w7/ZW7;->a:Ljava/io/File;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    invoke-static {}, Lw7/z;->a()Lw7/ca;
+    invoke-static {}, Ldef/w7/ZW7;->a()Ldef/w7/CAW7;
 
     move-result-object v2
 
-    sget-object v3, Lv7/m;->a:Lg9/r;
+    sget-object v3, Ldef/v7/MV7;->a:Ldef/g9/RG9;
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object v4, Lw7/ca;->Companion:Lw7/ba;
+    sget-object v4, Ldef/w7/CAW7;->Companion:Ldef/w7/BAW7;
 
-    invoke-virtual {v4}, Lw7/ba;->serializer()Lb9/a;
+    invoke-virtual {v4}, Ldef/w7/BAW7;->serializer()Ldef/b9/AB9;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4, v2}, Lg9/c;->b(Lb9/a;Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v3, v4, v2}, Ldef/g9/CG9;->b(Ldef/b9/AB9;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
-    sget-object v3, Lq4/b;->a:Ljava/nio/charset/Charset;
+    sget-object v3, Ldef/q4/BQ4;->a:Ljava/nio/charset/Charset;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
 
@@ -1055,21 +1055,21 @@
 
     const-string v3, "getBytes(...)"
 
-    invoke-static {v2, v3}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v3, Lw7/z;->c:Le5/l;
+    sget-object v3, Ldef/w7/ZW7;->c:Ldef/e5/LE5;
 
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    iget-object v4, v3, Le5/l;->i:Ljava/lang/Object;
+    iget-object v4, v3, Ldef/e5/LE5;->i:Ljava/lang/Object;
 
     check-cast v4, Ljavax/crypto/spec/SecretKeySpec;
 
-    iget-object v5, v3, Le5/l;->j:Ljava/lang/Object;
+    iget-object v5, v3, Ldef/e5/LE5;->j:Ljava/lang/Object;
 
     check-cast v5, Ljavax/crypto/spec/IvParameterSpec;
 
-    iget-object v3, v3, Le5/l;->h:Ljava/lang/Object;
+    iget-object v3, v3, Ldef/e5/LE5;->h:Ljava/lang/Object;
 
     check-cast v3, Ljavax/crypto/Cipher;
 
@@ -1083,7 +1083,7 @@
 
     const-string v3, "doFinal(...)"
 
-    invoke-static {v2, v3}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v3, Ljava/io/FileOutputStream;
 
@@ -1094,7 +1094,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-static {v3, v1}, Lh7/b;->G(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v3, v1}, Ldef/h7/BH7;->G(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     return-void
 
@@ -1109,14 +1109,14 @@
     :catchall_1
     move-exception v1
 
-    invoke-static {v3, v0}, Lh7/b;->G(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v3, v0}, Ldef/h7/BH7;->G(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     throw v1
 
     :cond_0
     const-string v0, "file"
 
-    invoke-static {v0}, Li4/h;->j(Ljava/lang/String;)V
+    invoke-static {v0}, Ldef/i4/HI4;->j(Ljava/lang/String;)V
 
     throw v1
 .end method

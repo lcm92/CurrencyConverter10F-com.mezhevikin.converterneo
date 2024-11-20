@@ -4,28 +4,28 @@
 
 
 # direct methods
-.method public static final a(Lra/q;Lwa/p;)Lra/q;
+.method public static final a(Ldef/ra/QRA;Ldef/wa/PWA;)Ldef/ra/QRA;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/focus/FocusRequesterElement;
 
-    invoke-direct {v0, p1}, Landroidx/compose/ui/focus/FocusRequesterElement;-><init>(Lwa/p;)V
+    invoke-direct {v0, p1}, Landroidx/compose/ui/focus/FocusRequesterElement;-><init>(Ldef/wa/PWA;)V
 
-    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v0}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final b(Lra/q;Lh4/c;)Lra/q;
+.method public static final b(Ldef/ra/QRA;Ldef/h4/CH4;)Ldef/ra/QRA;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/focus/FocusChangedElement;
 
-    invoke-direct {v0, p1}, Landroidx/compose/ui/focus/FocusChangedElement;-><init>(Lh4/c;)V
+    invoke-direct {v0, p1}, Landroidx/compose/ui/focus/FocusChangedElement;-><init>(Ldef/h4/CH4;)V
 
-    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
+    invoke-interface {p0, v0}, Ldef/ra/QRA;->i(Ldef/ra/QRA;)Ldef/ra/QRA;
 
     move-result-object p0
 

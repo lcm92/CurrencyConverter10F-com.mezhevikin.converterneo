@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lh2/a;
+.implements Ldef/h2/AH2;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method public abstract synthetic onResume()V
 .end method
 
-.method public abstract requestInterstitialAd(Landroid/content/Context;Lh2/c;Ljava/lang/String;Lg2/d;Landroid/os/Bundle;)V
+.method public abstract requestInterstitialAd(Landroid/content/Context;Ldef/h2/CH2;Ljava/lang/String;Ldef/g2/DG2;Landroid/os/Bundle;)V
 .end method
 
 .method public abstract showInterstitial()V

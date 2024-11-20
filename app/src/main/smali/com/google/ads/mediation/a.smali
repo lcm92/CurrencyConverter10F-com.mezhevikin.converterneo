@@ -10,7 +10,7 @@
 
 .field public c:Ljava/lang/String;
 
-.field public d:Lw2/t;
+.field public d:Ldef/w2/TW2;
 
 .field public e:Ljava/lang/String;
 
@@ -22,7 +22,7 @@
 
 .field public i:Ljava/lang/String;
 
-.field public j:Ly/s;
+.field public j:Ldef/y/SY;
 
 .field public k:Ljava/lang/Object;
 

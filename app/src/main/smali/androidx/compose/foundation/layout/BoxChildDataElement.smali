@@ -1,27 +1,27 @@
 .class final Landroidx/compose/foundation/layout/BoxChildDataElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lra/i;
+.field public final a:Ldef/ra/IRA;
 
 
 # direct methods
-.method public constructor <init>(Lra/i;)V
+.method public constructor <init>(Ldef/ra/IRA;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Lra/i;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Ldef/ra/IRA;
 
     return-void
 .end method
@@ -57,11 +57,11 @@
     return v0
 
     :cond_2
-    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Lra/i;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Ldef/ra/IRA;
 
-    iget-object p1, p1, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Lra/i;
+    iget-object p1, p1, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Ldef/ra/IRA;
 
-    invoke-virtual {v0, p1}, Lra/i;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Ldef/ra/IRA;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -71,9 +71,9 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Lra/i;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Ldef/ra/IRA;
 
-    invoke-virtual {v0}, Lra/i;->hashCode()I
+    invoke-virtual {v0}, Ldef/ra/IRA;->hashCode()I
 
     move-result v0
 
@@ -90,28 +90,28 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lq/k;
+    new-instance v0, Ldef/q/KQ;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
-    iget-object v1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Lra/i;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Ldef/ra/IRA;
 
-    iput-object v1, v0, Lq/k;->t:Lra/i;
+    iput-object v1, v0, Ldef/q/KQ;->t:Ldef/ra/IRA;
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lq/k;
+    check-cast p1, Ldef/q/KQ;
 
-    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Lra/i;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxChildDataElement;->a:Ldef/ra/IRA;
 
-    iput-object v0, p1, Lq/k;->t:Lra/i;
+    iput-object v0, p1, Ldef/q/KQ;->t:Ldef/ra/IRA;
 
     return-void
 .end method

@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method private static getChimeraLifecycleFragmentImpl(Ln2/d;)Ln2/e;
+.method private static getChimeraLifecycleFragmentImpl(Ldef/n2/DN2;)Ldef/n2/EN2;
     .locals 1
 
     new-instance p0, Ljava/lang/IllegalStateException;

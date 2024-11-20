@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public g:Laa/za;
+.field public g:Ldef/aa/ZAAA;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     const-string v1, "activity"
 
-    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ldef/i4/HI4;->e(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v0, p1}, Landroidx/lifecycle/D;->a(Landroid/app/Activity;Landroidx/lifecycle/n;)V
 
@@ -76,7 +76,7 @@
 
     const/4 v0, 0x0
 
-    iput-object v0, p0, Landroidx/lifecycle/F;->g:Laa/za;
+    iput-object v0, p0, Landroidx/lifecycle/F;->g:Ldef/aa/ZAAA;
 
     return-void
 .end method
@@ -98,11 +98,11 @@
 
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
-    iget-object v0, p0, Landroidx/lifecycle/F;->g:Laa/za;
+    iget-object v0, p0, Landroidx/lifecycle/F;->g:Ldef/aa/ZAAA;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, v0, Laa/za;->h:Ljava/lang/Object;
+    iget-object v0, v0, Ldef/aa/ZAAA;->h:Ljava/lang/Object;
 
     check-cast v0, Landroidx/lifecycle/C;
 
@@ -121,11 +121,11 @@
 
     invoke-super {p0}, Landroid/app/Fragment;->onStart()V
 
-    iget-object v0, p0, Landroidx/lifecycle/F;->g:Laa/za;
+    iget-object v0, p0, Landroidx/lifecycle/F;->g:Ldef/aa/ZAAA;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, v0, Laa/za;->h:Ljava/lang/Object;
+    iget-object v0, v0, Ldef/aa/ZAAA;->h:Ljava/lang/Object;
 
     check-cast v0, Landroidx/lifecycle/C;
 

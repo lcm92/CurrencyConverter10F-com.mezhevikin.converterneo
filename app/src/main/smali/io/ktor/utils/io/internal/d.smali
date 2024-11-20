@@ -23,7 +23,7 @@
 
 
 # virtual methods
-.method public final b(ILy8/d;)Ljava/lang/Object;
+.method public final b(ILdef/y8/DY8;)Ljava/lang/Object;
     .locals 0
 
     iget-object p1, p0, Lio/ktor/utils/io/internal/d;->b:Ljava/lang/Throwable;

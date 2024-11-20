@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -50,7 +50,7 @@
 
     iget v2, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
-    invoke-static {v2, v0}, Ll5/e;->a(FF)Z
+    invoke-static {v2, v0}, Ldef/l5/EL5;->a(FF)Z
 
     move-result v0
 
@@ -60,7 +60,7 @@
 
     iget p1, p1, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
-    invoke-static {v0, p1}, Ll5/e;->a(FF)Z
+    invoke-static {v0, p1}, Ldef/l5/EL5;->a(FF)Z
 
     move-result p1
 
@@ -94,36 +94,36 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lq/f0;
+    new-instance v0, Ldef/q/F0Q;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
     iget v1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
-    iput v1, v0, Lq/f0;->t:F
+    iput v1, v0, Ldef/q/F0Q;->t:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
-    iput v1, v0, Lq/f0;->u:F
+    iput v1, v0, Ldef/q/F0Q;->u:F
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lq/f0;
+    check-cast p1, Ldef/q/F0Q;
 
     iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
-    iput v0, p1, Lq/f0;->t:F
+    iput v0, p1, Ldef/q/F0Q;->t:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
-    iput v0, p1, Lq/f0;->u:F
+    iput v0, p1, Ldef/q/F0Q;->u:F
 
     return-void
 .end method

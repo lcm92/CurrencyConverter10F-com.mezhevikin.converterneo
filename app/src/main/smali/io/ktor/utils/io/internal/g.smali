@@ -1,5 +1,5 @@
 .class public final Lio/ktor/utils/io/internal/g;
-.super Lr8/d;
+.super Ldef/r8/DR8;
 .source "SourceFile"
 
 
@@ -11,13 +11,13 @@
 
     const-string v0, "instance"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v0, Lio/ktor/utils/io/internal/h;->b:Lr8/e;
+    sget-object v0, Lio/ktor/utils/io/internal/h;->b:Ldef/r8/ER8;
 
     iget-object p1, p1, Lio/ktor/utils/io/internal/q;->a:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {v0, p1}, Lr8/d;->l(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Ldef/r8/DR8;->l(Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -27,9 +27,9 @@
 
     new-instance v0, Lio/ktor/utils/io/internal/l;
 
-    sget-object v1, Lio/ktor/utils/io/internal/h;->b:Lr8/e;
+    sget-object v1, Lio/ktor/utils/io/internal/h;->b:Ldef/r8/ER8;
 
-    invoke-virtual {v1}, Lr8/d;->o()Ljava/lang/Object;
+    invoke-virtual {v1}, Ldef/r8/DR8;->o()Ljava/lang/Object;
 
     move-result-object v1
 

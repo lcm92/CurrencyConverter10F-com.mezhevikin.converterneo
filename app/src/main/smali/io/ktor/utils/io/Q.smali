@@ -30,19 +30,19 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast p2, Lu8/i;
+    check-cast p2, Ldef/u8/IU8;
 
-    iget-object p2, p2, Lu8/i;->h:Ljava/lang/Object;
+    iget-object p2, p2, Ldef/u8/IU8;->h:Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Float;
 
-    check-cast p1, Lu8/i;
+    check-cast p1, Ldef/u8/IU8;
 
-    iget-object p1, p1, Lu8/i;->h:Ljava/lang/Object;
+    iget-object p1, p1, Ldef/u8/IU8;->h:Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Float;
 
-    invoke-static {p2, p1}, Lo4/j;->o(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    invoke-static {p2, p1}, Ldef/o4/JO4;->o(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 
@@ -51,17 +51,17 @@
     :pswitch_0
     check-cast p1, Ljava/nio/charset/Charset;
 
-    invoke-static {p1}, Lo8/a;->d(Ljava/nio/charset/Charset;)Ljava/lang/String;
+    invoke-static {p1}, Ldef/o8/AO8;->d(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object p1
 
     check-cast p2, Ljava/nio/charset/Charset;
 
-    invoke-static {p2}, Lo8/a;->d(Ljava/nio/charset/Charset;)Ljava/lang/String;
+    invoke-static {p2}, Ldef/o8/AO8;->d(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object p2
 
-    invoke-static {p1, p2}, Lo4/j;->o(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    invoke-static {p1, p2}, Ldef/o4/JO4;->o(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 
@@ -92,7 +92,7 @@
 
     move-result-object p1
 
-    invoke-static {p2, p1}, Lo4/j;->o(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    invoke-static {p2, p1}, Ldef/o4/JO4;->o(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 

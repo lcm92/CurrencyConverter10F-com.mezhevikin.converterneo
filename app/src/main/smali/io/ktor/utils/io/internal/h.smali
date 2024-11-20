@@ -6,7 +6,7 @@
 # static fields
 .field public static final a:I
 
-.field public static final b:Lr8/e;
+.field public static final b:Ldef/r8/ER8;
 
 .field public static final c:Lio/ktor/utils/io/internal/g;
 
@@ -21,7 +21,7 @@
 
     const/16 v1, 0x1000
 
-    invoke-static {v0, v1}, Li0/c;->x(Ljava/lang/String;I)I
+    invoke-static {v0, v1}, Ldef/i0/CI0;->x(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -31,7 +31,7 @@
 
     const/16 v2, 0x800
 
-    invoke-static {v1, v2}, Li0/c;->x(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, Ldef/i0/CI0;->x(Ljava/lang/String;I)I
 
     move-result v1
 
@@ -39,19 +39,19 @@
 
     const/16 v3, 0x400
 
-    invoke-static {v2, v3}, Li0/c;->x(Ljava/lang/String;I)I
+    invoke-static {v2, v3}, Ldef/i0/CI0;->x(Ljava/lang/String;I)I
 
     move-result v2
 
-    new-instance v3, Lr8/e;
+    new-instance v3, Ldef/r8/ER8;
 
-    invoke-direct {v3, v1, v0}, Lr8/e;-><init>(II)V
+    invoke-direct {v3, v1, v0}, Ldef/r8/ER8;-><init>(II)V
 
-    sput-object v3, Lio/ktor/utils/io/internal/h;->b:Lr8/e;
+    sput-object v3, Lio/ktor/utils/io/internal/h;->b:Ldef/r8/ER8;
 
     new-instance v0, Lio/ktor/utils/io/internal/g;
 
-    invoke-direct {v0, v2}, Lr8/d;-><init>(I)V
+    invoke-direct {v0, v2}, Ldef/r8/DR8;-><init>(I)V
 
     sput-object v0, Lio/ktor/utils/io/internal/h;->c:Lio/ktor/utils/io/internal/g;
 

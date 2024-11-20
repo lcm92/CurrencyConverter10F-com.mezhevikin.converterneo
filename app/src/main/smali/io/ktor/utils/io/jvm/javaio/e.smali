@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lu8/n;
+.field public static final a:Ldef/u8/NU8;
 
 
 # direct methods
@@ -13,11 +13,11 @@
 
     sget-object v0, Lio/ktor/utils/io/jvm/javaio/d;->h:Lio/ktor/utils/io/jvm/javaio/d;
 
-    invoke-static {v0}, Lu8/a;->d(Lh4/a;)Lu8/n;
+    invoke-static {v0}, Ldef/u8/AU8;->d(Ldef/h4/AH4;)Ldef/u8/NU8;
 
     move-result-object v0
 
-    sput-object v0, Lio/ktor/utils/io/jvm/javaio/e;->a:Lu8/n;
+    sput-object v0, Lio/ktor/utils/io/jvm/javaio/e;->a:Ldef/u8/NU8;
 
     return-void
 .end method

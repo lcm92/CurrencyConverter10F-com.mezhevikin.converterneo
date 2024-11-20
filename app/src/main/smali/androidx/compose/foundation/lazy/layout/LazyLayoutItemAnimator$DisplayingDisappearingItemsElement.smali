@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$DisplayingDisappearingItemsElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -53,7 +53,7 @@
 
     iget-object p1, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$DisplayingDisappearingItemsElement;->a:Landroidx/compose/foundation/lazy/layout/a;
 
-    invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -77,48 +77,48 @@
     return v0
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Ls/m;
+    new-instance v0, Ldef/s/MS;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
     iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$DisplayingDisappearingItemsElement;->a:Landroidx/compose/foundation/lazy/layout/a;
 
-    iput-object v1, v0, Ls/m;->t:Landroidx/compose/foundation/lazy/layout/a;
+    iput-object v1, v0, Ldef/s/MS;->t:Landroidx/compose/foundation/lazy/layout/a;
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 2
 
-    check-cast p1, Ls/m;
+    check-cast p1, Ldef/s/MS;
 
-    iget-object v0, p1, Ls/m;->t:Landroidx/compose/foundation/lazy/layout/a;
+    iget-object v0, p1, Ldef/s/MS;->t:Landroidx/compose/foundation/lazy/layout/a;
 
     iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator$DisplayingDisappearingItemsElement;->a:Landroidx/compose/foundation/lazy/layout/a;
 
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p1, Lra/p;->g:Lra/p;
+    iget-object v0, p1, Ldef/ra/PRA;->g:Ldef/ra/PRA;
 
-    iget-boolean v0, v0, Lra/p;->s:Z
+    iget-boolean v0, v0, Ldef/ra/PRA;->s:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p1, Ls/m;->t:Landroidx/compose/foundation/lazy/layout/a;
+    iget-object v0, p1, Ldef/s/MS;->t:Landroidx/compose/foundation/lazy/layout/a;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/lazy/layout/a;->c()V
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    iput-object v1, p1, Ls/m;->t:Landroidx/compose/foundation/lazy/layout/a;
+    iput-object v1, p1, Ldef/s/MS;->t:Landroidx/compose/foundation/lazy/layout/a;
 
     :cond_0
     return-void

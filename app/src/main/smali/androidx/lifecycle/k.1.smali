@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lp1/c;
+.implements Ldef/p1/CP1;
 
 
 # direct methods

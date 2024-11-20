@@ -319,7 +319,7 @@
     move-object v7, p2
 
     :goto_0
-    new-instance p2, La8/ha;
+    new-instance p2, Ldef/a8/HAA8;
 
     int-to-long v2, p1
 
@@ -331,7 +331,7 @@
 
     move-object v1, p2
 
-    invoke-direct/range {v1 .. v7}, La8/ha;-><init>(JJILjava/lang/IndexOutOfBoundsException;)V
+    invoke-direct/range {v1 .. v7}, Ldef/a8/HAA8;-><init>(JJILjava/lang/IndexOutOfBoundsException;)V
 
     throw p2
 .end method

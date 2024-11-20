@@ -65,16 +65,16 @@
 
     if-eqz v1, :cond_0
 
-    invoke-static {v0}, Ls1/a;->c(Landroid/content/Context;)Ls1/a;
+    invoke-static {v0}, Ldef/s1/AS1;->c(Landroid/content/Context;)Ldef/s1/AS1;
 
     move-result-object v0
 
-    iget-object v1, v0, Ls1/a;->c:Landroid/content/Context;
+    iget-object v1, v0, Ldef/s1/AS1;->c:Landroid/content/Context;
 
     :try_start_0
     const-string v2, "Startup"
 
-    invoke-static {v2}, Lp3/e;->b(Ljava/lang/String;)V
+    invoke-static {v2}, Ldef/p3/EP3;->b(Ljava/lang/String;)V
 
     new-instance v2, Landroid/content/ComponentName;
 
@@ -102,7 +102,7 @@
 
     iget-object v1, v1, Landroid/content/pm/ProviderInfo;->metaData:Landroid/os/Bundle;
 
-    invoke-virtual {v0, v1}, Ls1/a;->a(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Ldef/s1/AS1;->a(Landroid/os/Bundle;)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -120,7 +120,7 @@
     move-exception v0
 
     :try_start_1
-    new-instance v1, Lg7/c;
+    new-instance v1, Ldef/g7/CG7;
 
     invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
@@ -140,7 +140,7 @@
     return v0
 
     :cond_1
-    new-instance v0, Lg7/c;
+    new-instance v0, Ldef/g7/CG7;
 
     const-string v1, "Context cannot be null"
 

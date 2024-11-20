@@ -10,7 +10,7 @@
 # instance fields
 .field public final a:Ljava/lang/Object;
 
-.field public final b:Lh/f;
+.field public final b:Ldef/h/FH;
 
 .field public volatile c:Ljava/lang/Object;
 
@@ -20,7 +20,7 @@
 
 .field public f:Z
 
-.field public final g:Li6/a;
+.field public final g:Ldef/i6/AI6;
 
 
 # direct methods
@@ -47,23 +47,23 @@
 
     iput-object v0, p0, Landroidx/lifecycle/y;->a:Ljava/lang/Object;
 
-    new-instance v0, Lh/f;
+    new-instance v0, Ldef/h/FH;
 
-    invoke-direct {v0}, Lh/f;-><init>()V
+    invoke-direct {v0}, Ldef/h/FH;-><init>()V
 
-    iput-object v0, p0, Landroidx/lifecycle/y;->b:Lh/f;
+    iput-object v0, p0, Landroidx/lifecycle/y;->b:Ldef/h/FH;
 
     sget-object v0, Landroidx/lifecycle/y;->h:Ljava/lang/Object;
 
     iput-object v0, p0, Landroidx/lifecycle/y;->d:Ljava/lang/Object;
 
-    new-instance v1, Li6/a;
+    new-instance v1, Ldef/i6/AI6;
 
     const/4 v2, 0x4
 
-    invoke-direct {v1, v2, p0}, Li6/a;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Ldef/i6/AI6;-><init>(ILjava/lang/Object;)V
 
-    iput-object v1, p0, Landroidx/lifecycle/y;->g:Li6/a;
+    iput-object v1, p0, Landroidx/lifecycle/y;->g:Ldef/i6/AI6;
 
     iput-object v0, p0, Landroidx/lifecycle/y;->c:Ljava/lang/Object;
 
@@ -75,11 +75,11 @@
 .method public final a(Ljava/lang/Object;)V
     .locals 3
 
-    invoke-static {}, Lg/b;->G0()Lg/b;
+    invoke-static {}, Ldef/g/BG;->G0()Ldef/g/BG;
 
     move-result-object v0
 
-    iget-object v0, v0, Lg/b;->a:Lg/c;
+    iget-object v0, v0, Ldef/g/BG;->a:Ldef/g/CG;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -117,21 +117,21 @@
 
     iput-boolean p1, p0, Landroidx/lifecycle/y;->f:Z
 
-    iget-object v0, p0, Landroidx/lifecycle/y;->b:Lh/f;
+    iget-object v0, p0, Landroidx/lifecycle/y;->b:Ldef/h/FH;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v1, Lh/d;
+    new-instance v1, Ldef/h/DH;
 
-    invoke-direct {v1, v0}, Lh/d;-><init>(Lh/f;)V
+    invoke-direct {v1, v0}, Ldef/h/DH;-><init>(Ldef/h/FH;)V
 
-    iget-object v0, v0, Lh/f;->i:Ljava/util/WeakHashMap;
+    iget-object v0, v0, Ldef/h/FH;->i:Ljava/util/WeakHashMap;
 
     sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     invoke-virtual {v0, v1, v2}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v1}, Lh/d;->hasNext()Z
+    invoke-virtual {v1}, Ldef/h/DH;->hasNext()Z
 
     move-result v0
 
@@ -147,7 +147,7 @@
     return-void
 
     :cond_2
-    invoke-virtual {v1}, Lh/d;->next()Ljava/lang/Object;
+    invoke-virtual {v1}, Ldef/h/DH;->next()Ljava/lang/Object;
 
     move-result-object p1
 

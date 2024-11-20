@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/WrapContentElement;
-.super Lq0/sa;
+.super Ldef/q0/SAQ0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/sa;"
+        "Ldef/q0/SAQ0;"
     }
 .end annotation
 
@@ -16,13 +16,13 @@
 
 .field public final b:Z
 
-.field public final c:Li4/i;
+.field public final c:Ldef/i4/II4;
 
 .field public final d:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(IZLh4/e;Ljava/lang/Object;)V
+.method public constructor <init>(IZLdef/h4/EH4;Ljava/lang/Object;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -31,9 +31,9 @@
 
     iput-boolean p2, p0, Landroidx/compose/foundation/layout/WrapContentElement;->b:Z
 
-    check-cast p3, Li4/i;
+    check-cast p3, Ldef/i4/II4;
 
-    iput-object p3, p0, Landroidx/compose/foundation/layout/WrapContentElement;->c:Li4/i;
+    iput-object p3, p0, Landroidx/compose/foundation/layout/WrapContentElement;->c:Ldef/i4/II4;
 
     iput-object p4, p0, Landroidx/compose/foundation/layout/WrapContentElement;->d:Ljava/lang/Object;
 
@@ -94,7 +94,7 @@
 
     iget-object p1, p1, Landroidx/compose/foundation/layout/WrapContentElement;->d:Ljava/lang/Object;
 
-    invoke-static {v2, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, Ldef/i4/HI4;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -111,7 +111,7 @@
 
     iget v0, p0, Landroidx/compose/foundation/layout/WrapContentElement;->a:I
 
-    invoke-static {v0}, Ll/i;->b(I)I
+    invoke-static {v0}, Ldef/l/IL;->b(I)I
 
     move-result v0
 
@@ -121,7 +121,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/layout/WrapContentElement;->b:Z
 
-    invoke-static {v0, v1, v2}, Lk/pa;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Ldef/k/PAK;->c(IIZ)I
 
     move-result v0
 
@@ -136,44 +136,44 @@
     return v1
 .end method
 
-.method public final j()Lra/p;
+.method public final j()Ldef/ra/PRA;
     .locals 2
 
-    new-instance v0, Lq/m0;
+    new-instance v0, Ldef/q/M0Q;
 
-    invoke-direct {v0}, Lra/p;-><init>()V
+    invoke-direct {v0}, Ldef/ra/PRA;-><init>()V
 
     iget v1, p0, Landroidx/compose/foundation/layout/WrapContentElement;->a:I
 
-    iput v1, v0, Lq/m0;->t:I
+    iput v1, v0, Ldef/q/M0Q;->t:I
 
     iget-boolean v1, p0, Landroidx/compose/foundation/layout/WrapContentElement;->b:Z
 
-    iput-boolean v1, v0, Lq/m0;->u:Z
+    iput-boolean v1, v0, Ldef/q/M0Q;->u:Z
 
-    iget-object v1, p0, Landroidx/compose/foundation/layout/WrapContentElement;->c:Li4/i;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/WrapContentElement;->c:Ldef/i4/II4;
 
-    iput-object v1, v0, Lq/m0;->v:Li4/i;
+    iput-object v1, v0, Ldef/q/M0Q;->v:Ldef/i4/II4;
 
     return-object v0
 .end method
 
-.method public final k(Lra/p;)V
+.method public final k(Ldef/ra/PRA;)V
     .locals 1
 
-    check-cast p1, Lq/m0;
+    check-cast p1, Ldef/q/M0Q;
 
     iget v0, p0, Landroidx/compose/foundation/layout/WrapContentElement;->a:I
 
-    iput v0, p1, Lq/m0;->t:I
+    iput v0, p1, Ldef/q/M0Q;->t:I
 
     iget-boolean v0, p0, Landroidx/compose/foundation/layout/WrapContentElement;->b:Z
 
-    iput-boolean v0, p1, Lq/m0;->u:Z
+    iput-boolean v0, p1, Ldef/q/M0Q;->u:Z
 
-    iget-object v0, p0, Landroidx/compose/foundation/layout/WrapContentElement;->c:Li4/i;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/WrapContentElement;->c:Ldef/i4/II4;
 
-    iput-object v0, p1, Lq/m0;->v:Li4/i;
+    iput-object v0, p1, Ldef/q/M0Q;->v:Ldef/i4/II4;
 
     return-void
 .end method

@@ -28,26 +28,26 @@
     return-void
 .end method
 
-.method public static final a(Lh4/a;Z)Lra/q;
+.method public static final a(Ldef/h4/AH4;Z)Ldef/ra/QRA;
     .locals 1
 
-    sget-object v0, Lra/n;->a:Lra/n;
+    sget-object v0, Ldef/ra/NRA;->a:Ldef/ra/NRA;
 
     if-eqz p1, :cond_0
 
-    sget-boolean p1, Lx/d;->a:Z
+    sget-boolean p1, Ldef/x/DX;->a:Z
 
     if-eqz p1, :cond_0
 
     new-instance p1, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;
 
-    invoke-direct {p1, p0}, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;-><init>(Lh4/a;)V
+    invoke-direct {p1, p0}, Landroidx/compose/foundation/text/handwriting/StylusHandwritingElementWithNegativePadding;-><init>(Ldef/h4/AH4;)V
 
     sget p0, Landroidx/compose/foundation/text/handwriting/a;->b:F
 
     sget v0, Landroidx/compose/foundation/text/handwriting/a;->a:F
 
-    invoke-static {p1, p0, v0}, Landroidx/compose/foundation/layout/b;->c(Lra/q;FF)Lra/q;
+    invoke-static {p1, p0, v0}, Landroidx/compose/foundation/layout/b;->c(Ldef/ra/QRA;FF)Ldef/ra/QRA;
 
     move-result-object v0
 

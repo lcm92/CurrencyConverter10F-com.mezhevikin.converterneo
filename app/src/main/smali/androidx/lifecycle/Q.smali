@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Li1/b;
+.field public final a:Ldef/i1/BI1;
 
 
 # direct methods
@@ -13,11 +13,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, Li1/b;
+    new-instance v0, Ldef/i1/BI1;
 
-    invoke-direct {v0}, Li1/b;-><init>()V
+    invoke-direct {v0}, Ldef/i1/BI1;-><init>()V
 
-    iput-object v0, p0, Landroidx/lifecycle/Q;->a:Li1/b;
+    iput-object v0, p0, Landroidx/lifecycle/Q;->a:Ldef/i1/BI1;
 
     return-void
 .end method
@@ -29,25 +29,25 @@
 
     const-string v0, "androidx.lifecycle.savedstate.vm.tag"
 
-    iget-object v1, p0, Landroidx/lifecycle/Q;->a:Li1/b;
+    iget-object v1, p0, Landroidx/lifecycle/Q;->a:Ldef/i1/BI1;
 
     if-eqz v1, :cond_1
 
-    iget-boolean v2, v1, Li1/b;->d:Z
+    iget-boolean v2, v1, Ldef/i1/BI1;->d:Z
 
     if-eqz v2, :cond_0
 
-    invoke-static {p1}, Li1/b;->a(Ljava/lang/AutoCloseable;)V
+    invoke-static {p1}, Ldef/i1/BI1;->a(Ljava/lang/AutoCloseable;)V
 
     goto :goto_0
 
     :cond_0
-    iget-object v2, v1, Li1/b;->a:Li1/c;
+    iget-object v2, v1, Ldef/i1/BI1;->a:Ldef/i1/CI1;
 
     monitor-enter v2
 
     :try_start_0
-    iget-object v1, v1, Li1/b;->b:Ljava/util/LinkedHashMap;
+    iget-object v1, v1, Ldef/i1/BI1;->b:Ljava/util/LinkedHashMap;
 
     invoke-interface {v1, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -59,7 +59,7 @@
 
     monitor-exit v2
 
-    invoke-static {p1}, Li1/b;->a(Ljava/lang/AutoCloseable;)V
+    invoke-static {p1}, Ldef/i1/BI1;->a(Ljava/lang/AutoCloseable;)V
 
     goto :goto_0
 
@@ -78,11 +78,11 @@
 .method public final b()V
     .locals 4
 
-    iget-object v0, p0, Landroidx/lifecycle/Q;->a:Li1/b;
+    iget-object v0, p0, Landroidx/lifecycle/Q;->a:Ldef/i1/BI1;
 
     if-eqz v0, :cond_3
 
-    iget-boolean v1, v0, Li1/b;->d:Z
+    iget-boolean v1, v0, Ldef/i1/BI1;->d:Z
 
     if-eqz v1, :cond_0
 
@@ -91,14 +91,14 @@
     :cond_0
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Li1/b;->d:Z
+    iput-boolean v1, v0, Ldef/i1/BI1;->d:Z
 
-    iget-object v1, v0, Li1/b;->a:Li1/c;
+    iget-object v1, v0, Ldef/i1/BI1;->a:Ldef/i1/CI1;
 
     monitor-enter v1
 
     :try_start_0
-    iget-object v2, v0, Li1/b;->b:Ljava/util/LinkedHashMap;
+    iget-object v2, v0, Ldef/i1/BI1;->b:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v2}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
@@ -121,7 +121,7 @@
 
     check-cast v3, Ljava/lang/AutoCloseable;
 
-    invoke-static {v3}, Li1/b;->a(Ljava/lang/AutoCloseable;)V
+    invoke-static {v3}, Ldef/i1/BI1;->a(Ljava/lang/AutoCloseable;)V
 
     goto :goto_0
 
@@ -131,7 +131,7 @@
     goto :goto_2
 
     :cond_1
-    iget-object v2, v0, Li1/b;->c:Ljava/util/LinkedHashSet;
+    iget-object v2, v0, Ldef/i1/BI1;->c:Ljava/util/LinkedHashSet;
 
     invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -150,12 +150,12 @@
 
     check-cast v3, Ljava/lang/AutoCloseable;
 
-    invoke-static {v3}, Li1/b;->a(Ljava/lang/AutoCloseable;)V
+    invoke-static {v3}, Ldef/i1/BI1;->a(Ljava/lang/AutoCloseable;)V
 
     goto :goto_1
 
     :cond_2
-    iget-object v0, v0, Li1/b;->c:Ljava/util/LinkedHashSet;
+    iget-object v0, v0, Ldef/i1/BI1;->c:Ljava/util/LinkedHashSet;
 
     invoke-interface {v0}, Ljava/util/Set;->clear()V
     :try_end_0

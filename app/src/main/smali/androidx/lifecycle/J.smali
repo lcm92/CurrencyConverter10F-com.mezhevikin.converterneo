@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public final c(Ljava/lang/Class;Lg1/b;)Landroidx/lifecycle/Q;
+.method public final c(Ljava/lang/Class;Ldef/g1/BG1;)Landroidx/lifecycle/Q;
     .locals 0
 
     new-instance p1, Landroidx/lifecycle/M;

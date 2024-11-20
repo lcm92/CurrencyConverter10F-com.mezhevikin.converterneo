@@ -1,9 +1,9 @@
 .class public final Lio/ktor/utils/io/C;
-.super Li4/i;
+.super Ldef/i4/II4;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/c;
+.implements Ldef/h4/CH4;
 
 
 # instance fields
@@ -22,7 +22,7 @@
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+    invoke-direct {p0, p1}, Ldef/i4/II4;-><init>(I)V
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     const-string v0, "it"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
 
@@ -66,12 +66,12 @@
 
     iget-object p1, p0, Lio/ktor/utils/io/C;->i:Ljava/lang/Object;
 
-    check-cast p1, Li4/o;
+    check-cast p1, Ldef/i4/OI4;
 
-    iput-boolean v1, p1, Li4/o;->g:Z
+    iput-boolean v1, p1, Ldef/i4/OI4;->g:Z
 
     :cond_0
-    sget-object p1, Lu8/y;->a:Lu8/y;
+    sget-object p1, Ldef/u8/YU8;->a:Ldef/u8/YU8;
 
     return-object p1
 
@@ -84,7 +84,7 @@
 
     invoke-interface {v0, p1}, Lio/ktor/utils/io/L;->a(Ljava/lang/Throwable;)Z
 
-    sget-object p1, Lu8/y;->a:Lu8/y;
+    sget-object p1, Ldef/u8/YU8;->a:Ldef/u8/YU8;
 
     return-object p1
 
@@ -142,16 +142,16 @@
     invoke-virtual {v0, p1}, Lio/ktor/utils/io/D;->a(Ljava/lang/Throwable;)Z
 
     :goto_2
-    sget-object p1, Lu8/y;->a:Lu8/y;
+    sget-object p1, Ldef/u8/YU8;->a:Ldef/u8/YU8;
 
     return-object p1
 
     :pswitch_2
-    check-cast p1, Ly8/d;
+    check-cast p1, Ldef/y8/DY8;
 
     const-string v0, "ucont"
 
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ldef/i4/HI4;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p0, Lio/ktor/utils/io/C;->i:Ljava/lang/Object;
 
@@ -184,9 +184,9 @@
 
     if-nez v1, :cond_5
 
-    sget-object v1, Lu8/y;->a:Lu8/y;
+    sget-object v1, Ldef/u8/YU8;->a:Ldef/u8/YU8;
 
-    invoke-interface {p1, v1}, Ly8/d;->s(Ljava/lang/Object;)V
+    invoke-interface {p1, v1}, Ldef/y8/DY8;->s(Ljava/lang/Object;)V
 
     goto :goto_5
 
@@ -195,7 +195,7 @@
 
     check-cast v1, Lio/ktor/utils/io/D;
 
-    invoke-static {p1}, Ll9/d;->C(Ly8/d;)Ly8/d;
+    invoke-static {p1}, Ldef/l9/DL9;->C(Ldef/y8/DY8;)Ldef/y8/DY8;
 
     move-result-object v3
 
@@ -206,7 +206,7 @@
     :goto_4
     iget-object v5, v1, Lio/ktor/utils/io/D;->_writeOp:Ljava/lang/Object;
 
-    check-cast v5, Ly8/d;
+    check-cast v5, Ldef/y8/DY8;
 
     if-nez v5, :cond_c
 
@@ -266,7 +266,7 @@
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    sget-object p1, Lz8/a;->g:Lz8/a;
+    sget-object p1, Ldef/z8/AZ8;->g:Ldef/z8/AZ8;
 
     return-object p1
 
@@ -293,7 +293,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Li0/c;->p(Ljava/lang/Throwable;)V
+    invoke-static {p1}, Ldef/i0/CI0;->p(Ljava/lang/Throwable;)V
 
     throw v2
 
