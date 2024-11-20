@@ -1,198 +1,86 @@
-.class public final LR/f;
+.class public final Lr/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LR/d;
-
 
 # instance fields
-.field public final a:F
+.field public final a:Laa/l;
 
 
 # direct methods
-.method public constructor <init>(F)V
-    .locals 0
+.method public constructor <init>(Lh4/c;)V
+    .locals 2
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, LR/f;->a:F
+    new-instance v0, Laa/l;
+
+    const/4 v1, 0x6
+
+    invoke-direct {v0, v1}, Laa/l;-><init>(I)V
+
+    iput-object v0, p0, Lr/f;->a:Laa/l;
+
+    invoke-interface {p1, p0}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(JJLL0/k;)J
-    .locals 3
+.method public final a(ILh4/c;Lh4/c;Lna/a;)V
+    .locals 1
 
-    const/16 p5, 0x20
+    new-instance v0, Lo2/b;
 
-    shr-long v0, p3, p5
+    invoke-direct {v0, p2, p3, p4}, Lo2/b;-><init>(Lh4/c;Lh4/c;Lna/a;)V
 
-    long-to-int v0, v0
+    iget-object p2, p0, Lr/f;->a:Laa/l;
 
-    shr-long v1, p1, p5
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    long-to-int v1, v1
+    if-ltz p1, :cond_1
 
-    sub-int/2addr v0, v1
+    if-nez p1, :cond_0
 
-    const-wide v1, 0xffffffffL
-
-    and-long/2addr p3, v1
-
-    long-to-int p3, p3
-
-    and-long/2addr p1, v1
-
-    long-to-int p1, p1
-
-    sub-int/2addr p3, p1
-
-    invoke-static {v0, p3}, LL4/d;->b(II)J
-
-    move-result-wide p1
-
-    shr-long p3, p1, p5
-
-    long-to-int p3, p3
-
-    int-to-float p3, p3
-
-    const/high16 p4, 0x40000000    # 2.0f
-
-    div-float/2addr p3, p4
-
-    and-long/2addr p1, v1
-
-    long-to-int p1, p1
-
-    int-to-float p1, p1
-
-    div-float/2addr p1, p4
-
-    const/4 p2, 0x1
-
-    int-to-float p2, p2
-
-    iget p4, p0, LR/f;->a:F
-
-    add-float/2addr p4, p2
-
-    mul-float/2addr p4, p3
-
-    const/high16 p3, -0x40800000    # -1.0f
-
-    add-float/2addr p2, p3
-
-    mul-float/2addr p2, p1
-
-    invoke-static {p4}, Ljava/lang/Math;->round(F)I
-
-    move-result p1
-
-    invoke-static {p2}, Ljava/lang/Math;->round(F)I
-
-    move-result p2
-
-    invoke-static {p1, p2}, LH2/b;->j(II)J
-
-    move-result-wide p1
-
-    return-wide p1
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    const/4 v0, 0x1
-
-    if-ne p0, p1, :cond_0
-
-    return v0
+    goto :goto_0
 
     :cond_0
-    instance-of v1, p1, LR/f;
+    new-instance p3, Ls/h;
 
-    const/4 v2, 0x0
+    iget p4, p2, Laa/l;->h:I
 
-    if-nez v1, :cond_1
+    invoke-direct {p3, p4, p1, v0}, Ls/h;-><init>(IILo2/b;)V
 
-    return v2
+    iget p4, p2, Laa/l;->h:I
+
+    add-int/2addr p4, p1
+
+    iput p4, p2, Laa/l;->h:I
+
+    iget-object p1, p2, Laa/l;->i:Ljava/lang/Object;
+
+    check-cast p1, Lha/d;
+
+    invoke-virtual {p1, p3}, Lha/d;->b(Ljava/lang/Object;)V
+
+    :goto_0
+    return-void
 
     :cond_1
-    check-cast p1, LR/f;
+    const-string p2, "size should be >=0, but was "
 
-    iget p1, p1, LR/f;->a:F
+    invoke-static {p2, p1}, Laa/m;->g(Ljava/lang/String;I)Ljava/lang/String;
 
-    iget v1, p0, LR/f;->a:F
+    move-result-object p1
 
-    invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
+    new-instance p2, Ljava/lang/IllegalArgumentException;
 
-    move-result p1
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    if-eqz p1, :cond_2
+    move-result-object p1
 
-    return v2
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    :cond_2
-    const/high16 p1, -0x40800000    # -1.0f
-
-    invoke-static {p1, p1}, Ljava/lang/Float;->compare(FF)I
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    return v2
-
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    iget v0, p0, LR/f;->a:F
-
-    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
-
-    move-result v0
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    const/high16 v1, -0x40800000    # -1.0f
-
-    invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
-
-    move-result v1
-
-    add-int/2addr v1, v0
-
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "BiasAbsoluteAlignment(horizontalBias="
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget v1, p0, LR/f;->a:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    const-string v1, ", verticalBias=-1.0)"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    throw p2
 .end method

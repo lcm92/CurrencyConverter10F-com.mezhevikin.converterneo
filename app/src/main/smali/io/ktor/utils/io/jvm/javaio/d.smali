@@ -32,7 +32,7 @@
 
     const/4 v0, 0x1
 
-    sget v1, LJ4/b;->a:I
+    sget v1, Lj9/b;->a:I
 
     const-class v1, Lio/ktor/utils/io/jvm/javaio/c;
 
@@ -40,15 +40,15 @@
 
     move-result-object v2
 
-    invoke-static {v2}, LJ4/b;->d(Ljava/lang/String;)LJ4/a;
+    invoke-static {v2}, Lj9/b;->d(Ljava/lang/String;)Lj9/a;
 
     move-result-object v2
 
-    sget-boolean v3, LJ4/b;->d:Z
+    sget-boolean v3, Lj9/b;->d:Z
 
     if-eqz v3, :cond_6
 
-    sget-object v3, LL4/d;->b:LL4/c;
+    sget-object v3, Ll9/d;->b:Ll9/c;
 
     const/4 v4, 0x0
 
@@ -57,7 +57,7 @@
     goto :goto_1
 
     :cond_0
-    sget-boolean v3, LL4/d;->c:Z
+    sget-boolean v3, Ll9/d;->c:Z
 
     if-eqz v3, :cond_1
 
@@ -67,7 +67,7 @@
 
     :cond_1
     :try_start_0
-    new-instance v3, LL4/c;
+    new-instance v3, Ll9/c;
 
     invoke-direct {v3}, Ljava/lang/SecurityManager;-><init>()V
     :try_end_0
@@ -79,9 +79,9 @@
     move-object v3, v4
 
     :goto_0
-    sput-object v3, LL4/d;->b:LL4/c;
+    sput-object v3, Ll9/d;->b:Ll9/c;
 
-    sput-boolean v0, LL4/d;->c:Z
+    sput-boolean v0, Ll9/d;->c:Z
 
     :goto_1
     if-nez v3, :cond_2
@@ -89,11 +89,11 @@
     goto :goto_4
 
     :cond_2
-    invoke-virtual {v3}, LL4/c;->getClassContext()[Ljava/lang/Class;
+    invoke-virtual {v3}, Ll9/c;->getClassContext()[Ljava/lang/Class;
 
     move-result-object v3
 
-    const-class v4, LL4/d;
+    const-class v4, Ll9/d;
 
     invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -148,7 +148,7 @@
 
     if-nez v0, :cond_6
 
-    invoke-interface {v2}, LJ4/a;->b()Ljava/lang/String;
+    invoke-interface {v2}, Lj9/a;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -178,11 +178,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, LL4/d;->L(Ljava/lang/String;)V
+    invoke-static {v0}, Ll9/d;->L(Ljava/lang/String;)V
 
     const-string v0, "See http://www.slf4j.org/codes.html#loggerNameMismatch for an explanation"
 
-    invoke-static {v0}, LL4/d;->L(Ljava/lang/String;)V
+    invoke-static {v0}, Ll9/d;->L(Ljava/lang/String;)V
 
     goto :goto_5
 

@@ -1,5 +1,5 @@
 .class public final Ls4/x0;
-.super LY3/a;
+.super Ly8/a;
 .source "SourceFile"
 
 

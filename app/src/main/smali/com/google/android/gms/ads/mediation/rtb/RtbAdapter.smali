@@ -69,7 +69,7 @@
 
     move-result-object p1
 
-    new-instance v0, LJ1/t;
+    new-instance v0, Lj6/t;
 
     invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -87,9 +87,9 @@
 
     const-string v3, "com.google.android.gms.ads"
 
-    invoke-direct {v0, v2, p1, v3, v1}, LJ1/t;-><init>(ILjava/lang/String;Ljava/lang/String;LJ1/t;)V
+    invoke-direct {v0, v2, p1, v3, v1}, Lj6/t;-><init>(ILjava/lang/String;Ljava/lang/String;Lj6/t;)V
 
-    invoke-interface {p2, v0}, Lg2/c;->l(LJ1/t;)V
+    invoke-interface {p2, v0}, Lg2/c;->l(Lj6/t;)V
 
     return-void
 .end method

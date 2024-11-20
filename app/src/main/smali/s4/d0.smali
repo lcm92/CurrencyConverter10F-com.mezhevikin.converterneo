@@ -39,7 +39,7 @@
 
     invoke-virtual {p0, p1}, Ls4/d0;->r(Ljava/lang/Throwable;)V
 
-    sget-object p1, LU3/y;->a:LU3/y;
+    sget-object p1, Lu8/y;->a:Lu8/y;
 
     return-object p1
 .end method
@@ -74,7 +74,7 @@
 
     const/4 v6, 0x1
 
-    invoke-static {v3, v5, v4, v6}, Ls4/y;->p(Ls4/X;ZLh4/c;I)Ls4/G;
+    invoke-static {v3, v5, v4, v6}, Ls4/y;->p(Ls4/xa;ZLh4/c;I)Ls4/ga;
 
     move-result-object v3
 

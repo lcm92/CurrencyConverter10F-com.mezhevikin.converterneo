@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method public static a(I[Ljava/lang/Object;LA/l;)Lcom/google/android/gms/internal/play_billing/Z;
+.method public static a(I[Ljava/lang/Object;Laa/l;)Lcom/google/android/gms/internal/play_billing/Z;
     .locals 16
 
     move/from16 v0, p0
@@ -533,7 +533,7 @@
 
     if-eqz v2, :cond_14
 
-    iput-object v0, v2, LA/l;->j:Ljava/lang/Object;
+    iput-object v0, v2, Laa/l;->j:Ljava/lang/Object;
 
     aget-object v0, v4, v5
 

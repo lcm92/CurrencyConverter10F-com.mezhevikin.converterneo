@@ -4,16 +4,16 @@
 
 
 # instance fields
-.field public final transient g:LY3/i;
+.field public final transient g:Ly8/i;
 
 
 # direct methods
-.method public constructor <init>(LY3/i;)V
+.method public constructor <init>(Ly8/i;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
 
-    iput-object p1, p0, Lx4/f;->g:LY3/i;
+    iput-object p1, p0, Lx4/f;->g:Ly8/i;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 .method public final getLocalizedMessage()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lx4/f;->g:LY3/i;
+    iget-object v0, p0, Lx4/f;->g:Ly8/i;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

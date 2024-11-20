@@ -1,236 +1,86 @@
-.class public final LL4/b;
-.super Ljava/lang/Object;
+.class public final Ll4/b;
+.super Ljava/lang/ThreadLocal;
 .source "SourceFile"
-
-# interfaces
-.implements LJ4/a;
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
-
-.field public volatile h:LJ4/a;
-
-.field public i:Ljava/lang/Boolean;
-
-.field public j:Ljava/lang/reflect/Method;
-
-.field public k:LK4/a;
-
-.field public final l:Ljava/util/concurrent/LinkedBlockingQueue;
-
-.field public final m:Z
+.field public final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/util/concurrent/LinkedBlockingQueue;Z)V
+.method public synthetic constructor <init>(I)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p1, p0, Ll4/b;->a:I
 
-    iput-object p1, p0, LL4/b;->g:Ljava/lang/String;
-
-    iput-object p2, p0, LL4/b;->l:Ljava/util/concurrent/LinkedBlockingQueue;
-
-    iput-boolean p3, p0, LL4/b;->m:Z
+    invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)V
-    .locals 1
-
-    invoke-virtual {p0}, LL4/b;->d()LJ4/a;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, LJ4/a;->a(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, LL4/b;->g:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final c(Ljava/lang/String;)V
-    .locals 1
-
-    invoke-virtual {p0}, LL4/b;->d()LJ4/a;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, LJ4/a;->c(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public final d()LJ4/a;
-    .locals 2
-
-    iget-object v0, p0, LL4/b;->h:LJ4/a;
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, LL4/b;->h:LJ4/a;
-
-    return-object v0
-
-    :cond_0
-    iget-boolean v0, p0, LL4/b;->m:Z
-
-    if-eqz v0, :cond_1
-
-    sget-object v0, LL4/a;->g:LL4/a;
-
-    return-object v0
-
-    :cond_1
-    iget-object v0, p0, LL4/b;->k:LK4/a;
-
-    if-nez v0, :cond_2
-
-    new-instance v0, LK4/a;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p0, v0, LK4/a;->h:LL4/b;
-
-    iget-object v1, p0, LL4/b;->g:Ljava/lang/String;
-
-    iput-object v1, v0, LK4/a;->g:Ljava/lang/String;
-
-    iget-object v1, p0, LL4/b;->l:Ljava/util/concurrent/LinkedBlockingQueue;
-
-    iput-object v1, v0, LK4/a;->i:Ljava/util/concurrent/LinkedBlockingQueue;
-
-    iput-object v0, p0, LL4/b;->k:LK4/a;
-
-    :cond_2
-    iget-object v0, p0, LL4/b;->k:LK4/a;
-
-    return-object v0
-.end method
-
-.method public final e()Z
+.method public final initialValue()Ljava/lang/Object;
     .locals 3
 
-    iget-object v0, p0, LL4/b;->i:Ljava/lang/Boolean;
+    iget v0, p0, Ll4/b;->a:I
 
-    if-eqz v0, :cond_0
+    packed-switch v0, :pswitch_data_0
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    const-wide/16 v0, 0x0
 
-    move-result v0
-
-    return v0
-
-    :cond_0
-    :try_start_0
-    iget-object v0, p0, LL4/b;->h:LJ4/a;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
 
-    const-string v1, "log"
+    return-object v0
 
-    const-class v2, LK4/b;
+    :pswitch_0
+    new-instance v0, Lr0/wa;
 
-    filled-new-array {v2}, [Ljava/lang/Class;
+    invoke-static {}, Landroid/view/Choreographer;->getInstance()Landroid/view/Choreographer;
+
+    move-result-object v1
+
+    invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    if-eqz v2, :cond_0
+
+    invoke-static {v2}, Lh7/b;->I(Landroid/os/Looper;)Landroid/os/Handler;
+
+    move-result-object v2
+
+    invoke-direct {v0, v1, v2}, Lr0/wa;-><init>(Landroid/view/Choreographer;Landroid/os/Handler;)V
+
+    iget-object v1, v0, Lr0/wa;->r:Lfa/l0;
+
+    invoke-static {v0, v1}, Lk4/a;->W(Ly8/g;Ly8/i;)Ly8/i;
 
     move-result-object v0
 
-    iput-object v0, p0, LL4/b;->j:Ljava/lang/reflect/Method;
-
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    iput-object v0, p0, LL4/b;->i:Ljava/lang/Boolean;
-    :try_end_0
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    iput-object v0, p0, LL4/b;->i:Ljava/lang/Boolean;
-
-    :goto_0
-    iget-object v0, p0, LL4/b;->i:Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    const/4 v0, 0x1
-
-    if-ne p0, p1, :cond_0
-
-    return v0
+    return-object v0
 
     :cond_0
-    const/4 v1, 0x0
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    if-eqz p1, :cond_3
+    const-string v1, "no Looper on this thread"
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    throw v0
 
-    const-class v3, LL4/b;
+    :pswitch_1
+    new-instance v0, Ljava/util/Random;
 
-    if-eq v3, v2, :cond_1
+    invoke-direct {v0}, Ljava/util/Random;-><init>()V
 
-    goto :goto_0
+    return-object v0
 
-    :cond_1
-    check-cast p1, LL4/b;
-
-    iget-object v2, p0, LL4/b;->g:Ljava/lang/String;
-
-    iget-object p1, p1, LL4/b;->g:Ljava/lang/String;
-
-    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_2
-
-    return v1
-
-    :cond_2
-    return v0
-
-    :cond_3
-    :goto_0
-    return v1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    iget-object v0, p0, LL4/b;->g:Ljava/lang/String;
-
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    move-result v0
-
-    return v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

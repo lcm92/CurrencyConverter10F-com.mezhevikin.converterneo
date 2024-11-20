@@ -1,61 +1,58 @@
-.class public final LP0/a;
-.super Ljava/lang/Object;
+.class public final Lp0/a;
+.super Lp0/d;
 .source "SourceFile"
 
 
-# static fields
-.field public static final b:LP0/a;
-
-.field public static final c:LP0/a;
-
-
 # instance fields
-.field public final a:Ljava/util/concurrent/CancellationException;
+.field public a:Ls/l;
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+# virtual methods
+.method public final b(Lp0/f;)Z
+    .locals 1
 
-    sget-boolean v0, LP0/g;->j:Z
+    iget-object v0, p0, Lp0/a;->a:Ls/l;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    if-eqz v0, :cond_0
+    sget-object v0, Lo0/f;->a:Lp0/f;
 
-    sput-object v1, LP0/a;->c:LP0/a;
+    if-ne p1, v0, :cond_0
 
-    sput-object v1, LP0/a;->b:LP0/a;
+    const/4 p1, 0x1
 
     goto :goto_0
 
     :cond_0
-    new-instance v0, LP0/a;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v2, v1}, LP0/a;-><init>(ZLjava/util/concurrent/CancellationException;)V
-
-    sput-object v0, LP0/a;->c:LP0/a;
-
-    new-instance v0, LP0/a;
-
-    const/4 v2, 0x1
-
-    invoke-direct {v0, v2, v1}, LP0/a;-><init>(ZLjava/util/concurrent/CancellationException;)V
-
-    sput-object v0, LP0/a;->b:LP0/a;
+    const/4 p1, 0x0
 
     :goto_0
-    return-void
+    return p1
 .end method
 
-.method public constructor <init>(ZLjava/util/concurrent/CancellationException;)V
-    .locals 0
+.method public final e(Lp0/f;)Ljava/lang/Object;
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object v0, p0, Lp0/a;->a:Ls/l;
 
-    iput-object p2, p0, LP0/a;->a:Ljava/util/concurrent/CancellationException;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    return-void
+    sget-object v0, Lo0/f;->a:Lp0/f;
+
+    if-ne p1, v0, :cond_0
+
+    iget-object p1, p0, Lp0/a;->a:Ls/l;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    return-object p1
+
+    :cond_0
+    const-string p1, "Check failed."
+
+    invoke-static {p1}, Li0/c;->N(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method

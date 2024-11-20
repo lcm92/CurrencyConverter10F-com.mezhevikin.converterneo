@@ -1,806 +1,605 @@
-.class public abstract LY/v;
+.class public final Ly/v;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# instance fields
+.field public final a:Ly/c;
+
+.field public final b:Ly/s;
+
+.field public final c:Ljava/lang/Object;
+
+.field public d:Z
+
+.field public e:Z
+
+.field public f:Z
+
+.field public g:Z
+
+.field public h:Z
+
+.field public i:Z
+
+.field public j:Lf5/w;
+
+.field public k:Lz0/ca;
+
+.field public l:Lca/q;
+
+.field public m:Lxa/d;
+
+.field public n:Lxa/d;
+
+.field public final o:Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+.field public final p:[F
+
+.field public final q:Landroid/graphics/Matrix;
+
+
 # direct methods
-.method public static final a(LZ/c;)Landroid/graphics/ColorSpace;
-    .locals 23
+.method public constructor <init>(Ly/c;Ly/s;)V
+    .locals 0
 
-    move-object/from16 v0, p0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sget-object v1, LZ/d;->c:LZ/q;
+    iput-object p1, p0, Ly/v;->a:Ly/c;
 
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iput-object p2, p0, Ly/v;->b:Ly/s;
 
-    move-result v1
+    new-instance p1, Ljava/lang/Object;
 
-    if-eqz v1, :cond_0
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->SRGB:Landroid/graphics/ColorSpace$Named;
+    iput-object p1, p0, Ly/v;->c:Ljava/lang/Object;
 
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
+    new-instance p1, Landroid/view/inputmethod/CursorAnchorInfo$Builder;
 
-    move-result-object v0
+    invoke-direct {p1}, Landroid/view/inputmethod/CursorAnchorInfo$Builder;-><init>()V
 
-    goto/16 :goto_2
+    iput-object p1, p0, Ly/v;->o:Landroid/view/inputmethod/CursorAnchorInfo$Builder;
 
-    :cond_0
-    sget-object v1, LZ/d;->o:LZ/q;
+    invoke-static {}, Lya/ba;->a()[F
 
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    move-result-object p1
 
-    move-result v1
+    iput-object p1, p0, Ly/v;->p:[F
 
-    if-eqz v1, :cond_1
+    new-instance p1, Landroid/graphics/Matrix;
 
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->ACES:Landroid/graphics/ColorSpace$Named;
+    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
 
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
+    iput-object p1, p0, Ly/v;->q:Landroid/graphics/Matrix;
 
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_1
-    sget-object v1, LZ/d;->p:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->ACESCG:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_2
-    sget-object v1, LZ/d;->m:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->ADOBE_RGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_3
-    sget-object v1, LZ/d;->h:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_4
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->BT2020:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_4
-    sget-object v1, LZ/d;->g:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_5
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->BT709:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_5
-    sget-object v1, LZ/d;->r:LZ/k;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_6
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->CIE_LAB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_6
-    sget-object v1, LZ/d;->q:LZ/k;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_7
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->CIE_XYZ:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_7
-    sget-object v1, LZ/d;->i:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_8
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->DCI_P3:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_8
-    sget-object v1, LZ/d;->j:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_9
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->DISPLAY_P3:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_9
-    sget-object v1, LZ/d;->e:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_a
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->EXTENDED_SRGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_a
-    sget-object v1, LZ/d;->f:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_b
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->LINEAR_EXTENDED_SRGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_b
-    sget-object v1, LZ/d;->d:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_c
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->LINEAR_SRGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_c
-    sget-object v1, LZ/d;->k:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_d
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->NTSC_1953:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_d
-    sget-object v1, LZ/d;->n:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_e
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->PRO_PHOTO_RGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_e
-    sget-object v1, LZ/d;->l:LZ/q;
-
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_f
-
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->SMPTE_C:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    goto/16 :goto_2
-
-    :cond_f
-    instance-of v1, v0, LZ/q;
-
-    if-eqz v1, :cond_12
-
-    move-object v1, v0
-
-    check-cast v1, LZ/q;
-
-    iget-object v2, v1, LZ/q;->d:LZ/s;
-
-    invoke-virtual {v2}, LZ/s;->a()[F
-
-    move-result-object v6
-
-    iget-object v2, v1, LZ/q;->g:LZ/r;
-
-    if-eqz v2, :cond_10
-
-    new-instance v3, Landroid/graphics/ColorSpace$Rgb$TransferParameters;
-
-    iget-wide v4, v2, LZ/r;->g:D
-
-    iget-wide v14, v2, LZ/r;->a:D
-
-    iget-wide v8, v2, LZ/r;->b:D
-
-    iget-wide v10, v2, LZ/r;->c:D
-
-    iget-wide v12, v2, LZ/r;->d:D
-
-    move-wide/from16 v16, v14
-
-    iget-wide v14, v2, LZ/r;->e:D
-
-    move-object/from16 v22, v1
-
-    iget-wide v1, v2, LZ/r;->f:D
-
-    move-object v7, v3
-
-    move-wide/from16 v20, v16
-
-    move-wide/from16 v16, v1
-
-    move-wide/from16 v18, v4
-
-    invoke-direct/range {v7 .. v21}, Landroid/graphics/ColorSpace$Rgb$TransferParameters;-><init>(DDDDDDD)V
-
-    goto :goto_0
-
-    :cond_10
-    move-object/from16 v22, v1
-
-    const/4 v3, 0x0
-
-    :goto_0
-    if-eqz v3, :cond_11
-
-    new-instance v1, Landroid/graphics/ColorSpace$Rgb;
-
-    iget-object v0, v0, LZ/c;->a:Ljava/lang/String;
-
-    move-object/from16 v2, v22
-
-    iget-object v2, v2, LZ/q;->h:[F
-
-    invoke-direct {v1, v0, v2, v6, v3}, Landroid/graphics/ColorSpace$Rgb;-><init>(Ljava/lang/String;[F[FLandroid/graphics/ColorSpace$Rgb$TransferParameters;)V
-
-    :goto_1
-    move-object v0, v1
-
-    goto :goto_2
-
-    :cond_11
-    move-object/from16 v2, v22
-
-    new-instance v1, Landroid/graphics/ColorSpace$Rgb;
-
-    iget-object v4, v0, LZ/c;->a:Ljava/lang/String;
-
-    iget-object v3, v2, LZ/q;->l:LZ/p;
-
-    new-instance v7, LY/t;
-
-    const/4 v5, 0x0
-
-    invoke-direct {v7, v3, v5}, LY/t;-><init>(Li4/i;I)V
-
-    new-instance v8, LY/t;
-
-    iget-object v3, v2, LZ/q;->o:LZ/p;
-
-    const/4 v5, 0x1
-
-    invoke-direct {v8, v3, v5}, LY/t;-><init>(Li4/i;I)V
-
-    check-cast v0, LZ/q;
-
-    iget v9, v0, LZ/q;->e:F
-
-    iget v10, v0, LZ/q;->f:F
-
-    iget-object v5, v2, LZ/q;->h:[F
-
-    move-object v3, v1
-
-    invoke-direct/range {v3 .. v10}, Landroid/graphics/ColorSpace$Rgb;-><init>(Ljava/lang/String;[F[FLjava/util/function/DoubleUnaryOperator;Ljava/util/function/DoubleUnaryOperator;FF)V
-
-    goto :goto_1
-
-    :cond_12
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->SRGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-static {v0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    move-result-object v0
-
-    :goto_2
-    return-object v0
+    return-void
 .end method
 
-.method public static final b(Landroid/graphics/ColorSpace;)LZ/c;
-    .locals 27
+
+# virtual methods
+.method public final a()V
+    .locals 26
 
     move-object/from16 v0, p0
 
-    invoke-virtual/range {p0 .. p0}, Landroid/graphics/ColorSpace;->getId()I
+    iget-object v1, v0, Ly/v;->b:Ly/s;
 
-    move-result v1
-
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->SRGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_0
-
-    sget-object v0, LZ/d;->c:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_0
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->ACES:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_1
-
-    sget-object v0, LZ/d;->o:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_1
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->ACESCG:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_2
-
-    sget-object v0, LZ/d;->p:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_2
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->ADOBE_RGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_3
-
-    sget-object v0, LZ/d;->m:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_3
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->BT2020:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_4
-
-    sget-object v0, LZ/d;->h:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_4
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->BT709:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_5
-
-    sget-object v0, LZ/d;->g:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_5
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->CIE_LAB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_6
-
-    sget-object v0, LZ/d;->r:LZ/k;
-
-    goto/16 :goto_3
-
-    :cond_6
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->CIE_XYZ:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_7
-
-    sget-object v0, LZ/d;->q:LZ/k;
-
-    goto/16 :goto_3
-
-    :cond_7
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->DCI_P3:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_8
-
-    sget-object v0, LZ/d;->i:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_8
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->DISPLAY_P3:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_9
-
-    sget-object v0, LZ/d;->j:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_9
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->EXTENDED_SRGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_a
-
-    sget-object v0, LZ/d;->e:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_a
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->LINEAR_EXTENDED_SRGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_b
-
-    sget-object v0, LZ/d;->f:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_b
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->LINEAR_SRGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_c
-
-    sget-object v0, LZ/d;->d:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_c
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->NTSC_1953:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_d
-
-    sget-object v0, LZ/d;->k:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_d
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->PRO_PHOTO_RGB:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_e
-
-    sget-object v0, LZ/d;->n:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_e
-    sget-object v2, Landroid/graphics/ColorSpace$Named;->SMPTE_C:Landroid/graphics/ColorSpace$Named;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_f
-
-    sget-object v0, LZ/d;->l:LZ/q;
-
-    goto/16 :goto_3
-
-    :cond_f
-    instance-of v1, v0, Landroid/graphics/ColorSpace$Rgb;
-
-    if-eqz v1, :cond_12
-
-    move-object v1, v0
-
-    check-cast v1, Landroid/graphics/ColorSpace$Rgb;
-
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getTransferParameters()Landroid/graphics/ColorSpace$Rgb$TransferParameters;
+    invoke-virtual {v1}, Ly/s;->p()Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v2
 
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getWhitePoint()[F
+    iget-object v3, v1, Ly/s;->h:Ljava/lang/Object;
 
-    move-result-object v3
+    check-cast v3, Landroid/view/View;
 
-    array-length v3, v3
+    invoke-virtual {v2, v3}, Landroid/view/inputmethod/InputMethodManager;->isActive(Landroid/view/View;)Z
 
-    const/4 v4, 0x3
+    move-result v2
 
-    const/4 v5, 0x1
+    if-eqz v2, :cond_17
 
-    const/4 v6, 0x0
+    iget-object v2, v0, Ly/v;->j:Lf5/w;
 
-    if-ne v3, v4, :cond_10
+    if-eqz v2, :cond_17
 
-    new-instance v3, LZ/s;
+    iget-object v2, v0, Ly/v;->l:Lca/q;
 
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getWhitePoint()[F
+    if-eqz v2, :cond_17
 
-    move-result-object v4
+    iget-object v2, v0, Ly/v;->k:Lz0/ca;
 
-    aget v4, v4, v6
+    if-eqz v2, :cond_17
 
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getWhitePoint()[F
+    iget-object v2, v0, Ly/v;->m:Lxa/d;
 
-    move-result-object v7
+    if-eqz v2, :cond_17
 
-    aget v5, v7, v5
+    iget-object v2, v0, Ly/v;->n:Lxa/d;
 
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getWhitePoint()[F
+    if-nez v2, :cond_0
 
-    move-result-object v7
+    goto/16 :goto_f
 
-    const/4 v8, 0x2
+    :cond_0
+    iget-object v2, v0, Ly/v;->p:[F
 
-    aget v7, v7, v8
+    invoke-static {v2}, Lya/ba;->d([F)V
 
-    add-float v8, v4, v5
+    iget-object v4, v0, Ly/v;->a:Ly/c;
 
-    add-float/2addr v8, v7
+    iget-object v4, v4, Ly/c;->o:Ly/u;
 
-    div-float/2addr v4, v8
+    iget-object v4, v4, Ly/u;->w:Lfa/j0;
 
-    div-float/2addr v5, v8
-
-    invoke-direct {v3, v4, v5}, LZ/s;-><init>(FF)V
-
-    :goto_0
-    move-object v10, v3
-
-    goto :goto_1
-
-    :cond_10
-    new-instance v3, LZ/s;
-
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getWhitePoint()[F
+    invoke-virtual {v4}, Lfa/j0;->getValue()Ljava/lang/Object;
 
     move-result-object v4
 
-    aget v4, v4, v6
+    check-cast v4, Lo0/p;
 
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getWhitePoint()[F
+    if-eqz v4, :cond_3
 
-    move-result-object v7
+    invoke-interface {v4}, Lo0/p;->o()Z
 
-    aget v5, v7, v5
+    move-result v5
 
-    invoke-direct {v3, v4, v5}, LZ/s;-><init>(FF)V
+    if-eqz v5, :cond_1
 
     goto :goto_0
 
+    :cond_1
+    const/4 v4, 0x0
+
+    :goto_0
+    if-nez v4, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    invoke-interface {v4, v2}, Lo0/p;->s([F)V
+
+    :cond_3
     :goto_1
-    if-eqz v2, :cond_11
+    iget-object v4, v0, Ly/v;->n:Lxa/d;
 
-    new-instance v3, LZ/r;
+    invoke-static {v4}, Li4/h;->c(Ljava/lang/Object;)V
 
-    iget-wide v12, v2, Landroid/graphics/ColorSpace$Rgb$TransferParameters;->g:D
+    iget v4, v4, Lxa/d;->a:F
 
-    iget-wide v14, v2, Landroid/graphics/ColorSpace$Rgb$TransferParameters;->a:D
+    neg-float v4, v4
 
-    iget-wide v4, v2, Landroid/graphics/ColorSpace$Rgb$TransferParameters;->b:D
+    iget-object v5, v0, Ly/v;->n:Lxa/d;
 
-    iget-wide v7, v2, Landroid/graphics/ColorSpace$Rgb$TransferParameters;->c:D
+    invoke-static {v5}, Li4/h;->c(Ljava/lang/Object;)V
 
-    move-wide/from16 v18, v7
+    iget v5, v5, Lxa/d;->b:F
 
-    iget-wide v6, v2, Landroid/graphics/ColorSpace$Rgb$TransferParameters;->d:D
+    neg-float v5, v5
 
-    move-object/from16 v26, v10
+    const/4 v6, 0x0
 
-    iget-wide v9, v2, Landroid/graphics/ColorSpace$Rgb$TransferParameters;->e:D
+    invoke-static {v2, v4, v5, v6}, Lya/ba;->h([FFFF)V
 
-    move-wide/from16 v22, v9
+    iget-object v4, v0, Ly/v;->q:Landroid/graphics/Matrix;
 
-    iget-wide v8, v2, Landroid/graphics/ColorSpace$Rgb$TransferParameters;->f:D
+    invoke-static {v4, v2}, Lya/ha;->w(Landroid/graphics/Matrix;[F)V
 
-    move-object v11, v3
+    iget-object v2, v0, Ly/v;->j:Lf5/w;
 
-    move-wide/from16 v16, v4
+    invoke-static {v2}, Li4/h;->c(Ljava/lang/Object;)V
 
-    move-wide/from16 v20, v6
+    iget-object v5, v0, Ly/v;->l:Lca/q;
 
-    move-wide/from16 v24, v8
+    invoke-static {v5}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-direct/range {v11 .. v25}, LZ/r;-><init>(DDDDDDD)V
+    iget-object v7, v0, Ly/v;->k:Lz0/ca;
 
-    move-object/from16 v16, v3
+    invoke-static {v7}, Li4/h;->c(Ljava/lang/Object;)V
 
-    goto :goto_2
+    iget-object v8, v0, Ly/v;->m:Lxa/d;
 
-    :cond_11
-    move-object/from16 v26, v10
+    invoke-static {v8}, Li4/h;->c(Ljava/lang/Object;)V
 
-    const/4 v2, 0x0
+    iget-object v9, v0, Ly/v;->n:Lxa/d;
 
-    move-object/from16 v16, v2
+    invoke-static {v9}, Li4/h;->c(Ljava/lang/Object;)V
 
-    :goto_2
-    new-instance v2, LZ/q;
+    iget-boolean v10, v0, Ly/v;->f:Z
 
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace;->getName()Ljava/lang/String;
+    iget-boolean v11, v0, Ly/v;->g:Z
 
-    move-result-object v8
+    iget-boolean v12, v0, Ly/v;->h:Z
 
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getPrimaries()[F
+    iget-boolean v13, v0, Ly/v;->i:Z
 
-    move-result-object v9
+    iget-object v15, v0, Ly/v;->o:Landroid/view/inputmethod/CursorAnchorInfo$Builder;
 
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getTransform()[F
+    invoke-virtual {v15}, Landroid/view/inputmethod/CursorAnchorInfo$Builder;->reset()V
 
-    move-result-object v11
+    invoke-virtual {v15, v4}, Landroid/view/inputmethod/CursorAnchorInfo$Builder;->setMatrix(Landroid/graphics/Matrix;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
 
-    new-instance v12, LY/u;
+    move-object/from16 v21, v7
 
-    const/4 v3, 0x0
+    iget-wide v6, v2, Lf5/w;->b:J
 
-    invoke-direct {v12, v0, v3}, LY/u;-><init>(Landroid/graphics/ColorSpace;I)V
-
-    new-instance v13, LY/u;
-
-    const/4 v3, 0x1
-
-    invoke-direct {v13, v0, v3}, LY/u;-><init>(Landroid/graphics/ColorSpace;I)V
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v0, v3}, Landroid/graphics/ColorSpace;->getMinValue(I)F
+    invoke-static {v6, v7}, Lz0/ea;->e(J)I
 
     move-result v14
 
-    invoke-virtual {v0, v3}, Landroid/graphics/ColorSpace;->getMaxValue(I)F
+    invoke-static {v6, v7}, Lz0/ea;->d(J)I
 
-    move-result v15
+    move-result v6
 
-    invoke-virtual {v1}, Landroid/graphics/ColorSpace;->getId()I
+    invoke-virtual {v15, v14, v6}, Landroid/view/inputmethod/CursorAnchorInfo$Builder;->setSelectionRange(II)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
 
-    move-result v17
+    sget-object v6, Lk5/f;->h:Lk5/f;
 
-    move-object v7, v2
+    if-eqz v10, :cond_b
 
-    move-object/from16 v10, v26
+    if-gez v14, :cond_4
 
-    invoke-direct/range {v7 .. v17}, LZ/q;-><init>(Ljava/lang/String;[FLZ/s;[FLZ/i;LZ/i;FFLZ/r;I)V
+    goto :goto_6
 
-    move-object v0, v2
+    :cond_4
+    invoke-virtual {v5, v14}, Lca/q;->a(I)I
+
+    move-object/from16 v10, v21
+
+    invoke-virtual {v10, v14}, Lz0/ca;->c(I)Lxa/d;
+
+    move-result-object v7
+
+    const/16 v17, 0x20
+
+    move-object/from16 v22, v5
+
+    iget-wide v4, v10, Lz0/ca;->c:J
+
+    shr-long v4, v4, v17
+
+    long-to-int v4, v4
+
+    int-to-float v4, v4
+
+    iget v5, v7, Lxa/d;->a:F
+
+    const/4 v0, 0x0
+
+    invoke-static {v5, v0, v4}, Lk4/a;->y(FFF)F
+
+    move-result v0
+
+    iget v4, v7, Lxa/d;->b:F
+
+    invoke-static {v8, v0, v4}, Lp3/e;->g(Lxa/d;FF)Z
+
+    move-result v4
+
+    iget v5, v7, Lxa/d;->d:F
+
+    invoke-static {v8, v0, v5}, Lp3/e;->g(Lxa/d;FF)Z
+
+    move-result v5
+
+    invoke-virtual {v10, v14}, Lz0/ca;->a(I)Lk5/f;
+
+    move-result-object v14
+
+    if-ne v14, v6, :cond_5
+
+    const/4 v14, 0x1
+
+    goto :goto_2
+
+    :cond_5
+    const/4 v14, 0x0
+
+    :goto_2
+    if-nez v4, :cond_7
+
+    if-eqz v5, :cond_6
 
     goto :goto_3
 
-    :cond_12
-    sget-object v0, LZ/d;->c:LZ/q;
+    :cond_6
+    const/16 v16, 0x0
 
+    goto :goto_4
+
+    :cond_7
     :goto_3
-    return-object v0
+    const/16 v16, 0x1
+
+    :goto_4
+    if-eqz v4, :cond_8
+
+    if-nez v5, :cond_9
+
+    :cond_8
+    or-int/lit8 v16, v16, 0x2
+
+    :cond_9
+    if-eqz v14, :cond_a
+
+    or-int/lit8 v4, v16, 0x4
+
+    move/from16 v19, v4
+
+    goto :goto_5
+
+    :cond_a
+    move/from16 v19, v16
+
+    :goto_5
+    iget v4, v7, Lxa/d;->b:F
+
+    iget v5, v7, Lxa/d;->d:F
+
+    move-object v14, v15
+
+    move-object v7, v15
+
+    move v15, v0
+
+    move/from16 v16, v4
+
+    move/from16 v17, v5
+
+    move/from16 v18, v5
+
+    invoke-virtual/range {v14 .. v19}, Landroid/view/inputmethod/CursorAnchorInfo$Builder;->setInsertionMarkerLocation(FFFFI)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+    goto :goto_7
+
+    :cond_b
+    :goto_6
+    move-object/from16 v22, v5
+
+    move-object v7, v15
+
+    move-object/from16 v10, v21
+
+    :goto_7
+    if-eqz v11, :cond_14
+
+    const/4 v0, -0x1
+
+    iget-object v4, v2, Lf5/w;->c:Lz0/ea;
+
+    if-eqz v4, :cond_c
+
+    iget-wide v14, v4, Lz0/ea;->a:J
+
+    invoke-static {v14, v15}, Lz0/ea;->e(J)I
+
+    move-result v5
+
+    goto :goto_8
+
+    :cond_c
+    move v5, v0
+
+    :goto_8
+    if-eqz v4, :cond_d
+
+    iget-wide v14, v4, Lz0/ea;->a:J
+
+    invoke-static {v14, v15}, Lz0/ea;->d(J)I
+
+    move-result v0
+
+    :cond_d
+    if-ltz v5, :cond_14
+
+    if-ge v5, v0, :cond_14
+
+    iget-object v2, v2, Lf5/w;->a:Lz0/f;
+
+    iget-object v2, v2, Lz0/f;->g:Ljava/lang/String;
+
+    invoke-virtual {v2, v5, v0}, Ljava/lang/String;->subSequence(II)Ljava/lang/CharSequence;
+
+    move-result-object v2
+
+    invoke-virtual {v7, v5, v2}, Landroid/view/inputmethod/CursorAnchorInfo$Builder;->setComposingText(ILjava/lang/CharSequence;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+    move-object/from16 v2, v22
+
+    invoke-virtual {v2, v5}, Lca/q;->a(I)I
+
+    invoke-virtual {v2, v0}, Lca/q;->a(I)I
+
+    sub-int v4, v0, v5
+
+    mul-int/lit8 v4, v4, 0x4
+
+    new-array v4, v4, [F
+
+    invoke-static {v5, v0}, Lp3/e;->a(II)J
+
+    move-result-wide v14
+
+    iget-object v11, v10, Lz0/ca;->b:Lz0/l;
+
+    invoke-virtual {v11, v14, v15, v4}, Lz0/l;->a(J[F)V
+
+    move v11, v5
+
+    :goto_9
+    if-ge v11, v0, :cond_14
+
+    invoke-virtual {v2, v11}, Lca/q;->a(I)I
+
+    sub-int v14, v11, v5
+
+    mul-int/lit8 v14, v14, 0x4
+
+    aget v15, v4, v14
+
+    add-int/lit8 v16, v14, 0x1
+
+    move/from16 v22, v0
+
+    aget v0, v4, v16
+
+    add-int/lit8 v16, v14, 0x2
+
+    move-object/from16 v23, v2
+
+    aget v2, v4, v16
+
+    add-int/lit8 v14, v14, 0x3
+
+    aget v14, v4, v14
+
+    move-object/from16 v24, v4
+
+    iget v4, v8, Lxa/d;->c:F
+
+    cmpg-float v4, v4, v15
+
+    if-lez v4, :cond_10
+
+    iget v4, v8, Lxa/d;->a:F
+
+    cmpg-float v4, v2, v4
+
+    if-gtz v4, :cond_e
+
+    goto :goto_a
+
+    :cond_e
+    iget v4, v8, Lxa/d;->d:F
+
+    cmpg-float v4, v4, v0
+
+    if-lez v4, :cond_10
+
+    iget v4, v8, Lxa/d;->b:F
+
+    cmpg-float v4, v14, v4
+
+    if-gtz v4, :cond_f
+
+    goto :goto_a
+
+    :cond_f
+    const/4 v4, 0x1
+
+    goto :goto_b
+
+    :cond_10
+    :goto_a
+    const/4 v4, 0x0
+
+    :goto_b
+    invoke-static {v8, v15, v0}, Lp3/e;->g(Lxa/d;FF)Z
+
+    move-result v16
+
+    if-eqz v16, :cond_12
+
+    invoke-static {v8, v2, v14}, Lp3/e;->g(Lxa/d;FF)Z
+
+    move-result v16
+
+    if-nez v16, :cond_11
+
+    goto :goto_d
+
+    :cond_11
+    :goto_c
+    move/from16 v25, v5
+
+    goto :goto_e
+
+    :cond_12
+    :goto_d
+    or-int/lit8 v4, v4, 0x2
+
+    goto :goto_c
+
+    :goto_e
+    invoke-virtual {v10, v11}, Lz0/ca;->a(I)Lk5/f;
+
+    move-result-object v5
+
+    if-ne v5, v6, :cond_13
+
+    or-int/lit8 v4, v4, 0x4
+
+    :cond_13
+    move/from16 v20, v4
+
+    move v4, v14
+
+    move-object v14, v7
+
+    move v5, v15
+
+    move v15, v11
+
+    move/from16 v16, v5
+
+    move/from16 v17, v0
+
+    move/from16 v18, v2
+
+    move/from16 v19, v4
+
+    invoke-virtual/range {v14 .. v20}, Landroid/view/inputmethod/CursorAnchorInfo$Builder;->addCharacterBounds(IFFFFI)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+    add-int/lit8 v11, v11, 0x1
+
+    move/from16 v0, v22
+
+    move-object/from16 v2, v23
+
+    move-object/from16 v4, v24
+
+    move/from16 v5, v25
+
+    goto :goto_9
+
+    :cond_14
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v2, 0x21
+
+    if-lt v0, v2, :cond_15
+
+    if-eqz v12, :cond_15
+
+    invoke-static {v7, v9}, Ly/i;->a(Landroid/view/inputmethod/CursorAnchorInfo$Builder;Lxa/d;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+    :cond_15
+    const/16 v2, 0x22
+
+    if-lt v0, v2, :cond_16
+
+    if-eqz v13, :cond_16
+
+    invoke-static {v7, v10, v8}, Ly/j;->a(Landroid/view/inputmethod/CursorAnchorInfo$Builder;Lz0/ca;Lxa/d;)Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+    :cond_16
+    invoke-virtual {v7}, Landroid/view/inputmethod/CursorAnchorInfo$Builder;->build()Landroid/view/inputmethod/CursorAnchorInfo;
+
+    move-result-object v0
+
+    invoke-virtual {v1}, Ly/s;->p()Landroid/view/inputmethod/InputMethodManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3, v0}, Landroid/view/inputmethod/InputMethodManager;->updateCursorAnchorInfo(Landroid/view/View;Landroid/view/inputmethod/CursorAnchorInfo;)V
+
+    const/4 v1, 0x0
+
+    move-object/from16 v0, p0
+
+    iput-boolean v1, v0, Ly/v;->e:Z
+
+    :cond_17
+    :goto_f
+    return-void
 .end method

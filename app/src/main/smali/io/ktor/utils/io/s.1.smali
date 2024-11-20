@@ -1508,9 +1508,9 @@
 
     invoke-virtual {v1, v6}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    sget-object v2, Lio/ktor/utils/io/internal/h;->b:LR3/e;
+    sget-object v2, Lio/ktor/utils/io/internal/h;->b:Lr8/e;
 
-    invoke-virtual {v2, v4}, LR3/d;->l(Ljava/lang/Object;)V
+    invoke-virtual {v2, v4}, Lr8/d;->l(Ljava/lang/Object;)V
 
     const/4 v2, 0x0
 
@@ -1665,9 +1665,9 @@
 
     if-ge v2, v4, :cond_4d
 
-    sget-object v2, Lio/ktor/utils/io/internal/h;->b:LR3/e;
+    sget-object v2, Lio/ktor/utils/io/internal/h;->b:Lr8/e;
 
-    invoke-virtual {v2}, LR3/d;->o()Ljava/lang/Object;
+    invoke-virtual {v2}, Lr8/d;->o()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -1703,17 +1703,17 @@
     goto :goto_22
 
     :cond_4e
-    new-instance v1, LO3/c;
+    new-instance v1, Lo8/c;
 
     const-string v2, "Line is longer than limit"
 
-    invoke-direct {v1, v2}, LO3/b;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lo8/b;-><init>(Ljava/lang/String;)V
 
     throw v1
 
     :cond_4f
     :goto_22
-    sget-object v1, LU3/y;->a:LU3/y;
+    sget-object v1, Lu8/y;->a:Lu8/y;
 
     return-object v1
 

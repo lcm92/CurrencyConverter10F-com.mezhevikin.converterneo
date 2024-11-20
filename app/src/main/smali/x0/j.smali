@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method public static a(LR/q;Lh4/c;)LR/q;
+.method public static a(Lra/q;Lh4/c;)Lra/q;
     .locals 2
 
     new-instance v0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;
@@ -31,7 +31,7 @@
 
     invoke-direct {v0, p1, v1}, Landroidx/compose/ui/semantics/AppendedSemanticsElement;-><init>(Lh4/c;Z)V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 

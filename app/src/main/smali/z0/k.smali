@@ -1,3 +1,3 @@
-.class public abstract LZ0/k;
-.super Lo4/j;
+.class public abstract Lz0/k;
+.super Ljava/lang/Object;
 .source "SourceFile"

@@ -1,32 +1,72 @@
-.class public interface abstract LR/o;
-.super Ljava/lang/Object;
+.class public final Lr/o;
+.super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements LR/q;
+.implements Lh4/e;
+
+
+# static fields
+.field public static final h:Lr/o;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lr/o;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
+
+    sput-object v0, Lr/o;->h:Lr/o;
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public b(Lh4/c;)Z
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    invoke-interface {p1, p0}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast p1, Loa/b;
 
-    move-result-object p1
+    check-cast p2, Lr/u;
 
-    check-cast p1, Ljava/lang/Boolean;
+    iget-object p1, p2, Lr/u;->d:Lba/fa;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    iget-object p1, p1, Lba/fa;->b:Ljava/lang/Object;
+
+    check-cast p1, Lfa/g0;
+
+    invoke-virtual {p1}, Lfa/g0;->h()I
 
     move-result p1
 
-    return p1
-.end method
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-.method public g(Ljava/lang/Object;Lh4/e;)Ljava/lang/Object;
-    .locals 0
+    move-result-object p1
 
-    invoke-interface {p2, p1, p0}, Lh4/e;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object p2, p2, Lr/u;->d:Lba/fa;
+
+    iget-object p2, p2, Lba/fa;->c:Ljava/lang/Object;
+
+    check-cast p2, Lfa/g0;
+
+    invoke-virtual {p2}, Lfa/g0;->h()I
+
+    move-result p2
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    filled-new-array {p1, p2}, [Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lv8/l;->a0([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 

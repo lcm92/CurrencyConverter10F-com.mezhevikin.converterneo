@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LR3/f;
+.implements Lr8/f;
 
 
 # instance fields

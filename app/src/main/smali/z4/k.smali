@@ -22,7 +22,7 @@
 
 
 # virtual methods
-.method public final u(LY3/i;Ljava/lang/Runnable;)V
+.method public final u(Ly8/i;Ljava/lang/Runnable;)V
     .locals 2
 
     sget-object p1, Lz4/d;->j:Lz4/d;
@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method public final y(LY3/i;Ljava/lang/Runnable;)V
+.method public final y(Ly8/i;Ljava/lang/Runnable;)V
     .locals 2
 
     sget-object p1, Lz4/d;->j:Lz4/d;

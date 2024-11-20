@@ -7,26 +7,26 @@
 
 
 # instance fields
-.field public final g:LY3/i;
+.field public final g:Ly8/i;
 
 
 # direct methods
-.method public constructor <init>(LY3/i;)V
+.method public constructor <init>(Ly8/i;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lx4/d;->g:LY3/i;
+    iput-object p1, p0, Lx4/d;->g:Ly8/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()LY3/i;
+.method public final b()Ly8/i;
     .locals 1
 
-    iget-object v0, p0, Lx4/d;->g:LY3/i;
+    iget-object v0, p0, Lx4/d;->g:Ly8/i;
 
     return-object v0
 .end method
@@ -40,7 +40,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lx4/d;->g:LY3/i;
+    iget-object v1, p0, Lx4/d;->g:Ly8/i;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

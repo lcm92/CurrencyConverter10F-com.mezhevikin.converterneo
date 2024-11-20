@@ -4,14 +4,14 @@
 
 
 # direct methods
-.method public static final a(LR/q;Lt/c;)LR/q;
+.method public static final a(Lra/q;Lt/c;)Lra/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;
 
     invoke-direct {v0, p1}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;-><init>(Lt/c;)V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 

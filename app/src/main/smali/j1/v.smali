@@ -1,867 +1,372 @@
-.class public final LJ1/v;
-.super LJ1/b;
+.class public abstract Lj1/v;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public volatile A:I
+.field public final a:Lj1/ha;
 
-.field public volatile B:Lcom/google/android/gms/internal/play_billing/i;
+.field public final b:Ljava/lang/String;
 
-.field public volatile C:LI2/n;
+.field public final c:Ljava/util/LinkedHashMap;
 
-.field public volatile D:Lcom/google/android/gms/internal/play_billing/C0;
+.field public final d:Ljava/util/ArrayList;
 
-.field public final z:Lcom/mezhevikin/converterneo/App;
+.field public final e:Ljava/util/LinkedHashMap;
 
 
 # direct methods
-.method public constructor <init>(Lo2/g;Lcom/mezhevikin/converterneo/App;)V
+.method public constructor <init>(Lj1/ha;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1, p2}, LJ1/b;-><init>(Lo2/g;Lcom/mezhevikin/converterneo/App;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, 0x0
+    iput-object p1, p0, Lj1/v;->a:Lj1/ha;
 
-    iput p1, p0, LJ1/v;->A:I
+    iput-object p2, p0, Lj1/v;->b:Ljava/lang/String;
 
-    iput-object p2, p0, LJ1/v;->z:Lcom/mezhevikin/converterneo/App;
+    new-instance p1, Ljava/util/LinkedHashMap;
 
-    return-void
-.end method
+    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
 
-.method public constructor <init>(Lo2/g;Lcom/mezhevikin/converterneo/App;LA/s;)V
-    .locals 0
+    iput-object p1, p0, Lj1/v;->c:Ljava/util/LinkedHashMap;
 
-    .line 2
-    invoke-direct {p0, p1, p2, p3}, LJ1/b;-><init>(Lo2/g;Lcom/mezhevikin/converterneo/App;LA/s;)V
+    new-instance p1, Ljava/util/ArrayList;
 
-    const/4 p1, 0x0
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput p1, p0, LJ1/v;->A:I
+    iput-object p1, p0, Lj1/v;->d:Ljava/util/ArrayList;
 
-    iput-object p2, p0, LJ1/v;->z:Lcom/mezhevikin/converterneo/App;
+    new-instance p1, Ljava/util/LinkedHashMap;
+
+    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
+
+    iput-object p1, p0, Lj1/v;->e:Ljava/util/LinkedHashMap;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final A(IILJ1/e;)V
-    .locals 0
-
-    invoke-static {p1, p2, p3}, LJ1/x;->b(IILJ1/e;)Lcom/google/android/gms/internal/play_billing/U1;
-
-    move-result-object p1
-
-    const-string p2, "ApiFailure should not be null"
-
-    invoke-static {p1, p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    iget-object p2, p0, LJ1/b;->g:Ly/s;
-
-    invoke-virtual {p2, p1}, Ly/s;->A(Lcom/google/android/gms/internal/play_billing/U1;)V
-
-    return-void
-.end method
-
-.method public final B(ILjava/util/function/Consumer;Ljava/lang/Runnable;)V
+.method public a()Lj1/u;
     .locals 7
 
-    invoke-virtual {p0, p1}, LJ1/v;->z(I)Lcom/google/android/gms/internal/play_billing/A0;
+    invoke-virtual {p0}, Lj1/v;->b()Lj1/u;
 
     move-result-object v0
 
-    sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    monitor-enter p0
+    iget-object v1, p0, Lj1/v;->c:Ljava/util/LinkedHashMap;
 
-    :try_start_0
-    iget-object v2, p0, LJ1/v;->D:Lcom/google/android/gms/internal/play_billing/C0;
-
-    if-nez v2, :cond_1
-
-    invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadScheduledExecutor()Ljava/util/concurrent/ScheduledExecutorService;
-
-    move-result-object v2
-
-    instance-of v3, v2, Lcom/google/android/gms/internal/play_billing/C0;
-
-    if-eqz v3, :cond_0
-
-    check-cast v2, Lcom/google/android/gms/internal/play_billing/C0;
-
-    goto :goto_0
-
-    :cond_0
-    new-instance v3, Lcom/google/android/gms/internal/play_billing/G0;
-
-    invoke-direct {v3, v2}, Lcom/google/android/gms/internal/play_billing/G0;-><init>(Ljava/util/concurrent/ScheduledExecutorService;)V
-
-    move-object v2, v3
-
-    :goto_0
-    iput-object v2, p0, LJ1/v;->D:Lcom/google/android/gms/internal/play_billing/C0;
-
-    goto :goto_1
-
-    :catchall_0
-    move-exception p1
-
-    goto :goto_7
-
-    :cond_1
-    :goto_1
-    iget-object v2, p0, LJ1/v;->D:Lcom/google/android/gms/internal/play_billing/C0;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    goto :goto_2
-
-    :cond_2
-    new-instance v3, Lcom/google/android/gms/internal/play_billing/J0;
-
-    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, v3, Lcom/google/android/gms/internal/play_billing/J0;->n:Lcom/google/android/gms/internal/play_billing/A0;
-
-    new-instance v4, Lcom/google/android/gms/internal/play_billing/H0;
-
-    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
-
-    iput-object v3, v4, Lcom/google/android/gms/internal/play_billing/H0;->g:Lcom/google/android/gms/internal/play_billing/J0;
-
-    const-wide/16 v5, 0x6f54
-
-    check-cast v2, Lcom/google/android/gms/internal/play_billing/G0;
-
-    invoke-virtual {v2, v4, v5, v6, v1}, Lcom/google/android/gms/internal/play_billing/G0;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+    invoke-virtual {v1}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
 
     move-result-object v1
 
-    iput-object v1, v3, Lcom/google/android/gms/internal/play_billing/J0;->o:Ljava/util/concurrent/ScheduledFuture;
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    sget-object v1, Lcom/google/android/gms/internal/play_billing/t0;->g:Lcom/google/android/gms/internal/play_billing/t0;
+    move-result-object v1
 
-    invoke-interface {v0, v4, v1}, Lcom/google/android/gms/internal/play_billing/A0;->b(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-object v0, v3
-
-    :goto_2
-    new-instance v1, LJ1/t;
-
-    invoke-direct {v1, p0, p1, p2, p3}, LJ1/t;-><init>(LJ1/v;ILjava/util/function/Consumer;Ljava/lang/Runnable;)V
-
-    monitor-enter p0
-
-    :try_start_1
-    iget-object p1, p0, LJ1/b;->x:Lcom/google/android/gms/internal/play_billing/B0;
-
-    if-nez p1, :cond_5
-
-    invoke-virtual {p0}, LJ1/b;->j()Ljava/util/concurrent/ExecutorService;
-
-    move-result-object p1
-
-    instance-of p2, p1, Lcom/google/android/gms/internal/play_billing/B0;
-
-    if-eqz p2, :cond_3
-
-    check-cast p1, Lcom/google/android/gms/internal/play_billing/B0;
-
-    goto :goto_4
-
-    :cond_3
-    instance-of p2, p1, Ljava/util/concurrent/ScheduledExecutorService;
-
-    if-eqz p2, :cond_4
-
-    new-instance p2, Lcom/google/android/gms/internal/play_billing/G0;
-
-    check-cast p1, Ljava/util/concurrent/ScheduledExecutorService;
-
-    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/play_billing/G0;-><init>(Ljava/util/concurrent/ScheduledExecutorService;)V
-
-    :goto_3
-    move-object p1, p2
-
-    goto :goto_4
-
-    :cond_4
-    new-instance p2, Lcom/google/android/gms/internal/play_billing/D0;
-
-    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/play_billing/D0;-><init>(Ljava/util/concurrent/ExecutorService;)V
-
-    goto :goto_3
-
-    :goto_4
-    iput-object p1, p0, LJ1/b;->x:Lcom/google/android/gms/internal/play_billing/B0;
-
-    goto :goto_5
-
-    :catchall_1
-    move-exception p1
-
-    goto :goto_6
-
-    :cond_5
-    :goto_5
-    iget-object p1, p0, LJ1/b;->x:Lcom/google/android/gms/internal/play_billing/B0;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    monitor-exit p0
-
-    new-instance p2, Lcom/google/android/gms/internal/play_billing/v0;
-
-    invoke-direct {p2, v0, v1}, Lcom/google/android/gms/internal/play_billing/v0;-><init>(Lcom/google/android/gms/internal/play_billing/A0;LJ1/t;)V
-
-    invoke-interface {v0, p2, p1}, Lcom/google/android/gms/internal/play_billing/A0;->b(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    return-void
-
-    :goto_6
-    :try_start_2
-    monitor-exit p0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    throw p1
-
-    :goto_7
-    :try_start_3
-    monitor-exit p0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    throw p1
-.end method
-
-.method public final a(LI2/i;LA/s;)V
-    .locals 8
-
-    new-instance v0, LJ1/r;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1, p2}, LJ1/r;-><init>(ILjava/lang/Object;)V
-
-    new-instance v1, LD1/a;
-
-    const/4 v6, 0x3
-
-    const/4 v7, 0x0
-
-    move-object v2, v1
-
-    move-object v3, p0
-
-    move-object v4, p1
-
-    move-object v5, p2
-
-    invoke-direct/range {v2 .. v7}, LD1/a;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;IZ)V
-
-    const/4 p1, 0x3
-
-    invoke-virtual {p0, p1, v0, v1}, LJ1/v;->B(ILjava/util/function/Consumer;Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-.method public final c(Landroid/app/Activity;LF/S;)LJ1/e;
-    .locals 8
-
-    const-string v0, "BillingClientTesting"
-
-    const/4 v1, 0x2
-
-    invoke-virtual {p0, v1}, LJ1/v;->z(I)Lcom/google/android/gms/internal/play_billing/A0;
-
-    move-result-object v2
+    move-result v2
 
     const/4 v3, 0x0
 
-    const/16 v4, 0x1c
+    if-nez v2, :cond_7
 
-    :try_start_0
-    sget-object v5, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+    iget-object v1, p0, Lj1/v;->d:Ljava/util/ArrayList;
 
-    const-wide/16 v6, 0x6f54
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    invoke-interface {v2, v6, v7, v5}, Ljava/util/concurrent/Future;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    move-result-object v1
+
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    iget-object v4, v0, Lj1/u;->k:Ljava/util/LinkedHashMap;
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Ljava/lang/Integer;
+    check-cast v2, Lj1/r;
 
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+    const-string v5, "navDeepLink"
 
-    move-result v3
-    :try_end_0
-    .catch Ljava/util/concurrent/TimeoutException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-static {v2, v5}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    goto :goto_2
+    new-instance v5, Lj1/t;
 
-    :catch_0
-    move-exception v2
+    const/4 v6, 0x0
 
-    goto :goto_0
+    invoke-direct {v5, v2, v6}, Lj1/t;-><init>(Lj1/r;I)V
 
-    :catch_1
-    move-exception v2
+    invoke-static {v4, v5}, Lk4/a;->U(Ljava/util/Map;Lh4/c;)Ljava/util/ArrayList;
 
-    goto :goto_1
+    move-result-object v4
 
-    :goto_0
-    instance-of v5, v2, Ljava/lang/InterruptedException;
+    invoke-virtual {v4}, Ljava/util/ArrayList;->isEmpty()Z
+
+    move-result v5
 
     if-eqz v5, :cond_0
 
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+    iget-object v4, v0, Lj1/u;->i:Ljava/util/ArrayList;
 
-    move-result-object v5
+    invoke-virtual {v4, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {v5}, Ljava/lang/Thread;->interrupt()V
+    goto :goto_0
 
     :cond_0
-    const/16 v5, 0x6b
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    sget-object v6, LJ1/z;->s:LJ1/e;
+    const-string v3, "Deep link "
 
-    invoke-virtual {p0, v5, v4, v6}, LJ1/v;->A(IILJ1/e;)V
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v4, "An error occurred while retrieving billing override."
+    iget-object v2, v2, Lj1/r;->a:Ljava/lang/String;
 
-    invoke-static {v0, v4, v2}, Lcom/google/android/gms/internal/play_billing/q0;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    goto :goto_2
+    const-string v2, " can\'t be used to open destination "
 
-    :goto_1
-    const/16 v5, 0x72
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v6, LJ1/z;->s:LJ1/e;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, v5, v4, v6}, LJ1/v;->A(IILJ1/e;)V
+    const-string v0, ".\nFollowing required arguments are missing: "
 
-    const-string v4, "Asynchronous call to Billing Override Service timed out."
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v4, v2}, Lcom/google/android/gms/internal/play_billing/q0;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    :goto_2
-    if-lez v3, :cond_1
-
-    const-string p1, "Billing override value was set by a license tester."
-
-    invoke-static {p1, v3}, LJ1/z;->a(Ljava/lang/String;I)LJ1/e;
-
-    move-result-object p1
-
-    const/16 p2, 0x69
-
-    invoke-virtual {p0, p2, v1, p1}, LJ1/v;->A(IILJ1/e;)V
-
-    invoke-virtual {p0, p1}, LJ1/b;->v(LJ1/e;)V
-
-    goto :goto_3
-
-    :cond_1
-    :try_start_1
-    invoke-super {p0, p1, p2}, LJ1/b;->c(Landroid/app/Activity;LF/S;)LJ1/e;
-
-    move-result-object p1
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
-
-    goto :goto_3
-
-    :catch_2
-    move-exception p1
-
-    sget-object p2, LJ1/z;->i:LJ1/e;
-
-    const/16 v2, 0x73
-
-    invoke-virtual {p0, v2, v1, p2}, LJ1/v;->A(IILJ1/e;)V
-
-    const-string v1, "An internal error occurred."
-
-    invoke-static {v0, v1, p1}, Lcom/google/android/gms/internal/play_billing/q0;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    move-object p1, p2
-
-    :goto_3
-    return-object p1
-.end method
-
-.method public final d(LJ1/j;LA/s;)V
-    .locals 8
-
-    new-instance v0, LJ1/r;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1, p2}, LJ1/r;-><init>(ILjava/lang/Object;)V
-
-    new-instance v1, LD1/a;
-
-    const/4 v6, 0x2
-
-    const/4 v7, 0x0
-
-    move-object v2, v1
-
-    move-object v3, p0
-
-    move-object v4, p1
-
-    move-object v5, p2
-
-    invoke-direct/range {v2 .. v7}, LD1/a;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;IZ)V
-
-    const/4 p1, 0x7
-
-    invoke-virtual {p0, p1, v0, v1}, LJ1/v;->B(ILjava/util/function/Consumer;Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-.method public final e(Lo2/g;)V
-    .locals 8
-
-    monitor-enter p0
-
-    :try_start_0
-    invoke-virtual {p0}, LJ1/v;->y()Z
-
-    move-result v0
-
-    const/16 v1, 0x1a
-
-    if-eqz v0, :cond_0
-
-    const-string v0, "BillingClientTesting"
-
-    const-string v2, "Billing Override Service connection is valid. No need to re-initialize."
-
-    invoke-static {v0, v2}, Lcom/google/android/gms/internal/play_billing/q0;->e(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-static {v1}, LJ1/x;->d(I)Lcom/google/android/gms/internal/play_billing/W1;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    const-string v1, "ApiSuccess should not be null"
+    new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    invoke-static {v0, v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    iget-object v1, p0, LJ1/b;->g:Ly/s;
-
-    invoke-virtual {v1, v0}, Ly/s;->B(Lcom/google/android/gms/internal/play_billing/W1;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    goto/16 :goto_2
-
-    :catchall_0
-    move-exception p1
-
-    goto/16 :goto_3
-
-    :cond_0
-    :try_start_1
-    iget v0, p0, LJ1/v;->A:I
-
-    const/4 v2, 0x1
-
-    if-ne v0, v2, :cond_1
-
-    const-string v0, "BillingClientTesting"
-
-    const-string v1, "Client is already in the process of connecting to Billing Override Service."
-
-    invoke-static {v0, v1}, Lcom/google/android/gms/internal/play_billing/q0;->f(Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    monitor-exit p0
-
-    goto/16 :goto_2
-
-    :cond_1
-    :try_start_2
-    iget v0, p0, LJ1/v;->A:I
-
-    const/4 v3, 0x3
-
-    if-ne v0, v3, :cond_2
-
-    const-string v0, "BillingClientTesting"
-
-    const-string v2, "Billing Override Service Client was already closed and can\'t be reused. Please create another instance."
-
-    invoke-static {v0, v2}, Lcom/google/android/gms/internal/play_billing/q0;->f(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v0, "Billing Override Service connection is disconnected."
-
-    const/4 v2, -0x1
-
-    invoke-static {v0, v2}, LJ1/z;->a(Ljava/lang/String;I)LJ1/e;
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    const/16 v2, 0x26
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v2, v1, v0}, LJ1/v;->A(IILJ1/e;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    throw v1
 
-    monitor-exit p0
+    :cond_1
+    iget-object v1, p0, Lj1/v;->e:Ljava/util/LinkedHashMap;
 
-    goto/16 :goto_2
+    invoke-virtual {v1}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
 
-    :cond_2
-    :try_start_3
-    iput v2, p0, LJ1/v;->A:I
+    move-result-object v1
 
-    const-string v0, "BillingClientTesting"
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    const-string v3, "Starting Billing Override Service setup."
+    move-result-object v1
 
-    invoke-static {v0, v3}, Lcom/google/android/gms/internal/play_billing/q0;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    new-instance v0, LI2/n;
+    move-result v2
 
-    const/4 v3, 0x1
+    if-nez v2, :cond_5
 
-    invoke-direct {v0, v3, p0}, LI2/n;-><init>(ILjava/lang/Object;)V
+    iget-object v1, p0, Lj1/v;->b:Ljava/lang/String;
 
-    iput-object v0, p0, LJ1/v;->C:LI2/n;
+    if-eqz v1, :cond_4
 
-    new-instance v0, Landroid/content/Intent;
+    invoke-static {v1}, Lq4/j;->J(Ljava/lang/CharSequence;)Z
 
-    const-string v3, "com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"
+    move-result v2
 
-    invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    if-nez v2, :cond_3
 
-    const-string v3, "com.google.android.apps.play.billingtestcompanion"
+    sget v2, Lj1/u;->o:I
 
-    invoke-virtual {v0, v3}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+    const-string v2, "android-app://androidx.navigation/"
 
-    iget-object v3, p0, LJ1/v;->z:Lcom/mezhevikin/converterneo/App;
+    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {v3}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    move-result-object v2
 
-    move-result-object v3
+    const-string v3, "uriPattern"
 
-    const/4 v4, 0x0
+    invoke-static {v2, v3}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v3, v0, v4}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
+    new-instance v3, Lj1/r;
 
-    move-result-object v3
+    invoke-direct {v3, v2}, Lj1/r;-><init>(Ljava/lang/String;)V
 
-    const/16 v5, 0x29
+    new-instance v5, Lj1/t;
 
-    if-eqz v3, :cond_5
+    const/4 v6, 0x1
 
-    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
+    invoke-direct {v5, v3, v6}, Lj1/t;-><init>(Lj1/r;I)V
 
-    move-result v6
-
-    if-nez v6, :cond_5
-
-    invoke-interface {v3, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-static {v4, v5}, Lk4/a;->U(Ljava/util/Map;Lh4/c;)Ljava/util/ArrayList;
 
     move-result-object v3
 
-    check-cast v3, Landroid/content/pm/ResolveInfo;
+    invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
 
-    iget-object v3, v3, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
+    move-result v4
 
-    if-eqz v3, :cond_6
+    if-eqz v4, :cond_2
 
-    iget-object v5, v3, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+    new-instance v3, Laa/ka;
 
-    iget-object v3, v3, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
+    const/16 v4, 0x17
 
-    const-string v6, "com.google.android.apps.play.billingtestcompanion"
+    invoke-direct {v3, v4, v2}, Laa/ka;-><init>(ILjava/lang/Object;)V
 
-    invoke-static {v5, v6}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3}, Lu8/a;->d(Lh4/a;)Lu8/n;
 
-    move-result v6
+    move-result-object v3
 
-    const/16 v7, 0x27
+    iput-object v3, v0, Lj1/u;->n:Lu8/n;
 
-    if-eqz v6, :cond_4
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
-    if-eqz v3, :cond_4
+    move-result v2
 
-    new-instance v6, Landroid/content/ComponentName;
+    iput v2, v0, Lj1/u;->l:I
 
-    invoke-direct {v6, v5, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    new-instance v3, Landroid/content/Intent;
-
-    invoke-direct {v3, v0}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
-
-    invoke-virtual {v3, v6}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
-
-    iget-object v0, p0, LJ1/v;->z:Lcom/mezhevikin/converterneo/App;
-
-    iget-object v5, p0, LJ1/v;->C:LI2/n;
-
-    invoke-virtual {v0, v3, v5, v2}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    const-string v0, "BillingClientTesting"
-
-    const-string v1, "Billing Override Service was bonded successfully."
-
-    invoke-static {v0, v1}, Lcom/google/android/gms/internal/play_billing/q0;->e(Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    monitor-exit p0
-
-    goto :goto_2
-
-    :cond_3
-    :try_start_4
-    const-string v0, "BillingClientTesting"
-
-    const-string v2, "Connection to Billing Override Service is blocked."
-
-    invoke-static {v0, v2}, Lcom/google/android/gms/internal/play_billing/q0;->f(Ljava/lang/String;Ljava/lang/String;)V
-
-    :goto_0
-    move v2, v7
+    iput-object v1, v0, Lj1/u;->m:Ljava/lang/String;
 
     goto :goto_1
 
-    :cond_4
-    const-string v0, "BillingClientTesting"
+    :cond_2
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v2, "The device doesn\'t have valid Play Billing Lab."
+    const-string v4, "Cannot set route \""
 
-    invoke-static {v0, v2}, Lcom/google/android/gms/internal/play_billing/q0;->f(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    goto :goto_0
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :cond_5
-    move v2, v5
+    const-string v1, "\" for destination "
 
-    :cond_6
-    :goto_1
-    iput v4, p0, LJ1/v;->A:I
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, "BillingClientTesting"
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v3, "Billing Override Service unavailable on device."
+    const-string v0, ". Following required arguments are missing: "
 
-    invoke-static {v0, v3}, Lcom/google/android/gms/internal/play_billing/q0;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, "Billing Override Service unavailable on device."
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const/4 v3, 0x2
-
-    invoke-static {v0, v3}, LJ1/z;->a(Ljava/lang/String;I)LJ1/e;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v2, v1, v0}, LJ1/v;->A(IILJ1/e;)V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+    new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    monitor-exit p0
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    :goto_2
-    invoke-super {p0, p1}, LJ1/b;->e(Lo2/g;)V
+    move-result-object v0
 
-    return-void
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    :goto_3
-    :try_start_5
-    monitor-exit p0
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+    throw v1
 
-    throw p1
-.end method
+    :cond_3
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
-.method public final synthetic w(LI2/i;LA/s;)V
-    .locals 0
+    const-string v1, "Cannot have an empty route"
 
-    invoke-super {p0, p1, p2}, LJ1/b;->a(LI2/i;LA/s;)V
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    return-void
-.end method
+    throw v0
 
-.method public final synthetic x(LJ1/j;LA/s;)V
-    .locals 0
+    :cond_4
+    :goto_1
+    return-object v0
 
-    invoke-super {p0, p1, p2}, LJ1/b;->d(LJ1/j;LA/s;)V
+    :cond_5
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    return-void
-.end method
+    move-result-object v0
 
-.method public final declared-synchronized y()Z
-    .locals 2
+    check-cast v0, Ljava/util/Map$Entry;
 
-    monitor-enter p0
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    :try_start_0
-    iget v0, p0, LJ1/v;->A:I
+    move-result-object v1
 
-    const/4 v1, 0x2
+    check-cast v1, Ljava/lang/Number;
 
-    if-ne v0, v1, :cond_0
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
 
-    iget-object v0, p0, LJ1/v;->B:Lcom/google/android/gms/internal/play_billing/i;
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    if-eqz v0, :cond_0
+    move-result-object v0
 
-    iget-object v0, p0, LJ1/v;->C:LI2/n;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    if-nez v0, :cond_6
 
-    if-eqz v0, :cond_0
+    const-string v0, "action"
 
-    monitor-exit p0
+    invoke-static {v3, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x1
+    throw v3
 
-    return v0
+    :cond_6
+    new-instance v0, Ljava/lang/ClassCastException;
 
-    :catchall_0
-    move-exception v0
+    invoke-direct {v0}, Ljava/lang/ClassCastException;-><init>()V
 
-    goto :goto_0
+    throw v0
 
-    :cond_0
-    monitor-exit p0
+    :cond_7
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    const/4 v0, 0x0
+    move-result-object v0
 
-    return v0
+    check-cast v0, Ljava/util/Map$Entry;
 
-    :goto_0
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez v0, :cond_8
+
+    const-string v0, "argumentName"
+
+    invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "argument"
+
+    invoke-static {v3, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_8
+    new-instance v0, Ljava/lang/ClassCastException;
+
+    invoke-direct {v0}, Ljava/lang/ClassCastException;-><init>()V
 
     throw v0
 .end method
 
-.method public final z(I)Lcom/google/android/gms/internal/play_billing/A0;
-    .locals 4
+.method public b()Lj1/u;
+    .locals 1
 
-    invoke-virtual {p0}, LJ1/v;->y()Z
+    iget-object v0, p0, Lj1/v;->a:Lj1/ha;
 
-    move-result v0
+    invoke-virtual {v0}, Lj1/ha;->a()Lj1/u;
 
-    if-nez v0, :cond_0
+    move-result-object v0
 
-    const-string p1, "BillingClientTesting"
-
-    const-string v0, "Billing Override Service is not ready."
-
-    invoke-static {p1, v0}, Lcom/google/android/gms/internal/play_billing/q0;->f(Ljava/lang/String;Ljava/lang/String;)V
-
-    const/4 p1, -0x1
-
-    const-string v0, "Billing Override Service connection is disconnected."
-
-    invoke-static {v0, p1}, LJ1/z;->a(Ljava/lang/String;I)LJ1/e;
-
-    move-result-object p1
-
-    const/16 v0, 0x6a
-
-    const/16 v1, 0x1c
-
-    invoke-virtual {p0, v0, v1, p1}, LJ1/v;->A(IILJ1/e;)V
-
-    new-instance p1, Lcom/google/android/gms/internal/play_billing/w0;
-
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
-
-    return-object p1
-
-    :cond_0
-    new-instance v0, LJ1/s;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p1, v1, p0}, LJ1/s;-><init>(IILjava/lang/Object;)V
-
-    new-instance p1, Lcom/google/android/gms/internal/play_billing/v2;
-
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
-
-    new-instance v1, Lcom/google/android/gms/internal/play_billing/y2;
-
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
-
-    iput-object v1, p1, Lcom/google/android/gms/internal/play_billing/v2;->c:Lcom/google/android/gms/internal/play_billing/y2;
-
-    new-instance v1, Lcom/google/android/gms/internal/play_billing/x2;
-
-    invoke-direct {v1, p1}, Lcom/google/android/gms/internal/play_billing/x2;-><init>(Lcom/google/android/gms/internal/play_billing/v2;)V
-
-    iput-object v1, p1, Lcom/google/android/gms/internal/play_billing/v2;->b:Lcom/google/android/gms/internal/play_billing/x2;
-
-    const-class v2, LJ1/s;
-
-    iput-object v2, p1, Lcom/google/android/gms/internal/play_billing/v2;->a:Ljava/io/Serializable;
-
-    :try_start_0
-    invoke-virtual {v0, p1}, LJ1/s;->h(Lcom/google/android/gms/internal/play_billing/v2;)V
-
-    const-string v0, "billingOverrideService.getBillingOverride"
-
-    iput-object v0, p1, Lcom/google/android/gms/internal/play_billing/v2;->a:Ljava/io/Serializable;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p1
-
-    new-instance v0, Lcom/google/android/gms/internal/play_billing/t1;
-
-    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/play_billing/t1;-><init>(Ljava/lang/Throwable;)V
-
-    sget-object p1, Lcom/google/android/gms/internal/play_billing/u2;->l:Lcom/google/android/gms/internal/play_billing/g1;
-
-    iget-object v2, v1, Lcom/google/android/gms/internal/play_billing/x2;->h:Lcom/google/android/gms/internal/play_billing/w2;
-
-    const/4 v3, 0x0
-
-    invoke-virtual {p1, v2, v3, v0}, Lcom/google/android/gms/internal/play_billing/g1;->D(Lcom/google/android/gms/internal/play_billing/u2;Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    invoke-static {v2}, Lcom/google/android/gms/internal/play_billing/u2;->d(Lcom/google/android/gms/internal/play_billing/u2;)V
-
-    :cond_1
-    :goto_0
-    return-object v1
+    return-object v0
 .end method

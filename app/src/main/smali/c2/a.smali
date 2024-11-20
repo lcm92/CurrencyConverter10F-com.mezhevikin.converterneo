@@ -27,11 +27,11 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, LA2/h;
+    new-instance v0, La7/h;
 
     const/4 v1, 0x4
 
-    invoke-direct {v0, v1}, LA2/h;-><init>(I)V
+    invoke-direct {v0, v1}, La7/h;-><init>(I)V
 
     sput-object v0, Lc2/a;->CREATOR:Landroid/os/Parcelable$Creator;
 

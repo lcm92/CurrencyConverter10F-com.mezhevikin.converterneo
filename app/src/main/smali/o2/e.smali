@@ -1,8 +1,6 @@
-.class public interface abstract LO2/e;
+.class public interface abstract Lo2/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# virtual methods
-.method public abstract c(Lz2/i;)V
-.end method
+# interfaces
+.implements Landroid/os/IInterface;

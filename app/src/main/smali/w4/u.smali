@@ -42,9 +42,9 @@
 
     check-cast p1, Lv4/f;
 
-    check-cast p3, LY3/d;
+    check-cast p3, Ly8/d;
 
-    invoke-interface {p1, p2, p3}, Lv4/f;->a(Ljava/lang/Object;LY3/d;)Ljava/lang/Object;
+    invoke-interface {p1, p2, p3}, Lv4/f;->a(Ljava/lang/Object;Ly8/d;)Ljava/lang/Object;
 
     move-result-object p1
 

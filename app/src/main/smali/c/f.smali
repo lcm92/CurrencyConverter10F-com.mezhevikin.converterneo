@@ -1,280 +1,148 @@
-.class public final LC/F;
-.super Li4/i;
+.class public final Lc/f;
+.super Lb/u;
 .source "SourceFile"
-
-# interfaces
-.implements Lh4/c;
 
 
 # instance fields
-.field public final synthetic h:I
+.field public d:Lx4/d;
 
-.field public final synthetic i:Ljava/lang/Object;
+.field public e:Lh4/e;
 
-.field public final synthetic j:I
-
-.field public final synthetic k:I
-
-
-# direct methods
-.method public constructor <init>(ILo0/N;I)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, LC/F;->h:I
-
-    .line 1
-    iput p1, p0, LC/F;->j:I
-
-    iput-object p2, p0, LC/F;->i:Ljava/lang/Object;
-
-    iput p3, p0, LC/F;->k:I
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/Object;III)V
-    .locals 0
-
-    .line 2
-    iput p4, p0, LC/F;->h:I
-
-    iput-object p1, p0, LC/F;->i:Ljava/lang/Object;
-
-    iput p2, p0, LC/F;->j:I
-
-    iput p3, p0, LC/F;->k:I
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
-
-    return-void
-.end method
+.field public f:Laa/va;
 
 
 # virtual methods
-.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
+.method public final a()V
+    .locals 2
 
-    iget v0, p0, LC/F;->h:I
-
-    packed-switch v0, :pswitch_data_0
-
-    check-cast p1, Lz0/n;
-
-    iget-object v0, p1, Lz0/n;->a:Lz0/a;
-
-    iget v1, p0, LC/F;->j:I
-
-    invoke-virtual {p1, v1}, Lz0/n;->b(I)I
-
-    move-result v1
-
-    iget v2, p0, LC/F;->k:I
-
-    invoke-virtual {p1, v2}, Lz0/n;->b(I)I
-
-    move-result v2
-
-    iget-object v3, v0, Lz0/a;->e:Ljava/lang/CharSequence;
-
-    if-ltz v1, :cond_1
-
-    if-gt v1, v2, :cond_1
-
-    invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
-
-    move-result v4
-
-    if-gt v2, v4, :cond_1
-
-    new-instance v3, Landroid/graphics/Path;
-
-    invoke-direct {v3}, Landroid/graphics/Path;-><init>()V
-
-    iget-object v0, v0, Lz0/a;->d:LA0/G;
-
-    iget-object v4, v0, LA0/G;->f:Landroid/text/Layout;
-
-    invoke-virtual {v4, v1, v2, v3}, Landroid/text/Layout;->getSelectionPath(IILandroid/graphics/Path;)V
-
-    const/4 v1, 0x0
-
-    iget v0, v0, LA0/G;->h:I
+    iget-object v0, p0, Lc/f;->f:Laa/va;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v3}, Landroid/graphics/Path;->isEmpty()Z
+    invoke-virtual {v0}, Laa/va;->d()V
 
-    move-result v2
+    :cond_0
+    iget-object v0, p0, Lc/f;->f:Laa/va;
+
+    if-nez v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    iput-boolean v1, v0, Laa/va;->h:Z
+
+    :goto_0
+    return-void
+.end method
+
+.method public final b()V
+    .locals 5
+
+    iget-object v0, p0, Lc/f;->f:Laa/va;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v2, v0, Laa/va;->h:Z
 
     if-nez v2, :cond_0
 
-    int-to-float v0, v0
+    invoke-virtual {v0}, Laa/va;->d()V
 
-    invoke-virtual {v3, v1, v0}, Landroid/graphics/Path;->offset(FF)V
+    iput-object v1, p0, Lc/f;->f:Laa/va;
 
     :cond_0
-    iget p1, p1, Lz0/n;->f:F
+    iget-object v0, p0, Lc/f;->f:Laa/va;
 
-    invoke-static {v1, p1}, Lv2/h;->k(FF)J
+    const/4 v2, 0x0
 
-    move-result-wide v0
+    if-nez v0, :cond_1
 
-    new-instance p1, Landroid/graphics/Matrix;
+    new-instance v0, Laa/va;
 
-    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
+    iget-object v3, p0, Lc/f;->d:Lx4/d;
 
-    invoke-static {v0, v1}, LX/c;->d(J)F
+    iget-object v4, p0, Lc/f;->e:Lh4/e;
 
-    move-result v2
+    invoke-direct {v0, v3, v2, v4, p0}, Laa/va;-><init>(Lx4/d;ZLh4/e;Lc/f;)V
 
-    invoke-static {v0, v1}, LX/c;->e(J)F
-
-    move-result v0
-
-    invoke-virtual {p1, v2, v0}, Landroid/graphics/Matrix;->setTranslate(FF)V
-
-    invoke-virtual {v3, p1}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
-
-    iget-object p1, p0, LC/F;->i:Ljava/lang/Object;
-
-    check-cast p1, LY/i;
-
-    const-wide/16 v0, 0x0
-
-    invoke-static {v0, v1}, LX/c;->d(J)F
-
-    move-result v2
-
-    invoke-static {v0, v1}, LX/c;->e(J)F
-
-    move-result v0
-
-    iget-object p1, p1, LY/i;->a:Landroid/graphics/Path;
-
-    invoke-virtual {p1, v3, v2, v0}, Landroid/graphics/Path;->addPath(Landroid/graphics/Path;FF)V
-
-    sget-object p1, LU3/y;->a:LU3/y;
-
-    return-object p1
+    iput-object v0, p0, Lc/f;->f:Laa/va;
 
     :cond_1
-    new-instance p1, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lc/f;->f:Laa/va;
 
-    const-string v0, "start("
+    if-eqz v0, :cond_2
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iget-object v0, v0, Laa/va;->i:Ljava/lang/Object;
 
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    check-cast v0, Lu4/d;
 
-    const-string v0, ") or end("
+    invoke-virtual {v0, v1}, Lu4/d;->a(Ljava/lang/Throwable;)Z
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_2
+    iget-object v0, p0, Lc/f;->f:Laa/va;
 
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    if-nez v0, :cond_3
 
-    const-string v0, ") is out of range [0.."
+    goto :goto_0
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_3
+    iput-boolean v2, v0, Laa/va;->h:Z
 
-    invoke-interface {v3}, Ljava/lang/CharSequence;->length()I
+    :goto_0
+    return-void
+.end method
 
-    move-result v0
+.method public final c(Lb/b;)V
+    .locals 1
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-super {p0, p1}, Lb/u;->c(Lb/b;)V
 
-    const-string v0, "], or start > end!"
+    iget-object v0, p0, Lc/f;->f:Laa/va;
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v0, v0, Laa/va;->i:Ljava/lang/Object;
 
-    move-result-object p1
+    check-cast v0, Lu4/d;
 
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    invoke-interface {v0, p1}, Lu4/t;->p(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    :cond_0
+    return-void
+.end method
 
-    move-result-object p1
+.method public final d(Lb/b;)V
+    .locals 3
 
-    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-super {p0, p1}, Lb/u;->d(Lb/b;)V
 
-    throw v0
+    iget-object p1, p0, Lc/f;->f:Laa/va;
 
-    :pswitch_0
-    check-cast p1, Lo0/M;
+    if-eqz p1, :cond_0
 
-    iget v0, p0, LC/F;->j:I
+    invoke-virtual {p1}, Laa/va;->d()V
 
-    neg-int v0, v0
+    :cond_0
+    iget-boolean p1, p0, Lb/u;->a:Z
 
-    iget v1, p0, LC/F;->k:I
+    if-eqz p1, :cond_1
 
-    neg-int v1, v1
+    new-instance p1, Laa/va;
 
-    iget-object v2, p0, LC/F;->i:Ljava/lang/Object;
+    iget-object v0, p0, Lc/f;->d:Lx4/d;
 
-    check-cast v2, Lo0/N;
+    const/4 v1, 0x1
 
-    invoke-static {p1, v2, v0, v1}, Lo0/M;->d(Lo0/M;Lo0/N;II)V
+    iget-object v2, p0, Lc/f;->e:Lh4/e;
 
-    sget-object p1, LU3/y;->a:LU3/y;
+    invoke-direct {p1, v0, v1, v2, p0}, Laa/va;-><init>(Lx4/d;ZLh4/e;Lc/f;)V
 
-    return-object p1
+    iput-object p1, p0, Lc/f;->f:Laa/va;
 
-    :pswitch_1
-    check-cast p1, Lo0/M;
-
-    iget-object v0, p0, LC/F;->i:Ljava/lang/Object;
-
-    check-cast v0, Lo0/N;
-
-    iget v1, v0, Lo0/N;->g:I
-
-    iget v2, p0, LC/F;->j:I
-
-    sub-int/2addr v2, v1
-
-    int-to-float v1, v2
-
-    const/high16 v2, 0x40000000    # 2.0f
-
-    div-float/2addr v1, v2
-
-    invoke-static {v1}, Lk4/a;->Z(F)I
-
-    move-result v1
-
-    iget v3, v0, Lo0/N;->h:I
-
-    iget v4, p0, LC/F;->k:I
-
-    sub-int/2addr v4, v3
-
-    int-to-float v3, v4
-
-    div-float/2addr v3, v2
-
-    invoke-static {v3}, Lk4/a;->Z(F)I
-
-    move-result v2
-
-    invoke-static {p1, v0, v1, v2}, Lo0/M;->d(Lo0/M;Lo0/N;II)V
-
-    sget-object p1, LU3/y;->a:LU3/y;
-
-    return-object p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :cond_1
+    return-void
 .end method

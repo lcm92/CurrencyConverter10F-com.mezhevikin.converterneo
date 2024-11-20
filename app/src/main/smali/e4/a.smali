@@ -1,50 +1,62 @@
-.class public interface abstract LE4/a;
+.class public abstract Le4/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract A(LF4/f0;ILB4/a;Ljava/lang/Object;)Ljava/lang/Object;
-.end method
+# static fields
+.field public static final a:Ljava/lang/Integer;
 
-.method public abstract C(LF4/h0;I)S
-.end method
 
-.method public abstract a(LD4/g;ILB4/a;Ljava/lang/Object;)Ljava/lang/Object;
-.end method
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
 
-.method public abstract h(LD4/g;I)Ljava/lang/String;
-.end method
+    const/4 v0, 0x0
 
-.method public abstract i()Lo2/g;
-.end method
+    :try_start_0
+    const-string v1, "android.os.Build$VERSION"
 
-.method public abstract k(LF4/h0;I)J
-.end method
+    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-.method public abstract o(LD4/g;I)I
-.end method
+    move-result-object v1
 
-.method public abstract p(LD4/g;I)D
-.end method
+    const-string v2, "SDK_INT"
 
-.method public abstract q(LF4/h0;I)C
-.end method
+    invoke-virtual {v1, v2}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-.method public abstract r(LF4/h0;I)F
-.end method
+    move-result-object v1
 
-.method public abstract s(LD4/g;I)Z
-.end method
+    invoke-virtual {v1, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-.method public abstract w(LD4/g;)I
-.end method
+    move-result-object v1
 
-.method public abstract x(LF4/h0;I)B
-.end method
+    instance-of v2, v1, Ljava/lang/Integer;
 
-.method public abstract y(LD4/g;)V
-.end method
+    if-eqz v2, :cond_0
 
-.method public abstract z(LF4/h0;I)LE4/b;
+    check-cast v1, Ljava/lang/Integer;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    :cond_0
+    move-object v1, v0
+
+    :goto_0
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    move-result v2
+
+    if-lez v2, :cond_1
+
+    move-object v0, v1
+
+    :cond_1
+    sput-object v0, Le4/a;->a:Ljava/lang/Integer;
+
+    return-void
 .end method

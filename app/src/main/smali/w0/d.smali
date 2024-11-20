@@ -1,132 +1,118 @@
-.class public final LW0/d;
-.super Ljava/lang/Object;
+.class public final Lw0/d;
+.super Li4/i;
 .source "SourceFile"
+
+# interfaces
+.implements Lh4/c;
+
+
+# static fields
+.field public static final i:Lw0/d;
+
+.field public static final j:Lw0/d;
+
+.field public static final k:Lw0/d;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic h:I
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
+.method static synthetic constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lw0/d;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lw0/d;-><init>(II)V
+
+    sput-object v0, Lw0/d;->i:Lw0/d;
+
+    new-instance v0, Lw0/d;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, Lw0/d;-><init>(II)V
+
+    sput-object v0, Lw0/d;->j:Lw0/d;
+
+    new-instance v0, Lw0/d;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, Lw0/d;-><init>(II)V
+
+    sput-object v0, Lw0/d;->k:Lw0/d;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(II)V
     .locals 0
 
-    iput p1, p0, LW0/d;->a:I
+    iput p2, p0, Lw0/d;->h:I
 
-    iput-object p2, p0, LW0/d;->b:Ljava/lang/Object;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
-    .locals 4
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    iget v0, p0, LW0/d;->a:I
+    iget v0, p0, Lw0/d;->h:I
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast p1, LW0/e;
+    check-cast p1, Lw0/l;
 
-    sget-object v0, LW0/f;->c:Ljava/lang/Object;
+    iget-object p1, p1, Lw0/l;->c:Ll5/i;
 
-    monitor-enter v0
+    invoke-virtual {p1}, Ll5/i;->a()I
 
-    :try_start_0
-    sget-object v1, LW0/f;->d:Li/I;
+    move-result p1
 
-    iget-object v2, p0, LW0/d;->b:Ljava/lang/Object;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    check-cast v2, Ljava/lang/String;
+    move-result-object p1
 
-    invoke-virtual {v1, v2}, Li/I;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/util/ArrayList;
-
-    if-nez v2, :cond_0
-
-    monitor-exit v0
-
-    goto :goto_1
-
-    :catchall_0
-    move-exception p1
-
-    goto :goto_2
-
-    :cond_0
-    iget-object v3, p0, LW0/d;->b:Ljava/lang/Object;
-
-    check-cast v3, Ljava/lang/String;
-
-    invoke-virtual {v1, v3}, Li/I;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    const/4 v0, 0x0
-
-    :goto_0
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
-    move-result v1
-
-    if-ge v0, v1, :cond_1
-
-    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, LW0/d;
-
-    invoke-virtual {v1, p1}, LW0/d;->a(Ljava/lang/Object;)V
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    :goto_1
-    return-void
-
-    :goto_2
-    :try_start_1
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw p1
+    return-object p1
 
     :pswitch_0
-    check-cast p1, LW0/e;
+    check-cast p1, Lw0/l;
 
-    if-nez p1, :cond_2
+    iget p1, p1, Lw0/l;->b:I
 
-    new-instance p1, LW0/e;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v0, -0x3
+    move-result-object p1
 
-    invoke-direct {p1, v0}, LW0/e;-><init>(I)V
+    return-object p1
 
-    :cond_2
-    iget-object v0, p0, LW0/d;->b:Ljava/lang/Object;
+    :pswitch_1
+    check-cast p1, Ljava/lang/Number;
 
-    check-cast v0, Ly/s;
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
 
-    invoke-virtual {v0, p1}, Ly/s;->x(LW0/e;)V
+    sget-object p1, Lu8/y;->a:Lu8/y;
 
-    return-void
+    return-object p1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

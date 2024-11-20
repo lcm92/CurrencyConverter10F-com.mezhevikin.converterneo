@@ -1,12 +1,12 @@
 .class final Landroidx/compose/material3/ThumbElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -100,40 +100,40 @@
     return v1
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 2
 
-    new-instance v0, LC/o0;
+    new-instance v0, Lca/o0;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
     iget-object v1, p0, Landroidx/compose/material3/ThumbElement;->a:Lp/i;
 
-    iput-object v1, v0, LC/o0;->t:Lp/i;
+    iput-object v1, v0, Lca/o0;->t:Lp/i;
 
     iget-boolean v1, p0, Landroidx/compose/material3/ThumbElement;->b:Z
 
-    iput-boolean v1, v0, LC/o0;->u:Z
+    iput-boolean v1, v0, Lca/o0;->u:Z
 
     const/high16 v1, 0x7fc00000    # Float.NaN
 
-    iput v1, v0, LC/o0;->y:F
+    iput v1, v0, Lca/o0;->y:F
 
-    iput v1, v0, LC/o0;->z:F
+    iput v1, v0, Lca/o0;->z:F
 
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 2
 
-    check-cast p1, LC/o0;
+    check-cast p1, Lca/o0;
 
     iget-object v0, p0, Landroidx/compose/material3/ThumbElement;->a:Lp/i;
 
-    iput-object v0, p1, LC/o0;->t:Lp/i;
+    iput-object v0, p1, Lca/o0;->t:Lp/i;
 
-    iget-boolean v0, p1, LC/o0;->u:Z
+    iget-boolean v0, p1, Lca/o0;->u:Z
 
     iget-boolean v1, p0, Landroidx/compose/material3/ThumbElement;->b:Z
 
@@ -142,13 +142,13 @@
     invoke-static {p1}, Lq0/f;->o(Lq0/w;)V
 
     :cond_0
-    iput-boolean v1, p1, LC/o0;->u:Z
+    iput-boolean v1, p1, Lca/o0;->u:Z
 
-    iget-object v0, p1, LC/o0;->x:Ll/c;
+    iget-object v0, p1, Lca/o0;->x:Ll/c;
 
     if-nez v0, :cond_1
 
-    iget v0, p1, LC/o0;->z:F
+    iget v0, p1, Lca/o0;->z:F
 
     invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -156,20 +156,20 @@
 
     if-nez v0, :cond_1
 
-    iget v0, p1, LC/o0;->z:F
+    iget v0, p1, Lca/o0;->z:F
 
     invoke-static {v0}, Ll/d;->a(F)Ll/c;
 
     move-result-object v0
 
-    iput-object v0, p1, LC/o0;->x:Ll/c;
+    iput-object v0, p1, Lca/o0;->x:Ll/c;
 
     :cond_1
-    iget-object v0, p1, LC/o0;->w:Ll/c;
+    iget-object v0, p1, Lca/o0;->w:Ll/c;
 
     if-nez v0, :cond_2
 
-    iget v0, p1, LC/o0;->y:F
+    iget v0, p1, Lca/o0;->y:F
 
     invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -177,13 +177,13 @@
 
     if-nez v0, :cond_2
 
-    iget v0, p1, LC/o0;->y:F
+    iget v0, p1, Lca/o0;->y:F
 
     invoke-static {v0}, Ll/d;->a(F)Ll/c;
 
     move-result-object v0
 
-    iput-object v0, p1, LC/o0;->w:Ll/c;
+    iput-object v0, p1, Lca/o0;->w:Ll/c;
 
     :cond_2
     return-void

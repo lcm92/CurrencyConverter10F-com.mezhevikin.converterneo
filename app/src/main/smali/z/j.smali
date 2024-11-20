@@ -1,903 +1,424 @@
-.class public abstract LZ/j;
-.super Ljava/lang/Object;
+.class public final Lz/j;
+.super Li4/i;
 .source "SourceFile"
 
+# interfaces
+.implements Lh4/c;
 
-# static fields
-.field public static final a:LZ/s;
 
-.field public static final b:LZ/s;
+# instance fields
+.field public final synthetic h:I
 
-.field public static final c:LZ/s;
-
-.field public static final d:LZ/s;
-
-.field public static final e:[F
+.field public final synthetic i:Lz/k;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
-
-    new-instance v0, LZ/s;
-
-    const v1, 0x3e9ec02f    # 0.31006f
-
-    const v2, 0x3ea1dfb9    # 0.31616f
-
-    invoke-direct {v0, v1, v2}, LZ/s;-><init>(FF)V
-
-    sput-object v0, LZ/j;->a:LZ/s;
-
-    new-instance v0, LZ/s;
-
-    const v1, 0x3eb0fba9
-
-    const v2, 0x3eb78d50    # 0.3585f
-
-    invoke-direct {v0, v1, v2}, LZ/s;-><init>(FF)V
-
-    sput-object v0, LZ/j;->b:LZ/s;
-
-    new-instance v0, LZ/s;
-
-    const v1, 0x3ea4b33e    # 0.32168f
-
-    const v2, 0x3eace315    # 0.33767f
-
-    invoke-direct {v0, v1, v2}, LZ/s;-><init>(FF)V
-
-    sput-object v0, LZ/j;->c:LZ/s;
-
-    new-instance v0, LZ/s;
-
-    const v1, 0x3ea01b86
-
-    const v2, 0x3ea8754f    # 0.32902f
-
-    invoke-direct {v0, v1, v2}, LZ/s;-><init>(FF)V
-
-    sput-object v0, LZ/j;->d:LZ/s;
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [F
-
-    fill-array-data v0, :array_0
-
-    sput-object v0, LZ/j;->e:[F
-
-    return-void
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x3f76d699    # 0.964212f
-        0x3f800000    # 1.0f
-        0x3f533f85
-    .end array-data
-.end method
-
-.method public static a(LZ/c;)LZ/c;
-    .locals 12
-
-    sget-object v3, LZ/j;->b:LZ/s;
-
-    sget-object v0, LZ/a;->b:LZ/a;
-
-    iget-wide v1, p0, LZ/c;->b:J
-
-    sget-wide v4, LZ/b;->a:J
-
-    invoke-static {v1, v2, v4, v5}, LZ/b;->a(JJ)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    move-object v1, p0
-
-    check-cast v1, LZ/q;
-
-    iget-object v2, v1, LZ/q;->d:LZ/s;
-
-    invoke-static {v2, v3}, LZ/j;->d(LZ/s;LZ/s;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {v3}, LZ/s;->a()[F
-
-    move-result-object p0
-
-    iget-object v0, v0, LZ/a;->a:[F
-
-    invoke-virtual {v2}, LZ/s;->a()[F
-
-    move-result-object v2
-
-    invoke-static {v0, v2, p0}, LZ/j;->c([F[F[F)[F
-
-    move-result-object p0
-
-    iget-object v0, v1, LZ/q;->i:[F
-
-    invoke-static {p0, v0}, LZ/j;->h([F[F)[F
-
-    move-result-object v4
-
-    new-instance p0, LZ/q;
-
-    iget-object v9, v1, LZ/q;->g:LZ/r;
-
-    const/4 v10, -0x1
-
-    iget-object v2, v1, LZ/c;->a:Ljava/lang/String;
-
-    iget-object v5, v1, LZ/q;->h:[F
-
-    iget-object v6, v1, LZ/q;->k:LZ/i;
-
-    iget-object v7, v1, LZ/q;->n:LZ/i;
-
-    iget v8, v1, LZ/q;->e:F
-
-    iget v11, v1, LZ/q;->f:F
-
-    move-object v0, p0
-
-    move-object v1, v2
-
-    move-object v2, v5
-
-    move-object v5, v6
-
-    move-object v6, v7
-
-    move v7, v8
-
-    move v8, v11
-
-    invoke-direct/range {v0 .. v10}, LZ/q;-><init>(Ljava/lang/String;[FLZ/s;[FLZ/i;LZ/i;FFLZ/r;I)V
-
-    :cond_1
-    :goto_0
-    return-object p0
-.end method
-
-.method public static b([F)F
-    .locals 7
-
-    const/4 v0, 0x0
-
-    aget v0, p0, v0
-
-    const/4 v1, 0x1
-
-    aget v1, p0, v1
-
-    const/4 v2, 0x2
-
-    aget v2, p0, v2
-
-    const/4 v3, 0x3
-
-    aget v3, p0, v3
-
-    const/4 v4, 0x4
-
-    aget v4, p0, v4
-
-    const/4 v5, 0x5
-
-    aget p0, p0, v5
-
-    mul-float v5, v0, v3
-
-    mul-float v6, v1, v4
-
-    add-float/2addr v6, v5
-
-    mul-float v5, v2, p0
-
-    add-float/2addr v5, v6
-
-    mul-float/2addr v3, v4
-
-    sub-float/2addr v5, v3
-
-    mul-float/2addr v1, v2
-
-    sub-float/2addr v5, v1
-
-    mul-float/2addr v0, p0
-
-    sub-float/2addr v5, v0
-
-    const/high16 p0, 0x3f000000    # 0.5f
-
-    mul-float/2addr v5, p0
-
-    const/4 p0, 0x0
-
-    cmpg-float p0, v5, p0
-
-    if-gez p0, :cond_0
-
-    neg-float v5, v5
-
-    :cond_0
-    return v5
-.end method
-
-.method public static final c([F[F[F)[F
-    .locals 5
-
-    invoke-static {p0, p1}, LZ/j;->j([F[F)V
-
-    invoke-static {p0, p2}, LZ/j;->j([F[F)V
-
-    const/4 v0, 0x0
-
-    aget v1, p2, v0
-
-    aget v2, p1, v0
-
-    div-float/2addr v1, v2
-
-    const/4 v2, 0x1
-
-    aget v3, p2, v2
-
-    aget v4, p1, v2
-
-    div-float/2addr v3, v4
-
-    const/4 v4, 0x2
-
-    aget p2, p2, v4
-
-    aget p1, p1, v4
-
-    div-float/2addr p2, p1
-
-    const/4 p1, 0x3
-
-    new-array p1, p1, [F
-
-    aput v1, p1, v0
-
-    aput v3, p1, v2
-
-    aput p2, p1, v4
-
-    invoke-static {p0}, LZ/j;->g([F)[F
-
-    move-result-object p2
-
-    invoke-static {p1, p0}, LZ/j;->i([F[F)[F
-
-    move-result-object p0
-
-    invoke-static {p2, p0}, LZ/j;->h([F[F)[F
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final d(LZ/s;LZ/s;)Z
-    .locals 3
-
-    const/4 v0, 0x1
-
-    if-ne p0, p1, :cond_0
-
-    return v0
-
-    :cond_0
-    iget v1, p0, LZ/s;->a:F
-
-    iget v2, p1, LZ/s;->a:F
-
-    sub-float/2addr v1, v2
-
-    invoke-static {v1}, Ljava/lang/Math;->abs(F)F
-
-    move-result v1
-
-    const v2, 0x3a83126f    # 0.001f
-
-    cmpg-float v1, v1, v2
-
-    if-gez v1, :cond_1
-
-    iget p0, p0, LZ/s;->b:F
-
-    iget p1, p1, LZ/s;->b:F
-
-    sub-float/2addr p0, p1
-
-    invoke-static {p0}, Ljava/lang/Math;->abs(F)F
-
-    move-result p0
-
-    cmpg-float p0, p0, v2
-
-    if-gez p0, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public static final e(LZ/c;LZ/c;I)LZ/g;
-    .locals 4
-
-    if-ne p0, p1, :cond_0
-
-    new-instance p1, LZ/e;
-
-    const/4 p2, 0x1
-
-    invoke-direct {p1, p0, p0, p2}, LZ/g;-><init>(LZ/c;LZ/c;I)V
-
-    goto :goto_1
-
-    :cond_0
-    sget-wide v0, LZ/b;->a:J
-
-    iget-wide v2, p0, LZ/c;->b:J
-
-    invoke-static {v2, v3, v0, v1}, LZ/b;->a(JJ)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    iget-wide v2, p1, LZ/c;->b:J
-
-    invoke-static {v2, v3, v0, v1}, LZ/b;->a(JJ)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    new-instance v0, LZ/f;
-
-    check-cast p0, LZ/q;
-
-    check-cast p1, LZ/q;
-
-    invoke-direct {v0, p0, p1, p2}, LZ/f;-><init>(LZ/q;LZ/q;I)V
-
-    :goto_0
-    move-object p1, v0
-
-    goto :goto_1
-
-    :cond_1
-    new-instance v0, LZ/g;
-
-    invoke-direct {v0, p0, p1, p2}, LZ/g;-><init>(LZ/c;LZ/c;I)V
-
-    goto :goto_0
-
-    :goto_1
-    return-object p1
-.end method
-
-.method public static f(FFFF)F
+.method public synthetic constructor <init>(Lz/k;I)V
     .locals 0
 
-    mul-float/2addr p0, p3
+    iput p2, p0, Lz/j;->h:I
 
-    mul-float/2addr p1, p2
+    iput-object p1, p0, Lz/j;->i:Lz/k;
 
-    sub-float/2addr p0, p1
+    const/4 p1, 0x1
 
-    return p0
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
+
+    return-void
 .end method
 
-.method public static final g([F)[F
-    .locals 24
+
+# virtual methods
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 31
 
     move-object/from16 v0, p0
 
-    const/4 v1, 0x0
+    iget v1, v0, Lz/j;->h:I
 
-    aget v2, v0, v1
+    packed-switch v1, :pswitch_data_0
 
-    const/4 v3, 0x3
+    move-object/from16 v1, p1
 
-    aget v4, v0, v3
+    check-cast v1, Ljava/lang/Boolean;
 
-    const/4 v5, 0x6
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    aget v6, v0, v5
+    move-result v1
 
-    const/4 v7, 0x1
+    iget-object v2, v0, Lz/j;->i:Lz/k;
 
-    aget v8, v0, v7
+    iget-object v3, v2, Lz/k;->E:Lz/i;
 
-    const/4 v9, 0x4
+    if-nez v3, :cond_0
 
-    aget v10, v0, v9
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    const/4 v11, 0x7
+    goto :goto_0
 
-    aget v12, v0, v11
+    :cond_0
+    iput-boolean v1, v3, Lz/i;->c:Z
 
-    const/4 v13, 0x2
+    invoke-static {v2}, Lq0/f;->p(Lq0/m0;)V
 
-    aget v14, v0, v13
+    invoke-static {v2}, Lq0/f;->o(Lq0/w;)V
 
-    const/4 v15, 0x5
+    invoke-static {v2}, Lq0/f;->n(Lq0/o;)V
 
-    aget v16, v0, v15
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    const/16 v17, 0x8
+    :goto_0
+    return-object v1
 
-    aget v18, v0, v17
+    :pswitch_0
+    move-object/from16 v1, p1
 
-    mul-float v19, v10, v18
+    check-cast v1, Lz0/f;
 
-    mul-float v20, v12, v16
+    iget-object v3, v1, Lz0/f;->g:Ljava/lang/String;
 
-    sub-float v19, v19, v20
+    iget-object v1, v0, Lz/j;->i:Lz/k;
 
-    mul-float v20, v12, v14
+    iget-object v2, v1, Lz/k;->E:Lz/i;
 
-    mul-float v21, v8, v18
+    if-eqz v2, :cond_2
 
-    sub-float v20, v20, v21
+    iget-object v4, v2, Lz/i;->b:Ljava/lang/String;
 
-    mul-float v21, v8, v16
+    invoke-static {v3, v4}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    mul-float v22, v10, v14
+    move-result v4
 
-    sub-float v21, v21, v22
+    if-eqz v4, :cond_1
 
-    mul-float v22, v2, v19
+    goto :goto_1
 
-    mul-float v23, v4, v20
+    :cond_1
+    iput-object v3, v2, Lz/i;->b:Ljava/lang/String;
 
-    add-float v23, v23, v22
+    iget-object v2, v2, Lz/i;->d:Lz/e;
 
-    mul-float v22, v6, v21
+    const/4 v4, 0x0
 
-    add-float v22, v22, v23
+    if-eqz v2, :cond_3
 
-    array-length v0, v0
+    iget-object v5, v1, Lz/k;->u:Lz0/fa;
 
-    new-array v0, v0, [F
+    iget-object v6, v1, Lz/k;->v:Le5/o;
 
-    div-float v19, v19, v22
+    iget v7, v1, Lz/k;->w:I
 
-    aput v19, v0, v1
+    iget-boolean v8, v1, Lz/k;->x:Z
 
-    div-float v20, v20, v22
+    iget v9, v1, Lz/k;->y:I
 
-    aput v20, v0, v7
+    iget v10, v1, Lz/k;->z:I
 
-    div-float v21, v21, v22
+    iput-object v3, v2, Lz/e;->a:Ljava/lang/String;
 
-    aput v21, v0, v13
+    iput-object v5, v2, Lz/e;->b:Lz0/fa;
 
-    mul-float v1, v6, v16
+    iput-object v6, v2, Lz/e;->c:Le5/o;
 
-    mul-float v7, v4, v18
+    iput v7, v2, Lz/e;->d:I
 
-    sub-float/2addr v1, v7
+    iput-boolean v8, v2, Lz/e;->e:Z
 
-    div-float v1, v1, v22
+    iput v9, v2, Lz/e;->f:I
 
-    aput v1, v0, v3
+    iput v10, v2, Lz/e;->g:I
 
-    mul-float v18, v18, v2
+    iput-object v4, v2, Lz/e;->j:Lz0/a;
 
-    mul-float v1, v6, v14
+    iput-object v4, v2, Lz/e;->n:Lz0/p;
 
-    sub-float v18, v18, v1
+    iput-object v4, v2, Lz/e;->o:Ll5/k;
 
-    div-float v18, v18, v22
+    const/4 v3, -0x1
 
-    aput v18, v0, v9
+    iput v3, v2, Lz/e;->q:I
 
-    mul-float/2addr v14, v4
+    iput v3, v2, Lz/e;->r:I
 
-    mul-float v16, v16, v2
+    const/4 v3, 0x0
 
-    sub-float v14, v14, v16
+    invoke-static {v3, v3, v3, v3}, Lk4/a;->F(IIII)J
 
-    div-float v14, v14, v22
+    move-result-wide v4
 
-    aput v14, v0, v15
+    iput-wide v4, v2, Lz/e;->p:J
 
-    mul-float v1, v4, v12
+    invoke-static {v3, v3}, Ll9/d;->b(II)J
 
-    mul-float v3, v6, v10
+    move-result-wide v4
 
-    sub-float/2addr v1, v3
+    iput-wide v4, v2, Lz/e;->l:J
 
-    div-float v1, v1, v22
+    iput-boolean v3, v2, Lz/e;->k:Z
 
-    aput v1, v0, v5
+    sget-object v4, Lu8/y;->a:Lu8/y;
 
-    mul-float/2addr v6, v8
+    goto :goto_1
 
-    mul-float/2addr v12, v2
+    :cond_2
+    new-instance v10, Lz/i;
 
-    sub-float/2addr v6, v12
+    iget-object v2, v1, Lz/k;->t:Ljava/lang/String;
 
-    div-float v6, v6, v22
+    invoke-direct {v10, v2, v3}, Lz/i;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    aput v6, v0, v11
+    new-instance v11, Lz/e;
 
-    mul-float/2addr v2, v10
+    iget-object v4, v1, Lz/k;->u:Lz0/fa;
 
-    mul-float/2addr v4, v8
+    iget-object v5, v1, Lz/k;->v:Le5/o;
 
-    sub-float/2addr v2, v4
+    iget v6, v1, Lz/k;->w:I
 
-    div-float v2, v2, v22
+    iget-boolean v7, v1, Lz/k;->x:Z
 
-    aput v2, v0, v17
+    iget v8, v1, Lz/k;->y:I
 
-    return-object v0
-.end method
+    iget v9, v1, Lz/k;->z:I
 
-.method public static final h([F[F)[F
-    .locals 27
+    move-object v2, v11
 
-    const/4 v0, 0x0
+    invoke-direct/range {v2 .. v9}, Lz/e;-><init>(Ljava/lang/String;Lz0/fa;Le5/o;IZII)V
 
-    aget v1, p0, v0
+    invoke-virtual {v1}, Lz/k;->y0()Lz/e;
 
-    aget v2, p1, v0
+    move-result-object v2
 
-    mul-float v3, v1, v2
+    iget-object v2, v2, Lz/e;->i:Ll5/b;
 
-    const/4 v4, 0x3
+    invoke-virtual {v11, v2}, Lz/e;->c(Ll5/b;)V
 
-    aget v5, p0, v4
+    iput-object v11, v10, Lz/i;->d:Lz/e;
 
-    const/4 v6, 0x1
+    iput-object v10, v1, Lz/k;->E:Lz/i;
 
-    aget v7, p1, v6
+    :cond_3
+    :goto_1
+    invoke-static {v1}, Lq0/f;->p(Lq0/m0;)V
 
-    mul-float v8, v5, v7
+    invoke-static {v1}, Lq0/f;->o(Lq0/w;)V
 
-    add-float/2addr v8, v3
+    invoke-static {v1}, Lq0/f;->n(Lq0/o;)V
 
-    const/4 v3, 0x6
-
-    aget v9, p0, v3
-
-    const/4 v10, 0x2
-
-    aget v11, p1, v10
-
-    mul-float v12, v9, v11
-
-    add-float/2addr v12, v8
-
-    aget v8, p0, v6
-
-    mul-float v13, v8, v2
-
-    const/4 v14, 0x4
-
-    aget v15, p0, v14
-
-    mul-float v16, v15, v7
-
-    add-float v16, v16, v13
-
-    const/4 v13, 0x7
-
-    aget v17, p0, v13
-
-    mul-float v18, v17, v11
-
-    add-float v18, v18, v16
-
-    aget v16, p0, v10
-
-    mul-float v2, v2, v16
-
-    const/16 v19, 0x5
-
-    aget v20, p0, v19
-
-    mul-float v7, v7, v20
-
-    add-float/2addr v7, v2
-
-    const/16 v2, 0x8
-
-    aget v21, p0, v2
-
-    mul-float v11, v11, v21
-
-    add-float/2addr v11, v7
-
-    aget v7, p1, v4
-
-    mul-float v22, v1, v7
-
-    aget v23, p1, v14
-
-    mul-float v24, v5, v23
-
-    add-float v24, v24, v22
-
-    aget v22, p1, v19
-
-    mul-float v25, v9, v22
-
-    add-float v25, v25, v24
-
-    mul-float v24, v8, v7
-
-    mul-float v26, v15, v23
-
-    add-float v26, v26, v24
-
-    mul-float v24, v17, v22
-
-    add-float v24, v24, v26
-
-    mul-float v7, v7, v16
-
-    mul-float v23, v23, v20
-
-    add-float v23, v23, v7
-
-    mul-float v22, v22, v21
-
-    add-float v22, v22, v23
-
-    aget v7, p1, v3
-
-    mul-float/2addr v1, v7
-
-    aget v23, p1, v13
-
-    mul-float v5, v5, v23
-
-    add-float/2addr v5, v1
-
-    aget v1, p1, v2
-
-    mul-float/2addr v9, v1
-
-    add-float/2addr v9, v5
-
-    mul-float/2addr v8, v7
-
-    mul-float v15, v15, v23
-
-    add-float/2addr v15, v8
-
-    mul-float v17, v17, v1
-
-    add-float v17, v17, v15
-
-    mul-float v16, v16, v7
-
-    mul-float v20, v20, v23
-
-    add-float v20, v20, v16
-
-    mul-float v21, v21, v1
-
-    add-float v21, v21, v20
-
-    const/16 v1, 0x9
-
-    new-array v1, v1, [F
-
-    aput v12, v1, v0
-
-    aput v18, v1, v6
-
-    aput v11, v1, v10
-
-    aput v25, v1, v4
-
-    aput v24, v1, v14
-
-    aput v22, v1, v19
-
-    aput v9, v1, v3
-
-    aput v17, v1, v13
-
-    aput v21, v1, v2
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     return-object v1
-.end method
 
-.method public static final i([F[F)[F
-    .locals 19
+    :pswitch_1
+    move-object/from16 v1, p1
 
-    const/4 v0, 0x0
+    check-cast v1, Ljava/util/List;
 
-    aget v1, p0, v0
+    iget-object v2, v0, Lz/j;->i:Lz/k;
 
-    aget v2, p1, v0
+    invoke-virtual {v2}, Lz/k;->y0()Lz/e;
 
-    mul-float/2addr v2, v1
+    move-result-object v3
 
-    const/4 v3, 0x1
+    iget-object v4, v2, Lz/k;->u:Lz0/fa;
 
-    aget v4, p0, v3
+    iget-object v2, v2, Lz/k;->A:Laa/za;
 
-    aget v5, p1, v3
+    if-eqz v2, :cond_4
 
-    mul-float/2addr v5, v4
+    invoke-virtual {v2}, Laa/za;->i()J
+
+    move-result-wide v5
+
+    goto :goto_2
+
+    :cond_4
+    sget-wide v5, Lya/s;->i:J
+
+    :goto_2
+    const-wide/16 v16, 0x0
+
+    const v18, 0xfffffe
+
+    const-wide/16 v7, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const-wide/16 v12, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    invoke-static/range {v4 .. v18}, Lz0/fa;->e(Lz0/fa;JJLe5/aa;Le5/w;Le5/p;JLk5/h;IJI)Lz0/fa;
+
+    move-result-object v2
+
+    iget-object v4, v3, Lz/e;->o:Ll5/k;
+
+    const/4 v5, 0x0
+
+    if-nez v4, :cond_5
+
+    :goto_3
+    move-object v10, v5
+
+    goto/16 :goto_4
+
+    :cond_5
+    iget-object v6, v3, Lz/e;->i:Ll5/b;
+
+    if-nez v6, :cond_6
+
+    goto :goto_3
+
+    :cond_6
+    new-instance v7, Lz0/f;
+
+    iget-object v8, v3, Lz/e;->a:Ljava/lang/String;
+
+    const/4 v9, 0x6
+
+    invoke-direct {v7, v9, v8, v5}, Lz0/f;-><init>(ILjava/lang/String;Ljava/util/ArrayList;)V
+
+    iget-object v8, v3, Lz/e;->j:Lz0/a;
+
+    if-nez v8, :cond_7
+
+    goto :goto_3
+
+    :cond_7
+    iget-object v8, v3, Lz/e;->n:Lz0/p;
+
+    if-nez v8, :cond_8
+
+    goto :goto_3
+
+    :cond_8
+    iget-wide v9, v3, Lz/e;->p:J
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/16 v15, 0xa
+
+    invoke-static/range {v9 .. v15}, Ll5/a;->a(JIIIII)J
+
+    move-result-wide v8
+
+    new-instance v10, Lz0/ca;
+
+    new-instance v11, Lz0/ba;
+
+    sget-object v12, Lv8/t;->g:Lv8/t;
+
+    iget v13, v3, Lz/e;->f:I
+
+    iget-boolean v14, v3, Lz/e;->e:Z
+
+    iget v15, v3, Lz/e;->d:I
+
+    iget-object v5, v3, Lz/e;->c:Le5/o;
+
+    move-object/from16 v19, v11
+
+    move-object/from16 v20, v7
+
+    move-object/from16 v21, v2
+
+    move-object/from16 v22, v12
+
+    move/from16 v23, v13
+
+    move/from16 v24, v14
+
+    move/from16 v25, v15
+
+    move-object/from16 v26, v6
+
+    move-object/from16 v27, v4
+
+    move-object/from16 v28, v5
+
+    move-wide/from16 v29, v8
+
+    invoke-direct/range {v19 .. v30}, Lz0/ba;-><init>(Lz0/f;Lz0/fa;Ljava/util/List;IZILl5/b;Ll5/k;Le5/o;J)V
+
+    new-instance v4, Lz0/l;
+
+    new-instance v17, La5/s;
+
+    move-object/from16 v19, v17
+
+    move-object/from16 v23, v6
+
+    move-object/from16 v24, v5
+
+    invoke-direct/range {v19 .. v24}, La5/s;-><init>(Lz0/f;Lz0/fa;Ljava/util/List;Ll5/b;Le5/o;)V
+
+    iget v2, v3, Lz/e;->f:I
+
+    iget v5, v3, Lz/e;->d:I
 
     const/4 v6, 0x2
 
-    aget v7, p0, v6
+    invoke-static {v5, v6}, La/a;->Y(II)Z
 
-    aget v8, p1, v6
+    move-result v21
 
-    mul-float/2addr v8, v7
+    move-object/from16 v16, v4
 
-    const/4 v9, 0x3
+    move-wide/from16 v18, v8
 
-    aget v10, p1, v9
+    move/from16 v20, v2
 
-    mul-float/2addr v10, v1
+    invoke-direct/range {v16 .. v21}, Lz0/l;-><init>(La5/s;JIZ)V
 
-    const/4 v11, 0x4
+    iget-wide v2, v3, Lz/e;->l:J
 
-    aget v12, p1, v11
+    invoke-direct {v10, v11, v4, v2, v3}, Lz0/ca;-><init>(Lz0/ba;Lz0/l;J)V
 
-    mul-float/2addr v12, v4
+    :goto_4
+    if-eqz v10, :cond_9
 
-    const/4 v13, 0x5
+    invoke-interface {v1, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    aget v14, p1, v13
+    move-object v5, v10
 
-    mul-float/2addr v14, v7
+    goto :goto_5
 
-    const/4 v15, 0x6
+    :cond_9
+    const/4 v5, 0x0
 
-    aget v16, p1, v15
+    :goto_5
+    if-eqz v5, :cond_a
 
-    mul-float v1, v1, v16
+    const/4 v1, 0x1
 
-    const/16 v16, 0x7
+    goto :goto_6
 
-    aget v17, p1, v16
+    :cond_a
+    const/4 v1, 0x0
 
-    mul-float v4, v4, v17
+    :goto_6
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    const/16 v17, 0x8
+    move-result-object v1
 
-    aget v18, p1, v17
+    return-object v1
 
-    mul-float v7, v7, v18
-
-    const/16 v15, 0x9
-
-    new-array v15, v15, [F
-
-    aput v2, v15, v0
-
-    aput v5, v15, v3
-
-    aput v8, v15, v6
-
-    aput v10, v15, v9
-
-    aput v12, v15, v11
-
-    aput v14, v15, v13
-
-    const/4 v0, 0x6
-
-    aput v1, v15, v0
-
-    aput v4, v15, v16
-
-    aput v7, v15, v17
-
-    return-object v15
-.end method
-
-.method public static final j([F[F)V
-    .locals 8
-
-    const/4 v0, 0x0
-
-    aget v1, p1, v0
-
-    const/4 v2, 0x1
-
-    aget v3, p1, v2
-
-    const/4 v4, 0x2
-
-    aget v5, p1, v4
-
-    aget v6, p0, v0
-
-    mul-float/2addr v6, v1
-
-    const/4 v7, 0x3
-
-    aget v7, p0, v7
-
-    mul-float/2addr v7, v3
-
-    add-float/2addr v7, v6
-
-    const/4 v6, 0x6
-
-    aget v6, p0, v6
-
-    mul-float/2addr v6, v5
-
-    add-float/2addr v6, v7
-
-    aput v6, p1, v0
-
-    aget v0, p0, v2
-
-    mul-float/2addr v0, v1
-
-    const/4 v6, 0x4
-
-    aget v6, p0, v6
-
-    mul-float/2addr v6, v3
-
-    add-float/2addr v6, v0
-
-    const/4 v0, 0x7
-
-    aget v0, p0, v0
-
-    mul-float/2addr v0, v5
-
-    add-float/2addr v0, v6
-
-    aput v0, p1, v2
-
-    aget v0, p0, v4
-
-    mul-float/2addr v0, v1
-
-    const/4 v1, 0x5
-
-    aget v1, p0, v1
-
-    mul-float/2addr v1, v3
-
-    add-float/2addr v1, v0
-
-    const/16 v0, 0x8
-
-    aget p0, p0, v0
-
-    mul-float/2addr p0, v5
-
-    add-float/2addr p0, v1
-
-    aput p0, p1, v4
-
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

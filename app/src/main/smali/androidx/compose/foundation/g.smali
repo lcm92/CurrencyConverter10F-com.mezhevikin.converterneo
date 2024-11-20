@@ -40,9 +40,9 @@
 .method public final h(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 8
 
-    check-cast p1, LR/q;
+    check-cast p1, Lra/q;
 
-    check-cast p2, LF/p;
+    check-cast p2, Lfa/p;
 
     check-cast p3, Ljava/lang/Number;
 
@@ -50,7 +50,7 @@
 
     const p1, 0x581dd9c4
 
-    invoke-virtual {p2, p1}, LF/p;->Q(I)V
+    invoke-virtual {p2, p1}, Lfa/p;->Q(I)V
 
     new-instance v0, Landroidx/compose/foundation/ScrollSemanticsElement;
 
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, p1, v4, v5, v3}, Landroidx/compose/foundation/ScrollSemanticsElement;-><init>(Lm/z0;ZLo/m;Z)V
 
-    sget-object v2, Lo/O;->g:Lo/O;
+    sget-object v2, Lo/oa;->g:Lo/oa;
 
     iget-object v6, p1, Lm/z0;->c:Lp/i;
 
@@ -72,7 +72,7 @@
 
     move-object v7, p2
 
-    invoke-static/range {v0 .. v7}, Lt2/a;->N(LR/q;Lo/k0;Lo/O;ZZLo/m;Lp/i;LF/p;)LR/q;
+    invoke-static/range {v0 .. v7}, Lt2/a;->N(Lra/q;Lo/k0;Lo/oa;ZZLo/m;Lp/i;Lfa/p;)Lra/q;
 
     move-result-object p3
 
@@ -82,13 +82,13 @@
 
     invoke-direct {v0, p1, v1}, Landroidx/compose/foundation/ScrollingLayoutElement;-><init>(Lm/z0;Z)V
 
-    invoke-interface {p3, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p3, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p1
 
     const/4 p3, 0x0
 
-    invoke-virtual {p2, p3}, LF/p;->p(Z)V
+    invoke-virtual {p2, p3}, Lfa/p;->p(Z)V
 
     return-object p1
 .end method

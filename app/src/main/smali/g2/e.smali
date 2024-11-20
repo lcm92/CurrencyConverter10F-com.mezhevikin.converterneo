@@ -1,21 +1,14 @@
-.class public abstract LG2/e;
+.class public interface abstract Lg2/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LG2/g;
+# virtual methods
+.method public abstract onDestroy()V
+.end method
 
+.method public abstract onPause()V
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, LG2/g;
-
-    invoke-direct {v0}, LG2/g;-><init>()V
-
-    sput-object v0, LG2/e;->a:LG2/g;
-
-    return-void
+.method public abstract onResume()V
 .end method

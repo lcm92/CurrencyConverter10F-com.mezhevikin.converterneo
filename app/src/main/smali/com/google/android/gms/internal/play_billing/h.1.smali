@@ -1,5 +1,5 @@
 .class public abstract Lcom/google/android/gms/internal/play_billing/h;
-.super LA2/a;
+.super La7/a;
 .source "SourceFile"
 
 # interfaces

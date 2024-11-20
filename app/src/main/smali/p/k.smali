@@ -1,29 +1,22 @@
-.class public final LP/k;
-.super LP/t;
+.class public final Lp/k;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lp/m;
 
-# static fields
-.field public static final b:LP/k;
+
+# instance fields
+.field public final a:J
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, LP/k;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    sput-object v0, LP/k;->b:LP/k;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c()V
+.method public constructor <init>(J)V
     .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-wide p1, p0, Lp/k;->a:J
 
     return-void
 .end method

@@ -1,27 +1,27 @@
 .class final Landroidx/compose/foundation/layout/PaddingValuesElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lq/V;
+.field public final a:Lq/va;
 
 
 # direct methods
-.method public constructor <init>(Lq/V;)V
+.method public constructor <init>(Lq/va;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/V;
+    iput-object p1, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/va;
 
     return-void
 .end method
@@ -50,9 +50,9 @@
     return p1
 
     :cond_1
-    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/V;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/va;
 
-    iget-object p1, p1, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/V;
+    iget-object p1, p1, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/va;
 
     invoke-static {v0, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -64,7 +64,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/V;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/va;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -73,28 +73,28 @@
     return v0
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 2
 
-    new-instance v0, Lq/W;
+    new-instance v0, Lq/wa;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
-    iget-object v1, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/V;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/va;
 
-    iput-object v1, v0, Lq/W;->t:Lq/V;
+    iput-object v1, v0, Lq/wa;->t:Lq/va;
 
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 1
 
-    check-cast p1, Lq/W;
+    check-cast p1, Lq/wa;
 
-    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/V;
+    iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesElement;->a:Lq/va;
 
-    iput-object v0, p1, Lq/W;->t:Lq/V;
+    iput-object v0, p1, Lq/wa;->t:Lq/va;
 
     return-void
 .end method

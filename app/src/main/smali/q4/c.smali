@@ -131,7 +131,7 @@
 
     move-result-object v0
 
-    check-cast v0, LU3/i;
+    check-cast v0, Lu8/i;
 
     if-nez v0, :cond_4
 
@@ -152,7 +152,7 @@
     goto :goto_0
 
     :cond_4
-    iget-object v2, v0, LU3/i;->g:Ljava/lang/Object;
+    iget-object v2, v0, Lu8/i;->g:Ljava/lang/Object;
 
     check-cast v2, Ljava/lang/Number;
 
@@ -160,7 +160,7 @@
 
     move-result v2
 
-    iget-object v0, v0, LU3/i;->h:Ljava/lang/Object;
+    iget-object v0, v0, Lu8/i;->h:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Number;
 

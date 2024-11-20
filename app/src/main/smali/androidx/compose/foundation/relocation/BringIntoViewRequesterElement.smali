@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -76,12 +76,12 @@
     return v0
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 2
 
     new-instance v0, Lt/d;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
     iget-object v1, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->a:Lt/c;
 
@@ -90,7 +90,7 @@
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 2
 
     check-cast p1, Lt/d;
@@ -99,18 +99,18 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, v0, Lt/c;->a:LH/d;
+    iget-object v0, v0, Lt/c;->a:Lha/d;
 
-    invoke-virtual {v0, p1}, LH/d;->n(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lha/d;->n(Ljava/lang/Object;)Z
 
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->a:Lt/c;
 
     if-eqz v0, :cond_1
 
-    iget-object v1, v0, Lt/c;->a:LH/d;
+    iget-object v1, v0, Lt/c;->a:Lha/d;
 
-    invoke-virtual {v1, p1}, LH/d;->b(Ljava/lang/Object;)V
+    invoke-virtual {v1, p1}, Lha/d;->b(Ljava/lang/Object;)V
 
     :cond_1
     iput-object v0, p1, Lt/d;->t:Lt/c;

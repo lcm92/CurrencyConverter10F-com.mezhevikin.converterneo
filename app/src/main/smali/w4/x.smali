@@ -3,25 +3,25 @@
 .source "SourceFile"
 
 # interfaces
-.implements LY3/d;
+.implements Ly8/d;
 .implements La4/d;
 
 
 # instance fields
-.field public final g:LY3/d;
+.field public final g:Ly8/d;
 
-.field public final h:LY3/i;
+.field public final h:Ly8/i;
 
 
 # direct methods
-.method public constructor <init>(LY3/d;LY3/i;)V
+.method public constructor <init>(Ly8/d;Ly8/i;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lw4/x;->g:LY3/d;
+    iput-object p1, p0, Lw4/x;->g:Ly8/d;
 
-    iput-object p2, p0, Lw4/x;->h:LY3/i;
+    iput-object p2, p0, Lw4/x;->h:Ly8/i;
 
     return-void
 .end method
@@ -31,7 +31,7 @@
 .method public final k()La4/d;
     .locals 2
 
-    iget-object v0, p0, Lw4/x;->g:LY3/d;
+    iget-object v0, p0, Lw4/x;->g:Ly8/d;
 
     instance-of v1, v0, La4/d;
 
@@ -48,10 +48,10 @@
     return-object v0
 .end method
 
-.method public final o()LY3/i;
+.method public final o()Ly8/i;
     .locals 1
 
-    iget-object v0, p0, Lw4/x;->h:LY3/i;
+    iget-object v0, p0, Lw4/x;->h:Ly8/i;
 
     return-object v0
 .end method
@@ -59,9 +59,9 @@
 .method public final s(Ljava/lang/Object;)V
     .locals 1
 
-    iget-object v0, p0, Lw4/x;->g:LY3/d;
+    iget-object v0, p0, Lw4/x;->g:Ly8/d;
 
-    invoke-interface {v0, p1}, LY3/d;->s(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Ly8/d;->s(Ljava/lang/Object;)V
 
     return-void
 .end method

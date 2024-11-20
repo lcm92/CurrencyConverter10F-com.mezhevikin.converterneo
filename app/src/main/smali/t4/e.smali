@@ -33,12 +33,12 @@
     :catchall_0
     move-exception v0
 
-    invoke-static {v0}, LU3/a;->b(Ljava/lang/Throwable;)LU3/k;
+    invoke-static {v0}, Lu8/a;->b(Ljava/lang/Throwable;)Lu8/k;
 
     move-result-object v0
 
     :goto_0
-    instance-of v1, v0, LU3/k;
+    instance-of v1, v0, Lu8/k;
 
     if-eqz v1, :cond_0
 

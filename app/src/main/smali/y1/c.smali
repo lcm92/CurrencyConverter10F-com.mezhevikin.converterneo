@@ -1,49 +1,67 @@
-.class public final LY1/c;
-.super Ljava/lang/Object;
+.class public abstract Ly1/c;
+.super Landroid/content/BroadcastReceiver;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Landroid/content/Context;
-
-.field public final b:Lb2/v;
+# static fields
+.field public static final a:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+.method static constructor <clinit>()V
+    .locals 1
+
+    const-string v0, "ConstraintProxy"
+
+    invoke-static {v0}, Lv1/m;->n(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Ly1/c;->a:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
 
-    const-string v0, "context cannot be null"
+    invoke-static {}, Lv1/m;->i()Lv1/m;
 
-    invoke-static {p1, v0}, Lo2/p;->d(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v0
 
-    sget-object v0, Lb2/l;->e:Lb2/l;
+    const-string v1, "onReceive : %s"
 
-    iget-object v0, v0, Lb2/l;->b:Lb2/j;
-
-    new-instance v1, Lw2/Q;
-
-    invoke-direct {v1}, Lw2/Q;-><init>()V
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    new-instance v2, Lb2/g;
-
-    invoke-direct {v2, v0, p1, p2, v1}, Lb2/g;-><init>(Lb2/j;Landroid/content/Context;Ljava/lang/String;Lw2/Q;)V
-
-    const/4 p2, 0x0
-
-    invoke-virtual {v2, p1, p2}, Lb2/k;->d(Landroid/content/Context;Z)Ljava/lang/Object;
+    filled-new-array {p2}, [Ljava/lang/Object;
 
     move-result-object p2
 
-    check-cast p2, Lb2/v;
+    invoke-static {v1, p2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object p2
 
-    iput-object p1, p0, LY1/c;->a:Landroid/content/Context;
+    const/4 v1, 0x0
 
-    iput-object p2, p0, LY1/c;->b:Lb2/v;
+    new-array v1, v1, [Ljava/lang/Throwable;
+
+    sget-object v2, Ly1/c;->a:Ljava/lang/String;
+
+    invoke-virtual {v0, v2, p2, v1}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+
+    sget-object p2, Ly1/b;->j:Ljava/lang/String;
+
+    new-instance p2, Landroid/content/Intent;
+
+    const-class v0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;
+
+    invoke-direct {p2, p1, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const-string v0, "ACTION_CONSTRAINTS_CHANGED"
+
+    invoke-virtual {p2, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    invoke-virtual {p1, p2}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     return-void
 .end method

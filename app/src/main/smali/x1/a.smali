@@ -1,167 +1,49 @@
-.class public abstract LX1/a;
+.class public final Lx1/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Landroid/util/SparseArray;
+.field public static final d:Ljava/lang/String;
 
-.field public static final b:Ljava/util/HashMap;
+
+# instance fields
+.field public final a:Lx1/b;
+
+.field public final b:Lk3/b;
+
+.field public final c:Ljava/util/HashMap;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 1
 
-    new-instance v0, Landroid/util/SparseArray;
+    const-string v0, "DelayedWorkTracker"
 
-    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
-
-    sput-object v0, LX1/a;->a:Landroid/util/SparseArray;
-
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    sput-object v0, LX1/a;->b:Ljava/util/HashMap;
-
-    sget-object v1, LK1/c;->g:LK1/c;
-
-    const/4 v2, 0x0
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    sget-object v1, LK1/c;->h:LK1/c;
-
-    const/4 v2, 0x1
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    sget-object v1, LK1/c;->i:LK1/c;
-
-    const/4 v2, 0x2
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+    invoke-static {v0}, Lv1/m;->n(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    sput-object v0, Lx1/a;->d:Ljava/lang/String;
 
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, LK1/c;
-
-    sget-object v2, LX1/a;->a:Landroid/util/SparseArray;
-
-    sget-object v3, LX1/a;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v3, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Integer;
-
-    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
-
-    move-result v3
-
-    invoke-virtual {v2, v3, v1}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method
 
-.method public static a(LK1/c;)I
-    .locals 3
+.method public constructor <init>(Lx1/b;Lk3/b;)V
+    .locals 0
 
-    sget-object v0, LX1/a;->b:Ljava/util/HashMap;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {v0, p0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iput-object p1, p0, Lx1/a;->a:Lx1/b;
 
-    move-result-object v0
+    iput-object p2, p0, Lx1/a;->b:Lk3/b;
 
-    check-cast v0, Ljava/lang/Integer;
+    new-instance p1, Ljava/util/HashMap;
 
-    if-eqz v0, :cond_0
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    iput-object p1, p0, Lx1/a;->c:Ljava/util/HashMap;
 
-    move-result p0
-
-    return p0
-
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "PriorityMapping is missing known Priority value "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public static b(I)LK1/c;
-    .locals 2
-
-    sget-object v0, LX1/a;->a:Landroid/util/SparseArray;
-
-    invoke-virtual {v0, p0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, LK1/c;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const-string v1, "Unknown Priority for value "
-
-    invoke-static {v1, p0}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    return-void
 .end method

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/IndicationModifierElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -104,7 +104,7 @@
     return v1
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 3
 
     new-instance v0, Lm/a0;
@@ -126,7 +126,7 @@
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 2
 
     check-cast p1, Lm/a0;

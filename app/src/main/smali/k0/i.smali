@@ -1,177 +1,205 @@
-.class public final LK0/i;
+.class public final Lk0/i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:I
+.field public final a:Ljava/lang/Object;
+
+.field public final b:I
+
+.field public c:I
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method public constructor <init>(Ljava/util/List;Ly/s;)V
+    .locals 6
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, LK0/i;->a:I
+    iput-object p1, p0, Lk0/i;->a:Ljava/lang/Object;
 
-    return-void
-.end method
+    const/4 v0, 0x0
 
-.method public static final a(II)Z
-    .locals 0
+    if-eqz p2, :cond_0
 
-    if-ne p0, p1, :cond_0
+    iget-object v1, p2, Ly/s;->i:Ljava/lang/Object;
 
-    const/4 p0, 0x1
+    check-cast v1, Ly/s;
+
+    iget-object v1, v1, Ly/s;->i:Ljava/lang/Object;
+
+    check-cast v1, Landroid/view/MotionEvent;
 
     goto :goto_0
 
     :cond_0
-    const/4 p0, 0x0
+    move-object v1, v0
 
     :goto_0
-    return p0
-.end method
+    const/4 v2, 0x0
 
-.method public static b(I)Ljava/lang/String;
-    .locals 1
+    if-eqz v1, :cond_1
 
-    const/4 v0, 0x1
+    invoke-virtual {v1}, Landroid/view/MotionEvent;->getButtonState()I
 
-    invoke-static {p0, v0}, LK0/i;->a(II)Z
+    move-result v1
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string p0, "Ltr"
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x2
-
-    invoke-static {p0, v0}, LK0/i;->a(II)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const-string p0, "Rtl"
-
-    goto :goto_0
+    goto :goto_1
 
     :cond_1
-    const/4 v0, 0x3
+    move v1, v2
 
-    invoke-static {p0, v0}, LK0/i;->a(II)Z
+    :goto_1
+    iput v1, p0, Lk0/i;->b:I
 
-    move-result v0
+    if-eqz p2, :cond_2
 
-    if-eqz v0, :cond_2
+    iget-object v1, p2, Ly/s;->i:Ljava/lang/Object;
 
-    const-string p0, "Content"
+    check-cast v1, Ly/s;
 
-    goto :goto_0
+    iget-object v1, v1, Ly/s;->i:Ljava/lang/Object;
+
+    check-cast v1, Landroid/view/MotionEvent;
+
+    goto :goto_2
 
     :cond_2
-    const/4 v0, 0x4
+    move-object v1, v0
 
-    invoke-static {p0, v0}, LK0/i;->a(II)Z
+    :goto_2
+    if-eqz v1, :cond_3
 
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    const-string p0, "ContentOrLtr"
-
-    goto :goto_0
+    invoke-virtual {v1}, Landroid/view/MotionEvent;->getMetaState()I
 
     :cond_3
-    const/4 v0, 0x5
+    if-eqz p2, :cond_4
 
-    invoke-static {p0, v0}, LK0/i;->a(II)Z
+    iget-object p2, p2, Ly/s;->i:Ljava/lang/Object;
 
-    move-result v0
+    check-cast p2, Ly/s;
 
-    if-eqz v0, :cond_4
+    iget-object p2, p2, Ly/s;->i:Ljava/lang/Object;
 
-    const-string p0, "ContentOrRtl"
+    move-object v0, p2
 
-    goto :goto_0
+    check-cast v0, Landroid/view/MotionEvent;
 
     :cond_4
-    const/high16 v0, -0x80000000
+    const/4 p2, 0x1
 
-    invoke-static {p0, v0}, LK0/i;->a(II)Z
+    const/4 v1, 0x3
 
-    move-result p0
+    const/4 v3, 0x2
 
-    if-eqz p0, :cond_5
+    if-eqz v0, :cond_8
 
-    const-string p0, "Unspecified"
+    invoke-virtual {v0}, Landroid/view/MotionEvent;->getActionMasked()I
 
-    goto :goto_0
+    move-result p1
+
+    if-eqz p1, :cond_7
+
+    if-eq p1, p2, :cond_6
+
+    if-eq p1, v3, :cond_5
+
+    packed-switch p1, :pswitch_data_0
+
+    goto :goto_3
+
+    :pswitch_0
+    const/4 v2, 0x5
+
+    goto :goto_3
+
+    :pswitch_1
+    const/4 v2, 0x4
+
+    goto :goto_3
+
+    :pswitch_2
+    const/4 v2, 0x6
+
+    goto :goto_3
 
     :cond_5
-    const-string p0, "Invalid"
+    :pswitch_3
+    move v2, v1
 
-    :goto_0
-    return-object p0
-.end method
+    goto :goto_3
 
+    :cond_6
+    :pswitch_4
+    move v2, v3
 
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
+    goto :goto_3
 
-    instance-of v0, p1, LK0/i;
+    :cond_7
+    :pswitch_5
+    move v2, p2
 
-    const/4 v1, 0x0
+    :goto_3
+    move p2, v2
 
-    if-nez v0, :cond_0
+    goto :goto_5
 
-    goto :goto_0
-
-    :cond_0
-    check-cast p1, LK0/i;
-
-    iget p1, p1, LK0/i;->a:I
-
-    iget v0, p0, LK0/i;->a:I
-
-    if-eq v0, p1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v1, 0x1
-
-    :goto_0
-    return v1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    iget v0, p0, LK0/i;->a:I
-
-    invoke-static {v0}, Ljava/lang/Integer;->hashCode(I)I
+    :cond_8
+    invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
 
-    return v0
-.end method
+    :goto_4
+    if-ge v2, v0, :cond_b
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
+    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    iget v0, p0, LK0/i;->a:I
+    move-result-object v4
 
-    invoke-static {v0}, LK0/i;->b(I)Ljava/lang/String;
+    check-cast v4, Lk0/r;
 
-    move-result-object v0
+    invoke-static {v4}, Lk0/p;->c(Lk0/r;)Z
 
-    return-object v0
+    move-result v5
+
+    if-eqz v5, :cond_9
+
+    move p2, v3
+
+    goto :goto_5
+
+    :cond_9
+    invoke-static {v4}, Lk0/p;->a(Lk0/r;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_a
+
+    goto :goto_5
+
+    :cond_a
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_4
+
+    :cond_b
+    move p2, v1
+
+    :goto_5
+    iput p2, p0, Lk0/i;->c:I
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x5
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

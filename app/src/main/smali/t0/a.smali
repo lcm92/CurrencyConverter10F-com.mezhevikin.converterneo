@@ -1,209 +1,287 @@
-.class public abstract LT0/a;
-.super Ljava/lang/Object;
+.class public final Lt0/a;
+.super Landroid/view/ActionMode$Callback2;
 .source "SourceFile"
 
 
+# instance fields
+.field public final a:Lk8/c;
+
+
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lk8/c;)V
+    .locals 0
 
-    new-instance v0, Ljava/lang/ThreadLocal;
+    invoke-direct {p0}, Landroid/view/ActionMode$Callback2;-><init>()V
 
-    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
+    iput-object p1, p0, Lt0/a;->a:Lk8/c;
 
     return-void
 .end method
 
-.method public static a(DDD)I
-    .locals 17
 
-    const-wide v0, 0x4009ecbfb15b573fL    # 3.2406
+# virtual methods
+.method public final onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
+    .locals 3
 
-    mul-double v0, v0, p0
+    iget-object v0, p0, Lt0/a;->a:Lk8/c;
 
-    const-wide v2, -0x400767a0f9096bbaL    # -1.5372
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    mul-double v2, v2, p2
+    invoke-static {p2}, Li4/h;->c(Ljava/lang/Object;)V
 
-    add-double/2addr v2, v0
+    invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
 
-    const-wide v0, -0x402016f0068db8bbL    # -0.4986
+    move-result p2
 
-    mul-double v0, v0, p4
+    const/4 v1, 0x1
 
-    add-double/2addr v0, v2
+    if-nez p2, :cond_0
 
-    const-wide/high16 v2, 0x4059000000000000L    # 100.0
+    iget-object p2, v0, Lk8/c;->j:Ljava/lang/Object;
 
-    div-double/2addr v0, v2
+    check-cast p2, Lh4/a;
 
-    const-wide v4, -0x4010fec56d5cfaadL    # -0.9689
+    if-eqz p2, :cond_3
 
-    mul-double v4, v4, p0
-
-    const-wide v6, 0x3ffe0346dc5d6388L    # 1.8758
-
-    mul-double v6, v6, p2
-
-    add-double/2addr v6, v4
-
-    const-wide v4, 0x3fa53f7ced916873L    # 0.0415
-
-    mul-double v4, v4, p4
-
-    add-double/2addr v4, v6
-
-    div-double/2addr v4, v2
-
-    const-wide v6, 0x3fac84b5dcc63f14L    # 0.0557
-
-    mul-double v6, v6, p0
-
-    const-wide v8, -0x4035e353f7ced917L    # -0.204
-
-    mul-double v8, v8, p2
-
-    add-double/2addr v8, v6
-
-    const-wide v6, 0x3ff0e978d4fdf3b6L    # 1.057
-
-    mul-double v6, v6, p4
-
-    add-double/2addr v6, v8
-
-    div-double/2addr v6, v2
-
-    const-wide v2, 0x3f69a5c37387b719L    # 0.0031308
-
-    cmpl-double v8, v0, v2
-
-    const-wide v9, 0x4029d70a3d70a3d7L    # 12.92
-
-    const-wide v11, 0x3fac28f5c28f5c29L    # 0.055
-
-    const-wide v13, 0x3fdaaaaaaaaaaaabL    # 0.4166666666666667
-
-    const-wide v15, 0x3ff0e147ae147ae1L    # 1.055
-
-    if-lez v8, :cond_0
-
-    invoke-static {v0, v1, v13, v14}, Ljava/lang/Math;->pow(DD)D
-
-    move-result-wide v0
-
-    mul-double/2addr v0, v15
-
-    sub-double/2addr v0, v11
+    invoke-interface {p2}, Lh4/a;->b()Ljava/lang/Object;
 
     goto :goto_0
 
     :cond_0
-    mul-double/2addr v0, v9
+    if-ne p2, v1, :cond_1
 
+    iget-object p2, v0, Lk8/c;->k:Ljava/lang/Object;
+
+    check-cast p2, Lh4/a;
+
+    if-eqz p2, :cond_3
+
+    invoke-interface {p2}, Lh4/a;->b()Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v2, 0x2
+
+    if-ne p2, v2, :cond_2
+
+    iget-object p2, v0, Lk8/c;->l:Ljava/lang/Object;
+
+    check-cast p2, Lh4/a;
+
+    if-eqz p2, :cond_3
+
+    invoke-interface {p2}, Lh4/a;->b()Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v2, 0x3
+
+    if-ne p2, v2, :cond_4
+
+    iget-object p2, v0, Lk8/c;->m:Ljava/lang/Object;
+
+    check-cast p2, Lh4/a;
+
+    if-eqz p2, :cond_3
+
+    invoke-interface {p2}, Lh4/a;->b()Ljava/lang/Object;
+
+    :cond_3
     :goto_0
-    cmpl-double v8, v4, v2
+    if-eqz p1, :cond_5
 
-    if-lez v8, :cond_1
+    invoke-virtual {p1}, Landroid/view/ActionMode;->finish()V
 
-    invoke-static {v4, v5, v13, v14}, Ljava/lang/Math;->pow(DD)D
+    goto :goto_1
 
-    move-result-wide v4
+    :cond_4
+    const/4 v1, 0x0
 
-    mul-double/2addr v4, v15
+    :cond_5
+    :goto_1
+    return v1
+.end method
 
-    sub-double/2addr v4, v11
+.method public final onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
+    .locals 2
+
+    iget-object v0, p0, Lt0/a;->a:Lk8/c;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    if-eqz p2, :cond_5
+
+    if-eqz p1, :cond_4
+
+    iget-object p1, v0, Lk8/c;->j:Ljava/lang/Object;
+
+    check-cast p1, Lh4/a;
+
+    const/4 v1, 0x1
+
+    if-eqz p1, :cond_0
+
+    invoke-static {v1, p2}, Lk8/c;->b(ILandroid/view/Menu;)V
+
+    :cond_0
+    iget-object p1, v0, Lk8/c;->k:Ljava/lang/Object;
+
+    check-cast p1, Lh4/a;
+
+    if-eqz p1, :cond_1
+
+    const/4 p1, 0x2
+
+    invoke-static {p1, p2}, Lk8/c;->b(ILandroid/view/Menu;)V
+
+    :cond_1
+    iget-object p1, v0, Lk8/c;->l:Ljava/lang/Object;
+
+    check-cast p1, Lh4/a;
+
+    if-eqz p1, :cond_2
+
+    const/4 p1, 0x3
+
+    invoke-static {p1, p2}, Lk8/c;->b(ILandroid/view/Menu;)V
+
+    :cond_2
+    iget-object p1, v0, Lk8/c;->m:Ljava/lang/Object;
+
+    check-cast p1, Lh4/a;
+
+    if-eqz p1, :cond_3
+
+    const/4 p1, 0x4
+
+    invoke-static {p1, p2}, Lk8/c;->b(ILandroid/view/Menu;)V
+
+    :cond_3
+    return v1
+
+    :cond_4
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "onCreateActionMode requires a non-null mode"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_5
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "onCreateActionMode requires a non-null menu"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public final onDestroyActionMode(Landroid/view/ActionMode;)V
+    .locals 0
+
+    iget-object p1, p0, Lt0/a;->a:Lk8/c;
+
+    iget-object p1, p1, Lk8/c;->h:Ljava/lang/Object;
+
+    check-cast p1, Lh4/a;
+
+    if-eqz p1, :cond_0
+
+    invoke-interface {p1}, Lh4/a;->b()Ljava/lang/Object;
+
+    :cond_0
+    return-void
+.end method
+
+.method public final onGetContentRect(Landroid/view/ActionMode;Landroid/view/View;Landroid/graphics/Rect;)V
+    .locals 2
+
+    iget-object p1, p0, Lt0/a;->a:Lk8/c;
+
+    iget-object p1, p1, Lk8/c;->i:Ljava/lang/Object;
+
+    check-cast p1, Lxa/d;
+
+    if-eqz p3, :cond_0
+
+    iget p2, p1, Lxa/d;->a:F
+
+    float-to-int p2, p2
+
+    iget v0, p1, Lxa/d;->b:F
+
+    float-to-int v0, v0
+
+    iget v1, p1, Lxa/d;->c:F
+
+    float-to-int v1, v1
+
+    iget p1, p1, Lxa/d;->d:F
+
+    float-to-int p1, p1
+
+    invoke-virtual {p3, p2, v0, v1, p1}, Landroid/graphics/Rect;->set(IIII)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
+    .locals 3
+
+    iget-object v0, p0, Lt0/a;->a:Lk8/c;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    if-eqz p1, :cond_1
+
+    if-nez p2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    iget-object p1, v0, Lk8/c;->j:Ljava/lang/Object;
+
+    check-cast p1, Lh4/a;
+
+    const/4 v1, 0x1
+
+    invoke-static {p2, v1, p1}, Lk8/c;->d(Landroid/view/Menu;ILh4/a;)V
+
+    const/4 p1, 0x2
+
+    iget-object v2, v0, Lk8/c;->k:Ljava/lang/Object;
+
+    check-cast v2, Lh4/a;
+
+    invoke-static {p2, p1, v2}, Lk8/c;->d(Landroid/view/Menu;ILh4/a;)V
+
+    const/4 p1, 0x3
+
+    iget-object v2, v0, Lk8/c;->l:Ljava/lang/Object;
+
+    check-cast v2, Lh4/a;
+
+    invoke-static {p2, p1, v2}, Lk8/c;->d(Landroid/view/Menu;ILh4/a;)V
+
+    const/4 p1, 0x4
+
+    iget-object v0, v0, Lk8/c;->m:Ljava/lang/Object;
+
+    check-cast v0, Lh4/a;
+
+    invoke-static {p2, p1, v0}, Lk8/c;->d(Landroid/view/Menu;ILh4/a;)V
 
     goto :goto_1
 
     :cond_1
-    mul-double/2addr v4, v9
+    :goto_0
+    const/4 v1, 0x0
 
     :goto_1
-    cmpl-double v2, v6, v2
-
-    if-lez v2, :cond_2
-
-    invoke-static {v6, v7, v13, v14}, Ljava/lang/Math;->pow(DD)D
-
-    move-result-wide v2
-
-    mul-double/2addr v2, v15
-
-    sub-double/2addr v2, v11
-
-    goto :goto_2
-
-    :cond_2
-    mul-double v2, v6, v9
-
-    :goto_2
-    const-wide v6, 0x406fe00000000000L    # 255.0
-
-    mul-double/2addr v0, v6
-
-    invoke-static {v0, v1}, Ljava/lang/Math;->round(D)J
-
-    move-result-wide v0
-
-    long-to-int v0, v0
-
-    const/16 v1, 0xff
-
-    const/4 v8, 0x0
-
-    if-gez v0, :cond_3
-
-    move v0, v8
-
-    goto :goto_3
-
-    :cond_3
-    invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
-
-    move-result v0
-
-    :goto_3
-    mul-double/2addr v4, v6
-
-    invoke-static {v4, v5}, Ljava/lang/Math;->round(D)J
-
-    move-result-wide v4
-
-    long-to-int v4, v4
-
-    if-gez v4, :cond_4
-
-    move v4, v8
-
-    goto :goto_4
-
-    :cond_4
-    invoke-static {v4, v1}, Ljava/lang/Math;->min(II)I
-
-    move-result v4
-
-    :goto_4
-    mul-double/2addr v2, v6
-
-    invoke-static {v2, v3}, Ljava/lang/Math;->round(D)J
-
-    move-result-wide v2
-
-    long-to-int v2, v2
-
-    if-gez v2, :cond_5
-
-    goto :goto_5
-
-    :cond_5
-    invoke-static {v2, v1}, Ljava/lang/Math;->min(II)I
-
-    move-result v8
-
-    :goto_5
-    invoke-static {v0, v4, v8}, Landroid/graphics/Color;->rgb(III)I
-
-    move-result v0
-
-    return v0
+    return v1
 .end method

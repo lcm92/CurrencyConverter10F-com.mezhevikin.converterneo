@@ -1,213 +1,148 @@
-.class public abstract LE/a;
+.class public final Le/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/os/Parcelable;
+
 
 # static fields
-.field public static final A:J
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Le/a;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public static final B:J
 
-.field public static final C:J
+# instance fields
+.field public final g:I
 
-.field public static final D:J
-
-.field public static final E:J
-
-.field public static final F:J
-
-.field public static final G:J
-
-.field public static final H:J
-
-.field public static final I:J
-
-.field public static final a:J
-
-.field public static final b:J
-
-.field public static final c:J
-
-.field public static final d:J
-
-.field public static final e:J
-
-.field public static final f:J
-
-.field public static final g:J
-
-.field public static final h:J
-
-.field public static final i:J
-
-.field public static final j:J
-
-.field public static final k:J
-
-.field public static final l:J
-
-.field public static final m:J
-
-.field public static final n:J
-
-.field public static final o:J
-
-.field public static final p:J
-
-.field public static final q:J
-
-.field public static final r:J
-
-.field public static final s:J
-
-.field public static final t:J
-
-.field public static final u:J
-
-.field public static final v:J
-
-.field public static final w:J
-
-.field public static final x:J
-
-.field public static final y:J
-
-.field public static final z:J
+.field public final h:Landroid/content/Intent;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 2
 
-    sget-wide v0, LE/g;->q:J
+    new-instance v0, La7/h;
 
-    sput-wide v0, LE/a;->a:J
+    const/4 v1, 0x5
 
-    sget-wide v2, LE/g;->f:J
+    invoke-direct {v0, v1}, La7/h;-><init>(I)V
 
-    sput-wide v2, LE/a;->b:J
+    sput-object v0, Le/a;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    sget-wide v2, LE/g;->d:J
+    return-void
+.end method
 
-    sput-wide v2, LE/a;->c:J
+.method public constructor <init>(Landroid/content/Intent;I)V
+    .locals 0
 
-    sget-wide v2, LE/g;->m:J
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-wide v2, LE/a;->d:J
+    iput p2, p0, Le/a;->g:I
 
-    sget-wide v2, LE/g;->H:J
+    iput-object p1, p0, Le/a;->h:Landroid/content/Intent;
 
-    sput-wide v2, LE/a;->e:J
+    return-void
+.end method
 
-    sget-wide v2, LE/g;->s:J
 
-    sput-wide v2, LE/a;->f:J
+# virtual methods
+.method public final describeContents()I
+    .locals 1
 
-    sput-wide v2, LE/a;->g:J
+    const/4 v0, 0x0
 
-    sget-wide v4, LE/g;->c:J
+    return v0
+.end method
 
-    sput-wide v4, LE/a;->h:J
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    sget-wide v4, LE/g;->g:J
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    sput-wide v4, LE/a;->i:J
+    const-string v1, "ActivityResult{resultCode="
 
-    sget-wide v4, LE/g;->F:J
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    sput-wide v4, LE/a;->j:J
+    const/4 v1, -0x1
 
-    sget-wide v4, LE/g;->J:J
+    iget v2, p0, Le/a;->g:I
 
-    sput-wide v4, LE/a;->k:J
+    if-eq v2, v1, :cond_1
 
-    sget-wide v4, LE/g;->M:J
+    if-eqz v2, :cond_0
 
-    sput-wide v4, LE/a;->l:J
+    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
-    sget-wide v4, LE/g;->Q:J
+    move-result-object v1
 
-    sput-wide v4, LE/a;->m:J
+    goto :goto_0
 
-    sput-wide v2, LE/a;->n:J
+    :cond_0
+    const-string v1, "RESULT_CANCELED"
 
-    sget-wide v2, LE/g;->B:J
+    goto :goto_0
 
-    sput-wide v2, LE/a;->o:J
+    :cond_1
+    const-string v1, "RESULT_OK"
 
-    sget-wide v2, LE/g;->T:J
+    :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sput-wide v2, LE/a;->p:J
+    const-string v1, ", data="
 
-    sget-wide v2, LE/g;->X:J
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sput-wide v2, LE/a;->q:J
+    iget-object v1, p0, Le/a;->h:Landroid/content/Intent;
 
-    sget-wide v2, LE/g;->A:J
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    sput-wide v2, LE/a;->r:J
+    const/16 v1, 0x7d
 
-    sget-wide v2, LE/g;->y:J
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    sput-wide v2, LE/a;->s:J
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    sget-wide v4, LE/g;->I:J
+    move-result-object v0
 
-    sput-wide v4, LE/a;->t:J
+    return-object v0
+.end method
 
-    sget-wide v4, LE/g;->G:J
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 2
 
-    sput-wide v4, LE/a;->u:J
+    const-string v0, "dest"
 
-    sget-wide v4, LE/g;->h:J
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sput-wide v4, LE/a;->v:J
+    iget v0, p0, Le/a;->g:I
 
-    sget-wide v4, LE/g;->P:J
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    sput-wide v4, LE/a;->w:J
+    iget-object v0, p0, Le/a;->h:Landroid/content/Intent;
 
-    sget-wide v4, LE/g;->N:J
+    if-nez v0, :cond_0
 
-    sput-wide v4, LE/a;->x:J
+    const/4 v1, 0x0
 
-    sput-wide v0, LE/a;->y:J
+    goto :goto_0
 
-    sget-wide v4, LE/g;->o:J
+    :cond_0
+    const/4 v1, 0x1
 
-    sput-wide v4, LE/a;->z:J
+    :goto_0
+    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    sget-wide v4, LE/g;->k:J
+    if-eqz v0, :cond_1
 
-    sput-wide v4, LE/a;->A:J
+    invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->writeToParcel(Landroid/os/Parcel;I)V
 
-    sget-wide v4, LE/g;->l:J
-
-    sput-wide v4, LE/a;->B:J
-
-    sget-wide v4, LE/g;->n:J
-
-    sput-wide v4, LE/a;->C:J
-
-    sget-wide v4, LE/g;->i:J
-
-    sput-wide v4, LE/a;->D:J
-
-    sget-wide v4, LE/g;->p:J
-
-    sput-wide v4, LE/a;->E:J
-
-    sput-wide v0, LE/a;->F:J
-
-    sput-wide v2, LE/a;->G:J
-
-    sget-wide v0, LE/g;->W:J
-
-    sput-wide v0, LE/a;->H:J
-
-    sget-wide v0, LE/g;->U:J
-
-    sput-wide v0, LE/a;->I:J
-
+    :cond_1
     return-void
 .end method

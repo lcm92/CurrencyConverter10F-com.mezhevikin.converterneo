@@ -1,168 +1,2446 @@
-.class public final LY/Q;
+.class public final Ly/q;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final b:J
-
-.field public static final synthetic c:I
-
-
-# instance fields
-.field public final a:J
+.field public static final a:Ly/q;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
-
-    const/high16 v0, 0x3f000000    # 0.5f
-
-    invoke-static {v0, v0}, LY/H;->i(FF)J
-
-    move-result-wide v0
-
-    sput-wide v0, LY/Q;->b:J
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(J)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-wide p1, p0, LY/Q;->a:J
-
-    return-void
-.end method
-
-.method public static final a(JJ)Z
-    .locals 0
-
-    cmp-long p0, p0, p2
-
-    if-nez p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
-.method public static final b(J)F
     .locals 1
 
-    const/16 v0, 0x20
+    new-instance v0, Ly/q;
 
-    shr-long/2addr p0, v0
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    long-to-int p0, p0
+    sput-object v0, Ly/q;->a:Ly/q;
 
-    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
-
-    move-result p0
-
-    return p0
+    return-void
 .end method
 
-.method public static final c(J)F
-    .locals 2
+.method private final C(Lw/qa;Landroid/view/inputmethod/SelectGesture;Laa/b0;)V
+    .locals 3
 
-    const-wide v0, 0xffffffffL
+    if-eqz p3, :cond_2
 
-    and-long/2addr p0, v0
+    invoke-static {p2}, Ly/o;->h(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
 
-    long-to-int p0, p0
+    move-result-object v0
 
-    invoke-static {p0}, Ljava/lang/Float;->intBitsToFloat(I)F
+    invoke-static {v0}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
 
-    move-result p0
+    move-result-object v0
 
-    return p0
-.end method
+    invoke-static {p2}, Ly/o;->b(Landroid/view/inputmethod/SelectGesture;)I
 
-.method public static d(J)Ljava/lang/String;
-    .locals 2
+    move-result p2
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {p0, p2}, Ly/q;->G(I)I
 
-    const-string v1, "TransformOrigin(packedValue="
+    move-result p2
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-static {p1, v0, p2}, Lp2/c;->j(Lw/qa;Lxa/d;I)J
 
-    invoke-virtual {v0, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-wide p1
 
-    const/16 p0, 0x29
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 6
-
-    instance-of v0, p1, LY/Q;
-
-    const/4 v1, 0x0
+    iget-object v0, p3, Laa/b0;->d:Lw/qa;
 
     if-nez v0, :cond_0
 
     goto :goto_0
 
     :cond_0
-    check-cast p1, LY/Q;
+    invoke-virtual {v0, p1, p2}, Lw/qa;->f(J)V
 
-    iget-wide v2, p1, LY/Q;->a:J
+    :goto_0
+    iget-object v0, p3, Laa/b0;->d:Lw/qa;
 
-    iget-wide v4, p0, LY/Q;->a:J
+    if-nez v0, :cond_1
 
-    cmp-long p1, v4, v2
+    goto :goto_1
 
-    if-eqz p1, :cond_1
+    :cond_1
+    sget-wide v1, Lz0/ea;->b:J
+
+    invoke-virtual {v0, v1, v2}, Lw/qa;->e(J)V
+
+    :goto_1
+    invoke-static {p1, p2}, Lz0/ea;->b(J)Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p3, p1}, Laa/b0;->p(Z)V
+
+    sget-object p1, Lw/ga;->g:Lw/ga;
+
+    invoke-virtual {p3, p1}, Laa/b0;->n(Lw/ga;)V
+
+    :cond_2
+    return-void
+.end method
+
+.method private final D(Ly/ca;Landroid/view/inputmethod/SelectGesture;Ly/ba;)V
+    .locals 0
+
+    invoke-static {p2}, Ly/o;->h(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, Ly/o;->b(Landroid/view/inputmethod/SelectGesture;)I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Ly/q;->G(I)I
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final E(Lw/qa;Landroid/view/inputmethod/SelectRangeGesture;Laa/b0;)V
+    .locals 3
+
+    if-eqz p3, :cond_2
+
+    invoke-static {p2}, La5/a;->d(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v0
+
+    invoke-static {p2}, La5/a;->t(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v1
+
+    invoke-static {p2}, Ly/o;->c(Landroid/view/inputmethod/SelectRangeGesture;)I
+
+    move-result p2
+
+    invoke-direct {p0, p2}, Ly/q;->G(I)I
+
+    move-result p2
+
+    invoke-static {p1, v0, v1, p2}, Lp2/c;->c(Lw/qa;Lxa/d;Lxa/d;I)J
+
+    move-result-wide p1
+
+    iget-object v0, p3, Laa/b0;->d:Lw/qa;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0, p1, p2}, Lw/qa;->f(J)V
+
+    :goto_0
+    iget-object v0, p3, Laa/b0;->d:Lw/qa;
+
+    if-nez v0, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    sget-wide v1, Lz0/ea;->b:J
+
+    invoke-virtual {v0, v1, v2}, Lw/qa;->e(J)V
+
+    :goto_1
+    invoke-static {p1, p2}, Lz0/ea;->b(J)Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p3, p1}, Laa/b0;->p(Z)V
+
+    sget-object p1, Lw/ga;->g:Lw/ga;
+
+    invoke-virtual {p3, p1}, Laa/b0;->n(Lw/ga;)V
+
+    :cond_2
+    return-void
+.end method
+
+.method private final F(Ly/ca;Landroid/view/inputmethod/SelectRangeGesture;Ly/ba;)V
+    .locals 0
+
+    invoke-static {p2}, La5/a;->d(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, La5/a;->t(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, Ly/o;->c(Landroid/view/inputmethod/SelectRangeGesture;)I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Ly/q;->G(I)I
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final G(I)I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-eq p1, v0, :cond_0
+
+    const/4 v0, 0x0
+
+    :cond_0
+    return v0
+.end method
+
+.method private final a(Ly/ca;Landroid/view/inputmethod/HandwritingGesture;)I
+    .locals 0
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/inputmethod/HandwritingGesture;",
+            "Lh4/c;",
+            ")I"
+        }
+    .end annotation
+
+    invoke-static {p1}, Ly/o;->m(Landroid/view/inputmethod/HandwritingGesture;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x3
+
+    return p1
+
+    :cond_0
+    new-instance v0, Lf5/a;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p1, v1}, Lf5/a;-><init>(Ljava/lang/String;I)V
+
+    invoke-interface {p2, v0}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 p1, 0x5
+
+    return p1
+.end method
+
+.method private final c(Lw/qa;Landroid/view/inputmethod/DeleteGesture;Lz0/f;Lh4/c;)I
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw/qa;",
+            "Landroid/view/inputmethod/DeleteGesture;",
+            "Lz0/f;",
+            "Lh4/c;",
+            ")I"
+        }
+    .end annotation
+
+    invoke-static {p2}, La5/a;->b(Landroid/view/inputmethod/DeleteGesture;)I
+
+    move-result v0
+
+    invoke-direct {p0, v0}, Ly/q;->G(I)I
+
+    move-result v0
+
+    invoke-static {p2}, La5/a;->c(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v1
+
+    invoke-static {p1, v1, v0}, Lp2/c;->j(Lw/qa;Lxa/d;I)J
+
+    move-result-wide v3
+
+    invoke-static {v3, v4}, Lz0/ea;->b(J)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    sget-object p1, Ly/q;->a:Ly/q;
+
+    invoke-static {p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2, p4}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x1
+
+    if-ne v0, p1, :cond_1
+
+    move v6, p1
 
     goto :goto_0
 
     :cond_1
-    const/4 v1, 0x1
+    const/4 p2, 0x0
+
+    move v6, p2
 
     :goto_0
-    return v1
+    move-object v2, p0
+
+    move-object v5, p3
+
+    move-object v7, p4
+
+    invoke-direct/range {v2 .. v7}, Ly/q;->h(JLz0/f;ZLh4/c;)V
+
+    return p1
 .end method
 
-.method public final hashCode()I
-    .locals 2
+.method private final d(Ly/ca;Landroid/view/inputmethod/DeleteGesture;Ly/ba;)I
+    .locals 0
 
-    iget-wide v0, p0, LY/Q;->a:J
+    invoke-static {p2}, La5/a;->b(Landroid/view/inputmethod/DeleteGesture;)I
 
-    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
+    move-result p1
+
+    invoke-direct {p0, p1}, Ly/q;->G(I)I
+
+    invoke-static {p2}, La5/a;->c(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final e(Lw/qa;Landroid/view/inputmethod/DeleteRangeGesture;Lz0/f;Lh4/c;)I
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw/qa;",
+            "Landroid/view/inputmethod/DeleteRangeGesture;",
+            "Lz0/f;",
+            "Lh4/c;",
+            ")I"
+        }
+    .end annotation
+
+    invoke-static {p2}, Ly/o;->a(Landroid/view/inputmethod/DeleteRangeGesture;)I
+
+    move-result v0
+
+    invoke-direct {p0, v0}, Ly/q;->G(I)I
+
+    move-result v0
+
+    invoke-static {p2}, Ly/o;->g(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v1
+
+    invoke-static {p2}, Ly/o;->q(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v2
+
+    invoke-static {p1, v1, v2, v0}, Lp2/c;->c(Lw/qa;Lxa/d;Lxa/d;I)J
+
+    move-result-wide v4
+
+    invoke-static {v4, v5}, Lz0/ea;->b(J)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    sget-object p1, Ly/q;->a:Ly/q;
+
+    invoke-static {p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2, p4}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x1
+
+    if-ne v0, p1, :cond_1
+
+    move v7, p1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p2, 0x0
+
+    move v7, p2
+
+    :goto_0
+    move-object v3, p0
+
+    move-object v6, p3
+
+    move-object v8, p4
+
+    invoke-direct/range {v3 .. v8}, Ly/q;->h(JLz0/f;ZLh4/c;)V
+
+    return p1
+.end method
+
+.method private final f(Ly/ca;Landroid/view/inputmethod/DeleteRangeGesture;Ly/ba;)I
+    .locals 0
+
+    invoke-static {p2}, Ly/o;->a(Landroid/view/inputmethod/DeleteRangeGesture;)I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Ly/q;->G(I)I
+
+    invoke-static {p2}, Ly/o;->g(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, Ly/o;->q(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final g(Ly/ca;JZ)V
+    .locals 0
+
+    const/4 p1, 0x0
+
+    if-eqz p4, :cond_0
+
+    throw p1
+
+    :cond_0
+    throw p1
+.end method
+
+.method private final h(JLz0/f;ZLh4/c;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(J",
+            "Lz0/f;",
+            "Z",
+            "Lh4/c;",
+            ")V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    const-wide v1, 0xffffffffL
+
+    if-eqz p4, :cond_7
+
+    sget p4, Lz0/ea;->c:I
+
+    const/16 p4, 0x20
+
+    shr-long v3, p1, p4
+
+    long-to-int p4, v3
+
+    and-long v3, p1, v1
+
+    long-to-int v3, v3
+
+    const/16 v4, 0xa
+
+    if-lez p4, :cond_0
+
+    invoke-static {p3, p4}, Ljava/lang/Character;->codePointBefore(Ljava/lang/CharSequence;I)I
+
+    move-result v5
+
+    goto :goto_0
+
+    :cond_0
+    move v5, v4
+
+    :goto_0
+    iget-object v6, p3, Lz0/f;->g:Ljava/lang/String;
+
+    invoke-virtual {v6}, Ljava/lang/String;->length()I
+
+    move-result v6
+
+    if-ge v3, v6, :cond_1
+
+    invoke-static {p3, v3}, Ljava/lang/Character;->codePointAt(Ljava/lang/CharSequence;I)I
+
+    move-result v4
+
+    :cond_1
+    invoke-static {v5}, Lp2/c;->m(I)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_4
+
+    invoke-static {v4}, Lp2/c;->l(I)Z
+
+    move-result v6
+
+    if-nez v6, :cond_2
+
+    invoke-static {v4}, Lp2/c;->k(I)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_4
+
+    :cond_2
+    invoke-static {v5}, Ljava/lang/Character;->charCount(I)I
+
+    move-result p1
+
+    sub-int/2addr p4, p1
+
+    if-eqz p4, :cond_3
+
+    invoke-static {p3, p4}, Ljava/lang/Character;->codePointBefore(Ljava/lang/CharSequence;I)I
+
+    move-result v5
+
+    invoke-static {v5}, Lp2/c;->m(I)Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    :cond_3
+    invoke-static {p4, v3}, Lp3/e;->a(II)J
+
+    move-result-wide p1
+
+    goto :goto_1
+
+    :cond_4
+    invoke-static {v4}, Lp2/c;->m(I)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_7
+
+    invoke-static {v5}, Lp2/c;->l(I)Z
+
+    move-result v6
+
+    if-nez v6, :cond_5
+
+    invoke-static {v5}, Lp2/c;->k(I)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_7
+
+    :cond_5
+    invoke-static {v4}, Ljava/lang/Character;->charCount(I)I
+
+    move-result p1
+
+    add-int/2addr v3, p1
+
+    iget-object p1, p3, Lz0/f;->g:Ljava/lang/String;
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result p1
+
+    if-eq v3, p1, :cond_6
+
+    invoke-static {p3, v3}, Ljava/lang/Character;->codePointAt(Ljava/lang/CharSequence;I)I
+
+    move-result v4
+
+    invoke-static {v4}, Lp2/c;->m(I)Z
+
+    move-result p1
+
+    if-nez p1, :cond_5
+
+    :cond_6
+    invoke-static {p4, v3}, Lp3/e;->a(II)J
+
+    move-result-wide p1
+
+    :cond_7
+    :goto_1
+    new-instance p3, Lf5/v;
+
+    and-long/2addr v1, p1
+
+    long-to-int p4, v1
+
+    invoke-direct {p3, p4, p4}, Lf5/v;-><init>(II)V
+
+    invoke-static {p1, p2}, Lz0/ea;->c(J)I
+
+    move-result p1
+
+    new-instance p2, Lf5/g;
+
+    invoke-direct {p2, p1, v0}, Lf5/g;-><init>(II)V
+
+    const/4 p1, 0x2
+
+    new-array p1, p1, [Lf5/i;
+
+    aput-object p3, p1, v0
+
+    const/4 p3, 0x1
+
+    aput-object p2, p1, p3
+
+    new-instance p2, Ly/r;
+
+    invoke-direct {p2, p1}, Ly/r;-><init>([Lf5/i;)V
+
+    invoke-interface {p5, p2}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method private final k(Lw/qa;Landroid/view/inputmethod/InsertGesture;Lr0/oa0;Lh4/c;)I
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw/qa;",
+            "Landroid/view/inputmethod/InsertGesture;",
+            "Lr0/oa0;",
+            "Lh4/c;",
+            ")I"
+        }
+    .end annotation
+
+    if-nez p3, :cond_0
+
+    invoke-static {p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1, p4}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    invoke-static {p2}, Ly/o;->d(Landroid/view/inputmethod/InsertGesture;)Landroid/graphics/PointF;
+
+    move-result-object v0
+
+    iget v1, v0, Landroid/graphics/PointF;->x:F
+
+    iget v0, v0, Landroid/graphics/PointF;->y:F
+
+    invoke-static {v1, v0}, Lv2/h;->k(FF)J
+
+    move-result-wide v0
+
+    invoke-virtual {p1}, Lw/qa;->d()Lw/p0;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    const/4 v4, -0x1
+
+    if-eqz v2, :cond_2
+
+    iget-object v2, v2, Lw/p0;->a:Lz0/ca;
+
+    iget-object v2, v2, Lz0/ca;->b:Lz0/l;
+
+    invoke-virtual {p1}, Lw/qa;->c()Lo0/p;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_2
+
+    invoke-interface {v5, v0, v1}, Lo0/p;->m(J)J
+
+    move-result-wide v0
+
+    invoke-static {v2, v0, v1, p3}, Lp2/c;->i(Lz0/l;JLr0/oa0;)I
+
+    move-result p3
+
+    if-ne p3, v4, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {v2, p3}, Lz0/l;->d(I)F
+
+    move-result v5
+
+    invoke-virtual {v2, p3}, Lz0/l;->b(I)F
+
+    move-result p3
+
+    add-float/2addr p3, v5
+
+    const/high16 v5, 0x40000000    # 2.0f
+
+    div-float/2addr p3, v5
+
+    invoke-static {v0, v1, p3, v3}, Lxa/c;->a(JFI)J
+
+    move-result-wide v0
+
+    invoke-virtual {v2, v0, v1}, Lz0/l;->e(J)I
+
+    move-result p3
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    move p3, v4
+
+    :goto_1
+    if-eq p3, v4, :cond_4
+
+    invoke-virtual {p1}, Lw/qa;->d()Lw/p0;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    iget-object p1, p1, Lw/p0;->a:Lz0/ca;
+
+    invoke-static {p1, p3}, Lp2/c;->d(Lz0/ca;I)Z
+
+    move-result p1
+
+    if-ne p1, v3, :cond_3
+
+    goto :goto_2
+
+    :cond_3
+    invoke-static {p2}, Ly/o;->n(Landroid/view/inputmethod/InsertGesture;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p3, p1, p4}, Ly/q;->m(ILjava/lang/String;Lh4/c;)V
+
+    return v3
+
+    :cond_4
+    :goto_2
+    invoke-static {p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1, p4}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method private final l(Ly/ca;Landroid/view/inputmethod/InsertGesture;Ly/ba;Lr0/oa0;)I
+    .locals 0
+
+    invoke-static {p2}, Ly/o;->d(Landroid/view/inputmethod/InsertGesture;)Landroid/graphics/PointF;
+
+    move-result-object p1
+
+    iget p2, p1, Landroid/graphics/PointF;->x:F
+
+    iget p1, p1, Landroid/graphics/PointF;->y:F
+
+    invoke-static {p2, p1}, Lv2/h;->k(FF)J
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final m(ILjava/lang/String;Lh4/c;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/lang/String;",
+            "Lh4/c;",
+            ")V"
+        }
+    .end annotation
+
+    new-instance v0, Lf5/v;
+
+    invoke-direct {v0, p1, p1}, Lf5/v;-><init>(II)V
+
+    new-instance p1, Lf5/a;
+
+    const/4 v1, 0x1
+
+    invoke-direct {p1, p2, v1}, Lf5/a;-><init>(Ljava/lang/String;I)V
+
+    const/4 p2, 0x2
+
+    new-array p2, p2, [Lf5/i;
+
+    const/4 v2, 0x0
+
+    aput-object v0, p2, v2
+
+    aput-object p1, p2, v1
+
+    new-instance p1, Ly/r;
+
+    invoke-direct {p1, p2}, Ly/r;-><init>([Lf5/i;)V
+
+    invoke-interface {p3, p1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method private final n(Lw/qa;Landroid/view/inputmethod/JoinOrSplitGesture;Lz0/f;Lr0/oa0;Lh4/c;)I
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw/qa;",
+            "Landroid/view/inputmethod/JoinOrSplitGesture;",
+            "Lz0/f;",
+            "Lr0/oa0;",
+            "Lh4/c;",
+            ")I"
+        }
+    .end annotation
+
+    if-nez p4, :cond_0
+
+    invoke-static {p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1, p5}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    invoke-static {p2}, Ly/o;->e(Landroid/view/inputmethod/JoinOrSplitGesture;)Landroid/graphics/PointF;
+
+    move-result-object v0
+
+    iget v1, v0, Landroid/graphics/PointF;->x:F
+
+    iget v0, v0, Landroid/graphics/PointF;->y:F
+
+    invoke-static {v1, v0}, Lv2/h;->k(FF)J
+
+    move-result-wide v0
+
+    invoke-virtual {p1}, Lw/qa;->d()Lw/p0;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    const/4 v4, -0x1
+
+    if-eqz v2, :cond_2
+
+    iget-object v2, v2, Lw/p0;->a:Lz0/ca;
+
+    iget-object v2, v2, Lz0/ca;->b:Lz0/l;
+
+    invoke-virtual {p1}, Lw/qa;->c()Lo0/p;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_2
+
+    invoke-interface {v5, v0, v1}, Lo0/p;->m(J)J
+
+    move-result-wide v0
+
+    invoke-static {v2, v0, v1, p4}, Lp2/c;->i(Lz0/l;JLr0/oa0;)I
+
+    move-result p4
+
+    if-ne p4, v4, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {v2, p4}, Lz0/l;->d(I)F
+
+    move-result v5
+
+    invoke-virtual {v2, p4}, Lz0/l;->b(I)F
+
+    move-result p4
+
+    add-float/2addr p4, v5
+
+    const/high16 v5, 0x40000000    # 2.0f
+
+    div-float/2addr p4, v5
+
+    invoke-static {v0, v1, p4, v3}, Lxa/c;->a(JFI)J
+
+    move-result-wide v0
+
+    invoke-virtual {v2, v0, v1}, Lz0/l;->e(J)I
+
+    move-result p4
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    move p4, v4
+
+    :goto_1
+    if-eq p4, v4, :cond_9
+
+    invoke-virtual {p1}, Lw/qa;->d()Lw/p0;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    iget-object p1, p1, Lw/p0;->a:Lz0/ca;
+
+    invoke-static {p1, p4}, Lp2/c;->d(Lz0/ca;I)Z
+
+    move-result p1
+
+    if-ne p1, v3, :cond_3
+
+    goto :goto_6
+
+    :cond_3
+    move p1, p4
+
+    :goto_2
+    if-lez p1, :cond_5
+
+    invoke-static {p3, p1}, Ljava/lang/Character;->codePointBefore(Ljava/lang/CharSequence;I)I
+
+    move-result p2
+
+    invoke-static {p2}, Lp2/c;->l(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    goto :goto_3
+
+    :cond_4
+    invoke-static {p2}, Ljava/lang/Character;->charCount(I)I
+
+    move-result p2
+
+    sub-int/2addr p1, p2
+
+    goto :goto_2
+
+    :cond_5
+    :goto_3
+    iget-object p2, p3, Lz0/f;->g:Ljava/lang/String;
+
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result p2
+
+    if-ge p4, p2, :cond_7
+
+    invoke-static {p3, p4}, Ljava/lang/Character;->codePointAt(Ljava/lang/CharSequence;I)I
+
+    move-result p2
+
+    invoke-static {p2}, Lp2/c;->l(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_6
+
+    goto :goto_4
+
+    :cond_6
+    invoke-static {p2}, Ljava/lang/Character;->charCount(I)I
+
+    move-result p2
+
+    add-int/2addr p4, p2
+
+    goto :goto_3
+
+    :cond_7
+    :goto_4
+    invoke-static {p1, p4}, Lp3/e;->a(II)J
+
+    move-result-wide v5
+
+    invoke-static {v5, v6}, Lz0/ea;->b(J)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_8
+
+    const/16 p1, 0x20
+
+    shr-long p1, v5, p1
+
+    long-to-int p1, p1
+
+    const-string p2, " "
+
+    invoke-direct {p0, p1, p2, p5}, Ly/q;->m(ILjava/lang/String;Lh4/c;)V
+
+    goto :goto_5
+
+    :cond_8
+    const/4 v8, 0x0
+
+    move-object v4, p0
+
+    move-object v7, p3
+
+    move-object v9, p5
+
+    invoke-direct/range {v4 .. v9}, Ly/q;->h(JLz0/f;ZLh4/c;)V
+
+    :goto_5
+    return v3
+
+    :cond_9
+    :goto_6
+    invoke-static {p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1, p5}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method private final o(Ly/ca;Landroid/view/inputmethod/JoinOrSplitGesture;Ly/ba;Lr0/oa0;)I
+    .locals 0
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final p(Lw/qa;Landroid/view/inputmethod/RemoveSpaceGesture;Lz0/f;Lr0/oa0;Lh4/c;)I
+    .locals 16
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw/qa;",
+            "Landroid/view/inputmethod/RemoveSpaceGesture;",
+            "Lz0/f;",
+            "Lr0/oa0;",
+            "Lh4/c;",
+            ")I"
+        }
+    .end annotation
+
+    move-object/from16 v0, p4
+
+    move-object/from16 v1, p5
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x0
+
+    invoke-virtual/range {p1 .. p1}, Lw/qa;->d()Lw/p0;
+
+    move-result-object v5
+
+    const/4 v6, 0x0
+
+    if-eqz v5, :cond_0
+
+    iget-object v5, v5, Lw/p0;->a:Lz0/ca;
+
+    goto :goto_0
+
+    :cond_0
+    move-object v5, v6
+
+    :goto_0
+    invoke-static/range {p2 .. p2}, Ly/o;->f(Landroid/view/inputmethod/RemoveSpaceGesture;)Landroid/graphics/PointF;
+
+    move-result-object v7
+
+    iget v8, v7, Landroid/graphics/PointF;->x:F
+
+    iget v7, v7, Landroid/graphics/PointF;->y:F
+
+    invoke-static {v8, v7}, Lv2/h;->k(FF)J
+
+    move-result-wide v7
+
+    invoke-static/range {p2 .. p2}, Ly/o;->p(Landroid/view/inputmethod/RemoveSpaceGesture;)Landroid/graphics/PointF;
+
+    move-result-object v9
+
+    iget v10, v9, Landroid/graphics/PointF;->x:F
+
+    iget v9, v9, Landroid/graphics/PointF;->y:F
+
+    invoke-static {v10, v9}, Lv2/h;->k(FF)J
+
+    move-result-wide v9
+
+    invoke-virtual/range {p1 .. p1}, Lw/qa;->c()Lo0/p;
+
+    move-result-object v11
+
+    const/4 v12, -0x1
+
+    if-eqz v5, :cond_5
+
+    if-nez v11, :cond_1
+
+    goto :goto_2
+
+    :cond_1
+    invoke-interface {v11, v7, v8}, Lo0/p;->m(J)J
+
+    move-result-wide v7
+
+    invoke-interface {v11, v9, v10}, Lo0/p;->m(J)J
+
+    move-result-wide v9
+
+    iget-object v5, v5, Lz0/ca;->b:Lz0/l;
+
+    invoke-static {v5, v7, v8, v0}, Lp2/c;->i(Lz0/l;JLr0/oa0;)I
+
+    move-result v11
+
+    invoke-static {v5, v9, v10, v0}, Lp2/c;->i(Lz0/l;JLr0/oa0;)I
+
+    move-result v0
+
+    if-ne v11, v12, :cond_2
+
+    if-ne v0, v12, :cond_4
+
+    sget-wide v7, Lz0/ea;->b:J
+
+    goto :goto_3
+
+    :cond_2
+    if-ne v0, v12, :cond_3
+
+    goto :goto_1
+
+    :cond_3
+    invoke-static {v11, v0}, Ljava/lang/Math;->min(II)I
+
+    move-result v11
+
+    :goto_1
+    move v0, v11
+
+    :cond_4
+    invoke-virtual {v5, v0}, Lz0/l;->d(I)F
+
+    move-result v11
+
+    invoke-virtual {v5, v0}, Lz0/l;->b(I)F
+
+    move-result v0
+
+    add-float/2addr v0, v11
+
+    int-to-float v11, v3
+
+    div-float/2addr v0, v11
+
+    new-instance v11, Lxa/d;
+
+    invoke-static {v7, v8}, Lxa/c;->d(J)F
+
+    move-result v13
+
+    invoke-static {v9, v10}, Lxa/c;->d(J)F
+
+    move-result v14
+
+    invoke-static {v13, v14}, Ljava/lang/Math;->min(FF)F
+
+    move-result v13
+
+    const v14, 0x3dcccccd    # 0.1f
+
+    sub-float v15, v0, v14
+
+    invoke-static {v7, v8}, Lxa/c;->d(J)F
+
+    move-result v7
+
+    invoke-static {v9, v10}, Lxa/c;->d(J)F
+
+    move-result v8
+
+    invoke-static {v7, v8}, Ljava/lang/Math;->max(FF)F
+
+    move-result v7
+
+    add-float/2addr v0, v14
+
+    invoke-direct {v11, v13, v15, v7, v0}, Lxa/d;-><init>(FFFF)V
+
+    sget-object v0, Lz0/aa;->a:Laa/s;
+
+    invoke-virtual {v5, v11, v4, v0}, Lz0/l;->f(Lxa/d;ILaa/s;)J
+
+    move-result-wide v7
+
+    goto :goto_3
+
+    :cond_5
+    :goto_2
+    sget-wide v7, Lz0/ea;->b:J
+
+    :goto_3
+    invoke-static {v7, v8}, Lz0/ea;->b(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    sget-object v0, Ly/q;->a:Ly/q;
+
+    invoke-static/range {p2 .. p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object v2
+
+    invoke-direct {v0, v2, v1}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+
+    move-result v0
+
+    return v0
+
+    :cond_6
+    invoke-static {v7, v8}, Lz0/ea;->e(J)I
+
+    move-result v0
+
+    invoke-static {v7, v8}, Lz0/ea;->d(J)I
+
+    move-result v5
+
+    move-object/from16 v9, p3
+
+    invoke-virtual {v9, v0, v5}, Lz0/f;->b(II)Lz0/f;
+
+    move-result-object v0
+
+    const-string v5, "\\s+"
+
+    invoke-static {v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    move-result-object v5
+
+    const-string v9, "compile(...)"
+
+    invoke-static {v5, v9}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v9, "input"
+
+    iget-object v0, v0, Lz0/f;->g:Ljava/lang/String;
+
+    invoke-static {v0, v9}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v5, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    move-result-object v5
+
+    const-string v9, "matcher(...)"
+
+    invoke-static {v5, v9}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v5, v4}, Ljava/util/regex/Matcher;->find(I)Z
+
+    move-result v9
+
+    if-nez v9, :cond_7
+
+    goto :goto_4
+
+    :cond_7
+    new-instance v6, Lq4/f;
+
+    invoke-direct {v6, v5, v0}, Lq4/f;-><init>(Ljava/util/regex/Matcher;Ljava/lang/String;)V
+
+    :goto_4
+    if-nez v6, :cond_8
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    move v10, v12
+
+    move v11, v10
+
+    goto :goto_7
+
+    :cond_8
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v5
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9, v5}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    move v10, v4
+
+    move v11, v12
+
+    :goto_5
+    invoke-virtual {v6}, Lq4/f;->a()Ln4/g;
+
+    move-result-object v13
+
+    iget v13, v13, Ln4/e;->g:I
+
+    invoke-virtual {v9, v0, v10, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
+
+    if-ne v11, v12, :cond_9
+
+    invoke-virtual {v6}, Lq4/f;->a()Ln4/g;
+
+    move-result-object v10
+
+    iget v11, v10, Ln4/e;->g:I
+
+    :cond_9
+    invoke-virtual {v6}, Lq4/f;->a()Ln4/g;
+
+    move-result-object v10
+
+    iget v10, v10, Ln4/e;->h:I
+
+    add-int/2addr v10, v2
+
+    const-string v13, ""
+
+    invoke-virtual {v9, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Lq4/f;->a()Ln4/g;
+
+    move-result-object v13
+
+    iget v13, v13, Ln4/e;->h:I
+
+    add-int/2addr v13, v2
+
+    invoke-virtual {v6}, Lq4/f;->b()Lq4/f;
+
+    move-result-object v6
+
+    if-ge v13, v5, :cond_b
+
+    if-nez v6, :cond_a
+
+    goto :goto_6
+
+    :cond_a
+    move v10, v13
+
+    goto :goto_5
+
+    :cond_b
+    :goto_6
+    if-ge v13, v5, :cond_c
+
+    invoke-virtual {v9, v0, v13, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
+
+    :cond_c
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v5, "toString(...)"
+
+    invoke-static {v0, v5}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    :goto_7
+    if-eq v11, v12, :cond_e
+
+    if-ne v10, v12, :cond_d
+
+    goto :goto_8
+
+    :cond_d
+    const/16 v5, 0x20
+
+    shr-long v5, v7, v5
+
+    long-to-int v5, v5
+
+    add-int v6, v5, v11
+
+    add-int/2addr v5, v10
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v9
+
+    invoke-static {v7, v8}, Lz0/ea;->c(J)I
+
+    move-result v7
+
+    sub-int/2addr v7, v10
+
+    sub-int/2addr v9, v7
+
+    invoke-virtual {v0, v11, v9}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v7, "this as java.lang.String\u2026ing(startIndex, endIndex)"
+
+    invoke-static {v0, v7}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v7, Lf5/v;
+
+    invoke-direct {v7, v6, v5}, Lf5/v;-><init>(II)V
+
+    new-instance v5, Lf5/a;
+
+    invoke-direct {v5, v0, v2}, Lf5/a;-><init>(Ljava/lang/String;I)V
+
+    new-array v0, v3, [Lf5/i;
+
+    aput-object v7, v0, v4
+
+    aput-object v5, v0, v2
+
+    new-instance v3, Ly/r;
+
+    invoke-direct {v3, v0}, Ly/r;-><init>([Lf5/i;)V
+
+    invoke-interface {v1, v3}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return v2
+
+    :cond_e
+    :goto_8
+    invoke-static/range {p2 .. p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object v0
+
+    move-object/from16 v2, p0
+
+    invoke-direct {v2, v0, v1}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method private final q(Ly/ca;Landroid/view/inputmethod/RemoveSpaceGesture;Ly/ba;Lr0/oa0;)I
+    .locals 0
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final r(Lw/qa;Landroid/view/inputmethod/SelectGesture;Laa/b0;Lh4/c;)I
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw/qa;",
+            "Landroid/view/inputmethod/SelectGesture;",
+            "Laa/b0;",
+            "Lh4/c;",
+            ")I"
+        }
+    .end annotation
 
-    iget-wide v0, p0, LY/Q;->a:J
-
-    invoke-static {v0, v1}, LY/Q;->d(J)Ljava/lang/String;
+    invoke-static {p2}, Ly/o;->h(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
 
     move-result-object v0
 
-    return-object v0
+    invoke-static {v0}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v0
+
+    invoke-static {p2}, Ly/o;->b(Landroid/view/inputmethod/SelectGesture;)I
+
+    move-result v1
+
+    invoke-direct {p0, v1}, Ly/q;->G(I)I
+
+    move-result v1
+
+    invoke-static {p1, v0, v1}, Lp2/c;->j(Lw/qa;Lxa/d;I)J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Lz0/ea;->b(J)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    sget-object p1, Ly/q;->a:Ly/q;
+
+    invoke-static {p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2, p4}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    invoke-direct {p0, v0, v1, p3, p4}, Ly/q;->v(JLaa/b0;Lh4/c;)V
+
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method private final s(Ly/ca;Landroid/view/inputmethod/SelectGesture;Ly/ba;)I
+    .locals 0
+
+    invoke-static {p2}, Ly/o;->h(Landroid/view/inputmethod/SelectGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, Ly/o;->b(Landroid/view/inputmethod/SelectGesture;)I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Ly/q;->G(I)I
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final t(Lw/qa;Landroid/view/inputmethod/SelectRangeGesture;Laa/b0;Lh4/c;)I
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw/qa;",
+            "Landroid/view/inputmethod/SelectRangeGesture;",
+            "Laa/b0;",
+            "Lh4/c;",
+            ")I"
+        }
+    .end annotation
+
+    invoke-static {p2}, La5/a;->d(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v0
+
+    invoke-static {p2}, La5/a;->t(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v1
+
+    invoke-static {p2}, Ly/o;->c(Landroid/view/inputmethod/SelectRangeGesture;)I
+
+    move-result v2
+
+    invoke-direct {p0, v2}, Ly/q;->G(I)I
+
+    move-result v2
+
+    invoke-static {p1, v0, v1, v2}, Lp2/c;->c(Lw/qa;Lxa/d;Lxa/d;I)J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Lz0/ea;->b(J)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    sget-object p1, Ly/q;->a:Ly/q;
+
+    invoke-static {p2}, Ly/o;->i(Ljava/lang/Object;)Landroid/view/inputmethod/HandwritingGesture;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2, p4}, Ly/q;->b(Landroid/view/inputmethod/HandwritingGesture;Lh4/c;)I
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    invoke-direct {p0, v0, v1, p3, p4}, Ly/q;->v(JLaa/b0;Lh4/c;)V
+
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method private final u(Ly/ca;Landroid/view/inputmethod/SelectRangeGesture;Ly/ba;)I
+    .locals 0
+
+    invoke-static {p2}, La5/a;->d(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, La5/a;->t(Landroid/view/inputmethod/SelectRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, Ly/o;->c(Landroid/view/inputmethod/SelectRangeGesture;)I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Ly/q;->G(I)I
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final v(JLaa/b0;Lh4/c;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(J",
+            "Laa/b0;",
+            "Lh4/c;",
+            ")V"
+        }
+    .end annotation
+
+    new-instance v0, Lf5/v;
+
+    sget v1, Lz0/ea;->c:I
+
+    const/16 v1, 0x20
+
+    shr-long v1, p1, v1
+
+    long-to-int v1, v1
+
+    const-wide v2, 0xffffffffL
+
+    and-long/2addr p1, v2
+
+    long-to-int p1, p1
+
+    invoke-direct {v0, v1, p1}, Lf5/v;-><init>(II)V
+
+    invoke-interface {p4, v0}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
+
+    if-eqz p3, :cond_0
+
+    const/4 p1, 0x1
+
+    invoke-virtual {p3, p1}, Laa/b0;->f(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method private final w(Lw/qa;Landroid/view/inputmethod/DeleteGesture;Laa/b0;)V
+    .locals 3
+
+    if-eqz p3, :cond_2
+
+    invoke-static {p2}, La5/a;->c(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v0
+
+    invoke-static {p2}, La5/a;->b(Landroid/view/inputmethod/DeleteGesture;)I
+
+    move-result p2
+
+    invoke-direct {p0, p2}, Ly/q;->G(I)I
+
+    move-result p2
+
+    invoke-static {p1, v0, p2}, Lp2/c;->j(Lw/qa;Lxa/d;I)J
+
+    move-result-wide p1
+
+    iget-object v0, p3, Laa/b0;->d:Lw/qa;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0, p1, p2}, Lw/qa;->e(J)V
+
+    :goto_0
+    iget-object v0, p3, Laa/b0;->d:Lw/qa;
+
+    if-nez v0, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    sget-wide v1, Lz0/ea;->b:J
+
+    invoke-virtual {v0, v1, v2}, Lw/qa;->f(J)V
+
+    :goto_1
+    invoke-static {p1, p2}, Lz0/ea;->b(J)Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p3, p1}, Laa/b0;->p(Z)V
+
+    sget-object p1, Lw/ga;->g:Lw/ga;
+
+    invoke-virtual {p3, p1}, Laa/b0;->n(Lw/ga;)V
+
+    :cond_2
+    return-void
+.end method
+
+.method private final x(Ly/ca;Landroid/view/inputmethod/DeleteGesture;Ly/ba;)V
+    .locals 0
+
+    invoke-static {p2}, La5/a;->c(Landroid/view/inputmethod/DeleteGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, La5/a;->b(Landroid/view/inputmethod/DeleteGesture;)I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Ly/q;->G(I)I
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method private final y(Lw/qa;Landroid/view/inputmethod/DeleteRangeGesture;Laa/b0;)V
+    .locals 3
+
+    if-eqz p3, :cond_2
+
+    invoke-static {p2}, Ly/o;->g(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v0
+
+    invoke-static {p2}, Ly/o;->q(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    move-result-object v1
+
+    invoke-static {p2}, Ly/o;->a(Landroid/view/inputmethod/DeleteRangeGesture;)I
+
+    move-result p2
+
+    invoke-direct {p0, p2}, Ly/q;->G(I)I
+
+    move-result p2
+
+    invoke-static {p1, v0, v1, p2}, Lp2/c;->c(Lw/qa;Lxa/d;Lxa/d;I)J
+
+    move-result-wide p1
+
+    iget-object v0, p3, Laa/b0;->d:Lw/qa;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0, p1, p2}, Lw/qa;->e(J)V
+
+    :goto_0
+    iget-object v0, p3, Laa/b0;->d:Lw/qa;
+
+    if-nez v0, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    sget-wide v1, Lz0/ea;->b:J
+
+    invoke-virtual {v0, v1, v2}, Lw/qa;->f(J)V
+
+    :goto_1
+    invoke-static {p1, p2}, Lz0/ea;->b(J)Z
+
+    move-result p1
+
+    if-nez p1, :cond_2
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p3, p1}, Laa/b0;->p(Z)V
+
+    sget-object p1, Lw/ga;->g:Lw/ga;
+
+    invoke-virtual {p3, p1}, Laa/b0;->n(Lw/ga;)V
+
+    :cond_2
+    return-void
+.end method
+
+.method private final z(Ly/ca;Landroid/view/inputmethod/DeleteRangeGesture;Ly/ba;)V
+    .locals 0
+
+    invoke-static {p2}, Ly/o;->g(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, Ly/o;->q(Landroid/view/inputmethod/DeleteRangeGesture;)Landroid/graphics/RectF;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lya/ha;->E(Landroid/graphics/RectF;)Lxa/d;
+
+    invoke-static {p2}, Ly/o;->a(Landroid/view/inputmethod/DeleteRangeGesture;)I
+
+    move-result p1
+
+    invoke-direct {p0, p1}, Ly/q;->G(I)I
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+
+# virtual methods
+.method public final A(Lw/qa;Landroid/view/inputmethod/PreviewableHandwritingGesture;Laa/b0;Landroid/os/CancellationSignal;)Z
+    .locals 3
+
+    iget-object v0, p1, Lw/qa;->j:Lz0/f;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    :cond_0
+    invoke-virtual {p1}, Lw/qa;->d()Lw/p0;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, v2, Lw/p0;->a:Lz0/ca;
+
+    iget-object v2, v2, Lz0/ca;->a:Lz0/ba;
+
+    if-eqz v2, :cond_1
+
+    iget-object v2, v2, Lz0/ba;->a:Lz0/f;
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_0
+    invoke-virtual {v0, v2}, Lz0/f;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    return v1
+
+    :cond_2
+    invoke-static {p2}, Ly/o;->r(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    invoke-static {p2}, Ly/o;->l(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->C(Lw/qa;Landroid/view/inputmethod/SelectGesture;Laa/b0;)V
+
+    goto :goto_1
+
+    :cond_3
+    invoke-static {p2}, La5/a;->q(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-static {p2}, La5/a;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->w(Lw/qa;Landroid/view/inputmethod/DeleteGesture;Laa/b0;)V
+
+    goto :goto_1
+
+    :cond_4
+    invoke-static {p2}, La5/a;->v(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    invoke-static {p2}, La5/a;->j(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->E(Lw/qa;Landroid/view/inputmethod/SelectRangeGesture;Laa/b0;)V
+
+    goto :goto_1
+
+    :cond_5
+    invoke-static {p2}, La5/a;->x(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    invoke-static {p2}, La5/a;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->y(Lw/qa;Landroid/view/inputmethod/DeleteRangeGesture;Laa/b0;)V
+
+    :goto_1
+    if-eqz p4, :cond_6
+
+    new-instance p1, Lw0/g;
+
+    const/4 p2, 0x1
+
+    invoke-direct {p1, p2, p3}, Lw0/g;-><init>(ILjava/lang/Object;)V
+
+    invoke-virtual {p4, p1}, Landroid/os/CancellationSignal;->setOnCancelListener(Landroid/os/CancellationSignal$OnCancelListener;)V
+
+    :cond_6
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_7
+    return v1
+.end method
+
+.method public final B(Ly/ca;Landroid/view/inputmethod/PreviewableHandwritingGesture;Ly/ba;Landroid/os/CancellationSignal;)Z
+    .locals 1
+
+    invoke-static {p2}, Ly/o;->r(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p2}, Ly/o;->l(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->D(Ly/ca;Landroid/view/inputmethod/SelectGesture;Ly/ba;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p2}, La5/a;->q(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {p2}, La5/a;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->x(Ly/ca;Landroid/view/inputmethod/DeleteGesture;Ly/ba;)V
+
+    goto :goto_0
+
+    :cond_1
+    invoke-static {p2}, La5/a;->v(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-static {p2}, La5/a;->j(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->F(Ly/ca;Landroid/view/inputmethod/SelectRangeGesture;Ly/ba;)V
+
+    goto :goto_0
+
+    :cond_2
+    invoke-static {p2}, La5/a;->x(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-static {p2}, La5/a;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->z(Ly/ca;Landroid/view/inputmethod/DeleteRangeGesture;Ly/ba;)V
+
+    :goto_0
+    if-eqz p4, :cond_3
+
+    new-instance p1, Ly/p;
+
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+
+    invoke-virtual {p4, p1}, Landroid/os/CancellationSignal;->setOnCancelListener(Landroid/os/CancellationSignal$OnCancelListener;)V
+
+    :cond_3
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_4
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final i(Lw/qa;Landroid/view/inputmethod/HandwritingGesture;Laa/b0;Lr0/oa0;Lh4/c;)I
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lw/qa;",
+            "Landroid/view/inputmethod/HandwritingGesture;",
+            "Laa/b0;",
+            "Lr0/oa0;",
+            "Lh4/c;",
+            ")I"
+        }
+    .end annotation
+
+    iget-object v3, p1, Lw/qa;->j:Lz0/f;
+
+    const/4 v0, 0x3
+
+    if-nez v3, :cond_0
+
+    return v0
+
+    :cond_0
+    invoke-virtual {p1}, Lw/qa;->d()Lw/p0;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, v1, Lw/p0;->a:Lz0/ca;
+
+    iget-object v1, v1, Lz0/ca;->a:Lz0/ba;
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, v1, Lz0/ba;->a:Lz0/f;
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_0
+    invoke-virtual {v3, v1}, Lz0/f;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    return v0
+
+    :cond_2
+    invoke-static {p2}, Ly/o;->r(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    invoke-static {p2}, Ly/o;->l(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3, p5}, Ly/q;->r(Lw/qa;Landroid/view/inputmethod/SelectGesture;Laa/b0;Lh4/c;)I
+
+    move-result p1
+
+    goto/16 :goto_1
+
+    :cond_3
+    invoke-static {p2}, La5/a;->q(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-static {p2}, La5/a;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, v3, p5}, Ly/q;->c(Lw/qa;Landroid/view/inputmethod/DeleteGesture;Lz0/f;Lh4/c;)I
+
+    move-result p1
+
+    goto :goto_1
+
+    :cond_4
+    invoke-static {p2}, La5/a;->v(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    invoke-static {p2}, La5/a;->j(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3, p5}, Ly/q;->t(Lw/qa;Landroid/view/inputmethod/SelectRangeGesture;Laa/b0;Lh4/c;)I
+
+    move-result p1
+
+    goto :goto_1
+
+    :cond_5
+    invoke-static {p2}, La5/a;->x(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_6
+
+    invoke-static {p2}, La5/a;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, v3, p5}, Ly/q;->e(Lw/qa;Landroid/view/inputmethod/DeleteRangeGesture;Lz0/f;Lh4/c;)I
+
+    move-result p1
+
+    goto :goto_1
+
+    :cond_6
+    invoke-static {p2}, Ly/o;->o(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_7
+
+    invoke-static {p2}, Ly/o;->j(Ljava/lang/Object;)Landroid/view/inputmethod/JoinOrSplitGesture;
+
+    move-result-object v2
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    invoke-direct/range {v0 .. v5}, Ly/q;->n(Lw/qa;Landroid/view/inputmethod/JoinOrSplitGesture;Lz0/f;Lr0/oa0;Lh4/c;)I
+
+    move-result p1
+
+    goto :goto_1
+
+    :cond_7
+    invoke-static {p2}, La5/a;->z(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_8
+
+    invoke-static {p2}, La5/a;->i(Ljava/lang/Object;)Landroid/view/inputmethod/InsertGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p4, p5}, Ly/q;->k(Lw/qa;Landroid/view/inputmethod/InsertGesture;Lr0/oa0;Lh4/c;)I
+
+    move-result p1
+
+    goto :goto_1
+
+    :cond_8
+    invoke-static {p2}, La5/a;->B(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_9
+
+    invoke-static {p2}, Ly/o;->k(Ljava/lang/Object;)Landroid/view/inputmethod/RemoveSpaceGesture;
+
+    move-result-object v2
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v4, p4
+
+    move-object v5, p5
+
+    invoke-direct/range {v0 .. v5}, Ly/q;->p(Lw/qa;Landroid/view/inputmethod/RemoveSpaceGesture;Lz0/f;Lr0/oa0;Lh4/c;)I
+
+    move-result p1
+
+    goto :goto_1
+
+    :cond_9
+    const/4 p1, 0x2
+
+    :goto_1
+    return p1
+.end method
+
+.method public final j(Ly/ca;Landroid/view/inputmethod/HandwritingGesture;Ly/ba;Lr0/oa0;)I
+    .locals 1
+
+    invoke-static {p2}, Ly/o;->r(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p2}, Ly/o;->l(Ljava/lang/Object;)Landroid/view/inputmethod/SelectGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->s(Ly/ca;Landroid/view/inputmethod/SelectGesture;Ly/ba;)I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p2}, La5/a;->q(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {p2}, La5/a;->g(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->d(Ly/ca;Landroid/view/inputmethod/DeleteGesture;Ly/ba;)I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-static {p2}, La5/a;->v(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-static {p2}, La5/a;->j(Ljava/lang/Object;)Landroid/view/inputmethod/SelectRangeGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->u(Ly/ca;Landroid/view/inputmethod/SelectRangeGesture;Ly/ba;)I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_2
+    invoke-static {p2}, La5/a;->x(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    invoke-static {p2}, La5/a;->h(Ljava/lang/Object;)Landroid/view/inputmethod/DeleteRangeGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3}, Ly/q;->f(Ly/ca;Landroid/view/inputmethod/DeleteRangeGesture;Ly/ba;)I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_3
+    invoke-static {p2}, Ly/o;->o(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-static {p2}, Ly/o;->j(Ljava/lang/Object;)Landroid/view/inputmethod/JoinOrSplitGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3, p4}, Ly/q;->o(Ly/ca;Landroid/view/inputmethod/JoinOrSplitGesture;Ly/ba;Lr0/oa0;)I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_4
+    invoke-static {p2}, La5/a;->z(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    invoke-static {p2}, La5/a;->i(Ljava/lang/Object;)Landroid/view/inputmethod/InsertGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3, p4}, Ly/q;->l(Ly/ca;Landroid/view/inputmethod/InsertGesture;Ly/ba;Lr0/oa0;)I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_5
+    invoke-static {p2}, La5/a;->B(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    invoke-static {p2}, Ly/o;->k(Ljava/lang/Object;)Landroid/view/inputmethod/RemoveSpaceGesture;
+
+    move-result-object p2
+
+    invoke-direct {p0, p1, p2, p3, p4}, Ly/q;->q(Ly/ca;Landroid/view/inputmethod/RemoveSpaceGesture;Ly/ba;Lr0/oa0;)I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_6
+    const/4 p1, 0x2
+
+    :goto_0
+    return p1
 .end method

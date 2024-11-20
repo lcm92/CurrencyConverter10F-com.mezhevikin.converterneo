@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public final b(ILY3/d;)Ljava/lang/Object;
+.method public final b(ILy8/d;)Ljava/lang/Object;
     .locals 0
 
     sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
@@ -47,7 +47,7 @@
 
     const-string v2, " bytes consumed for already terminated channel"
 
-    invoke-static {v1, p1, v2}, LA/m;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1, v2}, Laa/m;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

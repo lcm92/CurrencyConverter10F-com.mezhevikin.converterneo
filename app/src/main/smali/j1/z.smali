@@ -1,575 +1,202 @@
-.class public abstract LJ1/z;
-.super Ljava/lang/Object;
+.class public final Lj1/z;
+.super Li4/i;
 .source "SourceFile"
 
+# interfaces
+.implements Lh4/c;
 
-# static fields
-.field public static final a:LJ1/e;
 
-.field public static final b:LJ1/e;
+# instance fields
+.field public final synthetic h:I
 
-.field public static final c:LJ1/e;
-
-.field public static final d:LJ1/e;
-
-.field public static final e:LJ1/e;
-
-.field public static final f:LJ1/e;
-
-.field public static final g:LJ1/e;
-
-.field public static final h:LJ1/e;
-
-.field public static final i:LJ1/e;
-
-.field public static final j:LJ1/e;
-
-.field public static final k:LJ1/e;
-
-.field public static final l:LJ1/e;
-
-.field public static final m:LJ1/e;
-
-.field public static final n:LJ1/e;
-
-.field public static final o:LJ1/e;
-
-.field public static final p:LJ1/e;
-
-.field public static final q:LJ1/e;
-
-.field public static final r:LJ1/e;
-
-.field public static final s:LJ1/e;
+.field public final synthetic i:Li4/s;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public synthetic constructor <init>(Li4/s;I)V
+    .locals 0
 
-    invoke-static {}, LJ1/e;->a()LJ1/d;
+    iput p2, p0, Lj1/z;->h:I
 
-    move-result-object v0
+    iput-object p1, p0, Lj1/z;->i:Li4/s;
 
-    const/4 v1, 0x3
+    const/4 p1, 0x1
 
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v2, "Google Play In-app Billing API version is less than 3"
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->a:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v2, "Google Play In-app Billing API version is less than 9"
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->b:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v1, "Billing service unavailable on device."
-
-    iput-object v1, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->c:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    const/4 v2, 0x2
-
-    iput v2, v0, LJ1/d;->b:I
-
-    iput-object v1, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->d:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    const/4 v1, 0x5
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v3, "Client is already in the process of connecting to billing service."
-
-    iput-object v3, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->e:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v3, "The list of SKUs can\'t be empty."
-
-    iput-object v3, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v3, "SKU type can\'t be empty."
-
-    iput-object v3, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v3, "Product type can\'t be empty."
-
-    iput-object v3, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->f:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    const/4 v3, -0x2
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v4, "Client does not support extra params."
-
-    iput-object v4, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->g:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v4, "Invalid purchase token."
-
-    iput-object v4, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->h:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    const/4 v4, 0x6
-
-    iput v4, v0, LJ1/d;->b:I
-
-    const-string v5, "An internal error occurred."
-
-    iput-object v5, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->i:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v5, "SKU can\'t be null."
-
-    iput-object v5, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    const/4 v5, 0x0
-
-    iput v5, v0, LJ1/d;->b:I
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->j:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    const/4 v5, -0x1
-
-    iput v5, v0, LJ1/d;->b:I
-
-    const-string v5, "Service connection is disconnected."
-
-    iput-object v5, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->k:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v2, v0, LJ1/d;->b:I
-
-    const-string v2, "Timeout communicating with service."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->l:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Client does not support subscriptions."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->m:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Client does not support subscriptions update."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Client does not support get purchase history."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Client does not support price change confirmation."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Play Store version installed does not support cross selling products."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Client does not support multi-item purchases."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->n:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Client does not support offer_id_token."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->o:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Client does not support ProductDetails."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->p:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Client does not support in-app messages."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Client does not support user choice billing."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Play Store version installed does not support external offer."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Play Store version installed does not support multi-item purchases with season pass in one cart."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v2, "Unknown feature"
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Play Store version installed does not support get billing config."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Query product details with serialized docid is not supported."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    const/4 v2, 0x4
-
-    iput v2, v0, LJ1/d;->b:I
-
-    const-string v2, "Item is unavailable for purchase."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->q:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Query product details with developer specified account is not supported."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v3, v0, LJ1/d;->b:I
-
-    const-string v2, "Play Store version installed does not support alternative billing only."
-
-    iput-object v2, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v1, v0, LJ1/d;->b:I
-
-    const-string v1, "To use this API you must specify a PurchasesUpdateListener when initializing a BillingClient."
-
-    iput-object v1, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->r:LJ1/e;
-
-    invoke-static {}, LJ1/e;->a()LJ1/d;
-
-    move-result-object v0
-
-    iput v4, v0, LJ1/d;->b:I
-
-    const-string v1, "An error occurred while retrieving billing override."
-
-    iput-object v1, v0, LJ1/d;->a:Ljava/lang/String;
-
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
-
-    move-result-object v0
-
-    sput-object v0, LJ1/z;->s:LJ1/e;
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;I)LJ1/e;
-    .locals 1
 
-    invoke-static {}, LJ1/e;->a()LJ1/d;
+# virtual methods
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
-    move-result-object v0
+    iget v0, p0, Lj1/z;->h:I
 
-    iput p1, v0, LJ1/d;->b:I
+    packed-switch v0, :pswitch_data_0
 
-    iput-object p0, v0, LJ1/d;->a:Ljava/lang/String;
+    check-cast p1, Lq0/p0;
 
-    invoke-virtual {v0}, LJ1/d;->c()LJ1/e;
+    const-string v0, "null cannot be cast to non-null type androidx.compose.foundation.lazy.layout.TraversablePrefetchStateNode"
 
-    move-result-object p0
+    invoke-static {p1, v0}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return-object p0
+    check-cast p1, Ls/na;
+
+    iget-object p1, p1, Ls/na;->t:Ls/aa;
+
+    iget-object v0, p0, Lj1/z;->i:Li4/s;
+
+    iget-object v1, v0, Li4/s;->g:Ljava/lang/Object;
+
+    check-cast v1, Ljava/util/List;
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_0
+    filled-new-array {p1}, [Ls/aa;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lv8/l;->b0([Ljava/lang/Object;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    :goto_0
+    iput-object v1, v0, Li4/s;->g:Ljava/lang/Object;
+
+    sget-object p1, Lq0/o0;->h:Lq0/o0;
+
+    return-object p1
+
+    :pswitch_0
+    check-cast p1, Lk0/l;
+
+    iget-boolean v0, p1, Lk0/l;->t:Z
+
+    if-eqz v0, :cond_1
+
+    iget-boolean v0, p1, Lk0/l;->u:Z
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lj1/z;->i:Li4/s;
+
+    iput-object p1, v0, Li4/s;->g:Ljava/lang/Object;
+
+    :cond_1
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    return-object p1
+
+    :pswitch_1
+    check-cast p1, Lk0/l;
+
+    sget-object v0, Lq0/o0;->g:Lq0/o0;
+
+    iget-boolean v1, p1, Lk0/l;->u:Z
+
+    if-eqz v1, :cond_2
+
+    iget-object v1, p0, Lj1/z;->i:Li4/s;
+
+    iput-object p1, v1, Li4/s;->g:Ljava/lang/Object;
+
+    iget-boolean p1, p1, Lk0/l;->t:Z
+
+    if-eqz p1, :cond_2
+
+    sget-object v0, Lq0/o0;->h:Lq0/o0;
+
+    :cond_2
+    return-object v0
+
+    :pswitch_2
+    check-cast p1, Lk0/l;
+
+    iget-object v0, p0, Lj1/z;->i:Li4/s;
+
+    iget-object v1, v0, Li4/s;->g:Ljava/lang/Object;
+
+    if-nez v1, :cond_3
+
+    iget-boolean v2, p1, Lk0/l;->u:Z
+
+    if-eqz v2, :cond_3
+
+    iput-object p1, v0, Li4/s;->g:Ljava/lang/Object;
+
+    goto :goto_1
+
+    :cond_3
+    if-eqz v1, :cond_4
+
+    iget-boolean v1, p1, Lk0/l;->t:Z
+
+    if-eqz v1, :cond_4
+
+    iget-boolean v1, p1, Lk0/l;->u:Z
+
+    if-eqz v1, :cond_4
+
+    iput-object p1, v0, Li4/s;->g:Ljava/lang/Object;
+
+    :cond_4
+    :goto_1
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    return-object p1
+
+    :pswitch_3
+    check-cast p1, Ljava/lang/String;
+
+    const-string v0, "key"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lj1/z;->i:Li4/s;
+
+    iget-object v0, v0, Li4/s;->g:Ljava/lang/Object;
+
+    const/4 v1, 0x1
+
+    if-nez v0, :cond_5
+
+    goto :goto_2
+
+    :cond_5
+    check-cast v0, Landroid/os/Bundle;
+
+    invoke-virtual {v0, p1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_6
+
+    goto :goto_2
+
+    :cond_6
+    const/4 v1, 0x0
+
+    :goto_2
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

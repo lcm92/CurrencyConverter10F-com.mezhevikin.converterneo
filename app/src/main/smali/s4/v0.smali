@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements LY3/g;
-.implements LY3/h;
+.implements Ly8/g;
+.implements Ly8/h;
 
 
 # static fields
@@ -26,17 +26,17 @@
 
 
 # virtual methods
-.method public final f(LY3/i;)LY3/i;
+.method public final f(Ly8/i;)Ly8/i;
     .locals 0
 
-    invoke-static {p0, p1}, Lk4/a;->W(LY3/g;LY3/i;)LY3/i;
+    invoke-static {p0, p1}, Lk4/a;->W(Ly8/g;Ly8/i;)Ly8/i;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final getKey()LY3/h;
+.method public final getKey()Ly8/h;
     .locals 0
 
     return-object p0
@@ -52,20 +52,20 @@
     return-object p1
 .end method
 
-.method public final n(LY3/h;)LY3/i;
+.method public final n(Ly8/h;)Ly8/i;
     .locals 0
 
-    invoke-static {p0, p1}, Lk4/a;->T(LY3/g;LY3/h;)LY3/i;
+    invoke-static {p0, p1}, Lk4/a;->T(Ly8/g;Ly8/h;)Ly8/i;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final t(LY3/h;)LY3/g;
+.method public final t(Ly8/h;)Ly8/g;
     .locals 0
 
-    invoke-static {p0, p1}, Lk4/a;->H(LY3/g;LY3/h;)LY3/g;
+    invoke-static {p0, p1}, Lk4/a;->H(Ly8/g;Ly8/h;)Ly8/g;
 
     move-result-object p1
 

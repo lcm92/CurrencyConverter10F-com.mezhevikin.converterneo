@@ -1,244 +1,124 @@
-.class public abstract LC3/f;
+.class public final synthetic Lc3/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lh4/a;
 
-# static fields
-.field public static final a:Ljava/util/List;
+
+# instance fields
+.field public final synthetic g:I
+
+.field public final synthetic h:Landroid/content/Context;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
+.method public synthetic constructor <init>(Landroid/content/Context;I)V
+    .locals 0
 
-    new-instance v0, LC3/a;
+    iput p2, p0, Lc3/f;->g:I
 
-    sget-object v1, LA3/g;->b:LA3/g;
+    iput-object p1, p0, Lc3/f;->h:Landroid/content/Context;
 
-    const/4 v2, 0x6
-
-    const/4 v3, 0x4
-
-    invoke-direct {v0, v2, v3, v1}, LC3/a;-><init>(IILA3/g;)V
-
-    new-instance v1, LC3/a;
-
-    sget-object v4, LA3/g;->c:LA3/g;
-
-    const/4 v5, 0x5
-
-    invoke-direct {v1, v5, v3, v4}, LC3/a;-><init>(IILA3/g;)V
-
-    new-instance v3, LC3/a;
-
-    sget-object v4, LA3/g;->d:LA3/g;
-
-    const/4 v6, 0x7
-
-    const/4 v7, 0x2
-
-    invoke-direct {v3, v6, v7, v4}, LC3/a;-><init>(IILA3/g;)V
-
-    new-instance v4, LC3/a;
-
-    sget-object v6, LA3/g;->e:LA3/g;
-
-    invoke-direct {v4, v2, v7, v6}, LC3/a;-><init>(IILA3/g;)V
-
-    new-instance v6, LC3/a;
-
-    sget-object v2, LA3/g;->f:LA3/g;
-
-    invoke-direct {v6, v5, v7, v2}, LC3/a;-><init>(IILA3/g;)V
-
-    new-instance v5, LC3/a;
-
-    sget-object v2, LA3/g;->g:LA3/g;
-
-    const/4 v8, 0x3
-
-    invoke-direct {v5, v8, v7, v2}, LC3/a;-><init>(IILA3/g;)V
-
-    move-object v2, v3
-
-    move-object v3, v4
-
-    move-object v4, v6
-
-    filled-new-array/range {v0 .. v5}, [LC3/a;
-
-    move-result-object v0
-
-    invoke-static {v0}, LV3/l;->a0([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    sput-object v0, LC3/f;->a:Ljava/util/List;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static final a(BB)LC3/a;
-    .locals 7
 
-    if-eqz p1, :cond_9
+# virtual methods
+.method public final b()Ljava/lang/Object;
+    .locals 4
 
-    sget-object v0, LC3/f;->a:Ljava/util/List;
+    iget v0, p0, Lc3/f;->g:I
 
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    packed-switch v0, :pswitch_data_0
+
+    const-string v0, "$context"
+
+    iget-object v1, p0, Lc3/f;->h:Landroid/content/Context;
+
+    invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "clipboard"
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    const-string v2, "null cannot be cast to non-null type android.content.ClipboardManager"
 
-    move-result v1
+    invoke-static {v0, v2}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/content/ClipboardManager;
 
     const/4 v2, 0x0
 
-    if-eqz v1, :cond_1
+    const-string v3, "https://getconverter.org/share/neo"
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-static {v2, v3}, Landroid/content/ClipData;->newPlainText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/content/ClipData;
 
-    move-result-object v1
+    move-result-object v2
 
-    move-object v3, v1
+    invoke-virtual {v0, v2}, Landroid/content/ClipboardManager;->setPrimaryClip(Landroid/content/ClipData;)V
 
-    check-cast v3, LC3/a;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    iget v4, v3, LC3/a;->a:I
+    const/16 v2, 0x21
 
-    invoke-static {v4}, LA/m;->a(I)B
-
-    move-result v4
-
-    if-ne v4, p0, :cond_0
-
-    iget v3, v3, LC3/a;->b:I
-
-    invoke-static {v3}, LA/m;->b(I)B
-
-    move-result v3
-
-    if-ne v3, p1, :cond_0
+    if-le v0, v2, :cond_0
 
     goto :goto_0
 
-    :cond_1
-    move-object v1, v2
+    :cond_0
+    const/4 v0, 0x0
 
-    :goto_0
-    check-cast v1, LC3/a;
-
-    if-nez v1, :cond_8
-
-    const/16 v0, 0x8
-
-    invoke-static {v0}, Ll/i;->c(I)[I
+    invoke-static {v1, v3, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v0
 
-    array-length v1, v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    const/4 v3, 0x0
+    :goto_0
+    sget-object v0, Lu8/y;->a:Lu8/y;
 
-    move v4, v3
+    return-object v0
 
-    :goto_1
-    if-ge v4, v1, :cond_3
+    :pswitch_0
+    const-string v0, "$context"
 
-    aget v5, v0, v4
+    iget-object v1, p0, Lc3/f;->h:Landroid/content/Context;
 
-    invoke-static {v5}, LA/m;->a(I)B
+    invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result v6
+    const-string v0, "https://getconverter.org/terms.html"
 
-    if-ne v6, p0, :cond_2
+    invoke-static {v1, v0}, Li0/c;->F(Landroid/content/Context;Ljava/lang/String;)V
 
-    goto :goto_2
+    sget-object v0, Lu8/y;->a:Lu8/y;
 
-    :cond_2
-    add-int/lit8 v4, v4, 0x1
+    return-object v0
 
-    goto :goto_1
+    :pswitch_1
+    const-string v0, "$context"
 
-    :cond_3
-    move v5, v3
+    iget-object v1, p0, Lc3/f;->h:Landroid/content/Context;
 
-    :goto_2
-    if-eqz v5, :cond_7
+    invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 p0, 0x6
+    const-string v0, "https://getconverter.org/privacy.html"
 
-    invoke-static {p0}, Ll/i;->c(I)[I
+    invoke-static {v1, v0}, Li0/c;->F(Landroid/content/Context;Ljava/lang/String;)V
 
-    move-result-object p0
+    sget-object v0, Lu8/y;->a:Lu8/y;
 
-    array-length v0, p0
+    return-object v0
 
-    move v1, v3
+    nop
 
-    :goto_3
-    if-ge v1, v0, :cond_5
-
-    aget v4, p0, v1
-
-    invoke-static {v4}, LA/m;->b(I)B
-
-    move-result v6
-
-    if-ne v6, p1, :cond_4
-
-    move v3, v4
-
-    goto :goto_4
-
-    :cond_4
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_3
-
-    :cond_5
-    :goto_4
-    if-nez v3, :cond_6
-
-    goto :goto_5
-
-    :cond_6
-    new-instance p0, LC3/a;
-
-    invoke-direct {p0, v5, v3, v2}, LC3/a;-><init>(IILA3/g;)V
-
-    move-object v2, p0
-
-    :goto_5
-    move-object v1, v2
-
-    goto :goto_6
-
-    :cond_7
-    new-instance p1, LA3/H;
-
-    const-string v0, "Unknown hash algorithm: "
-
-    invoke-static {v0, p0}, LA/m;->g(Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {p1, p0}, LA3/H;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_8
-    :goto_6
-    return-object v1
-
-    :cond_9
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    const-string p1, "Anonymous signature not allowed."
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

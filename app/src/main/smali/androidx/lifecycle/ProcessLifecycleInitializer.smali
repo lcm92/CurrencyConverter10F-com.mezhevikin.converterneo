@@ -29,7 +29,7 @@
 .method public final a()Ljava/util/List;
     .locals 1
 
-    sget-object v0, LV3/t;->g:LV3/t;
+    sget-object v0, Lv8/t;->g:Lv8/t;
 
     return-object v0
 .end method

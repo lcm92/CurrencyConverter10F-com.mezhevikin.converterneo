@@ -1,11 +1,15 @@
-.class public interface abstract LU3/f;
-.super Ljava/lang/Object;
+.class public final Lu3/f;
+.super Lr8/d;
 .source "SourceFile"
 
 
 # virtual methods
-.method public abstract a()Z
-.end method
+.method public final d()Ljava/lang/Object;
+    .locals 1
 
-.method public abstract getValue()Ljava/lang/Object;
+    const/16 v0, 0x800
+
+    new-array v0, v0, [C
+
+    return-object v0
 .end method

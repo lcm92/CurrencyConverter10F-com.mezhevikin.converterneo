@@ -1,142 +1,120 @@
-.class public final LA4/c;
-.super Ljava/lang/Object;
+.class public abstract La4/c;
+.super La4/a;
 .source "SourceFile"
-
-# interfaces
-.implements Ls4/e;
-.implements Ls4/w0;
 
 
 # instance fields
-.field public final g:Ls4/f;
+.field public final h:Ly8/i;
 
-.field public final h:Ljava/lang/Object;
-
-.field public final synthetic i:LA4/d;
+.field public transient i:Ly8/d;
 
 
 # direct methods
-.method public constructor <init>(LA4/d;Ls4/f;Ljava/lang/Object;)V
+.method public constructor <init>(Ly8/d;)V
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    invoke-interface {p1}, Ly8/d;->o()Ly8/i;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-direct {p0, p1, v0}, La4/c;-><init>(Ly8/d;Ly8/i;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ly8/d;Ly8/i;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    invoke-direct {p0, p1}, La4/a;-><init>(Ly8/d;)V
 
-    iput-object p1, p0, LA4/c;->i:LA4/d;
-
-    iput-object p2, p0, LA4/c;->g:Ls4/f;
-
-    iput-object p3, p0, LA4/c;->h:Ljava/lang/Object;
+    .line 2
+    iput-object p2, p0, La4/c;->h:Ly8/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final E(Ljava/lang/Object;Lh4/c;)LI2/i;
-    .locals 2
+.method public l()V
+    .locals 4
 
-    check-cast p1, LU3/y;
+    iget-object v0, p0, La4/c;->i:Ly8/d;
 
-    new-instance p2, LA4/b;
+    if-eqz v0, :cond_2
 
-    iget-object v0, p0, LA4/c;->i:LA4/d;
+    if-eq v0, p0, :cond_2
 
-    const/4 v1, 0x1
+    invoke-virtual {p0}, La4/c;->o()Ly8/i;
 
-    invoke-direct {p2, v0, p0, v1}, LA4/b;-><init>(LA4/d;LA4/c;I)V
+    move-result-object v1
 
-    iget-object v1, p0, LA4/c;->g:Ls4/f;
+    sget-object v2, Ly8/e;->g:Ly8/e;
 
-    invoke-virtual {v1, p1, p2}, Ls4/f;->E(Ljava/lang/Object;Lh4/c;)LI2/i;
+    invoke-interface {v1, v2}, Ly8/i;->t(Ly8/h;)Ly8/g;
 
-    move-result-object p1
+    move-result-object v1
 
-    if-eqz p1, :cond_0
+    invoke-static {v1}, Li4/h;->c(Ljava/lang/Object;)V
 
-    sget-object p2, LA4/d;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    check-cast v1, Ly8/f;
 
-    iget-object v1, p0, LA4/c;->h:Ljava/lang/Object;
-
-    invoke-virtual {p2, v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    check-cast v0, Lx4/g;
 
     :cond_0
-    return-object p1
-.end method
+    sget-object v1, Lx4/g;->n:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
-.method public final J(Ljava/lang/Object;)V
-    .locals 1
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v0, p0, LA4/c;->g:Ls4/f;
+    move-result-object v2
 
-    invoke-virtual {v0, p1}, Ls4/f;->J(Ljava/lang/Object;)V
+    sget-object v3, Lx4/a;->d:Li7/i;
 
-    return-void
-.end method
+    if-eq v2, v3, :cond_0
 
-.method public final L(Ljava/lang/Object;Lh4/c;)V
-    .locals 2
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-object p1, LU3/y;->a:LU3/y;
+    move-result-object v0
 
-    sget-object p2, LA4/d;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    instance-of v1, v0, Ls4/f;
 
-    iget-object v0, p0, LA4/c;->i:LA4/d;
+    if-eqz v1, :cond_1
 
-    iget-object v1, p0, LA4/c;->h:Ljava/lang/Object;
+    check-cast v0, Ls4/f;
 
-    invoke-virtual {p2, v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    goto :goto_0
 
-    new-instance p2, LA4/b;
+    :cond_1
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    :goto_0
+    if-eqz v0, :cond_2
 
-    invoke-direct {p2, v0, p0, v1}, LA4/b;-><init>(LA4/d;LA4/c;I)V
+    invoke-virtual {v0}, Ls4/f;->l()V
 
-    iget-object v0, p0, LA4/c;->g:Ls4/f;
+    :cond_2
+    sget-object v0, La4/b;->g:La4/b;
 
-    invoke-virtual {v0, p1, p2}, Ls4/f;->L(Ljava/lang/Object;Lh4/c;)V
-
-    return-void
-.end method
-
-.method public final P(Ljava/lang/Throwable;)Z
-    .locals 1
-
-    iget-object v0, p0, LA4/c;->g:Ls4/f;
-
-    invoke-virtual {v0, p1}, Ls4/f;->P(Ljava/lang/Throwable;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final a(Lx4/r;I)V
-    .locals 1
-
-    iget-object v0, p0, LA4/c;->g:Ls4/f;
-
-    invoke-virtual {v0, p1, p2}, Ls4/f;->a(Lx4/r;I)V
+    iput-object v0, p0, La4/c;->i:Ly8/d;
 
     return-void
 .end method
 
-.method public final o()LY3/i;
+.method public o()Ly8/i;
     .locals 1
 
-    iget-object v0, p0, LA4/c;->g:Ls4/f;
+    iget-object v0, p0, La4/c;->h:Ly8/i;
 
-    iget-object v0, v0, Ls4/f;->k:LY3/i;
+    invoke-static {v0}, Li4/h;->c(Ljava/lang/Object;)V
 
     return-object v0
-.end method
-
-.method public final s(Ljava/lang/Object;)V
-    .locals 1
-
-    iget-object v0, p0, LA4/c;->g:Ls4/f;
-
-    invoke-virtual {v0, p1}, Ls4/f;->s(Ljava/lang/Object;)V
-
-    return-void
 .end method

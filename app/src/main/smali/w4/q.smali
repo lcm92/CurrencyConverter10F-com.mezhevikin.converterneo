@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LY3/d;
+.implements Ly8/d;
 
 
 # static fields
@@ -25,10 +25,10 @@
 
 
 # virtual methods
-.method public final o()LY3/i;
+.method public final o()Ly8/i;
     .locals 1
 
-    sget-object v0, LY3/j;->g:LY3/j;
+    sget-object v0, Ly8/j;->g:Ly8/j;
 
     return-object v0
 .end method

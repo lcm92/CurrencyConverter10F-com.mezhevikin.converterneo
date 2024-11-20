@@ -13,38 +13,38 @@
 
 .field public synthetic m:Ljava/lang/Object;
 
-.field public final synthetic n:LR3/f;
+.field public final synthetic n:Lr8/f;
 
 .field public final synthetic o:Ljava/io/InputStream;
 
 
 # direct methods
-.method public constructor <init>(LR3/f;Ljava/io/InputStream;LY3/d;)V
+.method public constructor <init>(Lr8/f;Ljava/io/InputStream;Ly8/d;)V
     .locals 0
 
-    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/l;->n:LR3/f;
+    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/l;->n:Lr8/f;
 
     iput-object p2, p0, Lio/ktor/utils/io/jvm/javaio/l;->o:Ljava/io/InputStream;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p3}, La4/i;-><init>(ILY3/d;)V
+    invoke-direct {p0, p1, p3}, La4/i;-><init>(ILy8/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(LY3/d;Ljava/lang/Object;)LY3/d;
+.method public final d(Ly8/d;Ljava/lang/Object;)Ly8/d;
     .locals 3
 
     new-instance v0, Lio/ktor/utils/io/jvm/javaio/l;
 
-    iget-object v1, p0, Lio/ktor/utils/io/jvm/javaio/l;->n:LR3/f;
+    iget-object v1, p0, Lio/ktor/utils/io/jvm/javaio/l;->n:Lr8/f;
 
     iget-object v2, p0, Lio/ktor/utils/io/jvm/javaio/l;->o:Ljava/io/InputStream;
 
-    invoke-direct {v0, v1, v2, p1}, Lio/ktor/utils/io/jvm/javaio/l;-><init>(LR3/f;Ljava/io/InputStream;LY3/d;)V
+    invoke-direct {v0, v1, v2, p1}, Lio/ktor/utils/io/jvm/javaio/l;-><init>(Lr8/f;Ljava/io/InputStream;Ly8/d;)V
 
     iput-object p2, v0, Lio/ktor/utils/io/jvm/javaio/l;->m:Ljava/lang/Object;
 
@@ -54,7 +54,7 @@
 .method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 7
 
-    sget-object v0, LZ3/a;->g:LZ3/a;
+    sget-object v0, Lz8/a;->g:Lz8/a;
 
     iget v1, p0, Lio/ktor/utils/io/jvm/javaio/l;->l:I
 
@@ -62,7 +62,7 @@
 
     iget-object v3, p0, Lio/ktor/utils/io/jvm/javaio/l;->o:Ljava/io/InputStream;
 
-    iget-object v4, p0, Lio/ktor/utils/io/jvm/javaio/l;->n:LR3/f;
+    iget-object v4, p0, Lio/ktor/utils/io/jvm/javaio/l;->n:Lr8/f;
 
     if-eqz v1, :cond_1
 
@@ -75,7 +75,7 @@
     check-cast v5, Lio/ktor/utils/io/N;
 
     :try_start_0
-    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -96,13 +96,13 @@
     throw p1
 
     :cond_1
-    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
 
     iget-object p1, p0, Lio/ktor/utils/io/jvm/javaio/l;->m:Ljava/lang/Object;
 
     check-cast p1, Lio/ktor/utils/io/N;
 
-    invoke-interface {v4}, LR3/f;->o()Ljava/lang/Object;
+    invoke-interface {v4}, Lr8/f;->o()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -144,7 +144,7 @@
     return-object v0
 
     :cond_3
-    invoke-interface {v4, v1}, LR3/f;->l(Ljava/lang/Object;)V
+    invoke-interface {v4, v1}, Lr8/f;->l(Ljava/lang/Object;)V
 
     :goto_1
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
@@ -159,19 +159,19 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    invoke-interface {v4, v1}, LR3/f;->l(Ljava/lang/Object;)V
+    invoke-interface {v4, v1}, Lr8/f;->l(Ljava/lang/Object;)V
 
     goto :goto_1
 
     :goto_3
-    sget-object p1, LU3/y;->a:LU3/y;
+    sget-object p1, Lu8/y;->a:Lu8/y;
 
     return-object p1
 
     :catchall_1
     move-exception p1
 
-    invoke-interface {v4, v1}, LR3/f;->l(Ljava/lang/Object;)V
+    invoke-interface {v4, v1}, Lr8/f;->l(Ljava/lang/Object;)V
 
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
@@ -183,15 +183,15 @@
 
     check-cast p1, Lio/ktor/utils/io/N;
 
-    check-cast p2, LY3/d;
+    check-cast p2, Ly8/d;
 
-    invoke-virtual {p0, p2, p1}, Lio/ktor/utils/io/jvm/javaio/l;->d(LY3/d;Ljava/lang/Object;)LY3/d;
+    invoke-virtual {p0, p2, p1}, Lio/ktor/utils/io/jvm/javaio/l;->d(Ly8/d;Ljava/lang/Object;)Ly8/d;
 
     move-result-object p1
 
     check-cast p1, Lio/ktor/utils/io/jvm/javaio/l;
 
-    sget-object p2, LU3/y;->a:LU3/y;
+    sget-object p2, Lu8/y;->a:Lu8/y;
 
     invoke-virtual {p1, p2}, Lio/ktor/utils/io/jvm/javaio/l;->f(Ljava/lang/Object;)Ljava/lang/Object;
 

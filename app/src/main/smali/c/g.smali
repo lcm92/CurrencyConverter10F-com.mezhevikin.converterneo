@@ -1,113 +1,100 @@
-.class public final LC/G;
-.super LR/p;
+.class public final Lc/g;
+.super La4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lq0/l;
-.implements Lq0/w;
+.implements Lh4/e;
+
+
+# instance fields
+.field public final synthetic k:Lc/f;
+
+.field public final synthetic l:Z
+
+
+# direct methods
+.method public constructor <init>(Lc/f;ZLy8/d;)V
+    .locals 0
+
+    iput-object p1, p0, Lc/g;->k:Lc/f;
+
+    iput-boolean p2, p0, Lc/g;->l:Z
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p3}, La4/i;-><init>(ILy8/d;)V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final h(Lo0/G;Lo0/D;J)Lo0/F;
-    .locals 4
+.method public final d(Ly8/d;Ljava/lang/Object;)Ly8/d;
+    .locals 2
 
-    sget-object v0, LC/u;->a:LF/X0;
+    new-instance p2, Lc/g;
 
-    invoke-static {p0, v0}, Lq0/f;->i(Lq0/l;LF/p0;)Ljava/lang/Object;
+    iget-object v0, p0, Lc/g;->k:Lc/f;
 
-    move-result-object v0
+    iget-boolean v1, p0, Lc/g;->l:Z
 
-    check-cast v0, LL0/e;
+    invoke-direct {p2, v0, v1, p1}, Lc/g;-><init>(Lc/f;ZLy8/d;)V
 
-    iget v0, v0, LL0/e;->g:F
+    return-object p2
+.end method
 
-    const/4 v1, 0x0
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    int-to-float v2, v1
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
 
-    cmpg-float v3, v0, v2
+    iget-object p1, p0, Lc/g;->k:Lc/f;
 
-    if-gez v3, :cond_0
+    iget-boolean v0, p0, Lc/g;->l:Z
 
-    move v0, v2
+    if-nez v0, :cond_0
+
+    iget-boolean v1, p1, Lb/u;->a:Z
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p1, Lc/f;->f:Laa/va;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Laa/va;->d()V
 
     :cond_0
-    invoke-interface {p2, p3, p4}, Lo0/D;->a(J)Lo0/N;
+    iput-boolean v0, p1, Lb/u;->a:Z
 
-    move-result-object p2
+    iget-object p1, p1, Lb/u;->c:Li4/f;
 
-    iget-boolean p3, p0, LR/p;->s:Z
+    if-eqz p1, :cond_1
 
-    if-eqz p3, :cond_1
-
-    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
-
-    move-result p3
-
-    if-nez p3, :cond_1
-
-    invoke-static {v0, v2}, Ljava/lang/Float;->compare(FF)I
-
-    move-result p3
-
-    if-lez p3, :cond_1
-
-    const/4 p3, 0x1
-
-    goto :goto_0
+    invoke-interface {p1}, Lh4/a;->b()Ljava/lang/Object;
 
     :cond_1
-    move p3, v1
+    sget-object p1, Lu8/y;->a:Lu8/y;
 
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
+    return-object p1
+.end method
 
-    move-result p4
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    if-nez p4, :cond_2
+    check-cast p1, Ls4/x;
 
-    invoke-interface {p1, v0}, LL0/b;->j(F)I
+    check-cast p2, Ly8/d;
 
-    move-result v1
-
-    :cond_2
-    if-eqz p3, :cond_3
-
-    iget p4, p2, Lo0/N;->g:I
-
-    invoke-static {p4, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result p4
-
-    goto :goto_1
-
-    :cond_3
-    iget p4, p2, Lo0/N;->g:I
-
-    :goto_1
-    if-eqz p3, :cond_4
-
-    iget p3, p2, Lo0/N;->h:I
-
-    invoke-static {p3, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result p3
-
-    goto :goto_2
-
-    :cond_4
-    iget p3, p2, Lo0/N;->h:I
-
-    :goto_2
-    new-instance v0, LC/F;
-
-    invoke-direct {v0, p4, p2, p3}, LC/F;-><init>(ILo0/N;I)V
-
-    sget-object p2, LV3/u;->g:LV3/u;
-
-    invoke-interface {p1, p4, p3, p2, v0}, Lo0/G;->K(IILjava/util/Map;Lh4/c;)Lo0/F;
+    invoke-virtual {p0, p2, p1}, Lc/g;->d(Ly8/d;Ljava/lang/Object;)Ly8/d;
 
     move-result-object p1
 
-    return-object p1
+    check-cast p1, Lc/g;
+
+    sget-object p2, Lu8/y;->a:Lu8/y;
+
+    invoke-virtual {p1, p2}, Lc/g;->f(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p2
 .end method

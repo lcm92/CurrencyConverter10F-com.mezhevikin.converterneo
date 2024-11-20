@@ -22,9 +22,9 @@
 
     if-nez p2, :cond_0
 
-    iget-object p2, p0, Ls4/a;->i:LY3/i;
+    iget-object p2, p0, Ls4/a;->i:Ly8/i;
 
-    invoke-static {p2, p1}, Ls4/y;->o(LY3/i;Ljava/lang/Throwable;)V
+    invoke-static {p2, p1}, Ls4/y;->o(Ly8/i;Ljava/lang/Throwable;)V
 
     :cond_0
     return-void
@@ -33,7 +33,7 @@
 .method public final o0(Ljava/lang/Object;)V
     .locals 1
 
-    check-cast p1, LU3/y;
+    check-cast p1, Lu8/y;
 
     const/4 p1, 0x0
 

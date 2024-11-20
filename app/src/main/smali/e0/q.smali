@@ -1,251 +1,278 @@
-.class public final LE0/q;
-.super Ljava/lang/Object;
+.class public final Le0/q;
+.super Le0/aa;
 .source "SourceFile"
-
-# interfaces
-.implements LE0/o;
 
 
 # instance fields
-.field public final a:LE0/b;
+.field public final c:F
 
-.field public final b:LE0/F;
+.field public final d:F
 
-.field public final c:Ly/s;
+.field public final e:F
 
-.field public final d:LE0/v;
+.field public final f:Z
 
-.field public final e:LA/Z;
+.field public final g:Z
 
-.field public final f:LA/h0;
+.field public final h:F
+
+.field public final i:F
 
 
 # direct methods
-.method public constructor <init>(LE0/b;LE0/c;)V
-    .locals 4
+.method public constructor <init>(FFFZZFF)V
+    .locals 2
 
-    sget-object v0, LE0/r;->a:Ly/s;
+    const/4 v0, 0x3
 
-    new-instance v1, LE0/v;
+    const/4 v1, 0x0
 
-    sget-object v2, LE0/r;->b:LE0/l;
+    invoke-direct {p0, v0, v1, v1}, Le0/aa;-><init>(IZZ)V
 
-    invoke-direct {v1, v2}, LE0/v;-><init>(LE0/l;)V
+    iput p1, p0, Le0/q;->c:F
 
-    new-instance v2, LA/Z;
+    iput p2, p0, Le0/q;->d:F
 
-    const/4 v3, 0x4
+    iput p3, p0, Le0/q;->e:F
 
-    invoke-direct {v2, v3}, LA/Z;-><init>(I)V
+    iput-boolean p4, p0, Le0/q;->f:Z
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-boolean p5, p0, Le0/q;->g:Z
 
-    iput-object p1, p0, LE0/q;->a:LE0/b;
+    iput p6, p0, Le0/q;->h:F
 
-    iput-object p2, p0, LE0/q;->b:LE0/F;
-
-    iput-object v0, p0, LE0/q;->c:Ly/s;
-
-    iput-object v1, p0, LE0/q;->d:LE0/v;
-
-    iput-object v2, p0, LE0/q;->e:LA/Z;
-
-    new-instance p1, LA/h0;
-
-    const/4 p2, 0x6
-
-    invoke-direct {p1, p2, p0}, LA/h0;-><init>(ILjava/lang/Object;)V
-
-    iput-object p1, p0, LE0/q;->f:LA/h0;
+    iput p7, p0, Le0/q;->i:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LE0/L;)LE0/O;
-    .locals 5
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-    iget-object v0, p0, LE0/q;->c:Ly/s;
+    const/4 v0, 0x1
 
-    new-instance v1, LA/y;
+    if-ne p0, p1, :cond_0
 
-    const/4 v2, 0x3
-
-    invoke-direct {v1, p0, v2, p1}, LA/y;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    iget-object v2, v0, Ly/s;->h:Ljava/lang/Object;
-
-    check-cast v2, Ll2/g;
-
-    monitor-enter v2
-
-    :try_start_0
-    iget-object v3, v0, Ly/s;->i:Ljava/lang/Object;
-
-    check-cast v3, LD0/b;
-
-    invoke-virtual {v3, p1}, LD0/b;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, LE0/O;
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v3}, LE0/O;->a()Z
-
-    move-result v4
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    if-eqz v4, :cond_0
-
-    monitor-exit v2
-
-    goto :goto_2
+    return v0
 
     :cond_0
-    :try_start_1
-    iget-object v3, v0, Ly/s;->i:Ljava/lang/Object;
+    instance-of v1, p1, Le0/q;
 
-    check-cast v3, LD0/b;
+    const/4 v2, 0x0
 
-    invoke-virtual {v3, p1}, LD0/b;->c(Ljava/lang/Object;)Ljava/lang/Object;
+    if-nez v1, :cond_1
 
-    move-result-object v3
-
-    check-cast v3, LE0/O;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p1
-
-    goto :goto_4
+    return v2
 
     :cond_1
-    :goto_0
-    monitor-exit v2
+    check-cast p1, Le0/q;
 
-    :try_start_2
-    new-instance v2, LA/y;
+    iget v1, p1, Le0/q;->c:F
 
-    const/4 v3, 0x4
+    iget v3, p0, Le0/q;->c:F
 
-    invoke-direct {v2, v0, v3, p1}, LA/y;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-static {v3, v1}, Ljava/lang/Float;->compare(FF)I
 
-    invoke-virtual {v1, v2}, LA/y;->j(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result v1
 
-    move-result-object v1
+    if-eqz v1, :cond_2
 
-    move-object v3, v1
-
-    check-cast v3, LE0/O;
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    iget-object v1, v0, Ly/s;->h:Ljava/lang/Object;
-
-    check-cast v1, Ll2/g;
-
-    monitor-enter v1
-
-    :try_start_3
-    iget-object v2, v0, Ly/s;->i:Ljava/lang/Object;
-
-    check-cast v2, LD0/b;
-
-    invoke-virtual {v2, p1}, LD0/b;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-nez v2, :cond_2
-
-    invoke-interface {v3}, LE0/O;->a()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    iget-object v0, v0, Ly/s;->i:Ljava/lang/Object;
-
-    check-cast v0, LD0/b;
-
-    invoke-virtual {v0, p1, v3}, LD0/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    goto :goto_1
-
-    :catchall_1
-    move-exception p1
-
-    goto :goto_3
+    return v2
 
     :cond_2
-    :goto_1
-    monitor-exit v1
+    iget v1, p0, Le0/q;->d:F
 
-    :goto_2
-    return-object v3
+    iget v3, p1, Le0/q;->d:F
 
-    :goto_3
-    monitor-exit v1
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
-    throw p1
+    move-result v1
 
-    :catch_0
-    move-exception p1
+    if-eqz v1, :cond_3
 
-    new-instance v0, Ljava/lang/IllegalStateException;
+    return v2
 
-    const-string v1, "Could not load font"
+    :cond_3
+    iget v1, p0, Le0/q;->e:F
 
-    invoke-direct {v0, v1, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    iget v3, p1, Le0/q;->e:F
 
-    throw v0
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
-    :goto_4
-    monitor-exit v2
+    move-result v1
 
-    throw p1
+    if-eqz v1, :cond_4
+
+    return v2
+
+    :cond_4
+    iget-boolean v1, p0, Le0/q;->f:Z
+
+    iget-boolean v3, p1, Le0/q;->f:Z
+
+    if-eq v1, v3, :cond_5
+
+    return v2
+
+    :cond_5
+    iget-boolean v1, p0, Le0/q;->g:Z
+
+    iget-boolean v3, p1, Le0/q;->g:Z
+
+    if-eq v1, v3, :cond_6
+
+    return v2
+
+    :cond_6
+    iget v1, p0, Le0/q;->h:F
+
+    iget v3, p1, Le0/q;->h:F
+
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v1
+
+    if-eqz v1, :cond_7
+
+    return v2
+
+    :cond_7
+    iget v1, p0, Le0/q;->i:F
+
+    iget p1, p1, Le0/q;->i:F
+
+    invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
+
+    move-result p1
+
+    if-eqz p1, :cond_8
+
+    return v2
+
+    :cond_8
+    return v0
 .end method
 
-.method public final b(LE0/p;LE0/A;II)LE0/O;
-    .locals 7
+.method public final hashCode()I
+    .locals 3
 
-    new-instance v6, LE0/L;
+    iget v0, p0, Le0/q;->c:F
 
-    iget-object v0, p0, LE0/q;->b:LE0/F;
+    invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result v0
 
-    invoke-interface {v0, p2}, LE0/F;->a(LE0/A;)LE0/A;
+    const/16 v1, 0x1f
 
-    move-result-object v2
+    mul-int/2addr v0, v1
 
-    iget-object p2, p0, LE0/q;->a:LE0/b;
+    iget v2, p0, Le0/q;->d:F
 
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v2, v0, v1}, Laa/m;->e(FII)I
 
-    const/4 v5, 0x0
+    move-result v0
 
-    move-object v0, v6
+    iget v2, p0, Le0/q;->e:F
 
-    move-object v1, p1
+    invoke-static {v2, v0, v1}, Laa/m;->e(FII)I
 
-    move v3, p3
+    move-result v0
 
-    move v4, p4
+    iget-boolean v2, p0, Le0/q;->f:Z
 
-    invoke-direct/range {v0 .. v5}, LE0/L;-><init>(LE0/p;LE0/A;IILjava/lang/Object;)V
+    invoke-static {v0, v1, v2}, Lk/pa;->c(IIZ)I
 
-    invoke-virtual {p0, v6}, LE0/q;->a(LE0/L;)LE0/O;
+    move-result v0
 
-    move-result-object p1
+    iget-boolean v2, p0, Le0/q;->g:Z
 
-    return-object p1
+    invoke-static {v0, v1, v2}, Lk/pa;->c(IIZ)I
+
+    move-result v0
+
+    iget v2, p0, Le0/q;->h:F
+
+    invoke-static {v2, v0, v1}, Laa/m;->e(FII)I
+
+    move-result v0
+
+    iget v1, p0, Le0/q;->i:F
+
+    invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "RelativeArcTo(horizontalEllipseRadius="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v1, p0, Le0/q;->c:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", verticalEllipseRadius="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Le0/q;->d:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", theta="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Le0/q;->e:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", isMoreThanHalf="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Le0/q;->f:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ", isPositiveArc="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-boolean v1, p0, Le0/q;->g:Z
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ", arcStartDx="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Le0/q;->h:F
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    const-string v1, ", arcStartDy="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget v1, p0, Le0/q;->i:F
+
+    const/16 v2, 0x29
+
+    invoke-static {v0, v1, v2}, Laa/m;->j(Ljava/lang/StringBuilder;FC)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

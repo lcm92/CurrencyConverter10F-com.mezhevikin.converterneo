@@ -30,15 +30,15 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast p2, LU3/i;
+    check-cast p2, Lu8/i;
 
-    iget-object p2, p2, LU3/i;->h:Ljava/lang/Object;
+    iget-object p2, p2, Lu8/i;->h:Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Float;
 
-    check-cast p1, LU3/i;
+    check-cast p1, Lu8/i;
 
-    iget-object p1, p1, LU3/i;->h:Ljava/lang/Object;
+    iget-object p1, p1, Lu8/i;->h:Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Float;
 
@@ -51,13 +51,13 @@
     :pswitch_0
     check-cast p1, Ljava/nio/charset/Charset;
 
-    invoke-static {p1}, LO3/a;->d(Ljava/nio/charset/Charset;)Ljava/lang/String;
+    invoke-static {p1}, Lo8/a;->d(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object p1
 
     check-cast p2, Ljava/nio/charset/Charset;
 
-    invoke-static {p2}, LO3/a;->d(Ljava/nio/charset/Charset;)Ljava/lang/String;
+    invoke-static {p2}, Lo8/a;->d(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object p2
 

@@ -76,14 +76,14 @@
 
     check-cast p1, Lx4/w;
 
-    check-cast p2, LY3/g;
+    check-cast p2, Ly8/g;
 
     return-object p1
 
     :pswitch_0
     check-cast p1, Ls4/o0;
 
-    check-cast p2, LY3/g;
+    check-cast p2, Ly8/g;
 
     if-eqz p1, :cond_0
 
@@ -107,7 +107,7 @@
     return-object p1
 
     :pswitch_1
-    check-cast p2, LY3/g;
+    check-cast p2, Ly8/g;
 
     instance-of v0, p2, Ls4/o0;
 

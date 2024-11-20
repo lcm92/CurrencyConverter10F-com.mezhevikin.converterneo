@@ -6,18 +6,18 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:LU3/e;
+.field public final b:Lu8/e;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;LU3/e;)V
+.method public constructor <init>(Ljava/lang/String;Lu8/e;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lx0/a;->a:Ljava/lang/String;
 
-    iput-object p2, p0, Lx0/a;->b:LU3/e;
+    iput-object p2, p0, Lx0/a;->b:Lu8/e;
 
     return-void
 .end method
@@ -58,9 +58,9 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lx0/a;->b:LU3/e;
+    iget-object v1, p0, Lx0/a;->b:Lu8/e;
 
-    iget-object p1, p1, Lx0/a;->b:LU3/e;
+    iget-object p1, p1, Lx0/a;->b:Lu8/e;
 
     invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -95,7 +95,7 @@
     :goto_0
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v2, p0, Lx0/a;->b:LU3/e;
+    iget-object v2, p0, Lx0/a;->b:Lu8/e;
 
     if-eqz v2, :cond_1
 
@@ -126,7 +126,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lx0/a;->b:LU3/e;
+    iget-object v1, p0, Lx0/a;->b:Lu8/e;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

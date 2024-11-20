@@ -1,226 +1,216 @@
-.class public final LY3/k;
+.class public final Ly3/k;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LY3/d;
-.implements La4/d;
-
 
 # static fields
-.field public static final h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+.field public static final a:[Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
 
 # instance fields
-.field public final g:LY3/d;
+.field private volatile acceptHandlerReference:Ls4/e;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ls4/e;"
+        }
+    .end annotation
+.end field
 
-.field private volatile result:Ljava/lang/Object;
+.field private volatile connectHandlerReference:Ls4/e;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ls4/e;"
+        }
+    .end annotation
+.end field
+
+.field private volatile readHandlerReference:Ls4/e;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ls4/e;"
+        }
+    .end annotation
+.end field
+
+.field private volatile writeHandlerReference:Ls4/e;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ls4/e;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 9
 
-    const-class v0, Ljava/lang/Object;
+    const/4 v0, 0x1
 
-    const-string v1, "result"
+    sget-object v1, Ly3/o;->h:[Ly3/o;
 
-    const-class v2, LY3/k;
+    sget-object v1, Ly3/o;->h:[Ly3/o;
 
-    invoke-static {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    new-instance v2, Ljava/util/ArrayList;
+
+    array-length v3, v1
+
+    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
+
+    array-length v3, v1
+
+    const/4 v4, 0x0
+
+    move v5, v4
+
+    :goto_0
+    if-ge v5, v3, :cond_4
+
+    aget-object v6, v1, v5
+
+    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v6
+
+    if-eqz v6, :cond_3
+
+    if-eq v6, v0, :cond_2
+
+    const/4 v7, 0x2
+
+    if-eq v6, v7, :cond_1
+
+    const/4 v7, 0x3
+
+    if-ne v6, v7, :cond_0
+
+    sget-object v6, Ly3/j;->n:Ly3/j;
+
+    goto :goto_1
+
+    :cond_0
+    new-instance v0, Lg7/c;
+
+    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
+
+    throw v0
+
+    :cond_1
+    sget-object v6, Ly3/i;->n:Ly3/i;
+
+    goto :goto_1
+
+    :cond_2
+    sget-object v6, Ly3/h;->n:Ly3/h;
+
+    goto :goto_1
+
+    :cond_3
+    sget-object v6, Ly3/g;->n:Ly3/g;
+
+    :goto_1
+    const-class v7, Ly3/k;
+
+    const-class v8, Ls4/e;
+
+    iget-object v6, v6, Li4/b;->j:Ljava/lang/String;
+
+    invoke-static {v7, v8, v6}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    move-result-object v6
+
+    const-string v7, "null cannot be cast to non-null type java.util.concurrent.atomic.AtomicReferenceFieldUpdater<io.ktor.network.selector.InterestSuspensionsMap, kotlinx.coroutines.CancellableContinuation<kotlin.Unit>?>"
+
+    invoke-static {v6, v7}, Li4/h;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {v2, v6}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    add-int/2addr v5, v0
+
+    goto :goto_0
+
+    :cond_4
+    new-array v0, v4, [Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    invoke-interface {v2, v0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0
 
-    sput-object v0, LY3/k;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    check-cast v0, [Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+    sput-object v0, Ly3/k;->a:[Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     return-void
 .end method
 
-.method public constructor <init>(LY3/d;LZ3/a;)V
+.method public static final synthetic a(Ly3/k;)Ls4/e;
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object p0, p0, Ly3/k;->acceptHandlerReference:Ls4/e;
 
-    iput-object p1, p0, LY3/k;->g:LY3/d;
+    return-object p0
+.end method
 
-    iput-object p2, p0, LY3/k;->result:Ljava/lang/Object;
+.method public static final synthetic b(Ly3/k;)Ls4/e;
+    .locals 0
 
-    return-void
+    iget-object p0, p0, Ly3/k;->connectHandlerReference:Ls4/e;
+
+    return-object p0
+.end method
+
+.method public static final synthetic c(Ly3/k;)Ls4/e;
+    .locals 0
+
+    iget-object p0, p0, Ly3/k;->readHandlerReference:Ls4/e;
+
+    return-object p0
+.end method
+
+.method public static final synthetic d(Ly3/k;)Ls4/e;
+    .locals 0
+
+    iget-object p0, p0, Ly3/k;->writeHandlerReference:Ls4/e;
+
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 4
-
-    iget-object v0, p0, LY3/k;->result:Ljava/lang/Object;
-
-    sget-object v1, LZ3/a;->h:LZ3/a;
-
-    if-ne v0, v1, :cond_2
-
-    sget-object v2, LY3/k;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
-    sget-object v3, LZ3/a;->g:LZ3/a;
-
-    :cond_0
-    invoke-virtual {v2, p0, v1, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    sget-object v0, LZ3/a;->g:LZ3/a;
-
-    return-object v0
-
-    :cond_1
-    invoke-virtual {v2, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    if-eq v0, v1, :cond_0
-
-    iget-object v0, p0, LY3/k;->result:Ljava/lang/Object;
-
-    :cond_2
-    sget-object v1, LZ3/a;->i:LZ3/a;
-
-    if-ne v0, v1, :cond_3
-
-    sget-object v0, LZ3/a;->g:LZ3/a;
-
-    goto :goto_0
-
-    :cond_3
-    instance-of v1, v0, LU3/k;
-
-    if-nez v1, :cond_4
-
-    :goto_0
-    return-object v0
-
-    :cond_4
-    check-cast v0, LU3/k;
-
-    iget-object v0, v0, LU3/k;->g:Ljava/lang/Throwable;
-
-    throw v0
-.end method
-
-.method public final k()La4/d;
-    .locals 2
-
-    iget-object v0, p0, LY3/k;->g:LY3/d;
-
-    instance-of v1, v0, La4/d;
-
-    if-eqz v1, :cond_0
-
-    check-cast v0, La4/d;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return-object v0
-.end method
-
-.method public final o()LY3/i;
-    .locals 1
-
-    iget-object v0, p0, LY3/k;->g:LY3/d;
-
-    invoke-interface {v0}, LY3/d;->o()LY3/i;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final s(Ljava/lang/Object;)V
-    .locals 4
-
-    :goto_0
-    iget-object v0, p0, LY3/k;->result:Ljava/lang/Object;
-
-    sget-object v1, LZ3/a;->h:LZ3/a;
-
-    if-ne v0, v1, :cond_2
-
-    sget-object v2, LY3/k;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
-    :cond_0
-    invoke-virtual {v2, p0, v1, p1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    return-void
-
-    :cond_1
-    invoke-virtual {v2, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    if-eq v0, v1, :cond_0
-
-    goto :goto_0
-
-    :cond_2
-    sget-object v1, LZ3/a;->g:LZ3/a;
-
-    if-ne v0, v1, :cond_5
-
-    sget-object v0, LY3/k;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
-    sget-object v2, LZ3/a;->i:LZ3/a;
-
-    :cond_3
-    invoke-virtual {v0, p0, v1, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_4
-
-    iget-object v0, p0, LY3/k;->g:LY3/d;
-
-    invoke-interface {v0, p1}, LY3/d;->s(Ljava/lang/Object;)V
-
-    return-void
-
-    :cond_4
-    invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    if-eq v3, v1, :cond_3
-
-    goto :goto_0
-
-    :cond_5
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "Already resumed"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
 .method public final toString()Ljava/lang/String;
     .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v1, "SafeContinuation for "
+    const-string v1, "R "
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, LY3/k;->g:LY3/d;
+    iget-object v1, p0, Ly3/k;->readHandlerReference:Ls4/e;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, " W "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Ly3/k;->writeHandlerReference:Ls4/e;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, " C "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Ly3/k;->connectHandlerReference:Ls4/e;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, " A "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Ly3/k;->acceptHandlerReference:Ls4/e;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

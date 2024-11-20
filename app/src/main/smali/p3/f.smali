@@ -1,46 +1,49 @@
-.class public abstract LP3/f;
-.super Ljava/lang/Object;
+.class public final Lp3/f;
+.super La4/c;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LU3/n;
+# instance fields
+.field public synthetic j:Ljava/lang/Object;
+
+.field public final synthetic k:Lp3/j;
+
+.field public l:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lp3/j;La4/c;)V
+    .locals 0
 
-    sget-object v0, LP3/e;->h:LP3/e;
+    iput-object p1, p0, Lp3/f;->k:Lp3/j;
 
-    invoke-static {v0}, LU3/a;->d(Lh4/a;)LU3/n;
-
-    move-result-object v0
-
-    sput-object v0, LP3/f;->a:LU3/n;
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly8/d;)V
 
     return-void
 .end method
 
-.method public static final a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+
+# virtual methods
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    sget-object v0, LP3/f;->a:LU3/n;
+    iput-object p1, p0, Lp3/f;->j:Ljava/lang/Object;
 
-    invoke-virtual {v0}, LU3/n;->getValue()Ljava/lang/Object;
+    iget p1, p0, Lp3/f;->l:I
 
-    move-result-object v0
+    const/high16 v0, -0x80000000
 
-    check-cast v0, Ljava/lang/reflect/Method;
+    or-int/2addr p1, v0
 
-    if-eqz v0, :cond_0
+    iput p1, p0, Lp3/f;->l:I
 
-    filled-new-array {p1}, [Ljava/lang/Object;
+    iget-object p1, p0, Lp3/f;->k:Lp3/j;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0, p0}, Lp3/j;->a(Lp3/b;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    :cond_0
-    return-void
+    return-object p1
 .end method

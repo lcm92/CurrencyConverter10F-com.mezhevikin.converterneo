@@ -1,434 +1,743 @@
-.class public final LL2/d;
-.super LM2/e;
+.class public final Ll2/d;
+.super Ll2/e;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic h:I
+# static fields
+.field public static final c:Ljava/lang/Object;
 
-.field public final synthetic i:Ljava/lang/Object;
-
-.field public final synthetic j:Ljava/lang/Object;
+.field public static final d:Ll2/d;
 
 
 # direct methods
-.method public constructor <init>(LI2/n;Landroid/os/IBinder;)V
+.method static constructor <clinit>()V
     .locals 1
 
-    const/4 v0, 0x1
+    new-instance v0, Ljava/lang/Object;
 
-    iput v0, p0, LL2/d;->h:I
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    .line 1
-    iput-object p2, p0, LL2/d;->i:Ljava/lang/Object;
+    sput-object v0, Ll2/d;->c:Ljava/lang/Object;
 
-    iput-object p1, p0, LL2/d;->j:Ljava/lang/Object;
+    new-instance v0, Ll2/d;
 
-    invoke-direct {p0}, LM2/e;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Ll2/d;->d:Ll2/d;
 
     return-void
 .end method
 
-.method public constructor <init>(LL2/f;LG2/d;LG2/d;)V
-    .locals 1
+.method public static d(Landroid/app/Activity;ILo2/l;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog;
+    .locals 5
 
     const/4 v0, 0x0
 
-    iput v0, p0, LL2/d;->h:I
+    if-nez p1, :cond_0
 
-    .line 2
-    iput-object p3, p0, LL2/d;->i:Ljava/lang/Object;
+    return-object v0
 
-    iput-object p1, p0, LL2/d;->j:Ljava/lang/Object;
+    :cond_0
+    new-instance v1, Landroid/util/TypedValue;
 
-    invoke-direct {p0, p2}, LM2/e;-><init>(LG2/d;)V
+    invoke-direct {v1}, Landroid/util/TypedValue;-><init>()V
+
+    invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    move-result-object v2
+
+    const v3, 0x1010309
+
+    const/4 v4, 0x1
+
+    invoke-virtual {v2, v3, v1, v4}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
+
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    iget v1, v1, Landroid/util/TypedValue;->resourceId:I
+
+    invoke-virtual {v2, v1}, Landroid/content/res/Resources;->getResourceEntryName(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "Theme.Dialog.Alert"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+
+    const/4 v1, 0x5
+
+    invoke-direct {v0, p0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    :cond_1
+    if-nez v0, :cond_2
+
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+
+    invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    :cond_2
+    invoke-static {p0, p1}, Lo2/k;->b(Landroid/content/Context;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    if-eqz p3, :cond_3
+
+    invoke-virtual {v0, p3}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
+
+    :cond_3
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p3
+
+    if-eq p1, v4, :cond_6
+
+    const/4 v1, 0x2
+
+    if-eq p1, v1, :cond_5
+
+    const/4 v1, 0x3
+
+    if-eq p1, v1, :cond_4
+
+    const v1, 0x104000a
+
+    invoke-virtual {p3, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p3
+
+    goto :goto_0
+
+    :cond_4
+    const v1, 0x7f0c00a4
+
+    invoke-virtual {p3, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p3
+
+    goto :goto_0
+
+    :cond_5
+    const v1, 0x7f0c00ae
+
+    invoke-virtual {p3, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p3
+
+    goto :goto_0
+
+    :cond_6
+    const v1, 0x7f0c00a7
+
+    invoke-virtual {p3, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p3
+
+    :goto_0
+    if-eqz p3, :cond_7
+
+    invoke-virtual {v0, p3, p2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    :cond_7
+    invoke-static {p0, p1}, Lo2/k;->c(Landroid/content/Context;I)Ljava/lang/String;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_8
+
+    invoke-virtual {v0, p0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    :cond_8
+    const-string p0, "Creating dialog for Google Play services availability issue. ConnectionResult="
+
+    invoke-static {p0, p1}, Laa/m;->g(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    const-string p2, "GoogleApiAvailability"
+
+    invoke-static {p2, p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static e(Landroid/app/Activity;Landroid/app/AlertDialog;Ljava/lang/String;Landroid/content/DialogInterface$OnCancelListener;)V
+    .locals 2
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
+
+    move-result-object p0
+
+    new-instance v0, Ll2/b;
+
+    invoke-direct {v0}, Landroid/app/DialogFragment;-><init>()V
+
+    const-string v1, "Cannot display null dialog"
+
+    invoke-static {p1, v1}, Lo2/p;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v1}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
+
+    invoke-virtual {p1, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+
+    iput-object p1, v0, Ll2/b;->g:Landroid/app/AlertDialog;
+
+    if-eqz p3, :cond_0
+
+    iput-object p3, v0, Ll2/b;->h:Landroid/content/DialogInterface$OnCancelListener;
+
+    :cond_0
+    invoke-virtual {v0, p0, p2}, Landroid/app/DialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 10
+.method public final c(Lcom/google/android/gms/common/api/GoogleApiActivity;ILcom/google/android/gms/common/api/GoogleApiActivity;)V
+    .locals 3
 
-    const/4 v0, 0x6
+    const-string v0, "d"
 
-    const/4 v1, 0x0
+    invoke-super {p0, p2, p1, v0}, Ll2/e;->a(ILandroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    new-instance v1, Lo2/l;
 
     const/4 v2, 0x0
 
-    iget v3, p0, LL2/d;->h:I
+    invoke-direct {v1, v0, p1, v2}, Lo2/l;-><init>(Landroid/content/Intent;Ljava/lang/Object;I)V
 
-    packed-switch v3, :pswitch_data_0
+    invoke-static {p1, p2, v1, p3}, Ll2/d;->d(Landroid/app/Activity;ILo2/l;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog;
 
-    sget v3, LM2/c;->b:I
+    move-result-object p2
 
-    iget-object v3, p0, LL2/d;->i:Ljava/lang/Object;
+    if-nez p2, :cond_0
 
-    check-cast v3, Landroid/os/IBinder;
-
-    if-nez v3, :cond_0
-
-    goto :goto_0
+    return-void
 
     :cond_0
-    const-string v2, "com.google.android.play.core.inappreview.protocol.IInAppReviewService"
+    const-string v0, "GooglePlayServicesErrorDialog"
 
-    invoke-interface {v3, v2}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    invoke-static {p1, p2, v0, p3}, Ll2/d;->e(Landroid/app/Activity;Landroid/app/AlertDialog;Ljava/lang/String;Landroid/content/DialogInterface$OnCancelListener;)V
 
-    move-result-object v2
+    return-void
+.end method
 
-    instance-of v4, v2, LM2/d;
+.method public final f(Landroid/content/Context;ILandroid/app/PendingIntent;)V
+    .locals 16
 
-    if-eqz v4, :cond_1
+    move-object/from16 v0, p1
 
-    check-cast v2, LM2/d;
+    move/from16 v1, p2
+
+    move-object/from16 v2, p3
+
+    const-string v3, "GMS core API Availability. ConnectionResult="
+
+    const-string v4, ", tag=null"
+
+    invoke-static {v3, v1, v4}, Laa/m;->h(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    new-instance v4, Ljava/lang/IllegalArgumentException;
+
+    invoke-direct {v4}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    const-string v5, "GoogleApiAvailability"
+
+    invoke-static {v5, v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    const/16 v3, 0x12
+
+    const/4 v4, 0x1
+
+    if-ne v1, v3, :cond_0
+
+    new-instance v1, Ll2/h;
+
+    move-object/from16 v3, p0
+
+    invoke-direct {v1, v3, v0}, Ll2/h;-><init>(Ll2/d;Landroid/content/Context;)V
+
+    const-wide/32 v5, 0x1d4c0
+
+    invoke-virtual {v1, v4, v5, v6}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+
+    return-void
+
+    :cond_0
+    move-object/from16 v3, p0
+
+    const/4 v5, 0x6
+
+    if-nez v2, :cond_2
+
+    if-ne v1, v5, :cond_1
+
+    const-string v0, "GoogleApiAvailability"
+
+    const-string v1, "Missing resolution for ConnectionResult.RESOLUTION_REQUIRED. Call GoogleApiAvailability#showErrorNotification(Context, ConnectionResult) instead."
+
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_1
+    return-void
+
+    :cond_2
+    if-ne v1, v5, :cond_3
+
+    const-string v6, "common_google_play_services_resolution_required_title"
+
+    invoke-static {v0, v6}, Lo2/k;->e(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
 
     goto :goto_0
 
-    :cond_1
-    new-instance v2, LM2/b;
+    :cond_3
+    invoke-static/range {p1 .. p2}, Lo2/k;->c(Landroid/content/Context;I)Ljava/lang/String;
 
-    invoke-direct {v2, v3}, LM2/b;-><init>(Landroid/os/IBinder;)V
+    move-result-object v6
 
     :goto_0
-    iget-object v3, p0, LL2/d;->j:Ljava/lang/Object;
+    const v7, 0x7f0c00ab
 
-    check-cast v3, LI2/n;
+    if-nez v6, :cond_4
 
-    iget-object v4, v3, LI2/n;->b:Ljava/lang/Object;
+    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    check-cast v4, LM2/h;
+    move-result-object v6
 
-    iput-object v2, v4, LM2/h;->m:LM2/d;
+    invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    new-array v2, v1, [Ljava/lang/Object;
+    move-result-object v6
 
-    const-string v5, "linkToDeath"
+    :cond_4
+    if-eq v1, v5, :cond_6
 
-    iget-object v6, v4, LM2/h;->b:LI2/i;
+    const/16 v5, 0x13
 
-    invoke-virtual {v6, v5, v2}, LI2/i;->g(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    :try_start_0
-    iget-object v2, v4, LM2/h;->m:LM2/d;
-
-    invoke-interface {v2}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
-
-    move-result-object v2
-
-    iget-object v4, v4, LM2/h;->j:LI2/k;
-
-    invoke-interface {v2, v4, v1}, Landroid/os/IBinder;->linkToDeath(Landroid/os/IBinder$DeathRecipient;I)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    if-ne v1, v5, :cond_5
 
     goto :goto_1
 
-    :catch_0
-    move-exception v2
+    :cond_5
+    invoke-static/range {p1 .. p2}, Lo2/k;->b(Landroid/content/Context;I)Ljava/lang/String;
 
-    new-array v4, v1, [Ljava/lang/Object;
-
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const-string v5, "PlayCore"
-
-    invoke-static {v5, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, v6, LI2/i;->h:Ljava/lang/String;
-
-    const-string v6, "linkToDeath failed"
-
-    invoke-static {v0, v6, v4}, LI2/i;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v5, v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    :cond_2
-    :goto_1
-    iget-object v0, v3, LI2/n;->b:Ljava/lang/Object;
-
-    check-cast v0, LM2/h;
-
-    iput-boolean v1, v0, LM2/h;->g:Z
-
-    iget-object v1, v0, LM2/h;->d:Ljava/util/ArrayList;
-
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Runnable;
-
-    invoke-interface {v2}, Ljava/lang/Runnable;->run()V
+    move-result-object v5
 
     goto :goto_2
 
-    :cond_3
-    iget-object v0, v0, LM2/h;->d:Ljava/util/ArrayList;
+    :cond_6
+    :goto_1
+    invoke-static/range {p1 .. p1}, Lo2/k;->a(Landroid/content/Context;)Ljava/lang/String;
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+    move-result-object v5
 
-    return-void
+    const-string v8, "common_google_play_services_resolution_required_text"
 
-    :pswitch_0
-    :try_start_1
-    iget-object v3, p0, LL2/d;->j:Ljava/lang/Object;
+    invoke-static {v0, v8, v5}, Lo2/k;->d(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    check-cast v3, LL2/f;
+    move-result-object v5
 
-    iget-object v4, v3, LL2/f;->a:LM2/h;
+    :goto_2
+    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    iget-object v4, v4, LM2/h;->m:LM2/d;
+    move-result-object v8
 
-    iget-object v3, v3, LL2/f;->b:Ljava/lang/String;
+    const-string v9, "notification"
 
-    new-instance v5, Landroid/os/Bundle;
-
-    invoke-direct {v5}, Landroid/os/Bundle;-><init>()V
-
-    sget-object v6, LL2/g;->a:Ljava/util/HashMap;
-
-    const-class v6, LL2/g;
-
-    monitor-enter v6
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
-
-    :try_start_2
-    sget-object v7, LL2/g;->a:Ljava/util/HashMap;
-
-    const-string v8, "java"
-
-    const/16 v9, 0x4e22
-
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v0, v9}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v9
 
-    invoke-virtual {v7, v8, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    invoke-static {v9}, Lo2/p;->c(Ljava/lang/Object;)V
 
-    :try_start_3
-    monitor-exit v6
+    check-cast v9, Landroid/app/NotificationManager;
 
-    const-string v6, "playcore_version_code"
+    new-instance v10, Lr5/b;
 
-    const-string v8, "java"
+    invoke-direct {v10}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {v7, v8}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v11, Ljava/util/ArrayList;
 
-    move-result-object v8
+    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
 
-    check-cast v8, Ljava/lang/Integer;
+    iput-object v11, v10, Lr5/b;->b:Ljava/util/ArrayList;
 
-    invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
+    new-instance v12, Ljava/util/ArrayList;
 
-    move-result v8
+    invoke-direct {v12}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-virtual {v5, v6, v8}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+    iput-object v12, v10, Lr5/b;->c:Ljava/util/ArrayList;
 
-    const-string v6, "native"
+    new-instance v12, Ljava/util/ArrayList;
 
-    invoke-virtual {v7, v6}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-direct {v12}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v12, v10, Lr5/b;->d:Ljava/util/ArrayList;
+
+    iput-boolean v4, v10, Lr5/b;->i:Z
+
+    const/4 v12, 0x0
+
+    iput-boolean v12, v10, Lr5/b;->k:Z
+
+    new-instance v13, Landroid/app/Notification;
+
+    invoke-direct {v13}, Landroid/app/Notification;-><init>()V
+
+    iput-object v13, v10, Lr5/b;->o:Landroid/app/Notification;
+
+    iput-object v0, v10, Lr5/b;->a:Landroid/content/Context;
+
+    const/4 v14, 0x0
+
+    iput-object v14, v10, Lr5/b;->m:Ljava/lang/String;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v14
+
+    iput-wide v14, v13, Landroid/app/Notification;->when:J
+
+    const/4 v14, -0x1
+
+    iput v14, v13, Landroid/app/Notification;->audioStreamType:I
+
+    iput v12, v10, Lr5/b;->h:I
+
+    new-instance v14, Ljava/util/ArrayList;
+
+    invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v14, v10, Lr5/b;->p:Ljava/util/ArrayList;
+
+    iput-boolean v4, v10, Lr5/b;->n:Z
+
+    iput-boolean v4, v10, Lr5/b;->k:Z
+
+    iget v14, v13, Landroid/app/Notification;->flags:I
+
+    or-int/lit8 v14, v14, 0x10
+
+    iput v14, v13, Landroid/app/Notification;->flags:I
+
+    invoke-static {v6}, Lr5/b;->a(Ljava/lang/String;)Ljava/lang/CharSequence;
+
+    move-result-object v6
+
+    iput-object v6, v10, Lr5/b;->e:Ljava/lang/CharSequence;
+
+    new-instance v6, Ly/s;
+
+    const/16 v14, 0x14
+
+    const/4 v15, 0x0
+
+    invoke-direct {v6, v14, v15}, Ly/s;-><init>(IZ)V
+
+    invoke-static {v5}, Lr5/b;->a(Ljava/lang/String;)Ljava/lang/CharSequence;
+
+    move-result-object v14
+
+    iput-object v14, v6, Ly/s;->i:Ljava/lang/Object;
+
+    invoke-virtual {v10, v6}, Lr5/b;->b(Ly/s;)V
+
+    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v6
+
+    sget-object v14, Lp4/h;->a:Ljava/lang/Boolean;
+
+    if-nez v14, :cond_7
+
+    const-string v14, "android.hardware.type.watch"
+
+    invoke-virtual {v6, v14}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
 
     move-result v6
 
-    if-eqz v6, :cond_4
+    invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    const-string v6, "playcore_native_version"
+    move-result-object v6
 
-    const-string v8, "native"
+    sput-object v6, Lp4/h;->a:Ljava/lang/Boolean;
 
-    invoke-virtual {v7, v8}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_7
+    sget-object v6, Lp4/h;->a:Ljava/lang/Boolean;
 
-    move-result-object v8
+    invoke-virtual {v6}, Ljava/lang/Boolean;->booleanValue()Z
 
-    check-cast v8, Ljava/lang/Integer;
+    move-result v6
 
-    invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
+    const/4 v14, 0x2
 
-    move-result v8
+    if-eqz v6, :cond_9
 
-    invoke-virtual {v5, v6, v8}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+
+    move-result-object v5
+
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->icon:I
+
+    iput v5, v13, Landroid/app/Notification;->icon:I
+
+    iput v14, v10, Lr5/b;->h:I
+
+    invoke-static/range {p1 .. p1}, Lp4/h;->d(Landroid/content/Context;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_8
+
+    const v5, 0x7f0c00b3
+
+    invoke-virtual {v8, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    new-instance v6, Lr5/a;
+
+    invoke-direct {v6, v5, v2}, Lr5/a;-><init>(Ljava/lang/String;Landroid/app/PendingIntent;)V
+
+    invoke-virtual {v11, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    :catch_1
-    move-exception v1
+    :cond_8
+    iput-object v2, v10, Lr5/b;->g:Landroid/app/PendingIntent;
 
-    goto :goto_4
+    goto :goto_3
 
-    :cond_4
-    :goto_3
-    const-string v6, "unity"
+    :cond_9
+    const v6, 0x108008a
 
-    invoke-virtual {v7, v6}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    iput v6, v13, Landroid/app/Notification;->icon:I
 
-    move-result v6
+    invoke-virtual {v8, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    if-eqz v6, :cond_5
+    move-result-object v6
 
-    const-string v6, "playcore_unity_version"
+    invoke-static {v6}, Lr5/b;->a(Ljava/lang/String;)Ljava/lang/CharSequence;
 
-    const-string v8, "unity"
+    move-result-object v6
 
-    invoke-virtual {v7, v8}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iput-object v6, v13, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
 
-    move-result-object v7
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    check-cast v7, Ljava/lang/Integer;
+    move-result-wide v6
 
-    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
+    iput-wide v6, v13, Landroid/app/Notification;->when:J
 
-    move-result v7
+    iput-object v2, v10, Lr5/b;->g:Landroid/app/PendingIntent;
 
-    invoke-virtual {v5, v6, v7}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
-
-    :cond_5
-    new-instance v6, LL2/e;
-
-    iget-object v7, p0, LL2/d;->j:Ljava/lang/Object;
-
-    check-cast v7, LL2/f;
-
-    iget-object v8, p0, LL2/d;->i:Ljava/lang/Object;
-
-    check-cast v8, LG2/d;
-
-    iget-object v9, v7, LL2/f;->b:Ljava/lang/String;
-
-    invoke-direct {v6, v7, v8}, LL2/e;-><init>(LL2/f;LG2/d;)V
-
-    check-cast v4, LM2/b;
-
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
-
-    move-result-object v7
-
-    const-string v8, "com.google.android.play.core.inappreview.protocol.IInAppReviewService"
-
-    invoke-virtual {v7, v8}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
-
-    invoke-virtual {v7, v3}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    sget v3, LM2/a;->a:I
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v7, v3}, Landroid/os/Parcel;->writeInt(I)V
-
-    invoke-virtual {v5, v7, v1}, Landroid/os/Bundle;->writeToParcel(Landroid/os/Parcel;I)V
-
-    invoke-virtual {v7, v6}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
-    :try_end_3
-    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_1
-
-    :try_start_4
-    iget-object v1, v4, LM2/b;->a:Landroid/os/IBinder;
-
-    const/4 v4, 0x2
-
-    invoke-interface {v1, v4, v7, v2, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    :try_start_5
-    invoke-virtual {v7}, Landroid/os/Parcel;->recycle()V
-
-    goto :goto_5
-
-    :catchall_0
-    move-exception v1
-
-    invoke-virtual {v7}, Landroid/os/Parcel;->recycle()V
-
-    throw v1
-    :try_end_5
-    .catch Landroid/os/RemoteException; {:try_start_5 .. :try_end_5} :catch_1
-
-    :catchall_1
-    move-exception v1
-
-    :try_start_6
-    monitor-exit v6
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_1
-
-    :try_start_7
-    throw v1
-    :try_end_7
-    .catch Landroid/os/RemoteException; {:try_start_7 .. :try_end_7} :catch_1
-
-    :goto_4
-    iget-object v2, p0, LL2/d;->j:Ljava/lang/Object;
-
-    check-cast v2, LL2/f;
-
-    sget-object v3, LL2/f;->c:LI2/i;
-
-    iget-object v2, v2, LL2/f;->b:Ljava/lang/String;
-
-    filled-new-array {v2}, [Ljava/lang/Object;
+    invoke-static {v5}, Lr5/b;->a(Ljava/lang/String;)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    const-string v4, "error requesting in-app review for %s"
+    iput-object v2, v10, Lr5/b;->f:Ljava/lang/CharSequence;
 
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :goto_3
+    sget-object v2, Ll2/d;->c:Ljava/lang/Object;
 
-    const-string v5, "PlayCore"
+    monitor-enter v2
 
-    invoke-static {v5, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    :try_start_0
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move-result v0
+    const-string v2, "com.google.android.gms.availability"
 
-    if-eqz v0, :cond_6
+    invoke-virtual {v9, v2}, Landroid/app/NotificationManager;->getNotificationChannel(Ljava/lang/String;)Landroid/app/NotificationChannel;
 
-    iget-object v0, v3, LI2/i;->h:Ljava/lang/String;
+    move-result-object v5
 
-    invoke-static {v0, v4, v2}, LI2/i;->i(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    invoke-static {v5, v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    const v6, 0x7f0c00aa
 
-    :cond_6
-    iget-object v0, p0, LL2/d;->i:Ljava/lang/Object;
+    invoke-virtual {v0, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    check-cast v0, LG2/d;
+    move-result-object v0
 
-    new-instance v2, Ljava/lang/RuntimeException;
+    if-nez v5, :cond_a
 
-    invoke-direct {v2, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+    new-instance v5, Landroid/app/NotificationChannel;
 
-    invoke-virtual {v0, v2}, LG2/d;->a(Ljava/lang/Exception;)V
+    const/4 v6, 0x4
+
+    invoke-direct {v5, v2, v0, v6}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
+
+    invoke-virtual {v9, v5}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
+
+    goto :goto_4
+
+    :cond_a
+    invoke-virtual {v5}, Landroid/app/NotificationChannel;->getName()Ljava/lang/CharSequence;
+
+    move-result-object v6
+
+    invoke-virtual {v0, v6}, Ljava/lang/String;->contentEquals(Ljava/lang/CharSequence;)Z
+
+    move-result v6
+
+    if-nez v6, :cond_b
+
+    invoke-virtual {v5, v0}, Landroid/app/NotificationChannel;->setName(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v9, v5}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
+
+    :cond_b
+    :goto_4
+    iput-object v2, v10, Lr5/b;->m:Ljava/lang/String;
+
+    new-instance v0, Le5/l;
+
+    invoke-direct {v0, v10}, Le5/l;-><init>(Lr5/b;)V
+
+    iget-object v2, v0, Le5/l;->i:Ljava/lang/Object;
+
+    check-cast v2, Lr5/b;
+
+    iget-object v5, v2, Lr5/b;->j:Ly/s;
+
+    iget-object v0, v0, Le5/l;->h:Ljava/lang/Object;
+
+    check-cast v0, Landroid/app/Notification$Builder;
+
+    if-eqz v5, :cond_c
+
+    new-instance v6, Landroid/app/Notification$BigTextStyle;
+
+    invoke-direct {v6, v0}, Landroid/app/Notification$BigTextStyle;-><init>(Landroid/app/Notification$Builder;)V
+
+    const/4 v7, 0x0
+
+    invoke-virtual {v6, v7}, Landroid/app/Notification$BigTextStyle;->setBigContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$BigTextStyle;
+
+    move-result-object v6
+
+    iget-object v7, v5, Ly/s;->i:Ljava/lang/Object;
+
+    check-cast v7, Ljava/lang/CharSequence;
+
+    invoke-virtual {v6, v7}, Landroid/app/Notification$BigTextStyle;->bigText(Ljava/lang/CharSequence;)Landroid/app/Notification$BigTextStyle;
+
+    :cond_c
+    invoke-virtual {v0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
+
+    move-result-object v0
+
+    if-eqz v5, :cond_d
+
+    iget-object v2, v2, Lr5/b;->j:Ly/s;
+
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    :cond_d
+    if-eqz v5, :cond_e
+
+    iget-object v2, v0, Landroid/app/Notification;->extras:Landroid/os/Bundle;
+
+    if-eqz v2, :cond_e
+
+    const-string v5, "androidx.core.app.extra.COMPAT_TEMPLATE"
+
+    const-string v6, "androidx.core.app.NotificationCompat$BigTextStyle"
+
+    invoke-virtual {v2, v5, v6}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_e
+    if-eq v1, v4, :cond_f
+
+    if-eq v1, v14, :cond_f
+
+    const/4 v2, 0x3
+
+    if-eq v1, v2, :cond_f
+
+    const v1, 0x9b6d
+
+    goto :goto_5
+
+    :cond_f
+    sget-object v1, Ll2/f;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    invoke-virtual {v1, v12}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    const/16 v1, 0x28c4
 
     :goto_5
+    invoke-virtual {v9, v1, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
+
     return-void
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    :catchall_0
+    move-exception v0
+
+    :try_start_1
+    monitor-exit v2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
+.end method
+
+.method public final g(Landroid/app/Activity;Ln2/s;ILandroid/content/DialogInterface$OnCancelListener;)V
+    .locals 3
+
+    const-string v0, "d"
+
+    invoke-super {p0, p3, p1, v0}, Ll2/e;->a(ILandroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    new-instance v1, Lo2/l;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, v0, p2, v2}, Lo2/l;-><init>(Landroid/content/Intent;Ljava/lang/Object;I)V
+
+    invoke-static {p1, p3, v1, p4}, Ll2/d;->d(Landroid/app/Activity;ILo2/l;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog;
+
+    move-result-object p2
+
+    if-nez p2, :cond_0
+
+    return-void
+
+    :cond_0
+    const-string p3, "GooglePlayServicesErrorDialog"
+
+    invoke-static {p1, p2, p3, p4}, Ll2/d;->e(Landroid/app/Activity;Landroid/app/AlertDialog;Ljava/lang/String;Landroid/content/DialogInterface$OnCancelListener;)V
+
+    return-void
 .end method

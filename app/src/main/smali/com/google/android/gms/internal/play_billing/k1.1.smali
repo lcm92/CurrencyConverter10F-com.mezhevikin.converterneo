@@ -159,7 +159,7 @@
     const-string v2, ", Size:"
 
     .line 16
-    invoke-static {p1, v0, v1, v2}, Lk/P;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0, v1, v2}, Lk/pa;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -574,7 +574,7 @@
 
     const-string v3, ", Size:"
 
-    invoke-static {p1, v1, v2, v3}, Lk/P;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1, v2, v3}, Lk/pa;->e(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

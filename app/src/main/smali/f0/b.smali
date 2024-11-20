@@ -1,56 +1,98 @@
-.class public final synthetic LF0/B;
+.class public abstract Lf0/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/Choreographer$FrameCallback;
 
+# static fields
+.field public static final a:[I
 
-# instance fields
-.field public final synthetic g:I
+.field public static final b:[I
 
-.field public final synthetic h:Ljava/lang/Runnable;
+.field public static final c:[I
+
+.field public static final d:[I
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Runnable;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
-    iput p2, p0, LF0/B;->g:I
+    const v0, 0x1010405
 
-    iput-object p1, p0, LF0/B;->h:Ljava/lang/Runnable;
+    const v1, 0x1010003
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/16 v2, 0x9
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_0
+
+    sput-object v2, Lf0/b;->a:[I
+
+    const/16 v2, 0x8
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_1
+
+    sput-object v2, Lf0/b;->b:[I
+
+    const/16 v2, 0xe
+
+    new-array v2, v2, [I
+
+    fill-array-data v2, :array_2
+
+    sput-object v2, Lf0/b;->c:[I
+
+    filled-new-array {v1, v0}, [I
+
+    move-result-object v0
+
+    sput-object v0, Lf0/b;->d:[I
 
     return-void
-.end method
 
+    :array_0
+    .array-data 4
+        0x1010003
+        0x1010121
+        0x1010155
+        0x1010159
+        0x101031f
+        0x10103ea
+        0x10103fb
+        0x1010402
+        0x1010403
+    .end array-data
 
-# virtual methods
-.method public final doFrame(J)V
-    .locals 0
+    :array_1
+    .array-data 4
+        0x1010003
+        0x10101b5
+        0x10101b6
+        0x1010324
+        0x1010325
+        0x1010326
+        0x101045a
+        0x101045b
+    .end array-data
 
-    iget p1, p0, LF0/B;->g:I
-
-    packed-switch p1, :pswitch_data_0
-
-    iget-object p1, p0, LF0/B;->h:Ljava/lang/Runnable;
-
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
-
-    return-void
-
-    :pswitch_0
-    iget-object p1, p0, LF0/B;->h:Ljava/lang/Runnable;
-
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    :array_2
+    .array-data 4
+        0x1010003
+        0x1010404
+        0x1010405
+        0x1010406
+        0x1010407
+        0x1010408
+        0x1010409
+        0x101040a
+        0x101040b
+        0x101040c
+        0x101040d
+        0x10104cb
+        0x10104cc
+        0x101051e
+    .end array-data
 .end method

@@ -1,217 +1,302 @@
-.class public abstract LE/b;
+.class public final synthetic Le/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/lifecycle/r;
 
-# static fields
-.field public static final A:J
 
-.field public static final B:J
+# instance fields
+.field public final synthetic g:Lb/l;
 
-.field public static final C:J
+.field public final synthetic h:Ljava/lang/String;
 
-.field public static final D:J
+.field public final synthetic i:Lj6/aa;
 
-.field public static final E:J
-
-.field public static final F:J
-
-.field public static final G:J
-
-.field public static final H:J
-
-.field public static final I:J
-
-.field public static final a:J
-
-.field public static final b:J
-
-.field public static final c:J
-
-.field public static final d:J
-
-.field public static final e:J
-
-.field public static final f:J
-
-.field public static final g:J
-
-.field public static final h:J
-
-.field public static final i:J
-
-.field public static final j:J
-
-.field public static final k:J
-
-.field public static final l:J
-
-.field public static final m:J
-
-.field public static final n:J
-
-.field public static final o:J
-
-.field public static final p:J
-
-.field public static final q:J
-
-.field public static final r:J
-
-.field public static final s:J
-
-.field public static final t:J
-
-.field public static final u:J
-
-.field public static final v:J
-
-.field public static final w:J
-
-.field public static final x:J
-
-.field public static final y:J
-
-.field public static final z:J
+.field public final synthetic j:Ll2/g;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public synthetic constructor <init>(Lb/l;Ljava/lang/String;Lj6/aa;Ll2/g;)V
+    .locals 0
 
-    sget-wide v0, LE/g;->x:J
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-wide v0, LE/b;->a:J
+    iput-object p1, p0, Le/b;->g:Lb/l;
 
-    sget-wide v2, LE/g;->e:J
+    iput-object p2, p0, Le/b;->h:Ljava/lang/String;
 
-    sput-wide v2, LE/b;->b:J
+    iput-object p3, p0, Le/b;->i:Lj6/aa;
 
-    sget-wide v2, LE/g;->g:J
+    iput-object p4, p0, Le/b;->j:Ll2/g;
 
-    sput-wide v2, LE/b;->c:J
+    return-void
+.end method
 
-    sget-wide v2, LE/g;->v:J
 
-    sput-wide v2, LE/b;->d:J
+# virtual methods
+.method public final c(Landroidx/lifecycle/t;Landroidx/lifecycle/n;)V
+    .locals 10
 
-    sget-wide v2, LE/g;->I:J
+    iget-object p1, p0, Le/b;->g:Lb/l;
 
-    sput-wide v2, LE/b;->e:J
+    const-string v0, "this$0"
 
-    sget-wide v2, LE/g;->m:J
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sput-wide v2, LE/b;->f:J
+    iget-object v0, p0, Le/b;->h:Ljava/lang/String;
 
-    sget-wide v2, LE/g;->i:J
+    iget-object v1, p0, Le/b;->i:Lj6/aa;
 
-    sput-wide v2, LE/b;->g:J
+    iget-object v2, p0, Le/b;->j:Ll2/g;
 
-    sget-wide v4, LE/g;->b:J
+    sget-object v3, Landroidx/lifecycle/n;->ON_START:Landroidx/lifecycle/n;
 
-    sput-wide v4, LE/b;->h:J
+    iget-object v4, p1, Lb/l;->e:Ljava/util/LinkedHashMap;
 
-    sget-wide v4, LE/g;->a:J
+    iget-object v5, p1, Lb/l;->f:Ljava/util/LinkedHashMap;
 
-    sput-wide v4, LE/b;->i:J
+    const/4 v6, 0x0
 
-    sget-wide v4, LE/g;->E:J
+    const-class v7, Le/a;
 
-    sput-wide v4, LE/b;->j:J
+    const/16 v8, 0x22
 
-    sget-wide v4, LE/g;->D:J
+    iget-object v9, p1, Lb/l;->g:Landroid/os/Bundle;
 
-    sput-wide v4, LE/b;->k:J
+    if-ne v3, p2, :cond_3
 
-    sget-wide v4, LE/g;->L:J
+    new-instance p1, Le/c;
 
-    sput-wide v4, LE/b;->l:J
+    invoke-direct {p1, v1, v2}, Le/c;-><init>(Lj6/aa;Ll2/g;)V
 
-    sget-wide v4, LE/g;->K:J
+    invoke-interface {v4, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    sput-wide v4, LE/b;->m:J
+    invoke-interface {v5, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
-    sput-wide v2, LE/b;->n:J
+    move-result p1
 
-    sget-wide v2, LE/g;->y:J
+    if-eqz p1, :cond_0
 
-    sput-wide v2, LE/b;->o:J
+    invoke-virtual {v5, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-wide v2, LE/g;->S:J
+    move-result-object p1
 
-    sput-wide v2, LE/b;->p:J
+    invoke-interface {v5, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-wide v2, LE/g;->R:J
+    invoke-virtual {v1, p1}, Lj6/aa;->a(Ljava/lang/Object;)V
 
-    sput-wide v2, LE/b;->q:J
+    :cond_0
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    sget-wide v2, LE/g;->z:J
+    if-lt p1, v8, :cond_1
 
-    sput-wide v2, LE/b;->r:J
+    invoke-static {v0, v9}, Lv5/b;->a(Ljava/lang/String;Landroid/os/Bundle;)Ljava/lang/Object;
 
-    sget-wide v2, LE/g;->B:J
+    move-result-object p1
 
-    sput-wide v2, LE/b;->s:J
+    goto :goto_0
 
-    sget-wide v2, LE/g;->H:J
+    :cond_1
+    invoke-virtual {v9, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
-    sput-wide v2, LE/b;->t:J
+    move-result-object p1
 
-    sget-wide v2, LE/g;->J:J
+    invoke-virtual {v7, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
-    sput-wide v2, LE/b;->u:J
+    move-result p2
 
-    sget-wide v2, LE/g;->h:J
+    if-eqz p2, :cond_2
 
-    sput-wide v2, LE/b;->v:J
+    move-object v6, p1
 
-    sget-wide v2, LE/g;->O:J
+    :cond_2
+    move-object p1, v6
 
-    sput-wide v2, LE/b;->w:J
+    :goto_0
+    check-cast p1, Le/a;
 
-    sget-wide v2, LE/g;->Q:J
+    if-eqz p1, :cond_b
 
-    sput-wide v2, LE/b;->x:J
+    invoke-virtual {v9, v0}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
-    sput-wide v0, LE/b;->y:J
+    new-instance p2, Le/a;
 
-    sput-wide v0, LE/b;->z:J
+    iget v0, p1, Le/a;->g:I
 
-    sget-wide v0, LE/g;->u:J
+    iget-object p1, p1, Le/a;->h:Landroid/content/Intent;
 
-    sput-wide v0, LE/b;->A:J
+    invoke-direct {p2, p1, v0}, Le/a;-><init>(Landroid/content/Intent;I)V
 
-    sget-wide v0, LE/g;->t:J
+    invoke-virtual {v1, p2}, Lj6/aa;->a(Ljava/lang/Object;)V
 
-    sput-wide v0, LE/b;->B:J
+    goto/16 :goto_3
 
-    sget-wide v0, LE/g;->s:J
+    :cond_3
+    sget-object v1, Landroidx/lifecycle/n;->ON_STOP:Landroidx/lifecycle/n;
 
-    sput-wide v0, LE/b;->C:J
+    if-ne v1, p2, :cond_4
 
-    sget-wide v0, LE/g;->w:J
+    invoke-interface {v4, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sput-wide v0, LE/b;->D:J
+    goto/16 :goto_3
 
-    sget-wide v0, LE/g;->j:J
+    :cond_4
+    sget-object v1, Landroidx/lifecycle/n;->ON_DESTROY:Landroidx/lifecycle/n;
 
-    sput-wide v0, LE/b;->E:J
+    if-ne v1, p2, :cond_b
 
-    sget-wide v0, LE/g;->r:J
+    iget-object p2, p1, Lb/l;->d:Ljava/util/ArrayList;
 
-    sput-wide v0, LE/b;->F:J
+    invoke-virtual {p2, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
-    sget-wide v0, LE/g;->C:J
+    move-result p2
 
-    sput-wide v0, LE/b;->G:J
+    if-nez p2, :cond_5
 
-    sget-wide v0, LE/g;->V:J
+    iget-object p2, p1, Lb/l;->b:Ljava/util/LinkedHashMap;
 
-    sput-wide v0, LE/b;->H:J
+    invoke-interface {p2, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sget-wide v0, LE/g;->X:J
+    move-result-object p2
 
-    sput-wide v0, LE/b;->I:J
+    check-cast p2, Ljava/lang/Integer;
 
+    if-eqz p2, :cond_5
+
+    iget-object v1, p1, Lb/l;->a:Ljava/util/LinkedHashMap;
+
+    invoke-interface {v1, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_5
+    invoke-interface {v4, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-interface {v5, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    const-string v1, ": "
+
+    const-string v2, "Dropping pending result for request "
+
+    const-string v3, "ActivityResultRegistry"
+
+    if-eqz p2, :cond_6
+
+    invoke-static {v2, v0, v1}, Laa/m;->p(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {v5, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {v3, p2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-interface {v5, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_6
+    invoke-virtual {v9, v0}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_9
+
+    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    if-lt p2, v8, :cond_7
+
+    invoke-static {v0, v9}, Lv5/b;->a(Ljava/lang/String;Landroid/os/Bundle;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    goto :goto_1
+
+    :cond_7
+    invoke-virtual {v9, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    move-result-object p2
+
+    invoke-virtual {v7, p2}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_8
+
+    move-object v6, p2
+
+    :cond_8
+    move-object p2, v6
+
+    :goto_1
+    check-cast p2, Le/a;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {v3, p2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    invoke-virtual {v9, v0}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
+
+    :cond_9
+    iget-object p1, p1, Lb/l;->c:Ljava/util/LinkedHashMap;
+
+    invoke-virtual {p1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Le/d;
+
+    if-eqz p2, :cond_b
+
+    iget-object v1, p2, Le/d;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_2
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_a
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroidx/lifecycle/r;
+
+    iget-object v4, p2, Le/d;->a:Landroidx/lifecycle/v;
+
+    invoke-virtual {v4, v3}, Landroidx/lifecycle/v;->f(Landroidx/lifecycle/s;)V
+
+    goto :goto_2
+
+    :cond_a
+    invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
+
+    invoke-interface {p1, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_b
+    :goto_3
     return-void
 .end method

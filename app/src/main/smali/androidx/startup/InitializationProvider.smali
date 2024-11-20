@@ -120,7 +120,7 @@
     move-exception v0
 
     :try_start_1
-    new-instance v1, LG2/c;
+    new-instance v1, Lg7/c;
 
     invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
@@ -140,7 +140,7 @@
     return v0
 
     :cond_1
-    new-instance v0, LG2/c;
+    new-instance v0, Lg7/c;
 
     const-string v1, "Context cannot be null"
 

@@ -1,5 +1,5 @@
 .class public abstract Lz4/g;
-.super Ls4/Q;
+.super Ls4/qa;
 .source "SourceFile"
 
 
@@ -8,7 +8,7 @@
 
 
 # virtual methods
-.method public final u(LY3/i;Ljava/lang/Runnable;)V
+.method public final u(Ly8/i;Ljava/lang/Runnable;)V
     .locals 2
 
     iget-object p1, p0, Lz4/g;->i:Lz4/b;
@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method public final y(LY3/i;Ljava/lang/Runnable;)V
+.method public final y(Ly8/i;Ljava/lang/Runnable;)V
     .locals 2
 
     iget-object p1, p0, Lz4/g;->i:Lz4/b;

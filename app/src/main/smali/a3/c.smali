@@ -1,51 +1,51 @@
-.class public final LA3/C;
-.super La4/c;
+.class public abstract La3/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public j:LA3/K;
+# static fields
+.field public static final a:Lna/a;
 
-.field public synthetic k:Ljava/lang/Object;
+.field public static final b:Lna/a;
 
-.field public final synthetic l:LA3/D;
-
-.field public m:I
+.field public static final c:Lna/a;
 
 
 # direct methods
-.method public constructor <init>(LA3/D;La4/c;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 4
 
-    iput-object p1, p0, LA3/C;->l:LA3/D;
+    sget-object v0, La3/a;->h:La3/a;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(LY3/d;)V
+    new-instance v1, Lna/a;
+
+    const v2, -0xfd47f79
+
+    const/4 v3, 0x0
+
+    invoke-direct {v1, v2, v0, v3}, Lna/a;-><init>(ILjava/lang/Object;Z)V
+
+    sput-object v1, La3/c;->a:Lna/a;
+
+    sget-object v0, La3/b;->h:La3/b;
+
+    new-instance v1, Lna/a;
+
+    const v2, 0x3ba5c8f6
+
+    invoke-direct {v1, v2, v0, v3}, Lna/a;-><init>(ILjava/lang/Object;Z)V
+
+    sput-object v1, La3/c;->b:Lna/a;
+
+    sget-object v0, La3/b;->i:La3/b;
+
+    new-instance v1, Lna/a;
+
+    const v2, -0xb443a4a
+
+    invoke-direct {v1, v2, v0, v3}, Lna/a;-><init>(ILjava/lang/Object;Z)V
+
+    sput-object v1, La3/c;->c:Lna/a;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    iput-object p1, p0, LA3/C;->k:Ljava/lang/Object;
-
-    iget p1, p0, LA3/C;->m:I
-
-    const/high16 v0, -0x80000000
-
-    or-int/2addr p1, v0
-
-    iput p1, p0, LA3/C;->m:I
-
-    iget-object p1, p0, LA3/C;->l:LA3/D;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0, v0, p0}, LA3/D;->l(LA3/J;Lh4/c;La4/c;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
 .end method

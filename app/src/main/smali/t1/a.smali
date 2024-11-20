@@ -1,16 +1,15 @@
-.class public final synthetic LT1/a;
+.class public abstract Lt1/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
 
-
-# virtual methods
-.method public final run()V
+# direct methods
+.method public static a()Z
     .locals 1
 
-    sget v0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/AlarmManagerSchedulerBroadcastReceiver;->a:I
+    invoke-static {}, Landroid/os/Trace;->isEnabled()Z
 
-    return-void
+    move-result v0
+
+    return v0
 .end method

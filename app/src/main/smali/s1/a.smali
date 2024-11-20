@@ -1,261 +1,394 @@
-.class public final synthetic LS1/a;
+.class public final Ls1/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
+
+# static fields
+.field public static volatile d:Ls1/a;
+
+.field public static final e:Ljava/lang/Object;
 
 
 # instance fields
-.field public final synthetic g:I
+.field public final a:Ljava/util/HashMap;
 
-.field public final synthetic h:Ljava/lang/Object;
+.field public final b:Ljava/util/HashSet;
 
-.field public final synthetic i:Ljava/lang/Object;
-
-.field public final synthetic j:Ljava/lang/Object;
+.field public final c:Landroid/content/Context;
 
 
 # direct methods
-.method public synthetic constructor <init>(LE0/b;Li0/c;Ljava/util/concurrent/ThreadPoolExecutor;)V
+.method static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    const/4 v0, 0x1
+    new-instance v0, Ljava/lang/Object;
 
-    iput v0, p0, LS1/a;->g:I
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, LS1/a;->h:Ljava/lang/Object;
-
-    iput-object p2, p0, LS1/a;->i:Ljava/lang/Object;
-
-    iput-object p3, p0, LS1/a;->j:Ljava/lang/Object;
+    sput-object v0, Ls1/a;->e:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(LS1/c;LN1/i;LA/s;LN1/h;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-
-    .line 2
-    const/4 p3, 0x0
-
-    iput p3, p0, LS1/a;->g:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LS1/a;->h:Ljava/lang/Object;
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
-    iput-object p2, p0, LS1/a;->i:Ljava/lang/Object;
+    move-result-object p1
 
-    iput-object p4, p0, LS1/a;->j:Ljava/lang/Object;
+    iput-object p1, p0, Ls1/a;->c:Landroid/content/Context;
+
+    new-instance p1, Ljava/util/HashSet;
+
+    invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
+
+    iput-object p1, p0, Ls1/a;->b:Ljava/util/HashSet;
+
+    new-instance p1, Ljava/util/HashMap;
+
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p1, p0, Ls1/a;->a:Ljava/util/HashMap;
 
     return-void
+.end method
+
+.method public static c(Landroid/content/Context;)Ls1/a;
+    .locals 2
+
+    sget-object v0, Ls1/a;->d:Ls1/a;
+
+    if-nez v0, :cond_1
+
+    sget-object v0, Ls1/a;->e:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    :try_start_0
+    sget-object v1, Ls1/a;->d:Ls1/a;
+
+    if-nez v1, :cond_0
+
+    new-instance v1, Ls1/a;
+
+    invoke-direct {v1, p0}, Ls1/a;-><init>(Landroid/content/Context;)V
+
+    sput-object v1, Ls1/a;->d:Ls1/a;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    monitor-exit v0
+
+    goto :goto_2
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+
+    :cond_1
+    :goto_2
+    sget-object p0, Ls1/a;->d:Ls1/a;
+
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 7
+.method public final a(Landroid/os/Bundle;)V
+    .locals 6
 
-    iget v0, p0, LS1/a;->g:I
+    iget-object v0, p0, Ls1/a;->c:Landroid/content/Context;
 
-    packed-switch v0, :pswitch_data_0
+    const v1, 0x7f0c0097
 
-    iget-object v0, p0, LS1/a;->h:Ljava/lang/Object;
-
-    check-cast v0, LE0/b;
-
-    iget-object v1, p0, LS1/a;->i:Ljava/lang/Object;
-
-    check-cast v1, Li0/c;
-
-    iget-object v2, p0, LS1/a;->j:Ljava/lang/Object;
-
-    check-cast v2, Ljava/util/concurrent/ThreadPoolExecutor;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    :try_start_0
-    iget-object v0, v0, LE0/b;->g:Landroid/content/Context;
-
-    invoke-static {v0}, La/a;->V(Landroid/content/Context;)Lc1/o;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_2
 
-    iget-object v3, v0, Lc1/o;->a:Lc1/f;
+    :try_start_0
+    new-instance v1, Ljava/util/HashSet;
 
-    check-cast v3, Lc1/n;
+    invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
-    iget-object v4, v3, Lc1/n;->j:Ljava/lang/Object;
+    invoke-virtual {p1}, Landroid/os/BaseBundle;->keySet()Ljava/util/Set;
 
-    monitor-enter v4
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_0
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    iget-object v4, p0, Ls1/a;->b:Ljava/util/HashSet;
+
+    if-eqz v3, :cond_1
 
     :try_start_1
-    iput-object v2, v3, Lc1/n;->l:Ljava/util/concurrent/ThreadPoolExecutor;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    monitor-exit v4
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    move-result-object v3
 
-    :try_start_2
-    iget-object v0, v0, Lc1/o;->a:Lc1/f;
+    check-cast v3, Ljava/lang/String;
 
-    new-instance v3, Lc1/i;
+    const/4 v5, 0x0
 
-    invoke-direct {v3, v1, v2}, Lc1/i;-><init>(Li0/c;Ljava/util/concurrent/ThreadPoolExecutor;)V
+    invoke-virtual {p1, v3, v5}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-interface {v0, v3}, Lc1/f;->a(Li0/c;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    move-result-object v5
 
-    goto :goto_1
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    :catchall_0
-    move-exception v0
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    invoke-static {v3}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v3
+
+    const-class v5, Ls1/b;
+
+    invoke-virtual {v5, v3}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    invoke-virtual {v4, v3}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    :catchall_1
-    move-exception v0
-
-    :try_start_3
-    monitor-exit v4
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    :try_start_4
-    throw v0
-
-    :cond_0
-    new-instance v0, Ljava/lang/RuntimeException;
-
-    const-string v3, "EmojiCompat font provider not available on this device."
-
-    invoke-direct {v0, v3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    :goto_0
-    invoke-virtual {v1, v0}, Li0/c;->D(Ljava/lang/Throwable;)V
-
-    invoke-virtual {v2}, Ljava/util/concurrent/ThreadPoolExecutor;->shutdown()V
-
-    :goto_1
-    return-void
-
-    :pswitch_0
-    iget-object v0, p0, LS1/a;->i:Ljava/lang/Object;
-
-    check-cast v0, LN1/i;
-
-    iget-object v1, v0, LN1/i;->a:Ljava/lang/String;
-
-    iget-object v2, p0, LS1/a;->j:Ljava/lang/Object;
-
-    check-cast v2, LN1/h;
-
-    iget-object v3, p0, LS1/a;->h:Ljava/lang/Object;
-
-    check-cast v3, LS1/c;
-
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    sget-object v4, LS1/c;->f:Ljava/util/logging/Logger;
-
-    const-string v5, "Transport backend \'"
-
-    :try_start_5
-    iget-object v6, v3, LS1/c;->c:LO1/f;
-
-    invoke-virtual {v6, v1}, LO1/f;->a(Ljava/lang/String;)LO1/g;
-
-    move-result-object v6
-
-    if-nez v6, :cond_1
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "\' is not registered"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v4, v0}, Ljava/util/logging/Logger;->warning(Ljava/lang/String;)V
-
-    new-instance v1, Ljava/lang/IllegalArgumentException;
-
-    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    goto :goto_3
-
     :catch_0
-    move-exception v0
+    move-exception p1
 
     goto :goto_2
 
     :cond_1
-    check-cast v6, LL1/e;
+    invoke-virtual {v4}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
-    invoke-virtual {v6, v2}, LL1/e;->a(LN1/h;)LN1/h;
+    move-result-object p1
+
+    :goto_1
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Class;
+
+    invoke-virtual {p0, v0, v1}, Ls1/a;->b(Ljava/lang/Class;Ljava/util/HashSet;)Ljava/lang/Object;
+    :try_end_1
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_1
+
+    :goto_2
+    new-instance v0, Lg7/c;
+
+    invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v0
+
+    :cond_2
+    return-void
+.end method
+
+.method public final b(Ljava/lang/Class;Ljava/util/HashSet;)Ljava/lang/Object;
+    .locals 5
+
+    const-string v0, "Cannot initialize "
+
+    invoke-static {}, Lp3/e;->j()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    :try_start_0
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, v3, LS1/c;->e:LV1/c;
+    invoke-static {v1}, Lp3/e;->b(Ljava/lang/String;)V
 
-    new-instance v5, LS1/b;
+    goto :goto_0
 
-    const/4 v6, 0x0
+    :catchall_0
+    move-exception p1
 
-    invoke-direct {v5, v3, v0, v1, v6}, LS1/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    goto/16 :goto_4
 
-    check-cast v2, LU1/h;
+    :cond_0
+    :goto_0
+    invoke-virtual {p2, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
-    invoke-virtual {v2, v5}, LU1/h;->h(LV1/b;)Ljava/lang/Object;
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_0
+    move-result v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v1, :cond_4
+
+    iget-object v0, p0, Ls1/a;->a:Ljava/util/HashMap;
+
+    :try_start_1
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    invoke-virtual {p2, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    const/4 v1, 0x0
+
+    :try_start_2
+    invoke-virtual {p1, v1}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ls1/b;
+
+    invoke-interface {v1}, Ls1/b;->a()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/List;->isEmpty()Z
+
+    move-result v3
+
+    if-nez v3, :cond_2
+
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_1
+    :goto_1
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Class;
+
+    invoke-virtual {v0, v3}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_1
+
+    invoke-virtual {p0, v3, p2}, Ls1/a;->b(Ljava/lang/Class;Ljava/util/HashSet;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    :catchall_1
+    move-exception p1
+
+    goto :goto_2
+
+    :cond_2
+    iget-object v2, p0, Ls1/a;->c:Landroid/content/Context;
+
+    invoke-interface {v1, v2}, Ls1/b;->b(Landroid/content/Context;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-virtual {p2, p1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
+
+    invoke-virtual {v0, p1, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     goto :goto_3
 
     :goto_2
-    new-instance v1, Ljava/lang/StringBuilder;
+    :try_start_3
+    new-instance p2, Lg7/c;
 
-    const-string v2, "Error scheduling event "
+    invoke-direct {p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    throw p2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    :cond_3
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v4, v0}, Ljava/util/logging/Logger;->warning(Ljava/lang/String;)V
+    move-result-object v1
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     :goto_3
-    return-void
+    invoke-static {}, Landroid/os/Trace;->endSection()V
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v1
+
+    :cond_4
+    :try_start_4
+    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, ". Cycle detected."
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    new-instance p2, Ljava/lang/IllegalStateException;
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    :goto_4
+    invoke-static {}, Landroid/os/Trace;->endSection()V
+
+    throw p1
 .end method

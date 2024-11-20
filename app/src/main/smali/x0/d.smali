@@ -1,5 +1,5 @@
 .class public final Lx0/d;
-.super LR/p;
+.super Lra/p;
 .source "SourceFile"
 
 # interfaces

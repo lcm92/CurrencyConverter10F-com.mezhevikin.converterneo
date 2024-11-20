@@ -75,7 +75,7 @@
 
     iput p1, p0, Lz4/a;->i:I
 
-    sget-object p1, Lz4/b;->q:LI2/i;
+    sget-object p1, Lz4/b;->q:Li7/i;
 
     iput-object p1, p0, Lz4/a;->nextParkedWorker:Ljava/lang/Object;
 
@@ -1040,7 +1040,7 @@
     :cond_c
     iget-object v3, v1, Lz4/a;->nextParkedWorker:Ljava/lang/Object;
 
-    sget-object v11, Lz4/b;->q:LI2/i;
+    sget-object v11, Lz4/b;->q:Li7/i;
 
     if-eq v3, v11, :cond_d
 
@@ -1117,7 +1117,7 @@
     :goto_5
     iget-object v3, v1, Lz4/a;->nextParkedWorker:Ljava/lang/Object;
 
-    sget-object v7, Lz4/b;->q:LI2/i;
+    sget-object v7, Lz4/b;->q:Li7/i;
 
     if-eq v3, v7, :cond_1
 

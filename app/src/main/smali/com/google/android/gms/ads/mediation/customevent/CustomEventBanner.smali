@@ -21,5 +21,5 @@
 .method public abstract synthetic onResume()V
 .end method
 
-.method public abstract requestBannerAd(Landroid/content/Context;Lh2/b;Ljava/lang/String;LY1/f;Lg2/d;Landroid/os/Bundle;)V
+.method public abstract requestBannerAd(Landroid/content/Context;Lh2/b;Ljava/lang/String;Ly6/f;Lg2/d;Landroid/os/Bundle;)V
 .end method

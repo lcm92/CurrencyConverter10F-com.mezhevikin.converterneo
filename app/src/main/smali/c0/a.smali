@@ -1,129 +1,61 @@
-.class public final LC0/a;
-.super Landroid/text/style/MetricAffectingSpan;
+.class public abstract Lc0/a;
+.super Landroid/view/ViewGroup;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic a:I
-
-.field public final b:F
-
-
-# direct methods
-.method public synthetic constructor <init>(FI)V
+# virtual methods
+.method public final a(Lya/p;Landroid/view/View;J)V
     .locals 0
 
-    iput p2, p0, LC0/a;->a:I
+    invoke-static {p1}, Lya/d;->a(Lya/p;)Landroid/graphics/Canvas;
 
-    invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
+    move-result-object p1
 
-    iput p1, p0, LC0/a;->b:F
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/ViewGroup;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final updateDrawState(Landroid/text/TextPaint;)V
-    .locals 3
-
-    iget v0, p0, LC0/a;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-virtual {p1}, Landroid/graphics/Paint;->getTextSkewX()F
-
-    move-result v0
-
-    iget v1, p0, LC0/a;->b:F
-
-    add-float/2addr v0, v1
-
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTextSkewX(F)V
+.method public final forceLayout()V
+    .locals 0
 
     return-void
-
-    :pswitch_0
-    iget v0, p1, Landroid/text/TextPaint;->baselineShift:I
-
-    invoke-virtual {p1}, Landroid/graphics/Paint;->ascent()F
-
-    move-result v1
-
-    iget v2, p0, LC0/a;->b:F
-
-    mul-float/2addr v1, v2
-
-    float-to-double v1, v1
-
-    invoke-static {v1, v2}, Ljava/lang/Math;->ceil(D)D
-
-    move-result-wide v1
-
-    double-to-float v1, v1
-
-    float-to-int v1, v1
-
-    add-int/2addr v0, v1
-
-    iput v0, p1, Landroid/text/TextPaint;->baselineShift:I
-
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method public final updateMeasureState(Landroid/text/TextPaint;)V
-    .locals 3
+.method public getChildCount()I
+    .locals 1
 
-    iget v0, p0, LC0/a;->a:I
+    const/4 v0, 0x0
 
-    packed-switch v0, :pswitch_data_0
+    return v0
+.end method
 
-    invoke-virtual {p1}, Landroid/graphics/Paint;->getTextSkewX()F
+.method public final invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
+    .locals 0
 
-    move-result v0
+    const/4 p1, 0x0
 
-    iget v1, p0, LC0/a;->b:F
+    return-object p1
+.end method
 
-    add-float/2addr v0, v1
-
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTextSkewX(F)V
-
-    return-void
-
-    :pswitch_0
-    iget v0, p1, Landroid/text/TextPaint;->baselineShift:I
-
-    invoke-virtual {p1}, Landroid/graphics/Paint;->ascent()F
-
-    move-result v1
-
-    iget v2, p0, LC0/a;->b:F
-
-    mul-float/2addr v1, v2
-
-    float-to-double v1, v1
-
-    invoke-static {v1, v2}, Ljava/lang/Math;->ceil(D)D
-
-    move-result-wide v1
-
-    double-to-float v1, v1
-
-    float-to-int v1, v1
-
-    add-int/2addr v0, v1
-
-    iput v0, p1, Landroid/text/TextPaint;->baselineShift:I
+.method public final onLayout(ZIIII)V
+    .locals 0
 
     return-void
+.end method
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+.method public final onMeasure(II)V
+    .locals 0
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1, p1}, Landroid/view/View;->setMeasuredDimension(II)V
+
+    return-void
+.end method
+
+.method public final requestLayout()V
+    .locals 0
+
+    return-void
 .end method

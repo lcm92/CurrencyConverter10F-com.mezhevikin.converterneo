@@ -8,7 +8,7 @@
 
 .field public k:Lo3/e;
 
-.field public l:LY3/i;
+.field public l:Ly8/i;
 
 .field public m:Lio/ktor/client/engine/cio/q;
 
@@ -25,7 +25,7 @@
 
     iput-object p1, p0, Lio/ktor/client/engine/cio/c;->o:Lio/ktor/client/engine/cio/e;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(LY3/d;)V
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly8/d;)V
 
     return-void
 .end method

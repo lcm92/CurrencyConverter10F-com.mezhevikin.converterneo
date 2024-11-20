@@ -1,69 +1,58 @@
-.class public abstract LE/e;
-.super Ljava/lang/Object;
+.class public final Le/e;
+.super Li4/i;
 .source "SourceFile"
+
+# interfaces
+.implements Lh4/a;
 
 
 # static fields
-.field public static final a:F
-
-.field public static final b:F
-
-.field public static final c:F
-
-.field public static final d:F
-
-.field public static final e:F
-
-.field public static final f:I
-
-.field public static final g:I
-
-.field public static final h:I
-
-.field public static final i:I
-
-.field public static final j:I
-
-.field public static final k:I
+.field public static final h:Le/e;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 2
 
-    sget v0, LE/c;->a:F
+    new-instance v0, Le/e;
 
-    const/16 v0, 0x12
+    const/4 v1, 0x0
 
-    sput v0, LE/e;->f:I
+    invoke-direct {v0, v1}, Li4/i;-><init>(I)V
 
-    const v1, 0x3ec28f5c    # 0.38f
-
-    sput v1, LE/e;->a:F
-
-    sput v0, LE/e;->g:I
-
-    sput v1, LE/e;->b:F
-
-    sput v0, LE/e;->h:I
-
-    sput v1, LE/e;->c:F
-
-    sput v0, LE/e;->i:I
-
-    const/16 v0, 0x13
-
-    sput v0, LE/e;->j:I
-
-    const-wide/high16 v1, 0x4038000000000000L    # 24.0
-
-    double-to-float v1, v1
-
-    sput v1, LE/e;->d:F
-
-    sput v0, LE/e;->k:I
-
-    sput v1, LE/e;->e:F
+    sput-object v0, Le/e;->h:Le/e;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final b()Ljava/lang/Object;
+    .locals 2
+
+    sget-object v0, Ll4/e;->g:Ll4/d;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    sget-object v0, Ll4/e;->h:Ll4/a;
+
+    invoke-virtual {v0}, Ll4/a;->a()Ljava/util/Random;
+
+    move-result-object v0
+
+    const/high16 v1, 0x7fff0000
+
+    invoke-virtual {v0, v1}, Ljava/util/Random;->nextInt(I)I
+
+    move-result v0
+
+    const/high16 v1, 0x10000
+
+    add-int/2addr v0, v1
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    return-object v0
 .end method

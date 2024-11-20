@@ -6,7 +6,7 @@
 # static fields
 .field public static final a:I
 
-.field public static final b:LR3/e;
+.field public static final b:Lr8/e;
 
 .field public static final c:Lio/ktor/utils/io/internal/g;
 
@@ -43,15 +43,15 @@
 
     move-result v2
 
-    new-instance v3, LR3/e;
+    new-instance v3, Lr8/e;
 
-    invoke-direct {v3, v1, v0}, LR3/e;-><init>(II)V
+    invoke-direct {v3, v1, v0}, Lr8/e;-><init>(II)V
 
-    sput-object v3, Lio/ktor/utils/io/internal/h;->b:LR3/e;
+    sput-object v3, Lio/ktor/utils/io/internal/h;->b:Lr8/e;
 
     new-instance v0, Lio/ktor/utils/io/internal/g;
 
-    invoke-direct {v0, v2}, LR3/d;-><init>(I)V
+    invoke-direct {v0, v2}, Lr8/d;-><init>(I)V
 
     sput-object v0, Lio/ktor/utils/io/internal/h;->c:Lio/ktor/utils/io/internal/g;
 

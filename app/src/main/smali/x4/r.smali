@@ -126,7 +126,7 @@
 .method public abstract f()I
 .end method
 
-.method public abstract g(ILY3/i;)V
+.method public abstract g(ILy8/i;)V
 .end method
 
 .method public final h()V

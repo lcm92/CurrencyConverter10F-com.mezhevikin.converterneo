@@ -70,16 +70,16 @@
     return-object v0
 .end method
 
-.method public getForegroundInfoAsync()LP2/a;
+.method public getForegroundInfoAsync()Lp7/a;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "LP2/a;"
+            "Lp7/a;"
         }
     .end annotation
 
-    new-instance v0, LG1/k;
+    new-instance v0, Lg6/k;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +89,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, LG1/k;->l(Ljava/lang/Throwable;)Z
+    invoke-virtual {v0, v1}, Lg6/k;->l(Ljava/lang/Throwable;)Z
 
     return-object v0
 .end method
@@ -156,12 +156,12 @@
     return-object v0
 .end method
 
-.method public getTaskExecutor()LH1/a;
+.method public getTaskExecutor()Lh6/a;
     .locals 1
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->g:LE0/l;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->g:Le5/l;
 
     return-object v0
 .end method
@@ -250,14 +250,14 @@
     return-void
 .end method
 
-.method public final setForegroundAsync(Lv1/g;)LP2/a;
+.method public final setForegroundAsync(Lv1/g;)Lp7/a;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lv1/g;",
             ")",
-            "LP2/a;"
+            "Lp7/a;"
         }
     .end annotation
 
@@ -267,7 +267,7 @@
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->j:LF1/o;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->j:Lf6/o;
 
     invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getApplicationContext()Landroid/content/Context;
 
@@ -279,11 +279,11 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v7, LG1/k;
+    new-instance v7, Lg6/k;
 
     invoke-direct {v7}, Ljava/lang/Object;-><init>()V
 
-    new-instance v8, LF1/n;
+    new-instance v8, Lf6/n;
 
     move-object v1, v8
 
@@ -293,29 +293,29 @@
 
     move-object v5, p1
 
-    invoke-direct/range {v1 .. v6}, LF1/n;-><init>(LF1/o;LG1/k;Ljava/util/UUID;Lv1/g;Landroid/content/Context;)V
+    invoke-direct/range {v1 .. v6}, Lf6/n;-><init>(Lf6/o;Lg6/k;Ljava/util/UUID;Lv1/g;Landroid/content/Context;)V
 
-    iget-object p1, v0, LF1/o;->a:LE0/l;
+    iget-object p1, v0, Lf6/o;->a:Le5/l;
 
-    invoke-virtual {p1, v8}, LE0/l;->i(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, v8}, Le5/l;->i(Ljava/lang/Runnable;)V
 
     return-object v7
 .end method
 
-.method public setProgressAsync(Lv1/f;)LP2/a;
+.method public setProgressAsync(Lv1/f;)Lp7/a;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lv1/f;",
             ")",
-            "LP2/a;"
+            "Lp7/a;"
         }
     .end annotation
 
     iget-object v0, p0, Landroidx/work/ListenableWorker;->h:Landroidx/work/WorkerParameters;
 
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->i:LF1/q;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->i:Lf6/q;
 
     invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getApplicationContext()Landroid/content/Context;
 
@@ -325,17 +325,17 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    new-instance v2, LG1/k;
+    new-instance v2, Lg6/k;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
-    new-instance v3, LF1/p;
+    new-instance v3, Lf6/p;
 
-    invoke-direct {v3, v0, v1, p1, v2}, LF1/p;-><init>(LF1/q;Ljava/util/UUID;Lv1/f;LG1/k;)V
+    invoke-direct {v3, v0, v1, p1, v2}, Lf6/p;-><init>(Lf6/q;Ljava/util/UUID;Lv1/f;Lg6/k;)V
 
-    iget-object p1, v0, LF1/q;->b:LE0/l;
+    iget-object p1, v0, Lf6/q;->b:Le5/l;
 
-    invoke-virtual {p1, v3}, LE0/l;->i(Ljava/lang/Runnable;)V
+    invoke-virtual {p1, v3}, Le5/l;->i(Ljava/lang/Runnable;)V
 
     return-object v2
 .end method
@@ -358,7 +358,7 @@
     return-void
 .end method
 
-.method public abstract startWork()LP2/a;
+.method public abstract startWork()Lp7/a;
 .end method
 
 .method public final stop()V

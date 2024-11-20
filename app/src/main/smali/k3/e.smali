@@ -1,183 +1,61 @@
-.class public final enum LK3/e;
-.super Ljava/lang/Enum;
+.class public final Lk3/e;
+.super La4/c;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic h:[LK3/e;
-
-
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public j:Lo3/d;
+
+.field public k:Ljava/lang/Object;
+
+.field public l:Ls3/d;
+
+.field public m:Ljava/util/List;
+
+.field public n:Ljava/util/Iterator;
+
+.field public o:Lk3/a;
+
+.field public synthetic p:Ljava/lang/Object;
+
+.field public final synthetic q:Lk3/h;
+
+.field public r:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 15
-
-    new-instance v0, LK3/e;
-
-    const-string v1, "Jan"
-
-    const-string v2, "JANUARY"
-
-    const/4 v3, 0x0
-
-    invoke-direct {v0, v2, v3, v1}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v1, LK3/e;
-
-    const-string v2, "Feb"
-
-    const-string v3, "FEBRUARY"
-
-    const/4 v4, 0x1
-
-    invoke-direct {v1, v3, v4, v2}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v2, LK3/e;
-
-    const-string v3, "Mar"
-
-    const-string v4, "MARCH"
-
-    const/4 v5, 0x2
-
-    invoke-direct {v2, v4, v5, v3}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v3, LK3/e;
-
-    const-string v4, "Apr"
-
-    const-string v5, "APRIL"
-
-    const/4 v6, 0x3
-
-    invoke-direct {v3, v5, v6, v4}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v4, LK3/e;
-
-    const-string v5, "May"
-
-    const-string v6, "MAY"
-
-    const/4 v7, 0x4
-
-    invoke-direct {v4, v6, v7, v5}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v5, LK3/e;
-
-    const-string v6, "Jun"
-
-    const-string v7, "JUNE"
-
-    const/4 v8, 0x5
-
-    invoke-direct {v5, v7, v8, v6}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v6, LK3/e;
-
-    const-string v7, "Jul"
-
-    const-string v8, "JULY"
-
-    const/4 v9, 0x6
-
-    invoke-direct {v6, v8, v9, v7}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v7, LK3/e;
-
-    const-string v8, "Aug"
-
-    const-string v9, "AUGUST"
-
-    const/4 v10, 0x7
-
-    invoke-direct {v7, v9, v10, v8}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v8, LK3/e;
-
-    const-string v9, "Sep"
-
-    const-string v10, "SEPTEMBER"
-
-    const/16 v11, 0x8
-
-    invoke-direct {v8, v10, v11, v9}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v9, LK3/e;
-
-    const-string v10, "Oct"
-
-    const-string v11, "OCTOBER"
-
-    const/16 v12, 0x9
-
-    invoke-direct {v9, v11, v12, v10}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v10, LK3/e;
-
-    const-string v11, "Nov"
-
-    const-string v12, "NOVEMBER"
-
-    const/16 v13, 0xa
-
-    invoke-direct {v10, v12, v13, v11}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    new-instance v11, LK3/e;
-
-    const-string v12, "Dec"
-
-    const-string v13, "DECEMBER"
-
-    const/16 v14, 0xb
-
-    invoke-direct {v11, v13, v14, v12}, LK3/e;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    filled-new-array/range {v0 .. v11}, [LK3/e;
-
-    move-result-object v0
-
-    sput-object v0, LK3/e;->h:[LK3/e;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
+.method public constructor <init>(Lk3/h;La4/c;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p1, p0, Lk3/e;->q:Lk3/h;
 
-    iput-object p3, p0, LK3/e;->g:Ljava/lang/String;
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly8/d;)V
 
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LK3/e;
+
+# virtual methods
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    const-class v0, LK3/e;
+    iput-object p1, p0, Lk3/e;->p:Ljava/lang/Object;
 
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    iget p1, p0, Lk3/e;->r:I
 
-    move-result-object p0
+    const/high16 v0, -0x80000000
 
-    check-cast p0, LK3/e;
+    or-int/2addr p1, v0
 
-    return-object p0
-.end method
+    iput p1, p0, Lk3/e;->r:I
 
-.method public static values()[LK3/e;
-    .locals 1
+    iget-object p1, p0, Lk3/e;->q:Lk3/h;
 
-    sget-object v0, LK3/e;->h:[LK3/e;
+    const/4 v0, 0x0
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {p1, v0, v0, p0}, Lk3/h;->a(Lo3/d;Ljava/lang/Object;La4/c;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p1
 
-    check-cast v0, [LK3/e;
-
-    return-object v0
+    return-object p1
 .end method

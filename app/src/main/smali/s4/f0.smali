@@ -10,16 +10,16 @@
 
 .field public final synthetic d:Ls4/g0;
 
-.field public final synthetic e:Ls4/U;
+.field public final synthetic e:Ls4/ua;
 
 
 # direct methods
-.method public constructor <init>(Ls4/b0;Ls4/g0;Ls4/U;)V
+.method public constructor <init>(Ls4/b0;Ls4/g0;Ls4/ua;)V
     .locals 0
 
     iput-object p2, p0, Ls4/f0;->d:Ls4/g0;
 
-    iput-object p3, p0, Ls4/f0;->e:Ls4/U;
+    iput-object p3, p0, Ls4/f0;->e:Ls4/ua;
 
     invoke-direct {p0}, Lx4/b;-><init>()V
 
@@ -90,7 +90,7 @@
     return-void
 .end method
 
-.method public final c(Ljava/lang/Object;)LI2/i;
+.method public final c(Ljava/lang/Object;)Li7/i;
     .locals 1
 
     check-cast p1, Lx4/i;
@@ -101,7 +101,7 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Ls4/f0;->e:Ls4/U;
+    iget-object v0, p0, Ls4/f0;->e:Ls4/ua;
 
     if-ne p1, v0, :cond_0
 
@@ -110,7 +110,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object p1, Lx4/a;->e:LI2/i;
+    sget-object p1, Lx4/a;->e:Li7/i;
 
     :goto_0
     return-object p1

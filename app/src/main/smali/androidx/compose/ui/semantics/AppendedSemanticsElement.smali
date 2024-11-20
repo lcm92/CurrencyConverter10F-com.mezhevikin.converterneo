@@ -1,16 +1,16 @@
 .class public final Landroidx/compose/ui/semantics/AppendedSemanticsElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 # interfaces
-.implements LR/o;
+.implements Lra/o;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;",
-        "LR/o;"
+        "Lq0/sa;",
+        "Lra/o;"
     }
 .end annotation
 
@@ -104,12 +104,12 @@
     return v1
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 2
 
     new-instance v0, Lx0/c;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
     iget-boolean v1, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->a:Z
 
@@ -122,7 +122,7 @@
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 1
 
     check-cast p1, Lx0/c;

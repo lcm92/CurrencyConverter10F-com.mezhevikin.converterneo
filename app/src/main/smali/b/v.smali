@@ -1,26 +1,26 @@
-.class public final LB/v;
+.class public final Lb/v;
 .super Li4/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/a;
+.implements Lh4/c;
 
 
 # instance fields
 .field public final synthetic h:I
 
-.field public final synthetic i:LF/c0;
+.field public final synthetic i:Lb/ca;
 
 
 # direct methods
-.method public synthetic constructor <init>(LF/c0;I)V
+.method public synthetic constructor <init>(Lb/ca;I)V
     .locals 0
 
-    iput p2, p0, LB/v;->h:I
+    iput p2, p0, Lb/v;->h:I
 
-    iput-object p1, p0, LB/v;->i:LF/c0;
+    iput-object p1, p0, Lb/v;->i:Lb/ca;
 
-    const/4 p1, 0x0
+    const/4 p1, 0x1
 
     invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
@@ -29,125 +29,138 @@
 
 
 # virtual methods
-.method public final b()Ljava/lang/Object;
-    .locals 5
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
-    iget v0, p0, LB/v;->h:I
+    iget v0, p0, Lb/v;->h:I
 
     packed-switch v0, :pswitch_data_0
 
-    iget-object v0, p0, LB/v;->i:LF/c0;
+    check-cast p1, Lb/b;
 
-    invoke-interface {v0}, LF/W0;->getValue()Ljava/lang/Object;
+    const-string v0, "backEvent"
 
-    move-result-object v0
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v0, Ljava/lang/Boolean;
+    iget-object v0, p0, Lb/v;->i:Lb/ca;
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    iget-object v1, v0, Lb/ca;->c:Lb/u;
 
-    return-object v0
+    if-nez v1, :cond_2
 
-    :pswitch_0
-    iget-object v0, p0, LB/v;->i:LF/c0;
+    iget-object v0, v0, Lb/ca;->b:Lv8/i;
 
-    invoke-interface {v0}, LF/W0;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lv8/i;->b()I
 
-    move-result-object v0
+    move-result v1
 
-    check-cast v0, Lh4/a;
-
-    invoke-interface {v0}, Lh4/a;->b()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lr/g;
-
-    return-object v0
-
-    :pswitch_1
-    new-instance v0, Lr/f;
-
-    iget-object v1, p0, LB/v;->i:LF/c0;
-
-    invoke-interface {v1}, LF/W0;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lh4/c;
-
-    invoke-direct {v0, v1}, Lr/f;-><init>(Lh4/c;)V
-
-    return-object v0
-
-    :pswitch_2
-    iget-object v0, p0, LB/v;->i:LF/c0;
-
-    invoke-interface {v0}, LF/W0;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/List;
-
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
-
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0, v1}, Ljava/util/AbstractList;->listIterator(I)Ljava/util/ListIterator;
 
     move-result-object v0
 
     :cond_0
+    invoke-interface {v0}, Ljava/util/ListIterator;->hasPrevious()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v2, v1
+
+    check-cast v2, Lb/u;
+
+    iget-boolean v2, v2, Lb/u;->a:Z
+
+    if-eqz v2, :cond_0
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    check-cast v1, Lb/u;
+
+    :cond_2
+    if-eqz v1, :cond_3
+
+    invoke-virtual {v1, p1}, Lb/u;->c(Lb/b;)V
+
+    :cond_3
+    sget-object p1, Lu8/y;->a:Lu8/y;
+
+    return-object p1
+
+    :pswitch_0
+    check-cast p1, Lb/b;
+
+    const-string v0, "backEvent"
+
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lb/v;->i:Lb/ca;
+
+    iget-object v1, v0, Lb/ca;->b:Lv8/i;
+
+    invoke-virtual {v1}, Lv8/i;->b()I
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    invoke-virtual {v1, v2}, Ljava/util/AbstractList;->listIterator(I)Ljava/util/ListIterator;
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v1
+
+    :cond_4
+    invoke-interface {v1}, Ljava/util/ListIterator;->hasPrevious()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_5
+
+    invoke-interface {v1}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
 
     move-result-object v2
 
     move-object v3, v2
 
-    check-cast v3, Lj1/h;
+    check-cast v3, Lb/u;
 
-    iget-object v3, v3, Lj1/h;->h:Lj1/u;
+    iget-boolean v3, v3, Lb/u;->a:Z
 
-    iget-object v3, v3, Lj1/u;->g:Ljava/lang/String;
+    if-eqz v3, :cond_4
 
-    const-string v4, "composable"
+    goto :goto_1
 
-    invoke-static {v3, v4}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_5
+    const/4 v2, 0x0
 
-    move-result v3
+    :goto_1
+    check-cast v2, Lb/u;
 
-    if-eqz v3, :cond_0
+    iget-object v1, v0, Lb/ca;->c:Lb/u;
 
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    if-eqz v1, :cond_6
 
-    goto :goto_0
+    invoke-virtual {v0}, Lb/ca;->b()V
 
-    :cond_1
-    return-object v1
+    :cond_6
+    iput-object v2, v0, Lb/ca;->c:Lb/u;
 
-    :pswitch_3
-    iget-object v0, p0, LB/v;->i:LF/c0;
+    if-eqz v2, :cond_7
 
-    invoke-interface {v0}, LF/W0;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2, p1}, Lb/u;->d(Lb/b;)V
 
-    move-result-object v0
+    :cond_7
+    sget-object p1, Lu8/y;->a:Lu8/y;
 
-    check-cast v0, LB/h;
-
-    return-object v0
+    return-object p1
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

@@ -1,244 +1,53 @@
-.class public final LP3/g;
-.super LR3/d;
+.class public final Lp3/g;
+.super La4/c;
 .source "SourceFile"
 
 
 # instance fields
-.field public final l:I
+.field public j:Ljava/lang/Object;
 
-.field public final m:LN3/a;
+.field public k:Ljava/lang/Object;
+
+.field public synthetic l:Ljava/lang/Object;
+
+.field public final synthetic m:Lp3/j;
+
+.field public n:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Lp3/j;La4/c;)V
+    .locals 0
 
-    sget-object v0, LN3/a;->a:LN3/a;
+    iput-object p1, p0, Lp3/g;->m:Lp3/j;
 
-    const/16 v1, 0x3e8
-
-    invoke-direct {p0, v1}, LR3/d;-><init>(I)V
-
-    const/16 v1, 0x1000
-
-    iput v1, p0, LP3/g;->l:I
-
-    iput-object v0, p0, LP3/g;->m:LN3/a;
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly8/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    check-cast p1, LQ3/b;
+    iput-object p1, p0, Lp3/g;->l:Ljava/lang/Object;
 
-    invoke-virtual {p1}, LQ3/b;->n()V
+    iget p1, p0, Lp3/g;->n:I
 
-    invoke-virtual {p1}, LQ3/b;->l()V
+    const/high16 v0, -0x80000000
 
-    return-object p1
-.end method
+    or-int/2addr p1, v0
 
-.method public final c(Ljava/lang/Object;)V
-    .locals 3
+    iput p1, p0, Lp3/g;->n:I
 
-    check-cast p1, LQ3/b;
-
-    const-string v0, "instance"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-object v1, p0, LP3/g;->m:LN3/a;
-
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    iget-object v1, p1, LP3/a;->a:Ljava/nio/ByteBuffer;
-
-    invoke-static {v1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, -0x1
-
-    sget-object v1, LQ3/b;->j:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, p1, v2, v0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {p1}, LQ3/b;->g()LQ3/b;
+    iget-object p1, p0, Lp3/g;->m:Lp3/j;
 
     const/4 v0, 0x0
 
-    iput-object v0, p1, LQ3/b;->h:LQ3/b;
-
-    return-void
-
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "Unable to unlink: buffer is in use."
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public final d()Ljava/lang/Object;
-    .locals 3
-
-    new-instance v0, LQ3/b;
-
-    iget-object v1, p0, LP3/g;->m:LN3/a;
-
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    iget v1, p0, LP3/g;->l:I
-
-    invoke-static {v1}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
-
-    move-result-object v1
-
-    const-string v2, "allocate(size)"
-
-    invoke-static {v1, v2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget-object v2, LN3/b;->a:Ljava/nio/ByteBuffer;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v1, v2, p0}, LQ3/b;-><init>(Ljava/nio/ByteBuffer;LQ3/b;LR3/f;)V
-
-    return-object v0
-.end method
-
-.method public final g(Ljava/lang/Object;)V
-    .locals 6
-
-    check-cast p1, LQ3/b;
-
-    const-string v0, "instance"
-
-    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iget-object v0, p1, LP3/a;->a:Ljava/nio/ByteBuffer;
-
-    invoke-virtual {v0}, Ljava/nio/Buffer;->limit()I
-
-    move-result v1
-
-    int-to-long v1, v1
-
-    iget v3, p0, LP3/g;->l:I
-
-    int-to-long v4, v3
-
-    cmp-long v1, v1, v4
-
-    if-nez v1, :cond_5
-
-    sget-object v0, LQ3/b;->l:LQ3/b;
-
-    if-eq p1, v0, :cond_4
-
-    if-eq p1, v0, :cond_3
-
-    invoke-virtual {p1}, LQ3/b;->j()I
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    invoke-virtual {p1}, LQ3/b;->i()LQ3/b;
-
-    move-result-object v0
-
-    if-nez v0, :cond_1
-
-    iget-object p1, p1, LQ3/b;->h:LQ3/b;
-
-    if-nez p1, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "Recycled instance shouldn\'t be a view or another buffer."
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "Recycled instance shouldn\'t be a part of a chain."
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_2
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "Unable to clear buffer: it is still in use."
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_3
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "Empty instance couldn\'t be recycled"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_4
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "ChunkBuffer.Empty couldn\'t be recycled"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_5
-    const-string p1, "Buffer size mismatch. Expected: "
-
-    const-string v1, ", actual: "
-
-    invoke-static {p1, v3, v1}, LA/m;->n(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0, p0}, Lp3/j;->b(Lp3/h;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-virtual {v0}, Ljava/nio/Buffer;->limit()I
-
-    move-result v0
-
-    int-to-long v0, v0
-
-    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    return-object p1
 .end method

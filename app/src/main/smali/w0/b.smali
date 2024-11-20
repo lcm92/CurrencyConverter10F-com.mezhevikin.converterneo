@@ -1,757 +1,158 @@
-.class public abstract LW0/b;
-.super Ljava/lang/Object;
+.class public final Lw0/b;
+.super La4/i;
 .source "SourceFile"
 
+# interfaces
+.implements Lh4/e;
 
-# static fields
-.field public static final a:Li/p;
 
-.field public static final b:LA0/u;
+# instance fields
+.field public k:I
+
+.field public final synthetic l:Lw0/f;
+
+.field public final synthetic m:Landroid/view/ScrollCaptureSession;
+
+.field public final synthetic n:Landroid/graphics/Rect;
+
+.field public final synthetic o:Ljava/util/function/Consumer;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lw0/f;Landroid/view/ScrollCaptureSession;Landroid/graphics/Rect;Ljava/util/function/Consumer;Ly8/d;)V
+    .locals 0
 
-    new-instance v0, Li/p;
+    iput-object p1, p0, Lw0/b;->l:Lw0/f;
 
-    const/4 v1, 0x2
+    iput-object p2, p0, Lw0/b;->m:Landroid/view/ScrollCaptureSession;
 
-    invoke-direct {v0, v1}, Li/p;-><init>(I)V
+    iput-object p3, p0, Lw0/b;->n:Landroid/graphics/Rect;
 
-    sput-object v0, LW0/b;->a:Li/p;
+    iput-object p4, p0, Lw0/b;->o:Ljava/util/function/Consumer;
 
-    new-instance v0, LA0/u;
+    const/4 p1, 0x2
 
-    const/4 v1, 0x2
-
-    invoke-direct {v0, v1}, LA0/u;-><init>(I)V
-
-    sput-object v0, LW0/b;->b:LA0/u;
+    invoke-direct {p0, p1, p5}, La4/i;-><init>(ILy8/d;)V
 
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Ljava/util/List;)LJ1/s;
-    .locals 5
 
-    const-string v0, "FontProvider.getFontFamilyResult"
+# virtual methods
+.method public final d(Ly8/d;Ljava/lang/Object;)Ly8/d;
+    .locals 6
 
-    invoke-static {v0}, Lp3/e;->b(Ljava/lang/String;)V
+    new-instance p2, Lw0/b;
 
-    :try_start_0
-    new-instance v0, Ljava/util/ArrayList;
+    iget-object v2, p0, Lw0/b;->m:Landroid/view/ScrollCaptureSession;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    iget-object v3, p0, Lw0/b;->n:Landroid/graphics/Rect;
 
-    const/4 v1, 0x0
+    iget-object v4, p0, Lw0/b;->o:Ljava/util/function/Consumer;
 
-    :goto_0
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    iget-object v1, p0, Lw0/b;->l:Lw0/f;
 
-    move-result v2
+    move-object v0, p2
 
-    if-ge v1, v2, :cond_1
+    move-object v5, p1
 
-    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-direct/range {v0 .. v5}, Lw0/b;-><init>(Lw0/f;Landroid/view/ScrollCaptureSession;Landroid/graphics/Rect;Ljava/util/function/Consumer;Ly8/d;)V
 
-    move-result-object v2
-
-    check-cast v2, LW0/c;
-
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v3
-
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    invoke-static {v3, v2, v4}, LW0/b;->b(Landroid/content/pm/PackageManager;LW0/c;Landroid/content/res/Resources;)Landroid/content/pm/ProviderInfo;
-
-    move-result-object v3
-
-    if-nez v3, :cond_0
-
-    new-instance p0, LJ1/s;
-
-    invoke-direct {p0}, LJ1/s;-><init>()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    invoke-static {}, Landroid/os/Trace;->endSection()V
-
-    return-object p0
-
-    :cond_0
-    :try_start_1
-    iget-object v3, v3, Landroid/content/pm/ProviderInfo;->authority:Ljava/lang/String;
-
-    invoke-static {p0, v2, v3}, LW0/b;->c(Landroid/content/Context;LW0/c;Ljava/lang/String;)[LW0/g;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_1
-
-    :cond_1
-    new-instance p0, LJ1/s;
-
-    invoke-direct {p0, v0}, LJ1/s;-><init>(Ljava/util/ArrayList;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    invoke-static {}, Landroid/os/Trace;->endSection()V
-
-    return-object p0
-
-    :goto_1
-    invoke-static {}, Landroid/os/Trace;->endSection()V
-
-    throw p0
+    return-object p2
 .end method
 
-.method public static b(Landroid/content/pm/PackageManager;LW0/c;Landroid/content/res/Resources;)Landroid/content/pm/ProviderInfo;
-    .locals 9
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
 
-    sget-object v0, LW0/b;->a:Li/p;
+    sget-object v0, Lz8/a;->g:Lz8/a;
 
-    const-string v1, "Found content provider "
+    iget v1, p0, Lw0/b;->k:I
 
-    const-string v2, "No package found for authority: "
+    const/4 v2, 0x1
 
-    const-string v3, "FontProvider.getProvider"
+    if-eqz v1, :cond_1
 
-    invoke-static {v3}, Lp3/e;->b(Ljava/lang/String;)V
+    if-ne v1, v2, :cond_0
 
-    :try_start_0
-    iget-object v3, p1, LW0/c;->d:Ljava/util/List;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    iget-object v4, p1, LW0/c;->a:Ljava/lang/String;
-
-    iget-object p1, p1, LW0/c;->b:Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    if-eqz v3, :cond_0
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
 
     goto :goto_0
 
     :cond_0
-    :try_start_1
-    invoke-static {p2, v5}, LS0/b;->e(Landroid/content/res/Resources;I)Ljava/util/List;
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    move-result-object v3
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    :goto_0
-    new-instance p2, LW0/a;
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
-
-    iput-object v4, p2, LW0/a;->a:Ljava/lang/String;
-
-    iput-object p1, p2, LW0/a;->b:Ljava/lang/String;
-
-    iput-object v3, p2, LW0/a;->c:Ljava/util/List;
-
-    invoke-virtual {v0, p2}, Li/p;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Landroid/content/pm/ProviderInfo;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    if-eqz v6, :cond_1
-
-    invoke-static {}, Landroid/os/Trace;->endSection()V
-
-    return-object v6
+    throw p1
 
     :cond_1
-    :try_start_2
-    invoke-virtual {p0, v4, v5}, Landroid/content/pm/PackageManager;->resolveContentProvider(Ljava/lang/String;I)Landroid/content/pm/ProviderInfo;
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
 
-    move-result-object v6
+    iget-object p1, p0, Lw0/b;->m:Landroid/view/ScrollCaptureSession;
 
-    if-eqz v6, :cond_8
+    new-instance v1, Ll5/i;
 
-    iget-object v2, v6, Landroid/content/pm/ProviderInfo;->packageName:Ljava/lang/String;
+    iget-object v3, p0, Lw0/b;->n:Landroid/graphics/Rect;
 
-    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    iget v4, v3, Landroid/graphics/Rect;->left:I
 
-    move-result v2
+    iget v5, v3, Landroid/graphics/Rect;->top:I
 
-    if-eqz v2, :cond_7
+    iget v6, v3, Landroid/graphics/Rect;->right:I
 
-    iget-object p1, v6, Landroid/content/pm/ProviderInfo;->packageName:Ljava/lang/String;
+    iget v3, v3, Landroid/graphics/Rect;->bottom:I
 
-    const/16 v1, 0x40
+    invoke-direct {v1, v4, v5, v6, v3}, Ll5/i;-><init>(IIII)V
 
-    invoke-virtual {p0, p1, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    iput v2, p0, Lw0/b;->k:I
 
-    move-result-object p0
+    iget-object v2, p0, Lw0/b;->l:Lw0/f;
 
-    iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
-
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    array-length v1, p0
-
-    move v2, v5
-
-    :goto_1
-    if-ge v2, v1, :cond_2
-
-    aget-object v4, p0, v2
-
-    invoke-virtual {v4}, Landroid/content/pm/Signature;->toByteArray()[B
-
-    move-result-object v4
-
-    invoke-virtual {p1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_1
-
-    :cond_2
-    sget-object p0, LW0/b;->b:LA0/u;
-
-    :try_start_3
-    invoke-static {p1, p0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
-
-    move v1, v5
-
-    :goto_2
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_6
-
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/util/Collection;
-
-    invoke-direct {v2, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
-
-    invoke-static {v2, p0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
-
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
-
-    move-result v4
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
-
-    move-result v7
-
-    if-eq v4, v7, :cond_3
-
-    goto :goto_4
-
-    :cond_3
-    move v4, v5
-
-    :goto_3
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
-
-    move-result v7
-
-    if-ge v4, v7, :cond_5
-
-    invoke-virtual {p1, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, [B
-
-    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v8
-
-    check-cast v8, [B
-
-    invoke-static {v7, v8}, Ljava/util/Arrays;->equals([B[B)Z
-
-    move-result v7
-
-    if-nez v7, :cond_4
-
-    :goto_4
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_2
-
-    :cond_4
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_3
-
-    :cond_5
-    invoke-virtual {v0, p2, v6}, Li/p;->b(Ljava/lang/Object;Ljava/lang/Object;)V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    invoke-static {}, Landroid/os/Trace;->endSection()V
-
-    return-object v6
-
-    :catchall_0
-    move-exception p0
-
-    goto :goto_5
-
-    :cond_6
-    invoke-static {}, Landroid/os/Trace;->endSection()V
-
-    const/4 p0, 0x0
-
-    return-object p0
-
-    :cond_7
-    :try_start_4
-    new-instance p0, Landroid/content/pm/PackageManager$NameNotFoundException;
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    invoke-direct {p2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, ", but package was not "
-
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v2, p1, v1, p0}, Lw0/f;->a(Lw0/f;Landroid/view/ScrollCaptureSession;Ll5/i;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-direct {p0, p1}, Landroid/content/pm/PackageManager$NameNotFoundException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    :cond_8
-    new-instance p0, Landroid/content/pm/PackageManager$NameNotFoundException;
-
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Landroid/content/pm/PackageManager$NameNotFoundException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    :goto_5
-    invoke-static {}, Landroid/os/Trace;->endSection()V
-
-    throw p0
-.end method
-
-.method public static c(Landroid/content/Context;LW0/c;Ljava/lang/String;)[LW0/g;
-    .locals 20
-
-    move-object/from16 v0, p2
-
-    const-string v1, "content"
-
-    const-string v2, "FontProvider.query"
-
-    invoke-static {v2}, Lp3/e;->b(Ljava/lang/String;)V
-
-    :try_start_0
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    new-instance v3, Landroid/net/Uri$Builder;
-
-    invoke-direct {v3}, Landroid/net/Uri$Builder;-><init>()V
-
-    invoke-virtual {v3, v1}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v0}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
-
-    move-result-object v3
-
-    new-instance v4, Landroid/net/Uri$Builder;
-
-    invoke-direct {v4}, Landroid/net/Uri$Builder;-><init>()V
-
-    invoke-virtual {v4, v1}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    move-result-object v0
-
-    const-string v1, "file"
-
-    invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
-
-    move-result-object v1
-
-    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v3}, Landroid/content/ContentResolver;->acquireUnstableContentProviderClient(Landroid/net/Uri;)Landroid/content/ContentProviderClient;
-
-    move-result-object v11
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    const/4 v12, 0x0
-
-    :try_start_1
-    const-string v4, "_id"
-
-    const-string v5, "file_id"
-
-    const-string v6, "font_ttc_index"
-
-    const-string v7, "font_variation_settings"
-
-    const-string v8, "font_weight"
-
-    const-string v9, "font_italic"
-
-    const-string v10, "result_code"
-
-    filled-new-array/range {v4 .. v10}, [Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string v0, "ContentQueryWrapper.query"
-
-    invoke-static {v0}, Lp3/e;->b(Ljava/lang/String;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :try_start_2
-    const-string v7, "query = ?"
-
-    move-object/from16 v0, p1
-
-    iget-object v0, v0, LW0/c;->c:Ljava/lang/String;
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v8
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
-    if-nez v11, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    move-object v4, v11
-
-    move-object v5, v3
-
-    :try_start_3
-    invoke-virtual/range {v4 .. v10}, Landroid/content/ContentProviderClient;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
-
-    move-result-object v12
-    :try_end_3
-    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_0
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    move-object v4, v0
-
-    :try_start_4
-    const-string v0, "FontsProvider"
-
-    const-string v5, "Unable to query the content provider"
-
-    invoke-static {v0, v5, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
-
-    :goto_0
-    :try_start_5
-    invoke-static {}, Landroid/os/Trace;->endSection()V
-
-    const/4 v0, 0x0
-
-    if-eqz v12, :cond_7
-
-    invoke-interface {v12}, Landroid/database/Cursor;->getCount()I
-
-    move-result v4
-
-    if-lez v4, :cond_7
-
-    const-string v2, "result_code"
-
-    invoke-interface {v12, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v2
-
-    new-instance v4, Ljava/util/ArrayList;
-
-    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
-
-    const-string v5, "_id"
-
-    invoke-interface {v12, v5}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v5
-
-    const-string v6, "file_id"
-
-    invoke-interface {v12, v6}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v6
-
-    const-string v7, "font_ttc_index"
-
-    invoke-interface {v12, v7}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v7
-
-    const-string v8, "font_weight"
-
-    invoke-interface {v12, v8}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v8
-
-    const-string v9, "font_italic"
-
-    invoke-interface {v12, v9}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v9
-
-    :goto_1
-    invoke-interface {v12}, Landroid/database/Cursor;->moveToNext()Z
-
-    move-result v10
-
-    if-eqz v10, :cond_6
-
-    const/4 v10, -0x1
-
-    if-eq v2, v10, :cond_1
-
-    invoke-interface {v12, v2}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v13
-
-    move/from16 v19, v13
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception v0
-
-    goto/16 :goto_a
-
-    :cond_1
-    move/from16 v19, v0
-
-    :goto_2
-    if-eq v7, v10, :cond_2
-
-    invoke-interface {v12, v7}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v13
-
-    move/from16 v16, v13
-
-    goto :goto_3
-
-    :cond_2
-    move/from16 v16, v0
-
-    :goto_3
-    if-ne v6, v10, :cond_3
-
-    invoke-interface {v12, v5}, Landroid/database/Cursor;->getLong(I)J
-
-    move-result-wide v13
-
-    invoke-static {v3, v13, v14}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
-
-    move-result-object v13
-
-    :goto_4
-    move-object v15, v13
-
-    goto :goto_5
-
-    :cond_3
-    invoke-interface {v12, v6}, Landroid/database/Cursor;->getLong(I)J
-
-    move-result-wide v13
-
-    invoke-static {v1, v13, v14}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
-
-    move-result-object v13
-
-    goto :goto_4
-
-    :goto_5
-    if-eq v8, v10, :cond_4
-
-    invoke-interface {v12, v8}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v13
-
-    :goto_6
-    move/from16 v17, v13
-
-    goto :goto_7
-
-    :cond_4
-    const/16 v13, 0x190
-
-    goto :goto_6
-
-    :goto_7
-    if-eq v9, v10, :cond_5
-
-    invoke-interface {v12, v9}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v10
-
-    const/4 v13, 0x1
-
-    if-ne v10, v13, :cond_5
-
-    move/from16 v18, v13
-
-    goto :goto_8
-
-    :cond_5
-    move/from16 v18, v0
-
-    :goto_8
-    new-instance v10, LW0/g;
-
-    move-object v14, v10
-
-    invoke-direct/range {v14 .. v19}, LW0/g;-><init>(Landroid/net/Uri;IIZI)V
-
-    invoke-virtual {v4, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
-
-    goto :goto_1
-
-    :cond_6
-    move-object v2, v4
-
-    :cond_7
-    if-eqz v12, :cond_8
-
-    :try_start_6
-    invoke-interface {v12}, Landroid/database/Cursor;->close()V
-
-    goto :goto_9
-
-    :catchall_1
-    move-exception v0
-
-    goto :goto_b
-
-    :cond_8
-    :goto_9
-    if-eqz v11, :cond_9
-
-    invoke-virtual {v11}, Landroid/content/ContentProviderClient;->close()V
-
-    :cond_9
-    new-array v0, v0, [LW0/g;
-
-    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [LW0/g;
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_1
-
-    invoke-static {}, Landroid/os/Trace;->endSection()V
+    if-ne p1, v0, :cond_2
 
     return-object v0
 
-    :catchall_2
-    move-exception v0
+    :cond_2
+    :goto_0
+    check-cast p1, Ll5/i;
 
-    :try_start_7
-    invoke-static {}, Landroid/os/Trace;->endSection()V
+    invoke-static {p1}, Lya/ha;->z(Ll5/i;)Landroid/graphics/Rect;
 
-    throw v0
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_0
+    move-result-object p1
 
-    :goto_a
-    if-eqz v12, :cond_a
+    iget-object v0, p0, Lw0/b;->o:Ljava/util/function/Consumer;
 
-    :try_start_8
-    invoke-interface {v12}, Landroid/database/Cursor;->close()V
+    invoke-interface {v0, p1}, Ljava/util/function/Consumer;->accept(Ljava/lang/Object;)V
 
-    :cond_a
-    if-eqz v11, :cond_b
+    sget-object p1, Lu8/y;->a:Lu8/y;
 
-    invoke-virtual {v11}, Landroid/content/ContentProviderClient;->close()V
+    return-object p1
+.end method
 
-    :cond_b
-    throw v0
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_1
+.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    :goto_b
-    invoke-static {}, Landroid/os/Trace;->endSection()V
+    check-cast p1, Ls4/x;
 
-    throw v0
+    check-cast p2, Ly8/d;
+
+    invoke-virtual {p0, p2, p1}, Lw0/b;->d(Ly8/d;Ljava/lang/Object;)Ly8/d;
+
+    move-result-object p1
+
+    check-cast p1, Lw0/b;
+
+    sget-object p2, Lu8/y;->a:Lu8/y;
+
+    invoke-virtual {p1, p2}, Lw0/b;->f(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

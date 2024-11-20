@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/foundation/ScrollingLayoutElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -83,7 +83,7 @@
 
     iget-boolean v2, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->b:Z
 
-    invoke-static {v0, v1, v2}, Lk/P;->c(IIZ)I
+    invoke-static {v0, v1, v2}, Lk/pa;->c(IIZ)I
 
     move-result v0
 
@@ -98,44 +98,44 @@
     return v1
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 2
 
-    new-instance v0, Lm/A0;
+    new-instance v0, Lm/aa0;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
     iget-object v1, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->a:Lm/z0;
 
-    iput-object v1, v0, Lm/A0;->t:Lm/z0;
+    iput-object v1, v0, Lm/aa0;->t:Lm/z0;
 
     iget-boolean v1, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->b:Z
 
-    iput-boolean v1, v0, Lm/A0;->u:Z
+    iput-boolean v1, v0, Lm/aa0;->u:Z
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lm/A0;->v:Z
+    iput-boolean v1, v0, Lm/aa0;->v:Z
 
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 1
 
-    check-cast p1, Lm/A0;
+    check-cast p1, Lm/aa0;
 
     iget-object v0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->a:Lm/z0;
 
-    iput-object v0, p1, Lm/A0;->t:Lm/z0;
+    iput-object v0, p1, Lm/aa0;->t:Lm/z0;
 
     iget-boolean v0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->b:Z
 
-    iput-boolean v0, p1, Lm/A0;->u:Z
+    iput-boolean v0, p1, Lm/aa0;->u:Z
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lm/A0;->v:Z
+    iput-boolean v0, p1, Lm/aa0;->v:Z
 
     return-void
 .end method

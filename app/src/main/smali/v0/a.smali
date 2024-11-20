@@ -1,131 +1,121 @@
-.class public abstract LV0/a;
+.class public final Lv0/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:I
+# instance fields
+.field public final a:Le0/e;
+
+.field public final b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Le0/e;I)V
+    .locals 0
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/16 v1, 0x1e
+    iput-object p1, p0, Lv0/a;->a:Le0/e;
 
-    if-lt v0, v1, :cond_0
+    iput p2, p0, Lv0/a;->b:I
 
-    invoke-static {v1}, LU0/a;->b(I)V
-
-    :cond_0
-    if-lt v0, v1, :cond_1
-
-    const/16 v2, 0x1f
-
-    invoke-static {v2}, LU0/a;->b(I)V
-
-    :cond_1
-    if-lt v0, v1, :cond_2
-
-    const/16 v2, 0x21
-
-    invoke-static {v2}, LU0/a;->b(I)V
-
-    :cond_2
-    if-lt v0, v1, :cond_3
-
-    const v0, 0xf4240
-
-    invoke-static {v0}, LU0/a;->b(I)V
-
-    :cond_3
     return-void
 .end method
 
-.method public static final a(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 3
 
-    const-string v0, "REL"
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lv0/a;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Lv0/a;
+
+    iget-object v1, p1, Lv0/a;->a:Le0/e;
+
+    iget-object v3, p0, Lv0/a;->a:Le0/e;
+
+    invoke-static {v3, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget v1, p0, Lv0/a;->b:I
+
+    iget p1, p1, Lv0/a;->b:I
+
+    if-eq v1, p1, :cond_3
+
+    return v2
+
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    iget-object v0, p0, Lv0/a;->a:Le0/e;
+
+    invoke-virtual {v0}, Le0/e;->hashCode()I
 
     move-result v0
 
-    const/4 v1, 0x0
+    mul-int/lit8 v0, v0, 0x1f
 
-    if-eqz v0, :cond_0
+    iget v1, p0, Lv0/a;->b:I
 
-    return v1
+    invoke-static {v1}, Ljava/lang/Integer;->hashCode(I)I
 
-    :cond_0
-    sget-object v0, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+    move-result v1
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+    add-int/2addr v1, v0
 
-    move-result-object p1
-
-    const-string v2, "this as java.lang.String).toUpperCase(Locale.ROOT)"
-
-    invoke-static {p1, v2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0, v2}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1, p0}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
-
-    move-result p0
-
-    if-ltz p0, :cond_1
-
-    const/4 v1, 0x1
-
-    :cond_1
     return v1
 .end method
 
-.method public static final b()Z
-    .locals 2
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x1f
+    const-string v1, "ImageVectorEntry(imageVector="
 
-    if-ge v0, v1, :cond_1
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const/16 v1, 0x1e
+    iget-object v1, p0, Lv0/a;->a:Le0/e;
 
-    if-lt v0, v1, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    sget-object v0, Landroid/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+    const-string v1, ", configFlags="
 
-    const-string v1, "CODENAME"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+    iget v1, p0, Lv0/a;->b:I
 
-    const-string v1, "S"
+    const/16 v2, 0x29
 
-    invoke-static {v1, v0}, LV0/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1, v2}, Laa/m;->k(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
-    move-result v0
+    move-result-object v0
 
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
-
-    :goto_1
-    return v0
+    return-object v0
 .end method

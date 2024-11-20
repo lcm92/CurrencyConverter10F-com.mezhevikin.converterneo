@@ -1,39 +1,42 @@
-.class public abstract LA4/e;
+.class public interface abstract annotation La4/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
 
-# static fields
-.field public static final a:LI2/i;
+
+# annotations
+.annotation system Ldalvik/annotation/AnnotationDefault;
+    value = .subannotation La4/e;
+        c = ""
+        f = ""
+        i = {}
+        l = {}
+        m = ""
+        n = {}
+        s = {}
+        v = 0x1
+    .end subannotation
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 4
-
-    new-instance v0, LI2/i;
-
-    const-string v1, "NO_OWNER"
-
-    const/16 v2, 0x9
-
-    const/4 v3, 0x0
-
-    invoke-direct {v0, v1, v2, v3}, LI2/i;-><init>(Ljava/lang/String;IZ)V
-
-    sput-object v0, LA4/e;->a:LI2/i;
-
-    return-void
+# virtual methods
+.method public abstract c()Ljava/lang/String;
 .end method
 
-.method public static a()LA4/d;
-    .locals 2
+.method public abstract f()Ljava/lang/String;
+.end method
 
-    new-instance v0, LA4/d;
+.method public abstract l()[I
+.end method
 
-    const/4 v1, 0x0
+.method public abstract m()Ljava/lang/String;
+.end method
 
-    invoke-direct {v0, v1}, LA4/d;-><init>(Z)V
-
-    return-object v0
+.method public abstract v()I
 .end method

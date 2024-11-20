@@ -1,5 +1,5 @@
 .class public final Lt4/b;
-.super LY3/a;
+.super Ly8/a;
 .source "SourceFile"
 
 # interfaces
@@ -16,7 +16,7 @@
 
     sget-object v0, Ls4/u;->g:Ls4/u;
 
-    invoke-direct {p0, v0}, LY3/a;-><init>(LY3/h;)V
+    invoke-direct {p0, v0}, Ly8/a;-><init>(Ly8/h;)V
 
     iput-object p0, p0, Lt4/b;->_preHandler:Ljava/lang/Object;
 
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public r(LY3/i;Ljava/lang/Throwable;)V
+.method public r(Ly8/i;Ljava/lang/Throwable;)V
     .locals 2
 
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I

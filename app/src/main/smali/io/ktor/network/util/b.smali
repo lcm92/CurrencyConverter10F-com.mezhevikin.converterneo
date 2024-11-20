@@ -13,28 +13,28 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/ktor/network/util/c;LY3/d;)V
+.method public constructor <init>(Lio/ktor/network/util/c;Ly8/d;)V
     .locals 0
 
     iput-object p1, p0, Lio/ktor/network/util/b;->l:Lio/ktor/network/util/c;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p2}, La4/i;-><init>(ILY3/d;)V
+    invoke-direct {p0, p1, p2}, La4/i;-><init>(ILy8/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(LY3/d;Ljava/lang/Object;)LY3/d;
+.method public final d(Ly8/d;Ljava/lang/Object;)Ly8/d;
     .locals 1
 
     new-instance p2, Lio/ktor/network/util/b;
 
     iget-object v0, p0, Lio/ktor/network/util/b;->l:Lio/ktor/network/util/c;
 
-    invoke-direct {p2, v0, p1}, Lio/ktor/network/util/b;-><init>(Lio/ktor/network/util/c;LY3/d;)V
+    invoke-direct {p2, v0, p1}, Lio/ktor/network/util/b;-><init>(Lio/ktor/network/util/c;Ly8/d;)V
 
     return-object p2
 .end method
@@ -42,7 +42,7 @@
 .method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 9
 
-    sget-object v0, LZ3/a;->g:LZ3/a;
+    sget-object v0, Lz8/a;->g:Lz8/a;
 
     iget v1, p0, Lio/ktor/network/util/b;->k:I
 
@@ -61,7 +61,7 @@
     if-ne v1, v2, :cond_0
 
     :try_start_0
-    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -78,19 +78,19 @@
 
     :cond_1
     :try_start_1
-    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
 
     goto :goto_1
 
     :cond_2
-    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_0
 
     :cond_3
-    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
 
     :cond_4
     :goto_0
@@ -196,7 +196,7 @@
     :catchall_0
     :cond_8
     :goto_2
-    sget-object p1, LU3/y;->a:LU3/y;
+    sget-object p1, Lu8/y;->a:Lu8/y;
 
     return-object p1
 .end method
@@ -206,15 +206,15 @@
 
     check-cast p1, Ls4/x;
 
-    check-cast p2, LY3/d;
+    check-cast p2, Ly8/d;
 
-    invoke-virtual {p0, p2, p1}, Lio/ktor/network/util/b;->d(LY3/d;Ljava/lang/Object;)LY3/d;
+    invoke-virtual {p0, p2, p1}, Lio/ktor/network/util/b;->d(Ly8/d;Ljava/lang/Object;)Ly8/d;
 
     move-result-object p1
 
     check-cast p1, Lio/ktor/network/util/b;
 
-    sget-object p2, LU3/y;->a:LU3/y;
+    sget-object p2, Lu8/y;->a:Lu8/y;
 
     invoke-virtual {p1, p2}, Lio/ktor/network/util/b;->f(Ljava/lang/Object;)Ljava/lang/Object;
 

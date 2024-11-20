@@ -1,29 +1,31 @@
-.class public abstract LL3/f;
+.class public final Ll3/f;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Z
+# instance fields
+.field public final a:Ljava/util/ArrayList;
+
+.field public b:Ll3/d;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>()V
+    .locals 1
 
-    const-string v0, "io.ktor.internal.disable.sfg"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+    new-instance v0, Ljava/util/ArrayList;
 
-    move-result-object v0
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    const-string v1, "true"
+    iput-object v0, p0, Ll3/f;->a:Ljava/util/ArrayList;
 
-    invoke-static {v0, v1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    new-instance v0, Ll3/c;
 
-    move-result v0
+    invoke-direct {v0}, Ll3/c;-><init>()V
 
-    sput-boolean v0, LL3/f;->a:Z
+    iput-object v0, p0, Ll3/f;->b:Ll3/d;
 
     return-void
 .end method

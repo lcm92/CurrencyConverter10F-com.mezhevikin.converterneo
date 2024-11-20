@@ -27,7 +27,7 @@
 
 .field public h:Lo2/o;
 
-.field public i:LJ1/C;
+.field public i:Lj6/ca;
 
 .field public j:Landroid/os/IInterface;
 
@@ -840,10 +840,10 @@
     return v0
 .end method
 
-.method public final k(LJ1/C;)V
+.method public final k(Lj6/ca;)V
     .locals 1
 
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/a;->i:LJ1/C;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/a;->i:Lj6/ca;
 
     const/4 p1, 0x2
 
@@ -863,13 +863,13 @@
 
     iget-object v0, v0, Ln2/i;->k:Ln2/c;
 
-    iget-object v0, v0, Ln2/c;->m:LB2/a;
+    iget-object v0, v0, Ln2/c;->m:Lb7/a;
 
-    new-instance v1, LI1/a;
+    new-instance v1, Li6/a;
 
     const/16 v2, 0xa
 
-    invoke-direct {v1, v2, p1}, LI1/a;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p1}, Li6/a;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

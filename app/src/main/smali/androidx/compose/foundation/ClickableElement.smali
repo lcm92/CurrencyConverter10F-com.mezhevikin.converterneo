@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/ClickableElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -194,7 +194,7 @@
 
     iget-boolean v3, p0, Landroidx/compose/foundation/ClickableElement;->c:Z
 
-    invoke-static {v1, v2, v3}, Lk/P;->c(IIZ)I
+    invoke-static {v1, v2, v3}, Lk/pa;->c(IIZ)I
 
     move-result v1
 
@@ -242,7 +242,7 @@
     return v0
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 8
 
     new-instance v7, Lm/z;
@@ -266,7 +266,7 @@
     return-object v7
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 7
 
     move-object v0, p1

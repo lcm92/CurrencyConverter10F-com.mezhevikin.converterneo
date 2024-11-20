@@ -1,221 +1,510 @@
-.class public final LA0/D;
+.class public interface abstract La0/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# instance fields
-.field public final a:Ljava/lang/CharSequence;
-
-.field public final b:I
-
-.field public final c:I
-
-.field public final d:Landroid/text/TextPaint;
-
-.field public final e:I
-
-.field public final f:Landroid/text/TextDirectionHeuristic;
-
-.field public final g:Landroid/text/Layout$Alignment;
-
-.field public final h:I
-
-.field public final i:Landroid/text/TextUtils$TruncateAt;
-
-.field public final j:I
-
-.field public final k:F
-
-.field public final l:F
-
-.field public final m:I
-
-.field public final n:Z
-
-.field public final o:Z
-
-.field public final p:I
-
-.field public final q:I
-
-.field public final r:I
-
-.field public final s:I
-
-.field public final t:[I
-
-.field public final u:[I
+# interfaces
+.implements Ll5/b;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/TextDirectionHeuristic;Landroid/text/Layout$Alignment;ILandroid/text/TextUtils$TruncateAt;IFFIZZIIII[I[I)V
-    .locals 9
+.method public static synthetic A(La0/d;JJI)V
+    .locals 12
+
+    and-int/lit8 v0, p5, 0x4
+
+    const-wide/16 v4, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p0}, La0/d;->g()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1, v4, v5}, La0/d;->j0(JJ)J
+
+    move-result-wide v0
+
+    move-wide v6, v0
+
+    goto :goto_0
+
+    :cond_0
+    move-wide v6, p3
+
+    :goto_0
+    sget-object v9, La0/f;->b:La0/f;
+
+    and-int/lit8 v0, p5, 0x40
+
+    if-eqz v0, :cond_1
+
+    const/4 v0, 0x3
+
+    :goto_1
+    move v11, v0
+
+    goto :goto_2
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :goto_2
+    const/high16 v8, 0x3f800000    # 1.0f
+
+    const/4 v10, 0x0
+
+    move-object v1, p0
+
+    move-wide v2, p1
+
+    invoke-interface/range {v1 .. v11}, La0/d;->z(JJJFLa0/c;Lya/l;I)V
+
+    return-void
+.end method
+
+.method public static N(Lq0/fa;Lya/ha;JJFLa0/c;I)V
+    .locals 12
+
+    and-int/lit8 v0, p8, 0x2
+
+    if-eqz v0, :cond_0
+
+    const-wide/16 v0, 0x0
+
+    move-wide v4, v0
+
+    goto :goto_0
+
+    :cond_0
+    move-wide v4, p2
+
+    :goto_0
+    and-int/lit8 v0, p8, 0x4
+
+    if-eqz v0, :cond_1
 
     move-object v0, p0
 
-    move v1, p2
+    iget-object v1, v0, Lq0/fa;->g:La0/b;
 
-    move v2, p3
+    invoke-interface {v1}, La0/d;->g()J
 
-    move v3, p5
+    move-result-wide v1
 
-    move/from16 v4, p8
+    invoke-static {v1, v2, v4, v5}, La0/d;->j0(JJ)J
 
-    move/from16 v5, p10
+    move-result-wide v1
 
-    move/from16 v6, p11
+    move-wide v6, v1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    goto :goto_1
 
-    move-object v7, p1
+    :cond_1
+    move-object v0, p0
 
-    iput-object v7, v0, LA0/D;->a:Ljava/lang/CharSequence;
+    move-wide/from16 v6, p4
 
-    iput v1, v0, LA0/D;->b:I
+    :goto_1
+    and-int/lit8 v1, p8, 0x8
 
-    iput v2, v0, LA0/D;->c:I
+    if-eqz v1, :cond_2
 
-    move-object v8, p4
+    const/high16 v1, 0x3f800000    # 1.0f
 
-    iput-object v8, v0, LA0/D;->d:Landroid/text/TextPaint;
+    move v8, v1
 
-    iput v3, v0, LA0/D;->e:I
+    goto :goto_2
 
-    move-object v8, p6
+    :cond_2
+    move/from16 v8, p6
 
-    iput-object v8, v0, LA0/D;->f:Landroid/text/TextDirectionHeuristic;
+    :goto_2
+    and-int/lit8 v1, p8, 0x10
 
-    move-object/from16 v8, p7
+    if-eqz v1, :cond_3
 
-    iput-object v8, v0, LA0/D;->g:Landroid/text/Layout$Alignment;
+    sget-object v1, La0/f;->b:La0/f;
 
-    iput v4, v0, LA0/D;->h:I
+    move-object v9, v1
 
-    move-object/from16 v8, p9
+    goto :goto_3
 
-    iput-object v8, v0, LA0/D;->i:Landroid/text/TextUtils$TruncateAt;
+    :cond_3
+    move-object/from16 v9, p7
 
-    iput v5, v0, LA0/D;->j:I
+    :goto_3
+    const/4 v11, 0x3
 
-    iput v6, v0, LA0/D;->k:F
+    const/4 v10, 0x0
 
-    move/from16 v8, p12
+    move-object v2, p0
 
-    iput v8, v0, LA0/D;->l:F
+    move-object v3, p1
 
-    move/from16 v8, p13
+    invoke-virtual/range {v2 .. v11}, Lq0/fa;->e(Lya/ha;JJFLa0/c;Lya/l;I)V
 
-    iput v8, v0, LA0/D;->m:I
+    return-void
+.end method
 
-    move/from16 v8, p14
+.method public static c0(Lq0/fa;Lya/oa;JJJLa0/c;I)V
+    .locals 14
 
-    iput-boolean v8, v0, LA0/D;->n:Z
+    and-int/lit8 v0, p9, 0x2
 
-    move/from16 v8, p15
+    if-eqz v0, :cond_0
 
-    iput-boolean v8, v0, LA0/D;->o:Z
+    const-wide/16 v0, 0x0
 
-    move/from16 v8, p16
+    move-wide v4, v0
 
-    iput v8, v0, LA0/D;->p:I
+    goto :goto_0
 
-    move/from16 v8, p17
+    :cond_0
+    move-wide/from16 v4, p2
 
-    iput v8, v0, LA0/D;->q:I
+    :goto_0
+    and-int/lit8 v0, p9, 0x4
 
-    move/from16 v8, p18
+    if-eqz v0, :cond_1
 
-    iput v8, v0, LA0/D;->r:I
+    move-object v0, p0
 
-    move/from16 v8, p19
+    iget-object v1, v0, Lq0/fa;->g:La0/b;
 
-    iput v8, v0, LA0/D;->s:I
+    invoke-interface {v1}, La0/d;->g()J
 
-    move-object/from16 v8, p20
+    move-result-wide v1
 
-    iput-object v8, v0, LA0/D;->t:[I
+    invoke-static {v1, v2, v4, v5}, La0/d;->j0(JJ)J
 
-    move-object/from16 v8, p21
+    move-result-wide v1
 
-    iput-object v8, v0, LA0/D;->u:[I
+    move-wide v6, v1
 
-    if-ltz v1, :cond_5
+    goto :goto_1
 
-    if-gt v1, v2, :cond_5
+    :cond_1
+    move-object v0, p0
 
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+    move-wide/from16 v6, p4
+
+    :goto_1
+    and-int/lit8 v1, p9, 0x20
+
+    if-eqz v1, :cond_2
+
+    sget-object v1, La0/f;->b:La0/f;
+
+    move-object v11, v1
+
+    goto :goto_2
+
+    :cond_2
+    move-object/from16 v11, p8
+
+    :goto_2
+    const/4 v13, 0x3
+
+    const/high16 v10, 0x3f800000    # 1.0f
+
+    const/4 v12, 0x0
+
+    move-object v2, p0
+
+    move-object v3, p1
+
+    move-wide/from16 v8, p6
+
+    invoke-virtual/range {v2 .. v13}, Lq0/fa;->f(Lya/ha;JJJFLa0/c;Lya/l;I)V
+
+    return-void
+.end method
+
+.method public static synthetic i0(La0/d;JFJI)V
+    .locals 12
+
+    and-int/lit8 v0, p6, 0x4
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p0}, La0/d;->t()J
+
+    move-result-wide v0
+
+    move-wide v6, v0
+
+    goto :goto_0
+
+    :cond_0
+    move-wide/from16 v6, p4
+
+    :goto_0
+    sget-object v9, La0/f;->b:La0/f;
+
+    const/4 v11, 0x3
+
+    const/high16 v8, 0x3f800000    # 1.0f
+
+    const/4 v10, 0x0
+
+    move-object v2, p0
+
+    move-wide v3, p1
+
+    move v5, p3
+
+    invoke-interface/range {v2 .. v11}, La0/d;->F(JFJFLa0/c;Lya/l;I)V
+
+    return-void
+.end method
+
+.method public static j0(JJ)J
+    .locals 2
+
+    invoke-static {p0, p1}, Lxa/f;->d(J)F
+
+    move-result v0
+
+    invoke-static {p2, p3}, Lxa/c;->d(J)F
 
     move-result v1
 
-    if-ltz v2, :cond_4
+    sub-float/2addr v0, v1
 
-    if-gt v2, v1, :cond_4
+    invoke-static {p0, p1}, Lxa/f;->b(J)F
 
-    if-ltz v4, :cond_3
+    move-result p0
 
-    if-ltz v3, :cond_2
+    invoke-static {p2, p3}, Lxa/c;->e(J)F
 
-    if-ltz v5, :cond_1
+    move-result p1
+
+    sub-float/2addr p0, p1
+
+    invoke-static {v0, p0}, La/a;->J(FF)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static l0(Lq0/fa;Lya/g;Lya/l;)V
+    .locals 9
+
+    sget-object v2, La0/f;->b:La0/f;
+
+    const/4 v5, 0x3
+
+    iget-object v0, p0, Lq0/fa;->g:La0/b;
+
+    const-wide/16 v7, 0x0
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    iget-object p0, v0, La0/b;->g:La0/a;
+
+    iget-object p0, p0, La0/a;->c:Lya/p;
+
+    const/4 v6, 0x1
 
     const/4 v1, 0x0
 
-    cmpl-float v1, v6, v1
+    move-object v4, p2
 
-    if-ltz v1, :cond_0
+    invoke-virtual/range {v0 .. v6}, La0/b;->c(Lya/ha;La0/c;FLya/l;II)Lj6/t;
+
+    move-result-object p2
+
+    invoke-interface {p0, p1, v7, v8, p2}, Lya/p;->j(Lya/g;JLj6/t;)V
 
     return-void
+.end method
+
+.method public static p(La0/d;Lya/g;JJJFLya/l;II)V
+    .locals 18
+
+    move/from16 v0, p11
+
+    and-int/lit8 v1, v0, 0x2
+
+    if-eqz v1, :cond_0
+
+    const-wide/16 v1, 0x0
+
+    move-wide v5, v1
+
+    goto :goto_0
 
     :cond_0
-    new-instance v1, Ljava/lang/IllegalArgumentException;
+    move-wide/from16 v5, p2
 
-    const-string v2, "invalid lineSpacingMultiplier value"
+    :goto_0
+    and-int/lit8 v1, v0, 0x10
 
-    invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    if-eqz v1, :cond_1
 
-    throw v1
+    move-wide/from16 v11, p4
+
+    goto :goto_1
 
     :cond_1
-    new-instance v1, Ljava/lang/IllegalArgumentException;
+    move-wide/from16 v11, p6
 
-    const-string v2, "invalid ellipsizedWidth value"
+    :goto_1
+    and-int/lit8 v1, v0, 0x20
 
-    invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    if-eqz v1, :cond_2
 
-    throw v1
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    move v13, v1
+
+    goto :goto_2
 
     :cond_2
-    new-instance v1, Ljava/lang/IllegalArgumentException;
+    move/from16 v13, p8
 
-    const-string v2, "invalid width value"
+    :goto_2
+    sget-object v14, La0/f;->b:La0/f;
 
-    invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    and-int/lit16 v0, v0, 0x200
 
-    throw v1
+    if-eqz v0, :cond_3
+
+    const/4 v0, 0x1
+
+    move/from16 v17, v0
+
+    goto :goto_3
 
     :cond_3
-    new-instance v1, Ljava/lang/IllegalArgumentException;
+    move/from16 v17, p10
 
-    const-string v2, "invalid maxLines value"
+    :goto_3
+    const-wide/16 v9, 0x0
 
-    invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    const/16 v16, 0x3
 
-    throw v1
+    move-object/from16 v3, p0
 
-    :cond_4
-    new-instance v1, Ljava/lang/IllegalArgumentException;
+    move-object/from16 v4, p1
 
-    const-string v2, "invalid end value"
+    move-wide/from16 v7, p4
 
-    invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    move-object/from16 v15, p9
 
-    throw v1
+    invoke-interface/range {v3 .. v17}, La0/d;->b0(Lya/g;JJJJFLa0/c;Lya/l;II)V
 
-    :cond_5
-    new-instance v1, Ljava/lang/IllegalArgumentException;
+    return-void
+.end method
 
-    const-string v2, "invalid start value"
+.method public static synthetic w(La0/d;Lya/ga;Lya/ha;FLa0/g;I)V
+    .locals 7
 
-    invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    and-int/lit8 v0, p5, 0x4
 
-    throw v1
+    if-eqz v0, :cond_0
+
+    const/high16 p3, 0x3f800000    # 1.0f
+
+    :cond_0
+    move v3, p3
+
+    and-int/lit8 p3, p5, 0x8
+
+    if-eqz p3, :cond_1
+
+    sget-object p4, La0/f;->b:La0/f;
+
+    :cond_1
+    move-object v4, p4
+
+    and-int/lit8 p3, p5, 0x20
+
+    if-eqz p3, :cond_2
+
+    const/4 p3, 0x3
+
+    :goto_0
+    move v6, p3
+
+    goto :goto_1
+
+    :cond_2
+    const/4 p3, 0x0
+
+    goto :goto_0
+
+    :goto_1
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    invoke-interface/range {v0 .. v6}, La0/d;->x(Lya/ga;Lya/ha;FLa0/c;Lya/l;I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract C(JFFJJFLa0/c;Lya/l;I)V
+.end method
+
+.method public abstract F(JFJFLa0/c;Lya/l;I)V
+.end method
+
+.method public abstract V()Le5/l;
+.end method
+
+.method public abstract b0(Lya/g;JJJJFLa0/c;Lya/l;II)V
+.end method
+
+.method public g()J
+    .locals 2
+
+    invoke-interface {p0}, La0/d;->V()Le5/l;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Le5/l;->o()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public abstract getLayoutDirection()Ll5/k;
+.end method
+
+.method public abstract k0(JJJFIFLya/l;I)V
+.end method
+
+.method public t()J
+    .locals 2
+
+    invoke-interface {p0}, La0/d;->V()Le5/l;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Le5/l;->o()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, La/a;->a0(J)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public abstract x(Lya/ga;Lya/ha;FLa0/c;Lya/l;I)V
+.end method
+
+.method public abstract z(JJJFLa0/c;Lya/l;I)V
 .end method

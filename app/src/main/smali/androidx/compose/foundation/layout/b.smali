@@ -4,49 +4,49 @@
 
 
 # direct methods
-.method public static final a(LR/q;Lq/V;)LR/q;
+.method public static final a(Lra/q;Lq/va;)Lra/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/foundation/layout/PaddingValuesElement;
 
-    invoke-direct {v0, p1}, Landroidx/compose/foundation/layout/PaddingValuesElement;-><init>(Lq/V;)V
+    invoke-direct {v0, p1}, Landroidx/compose/foundation/layout/PaddingValuesElement;-><init>(Lq/va;)V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final b(LR/q;F)LR/q;
+.method public static final b(Lra/q;F)Lra/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/foundation/layout/PaddingElement;
 
     invoke-direct {v0, p1, p1, p1, p1}, Landroidx/compose/foundation/layout/PaddingElement;-><init>(FFFF)V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final c(LR/q;FF)LR/q;
+.method public static final c(Lra/q;FF)Lra/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/foundation/layout/PaddingElement;
 
     invoke-direct {v0, p1, p2, p1, p2}, Landroidx/compose/foundation/layout/PaddingElement;-><init>(FFFF)V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static d(LR/q;FFI)LR/q;
+.method public static d(Lra/q;FFI)Lra/q;
     .locals 2
 
     and-int/lit8 v0, p3, 0x1
@@ -65,14 +65,14 @@
     int-to-float p2, v1
 
     :cond_1
-    invoke-static {p0, p1, p2}, Landroidx/compose/foundation/layout/b;->c(LR/q;FF)LR/q;
+    invoke-static {p0, p1, p2}, Landroidx/compose/foundation/layout/b;->c(Lra/q;FF)Lra/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static e(LR/q;FFFI)LR/q;
+.method public static e(Lra/q;FFFI)Lra/q;
     .locals 2
 
     and-int/lit8 v0, p4, 0x1
@@ -104,21 +104,21 @@
 
     invoke-direct {v0, p1, p2, p3, p4}, Landroidx/compose/foundation/layout/PaddingElement;-><init>(FFFF)V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final f(LR/q;)LR/q;
+.method public static final f(Lra/q;)Lra/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 

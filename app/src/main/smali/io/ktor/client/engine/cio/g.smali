@@ -4,28 +4,28 @@
 
 
 # instance fields
-.field public j:LE0/l;
+.field public j:Le5/l;
 
 .field public k:Ljava/lang/Object;
 
 .field public l:Lh4/c;
 
-.field public m:LA4/f;
+.field public m:La9/f;
 
 .field public synthetic n:Ljava/lang/Object;
 
-.field public final synthetic o:LE0/l;
+.field public final synthetic o:Le5/l;
 
 .field public p:I
 
 
 # direct methods
-.method public constructor <init>(LE0/l;La4/c;)V
+.method public constructor <init>(Le5/l;La4/c;)V
     .locals 0
 
-    iput-object p1, p0, Lio/ktor/client/engine/cio/g;->o:LE0/l;
+    iput-object p1, p0, Lio/ktor/client/engine/cio/g;->o:Le5/l;
 
-    invoke-direct {p0, p2}, La4/c;-><init>(LY3/d;)V
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly8/d;)V
 
     return-void
 .end method
@@ -45,11 +45,11 @@
 
     iput p1, p0, Lio/ktor/client/engine/cio/g;->p:I
 
-    iget-object p1, p0, Lio/ktor/client/engine/cio/g;->o:LE0/l;
+    iget-object p1, p0, Lio/ktor/client/engine/cio/g;->o:Le5/l;
 
     const/4 v0, 0x0
 
-    invoke-virtual {p1, v0, v0, p0}, LE0/l;->d(Lz3/l;LB3/e;La4/c;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, v0, p0}, Le5/l;->d(Lz3/l;Lb8/e;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 

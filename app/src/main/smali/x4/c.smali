@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lx4/a;->b:LI2/i;
+    sget-object v1, Lx4/a;->b:Li7/i;
 
     if-ne v0, v1, :cond_0
 

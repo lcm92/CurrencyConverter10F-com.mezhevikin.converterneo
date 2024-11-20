@@ -36,7 +36,7 @@
 
     invoke-direct {v0, v1}, Lio/ktor/utils/io/D;-><init>(Z)V
 
-    invoke-static {v0}, LH2/b;->F(Lio/ktor/utils/io/L;)V
+    invoke-static {v0}, Lh7/b;->F(Lio/ktor/utils/io/L;)V
 
     return-object v0
 .end method

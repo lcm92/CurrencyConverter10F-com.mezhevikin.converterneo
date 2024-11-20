@@ -3,4 +3,4 @@
 .source "SourceFile"
 
 # interfaces
-.implements LY3/g;
+.implements Ly8/g;

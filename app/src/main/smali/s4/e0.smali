@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/U;
+.implements Ls4/ua;
 
 
 # static fields
@@ -318,7 +318,7 @@
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_3
-    sget-object p1, Ls4/y;->h:LI2/i;
+    sget-object p1, Ls4/y;->h:Li7/i;
 
     invoke-virtual {v0, p0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 

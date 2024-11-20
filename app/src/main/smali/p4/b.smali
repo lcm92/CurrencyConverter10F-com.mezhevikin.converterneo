@@ -28,7 +28,7 @@
 .method public final iterator()Ljava/util/Iterator;
     .locals 1
 
-    sget-object v0, LV3/s;->g:LV3/s;
+    sget-object v0, Lv8/s;->g:Lv8/s;
 
     return-object v0
 .end method

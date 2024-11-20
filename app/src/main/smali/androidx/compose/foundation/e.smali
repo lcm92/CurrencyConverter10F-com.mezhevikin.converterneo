@@ -14,7 +14,7 @@
     return-void
 .end method
 
-.method public static final a(LR/q;ZLp/i;)LR/q;
+.method public static final a(Lra/q;ZLp/i;)Lra/q;
     .locals 0
 
     if-eqz p1, :cond_0
@@ -26,10 +26,10 @@
     goto :goto_0
 
     :cond_0
-    sget-object p1, LR/n;->a:LR/n;
+    sget-object p1, Lra/n;->a:Lra/n;
 
     :goto_0
-    invoke-interface {p0, p1}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, p1}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 

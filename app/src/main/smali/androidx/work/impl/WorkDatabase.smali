@@ -42,16 +42,16 @@
 .method public abstract j()Ly/s;
 .end method
 
-.method public abstract k()LE0/l;
+.method public abstract k()Le5/l;
 .end method
 
 .method public abstract l()Ly/s;
 .end method
 
-.method public abstract m()LC1/j;
+.method public abstract m()Lc6/j;
 .end method
 
-.method public abstract n()LE1/j;
+.method public abstract n()Le6/j;
 .end method
 
 .method public abstract o()Ly/s;

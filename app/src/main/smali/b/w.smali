@@ -1,27 +1,72 @@
-.class public abstract LB/w;
-.super Ljava/lang/Object;
+.class public final Lb/w;
+.super Li4/i;
 .source "SourceFile"
 
+# interfaces
+.implements Lh4/a;
 
-# static fields
-.field public static final a:Ll/B0;
+
+# instance fields
+.field public final synthetic h:I
+
+.field public final synthetic i:Lb/ca;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public synthetic constructor <init>(Lb/ca;I)V
+    .locals 0
 
-    new-instance v0, Ll/B0;
+    iput p2, p0, Lb/w;->h:I
 
-    sget-object v1, Ll/A;->c:LA/s;
+    iput-object p1, p0, Lb/w;->i:Lb/ca;
 
-    const/4 v2, 0x2
+    const/4 p1, 0x0
 
-    const/16 v3, 0xf
-
-    invoke-direct {v0, v3, v1, v2}, Ll/B0;-><init>(ILA/s;I)V
-
-    sput-object v0, LB/w;->a:Ll/B0;
+    invoke-direct {p0, p1}, Li4/i;-><init>(I)V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final b()Ljava/lang/Object;
+    .locals 1
+
+    iget v0, p0, Lb/w;->h:I
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Lb/w;->i:Lb/ca;
+
+    invoke-virtual {v0}, Lb/ca;->c()V
+
+    sget-object v0, Lu8/y;->a:Lu8/y;
+
+    return-object v0
+
+    :pswitch_0
+    iget-object v0, p0, Lb/w;->i:Lb/ca;
+
+    invoke-virtual {v0}, Lb/ca;->b()V
+
+    sget-object v0, Lu8/y;->a:Lu8/y;
+
+    return-object v0
+
+    :pswitch_1
+    iget-object v0, p0, Lb/w;->i:Lb/ca;
+
+    invoke-virtual {v0}, Lb/ca;->c()V
+
+    sget-object v0, Lu8/y;->a:Lu8/y;
+
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

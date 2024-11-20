@@ -35,7 +35,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sget-object v0, Lx4/a;->a:LI2/i;
+    sget-object v0, Lx4/a;->a:Li7/i;
 
     iput-object v0, p0, Lx4/b;->_consensus:Ljava/lang/Object;
 
@@ -53,11 +53,11 @@
 
     move-result-object v1
 
-    sget-object v2, Lx4/a;->a:LI2/i;
+    sget-object v2, Lx4/a;->a:Li7/i;
 
     if-ne v1, v2, :cond_2
 
-    invoke-virtual {p0, p1}, Lx4/b;->c(Ljava/lang/Object;)LI2/i;
+    invoke-virtual {p0, p1}, Lx4/b;->c(Ljava/lang/Object;)Li7/i;
 
     move-result-object v3
 
@@ -103,5 +103,5 @@
 .method public abstract b(Ljava/lang/Object;Ljava/lang/Object;)V
 .end method
 
-.method public abstract c(Ljava/lang/Object;)LI2/i;
+.method public abstract c(Ljava/lang/Object;)Li7/i;
 .end method

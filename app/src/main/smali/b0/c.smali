@@ -1,61 +1,21 @@
-.class public final LB0/c;
-.super Lv2/h;
+.class public final Lb0/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final i:Ljava/lang/CharSequence;
-
-.field public final j:Landroid/text/TextPaint;
+# static fields
+.field public static final synthetic a:Lb0/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lb0/c;
 
-    iput-object p1, p0, LB0/c;->i:Ljava/lang/CharSequence;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, LB0/c;->j:Landroid/text/TextPaint;
+    sput-object v0, Lb0/c;->a:Lb0/c;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final N(I)I
-    .locals 3
-
-    iget-object v0, p0, LB0/c;->i:Ljava/lang/CharSequence;
-
-    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
-
-    move-result v1
-
-    iget-object v2, p0, LB0/c;->j:Landroid/text/TextPaint;
-
-    invoke-static {v2, v0, v1, p1}, LA0/i;->n(Landroid/text/TextPaint;Ljava/lang/CharSequence;II)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final P(I)I
-    .locals 3
-
-    iget-object v0, p0, LB0/c;->i:Ljava/lang/CharSequence;
-
-    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
-
-    move-result v1
-
-    iget-object v2, p0, LB0/c;->j:Landroid/text/TextPaint;
-
-    invoke-static {v2, v0, v1, p1}, LA0/i;->b(Landroid/text/TextPaint;Ljava/lang/CharSequence;II)I
-
-    move-result p1
-
-    return p1
 .end method

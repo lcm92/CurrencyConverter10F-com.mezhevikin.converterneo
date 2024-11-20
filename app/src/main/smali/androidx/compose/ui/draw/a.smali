@@ -4,56 +4,56 @@
 
 
 # direct methods
-.method public static final a(LR/q;Lh4/c;)LR/q;
+.method public static final a(Lra/q;Lh4/c;)Lra/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/draw/DrawBehindElement;
 
     invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawBehindElement;-><init>(Lh4/c;)V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final b(LR/q;Lh4/c;)LR/q;
+.method public static final b(Lra/q;Lh4/c;)Lra/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/draw/DrawWithCacheElement;
 
     invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawWithCacheElement;-><init>(Lh4/c;)V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final c(LR/q;Lh4/c;)LR/q;
+.method public static final c(Lra/q;Lh4/c;)Lra/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/draw/DrawWithContentElement;
 
     invoke-direct {v0, p1}, Landroidx/compose/ui/draw/DrawWithContentElement;-><init>(Lh4/c;)V
 
-    invoke-interface {p0, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static d(LR/q;Ld0/b;LR/d;Lo0/I;FLY/l;I)LR/q;
+.method public static d(Lra/q;Ld0/b;Lra/d;Lo0/ia;FLya/l;I)Lra/q;
     .locals 7
 
     and-int/lit8 v0, p6, 0x4
 
     if-eqz v0, :cond_0
 
-    sget-object p2, LR/b;->k:LR/i;
+    sget-object p2, Lra/b;->k:Lra/i;
 
     :cond_0
     move-object v3, p2
@@ -79,9 +79,9 @@
 
     move-object v6, p5
 
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/draw/PainterElement;-><init>(Ld0/b;ZLR/d;Lo0/I;FLY/l;)V
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/draw/PainterElement;-><init>(Ld0/b;ZLra/d;Lo0/ia;FLya/l;)V
 
-    invoke-interface {p0, p2}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p0, p2}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p0
 

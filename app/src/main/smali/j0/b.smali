@@ -1,78 +1,49 @@
-.class public final LJ0/b;
-.super Landroid/text/style/CharacterStyle;
+.class public final Lj0/b;
+.super La4/c;
 .source "SourceFile"
-
-# interfaces
-.implements Landroid/text/style/UpdateAppearance;
 
 
 # instance fields
-.field public final a:LY/K;
+.field public synthetic j:Ljava/lang/Object;
 
-.field public final b:F
+.field public final synthetic k:Le5/l;
 
-.field public final c:LF/j0;
-
-.field public final d:LF/F;
+.field public l:I
 
 
 # direct methods
-.method public constructor <init>(LY/K;F)V
-    .locals 2
+.method public constructor <init>(Le5/l;La4/c;)V
+    .locals 0
 
-    invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
+    iput-object p1, p0, Lj0/b;->k:Le5/l;
 
-    iput-object p1, p0, LJ0/b;->a:LY/K;
-
-    iput p2, p0, LJ0/b;->b:F
-
-    new-instance p1, LX/f;
-
-    const-wide v0, 0x7fc000007fc00000L    # 2.247117487993712E307
-
-    invoke-direct {p1, v0, v1}, LX/f;-><init>(J)V
-
-    sget-object p2, LF/W;->l:LF/W;
-
-    invoke-static {p1, p2}, LF/d;->J(Ljava/lang/Object;LF/M0;)LF/j0;
-
-    move-result-object p1
-
-    iput-object p1, p0, LJ0/b;->c:LF/j0;
-
-    new-instance p1, LA/K;
-
-    const/16 p2, 0xb
-
-    invoke-direct {p1, p2, p0}, LA/K;-><init>(ILjava/lang/Object;)V
-
-    invoke-static {p1}, LF/d;->C(Lh4/a;)LF/F;
-
-    move-result-object p1
-
-    iput-object p1, p0, LJ0/b;->d:LF/F;
+    invoke-direct {p0, p2}, La4/c;-><init>(Ly8/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final updateDrawState(Landroid/text/TextPaint;)V
-    .locals 1
+.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    iget v0, p0, LJ0/b;->b:F
+    iput-object p1, p0, Lj0/b;->j:Ljava/lang/Object;
 
-    invoke-static {p1, v0}, LH0/k;->b(Landroid/text/TextPaint;F)V
+    iget p1, p0, Lj0/b;->l:I
 
-    iget-object v0, p0, LJ0/b;->d:LF/F;
+    const/high16 v0, -0x80000000
 
-    invoke-virtual {v0}, LF/F;->getValue()Ljava/lang/Object;
+    or-int/2addr p1, v0
 
-    move-result-object v0
+    iput p1, p0, Lj0/b;->l:I
 
-    check-cast v0, Landroid/graphics/Shader;
+    iget-object p1, p0, Lj0/b;->k:Le5/l;
 
-    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+    const-wide/16 v0, 0x0
 
-    return-void
+    invoke-virtual {p1, v0, v1, p0}, Le5/l;->g(JLa4/c;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

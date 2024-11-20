@@ -20,7 +20,7 @@
 
 .field public final h:Ljava/util/ArrayList;
 
-.field public final i:Lv4/P;
+.field public final i:Lv4/pa;
 
 
 # direct methods
@@ -61,11 +61,11 @@
 
     iput-object v1, p0, Landroidx/lifecycle/v;->d:Ljava/lang/ref/WeakReference;
 
-    invoke-static {v0}, Lv4/F;->b(Ljava/lang/Object;)Lv4/P;
+    invoke-static {v0}, Lv4/fa;->b(Ljava/lang/Object;)Lv4/pa;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/lifecycle/v;->i:Lv4/P;
+    iput-object p1, p0, Landroidx/lifecycle/v;->i:Lv4/pa;
 
     return-void
 .end method
@@ -544,7 +544,7 @@
 
     const-string v1, " must be called on the main thread"
 
-    invoke-static {v0, p1, v1}, Lk/P;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, v1}, Lk/pa;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -783,9 +783,9 @@
 
     iget-object v0, p0, Landroidx/lifecycle/v;->c:Landroidx/lifecycle/o;
 
-    iget-object v1, p0, Landroidx/lifecycle/v;->i:Lv4/P;
+    iget-object v1, p0, Landroidx/lifecycle/v;->i:Lv4/pa;
 
-    invoke-virtual {v1, v0}, Lv4/P;->i(Ljava/lang/Object;)V
+    invoke-virtual {v1, v0}, Lv4/pa;->i(Ljava/lang/Object;)V
 
     return-void
 

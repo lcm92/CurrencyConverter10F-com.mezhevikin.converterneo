@@ -168,7 +168,7 @@
 
     const/16 v2, 0x29
 
-    invoke-static {v0, v1, v2}, LA/m;->k(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Laa/m;->k(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/draw/DrawWithCacheElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -77,32 +77,32 @@
     return v0
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 3
 
-    new-instance v0, LV/b;
+    new-instance v0, Lva/b;
 
-    new-instance v1, LV/c;
+    new-instance v1, Lva/c;
 
-    invoke-direct {v1}, LV/c;-><init>()V
+    invoke-direct {v1}, Lva/c;-><init>()V
 
     iget-object v2, p0, Landroidx/compose/ui/draw/DrawWithCacheElement;->a:Lh4/c;
 
-    invoke-direct {v0, v1, v2}, LV/b;-><init>(LV/c;Lh4/c;)V
+    invoke-direct {v0, v1, v2}, Lva/b;-><init>(Lva/c;Lh4/c;)V
 
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 1
 
-    check-cast p1, LV/b;
+    check-cast p1, Lva/b;
 
     iget-object v0, p0, Landroidx/compose/ui/draw/DrawWithCacheElement;->a:Lh4/c;
 
-    iput-object v0, p1, LV/b;->v:Lh4/c;
+    iput-object v0, p1, Lva/b;->v:Lh4/c;
 
-    invoke-virtual {p1}, LV/b;->y0()V
+    invoke-virtual {p1}, Lva/b;->y0()V
 
     return-void
 .end method

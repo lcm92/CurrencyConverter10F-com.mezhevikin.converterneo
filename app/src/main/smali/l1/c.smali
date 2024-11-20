@@ -1,27 +1,11 @@
-.class public final LL1/c;
+.class public interface abstract Ll1/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/net/URL;
+# virtual methods
+.method public abstract f(ILjava/io/Serializable;)V
+.end method
 
-.field public final b:LM1/i;
-
-.field public final c:Ljava/lang/String;
-
-
-# direct methods
-.method public constructor <init>(Ljava/net/URL;LM1/i;Ljava/lang/String;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, LL1/c;->a:Ljava/net/URL;
-
-    iput-object p2, p0, LL1/c;->b:LM1/i;
-
-    iput-object p3, p0, LL1/c;->c:Ljava/lang/String;
-
-    return-void
+.method public abstract i()V
 .end method

@@ -1,27 +1,27 @@
 .class final Landroidx/compose/ui/focus/FocusPropertiesElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:LW/m;
+.field public final a:Lwa/m;
 
 
 # direct methods
-.method public constructor <init>(LW/m;)V
+.method public constructor <init>(Lwa/m;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:LW/m;
+    iput-object p1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Lwa/m;
 
     return-void
 .end method
@@ -49,9 +49,9 @@
     :cond_1
     check-cast p1, Landroidx/compose/ui/focus/FocusPropertiesElement;
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:LW/m;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Lwa/m;
 
-    iget-object p1, p1, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:LW/m;
+    iget-object p1, p1, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Lwa/m;
 
     invoke-static {v1, p1}, Li4/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -68,7 +68,7 @@
 .method public final hashCode()I
     .locals 1
 
-    sget-object v0, LW/i;->i:LW/i;
+    sget-object v0, Lwa/i;->i:Lwa/i;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -77,28 +77,28 @@
     return v0
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 2
 
-    new-instance v0, LW/o;
+    new-instance v0, Lwa/o;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:LW/m;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Lwa/m;
 
-    iput-object v1, v0, LW/o;->t:LW/m;
+    iput-object v1, v0, Lwa/o;->t:Lwa/m;
 
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 1
 
-    check-cast p1, LW/o;
+    check-cast p1, Lwa/o;
 
-    iget-object v0, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:LW/m;
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Lwa/m;
 
-    iput-object v0, p1, LW/o;->t:LW/m;
+    iput-object v0, p1, Lwa/o;->t:Lwa/m;
 
     return-void
 .end method
@@ -112,7 +112,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:LW/m;
+    iget-object v1, p0, Landroidx/compose/ui/focus/FocusPropertiesElement;->a:Lwa/m;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

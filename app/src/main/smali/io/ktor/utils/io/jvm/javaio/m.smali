@@ -22,7 +22,7 @@
 
 
 # virtual methods
-.method public final u(LY3/i;Ljava/lang/Runnable;)V
+.method public final u(Ly8/i;Ljava/lang/Runnable;)V
     .locals 1
 
     const-string v0, "context"
@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method public final z(LY3/i;)Z
+.method public final z(Ly8/i;)Z
     .locals 1
 
     const-string v0, "context"

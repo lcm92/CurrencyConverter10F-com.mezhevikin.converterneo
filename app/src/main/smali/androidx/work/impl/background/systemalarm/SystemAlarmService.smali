@@ -59,13 +59,13 @@
 
     invoke-virtual {v0, v1, v2, v4}, Lv1/m;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
-    sget-object v0, LF1/k;->a:Ljava/lang/String;
+    sget-object v0, Lf6/k;->a:Ljava/lang/String;
 
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sget-object v1, LF1/k;->b:Ljava/util/WeakHashMap;
+    sget-object v1, Lf6/k;->b:Ljava/util/WeakHashMap;
 
     monitor-enter v1
 
@@ -124,7 +124,7 @@
 
     move-result-object v4
 
-    sget-object v5, LF1/k;->a:Ljava/lang/String;
+    sget-object v5, Lf6/k;->a:Ljava/lang/String;
 
     new-array v6, v3, [Ljava/lang/Throwable;
 

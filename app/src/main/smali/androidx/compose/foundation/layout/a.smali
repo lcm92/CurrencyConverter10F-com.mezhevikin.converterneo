@@ -25,16 +25,16 @@
 
 
 # virtual methods
-.method public final a(LR/q;LR/d;)LR/q;
+.method public final a(Lra/q;Lra/d;)Lra/q;
     .locals 1
 
     new-instance v0, Landroidx/compose/foundation/layout/BoxChildDataElement;
 
-    check-cast p2, LR/i;
+    check-cast p2, Lra/i;
 
-    invoke-direct {v0, p2}, Landroidx/compose/foundation/layout/BoxChildDataElement;-><init>(LR/i;)V
+    invoke-direct {v0, p2}, Landroidx/compose/foundation/layout/BoxChildDataElement;-><init>(Lra/i;)V
 
-    invoke-interface {p1, v0}, LR/q;->i(LR/q;)LR/q;
+    invoke-interface {p1, v0}, Lra/q;->i(Lra/q;)Lra/q;
 
     move-result-object p1
 

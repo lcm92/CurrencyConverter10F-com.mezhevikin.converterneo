@@ -162,13 +162,13 @@
 .method public j(Ljava/lang/String;)Landroid/database/Cursor;
     .locals 3
 
-    new-instance v0, LI2/i;
+    new-instance v0, Li7/i;
 
     const/16 v1, 0x8
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, p1, v1, v2}, LI2/i;-><init>(Ljava/lang/String;IZ)V
+    invoke-direct {v0, p1, v1, v2}, Li7/i;-><init>(Ljava/lang/String;IZ)V
 
     invoke-virtual {p0, v0}, Lr1/b;->m(Lq1/c;)Landroid/database/Cursor;
 

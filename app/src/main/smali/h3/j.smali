@@ -1,187 +1,92 @@
-.class public final LH3/j;
+.class public final Lh3/j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/Iterator;
-.implements Lj4/a;
+.implements Ly8/g;
+
+
+# static fields
+.field public static final h:Lo2/g;
 
 
 # instance fields
-.field public final synthetic g:I
-
-.field public final h:Ljava/util/Iterator;
-
-.field public final synthetic i:Ljava/lang/Object;
+.field public final g:Ly8/i;
 
 
 # direct methods
-.method public constructor <init>(LH3/k;)V
+.method static constructor <clinit>()V
     .locals 1
 
-    const/4 v0, 0x0
+    new-instance v0, Lo2/g;
 
-    iput v0, p0, LH3/j;->g:I
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, LH3/j;->i:Ljava/lang/Object;
-
-    .line 3
-    iget-object p1, p1, LH3/k;->g:Ljava/util/Set;
-
-    .line 4
-    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    iput-object p1, p0, LH3/j;->h:Ljava/util/Iterator;
+    sput-object v0, Lh3/j;->h:Lo2/g;
 
     return-void
 .end method
 
-.method public constructor <init>(Lp4/k;)V
+.method public constructor <init>(Ly8/i;)V
     .locals 1
 
-    const/4 v0, 0x1
+    const-string v0, "callContext"
 
-    iput v0, p0, LH3/j;->g:I
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    iput-object p1, p0, LH3/j;->i:Ljava/lang/Object;
-
-    .line 7
-    iget-object p1, p1, Lp4/k;->b:Ljava/lang/Object;
-
-    check-cast p1, Lp4/e;
-
-    .line 8
-    invoke-interface {p1}, Lp4/e;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    iput-object p1, p0, LH3/j;->h:Ljava/util/Iterator;
+    iput-object p1, p0, Lh3/j;->g:Ly8/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final hasNext()Z
+.method public final f(Ly8/i;)Ly8/i;
+    .locals 0
+
+    invoke-static {p0, p1}, Lk4/a;->W(Ly8/g;Ly8/i;)Ly8/i;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final getKey()Ly8/h;
     .locals 1
 
-    iget v0, p0, LH3/j;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, LH3/j;->h:Ljava/util/Iterator;
-
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    return v0
-
-    :pswitch_0
-    iget-object v0, p0, LH3/j;->h:Ljava/util/Iterator;
-
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    return v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final next()Ljava/lang/Object;
-    .locals 2
-
-    iget v0, p0, LH3/j;->g:I
-
-    packed-switch v0, :pswitch_data_0
-
-    iget-object v0, p0, LH3/j;->i:Ljava/lang/Object;
-
-    check-cast v0, Lp4/k;
-
-    iget-object v0, v0, Lp4/k;->c:Li4/i;
-
-    iget-object v1, p0, LH3/j;->h:Ljava/util/Iterator;
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
+    sget-object v0, Lh3/j;->h:Lo2/g;
 
     return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, LH3/j;->i:Ljava/lang/Object;
-
-    check-cast v0, LH3/k;
-
-    iget-object v0, v0, LH3/k;->h:Li4/i;
-
-    iget-object v1, p0, LH3/j;->h:Ljava/util/Iterator;
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Lh4/c;->j(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method public final remove()V
-    .locals 2
+.method public final h(Ljava/lang/Object;Lh4/e;)Ljava/lang/Object;
+    .locals 0
 
-    iget v0, p0, LH3/j;->g:I
+    invoke-interface {p2, p1, p0}, Lh4/e;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    packed-switch v0, :pswitch_data_0
+    move-result-object p1
 
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    return-object p1
+.end method
 
-    const-string v1, "Operation is not supported for read-only collection"
+.method public final n(Ly8/h;)Ly8/i;
+    .locals 0
 
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lk4/a;->T(Ly8/g;Ly8/h;)Ly8/i;
 
-    throw v0
+    move-result-object p1
 
-    :pswitch_0
-    iget-object v0, p0, LH3/j;->h:Ljava/util/Iterator;
+    return-object p1
+.end method
 
-    invoke-interface {v0}, Ljava/util/Iterator;->remove()V
+.method public final t(Ly8/h;)Ly8/g;
+    .locals 0
 
-    return-void
+    invoke-static {p0, p1}, Lk4/a;->H(Ly8/g;Ly8/h;)Ly8/g;
 
-    nop
+    move-result-object p1
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

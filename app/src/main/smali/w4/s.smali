@@ -36,7 +36,7 @@
 
     move-result p1
 
-    check-cast p2, LY3/g;
+    check-cast p2, Ly8/g;
 
     add-int/lit8 p1, p1, 0x1
 

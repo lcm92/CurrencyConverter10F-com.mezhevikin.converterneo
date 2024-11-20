@@ -20,7 +20,7 @@
 
 .field public f:Z
 
-.field public final g:LI1/a;
+.field public final g:Li6/a;
 
 
 # direct methods
@@ -57,13 +57,13 @@
 
     iput-object v0, p0, Landroidx/lifecycle/y;->d:Ljava/lang/Object;
 
-    new-instance v1, LI1/a;
+    new-instance v1, Li6/a;
 
     const/4 v2, 0x4
 
-    invoke-direct {v1, v2, p0}, LI1/a;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Li6/a;-><init>(ILjava/lang/Object;)V
 
-    iput-object v1, p0, Landroidx/lifecycle/y;->g:LI1/a;
+    iput-object v1, p0, Landroidx/lifecycle/y;->g:Li6/a;
 
     iput-object v0, p0, Landroidx/lifecycle/y;->c:Ljava/lang/Object;
 

@@ -1,81 +1,86 @@
-.class public final LT2/b;
-.super Ljava/io/OutputStream;
+.class public final Lt2/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final b:Lt2/b;
+
+
 # instance fields
-.field public g:J
+.field public a:Le5/b;
 
 
-# virtual methods
-.method public final write(I)V
-    .locals 4
-
-    .line 1
-    iget-wide v0, p0, LT2/b;->g:J
-
-    const-wide/16 v2, 0x1
-
-    add-long/2addr v0, v2
-
-    iput-wide v0, p0, LT2/b;->g:J
-
-    return-void
-.end method
-
-.method public final write([B)V
-    .locals 4
-
-    .line 2
-    iget-wide v0, p0, LT2/b;->g:J
-
-    array-length p1, p1
-
-    int-to-long v2, p1
-
-    add-long/2addr v0, v2
-
-    iput-wide v0, p0, LT2/b;->g:J
-
-    return-void
-.end method
-
-.method public final write([BII)V
+# direct methods
+.method static constructor <clinit>()V
     .locals 2
 
-    if-ltz p2, :cond_0
+    new-instance v0, Lt2/b;
 
-    .line 3
-    array-length v0, p1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    if-gt p2, v0, :cond_0
+    const/4 v1, 0x0
 
-    if-ltz p3, :cond_0
+    iput-object v1, v0, Lt2/b;->a:Le5/b;
 
-    add-int/2addr p2, p3
-
-    array-length p1, p1
-
-    if-gt p2, p1, :cond_0
-
-    if-ltz p2, :cond_0
-
-    .line 4
-    iget-wide p1, p0, LT2/b;->g:J
-
-    int-to-long v0, p3
-
-    add-long/2addr p1, v0
-
-    iput-wide p1, p0, LT2/b;->g:J
+    sput-object v0, Lt2/b;->b:Lt2/b;
 
     return-void
+.end method
 
-    .line 5
+.method public static a(Landroid/content/Context;)Le5/b;
+    .locals 3
+
+    sget-object v0, Lt2/b;->b:Lt2/b;
+
+    monitor-enter v0
+
+    :try_start_0
+    iget-object v1, v0, Lt2/b;->a:Le5/b;
+
+    if-nez v1, :cond_1
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_1
+
     :cond_0
-    new-instance p1, Ljava/lang/IndexOutOfBoundsException;
+    :goto_0
+    new-instance v1, Le5/b;
 
-    invoke-direct {p1}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+    const/4 v2, 0x0
 
-    throw p1
+    invoke-direct {v1, p0, v2}, Le5/b;-><init>(Landroid/content/Context;B)V
+
+    iput-object v1, v0, Lt2/b;->a:Le5/b;
+
+    :cond_1
+    iget-object p0, v0, Lt2/b;->a:Le5/b;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    return-object p0
+
+    :goto_1
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p0
 .end method

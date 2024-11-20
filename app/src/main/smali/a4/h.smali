@@ -1,60 +1,62 @@
-.class public final synthetic LA4/h;
-.super Li4/f;
+.class public abstract La4/h;
+.super La4/g;
 .source "SourceFile"
 
 # interfaces
-.implements Lh4/e;
+.implements Li4/e;
 
 
-# static fields
-.field public static final o:LA4/h;
+# instance fields
+.field public final h:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(ILy8/d;)V
+    .locals 0
 
-    new-instance v6, LA4/h;
+    invoke-direct {p0, p2}, La4/g;-><init>(Ly8/d;)V
 
-    const-string v4, "createSegment(JLkotlinx/coroutines/sync/SemaphoreSegment;)Lkotlinx/coroutines/sync/SemaphoreSegment;"
-
-    const/4 v5, 0x1
-
-    const/4 v1, 0x2
-
-    const-class v2, LA4/j;
-
-    const-string v3, "createSegment"
-
-    move-object v0, v6
-
-    invoke-direct/range {v0 .. v5}, Li4/f;-><init>(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    sput-object v6, LA4/h;->o:LA4/h;
+    iput p1, p0, La4/h;->h:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final c()I
+    .locals 1
 
-    check-cast p1, Ljava/lang/Number;
+    iget v0, p0, La4/h;->h:I
 
-    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+    return v0
+.end method
 
-    move-result-wide v0
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    check-cast p2, LA4/k;
+    iget-object v0, p0, La4/a;->g:Ly8/d;
 
-    sget p1, LA4/j;->a:I
+    if-nez v0, :cond_0
 
-    new-instance p1, LA4/k;
+    sget-object v0, Li4/t;->a:Li4/u;
 
-    const/4 v2, 0x0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {p1, v0, v1, p2, v2}, LA4/k;-><init>(JLA4/k;I)V
+    invoke-static {p0}, Li4/u;->a(Li4/e;)Ljava/lang/String;
 
-    return-object p1
+    move-result-object v0
+
+    const-string v1, "renderLambdaToString(...)"
+
+    invoke-static {v0, v1}, Li4/h;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-super {p0}, La4/a;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
 .end method

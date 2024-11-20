@@ -7,5 +7,5 @@
 .method public abstract a(Lw4/b;)Z
 .end method
 
-.method public abstract b(Lw4/b;)[LY3/d;
+.method public abstract b(Lw4/b;)[Ly8/d;
 .end method

@@ -28,11 +28,11 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, LA2/h;
+    new-instance v0, La7/h;
 
     const/16 v1, 0xb
 
-    invoke-direct {v0, v1}, LA2/h;-><init>(I)V
+    invoke-direct {v0, v1}, La7/h;-><init>(I)V
 
     sput-object v0, Lcom/google/android/gms/common/api/Scope;->CREATOR:Landroid/os/Parcelable$Creator;
 

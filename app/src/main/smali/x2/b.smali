@@ -1,43 +1,29 @@
-.class public abstract LX2/b;
+.class public abstract Lx2/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:LE0/s;
+.field public static final a:Ll2/c;
+
+.field public static final b:[Ll2/c;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 1
 
-    sget-object v0, LE0/A;->k:LE0/A;
+    new-instance v0, Ll2/c;
 
-    new-instance v1, LE0/H;
+    invoke-direct {v0}, Ll2/c;-><init>()V
 
-    new-instance v2, LE0/z;
+    sput-object v0, Lx2/b;->a:Ll2/c;
 
-    const/4 v3, 0x0
-
-    new-array v4, v3, [LE0/y;
-
-    invoke-direct {v2, v4}, LE0/z;-><init>([LE0/y;)V
-
-    invoke-direct {v1, v0, v3, v2, v3}, LE0/H;-><init>(LE0/A;ILE0/z;I)V
-
-    filled-new-array {v1}, [LE0/H;
+    filled-new-array {v0}, [Ll2/c;
 
     move-result-object v0
 
-    new-instance v1, LE0/s;
-
-    invoke-static {v0}, LV3/j;->b0([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-direct {v1, v0}, LE0/s;-><init>(Ljava/util/List;)V
-
-    sput-object v1, LX2/b;->a:LE0/s;
+    sput-object v0, Lx2/b;->b:[Ll2/c;
 
     return-void
 .end method

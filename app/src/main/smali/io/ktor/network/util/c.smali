@@ -10,7 +10,7 @@
 
 .field public final c:La4/i;
 
-.field public final d:Ls4/B;
+.field public final d:Ls4/ba;
 
 .field volatile synthetic isStarted:I
 
@@ -54,7 +54,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-interface {p5}, Ls4/x;->b()LY3/i;
+    invoke-interface {p5}, Ls4/x;->b()Ly8/i;
 
     move-result-object p2
 
@@ -68,22 +68,22 @@
 
     invoke-direct {p6, p1}, Ls4/w;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {p2, p6}, LY3/i;->f(LY3/i;)LY3/i;
+    invoke-interface {p2, p6}, Ly8/i;->f(Ly8/i;)Ly8/i;
 
     move-result-object p1
 
     new-instance p2, Lio/ktor/network/util/b;
 
-    invoke-direct {p2, p0, p3}, Lio/ktor/network/util/b;-><init>(Lio/ktor/network/util/c;LY3/d;)V
+    invoke-direct {p2, p0, p3}, Lio/ktor/network/util/b;-><init>(Lio/ktor/network/util/c;Ly8/d;)V
 
     const/4 p3, 0x2
 
-    invoke-static {p5, p1, p4, p2, p3}, Ls4/y;->u(Ls4/x;LY3/i;ILh4/e;I)Ls4/B;
+    invoke-static {p5, p1, p4, p2, p3}, Ls4/y;->u(Ls4/x;Ly8/i;ILh4/e;I)Ls4/ba;
 
     move-result-object p3
 
     :goto_0
-    iput-object p3, p0, Lio/ktor/network/util/c;->d:Ls4/B;
+    iput-object p3, p0, Lio/ktor/network/util/c;->d:Ls4/ba;
 
     return-void
 .end method

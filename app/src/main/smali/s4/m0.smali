@@ -3,4 +3,4 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ls4/X;
+.implements Ls4/xa;

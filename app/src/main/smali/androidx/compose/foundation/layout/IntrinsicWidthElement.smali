@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/IntrinsicWidthElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -66,36 +66,36 @@
     return v1
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 2
 
-    new-instance v0, Lq/S;
+    new-instance v0, Lq/sa;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
     const/4 v1, 0x2
 
-    iput v1, v0, Lq/S;->t:I
+    iput v1, v0, Lq/sa;->t:I
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lq/S;->u:Z
+    iput-boolean v1, v0, Lq/sa;->u:Z
 
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 1
 
-    check-cast p1, Lq/S;
+    check-cast p1, Lq/sa;
 
     const/4 v0, 0x2
 
-    iput v0, p1, Lq/S;->t:I
+    iput v0, p1, Lq/sa;->t:I
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lq/S;->u:Z
+    iput-boolean v0, p1, Lq/sa;->u:Z
 
     return-void
 .end method

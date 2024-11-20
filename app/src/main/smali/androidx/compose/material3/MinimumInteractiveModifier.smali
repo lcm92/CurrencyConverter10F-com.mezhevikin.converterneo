@@ -1,12 +1,12 @@
 .class public final Landroidx/compose/material3/MinimumInteractiveModifier;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -64,20 +64,20 @@
     return v0
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 1
 
-    new-instance v0, LC/G;
+    new-instance v0, Lca/ga;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
     return-object v0
 .end method
 
-.method public final bridge synthetic k(LR/p;)V
+.method public final bridge synthetic k(Lra/p;)V
     .locals 0
 
-    check-cast p1, LC/G;
+    check-cast p1, Lca/ga;
 
     return-void
 .end method

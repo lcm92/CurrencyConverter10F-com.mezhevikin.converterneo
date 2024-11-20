@@ -1,3 +1,3 @@
-.class public interface abstract LU1/c;
+.class public interface abstract Lu1/c;
 .super Ljava/lang/Object;
 .source "SourceFile"

@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field public final a:Ls4/X;
+.field public final a:Ls4/xa;
 
 .field public final b:Lio/ktor/utils/io/jvm/javaio/b;
 
-.field public final c:Ls4/G;
+.field public final c:Ls4/ga;
 
 .field public d:I
 
@@ -42,12 +42,12 @@
     return-void
 .end method
 
-.method public constructor <init>(Ls4/X;)V
+.method public constructor <init>(Ls4/xa;)V
     .locals 4
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->a:Ls4/X;
+    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->a:Ls4/xa;
 
     new-instance v0, Lio/ktor/utils/io/jvm/javaio/b;
 
@@ -65,13 +65,13 @@
 
     if-eqz p1, :cond_0
 
-    new-instance v2, LA/h0;
+    new-instance v2, Laa/h0;
 
     const/16 v3, 0x1b
 
-    invoke-direct {v2, v3, p0}, LA/h0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, p0}, Laa/h0;-><init>(ILjava/lang/Object;)V
 
-    invoke-interface {p1, v2}, Ls4/X;->q(Lh4/c;)Ls4/G;
+    invoke-interface {p1, v2}, Ls4/xa;->q(Lh4/c;)Ls4/ga;
 
     move-result-object p1
 
@@ -81,11 +81,11 @@
     move-object p1, v1
 
     :goto_0
-    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->c:Ls4/G;
+    iput-object p1, p0, Lio/ktor/utils/io/jvm/javaio/c;->c:Ls4/ga;
 
     new-instance p1, Lio/ktor/utils/io/jvm/javaio/a;
 
-    invoke-direct {p1, p0, v1}, Lio/ktor/utils/io/jvm/javaio/a;-><init>(Lio/ktor/utils/io/jvm/javaio/c;LY3/d;)V
+    invoke-direct {p1, p0, v1}, Lio/ktor/utils/io/jvm/javaio/a;-><init>(Lio/ktor/utils/io/jvm/javaio/c;Ly8/d;)V
 
     const/4 v1, 0x1
 
@@ -134,7 +134,7 @@
     :goto_0
     iget-object v0, p0, Lio/ktor/utils/io/jvm/javaio/c;->state:Ljava/lang/Object;
 
-    instance-of v1, v0, LY3/d;
+    instance-of v1, v0, Ly8/d;
 
     if-eqz v1, :cond_0
 
@@ -144,14 +144,14 @@
 
     move-object p3, v0
 
-    check-cast p3, LY3/d;
+    check-cast p3, Ly8/d;
 
     move-object v1, p2
 
     goto :goto_1
 
     :cond_0
-    instance-of v1, v0, LU3/y;
+    instance-of v1, v0, Lu8/y;
 
     if-eqz v1, :cond_1
 
@@ -174,7 +174,7 @@
 
     if-nez v1, :cond_a
 
-    new-instance v1, LG2/c;
+    new-instance v1, Lg7/c;
 
     invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
 
@@ -194,7 +194,7 @@
 
     invoke-static {p3}, Li4/h;->c(Ljava/lang/Object;)V
 
-    invoke-interface {p3, p1}, LY3/d;->s(Ljava/lang/Object;)V
+    invoke-interface {p3, p1}, Ly8/d;->s(Ljava/lang/Object;)V
 
     const-string p1, "thread"
 
@@ -218,17 +218,17 @@
     goto :goto_2
 
     :cond_4
-    sget-object p1, Lio/ktor/utils/io/jvm/javaio/e;->a:LU3/n;
+    sget-object p1, Lio/ktor/utils/io/jvm/javaio/e;->a:Lu8/n;
 
-    invoke-virtual {p1}, LU3/n;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Lu8/n;->getValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, LJ4/a;
+    check-cast p1, Lj9/a;
 
     const-string p3, "Blocking network thread detected. \nIt can possible lead to a performance decline or even a deadlock.\nPlease make sure you\'re using blocking IO primitives like InputStream and OutputStream only in \nthe context of Dispatchers.IO:\n```\nwithContext(Dispatchers.IO) {\n    myInputStream.read()\n}\n```"
 
-    invoke-interface {p1, p3}, LJ4/a;->a(Ljava/lang/String;)V
+    invoke-interface {p1, p3}, Lj9/a;->a(Ljava/lang/String;)V
 
     :cond_5
     :goto_2
@@ -238,11 +238,11 @@
 
     move-result-object p1
 
-    check-cast p1, Ls4/P;
+    check-cast p1, Ls4/pa;
 
     if-eqz p1, :cond_6
 
-    invoke-virtual {p1}, Ls4/P;->H()J
+    invoke-virtual {p1}, Ls4/pa;->H()J
 
     move-result-wide v0
 

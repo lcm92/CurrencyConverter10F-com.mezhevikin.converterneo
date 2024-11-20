@@ -43,11 +43,11 @@
 
     new-instance v0, Lc1/o;
 
-    new-instance v1, LE0/b;
+    new-instance v1, Le5/b;
 
     const/4 v2, 0x3
 
-    invoke-direct {v1, p1, v2}, LE0/b;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, p1, v2}, Le5/b;-><init>(Landroid/content/Context;I)V
 
     invoke-direct {v0, v1}, Lc1/o;-><init>(Lc1/f;)V
 

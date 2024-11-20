@@ -1,21 +1,31 @@
-.class public abstract LE/d;
+.class public final Le/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:F
+# instance fields
+.field public final a:Landroidx/lifecycle/v;
+
+.field public final b:Ljava/util/ArrayList;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Landroidx/lifecycle/v;)V
+    .locals 1
 
-    const-wide/high16 v0, 0x4038000000000000L    # 24.0
+    const-string v0, "lifecycle"
 
-    double-to-float v0, v0
+    invoke-static {p1, v0}, Li4/h;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sput v0, LE/d;->a:F
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Le/d;->a:Landroidx/lifecycle/v;
+
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p1, p0, Le/d;->b:Ljava/util/ArrayList;
 
     return-void
 .end method

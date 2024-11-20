@@ -1,110 +1,69 @@
-.class public final LJ2/a;
-.super LE3/a;
+.class public final Lj2/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# instance fields
+.field public a:Z
+
+.field public b:I
+
+.field public c:Z
+
+.field public d:I
+
+.field public e:Ly6/p;
+
+.field public f:Z
+
+.field public g:Z
+
+.field public h:I
+
+.field public i:I
+
+
 # direct methods
-.method public constructor <init>(I)V
-    .locals 7
+.method public synthetic constructor <init>(Lj2/a;)V
+    .locals 1
 
-    new-instance v0, Lcom/google/android/gms/common/api/Status;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+    iget-boolean v0, p1, Lj2/a;->a:Z
 
-    move-result-object v1
+    iput-boolean v0, p0, Lj2/a;->a:Z
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget v0, p1, Lj2/a;->b:I
 
-    move-result-object v2
+    iput v0, p0, Lj2/a;->b:I
 
-    sget-object v3, LK2/a;->a:Ljava/util/HashMap;
+    iget-boolean v0, p1, Lj2/a;->c:Z
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iput-boolean v0, p0, Lj2/a;->c:Z
 
-    move-result-object v4
+    iget v0, p1, Lj2/a;->d:I
 
-    invoke-virtual {v3, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    iput v0, p0, Lj2/a;->d:I
 
-    move-result v5
+    iget-object v0, p1, Lj2/a;->e:Ly6/p;
 
-    if-eqz v5, :cond_1
+    iput-object v0, p0, Lj2/a;->e:Ly6/p;
 
-    sget-object v5, LK2/a;->b:Ljava/util/HashMap;
+    iget-boolean v0, p1, Lj2/a;->f:Z
 
-    invoke-virtual {v5, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    iput-boolean v0, p0, Lj2/a;->f:Z
 
-    move-result v6
+    iget-boolean v0, p1, Lj2/a;->g:Z
 
-    if-nez v6, :cond_0
+    iput-boolean v0, p0, Lj2/a;->g:Z
 
-    goto :goto_0
+    iget v0, p1, Lj2/a;->h:I
 
-    :cond_0
-    invoke-virtual {v3, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iput v0, p0, Lj2/a;->h:I
 
-    move-result-object v3
+    iget p1, p1, Lj2/a;->i:I
 
-    check-cast v3, Ljava/lang/String;
-
-    invoke-virtual {v5, v4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/String;
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v3, " (https://developer.android.com/reference/com/google/android/play/core/install/model/InstallErrorCode#"
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v3, ")"
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const-string v3, ""
-
-    :goto_1
-    filled-new-array {v2, v3}, [Ljava/lang/Object;
-
-    move-result-object v2
-
-    const-string v3, "Install Error(%d): %s"
-
-    invoke-static {v1, v3, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, p1, v1, v2, v2}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;Landroid/app/PendingIntent;Ll2/a;)V
-
-    invoke-direct {p0, v0}, LE3/a;-><init>(Lcom/google/android/gms/common/api/Status;)V
-
-    if-eqz p1, :cond_2
+    iput p1, p0, Lj2/a;->i:I
 
     return-void
-
-    :cond_2
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "errorCode should not be 0."
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method

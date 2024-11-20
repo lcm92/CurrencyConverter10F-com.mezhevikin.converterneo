@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -50,7 +50,7 @@
 
     iget v2, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
-    invoke-static {v2, v0}, LL0/e;->a(FF)Z
+    invoke-static {v2, v0}, Ll5/e;->a(FF)Z
 
     move-result v0
 
@@ -60,7 +60,7 @@
 
     iget p1, p1, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->b:F
 
-    invoke-static {v0, p1}, LL0/e;->a(FF)Z
+    invoke-static {v0, p1}, Ll5/e;->a(FF)Z
 
     move-result p1
 
@@ -94,12 +94,12 @@
     return v1
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 2
 
     new-instance v0, Lq/f0;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
     iget v1, p0, Landroidx/compose/foundation/layout/UnspecifiedConstraintsElement;->a:F
 
@@ -112,7 +112,7 @@
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 1
 
     check-cast p1, Lq/f0;

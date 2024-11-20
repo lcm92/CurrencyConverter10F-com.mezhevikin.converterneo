@@ -1,12 +1,12 @@
 .class final Landroidx/compose/foundation/layout/PaddingElement;
-.super Lq0/S;
+.super Lq0/sa;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lq0/S;"
+        "Lq0/sa;"
     }
 .end annotation
 
@@ -43,7 +43,7 @@
 
     if-gez v1, :cond_0
 
-    invoke-static {p1, v2}, LL0/e;->a(FF)Z
+    invoke-static {p1, v2}, Ll5/e;->a(FF)Z
 
     move-result p1
 
@@ -54,7 +54,7 @@
 
     if-gez p1, :cond_1
 
-    invoke-static {p2, v2}, LL0/e;->a(FF)Z
+    invoke-static {p2, v2}, Ll5/e;->a(FF)Z
 
     move-result p1
 
@@ -65,7 +65,7 @@
 
     if-gez p1, :cond_2
 
-    invoke-static {p3, v2}, LL0/e;->a(FF)Z
+    invoke-static {p3, v2}, Ll5/e;->a(FF)Z
 
     move-result p1
 
@@ -76,7 +76,7 @@
 
     if-gez p1, :cond_4
 
-    invoke-static {p4, v2}, LL0/e;->a(FF)Z
+    invoke-static {p4, v2}, Ll5/e;->a(FF)Z
 
     move-result p1
 
@@ -126,7 +126,7 @@
 
     iget v2, p1, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
-    invoke-static {v1, v2}, LL0/e;->a(FF)Z
+    invoke-static {v1, v2}, Ll5/e;->a(FF)Z
 
     move-result v1
 
@@ -136,7 +136,7 @@
 
     iget v2, p1, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
-    invoke-static {v1, v2}, LL0/e;->a(FF)Z
+    invoke-static {v1, v2}, Ll5/e;->a(FF)Z
 
     move-result v1
 
@@ -146,7 +146,7 @@
 
     iget v2, p1, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
-    invoke-static {v1, v2}, LL0/e;->a(FF)Z
+    invoke-static {v1, v2}, Ll5/e;->a(FF)Z
 
     move-result v1
 
@@ -156,7 +156,7 @@
 
     iget p1, p1, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
-    invoke-static {v1, p1}, LL0/e;->a(FF)Z
+    invoke-static {v1, p1}, Ll5/e;->a(FF)Z
 
     move-result p1
 
@@ -183,19 +183,19 @@
 
     iget v2, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
-    invoke-static {v2, v0, v1}, LA/m;->e(FII)I
+    invoke-static {v2, v0, v1}, Laa/m;->e(FII)I
 
     move-result v0
 
     iget v2, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
-    invoke-static {v2, v0, v1}, LA/m;->e(FII)I
+    invoke-static {v2, v0, v1}, Laa/m;->e(FII)I
 
     move-result v0
 
     iget v2, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
-    invoke-static {v2, v0, v1}, LA/m;->e(FII)I
+    invoke-static {v2, v0, v1}, Laa/m;->e(FII)I
 
     move-result v0
 
@@ -210,60 +210,60 @@
     return v1
 .end method
 
-.method public final j()LR/p;
+.method public final j()Lra/p;
     .locals 2
 
-    new-instance v0, Lq/U;
+    new-instance v0, Lq/ua;
 
-    invoke-direct {v0}, LR/p;-><init>()V
+    invoke-direct {v0}, Lra/p;-><init>()V
 
     iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
-    iput v1, v0, Lq/U;->t:F
+    iput v1, v0, Lq/ua;->t:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
-    iput v1, v0, Lq/U;->u:F
+    iput v1, v0, Lq/ua;->u:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
-    iput v1, v0, Lq/U;->v:F
+    iput v1, v0, Lq/ua;->v:F
 
     iget v1, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
-    iput v1, v0, Lq/U;->w:F
+    iput v1, v0, Lq/ua;->w:F
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Lq/U;->x:Z
+    iput-boolean v1, v0, Lq/ua;->x:Z
 
     return-object v0
 .end method
 
-.method public final k(LR/p;)V
+.method public final k(Lra/p;)V
     .locals 1
 
-    check-cast p1, Lq/U;
+    check-cast p1, Lq/ua;
 
     iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->a:F
 
-    iput v0, p1, Lq/U;->t:F
+    iput v0, p1, Lq/ua;->t:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->b:F
 
-    iput v0, p1, Lq/U;->u:F
+    iput v0, p1, Lq/ua;->u:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->c:F
 
-    iput v0, p1, Lq/U;->v:F
+    iput v0, p1, Lq/ua;->v:F
 
     iget v0, p0, Landroidx/compose/foundation/layout/PaddingElement;->d:F
 
-    iput v0, p1, Lq/U;->w:F
+    iput v0, p1, Lq/ua;->w:F
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p1, Lq/U;->x:Z
+    iput-boolean v0, p1, Lq/ua;->x:Z
 
     return-void
 .end method

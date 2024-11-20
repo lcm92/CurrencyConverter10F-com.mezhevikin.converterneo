@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/ktor/client/engine/cio/q;Lz3/l;JLY3/d;)V
+.method public constructor <init>(Lio/ktor/client/engine/cio/q;Lz3/l;JLy8/d;)V
     .locals 0
 
     iput-object p1, p0, Lio/ktor/client/engine/cio/j;->l:Lio/ktor/client/engine/cio/q;
@@ -28,14 +28,14 @@
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p5}, La4/i;-><init>(ILY3/d;)V
+    invoke-direct {p0, p1, p5}, La4/i;-><init>(ILy8/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(LY3/d;Ljava/lang/Object;)LY3/d;
+.method public final d(Ly8/d;Ljava/lang/Object;)Ly8/d;
     .locals 6
 
     new-instance p2, Lio/ktor/client/engine/cio/j;
@@ -50,7 +50,7 @@
 
     move-object v5, p1
 
-    invoke-direct/range {v0 .. v5}, Lio/ktor/client/engine/cio/j;-><init>(Lio/ktor/client/engine/cio/q;Lz3/l;JLY3/d;)V
+    invoke-direct/range {v0 .. v5}, Lio/ktor/client/engine/cio/j;-><init>(Lio/ktor/client/engine/cio/q;Lz3/l;JLy8/d;)V
 
     return-object p2
 .end method
@@ -58,7 +58,7 @@
 .method public final f(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
 
-    sget-object v0, LZ3/a;->g:LZ3/a;
+    sget-object v0, Lz8/a;->g:Lz8/a;
 
     iget v1, p0, Lio/ktor/client/engine/cio/j;->k:I
 
@@ -68,7 +68,7 @@
 
     if-ne v1, v2, :cond_0
 
-    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -82,25 +82,25 @@
     throw p1
 
     :cond_1
-    invoke-static {p1}, LU3/a;->e(Ljava/lang/Object;)V
+    invoke-static {p1}, Lu8/a;->e(Ljava/lang/Object;)V
 
     iget-object p1, p0, Lio/ktor/client/engine/cio/j;->l:Lio/ktor/client/engine/cio/q;
 
-    new-instance v1, LB3/e;
+    new-instance v1, Lb8/e;
 
     iget-wide v3, p0, Lio/ktor/client/engine/cio/j;->n:J
 
     const/4 v5, 0x1
 
-    invoke-direct {v1, v3, v4, v5}, LB3/e;-><init>(JI)V
+    invoke-direct {v1, v3, v4, v5}, Lb8/e;-><init>(JI)V
 
     iput v2, p0, Lio/ktor/client/engine/cio/j;->k:I
 
     iget-object v2, p0, Lio/ktor/client/engine/cio/j;->m:Lz3/l;
 
-    iget-object p1, p1, Lio/ktor/client/engine/cio/q;->k:LE0/l;
+    iget-object p1, p1, Lio/ktor/client/engine/cio/q;->k:Le5/l;
 
-    invoke-virtual {p1, v2, v1, p0}, LE0/l;->d(Lz3/l;LB3/e;La4/c;)Ljava/lang/Object;
+    invoke-virtual {p1, v2, v1, p0}, Le5/l;->d(Lz3/l;Lb8/e;La4/c;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -118,15 +118,15 @@
 
     check-cast p1, Ls4/x;
 
-    check-cast p2, LY3/d;
+    check-cast p2, Ly8/d;
 
-    invoke-virtual {p0, p2, p1}, Lio/ktor/client/engine/cio/j;->d(LY3/d;Ljava/lang/Object;)LY3/d;
+    invoke-virtual {p0, p2, p1}, Lio/ktor/client/engine/cio/j;->d(Ly8/d;Ljava/lang/Object;)Ly8/d;
 
     move-result-object p1
 
     check-cast p1, Lio/ktor/client/engine/cio/j;
 
-    sget-object p2, LU3/y;->a:LU3/y;
+    sget-object p2, Lu8/y;->a:Lu8/y;
 
     invoke-virtual {p1, p2}, Lio/ktor/client/engine/cio/j;->f(Ljava/lang/Object;)Ljava/lang/Object;
 
