@@ -497,7 +497,7 @@
 
     iget-object v0, p0, Ldef/v7/DV7;->a:Lcom/mezhevikin/converterneo/activities/ConverterActivity;
 
-    const-string v2, "ca-app-pub-1431437312897926/3732616748"
+    const-string v2, "ca-app-pub-0000000000000000/0000000000"
 
     iget-object v3, p0, Ldef/v7/DV7;->e:Ldef/v7/BV7;
 

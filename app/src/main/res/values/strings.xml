@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="AED">UAE Dirham</string>
     <string name="AFN">Afghan Afghani</string>
     <string name="ALL">Albanian Lek</string>
     <string name="AMD">Armenian Dram</string>
     <string name="ANG">Netherlands Antillean Guilder</string>
-    <string name="AOA">Angolan Kwanza</string>
     <string name="ARS">Argentine Peso</string>
     <string name="AUD">Australian Dollar</string>
     <string name="AWG">Aruban Florin</string>
